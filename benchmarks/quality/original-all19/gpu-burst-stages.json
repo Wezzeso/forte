@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:59:00.288921+00:00",
+  "quality_review": "unmeasured; numeric processing telemetry is not validation ground truth",
+  "http_summary": {
+    "attempted": 5,
+    "completed": 1,
+    "failed": 4,
+    "http_request_count": 2134,
+    "completed_repeat_failures": 0,
+    "timeouts": 0,
+    "metrics": {
+      "asgi_acceptance_after_body": {
+        "count": 4,
+        "p50_ms": 19.753,
+        "p95_ms": null,
+        "max_ms": 35.785,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "client_post_total": {
+        "count": 4,
+        "p50_ms": 11201.41735,
+        "p95_ms": null,
+        "max_ms": 16386.8625,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_asgi_lookup": {
+        "count": 2105,
+        "p50_ms": 1.712,
+        "p95_ms": 3.725,
+        "max_ms": 10.894,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_full_transfer": {
+        "count": 2105,
+        "p50_ms": 201.5355,
+        "p95_ms": 301.2874,
+        "max_ms": 686.5429,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_first_body_byte": {
+        "count": 21,
+        "p50_ms": 197.4988,
+        "p95_ms": 202.6679,
+        "max_ms": 318.9975,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_full_transfer": {
+        "count": 21,
+        "p50_ms": 199.2426,
+        "p95_ms": 203.8273,
+        "max_ms": 321.1129,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "upload_start_to_full_result_upper_bound": {
+        "count": 1,
+        "p50_ms": 240214.5087,
+        "p95_ms": null,
+        "max_ms": 240214.5087,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      }
+    },
+    "targets": [
+      {
+        "target": "post_body_acceptance_p95",
+        "threshold_ms": 150,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_lookup_p95",
+        "threshold_ms": 25,
+        "status": "achieved",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "completed_first_body_byte_p95",
+        "threshold_ms": 50,
+        "status": "missed",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_safety",
+        "threshold_ms": 240000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      },
+      {
+        "target": "conservative_organizer_cutoff",
+        "threshold_ms": 300000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      }
+    ],
+    "inference_speed_claim": "not established by client transfer measurements",
+    "principal_benchmark_conditions_declared": true,
+    "condition_verification": "operator declaration only; novel-content and server cache audit required"
+  },
+  "worker_telemetry_matched_records": 4,
+  "ignored_log_lines": 2,
+  "telemetry_sample_count": 5,
+  "missing_terminal_worker_records": 1,
+  "stage_duration_ms": {
+    "analysis": {
+      "count": 4,
+      "p50_ms": 250371.39469550003,
+      "p95_ms": null,
+      "max_ms": 273277.220874,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 1
+    },
+    "coarse_model": {
+      "count": 2,
+      "p50_ms": 181442.16292099998,
+      "p95_ms": null,
+      "max_ms": 228432.899656,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 3
+    },
+    "evidence": {
+      "count": 1,
+      "p50_ms": 2.086031,
+      "p95_ms": null,
+      "max_ms": 2.086031,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 4
+    },
+    "frame_preparation": {
+      "count": 2,
+      "p50_ms": 0.468974,
+      "p95_ms": null,
+      "max_ms": 0.514111,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 3
+    },
+    "probe_decode": {
+      "count": 2,
+      "p50_ms": 2030.5702105,
+      "p95_ms": null,
+      "max_ms": 2187.582486,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 3
+    },
+    "publication": {
+      "count": 1,
+      "p50_ms": 8.745518,
+      "p95_ms": null,
+      "max_ms": 8.745518,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 4
+    },
+    "refinement": {
+      "count": 1,
+      "p50_ms": 81075.902872,
+      "p95_ms": null,
+      "max_ms": 81075.902872,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 4
+    },
+    "rules": {
+      "count": 2,
+      "p50_ms": 1.5830945,
+      "p95_ms": null,
+      "max_ms": 1.633441,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 3
+    }
+  },
+  "completed_worker_analysis_to_publication": {
+    "count": 1,
+    "p50_ms": 230711.389804,
+    "p95_ms": null,
+    "max_ms": 230711.389804,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "acceptance_to_first_claim": {
+    "count": 4,
+    "p50_ms": 457.66999999999996,
+    "p95_ms": null,
+    "max_ms": 809.658,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "selected_mix_analysis_p95_90000ms_reference": {
+    "status": "unmeasured",
+    "scope": "selected duration mix only; does not establish 145-second-video p95"
+  },
+  "full_145_second_video_p95_target": "unmeasured; requires duration-filtered sample and sufficient observations",
+  "planning_stage_budgets_ms": {
+    "queue": 5000,
+    "probe_decode_and_preparation": 10000,
+    "coarse_model": 40000,
+    "refinement": 25000,
+    "rules_evidence_publication": 5000,
+    "margin": 5000
+  },
+  "queue_duration": "same-host accepted_at to first claimed UTC; dispatch after claim excluded",
+  "prefill_and_gpu_compute": "unmeasured unless actual server metrics separately verified",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "http_outcome": "failed",
+      "worker_telemetry": "measured",
+      "attempt": 1,
+      "worker_outcome": "failed",
+      "worker_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "analysis": 217450.843059
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "pipeline_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "rules": 1.633441,
+          "probe_decode": 1873.557935,
+          "refinement": 81075.902872,
+          "coarse_model": 134451.426186,
+          "frame_preparation": 0.423837
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "acceptance_to_first_claim_ms": 62.434999999999995
+    },
+    {
+      "sample_id": "s002",
+      "http_outcome": "completed",
+      "worker_telemetry": "measured",
+      "attempt": 1,
+      "worker_outcome": "done",
+      "worker_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "publication": 8.745518,
+          "analysis": 230702.602683
+        },
+        "analysis_to_publication_ms": 230711.389804,
+        "model_requests": null
+      },
+      "pipeline_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "rules": 1.532748,
+          "probe_decode": 2187.582486,
+          "coarse_model": 228432.899656,
+          "evidence": 2.086031,
+          "frame_preparation": 0.514111
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 4,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 133700.9215980006,
+              "min": 29609.511192000355,
+              "max": 34838.07842100032,
+              "p50": 34626.66599249997,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 133322.4044409999,
+              "min": 29513.702188000025,
+              "max": 34741.58183200007,
+              "p50": 34533.5602104999,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 340.57117099973766,
+              "min": 84.63887000016257,
+              "max": 86.09232599974348,
+              "p50": 84.9199874999158,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 23.382840000522265,
+              "min": 0.0,
+              "max": 8.034240000142745,
+              "p50": 7.67430000018976,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 3845.535531999758,
+              "min": 947.4646300000131,
+              "max": 971.8329799998173,
+              "p50": 963.1189609999637,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 128722.63039900054,
+              "min": 28363.176344000294,
+              "max": 33598.45954899993,
+              "p50": 33380.497253000154,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 0.03071100036322605,
+              "min": 0.007367999842244899,
+              "max": 0.007997000011528144,
+              "p50": 0.007673000254726503,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 55.44033255133413,
+              "min": 13.815156064555891,
+              "max": 13.891635753647417,
+              "p50": 13.86677036656541,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 4,
+              "sum": 4.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 4,
+              "sum": 64.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 4,
+              "sum": 6794303.0,
+              "min": 1664568.0,
+              "max": 1717154.0,
+              "p50": 1706290.5,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 36202.0,
+              "min": 9033.0,
+              "max": 9086.0,
+              "p50": 9041.5,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 9292.0,
+              "min": 2044.0,
+              "max": 2433.0,
+              "p50": 2407.5,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 45494.0,
+              "min": 11093.0,
+              "max": 11486.0,
+              "p50": 11457.5,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 4,
+            "sum": 280.3066896204223,
+            "min": 69.68116819271386,
+            "max": 70.42798992417728,
+            "p50": 70.09876575176557,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 64
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      },
+      "acceptance_to_first_claim_ms": 398.599
+    },
+    {
+      "sample_id": "s003",
+      "http_outcome": "failed",
+      "worker_telemetry": "measured",
+      "attempt": 1,
+      "worker_outcome": "failed",
+      "worker_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "analysis": 273277.220874
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "pipeline_timing": null,
+      "acceptance_to_first_claim_ms": 516.741
+    },
+    {
+      "sample_id": "s004",
+      "http_outcome": "failed",
+      "worker_telemetry": "measured",
+      "attempt": 1,
+      "worker_outcome": "failed",
+      "worker_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "analysis": 270040.186708
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "pipeline_timing": null,
+      "acceptance_to_first_claim_ms": 809.658
+    },
+    {
+      "sample_id": "s005",
+      "http_outcome": "failed",
+      "worker_telemetry": "unmeasured",
+      "acceptance_to_first_claim_ms": null
+    }
+  ]
+}

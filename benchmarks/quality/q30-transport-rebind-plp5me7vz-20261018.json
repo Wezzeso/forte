@@ -1,0 +1,25 @@
+{
+  "backup_directory": "/ephemeral/forte/q30-transport-stage.xbBgNEo9/before",
+  "benchmark_transport": "model_container_network_namespace",
+  "evaluation_image_id": "sha256:3adf4de21b17384ab3ad92db2712c458866d551a740598912bd270709e8a4b3a",
+  "evaluation_wrapper_sha256": "c13265337a9e72c5c6294f22ca12531ccc8c323dcb47eb73068baec89859a703",
+  "generated_at_utc": "2026-10-18T05:36:14.232268+00:00",
+  "historical_server_receipts_preserved": true,
+  "instance_id": "plp5me7vz",
+  "instance_name": "forte-new-h100",
+  "model_networks_changed": false,
+  "models_restarted": false,
+  "new_harness_sha256": "70c92296e540570d1959422638e2d279645d721f18669d287cf867a880857465",
+  "new_install_receipt_sha256": "8654a783372de215c0d4e5f027f471aac88bf1acce7ac736a0b5c21f48ed5c27",
+  "no_video_evaluation_started": true,
+  "old_harness_sha256": "697bf5963127b441564821e78a32d44b41a951924d39c0b349faff7fc4bff6f9",
+  "old_install_receipt_sha256": "18cc252dacd58d3346aabd3660d7510d44c6f1a40e073676b52aa232f1961c54",
+  "profile_file_sha256": {
+    "cfg_q30base.json": "436ebad34ec35caf6b38df6590c3894fad13b91a207d8afabe14835962c18a41",
+    "cfg_q30desk.json": "a95e038578132063f933ef145021099152f62e383b4353422ce7f834fa5eb293"
+  },
+  "schema": "forte.q30-transport-rebind.v1",
+  "source_and_profile_bytes_unchanged": true,
+  "source_manifest_sha256": "a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+  "status": "installed"
+}

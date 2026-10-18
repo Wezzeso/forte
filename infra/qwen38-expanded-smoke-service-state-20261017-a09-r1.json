@@ -1,0 +1,31 @@
+{
+  "accepted_jobs": 18,
+  "active_jobs": 0,
+  "baseline_teacher_ready": false,
+  "captured_at_utc": "2026-10-17T15:30:53.124757+00:00",
+  "containers": {
+    "forte-api-1": {
+      "image": "sha256:5f635274bd9dd7d8ca0bde5a430332607972031c976b11ec91c63ab1d22277cf",
+      "paused": false,
+      "status": "running"
+    },
+    "forte-model-1": {
+      "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "paused": false,
+      "status": "exited"
+    },
+    "forte-worker-1": {
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "paused": false,
+      "status": "exited"
+    }
+  },
+  "gpu_imports": 0,
+  "inference_posts": 0,
+  "local_captured_at_utc": "2026-10-17T15:31:05.611415+00:00",
+  "read_only": true,
+  "ready_status": 0,
+  "schema_version": "forte.teacher-readonly-attestation.v1",
+  "service_mutations": false,
+  "source_inventory_sha256": "d3fd494df66ff0705184c490c65a6f5b339e592d5224be1f16e4a4fc551040b8"
+}

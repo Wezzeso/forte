@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1171,
+      "relative_path": "adapter/adapter_config.json",
+      "sha256": "0e103b394246ce25605074baf140ee4423ad3aa615fa8c10f477f7d2c9c8d750"
+    },
+    {
+      "bytes": 6455336,
+      "relative_path": "adapter/adapter_model.safetensors",
+      "sha256": "a3733ccf3c888224c2887dd24900e45d2462e9481299ed71cec82518cfc6c7ad"
+    }
+  ],
+  "bytes": 6456507,
+  "destination": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\public_runs\\20261018\\crop2b-fit-v1-preserved",
+  "images_or_datasets_included": false,
+  "kind": "crop",
+  "local_free_after_bytes": 45537349632,
+  "minimum_reserve_bytes": 4294967296,
+  "preservation_index_sha256": "ff1df708a3f250fbd418d491c9d990b2edfbb4db0f8c851d4688355138fbe6bf",
+  "promotion_eligible": false,
+  "receipt_scope": "frozen_training_metadata_only",
+  "remote_originals_retained": true,
+  "remote_run_sha256": "aaec63508133bf227170be43e10f426d6804cd09c804fdc58b4e913e33e0ffcd",
+  "sanitized_receipts": 7,
+  "schema_version": "forte.public-training-preservation.v1",
+  "verified": true
+}

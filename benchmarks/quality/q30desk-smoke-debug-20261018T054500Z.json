@@ -1,0 +1,49 @@
+{
+  "schema": "forte.q30desk-synthetic-smoke-debug.v1",
+  "status": "collected",
+  "generated_at_utc": "2026-10-18T05:44:55.072221+00:00",
+  "instance_id": "xw5720fii",
+  "container_id": "c3d88839b45f8a854e0121cc247b15d3246f10d799d3b5aea85ecf564c213515",
+  "synthetic_artifacts_only": true,
+  "model_inference_executed": false,
+  "private_text_exported": false,
+  "server_running": true,
+  "current_receipt": {
+    "passed": false,
+    "synthetic_only": true,
+    "inference_executed": true,
+    "case_count": 0,
+    "passed_count": 0,
+    "status": "failed",
+    "model": "q30desk",
+    "error_type": "AssertionError",
+    "failure_code": "q30desk_synthetic_smoke_failed"
+  },
+  "artifacts": [
+    {
+      "artifact_directory_sha256": "d9b68469c86ca66f323270887c7248a7c086fb8c7d4af3e5ff8287dfb1fecf39",
+      "files": {
+        "q30desk-smoke.json": false,
+        "q30desk-smoke-progress.json": false,
+        "inner-summary.json": false,
+        "private.stderr.log": true
+      },
+      "stderr_diagnostic": {
+        "bytes": 563,
+        "stdin_traceback": [
+          {
+            "line": 18,
+            "function": "<module>"
+          }
+        ],
+        "exception_classes": [
+          "PermissionError"
+        ],
+        "read_only_filesystem_marker": false,
+        "no_space_marker": false,
+        "permission_denied_marker": true,
+        "cuda_oom_marker": false
+      }
+    }
+  ]
+}

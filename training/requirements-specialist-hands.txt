@@ -1,0 +1,6 @@
+# Separate optional pose environment. MMCV needs a compatible torch/CUDA build.
+# These API-compatible pins have not been GPU-validated on the serving image.
+mmpose==1.3.2
+mmdet==3.3.0
+mmcv==2.1.0
+mmengine==0.10.7

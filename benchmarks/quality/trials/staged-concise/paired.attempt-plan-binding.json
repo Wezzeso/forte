@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen_before_requests",
+  "expected_attempt_count": 6,
+  "expected_attempt_plan_sha256": "ec5be599a2e15b325cc715f34c1270f5c21797f2db5f13a2c5ff810aa2bd68bb",
+  "api_requests_made": 0,
+  "model_requests_made": 0
+}

@@ -1,0 +1,23 @@
+{
+  "guard": "ready",
+  "mode": "dry_run",
+  "instance_name": "forte-new-h100",
+  "instance_id": "plp5me7vz",
+  "status": "DEPLOYING",
+  "cli_home": "/home/wezeso/brev-new",
+  "cutoff_utc": "2026-10-18T17:55:00+05:00",
+  "latest_cutoff_utc": "2026-10-18T18:00:00+05:00",
+  "due": false,
+  "estimated_spend_usd": "0.13",
+  "budget_usd": "50",
+  "reserve_usd": "2",
+  "remaining_seconds": 30745,
+  "scheduled_task": {
+    "name": "Forte-Brev-new-budget-stop-plp5me7vz",
+    "state": "Ready",
+    "enabled": true,
+    "trigger_local": "2026-10-18T17:55:00+05:00",
+    "user_approved": true,
+    "requires_pc_available": true
+  }
+}

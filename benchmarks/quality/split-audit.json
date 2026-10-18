@@ -1,0 +1,18 @@
+{
+  "counts_by_split": {
+    "final_check": 6,
+    "train": 29,
+    "validation": 7
+  },
+  "error_counts": {},
+  "integrity_passed": true,
+  "locked": false,
+  "note": "Group integrity precedes exact split counts; proposed assignments are not a training lock.",
+  "record_count": 42,
+  "records_sha256": "10f4fcf4af5ab3094ad284579c068c063c753902ccfa6252a0c6264bfa2920f9",
+  "scenario_relationships_reviewed": false,
+  "schema_version": "forte.split_audit.v1",
+  "training_gate_passed": false,
+  "unique_content_count": 40,
+  "unique_group_count": 40
+}

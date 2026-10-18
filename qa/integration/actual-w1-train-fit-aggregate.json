@@ -1,0 +1,39 @@
+{
+  "schema_version": "forte.integration.weak-train-fit-aggregate.v1",
+  "source_diagnostic_sha256": "77d540e1cb87776a1e2a75511f338ddbec813b6a7e9097c7828594283acac943",
+  "input_cache_index_sha256": "61fca47d516e480bf137e703f5ea1c30624f12eb1cc78b638fc4d09f154a7d82",
+  "cpu_diagnostic_only": true,
+  "additional_optimizer_steps": 0,
+  "threshold_tuned": false,
+  "validation_or_final_labels_opened": false,
+  "in_sample_training_only": true,
+  "generalization_claim": false,
+  "candidate_selected": false,
+  "comparison": {
+    "initial_untrained": {
+      "bags": 28,
+      "tp": 0,
+      "tn": 13,
+      "fp": 0,
+      "fn": 15,
+      "mean_binary_bag_bce": 0.7046391474349158,
+      "coarse_positive_bags": 15,
+      "coarse_bags_above_fixed_zero": 0,
+      "mean_coarse_point_bag_bce": 0.8089584589004517,
+      "mean_coarse_point_bag_logit": -0.21927326917648315
+    },
+    "trained_W1": {
+      "bags": 28,
+      "tp": 12,
+      "tn": 11,
+      "fp": 2,
+      "fn": 3,
+      "mean_binary_bag_bce": 0.6023025719914585,
+      "coarse_positive_bags": 15,
+      "coarse_bags_above_fixed_zero": 7,
+      "mean_coarse_point_bag_bce": 1.4597429286067685,
+      "mean_coarse_point_bag_logit": -0.12867815494537355
+    }
+  },
+  "private_record_values_included": false
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "forte.qwen38.runtime.v1",
+  "purpose": "INCOMPLETE TEMPLATE. Bind actual artifacts and image versions after real training; null hashes deliberately fail validation.",
+  "backend": "transformers_peft",
+  "production_selected": false,
+  "structured_decoding": {
+    "backend": "xgrammar_hf",
+    "version": "0.2.7",
+    "schema_policy": "forte.decision-json-subset.v1",
+    "fact_order": "canonical_requested_fact_ids.v1",
+    "any_order": false,
+    "any_whitespace": false,
+    "strict_mode": true,
+    "max_cache_entries": 8,
+    "max_cache_bytes": 67108864
+  },
+  "model_id": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "processor_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "served_model_name": "Qwen3.8-27B-forte-silver",
+  "model_path": "/models/Qwen3.8-27B",
+  "adapter_path": "/candidate/adapter",
+  "base_manifest": {
+    "path": "/app/configs/serving/qwen38/public-candidate.manifest.json",
+    "sha256": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225"
+  },
+  "tokenizer_sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+  "chat_template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+  "training_run": {"path": "/candidate/run.json", "sha256": null},
+  "adapter_sha256": null,
+  "adapter_config_sha256": null,
+  "source_archive": {"path": "/release/source.tar", "sha256": null},
+  "runtime_image_sha256": null,
+  "package_versions": {
+    "torch": null,
+    "transformers": null,
+    "peft": null,
+    "fastapi": null,
+    "uvicorn": null,
+    "pillow": null,
+    "jsonschema": null,
+    "bitsandbytes": null,
+    "xgrammar": null
+  },
+  "quantization": {"format": "nf4", "compute_dtype": "bfloat16", "double_quant": true},
+  "generation": {
+    "do_sample": false,
+    "temperature": 0,
+    "seed": 20261017,
+    "max_new_tokens": 4096,
+    "enable_thinking": false,
+    "preserve_thinking": false,
+    "num_beams": 1
+  },
+  "device": "cuda:0",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "limits": {
+    "max_images": 16,
+    "max_pixels_per_image": 1048576,
+    "max_source_pixels_per_image": 64000000,
+    "max_context_tokens": 32768,
+    "max_body_bytes": 100663296,
+    "request_timeout_seconds": 240
+  },
+  "prewarm_shapes": [
+    {"frames": 1, "width": 448, "height": 448},
+    {"frames": 8, "width": 672, "height": 672},
+    {"frames": 16, "width": 1024, "height": 1024}
+  ]
+}

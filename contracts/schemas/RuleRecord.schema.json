@@ -1,0 +1,146 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "rule_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "clause": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clause"
+    },
+    "source_url": {
+      "minLength": 1,
+      "title": "Source Url",
+      "type": "string"
+    },
+    "source_publisher": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Publisher"
+    },
+    "accessed_at": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Accessed At"
+    },
+    "source_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Sha256"
+    },
+    "jurisdiction": {
+      "default": "KZ",
+      "title": "Jurisdiction",
+      "type": "string"
+    },
+    "applicability": {
+      "minLength": 1,
+      "title": "Applicability",
+      "type": "string"
+    },
+    "required_facts": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Required Facts",
+      "type": "array"
+    },
+    "temporal_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Temporal Conditions",
+      "type": "array"
+    },
+    "exceptions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Exceptions",
+      "type": "array"
+    },
+    "verification_state": {
+      "default": "unverified",
+      "enum": [
+        "unverified",
+        "source_verified",
+        "verified",
+        "rejected"
+      ],
+      "title": "Verification State",
+      "type": "string"
+    },
+    "applicability_verified": {
+      "default": false,
+      "title": "Applicability Verified",
+      "type": "boolean"
+    },
+    "enabled": {
+      "default": false,
+      "title": "Enabled",
+      "type": "boolean"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "rule_id",
+    "title",
+    "source_url",
+    "applicability",
+    "required_facts"
+  ],
+  "title": "RuleRecord",
+  "type": "object"
+}

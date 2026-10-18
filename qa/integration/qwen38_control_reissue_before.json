@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-10-17T17:08:22.667724+00:00",
+  "sources": {
+    "benchmarks/performance/qwen38_accuracy_diagnostic.py": "ed5baa5b09dce8e72c45fe4c73140daf3acdaef5db7291a762e150fa2659b8b0",
+    "benchmarks/performance/qwen38_accuracy_reissue.py": "6def3323a82bcdd40c264a52fc66d398a7ce089b5c71bab05311eea86a8538de",
+    "evaluation/private/accuracy_diagnostic_runner.py": "3652322366a3a6c756cefa703c6f35eb90c566302de93f8ff1a8518be1368279",
+    "evaluation/private/accuracy_diagnostic_controller.py": "ce6a7a3fed83f75d7df8564f4b70d5098e78dda2479af5423cda2a2d5c0b55ad",
+    "evaluation/private/quality_arm_controller.py": "bb7c02e6946ad948ebf594fbfacce48142fdb795a868450e9d7c6a0099829d12",
+    "qa/integration/qwen38_control_reissue_test.py": "5f832b80de7ae490d411742149e97c50d8caf5f562218e9ac9407dcb350dd06f",
+    "qa/system/test_qwen38_accuracy_reissue.py": "8f53f6f9521b1ab5c15004a09fadb3708c38cb08db3fd3a0082264097e809231",
+    "qa/system/test_qwen38_accuracy_diagnostic.py": "df25cddc9bbbdca1b3cb2bafe32a17fa4574e88ee5cc4fcceeab496c7c311cb8",
+    "evaluation/private/test_accuracy_diagnostic_runner.py": "08fbcfa4a7d474a8a4091a6750a561f4f785d59aae4224f21b1d034b42edbd65",
+    "evaluation/private/test_quality_arm_controller.py": "bc55375e1ac3d3d2e4042907da434ed72d89062310e4d5187a8ae1b5c3bae2a2"
+  },
+  "tests": [
+    "qa/integration/qwen38_control_reissue_test.py",
+    "qa/system/test_qwen38_accuracy_reissue.py",
+    "qa/system/test_qwen38_accuracy_diagnostic.py",
+    "evaluation/private/test_accuracy_diagnostic_runner.py",
+    "evaluation/private/test_quality_arm_controller.py::ControllerTests::test_control_reissue_claim_is_single_use_across_new_plan_or_authority_hashes"
+  ]
+}

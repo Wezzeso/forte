@@ -1,0 +1,38 @@
+{
+  "captured_at_utc": "2026-10-17T18:23:43.436846+00:00",
+  "completed_calls": [],
+  "container_id": "40cca8906b0dbe0c074e87d955aa9eb095f5f397acde0511c73098a4954a95e5",
+  "container_present": true,
+  "exit_code": 0,
+  "fixed_log_stage_markers": {
+    "cuda_graph_capture": false,
+    "kv_cache_allocation": false,
+    "model_weight_loading": false,
+    "model_weight_loading_complete": false,
+    "torch_compile": false
+  },
+  "generated_call_attempts": 0,
+  "gpu_operations_by_monitor": 0,
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "latest_durable_phase": {
+    "adapter_gate_passed": false,
+    "captured_at_utc": "2026-10-17T18:22:56.063751+00:00",
+    "completions_validated": 0,
+    "engine_initialized": false,
+    "generation_calls_entered": 0,
+    "generation_calls_returned": 0,
+    "output_owned": true,
+    "phase": "verify_all_base_and_adapter_bytes_before_engine",
+    "phase_index": 3,
+    "root_release_id": "root-native-bf16-v2-generated-20261017T1824Z"
+  },
+  "log_error_classes": {},
+  "model_calls_by_monitor": 0,
+  "oom_killed": false,
+  "output_folder_present": true,
+  "pid": 621414,
+  "raw_logs_exposed": false,
+  "root_release_id": "root-native-bf16-v2-generated-20261017T1824Z",
+  "running": true,
+  "safe_log_numeric_metrics": {}
+}

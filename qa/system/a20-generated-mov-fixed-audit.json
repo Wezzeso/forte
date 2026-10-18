@@ -1,0 +1,25 @@
+{
+  "status": "measured",
+  "job_id": "697b03f3000648b4a04eefcde98397ae",
+  "error_code": "processing_failed",
+  "matching_failed_synthetic_records": 1,
+  "unique_match": true,
+  "audit_available": true,
+  "fixed_audit_fields": {
+    "phase": "failed",
+    "error_code": "refinement_model_incomplete",
+    "coarse_requests": 1,
+    "refinement_requests": 0,
+    "stages_ms": {
+      "rules": 0.490296,
+      "frame_preparation": 0.105367,
+      "coarse_model": 20260.430147,
+      "probe_decode": 1012.425617
+    }
+  },
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:46:52.861743+00:00",
+  "scope": "known A20 generated synthetic.mov; opaque ID and static error_code only",
+  "media_or_prediction_or_error_detail_inspected_or_exported": false,
+  "model_inference_called": false
+}

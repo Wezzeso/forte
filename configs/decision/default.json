@@ -1,0 +1,9 @@
+{
+  "config_version": "forte.decision.v1.0.0",
+  "max_facts": 32,
+  "max_frames": 96,
+  "max_candidates": 24,
+  "max_output_bytes": 131072,
+  "compact_frame_ids": false,
+  "concise_observations": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "forte.qwen38.full19-ops-cpu-qa.v1",
+  "captured_at_utc": "2026-10-17T16:15:48.203526+00:00",
+  "pytest_summary": "7 passed in 1.45s",
+  "source_hashes": {
+    "deploy/qwen38_full19_generated_gate.py": "3f7281b7fef8ae6855220ab4c4398fe193a39e048266c22a3660b466371e6a48",
+    "qa/integration/qwen38_full19_ops_test.py": "bb4a419fe545df1e79e82f97dab698b3b227d14cb07a6c4b10a0d8e8bc5986ea"
+  },
+  "checks": [
+    "Actual frozen full19/4rule/3event schema and prompt factory over16 generated JPEGs.",
+    "Actual job-owned JPEG adapter preprocessing and strict provider/schema/semantic validation.",
+    "Exactly one successful POST and grammar counter increment; replay is blocked by exclusive claim.",
+    "HTTP500, duplicate semantic fact and unchanged grammar counter each fail after exactly one POST without retry.",
+    "Wrong runtime identity or actual grammar readiness blocks before POST.",
+    "Unpatched production profile guard rejects a synthetic profile before HTTP."
+  ],
+  "limitations": [
+    "All HTTP is in-memory MockTransport; no network, model, GPU or private video calls.",
+    "Only the positive synthetic fixture substitutes the fixed production profile digest; the unpatched mismatch guard is tested separately.",
+    "This proves control structure and parser integration, not actual model output or visual truth."
+  ]
+}

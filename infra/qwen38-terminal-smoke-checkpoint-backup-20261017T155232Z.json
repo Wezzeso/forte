@@ -1,0 +1,73 @@
+{
+  "account_or_rental_changes": false,
+  "active_retry_and_quality_outputs_excluded": true,
+  "archive": {
+    "bytes": 209056519,
+    "name": "terminal-experiments.tar.gz",
+    "sha256": "d88624a37648811f67a8a97b758f10c13d68873294e722ddac620e9a2b9603da"
+  },
+  "archive_count": 2,
+  "checkpoint_scope": "Historical terminal two-step SMOKE candidate_unselected; final FIT checkpoint is not included and requires a later terminal increment",
+  "created_at_utc": "2026-10-17T15:52:32.938164+00:00",
+  "database_changes": false,
+  "directory": "/data/forte-backups/qwen38-terminal-smoke-checkpoint-20261017T155218Z-468f50ab",
+  "exact_member_hashes_verified": true,
+  "final_fit_outputs_excluded": true,
+  "final_source_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "fla_resolved_generated_gates_sha256": "5a33c45f015faa81ea3f2690c6da65ceafd72a7faa650e5c839c1a0ce4427509",
+  "gpu_model_calls": 0,
+  "gpu_service_database_account_changes": false,
+  "local_exact_member_hashes_verified": true,
+  "local_proof_capture_at_utc": "2026-10-17T15:53:02.501291+00:00",
+  "local_proof_exact_member_hashes_verified": true,
+  "local_proof_source_bytes": 7777625,
+  "local_proof_source_file_count": 148,
+  "local_proofs_archive": {
+    "bytes": 2450211,
+    "name": "local-proofs-source-release.tar.gz",
+    "sha256": "7ec6171f1ecafd79be30cab76763dc718840a7ac5f2029703d7e3ed956671ea1"
+  },
+  "onhost_snapshot_retained": true,
+  "private_content_printed": false,
+  "private_manifest_sha256": "4f489180e7a3cd0f5e875a09a5b900e9f6a33ff5cbf020bb8e271335b73f1c67",
+  "protected_local_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-terminal-smoke-checkpoint-20261017T155218Z-468f50ab",
+  "protected_local_transfer_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T16:00:39.227545+00:00",
+  "protected_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "root_final_fit_tree_captured": false,
+  "schema_version": "forte.private-terminal-experiment-increment.v1",
+  "scope": "Frozen terminal candidate_unselected private smoke adapter/proofs/controllers/claim plus terminal FLA generated proofs, plan/audit, immutable source; active FIT tree and FIT-prefixed metadata excluded",
+  "service_changes": false,
+  "smoke_adapter_file_count": 3,
+  "smoke_adapter_files": {
+    "README.md": {
+      "bytes": 5192,
+      "sha256": "db0e418d3b101a160033b24621a0b1637b343ad0aad6dfb939fa496755b701e3"
+    },
+    "adapter_config.json": {
+      "bytes": 1295,
+      "sha256": "713139f6b6fc640e6d7cc82e907b494a979a5a59121c00d1d3f03eb899a6963d"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 233605480,
+      "sha256": "44883e25c5e178fe7b2ff1e35e7c7d3f4058e081127182e9fb8be9116a5d7193"
+    }
+  },
+  "smoke_adapter_raw_bytes": 233611967,
+  "smoke_controller_sha256": "ee9bcb76b4d367c60bc8c1d4d8874f1580089e0ba3dbc2bec8dba03308a6ca35",
+  "smoke_run_file_count": 13,
+  "smoke_run_raw_bytes": 236415633,
+  "smoke_run_sha256": "b93d95419080c0ff377646365188f23d64f882497fa88aac49963319ac82434e",
+  "smoke_status": "candidate_unselected",
+  "source_bytes": 251327322,
+  "source_file_count": 579,
+  "source_unchanged_verified": true,
+  "stop_schedule_changed": false,
+  "total_archive_bytes": 211506730,
+  "trained_candidate_selected": false
+}

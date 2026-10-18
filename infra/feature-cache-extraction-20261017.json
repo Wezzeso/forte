@@ -1,0 +1,28 @@
+{
+  "actual_index_sha256": "61fca47d516e480bf137e703f5ea1c30624f12eb1cc78b638fc4d09f154a7d82",
+  "frames": 35186,
+  "gpu_used": true,
+  "index_sha256": "61fca47d516e480bf137e703f5ea1c30624f12eb1cc78b638fc4d09f154a7d82",
+  "model_files_verified": true,
+  "returncode": 0,
+  "source_archive_sha256": "dbf6b4c4ff49fb5f3820d27fca8027e003805b7a1202916d91d6d37a83b7e13a",
+  "sources": 34,
+  "split_counts": {
+    "train": 28,
+    "validation": 6
+  },
+  "status": "done",
+  "timing_scope": {
+    "cold_load_separately_measured": false,
+    "excludes": [
+      "private_source_transfer",
+      "source_hash_preflight_before_timer",
+      "Docker_startup_and_imports_before_timer"
+    ],
+    "includes": [
+      "local_encoder_load_and_full_artifact_verification",
+      "34_source_decode_encode_cache_writes"
+    ]
+  },
+  "wall_seconds": 84.214132909
+}

@@ -1,0 +1,14 @@
+{
+  "distinct_validation_contents": 6,
+  "expected_attempt_count": 6,
+  "expected_attempts_sha256": "34ae6917adfd26ea92466c4b771e49373d782a5ca4dd212c7c0aa7130753f64e",
+  "human_event_ground_truth_claimed": false,
+  "inference_started_by_A10": false,
+  "manual_annotation_required_for_weak_track": false,
+  "plan_file_sha256": "5e24ec2d8488c41344629db9f4cebf2de3b0b8bafc63d4361811605ccae4dbc9",
+  "provided_labels_sha256": "14033545f724483bdbc579115b55eaa57f14f19dae9d42e6dff9131375d5e967",
+  "provided_negative_count": 3,
+  "provided_positive_count": 3,
+  "schema_version": "forte.weak_validation_plan_binding.v1",
+  "split_assignments_sha256": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c"
+}

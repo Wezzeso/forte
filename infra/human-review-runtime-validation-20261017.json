@@ -1,0 +1,37 @@
+{
+  "approved_profile": {
+    "FORTE_COMPACT_FRAME_IDS": "true",
+    "FORTE_CONCISE_OBSERVATIONS": "true",
+    "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+    "FORTE_JOB_TIMEOUT_SECONDS": "285",
+    "FORTE_MAX_CONCURRENT_CLIPS": "2",
+    "FORTE_MAX_CONCURRENT_JOBS": "4",
+    "FORTE_MAX_INFLIGHT_PER_JOB": "2",
+    "FORTE_MAX_REFINEMENT_PASSES": "8",
+    "FORTE_MODEL_BASE_URL": "http://model:8000/v1",
+    "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+    "FORTE_STAGED_SCREENING": "true",
+    "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+  },
+  "code_sha256": {
+    "forte.api.main": "c832ad2daded43dc97d448cfa22dfad3db7a2e0d3a1f616e47267823b789561a",
+    "forte.api.reviews": "a374663cf947eb78e1681ec9ffa2186523a0cb79408759c3e3c4be33eaec347c",
+    "forte.config": "816ee588690e92731ce5fdb6485c35dd8c6532f0358f3ed072234c06da616e8a",
+    "forte.jobs.store": "0bc8438d5a4ec44a7f37bd5ff46aab9e82fa79a0ea9dd075cf62cce91a120655",
+    "forte.pipeline": "fdc20a565243b67a4e1e2f6ec5455577adb653a37e70139d57076de7f8aa7701",
+    "forte.reproducibility": "fec1964ddf910329ea5358fb28a5a597f52af4ac83c25f6ee73e917684d2d4d2",
+    "forte.worker": "1331a299763cb1b10a67ca7ba2012d3ede61c1ff6af36a8bf53924597dd69921"
+  },
+  "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+  "model_image_and_start_time": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e|2026-10-17T10:36:11.954566283Z",
+  "model_inference_calls": false,
+  "negative_review_read_check": {
+    "jury_bytes_match_persisted_hash_and_unchanged": true,
+    "negative_done_job_available": true,
+    "negative_review_get_status": 409,
+    "negative_review_safely_rejected": true,
+    "review_mutations": false
+  },
+  "private_contents_included": false,
+  "schema_version": "forte.human-review-runtime-validation.v1"
+}

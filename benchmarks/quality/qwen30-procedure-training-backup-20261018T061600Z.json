@@ -1,0 +1,161 @@
+{
+  "accuracy_claim": false,
+  "archive_basename": "qwen30-procedure-2e0cb68681a9e802-partial_not_qualified-e2f3e8662d84.tar",
+  "archive_bytes": 29583360,
+  "archive_path": "/ephemeral/forte/training-backups/qwen30-procedure-2e0cb68681a9e802-partial_not_qualified-e2f3e8662d84.tar",
+  "archive_sha256": "488b4bdcd50e06bfc17e6edfae057862e7540d33c1349a1f17f1e870e4709fd4",
+  "bank_reports_or_media_included": false,
+  "base_weights_included": false,
+  "elapsed_s": 0.211,
+  "files": [
+    {
+      "bytes": 5196,
+      "name": "adapter/README.md",
+      "sha256": "445dea2ced8547ba4f4e27f595e2a3d1be222aa39f01919f2a34172adbffca37"
+    },
+    {
+      "bytes": 1146,
+      "name": "adapter/adapter_config.json",
+      "sha256": "f313befbf5f20ea9b82b84ee85e7765fce27965543d8e0733c401cd6c28aa887"
+    },
+    {
+      "bytes": 13397592,
+      "name": "adapter/adapter_model.safetensors",
+      "sha256": "f407308f22bb9a0dc04295258dcdac10df848141bc151f2fecd06d89c217aa76"
+    },
+    {
+      "bytes": 1474,
+      "name": "config/bound.json",
+      "sha256": "b5a9c86130b1dd47aabc32713c41a2f3b8c8c720d0cee59fb3168c51d342a086"
+    },
+    {
+      "bytes": 1455,
+      "name": "config/source.json",
+      "sha256": "f0d37daf3ae9eb4f7c33db9d7884021f54e7e6cfe9213e25c42db876cd66a51a"
+    },
+    {
+      "bytes": 2269890,
+      "name": "data/manifest.jsonl",
+      "sha256": "a1f16975edee76cdcbc1acc71e93fbc532193ae75650b875aa16777a40c5d7b5"
+    },
+    {
+      "bytes": 1811091,
+      "name": "data/train.jsonl",
+      "sha256": "2468e081ee223106160d86788dd6607c7756c07120179f826bdad7d30dc0dba0"
+    },
+    {
+      "bytes": 458799,
+      "name": "data/validation.jsonl",
+      "sha256": "1c3b2f5eb5afb9f82d8920c289ee816705e0a1abd47babe5ce06b48c9f582095"
+    },
+    {
+      "bytes": 437,
+      "name": "licenses/license-generated-data.json",
+      "sha256": "134a19783583bdd2e355ef1ab1cf544184bb4566b4daf29522237e27785f0698"
+    },
+    {
+      "bytes": 8337,
+      "name": "provenance/dataset-receipt.json",
+      "sha256": "8b7f31fc6d99a61f939ebefeef7e66ac032cbd4c8405b83fda90fd6c85918bfe"
+    },
+    {
+      "bytes": 959,
+      "name": "provenance/diagnostic-ready.json",
+      "sha256": "ed6ad02a0a9c58cd40fd71480cc27be4369f0798b3f1fd96dd7f55835b5365a1"
+    },
+    {
+      "bytes": 3388,
+      "name": "provenance/execution.json",
+      "sha256": "15c0f5ffba6fd8c13149dda097e2a868b12f7a9a95a766326fab634aabd3ece3"
+    },
+    {
+      "bytes": 3246,
+      "name": "provenance/model-download-receipt.json",
+      "sha256": "3acf0cf66845b04623ebcea2bef63d12d693305df62a822865bac9fe6aa78348"
+    },
+    {
+      "bytes": 1740,
+      "name": "provenance/runtime.json",
+      "sha256": "289f815fa357976cfd68f67a24c1dfa842f430142a0afc7209530cba3dd8faab"
+    },
+    {
+      "bytes": 18668,
+      "name": "provenance/summary.json",
+      "sha256": "04cae7dd6ce25f65d7fe183dcfbac8bf2dc7c0f689423c83c8265ff30b689ac5"
+    },
+    {
+      "bytes": 27929,
+      "name": "run.json",
+      "sha256": "2e0cb68681a9e802c3ff700cd971204c73152509bde8d21ce5a6e90fa4b762db"
+    },
+    {
+      "bytes": 758,
+      "name": "source/source-manifest.json",
+      "sha256": "d7a14725bfbdeb567a284334d8a61419f0610094f5e2faf4c51b80b03c524ab4"
+    },
+    {
+      "bytes": 79,
+      "name": "source/training/__init__.py",
+      "sha256": "e81b7c019c751187dec55728259e4f6e3f1e430d9131a9854270d0a4c63c64c3"
+    },
+    {
+      "bytes": 19333,
+      "name": "source/training/data.py",
+      "sha256": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f"
+    },
+    {
+      "bytes": 15840,
+      "name": "source/training/guards.py",
+      "sha256": "df24d106e8c6c89201ba6685f950ff02126e710a37c4972f0b156c3a5a9c7b8d"
+    },
+    {
+      "bytes": 48987,
+      "name": "source/training/qwen30_lora_train.py",
+      "sha256": "a212688529dde4a7f04672b9eb1e1ac725a20c4108db408ff4f3e5e0f459897e"
+    },
+    {
+      "bytes": 24393,
+      "name": "source/training/qwen30_procedure_lora_train.py",
+      "sha256": "360636cc70ec21e6fa014aa00c4271a28c698a5f4d0963f1d4865b762455e8c4"
+    },
+    {
+      "bytes": 5292,
+      "name": "tokenizer/chat_template.jinja",
+      "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4"
+    },
+    {
+      "bytes": 11422650,
+      "name": "tokenizer/tokenizer.json",
+      "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506"
+    },
+    {
+      "bytes": 716,
+      "name": "tokenizer/tokenizer_config.json",
+      "sha256": "74d63927077ef35867e5204a42ad6dbeba8736a83e148072ab71c27597477441"
+    }
+  ],
+  "files_manifest_sha256": "e2f3e8662d84351879bd598414fd4534d7e64eab0ec2f2535f644517ed5c0798",
+  "generated_at_utc": "2026-10-18T06:16:49.865730+00:00",
+  "gpu_inference_executed": false,
+  "instance_id": "xw5720fii",
+  "optimizer_steps": 64,
+  "origin_container_proof": {
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-18T06:16:21.728632549Z",
+    "gpu_idle_at_backup": true,
+    "instance_id": "xw5720fii",
+    "instance_name": "forte-new-q38",
+    "oom_killed": false,
+    "runtime_image_id": "sha256:e1c593d20cdb5f9b1583b9471c9caecb0f7e437b4ad5964f05f2b40caa2956a1",
+    "status": "exited",
+    "training_container_id": "199a98061000642821a0616e1e7302f86a8affbbccf444c6c4ba207a36550328"
+  },
+  "origin_container_proof_sha256": "7975f67d43e835890482740066949d8069b9953539bb2b63d60011102e1af4db",
+  "qualification_state": "not_evaluated",
+  "run_receipt_sha256": "2e0cb68681a9e802c3ff700cd971204c73152509bde8d21ce5a6e90fa4b762db",
+  "schema": "forte.qwen30-procedure-backup.v1",
+  "status": "archive_ready_not_yet_copied_to_pc",
+  "training_completion_status": "partial_not_qualified",
+  "training_restarted": false,
+  "training_state": "stopped_budget"
+}

@@ -1,0 +1,135 @@
+name: forte
+
+x-app: &app
+  image: ${FORTE_APP_IMAGE:-forte-review:local}
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+  restart: unless-stopped
+  init: true
+  read_only: true
+  tmpfs:
+    - /tmp:size=512m,noexec,nosuid
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  volumes:
+    - forte_data:/var/lib/forte
+  secrets: [postgres_password, api_keys]
+  networks: [private]
+  environment: &app-env
+    FORTE_DATA_DIR: /var/lib/forte
+    FORTE_RESULT_DIR: /var/lib/forte/results
+    FORTE_DB_HOST: db
+    FORTE_DB_PORT: "5432"
+    FORTE_DB_USER: forte
+    FORTE_DB_NAME: forte
+    FORTE_DB_PASSWORD_FILE: /run/secrets/postgres_password
+    FORTE_API_KEYS_FILE: /run/secrets/api_keys
+    FORTE_MODEL_BASE_URL: ${FORTE_MODEL_BASE_URL:-http://model:8000/v1}
+    FORTE_MODEL_NAME: Qwen3-VL-8B-Instruct
+    FORTE_MAX_UPLOAD_BYTES: ${FORTE_MAX_UPLOAD_BYTES:-268435456}
+    FORTE_WORKER_HEARTBEAT_FILE: /var/lib/forte/worker-heartbeat.json
+    FORTE_WORKER_HEARTBEAT_MAX_AGE_SECONDS: "30"
+    FORTE_JOB_TIMEOUT_SECONDS: "285"
+    FORTE_MAX_REFINEMENT_PASSES: "8"
+    FORTE_MAX_CONCURRENT_JOBS: "4"
+    FORTE_MAX_CONCURRENT_CLIPS: "2"
+    FORTE_MAX_INFLIGHT_PER_JOB: ${FORTE_MAX_INFLIGHT_PER_JOB:-1}
+    FORTE_COMPACT_FRAME_IDS: ${FORTE_COMPACT_FRAME_IDS:-false}
+    FORTE_CONCISE_OBSERVATIONS: ${FORTE_CONCISE_OBSERVATIONS:-false}
+    FORTE_STAGED_SCREENING: ${FORTE_STAGED_SCREENING:-false}
+    FORTE_CORS_ALLOWED_ORIGINS: ${FORTE_CORS_ALLOWED_ORIGINS:-}
+    FORTE_PUBLIC_API_BASE_URL: ${FORTE_PUBLIC_API_BASE_URL:-}
+    FORTE_TRUSTED_SCENE_CONTEXT: ${FORTE_TRUSTED_SCENE_CONTEXT:-}
+    HF_HUB_OFFLINE: "1"
+    TRANSFORMERS_OFFLINE: "1"
+    HF_HUB_DISABLE_TELEMETRY: "1"
+    OMP_NUM_THREADS: "2"
+
+services:
+  db:
+    image: postgres:18.6-trixie
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: forte
+      POSTGRES_USER: forte
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256 --data-checksums
+    secrets: [postgres_password]
+    # PostgreSQL >=18 stores versioned PGDATA underneath this mount.
+    volumes: [postgres_data:/var/lib/postgresql]
+    networks: [private]
+    shm_size: 128mb
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U forte -d forte"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  migrate:
+    <<: *app
+    restart: "no"
+    command: [python, -m, forte.jobs, init, --result-root, /var/lib/forte/results]
+    depends_on:
+      db: {condition: service_healthy}
+
+  api:
+    <<: *app
+    command: [uvicorn, "forte.api.main:app", --host, "0.0.0.0", --port, "8000", --no-access-log]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz',timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
+
+  worker:
+    <<: *app
+    command: [python, -m, forte.worker]
+    stop_grace_period: 40s
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, /app/deploy/worker_health.py]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  ingress:
+    image: caddy:2.11.7-alpine
+    restart: unless-stopped
+    ports:
+      - "${FORTE_BIND_HOST:-127.0.0.1}:${FORTE_HTTP_PORT:-8080}:80"
+      - "${FORTE_BIND_HOST:-127.0.0.1}:${FORTE_HTTPS_PORT:-8443}:443"
+      - "${FORTE_BIND_HOST:-127.0.0.1}:${FORTE_HTTPS_PORT:-8443}:443/udp"
+    environment:
+      FORTE_SITE_ADDRESS: ${FORTE_SITE_ADDRESS:-:80}
+      FORTE_PROXY_MAX_BODY: ${FORTE_PROXY_MAX_BODY:-272MB}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [private, ingress]
+    depends_on:
+      api: {condition: service_healthy}
+
+networks:
+  # API, worker, DB and model have no external route. Caddy alone obtains TLS.
+  private:
+    internal: true
+  ingress: {}
+
+volumes:
+  forte_data: {}
+  postgres_data: {}
+  caddy_data: {}
+  caddy_config: {}
+
+secrets:
+  postgres_password:
+    file: ${FORTE_SECRETS_DIR:-./secrets}/postgres_password
+  api_keys:
+    file: ${FORTE_SECRETS_DIR:-./secrets}/api_keys

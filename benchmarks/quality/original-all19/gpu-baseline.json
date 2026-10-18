@@ -1,0 +1,1236 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:49:59.146126+00:00",
+  "environment": {
+    "os": "Windows",
+    "os_release": "11",
+    "architecture": "AMD64",
+    "logical_cpu_count": 12,
+    "python": "3.14.0",
+    "client_installed_versions": {
+      "httpx": "0.28.1",
+      "fastapi": "0.143.3",
+      "starlette": "1.8.0",
+      "pydantic": "2.14.1",
+      "vllm": null,
+      "torch": null,
+      "transformers": null
+    },
+    "server_versions": "unmeasured; client environment is not server evidence"
+  },
+  "input_kind": "video_unverified",
+  "quality_review": "unmeasured; successful processing is not reviewed video ground truth",
+  "private_correlation_status": "written_to_private_local_file",
+  "private_terminal_export_status": "written_to_private_local_file",
+  "evidence_scope": "video_pipeline_requires_server_verification",
+  "declared_server": {
+    "gpu_model": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "gpu_vram_gib_each": 80.0,
+    "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "frame_budget": 16,
+    "max_pixels_per_frame": 1048576,
+    "metadata_provenance": "operator declaration; confirm against actual server inventory"
+  },
+  "input_metadata_aggregate": {
+    "status": "measured",
+    "success_count": 1,
+    "failure_count": 0,
+    "duration_sec_min": 11.633333333333333,
+    "duration_sec_max": 11.633333333333333,
+    "upright_resolutions": [
+      {
+        "width": 464,
+        "height": 848,
+        "count": 1
+      }
+    ]
+  },
+  "conditions": {
+    "mode": "single",
+    "model_warmth": "warm",
+    "whole_result_cache": "disabled",
+    "distinct_content_local_hash_check": true,
+    "novel_content_operator_declared": true,
+    "local_input_probe_before_timing": true,
+    "deadline_seconds_from_client_upload_start": 300.0,
+    "poll_interval_seconds": 0.25,
+    "repeat_completed_get_per_successful_job": 20,
+    "request_timeout_seconds": 60
+  },
+  "boundaries": {
+    "T0_proxy_first_body_byte": "unmeasured",
+    "T1_api_last_body_byte": "ASGI-local when Server-Timing header exists",
+    "T2_durable_acceptance": "ASGI-local acceptance hook when installed",
+    "T3_worker_start": "unmeasured by HTTP client; use local worker StageTimer",
+    "T4_result_publication": "unmeasured by HTTP client; poll provides upper bound",
+    "T5_client_final_byte": "measured with client monotonic clock",
+    "client_last_chunk_to_ack": "client iterator yield to ACK; includes transport, not T2-T1"
+  },
+  "summary": {
+    "attempted": 1,
+    "completed": 0,
+    "failed": 1,
+    "http_request_count": 130,
+    "completed_repeat_failures": 0,
+    "timeouts": 0,
+    "metrics": {
+      "asgi_acceptance_after_body": {
+        "count": 1,
+        "p50_ms": 18.798,
+        "p95_ms": null,
+        "max_ms": 18.798,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "client_post_total": {
+        "count": 1,
+        "p50_ms": 2284.8783,
+        "p95_ms": null,
+        "max_ms": 2284.8783,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_asgi_lookup": {
+        "count": 128,
+        "p50_ms": 1.8559999999999999,
+        "p95_ms": 2.355,
+        "max_ms": 2.739,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_full_transfer": {
+        "count": 128,
+        "p50_ms": 203.1775,
+        "p95_ms": 214.5287,
+        "max_ms": 282.5701,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_first_body_byte": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_full_transfer": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "upload_start_to_full_result_upper_bound": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      }
+    },
+    "targets": [
+      {
+        "target": "post_body_acceptance_p95",
+        "threshold_ms": 150,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_lookup_p95",
+        "threshold_ms": 25,
+        "status": "achieved",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "completed_first_body_byte_p95",
+        "threshold_ms": 50,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_safety",
+        "threshold_ms": 240000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      },
+      {
+        "target": "conservative_organizer_cutoff",
+        "threshold_ms": 300000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      }
+    ],
+    "inference_speed_claim": "not established by client transfer measurements",
+    "principal_benchmark_conditions_declared": true,
+    "condition_verification": "operator declaration only; novel-content and server cache audit required"
+  },
+  "vllm_metrics_discovery": {
+    "status": "unmeasured",
+    "names": []
+  },
+  "samples": [
+    {
+      "sample_id": "s001",
+      "input_bytes": 2426840,
+      "outcome": "failed",
+      "error_code": "job_failed",
+      "poll_count": 129,
+      "processing_get": [
+        {
+          "response_headers_ms": 213.3317,
+          "first_body_byte_ms": 213.4504,
+          "full_response_ms": 214.5287,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.373
+        },
+        {
+          "response_headers_ms": 206.8509,
+          "first_body_byte_ms": 207.1367,
+          "full_response_ms": 208.4579,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.128
+        },
+        {
+          "response_headers_ms": 214.7849,
+          "first_body_byte_ms": 214.9653,
+          "full_response_ms": 216.0264,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.112
+        },
+        {
+          "response_headers_ms": 204.7234,
+          "first_body_byte_ms": 204.843,
+          "full_response_ms": 205.8107,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.196
+        },
+        {
+          "response_headers_ms": 198.8409,
+          "first_body_byte_ms": 198.9141,
+          "full_response_ms": 200.5382,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.729
+        },
+        {
+          "response_headers_ms": 212.268,
+          "first_body_byte_ms": 212.3417,
+          "full_response_ms": 213.287,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.095
+        },
+        {
+          "response_headers_ms": 230.2876,
+          "first_body_byte_ms": 230.5656,
+          "full_response_ms": 231.9809,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.125
+        },
+        {
+          "response_headers_ms": 194.917,
+          "first_body_byte_ms": 195.0852,
+          "full_response_ms": 196.2321,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.094
+        },
+        {
+          "response_headers_ms": 193.5414,
+          "first_body_byte_ms": 193.7362,
+          "full_response_ms": 194.9053,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.142
+        },
+        {
+          "response_headers_ms": 206.1629,
+          "first_body_byte_ms": 206.2886,
+          "full_response_ms": 207.3647,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.096
+        },
+        {
+          "response_headers_ms": 196.4895,
+          "first_body_byte_ms": 196.5983,
+          "full_response_ms": 197.9732,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.021
+        },
+        {
+          "response_headers_ms": 202.7052,
+          "first_body_byte_ms": 202.7715,
+          "full_response_ms": 203.7582,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.11
+        },
+        {
+          "response_headers_ms": 196.1686,
+          "first_body_byte_ms": 196.321,
+          "full_response_ms": 197.313,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.126
+        },
+        {
+          "response_headers_ms": 216.8753,
+          "first_body_byte_ms": 217.013,
+          "full_response_ms": 218.1325,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.119
+        },
+        {
+          "response_headers_ms": 201.6987,
+          "first_body_byte_ms": 201.8661,
+          "full_response_ms": 203.0632,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.355
+        },
+        {
+          "response_headers_ms": 206.2616,
+          "first_body_byte_ms": 206.3705,
+          "full_response_ms": 207.7777,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.371
+        },
+        {
+          "response_headers_ms": 201.8568,
+          "first_body_byte_ms": 202.105,
+          "full_response_ms": 203.4099,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.961
+        },
+        {
+          "response_headers_ms": 218.6906,
+          "first_body_byte_ms": 218.8274,
+          "full_response_ms": 220.2588,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.711
+        },
+        {
+          "response_headers_ms": 191.242,
+          "first_body_byte_ms": 191.3204,
+          "full_response_ms": 192.3258,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.005
+        },
+        {
+          "response_headers_ms": 216.0344,
+          "first_body_byte_ms": 216.1621,
+          "full_response_ms": 217.1589,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.878
+        },
+        {
+          "response_headers_ms": 203.2337,
+          "first_body_byte_ms": 203.3507,
+          "full_response_ms": 204.3218,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.667
+        },
+        {
+          "response_headers_ms": 202.4085,
+          "first_body_byte_ms": 202.5497,
+          "full_response_ms": 203.6186,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.633
+        },
+        {
+          "response_headers_ms": 203.0855,
+          "first_body_byte_ms": 203.2212,
+          "full_response_ms": 204.2079,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.911
+        },
+        {
+          "response_headers_ms": 202.2427,
+          "first_body_byte_ms": 202.3614,
+          "full_response_ms": 203.9246,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.838
+        },
+        {
+          "response_headers_ms": 201.4313,
+          "first_body_byte_ms": 201.5054,
+          "full_response_ms": 202.7656,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.902
+        },
+        {
+          "response_headers_ms": 203.5947,
+          "first_body_byte_ms": 203.6646,
+          "full_response_ms": 204.7772,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.685
+        },
+        {
+          "response_headers_ms": 202.013,
+          "first_body_byte_ms": 202.1384,
+          "full_response_ms": 203.1872,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.756
+        },
+        {
+          "response_headers_ms": 201.2103,
+          "first_body_byte_ms": 201.3308,
+          "full_response_ms": 202.2681,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.547
+        },
+        {
+          "response_headers_ms": 200.2784,
+          "first_body_byte_ms": 200.4122,
+          "full_response_ms": 201.3336,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.559
+        },
+        {
+          "response_headers_ms": 205.2453,
+          "first_body_byte_ms": 205.4694,
+          "full_response_ms": 206.8118,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.966
+        },
+        {
+          "response_headers_ms": 202.6464,
+          "first_body_byte_ms": 202.8167,
+          "full_response_ms": 203.8834,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.522
+        },
+        {
+          "response_headers_ms": 202.7646,
+          "first_body_byte_ms": 202.9885,
+          "full_response_ms": 204.4348,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.744
+        },
+        {
+          "response_headers_ms": 197.4423,
+          "first_body_byte_ms": 197.5771,
+          "full_response_ms": 198.7043,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.754
+        },
+        {
+          "response_headers_ms": 202.4433,
+          "first_body_byte_ms": 202.6956,
+          "full_response_ms": 204.235,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.5
+        },
+        {
+          "response_headers_ms": 199.7344,
+          "first_body_byte_ms": 199.8677,
+          "full_response_ms": 200.8394,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.557
+        },
+        {
+          "response_headers_ms": 200.8875,
+          "first_body_byte_ms": 201.0156,
+          "full_response_ms": 201.9019,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.868
+        },
+        {
+          "response_headers_ms": 200.7367,
+          "first_body_byte_ms": 200.8741,
+          "full_response_ms": 202.0992,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.608
+        },
+        {
+          "response_headers_ms": 201.735,
+          "first_body_byte_ms": 201.8653,
+          "full_response_ms": 202.7629,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.999
+        },
+        {
+          "response_headers_ms": 201.2976,
+          "first_body_byte_ms": 201.3714,
+          "full_response_ms": 202.4544,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.674
+        },
+        {
+          "response_headers_ms": 204.2697,
+          "first_body_byte_ms": 204.3935,
+          "full_response_ms": 205.9491,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.575
+        },
+        {
+          "response_headers_ms": 203.9891,
+          "first_body_byte_ms": 204.1199,
+          "full_response_ms": 205.0567,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.168
+        },
+        {
+          "response_headers_ms": 202.4783,
+          "first_body_byte_ms": 202.705,
+          "full_response_ms": 204.1358,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.688
+        },
+        {
+          "response_headers_ms": 201.5723,
+          "first_body_byte_ms": 201.817,
+          "full_response_ms": 203.3447,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.75
+        },
+        {
+          "response_headers_ms": 201.6404,
+          "first_body_byte_ms": 201.8414,
+          "full_response_ms": 202.891,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.689
+        },
+        {
+          "response_headers_ms": 203.0975,
+          "first_body_byte_ms": 203.1763,
+          "full_response_ms": 204.5621,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.045
+        },
+        {
+          "response_headers_ms": 205.5151,
+          "first_body_byte_ms": 205.7226,
+          "full_response_ms": 207.1789,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.807
+        },
+        {
+          "response_headers_ms": 199.9382,
+          "first_body_byte_ms": 200.1101,
+          "full_response_ms": 201.436,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.863
+        },
+        {
+          "response_headers_ms": 201.7108,
+          "first_body_byte_ms": 201.8457,
+          "full_response_ms": 203.1264,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.692
+        },
+        {
+          "response_headers_ms": 203.84,
+          "first_body_byte_ms": 203.9134,
+          "full_response_ms": 204.9935,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.616
+        },
+        {
+          "response_headers_ms": 200.2127,
+          "first_body_byte_ms": 200.3468,
+          "full_response_ms": 201.5957,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.537
+        },
+        {
+          "response_headers_ms": 201.2314,
+          "first_body_byte_ms": 201.4307,
+          "full_response_ms": 203.0032,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.478
+        },
+        {
+          "response_headers_ms": 207.3699,
+          "first_body_byte_ms": 207.4898,
+          "full_response_ms": 208.4604,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.44
+        },
+        {
+          "response_headers_ms": 203.3351,
+          "first_body_byte_ms": 203.4439,
+          "full_response_ms": 204.8047,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.567
+        },
+        {
+          "response_headers_ms": 201.2263,
+          "first_body_byte_ms": 201.3452,
+          "full_response_ms": 202.3087,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.525
+        },
+        {
+          "response_headers_ms": 204.7819,
+          "first_body_byte_ms": 204.8486,
+          "full_response_ms": 205.9414,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.019
+        },
+        {
+          "response_headers_ms": 200.5477,
+          "first_body_byte_ms": 200.7681,
+          "full_response_ms": 202.6851,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.812
+        },
+        {
+          "response_headers_ms": 202.0925,
+          "first_body_byte_ms": 202.2107,
+          "full_response_ms": 203.1678,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.091
+        },
+        {
+          "response_headers_ms": 203.3794,
+          "first_body_byte_ms": 203.4948,
+          "full_response_ms": 205.0416,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.819
+        },
+        {
+          "response_headers_ms": 201.5152,
+          "first_body_byte_ms": 201.5944,
+          "full_response_ms": 202.7844,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.788
+        },
+        {
+          "response_headers_ms": 199.4661,
+          "first_body_byte_ms": 199.625,
+          "full_response_ms": 201.1303,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.793
+        },
+        {
+          "response_headers_ms": 204.5996,
+          "first_body_byte_ms": 204.7269,
+          "full_response_ms": 206.1744,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.572
+        },
+        {
+          "response_headers_ms": 194.2162,
+          "first_body_byte_ms": 194.3493,
+          "full_response_ms": 195.5367,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.543
+        },
+        {
+          "response_headers_ms": 202.1845,
+          "first_body_byte_ms": 202.2636,
+          "full_response_ms": 203.4934,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.106
+        },
+        {
+          "response_headers_ms": 199.6189,
+          "first_body_byte_ms": 199.7432,
+          "full_response_ms": 201.1449,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.091
+        },
+        {
+          "response_headers_ms": 202.3733,
+          "first_body_byte_ms": 202.5095,
+          "full_response_ms": 203.8357,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.018
+        },
+        {
+          "response_headers_ms": 200.9737,
+          "first_body_byte_ms": 201.094,
+          "full_response_ms": 202.4201,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.68
+        },
+        {
+          "response_headers_ms": 203.1278,
+          "first_body_byte_ms": 203.2552,
+          "full_response_ms": 204.3243,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.091
+        },
+        {
+          "response_headers_ms": 201.3072,
+          "first_body_byte_ms": 201.3805,
+          "full_response_ms": 202.3352,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.96
+        },
+        {
+          "response_headers_ms": 204.3135,
+          "first_body_byte_ms": 204.4767,
+          "full_response_ms": 205.9014,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.989
+        },
+        {
+          "response_headers_ms": 201.0111,
+          "first_body_byte_ms": 201.0993,
+          "full_response_ms": 202.2397,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.755
+        },
+        {
+          "response_headers_ms": 202.0786,
+          "first_body_byte_ms": 202.206,
+          "full_response_ms": 203.4972,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.859
+        },
+        {
+          "response_headers_ms": 203.5657,
+          "first_body_byte_ms": 203.6344,
+          "full_response_ms": 204.5674,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.555
+        },
+        {
+          "response_headers_ms": 195.4027,
+          "first_body_byte_ms": 195.48,
+          "full_response_ms": 196.4984,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.906
+        },
+        {
+          "response_headers_ms": 205.96,
+          "first_body_byte_ms": 206.0862,
+          "full_response_ms": 207.0624,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.067
+        },
+        {
+          "response_headers_ms": 204.0233,
+          "first_body_byte_ms": 204.2197,
+          "full_response_ms": 205.5345,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.737
+        },
+        {
+          "response_headers_ms": 200.1808,
+          "first_body_byte_ms": 200.3161,
+          "full_response_ms": 201.2405,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.63
+        },
+        {
+          "response_headers_ms": 200.3056,
+          "first_body_byte_ms": 200.499,
+          "full_response_ms": 201.7816,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.631
+        },
+        {
+          "response_headers_ms": 202.1209,
+          "first_body_byte_ms": 202.3205,
+          "full_response_ms": 203.3661,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.784
+        },
+        {
+          "response_headers_ms": 199.9215,
+          "first_body_byte_ms": 200.0473,
+          "full_response_ms": 201.4498,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.888
+        },
+        {
+          "response_headers_ms": 206.0175,
+          "first_body_byte_ms": 206.1425,
+          "full_response_ms": 207.0795,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.904
+        },
+        {
+          "response_headers_ms": 197.3956,
+          "first_body_byte_ms": 197.526,
+          "full_response_ms": 199.2473,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.766
+        },
+        {
+          "response_headers_ms": 201.3504,
+          "first_body_byte_ms": 201.4718,
+          "full_response_ms": 202.7348,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.867
+        },
+        {
+          "response_headers_ms": 200.6679,
+          "first_body_byte_ms": 200.7866,
+          "full_response_ms": 201.7104,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.699
+        },
+        {
+          "response_headers_ms": 199.7063,
+          "first_body_byte_ms": 199.8222,
+          "full_response_ms": 201.3853,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.567
+        },
+        {
+          "response_headers_ms": 201.1194,
+          "first_body_byte_ms": 201.2265,
+          "full_response_ms": 202.5336,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.818
+        },
+        {
+          "response_headers_ms": 200.8822,
+          "first_body_byte_ms": 201.0148,
+          "full_response_ms": 202.0367,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.007
+        },
+        {
+          "response_headers_ms": 203.9529,
+          "first_body_byte_ms": 204.0954,
+          "full_response_ms": 205.3008,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.551
+        },
+        {
+          "response_headers_ms": 271.4977,
+          "first_body_byte_ms": 271.6322,
+          "full_response_ms": 282.5701,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.555
+        },
+        {
+          "response_headers_ms": 201.6501,
+          "first_body_byte_ms": 201.7648,
+          "full_response_ms": 202.6692,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.122
+        },
+        {
+          "response_headers_ms": 204.2923,
+          "first_body_byte_ms": 204.4171,
+          "full_response_ms": 205.2805,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.888
+        },
+        {
+          "response_headers_ms": 203.027,
+          "first_body_byte_ms": 203.1047,
+          "full_response_ms": 204.184,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.645
+        },
+        {
+          "response_headers_ms": 201.7945,
+          "first_body_byte_ms": 202.0555,
+          "full_response_ms": 203.3976,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.896
+        },
+        {
+          "response_headers_ms": 201.0005,
+          "first_body_byte_ms": 201.1445,
+          "full_response_ms": 202.7822,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.096
+        },
+        {
+          "response_headers_ms": 202.0941,
+          "first_body_byte_ms": 202.2187,
+          "full_response_ms": 203.2378,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.789
+        },
+        {
+          "response_headers_ms": 201.9876,
+          "first_body_byte_ms": 202.0621,
+          "full_response_ms": 203.145,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.723
+        },
+        {
+          "response_headers_ms": 206.8315,
+          "first_body_byte_ms": 206.9545,
+          "full_response_ms": 207.8317,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.601
+        },
+        {
+          "response_headers_ms": 201.1863,
+          "first_body_byte_ms": 201.2557,
+          "full_response_ms": 202.3072,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.663
+        },
+        {
+          "response_headers_ms": 207.0557,
+          "first_body_byte_ms": 207.1669,
+          "full_response_ms": 208.4508,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.475
+        },
+        {
+          "response_headers_ms": 200.5918,
+          "first_body_byte_ms": 200.6637,
+          "full_response_ms": 201.6466,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.505
+        },
+        {
+          "response_headers_ms": 200.8696,
+          "first_body_byte_ms": 201.0037,
+          "full_response_ms": 202.0304,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.576
+        },
+        {
+          "response_headers_ms": 192.1086,
+          "first_body_byte_ms": 192.2234,
+          "full_response_ms": 193.7317,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.853
+        },
+        {
+          "response_headers_ms": 193.5149,
+          "first_body_byte_ms": 193.6303,
+          "full_response_ms": 194.5845,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.668
+        },
+        {
+          "response_headers_ms": 199.2404,
+          "first_body_byte_ms": 199.3721,
+          "full_response_ms": 200.649,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.83
+        },
+        {
+          "response_headers_ms": 200.7397,
+          "first_body_byte_ms": 200.8174,
+          "full_response_ms": 202.1044,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.108
+        },
+        {
+          "response_headers_ms": 202.6531,
+          "first_body_byte_ms": 202.8359,
+          "full_response_ms": 203.9311,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.743
+        },
+        {
+          "response_headers_ms": 202.1751,
+          "first_body_byte_ms": 202.3642,
+          "full_response_ms": 203.9429,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.823
+        },
+        {
+          "response_headers_ms": 202.0833,
+          "first_body_byte_ms": 202.2084,
+          "full_response_ms": 203.2832,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.796
+        },
+        {
+          "response_headers_ms": 201.6423,
+          "first_body_byte_ms": 201.7452,
+          "full_response_ms": 202.7885,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.904
+        },
+        {
+          "response_headers_ms": 207.107,
+          "first_body_byte_ms": 207.3184,
+          "full_response_ms": 208.649,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.754
+        },
+        {
+          "response_headers_ms": 202.2876,
+          "first_body_byte_ms": 202.4167,
+          "full_response_ms": 203.4577,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.739
+        },
+        {
+          "response_headers_ms": 200.7946,
+          "first_body_byte_ms": 200.9301,
+          "full_response_ms": 201.9493,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.83
+        },
+        {
+          "response_headers_ms": 196.3844,
+          "first_body_byte_ms": 196.5083,
+          "full_response_ms": 197.7297,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.843
+        },
+        {
+          "response_headers_ms": 202.0599,
+          "first_body_byte_ms": 202.3388,
+          "full_response_ms": 203.704,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.762
+        },
+        {
+          "response_headers_ms": 199.6076,
+          "first_body_byte_ms": 199.6899,
+          "full_response_ms": 200.918,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.577
+        },
+        {
+          "response_headers_ms": 201.8839,
+          "first_body_byte_ms": 202.129,
+          "full_response_ms": 203.8006,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.018
+        },
+        {
+          "response_headers_ms": 192.898,
+          "first_body_byte_ms": 193.1582,
+          "full_response_ms": 194.472,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.037
+        },
+        {
+          "response_headers_ms": 193.3039,
+          "first_body_byte_ms": 193.3988,
+          "full_response_ms": 194.3593,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.042
+        },
+        {
+          "response_headers_ms": 202.13,
+          "first_body_byte_ms": 202.2613,
+          "full_response_ms": 203.5163,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.843
+        },
+        {
+          "response_headers_ms": 195.648,
+          "first_body_byte_ms": 195.779,
+          "full_response_ms": 196.8166,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.077
+        },
+        {
+          "response_headers_ms": 199.0018,
+          "first_body_byte_ms": 199.2697,
+          "full_response_ms": 200.8798,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.901
+        },
+        {
+          "response_headers_ms": 194.0895,
+          "first_body_byte_ms": 194.6197,
+          "full_response_ms": 195.7952,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.979
+        },
+        {
+          "response_headers_ms": 201.8601,
+          "first_body_byte_ms": 202.0022,
+          "full_response_ms": 203.123,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.07
+        },
+        {
+          "response_headers_ms": 203.8212,
+          "first_body_byte_ms": 203.9344,
+          "full_response_ms": 205.331,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.947
+        },
+        {
+          "response_headers_ms": 198.3214,
+          "first_body_byte_ms": 198.474,
+          "full_response_ms": 199.4467,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.094
+        },
+        {
+          "response_headers_ms": 203.1634,
+          "first_body_byte_ms": 203.2834,
+          "full_response_ms": 204.2543,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.146
+        },
+        {
+          "response_headers_ms": 196.8149,
+          "first_body_byte_ms": 197.069,
+          "full_response_ms": 198.6262,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.177
+        },
+        {
+          "response_headers_ms": 201.035,
+          "first_body_byte_ms": 201.1401,
+          "full_response_ms": 202.48,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.078
+        },
+        {
+          "response_headers_ms": 202.502,
+          "first_body_byte_ms": 202.6584,
+          "full_response_ms": 204.4961,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.028
+        }
+      ],
+      "completed_get": [],
+      "other_get": [
+        {
+          "response_headers_ms": 201.751,
+          "first_body_byte_ms": 201.8499,
+          "full_response_ms": 202.9905,
+          "response_bytes": 63,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.107
+        }
+      ],
+      "post_attempted": true,
+      "http_requests_attempted": 130,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 2283.6245,
+        "first_body_byte_ms": 2283.6832,
+        "full_response_ms": 2284.759,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 2284.8783,
+        "client_last_chunk_to_ack_ms": 561.477,
+        "asgi_post_body_acceptance_ms": 18.798
+      },
+      "client_observed_total_ms": 61812.5944
+    }
+  ]
+}

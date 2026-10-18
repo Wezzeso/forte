@@ -1,0 +1,32 @@
+{
+  "schema_version": "forte.qwen38.independent-native-admission-addendum-qa.v1",
+  "captured_at_utc": "2026-10-17T18:30:57.421065+00:00",
+  "exit_code": 0,
+  "test_counts": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_seconds": 2.288,
+  "source_hashes_before": {
+    "benchmarks/performance/qwen38_native_admission_addendum.py": "0df592c2a575bb02695818b9cdb079e24fc2b123634189344a6d3960c86d73a1",
+    "qa/system/test_qwen38_native_admission_addendum.py": "dcbc656194675a541107adab3407391d5e3f08cc22dcf338ecd2aa90da73adc5",
+    "qa/integration/qwen38_native_admission_boundary_test.py": "d28b752aaccc31fd4f882a05cc9aa96822dd999acbd48b0b9170838fe9c7044c",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/protocol.frozen.json": "2b5e22c90040084f694eab9d0dab675c9efdede8c200cdbf985a461160ef9ea3",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/runtime-admission-addendum.frozen.json": "ade38909b0dbfec6987ecd6a7e69fd291bef1f7e592e4565dd8d5c9e2a754670"
+  },
+  "source_hashes_after": {
+    "benchmarks/performance/qwen38_native_admission_addendum.py": "0df592c2a575bb02695818b9cdb079e24fc2b123634189344a6d3960c86d73a1",
+    "qa/system/test_qwen38_native_admission_addendum.py": "dcbc656194675a541107adab3407391d5e3f08cc22dcf338ecd2aa90da73adc5",
+    "qa/integration/qwen38_native_admission_boundary_test.py": "d28b752aaccc31fd4f882a05cc9aa96822dd999acbd48b0b9170838fe9c7044c",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/protocol.frozen.json": "2b5e22c90040084f694eab9d0dab675c9efdede8c200cdbf985a461160ef9ea3",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/runtime-admission-addendum.frozen.json": "ade38909b0dbfec6987ecd6a7e69fd291bef1f7e592e4565dd8d5c9e2a754670"
+  },
+  "changed_during_run": [],
+  "test_log_sha256": "b469e6a5443aa6b6946ad6f1d26b3fcf224546949f7db1379399b4ac09412f84",
+  "scope": "Actual frozen protocol/addendum safe metadata and synthetic state observations only. No runtime observation, source population, output, media, model, GPU, HTTP, service, Docker, release or exposure operation.",
+  "review_fix": "Plan binds actual frozen addendum raw+semantic digests, not self-consistent echoes or replacement timestamp.",
+  "policy": "All three literal true observations required for healthy same runtime; closed/unknown drain stops without inferring process death, retry, restart or reused-ID authority. Original protocol2b5, ranking, six denominator and208caps unchanged.",
+  "remaining_runtime_gate": "Actual dynamic admission/drain proof and A13 integration require separate capture."
+}

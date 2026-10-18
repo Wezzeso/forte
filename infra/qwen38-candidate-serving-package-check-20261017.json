@@ -1,0 +1,40 @@
+{
+  "schema_version": "forte.qwen38.candidate-serving-package-check.v1",
+  "status": "passed",
+  "captured_at_utc": "2026-10-17T14:00:19.962518+00:00",
+  "image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "image_python": "/opt/forte-features/bin/python",
+  "helper_sha256": "d417470a1dcea773771c578435f5eadf8d8e4491a8a5013334e4cee466ae900f",
+  "remote_public_ops_root": "/data/forte-ml/public/qwen38-serving-ops-d417470a1dce",
+  "package_versions": {
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "fastapi": "0.136.3",
+    "uvicorn": "0.54.0",
+    "pillow": "12.3.0",
+    "jsonschema": "4.26.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "exit_code": 0,
+  "network_mode": "none",
+  "runtime": "runc",
+  "device_requests": [],
+  "devices": [],
+  "readonly_rootfs": true,
+  "user": "1000:1000",
+  "mounts": [
+    {
+      "destination": "/ops",
+      "read_only": true
+    }
+  ],
+  "gpu_access": false,
+  "cuda_initialized": false,
+  "private_inputs_mounted": false,
+  "model_weights_mounted": false,
+  "source_tree_mounted": false,
+  "image_mutated": false,
+  "serving_changed": false,
+  "container_removed_after_check": true
+}

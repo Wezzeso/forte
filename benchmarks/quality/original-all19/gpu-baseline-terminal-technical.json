@@ -1,0 +1,33 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "status": "failed",
+      "attempt": 1,
+      "error_code": "insufficient_visible_evidence",
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "failed",
+        "error_code": "insufficient_visible_evidence",
+        "coarse_requests": 2,
+        "refinement_requests": 1,
+        "stages_ms": {
+          "probe_decode": 1723.437971,
+          "rules": 1.465615,
+          "coarse_model": 30392.365979,
+          "refinement": 27093.4589,
+          "frame_preparation": 0.290467
+        },
+        "model_requests": null
+      }
+    }
+  ],
+  "private_handoff_status": "written",
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:52:41.627555+00:00",
+  "scope": "benchmark-owned terminal technical metadata only",
+  "media_or_prediction_or_error_detail_exported": false,
+  "model_inference_called": false
+}

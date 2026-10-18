@@ -1,0 +1,47 @@
+{
+  "schema_version": "forte.qwen38.integration-qa-final.v1",
+  "captured_at_utc": "2026-10-17T14:52:10.359228+00:00",
+  "reports": {
+    "qa/integration/qwen38_cpu_postprocess_final.json": "4ed649ccc07c7bf2f6051949a4ddf74e4b6f33aca9912bc51848a19c010e7ee7",
+    "qa/integration/qwen38_torch_cpu_final.json": "129750fee61cb7ec916b83dc20df56b882190912fe89e7491341f34749c9df85",
+    "qa/integration/qwen38_export_final_verified.json": "f4de1666df75f1917324a7c972b4b6aff89a51c2cec03a61c5f7c2c2d5169e9b",
+    "qa/integration/qwen38_fla_runtime_cpu.json": "83986ba755ce3e338b85481907b6d5ad07cf88d01b5f4a60ffe0b4431e6daa1d",
+    "qa/integration/qwen38_ui_aggregate.json": "9c477158fc1c7a36309743891512b6bf833db5bb965c98e1e02d5707b2da0202",
+    "qa/integration/qwen38_ui_unchanged_audit.json": "e36d755d9b8db0b872a466aabe415d48e74345eef96eb10151d2ba4ac928a0d2"
+  },
+  "verification": {
+    "broad_cpu": "1876 passed,25 skipped,250 subtests; only concurrent coverage exporter/test separately verified",
+    "actual_torch_cpu": "70 passed,19 subtests,no skips,no source changes",
+    "final_export_overlay": "98 passed,1 symlink skip,no source changes",
+    "optional_fla_guards": "18 passed; metadata/CPU only",
+    "browser": "Prior12passed; unchanged source hashes checked, no repeat for backend-only changes"
+  },
+  "counts_are_not_additive": true,
+  "current_selected_source_hashes": {
+    "src/forte/video/sampling.py": "aace82575cd12222ade587a413a2e330f81d277bee7038e11378d9cc25459a9a",
+    "src/forte/events/builder.py": "80c7ca8c9bb31834707fe268d4264b7c418905de3d39f1a3a4303ed480b58249",
+    "src/forte/decision/scopes.py": "0b13e19b4f152d9e3ffc5e751e00e94562e1bb3615a7427e129fb7da67daeeb0",
+    "src/forte/decision/structured.py": "027640c241dc7e7f528e82e5bf9022a33b6d29eb9eed903cdb8484a5b8c87d65",
+    "src/forte/decision/aliasing.py": "4dd6d83f685dd6f1c9f59b89abd75d364fe4a85179600ecd1581b106de6e0045",
+    "training/data.py": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f",
+    "training/silver_balance.py": "c8a560ac4f0e2c42abe93bb64fa08cfe10192de5c0907b6fe0023a127e101ace",
+    "training/qwen38_silver.py": "142f4ca889f3d50b4842b8e3337ceb08eecd83f9d083e12410cc18f120e25c75",
+    "training/qwen38_proof.py": "b807ecdfbbd8c8e3a484285576728453b71eba20f940297795b06e12a6ed72a8",
+    "training/coverage_export.py": "bba0e4871828eb27588bdcbfff5568a23f5a4ab5d218ba981a257fbac5a0390c",
+    "training/silver_combine.py": "cb17cea9a294e8a3098f8ae4f20e6b707d714ba791c15197afb6505710acd7b4",
+    "evaluation/qwen38_pipeline.py": "cd10ac92c0ce051a5cc345d8932b3b0f57e42e38cded6be428be88c8ee1dc40d",
+    "evaluation/qwen38_worker_trace.py": "a59b0d86948079449f0eb46a2aa31766b2de51f3febc0af4d6bf4e11f5a87d2b",
+    "evaluation/qwen38_server_export.py": "f85756809a4d22cb837dbbfff4d341a54f5cc71896f1daa20a9b0617fa9432af",
+    "evaluation/qwen38_quality_family.py": "9f310b793b4c6f07f2956864cc2947a553a102e141d4aaf009ab4328649c15c2",
+    "deploy/package_ml_code.py": "d4586d0a37f779ae18c96cbdf01cda9ceb09dab32318df22978c6084316328fb",
+    "deploy/ml_source_smoke.py": "2e71b807a318522bcec4ffce7acdbf96af1b8cb4b8be268e6f803ecd7221183a"
+  },
+  "qa_gpu_calls": 0,
+  "qa_private_model_calls": 0,
+  "qa_deployment_mutations": 0,
+  "limitations": [
+    "Software/generated-fixture evidence only; actual training/selection/accuracy/semantic timing/public latency/deployment gates remain separate.",
+    "TorchCPU uses2.12.0; actualCUDAtrainingruntime has its own package/kernel receipts.",
+    "Postprocessing overlay hashes are separate from immutable training archive."
+  ]
+}

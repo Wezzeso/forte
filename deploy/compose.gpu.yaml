@@ -1,0 +1,62 @@
+# Merge with compose.yaml; --profile gpu enables this single warm replica.
+services:
+  model:
+    image: ${FORTE_MODEL_IMAGE:-forte-model:vllm-0.31.0}
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.model
+    profiles: [gpu]
+    restart: unless-stopped
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      PYTHONPATH: /app:/app/src
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      VLLM_NO_USAGE_STATS: "1"
+      VLLM_MEDIA_URL_ALLOW_REDIRECTS: "0"
+      VLLM_LOGGING_LEVEL: WARNING
+      TOKENIZERS_PARALLELISM: "false"
+      OMP_NUM_THREADS: "4"
+      HF_HOME: /cache/hf
+      XDG_CACHE_HOME: /cache/xdg
+      TORCHINDUCTOR_CACHE_DIR: /cache/torchinductor
+      TRITON_CACHE_DIR: /cache/triton
+      FLASHINFER_WORKSPACE_BASE: /cache
+      CUDA_CACHE_PATH: /cache/cuda
+      DO_NOT_TRACK: "1"
+    volumes:
+      - type: bind
+        source: ${FORTE_MODEL_SNAPSHOT:?Set the verified absolute local model snapshot path}
+        target: /models/Qwen3-VL-8B-Instruct
+        read_only: true
+        bind: {create_host_path: false}
+      - model_cache:/cache
+    tmpfs:
+      - /tmp:size=2g,nosuid
+      - /run/forte:size=1m,noexec,nosuid
+    networks: [private]
+    shm_size: ${FORTE_MODEL_SHM_SIZE:-2gb}
+    stop_grace_period: 40s
+    healthcheck:
+      test: [CMD, python3, -m, serving.readiness, --config, /app/configs/serving/baseline.json]
+      interval: 10s
+      timeout: 7s
+      start_period: 30m
+      retries: 3
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${FORTE_INFERENCE_GPU_ID:-0}"]
+              capabilities: [gpu]
+    logging:
+      driver: local
+      options: {max-size: 20m, max-file: "3"}
+
+volumes:
+  model_cache: {}

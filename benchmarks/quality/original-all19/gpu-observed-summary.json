@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:00:58.042073+00:00",
+  "scope": "first root-authorized proposed-train baseline and five distinct uploads; no final-check media",
+  "quality_review": "unmeasured; terminal service behavior and lifecycle measurements do not establish reviewed accuracy",
+  "phases": {
+    "baseline": {
+      "status": "observed",
+      "attempted": 1,
+      "completed": 0,
+      "failed": 1,
+      "client_timeouts": 0,
+      "static_error_code_counts": {
+        "insufficient_visible_evidence": 1
+      },
+      "model_request_lifecycle": {
+        "schema_version": "1.0",
+        "generated_at_utc": "2026-10-17T10:52:12.001058+00:00",
+        "status": "measured",
+        "same_metric_process_start_observed": true,
+        "counter_reset_observed": false,
+        "running_and_waiting_zero_at_both_boundaries": true,
+        "exclusive_gpu_window_operator_declared": true,
+        "attributed_to_selected_benchmark": true,
+        "timing_families": {
+          "request_prefill_time_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 2912.128233999738,
+            "server_reported_mean_ms": 970.709411333246,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_decode_time_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 80776.47803400032,
+            "server_reported_mean_ms": 26925.492678000108,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_inference_time_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 83688.60626800006,
+            "server_reported_mean_ms": 27896.202089333354,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_queue_time_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 28.302306000114186,
+            "server_reported_mean_ms": 9.434102000038061,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "time_to_first_token_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 4268.930435180664,
+            "server_reported_mean_ms": 1422.976811726888,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "e2e_request_latency_seconds": {
+            "status": "measured",
+            "request_observations": 3,
+            "server_reported_total_ms": 85042.60396957397,
+            "server_reported_mean_ms": 28347.53465652466,
+            "p50_ms": null,
+            "p95_ms": null
+          }
+        },
+        "invalid_counter_families": [],
+        "scope": "server-reported request lifecycle durations; parallel request sums are not job wall time",
+        "gpu_compute_time": "unmeasured; server prefill/decode metrics are not a GPU profiler",
+        "p50_p95": "unmeasured from sums/counts; no histogram quantiles invented",
+        "durable_job_queue": "separate from model request queue"
+      },
+      "http_artifact": "benchmarks/performance/gpu-baseline.json",
+      "stage_artifact": "benchmarks/performance/gpu-baseline-stages.json",
+      "terminal_artifact": "benchmarks/performance/gpu-baseline-terminal-technical.json"
+    },
+    "burst": {
+      "status": "observed",
+      "attempted": 5,
+      "completed": 1,
+      "failed": 4,
+      "client_timeouts": 0,
+      "static_error_code_counts": {
+        "insufficient_visible_evidence": 1,
+        "none": 1,
+        "deadline_exceeded": 2
+      },
+      "model_request_lifecycle": {
+        "schema_version": "1.0",
+        "generated_at_utc": "2026-10-17T11:00:57.343099+00:00",
+        "status": "measured",
+        "same_metric_process_start_observed": true,
+        "counter_reset_observed": false,
+        "running_and_waiting_zero_at_both_boundaries": true,
+        "exclusive_gpu_window_operator_declared": true,
+        "attributed_to_selected_benchmark": true,
+        "timing_families": {
+          "request_prefill_time_seconds": {
+            "status": "measured",
+            "request_observations": 23,
+            "server_reported_total_ms": 22401.164160999997,
+            "server_reported_mean_ms": 973.9636591739129,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_decode_time_seconds": {
+            "status": "measured",
+            "request_observations": 23,
+            "server_reported_total_ms": 629779.9738060008,
+            "server_reported_mean_ms": 27381.737991565253,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_inference_time_seconds": {
+            "status": "measured",
+            "request_observations": 23,
+            "server_reported_total_ms": 652181.1379670007,
+            "server_reported_mean_ms": 28355.70165073916,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "request_queue_time_seconds": {
+            "status": "measured",
+            "request_observations": 23,
+            "server_reported_total_ms": 1.81174200042733,
+            "server_reported_mean_ms": 0.07877139132292739,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "time_to_first_token_seconds": {
+            "status": "measured",
+            "request_observations": 25,
+            "server_reported_total_ms": 29912.538051605225,
+            "server_reported_mean_ms": 1196.501522064209,
+            "p50_ms": null,
+            "p95_ms": null
+          },
+          "e2e_request_latency_seconds": {
+            "status": "measured",
+            "request_observations": 23,
+            "server_reported_total_ms": 657450.7803916931,
+            "server_reported_mean_ms": 28584.816538769264,
+            "p50_ms": null,
+            "p95_ms": null
+          }
+        },
+        "invalid_counter_families": [],
+        "scope": "server-reported request lifecycle durations; parallel request sums are not job wall time",
+        "gpu_compute_time": "unmeasured; server prefill/decode metrics are not a GPU profiler",
+        "p50_p95": "unmeasured from sums/counts; no histogram quantiles invented",
+        "durable_job_queue": "separate from model request queue"
+      },
+      "http_artifact": "benchmarks/performance/gpu-burst.json",
+      "stage_artifact": "benchmarks/performance/gpu-burst-stages.json",
+      "terminal_artifact": "benchmarks/performance/gpu-burst-terminal-technical.json"
+    }
+  },
+  "total": {
+    "attempted": 6,
+    "completed": 1,
+    "failed_or_client_timeout": 5,
+    "client_outcome_counts": {
+      "failed": 5,
+      "completed": 1
+    },
+    "observed_durable_status_counts": {
+      "failed": 4,
+      "done": 1
+    },
+    "static_error_code_counts": {
+      "insufficient_visible_evidence": 2,
+      "none": 1,
+      "deadline_exceeded": 2
+    },
+    "terminal_state_verified_count": 5
+  },
+  "client_terminal_elapsed_ms_failure_inclusive": {
+    "count": 6,
+    "p50_ms": 234554.88754999998,
+    "p95_ms": null,
+    "max_ms": 287740.0404,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "client_upload_start_to_completed_full_result_ms": {
+    "count": 1,
+    "p50_ms": 240214.5087,
+    "p95_ms": null,
+    "max_ms": 240214.5087,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "client_total_post_ms_including_upload": {
+    "count": 5,
+    "p50_ms": 8741.1987,
+    "p95_ms": null,
+    "max_ms": 16386.8625,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "asgi_after_body_durable_acceptance_ms": {
+    "count": 5,
+    "p50_ms": 18.798,
+    "p95_ms": null,
+    "max_ms": 35.785,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "processing_get_asgi_lookup_ms": {
+    "count": 2233,
+    "p50_ms": 1.727,
+    "p95_ms": 3.662,
+    "max_ms": 10.894,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "processing_get_client_full_transfer_ms": {
+    "count": 2233,
+    "p50_ms": 201.6997,
+    "p95_ms": 299.7205,
+    "max_ms": 686.5429,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "completed_get_asgi_lookup_ms": {
+    "count": 21,
+    "p50_ms": 2.118,
+    "p95_ms": 3.282,
+    "max_ms": 4.752,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "completed_get_client_full_transfer_ms": {
+    "count": 21,
+    "p50_ms": 199.2426,
+    "p95_ms": 203.8273,
+    "max_ms": 321.1129,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "lookup_sampling_note": "repeated polls of these same jobs; request distribution is not independent job throughput or population p95",
+  "stage_duration_ms_failure_inclusive": {
+    "analysis": {
+      "count": 5,
+      "p50_ms": 230702.602683,
+      "p95_ms": null,
+      "max_ms": 273277.220874,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "coarse_model": {
+      "count": 3,
+      "p50_ms": 134451.426186,
+      "p95_ms": null,
+      "max_ms": 228432.899656,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "evidence": {
+      "count": 1,
+      "p50_ms": 2.086031,
+      "p95_ms": null,
+      "max_ms": 2.086031,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "frame_preparation": {
+      "count": 3,
+      "p50_ms": 0.423837,
+      "p95_ms": null,
+      "max_ms": 0.514111,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "probe_decode": {
+      "count": 3,
+      "p50_ms": 1873.557935,
+      "p95_ms": null,
+      "max_ms": 2187.582486,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "publication": {
+      "count": 1,
+      "p50_ms": 8.745518,
+      "p95_ms": null,
+      "max_ms": 8.745518,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "refinement": {
+      "count": 2,
+      "p50_ms": 54084.680886,
+      "p95_ms": null,
+      "max_ms": 81075.902872,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    },
+    "rules": {
+      "count": 3,
+      "p50_ms": 1.532748,
+      "p95_ms": null,
+      "max_ms": 1.633441,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+    }
+  },
+  "planning_stage_budgets_ms": {
+    "queue": 5000,
+    "probe_decode_and_preparation": 10000,
+    "coarse_model": 40000,
+    "refinement": 25000,
+    "rules_evidence_publication": 5000,
+    "margin": 5000
+  },
+  "budget_note": "planning references only; absent publication/evidence on failed jobs is unmeasured, not zero",
+  "success_targets": {
+    "completed_video_latency_p95": "unmeasured; fewer than 20 completed video observations",
+    "full_145_second_video_p95": "unmeasured; selected train maximum is not a dedicated 145-second study",
+    "five_upload_complete_success": "missed"
+  },
+  "measurement_boundaries": {
+    "T0_proxy": "unmeasured",
+    "T1_to_T2": "ASGI-local monotonic after final received request body to durable accepted job",
+    "queue": "same-host UTC accepted_at to first claimed; dispatch after claim excluded",
+    "worker_stages": "worker/pipeline local monotonic elapsed; overlapping timers are not summed",
+    "T5_client": "completed full JSON observed by client, includes network and polling interval",
+    "prefill_decode": "actual server lifecycle counters, overlapping request sums; GPU-profiler compute unmeasured"
+  },
+  "privacy": "no source paths, hashes, provided labels, predictions, evidence, captions, or media exported"
+}

@@ -1,0 +1,49 @@
+# Public training, independent evaluation and measured speed work
+
+18 October 2026. Target: 100% correct observed verdicts and zero observed false alarms on a preregistered test suite. This is an acceptance target; finite testing cannot guarantee correct decisions on every future recording. No organizer footage, labels or new 40-video benchmark was accessed for this work. The deployed runtime was not changed.
+
+The supplied 40 videos have already informed development and configuration selection. They are **exposed development regressions only**, permanently; they cannot become an untouched test set by renaming a split or replaying stored predictions. Training on public data does not remove that earlier exposure.
+
+Use this protocol before further public-data training:
+
+1. **Register provenance before extraction.** Record the publisher URL, dataset/version, source archive and file SHA256, license and attribution, original recording/session/camera identifiers, annotation provenance, and every derived clip/crop. A public filename or published random split does not establish independence. Missing capture lineage remains an explicit limitation.
+2. **Group before splitting.** Build connected components from identical bytes, the same original recording, adjacent/overlapping clips, capture sessions/scenario setups, and derived crops, flips, resized images and re-encodes. Synthetic scenes share a component with their source assets and generation family. Use temporally aligned perceptual hashes plus embedding retrieval to propose near-duplicates; confirm proposed matches independently of model scores. Fix similarity thresholds on public development material. Quarantine unresolved overlap instead of treating it as independent data.
+3. **Exclude evaluation overlap.** Compare public acquisition against the existing organizer/test content-digest and provenance registry without consulting its labels. Any exact or confirmed near-duplicate and its whole component is excluded from training and calibration. Without reference media or adequate capture identifiers, do not claim that all near-overlap has been ruled out. Pretraining contamination is generally unknown; newly owned recordings from a previously unseen camera/session provide stronger independent evidence.
+4. **Lock train, development and holdout components.** Assign one seeded split after grouping review. Reserve an untouched camera/session holdout, with adequate positive and negative support for each proposed type. Extract frames and generate augmentations only after assignment; descendants inherit their parent's split. Keep correlated transformations as robustness probes, not additional independent test videos. Use public auxiliary object datasets for object pretraining; they do not supply bank-procedure violation labels.
+5. **Freeze the experiment.** Hash split membership, exclusions, annotation versions, code, image/model/checkpoint, effective analyzer policy, prompts, output schemas, thresholds, preprocessing, hardware/runtime and seeds. Give the trainer only train/development mounts. Holdout labels stay inaccessible to model/threshold selection. Record every attempted configuration, including failed runs; select a candidate before opening holdout results.
+6. **Run one independent acceptance evaluation.** Score every expected video; missing jobs, model errors and invalid responses remain failures. Measure video verdict, per-type precision/recall, one-to-one event matching and a preregistered time tolerance. Unknown/abstained positive events remain misses. Report denominator/support and worst camera/session results. If holdout results drive another change, retire that set to regression and obtain a fresh holdout. For cross-validation, train and tune separately inside every outer source-group fold; fixed-model cached replay is not cross-validation.
+
+Thresholds are selected on development data only. Zero false alarms and recall improvement are both required before enabling a type. Object-class approval does not establish whole-video accuracy. Legal/observable violation labels need independent human adjudication; a disagreement cannot be resolved by picking the label the model already predicted.
+
+Small clean sets cannot substantiate a tiny deployment false-alarm rate. With independent representative trials and zero observed failures, the one-sided 95% binomial limits are `FPR_upper = 1 - 0.05^(1/n_clean)` and `accuracy_lower = 0.05^(1/n)`. Zero false alarms on 19 clean videos permits an upper FPR of 14.59%; even 40/40 gives an accuracy lower bound of 92.78%. Zero errors across 299 independent clean videos supports FPR below 1%, and 59 independent positive videos per type supports recall above 95%, each at one-sided 95% confidence. Correlated clips reduce effective support; these counts are planning figures, not guarantees.
+
+Existing measurements identify model work and queueing as the speed priority. The six-video isolated stage report records:
+
+| Stage | Median seconds | Maximum seconds |
+| --- | ---: | ---: |
+| Decode | 3.073 | 6.968 |
+| Layout request | 35.502 | 50.238 |
+| State requests after layout | 37.299 | 46.136 |
+| Entire analyzer | 66.755 | 107.253 |
+
+Two videos needed verification, taking 15.291 and 20.990 seconds. Upload-to-result maximum was 137.990 seconds, with at most four active leases. The recorded `states` timer is cumulative from analysis start; subtract layout to obtain state-only time. These overlapping wall times are not GPU kernel profiles. Source: `benchmarks/quality/accuracy-upgrade-stage-20261018.json`; no new inference was performed.
+
+The code already decodes once and submits independent frame/crop questions concurrently. Reducing resolution, removing questions, combining crops into one question, detector-first screening, quantization, or changing the model can change decisions and needs a new independent accuracy experiment. Request scheduling can also change outputs despite `seed=0`; vLLM does not promise default reproducibility, and its guarantees remain tied to hardware/version. [vLLM 0.31 reproducibility](https://docs.vllm.ai/en/v0.31.0/usage/reproducibility/).
+
+The installed vLLM 0.31.0 was the latest official release checked on 18 October; a blind upgrade is not an optimization. First collect aggregate model queue, prefill, decode, TTFT, KV preemptions, prefix-hit and multimodal-cache-hit metrics, plus client crop/JPEG CPU time and event-loop delay, using separate public development workloads. Do not log pixels, prompts, identities or evidence. [Official release](https://github.com/vllm-project/vllm/releases/tag/v0.31.0), [production metrics](https://docs.vllm.ai/en/v0.31.0/usage/metrics/).
+
+Then test one change at a time in isolation. Prioritize CPU-thread contention and CPU input processing if measured; otherwise tune client concurrency versus the live server's 48 model sequences and its prefill budget. Compare warm/cold and unique/repeated input workloads. The official Qwen3-VL recipe discusses asynchronous scheduling, image-only inference, `OMP_NUM_THREADS=1`, and disabling processor caching for mostly unique inputs. Multi-GPU encoder/IPC settings are not a demonstrated benefit for one A100. New fastokens support is a candidate only for measured tokenizer-bound work. Prefix caching accelerates shared-prefix prefill, not generation; this application's image-first questions share limited leading text, so repeated instructions alone do not imply a tenfold gain. [Qwen3-VL recipe](https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3-VL.html), [vLLM optimization guide](https://docs.vllm.ai/en/v0.31.0/configuration/optimization/), [prefix caching](https://docs.vllm.ai/en/v0.31.0/features/automatic_prefix_caching/).
+
+An isolated CPU memoization candidate is implemented in `evaluation/codec_cache_candidate.py`; it is not connected to serving. It retains every logical image request, caches only immutable JPEG strings, keys on exact RGB pixels/dimensions/encoder options, returns fresh dictionaries, separates quality 88 from 90, and bounds cached payload to 32 MiB/64 entries per instance. Instances are scoped to one video/workload and must be cleared at its end. Active images and Python object overhead need additional RAM. Tests cover pixel mutation, cross-instance isolation, LRU eviction and byte equality.
+
+Three SHA-verified author training samples from [Kazakhstan Banknotes with Annotations v1](https://data.mendeley.com/datasets/dny3dgvvw8/1), by Ualikhan Sadyk and Akgul Bozshina under CC BY 4.0, supplied an independent public codec fixture. Samples came from ZIP-CRC-checked HTTP ranges; full archive verification was still pending. Codec preparation converted samples to RGB; the geometry probe resized them to 464×848 and used production crop expansion/encoding recipes with synthetic overlapping windows. These transformations are for codec conformance, not bank-action labels or a claim about real video hit rate.
+
+Seven alternating-order rounds produced byte-identical ordered image parts in all probes:
+
+| Public CPU probe | Parts | Cache hits | Baseline median | Candidate median | Ratio |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Repeated same images | 24 | 21 | 367.1 ms | 147.2 ms | 2.49× |
+| Unique inputs | 3 | 0 | 45.7 ms | 58.0 ms | 0.79× |
+| Analysis-style crop/window geometry | 29 | 3 | 143.5 ms | 153.8 ms | 0.93× |
+
+Source: `benchmarks/quality/accuracy-public-codec-cache-20261018.json`, which binds public-input, reference-encoder and candidate hashes. The representative geometry did **not** improve CPU time; the candidate therefore stays disconnected. Repeated-image speed does not establish faster video analysis or unchanged live scheduling. No model calls, private video processing, new 40-video evaluation or deployed configuration changes occurred.

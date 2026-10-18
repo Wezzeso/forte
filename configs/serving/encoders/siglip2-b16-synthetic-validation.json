@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-10-17T11:46:40.755020+00:00",
+  "synthetic_only": true,
+  "private_media_opened": false,
+  "encoder_only": true,
+  "upload_decode_head_evidence_measured": false,
+  "event_accuracy_measured": false,
+  "selected_for_production": false,
+  "verification": {
+    "verified": true,
+    "artifact_kind": "image_encoder",
+    "candidate": true,
+    "model_id": "google/siglip2-base-patch16-256",
+    "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "license": "apache-2.0",
+    "files_verified": 4,
+    "bytes_verified": 1500989269,
+    "manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+    "local_inference_verified": false,
+    "selected_for_production": false,
+    "local_model_loaded": true,
+    "model_class": "SiglipVisionModel",
+    "processor_class": "SiglipImageProcessor",
+    "encoder_recipe_sha256": "e4f6993ecd22988450b90d37dcbb03708636cbc17f9dd74756397161a6086293",
+    "packages": {
+      "torch": "2.13.0+cu129",
+      "torchvision": "0.28.0+cu129",
+      "transformers": "5.17.0",
+      "pillow": "12.3.0",
+      "numpy": "2.2.6"
+    },
+    "ignored_text_tower_keys": 200,
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "gpu_compute_capability": [
+      8,
+      0
+    ]
+  },
+  "encoder_recipe": {
+    "schema_version": "forte.encoder-recipe.v1",
+    "encoder_manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+    "model_id": "google/siglip2-base-patch16-256",
+    "model_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "processor_config_sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff",
+    "model_class": "SiglipVisionModel",
+    "processor_class": "SiglipImageProcessor",
+    "processor_backend": "torchvision_cpu",
+    "packages": {
+      "torch": "2.13.0+cu129",
+      "torchvision": "0.28.0+cu129",
+      "transformers": "5.17.0",
+      "pillow": "12.3.0",
+      "numpy": "2.2.6"
+    },
+    "input_layout": "BHWC",
+    "input_dtype": "uint8",
+    "input_color": "RGB",
+    "preprocessing_mode": "official_processor",
+    "input_transform_sha256": null,
+    "processor_do_resize": true,
+    "processor_target_size": [
+      256,
+      256
+    ],
+    "resample_pil_enum": 2,
+    "rescale_factor": 0.00392156862745098,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "attention": "sdpa",
+    "model_dtype": "bfloat16",
+    "inference_mode": true,
+    "feature_kind": "pooler_output",
+    "feature_dim": 768,
+    "l2_normalization": false,
+    "output_layout": "BD",
+    "output_dtype": "float16"
+  },
+  "encoder_recipe_sha256": "e4f6993ecd22988450b90d37dcbb03708636cbc17f9dd74756397161a6086293",
+  "load_and_full_verification_sec": 11.967141692000041,
+  "warmup_batches": 2,
+  "batch_size": 32,
+  "input_shape": [
+    "batch",
+    256,
+    256,
+    3
+  ],
+  "output_shape": [
+    "batch",
+    768
+  ],
+  "trials": [
+    {
+      "frames": 4273,
+      "batches": 134,
+      "wall_sec": 7.6385362709997935,
+      "frames_per_second": 559.4003678718823,
+      "synthetic_generation_sec": 2.562216577995059,
+      "preprocessing_sec": 2.5906880080065093,
+      "h2d_forward_d2h_sec": 2.172076772007131,
+      "cuda_forward_sec": 1.8608751678466788,
+      "memory_before": {
+        "device_free_bytes": 9876733952,
+        "device_total_bytes": 85097971712,
+        "process_allocated_bytes": 202639872,
+        "process_reserved_bytes": 413138944,
+        "process_peak_allocated_bytes": 202639872,
+        "process_peak_reserved_bytes": 413138944
+      },
+      "memory_after": {
+        "device_free_bytes": 9876733952,
+        "device_total_bytes": 85097971712,
+        "process_allocated_bytes": 202639872,
+        "process_reserved_bytes": 413138944,
+        "process_peak_allocated_bytes": 366217728,
+        "process_peak_reserved_bytes": 413138944
+      },
+      "all_output_shapes_and_finite_values_validated": true
+    }
+  ]
+}

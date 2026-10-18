@@ -1,0 +1,9 @@
+{
+  "schema_version": "forte.specialists.evaluate.v1",
+  "dataset_dir": "training/private/specialists/dataset",
+  "expected_dataset_lock_sha256": "REPLACE_WITH_PREPARE_OUTPUT_SHA256",
+  "run": "training/private/specialists/run/run.json",
+  "expected_run_sha256": "REPLACE_WITH_TRAIN_OUTPUT_SHA256",
+  "output_dir": "training/private/specialists/evaluation",
+  "device": "cuda"
+}

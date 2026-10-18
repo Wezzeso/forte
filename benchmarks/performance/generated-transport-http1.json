@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:24:41.990686+00:00",
+  "scope": "transport-only generated invalid MOV; one upload per selected mode and authenticated team origin",
+  "origins": {
+    "public": "https://hackathon.wezeso.me"
+  },
+  "route_checks": {
+    "public": {
+      "missing_key_http_status": 401,
+      "authenticated_http_status": 404,
+      "authenticated_routing_supported": true
+    }
+  },
+  "conditions": {
+    "request_phase_timeouts_sec": 60,
+    "post_absolute_deadline_sec": 180,
+    "diagnostic_condition_label": "upstream-http1",
+    "requested_modes": "normal",
+    "paced_bytes_per_second": 524288,
+    "sequential_uploads": true,
+    "configuration_changed_by_this_client": false,
+    "private_media_used": false,
+    "configuration_change_provenance": "any separately authorized edge change requires deployment-owner evidence; condition label alone is not verification",
+    "model_inference_requested": false,
+    "novel_video_performance_claim": false
+  },
+  "measurement_note": "client monotonic iterator yields and response observations; yielded bytes do not prove socket delivery or server receipt; proxy T0 unmeasured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "origin": "public",
+      "mode": "normal",
+      "input_bytes": 28718927,
+      "fixture_locally_verified_invalid": true,
+      "outcome": "transport_failure",
+      "http_status": null,
+      "terminal_state": "unmeasured",
+      "terminal_failed_without_verdict": false,
+      "transport_diagnostic": {
+        "exception_chain": [
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "unrecognized_exception_type"
+          },
+          {
+            "type": "ConnectionResetError",
+            "errno": 22
+          },
+          {
+            "type": "OSError",
+            "errno": 22
+          }
+        ],
+        "messages_exported": false
+      },
+      "client_observed_total_ms": 31825.7493,
+      "upload_iterator": {
+        "multipart_bytes_yielded": 15728783,
+        "file_bytes_yielded": 15728640,
+        "expected_multipart_bytes": 28719116,
+        "first_multipart_chunk_ms": 1.7588,
+        "last_multipart_chunk_ms": 31823.3085,
+        "first_file_chunk_ms": 2.2286,
+        "last_observed_file_chunk_ms": 31823.3085,
+        "final_multipart_chunk_ms": null,
+        "multipart_footer_yielded": false,
+        "pace_bytes_per_second": null,
+        "semantics": "iterator handed bytes to transport; not proof of socket write or server receipt"
+      },
+      "client_post_attempt_elapsed_ms": 31825.7493
+    }
+  ],
+  "summary": {
+    "attempted": 1,
+    "accepted": 0,
+    "transport_failures": 1,
+    "terminal_failed_without_verdict": 0
+  },
+  "limits": [
+    "Generated corrupt media cannot establish valid-video or model capacity.",
+    "One observation per condition is not a percentile or a concurrency study.",
+    "A failure not reproduced in this sequential experiment does not explain the original concurrent failure.",
+    "Response header time is a client observation; an earlier response buffered while the request body streamed cannot be excluded."
+  ]
+}

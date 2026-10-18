@@ -1,0 +1,133 @@
+{
+  "schema_version": "forte.qwen38.optional-kernel-public-metadata.v1",
+  "captured_at_utc": "2026-10-17T14:41:42.382519+00:00",
+  "gpu_calls": 0,
+  "private_input_used": false,
+  "installation_performed": false,
+  "packages": {
+    "flash-linear-attention": {
+      "version": "0.5.2",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "fla-core==0.5.2",
+        "transformers>=4.45.0",
+        "fla-core[cuda]==0.5.2; extra == \"cuda\"",
+        "fla-core[rocm]==0.5.2; extra == \"rocm\"",
+        "fla-core[xpu]==0.5.2; extra == \"xpu\"",
+        "fla-core[npu]==0.5.2; extra == \"npu\"",
+        "fla-core[cpu]==0.5.2; extra == \"cpu\"",
+        "tilelang>=0.1.9; extra == \"tilelang\"",
+        "causal-conv1d>=1.4.0; extra == \"conv1d\"",
+        "matplotlib; extra == \"benchmark\"",
+        "pandas; extra == \"benchmark\"",
+        "datasets>=3.3.0; extra == \"benchmark\"",
+        "pytest; extra == \"test\"",
+        "pytest-xdist; extra == \"test\""
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/fla-org/flash-linear-attention",
+        "Repository": "https://github.com/fla-org/flash-linear-attention"
+      },
+      "artifacts": [
+        {
+          "filename": "flash_linear_attention-0.5.2-py3-none-any.whl",
+          "size": 399590,
+          "sha256": "dcf405d81f5426393b59037097aa700d0f4a841465d5028d5aa543f4502f2400",
+          "url": "https://files.pythonhosted.org/packages/90/d2/2070e3cf2148c5cce99ca4876633c4b7b89ec085323600bd3d47aeacd306/flash_linear_attention-0.5.2-py3-none-any.whl",
+          "packagetype": "bdist_wheel"
+        },
+        {
+          "filename": "flash_linear_attention-0.5.2.tar.gz",
+          "size": 208110,
+          "sha256": "c053d3a75c8f5b725063f719ae6bce0f4d9dac6da32735be8ae7d485a6c9820f",
+          "url": "https://files.pythonhosted.org/packages/d2/76/c180949eae5161b9fcf4c928cab52f0c257ce84c1a59b4462b1d2b6e5883/flash_linear_attention-0.5.2.tar.gz",
+          "packagetype": "sdist"
+        }
+      ],
+      "wheel_verified_locally": true,
+      "native_extension_artifact_count": 0,
+      "gated_delta_source_files": [],
+      "python_source_file_count": 149,
+      "import_or_kernel_execution_performed": false
+    },
+    "fla-core": {
+      "version": "0.5.2",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "einops",
+        "torch>=2.7.0; extra == \"cuda\"",
+        "triton>=3.3; extra == \"cuda\"",
+        "torch>=2.7.0; extra == \"rocm\"",
+        "torch>=2.7.0; extra == \"xpu\"",
+        "torch==2.7.1; extra == \"npu\"",
+        "torch_npu==2.7.1.post4; extra == \"npu\"",
+        "torchvision==0.22.1; extra == \"npu\"",
+        "triton-ascend==3.2.1; extra == \"npu\"",
+        "torch>=2.7.0; extra == \"cpu\"",
+        "triton>=3.3; extra == \"cpu\""
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/fla-org/flash-linear-attention",
+        "Repository": "https://github.com/fla-org/flash-linear-attention"
+      },
+      "artifacts": [
+        {
+          "filename": "fla_core-0.5.2-py3-none-any.whl",
+          "size": 819225,
+          "sha256": "5e830c85bad3d0d34677f98ac7074d08687a3756f0f0499d95ceb96eb6920761",
+          "url": "https://files.pythonhosted.org/packages/2d/ed/dfe19c4da779957eb6a42a26812f9b4e2280bf757a17a71933ff59ffcb98/fla_core-0.5.2-py3-none-any.whl",
+          "packagetype": "bdist_wheel"
+        },
+        {
+          "filename": "fla_core-0.5.2.tar.gz",
+          "size": 587835,
+          "sha256": "9360fc412f784c1c8f05c320ec2902d5d968764178c9b8a92efc919e17a39680",
+          "url": "https://files.pythonhosted.org/packages/94/85/20bdc0fbbbaeec27b5b198e0dbbbc51161a267066a4aebd9e4b413637c6c/fla_core-0.5.2.tar.gz",
+          "packagetype": "sdist"
+        }
+      ],
+      "wheel_verified_locally": true,
+      "native_extension_artifact_count": 0,
+      "gated_delta_source_files": [
+        "fla/ops/gated_delta_rule/__init__.py",
+        "fla/ops/gated_delta_rule/chunk.py",
+        "fla/ops/gated_delta_rule/chunk_fwd.py",
+        "fla/ops/gated_delta_rule/fused_recurrent.py",
+        "fla/ops/gated_delta_rule/gate.py",
+        "fla/ops/gated_delta_rule/naive.py",
+        "fla/ops/gated_delta_rule/wy_fast.py",
+        "fla/ops/gated_delta_rule/backends/__init__.py",
+        "fla/ops/gated_delta_rule/backends/flash_qla.py",
+        "fla/ops/gated_delta_rule/backends/triton_ascend/__init__.py",
+        "fla/ops/gated_delta_rule/backends/triton_ascend/chunk_fwd.py",
+        "fla/ops/gated_delta_rule/backends/triton_ascend/gate.py",
+        "fla/ops/gated_delta_rule/backends/triton_ascend/wy_fast.py"
+      ],
+      "python_source_file_count": 314,
+      "import_or_kernel_execution_performed": false
+    },
+    "causal-conv1d": {
+      "version": "1.7.0",
+      "requires_python": ">=3.9",
+      "requires_dist": [
+        "torch",
+        "packaging",
+        "ninja"
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/Dao-AILab/causal-conv1d"
+      },
+      "artifacts": [
+        {
+          "filename": "causal_conv1d-1.7.0.tar.gz",
+          "size": 30328,
+          "sha256": "3202758494eaa7b597ce1c282dfa188889506bfcb92cad3c407d26736bfcd32b",
+          "url": "https://files.pythonhosted.org/packages/f4/d1/eba27735f31bd5527d39a3c7f693e6ded7b844cab275db719a15ad37b6cd/causal_conv1d-1.7.0.tar.gz",
+          "packagetype": "sdist"
+        }
+      ]
+    }
+  },
+  "assessment": "Official FLA0.5.2 and fla-core0.5.2 ship universal Python/Triton wheels, not precompiled native extensions; exact wheels staged and hashed locally only. Metadata CUDA extra requires Torch>=2.7 and Triton>=3.3, which installed2.13/3.7.1 meet numerically. Actual import, gated-delta outputs/gradients, SM80/SM90 compilation, performance, determinism and unchanged parameter proof are unverified. causal-conv1d1.7.0 PyPI supplies source only; no build/install attempted.",
+  "transformers517_integration": "Pinned transformers integrations/hub_kernels.py use_kernel_func_from_hub_with_fallback prioritizes explicitly enabled hub kernels, then importable original fla/causal_conv1d package, then Torch fallback. Correct packages could alter actual path automatically on new import, so image/kernel identity and numerical tests must be rebound."
+}

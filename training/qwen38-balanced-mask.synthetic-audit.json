@@ -1,0 +1,43 @@
+{
+  "schema_version": "forte.qwen38-balanced-mask-synthetic-audit.v1",
+  "captured_at": "2026-10-17T14:10:47.726815+00:00",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "fixture": "generated_rgb_images_and_synthetic_facts_only",
+  "tests_passed": 25,
+  "tests_skipped": 0,
+  "media_formats_verified": [
+    "image_sequence",
+    "video"
+  ],
+  "opt_in_api": "SilverCompletionCollator.collate_with_fact_spans(rows)",
+  "checks": [
+    "default_batch_unchanged",
+    "exact_template_tokenizer_processor_alignment",
+    "all_supervised_tokens_assigned_once",
+    "unknown_conflict_prompt_visual_padding_candidates_zero_loss",
+    "fact_mass_unchanged_by_long_64_character_source_ids",
+    "overlapping_loss_spans_rejected"
+  ],
+  "private_sources_opened": false,
+  "model_weights_opened": false,
+  "model_forward_executed": false,
+  "optimizer_steps": 0,
+  "cuda_initialized": false,
+  "packages": {
+    "torch": "2.12.0",
+    "transformers": "5.17.0",
+    "numpy": "2.4.2",
+    "pillow": "12.3.0"
+  },
+  "artifact_sha256": {
+    "training/data.py": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f",
+    "training/test_data_masks.py": "8abfe31bf37b70e6325d26657af05c1e60d13684c4bc8ab10be080b7a9a59ba7",
+    "training/silver_balance.py": "c8a560ac4f0e2c42abe93bb64fa08cfe10192de5c0907b6fe0023a127e101ace",
+    "configs/serving/qwen38/public-snapshot/chat_template.jinja": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+    "configs/serving/qwen38/public-snapshot/tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+  },
+  "limitations": [
+    "Processor/token weighting checks do not demonstrate GPU compatibility, a model update, or quality."
+  ]
+}

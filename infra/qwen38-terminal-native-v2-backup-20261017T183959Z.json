@@ -1,0 +1,78 @@
+{
+  "account_or_rental_changes": false,
+  "active_cpu_new_preparation_runtime_outputs_logs_excluded": true,
+  "active_retry_and_quality_outputs_excluded": true,
+  "archive": {
+    "bytes": 513114,
+    "name": "terminal-experiments.tar.gz",
+    "sha256": "b324265abfa5f6cfbc385ccccebfb95c35f3f4b6ad55aa6f2920742fa15acb44"
+  },
+  "archive_count": 2,
+  "binary_exact_local_exports_matching_original_manifest": 54,
+  "created_at_utc": "2026-10-17T18:39:59.884436+00:00",
+  "database_changes": false,
+  "directory": "/data/forte-backups/qwen38-terminal-native-v2-20261017T183959Z-b05bb55d",
+  "duplicate_base_model_and_adapter_payload_excluded": true,
+  "exact_member_hashes_verified": true,
+  "gpu_model_calls": 0,
+  "gpu_service_database_account_changes": false,
+  "local_exact_member_hashes_verified": true,
+  "local_proof_exact_member_hashes_verified": true,
+  "local_proof_source_bytes": 124044,
+  "local_proof_source_file_count": 59,
+  "local_proofs_archive": {
+    "bytes": 24501,
+    "name": "local-native-v2-binary-exports-and-seal.tar.gz",
+    "sha256": "9ecb601cdc8d17c21a33aea6f5727bd21a0059cf80b58fd209049522265d7b90"
+  },
+  "native_v2_container_id": "40cca8906b0dbe0c074e87d955aa9eb095f5f397acde0511c73098a4954a95e5",
+  "native_v2_generated_conditions_passed": 6,
+  "native_v2_original_manifest_members_verified": 59,
+  "native_v2_result_file_count": 75,
+  "native_v2_result_raw_bytes": 934696,
+  "native_v2_terminal_state": {
+    "ExitCode": 0,
+    "FinishedAt": "2026-10-17T18:31:17.930196621Z",
+    "OOMKilled": false,
+    "Pid": 0,
+    "Running": false,
+    "StartedAt": "2026-10-17T18:22:55.105223343Z"
+  },
+  "onhost_snapshot_retained": true,
+  "private_content_printed": false,
+  "private_manifest_sha256": "5b240fee5d329e0ef5b1a98d5f3aa401e3d3992fa53e3b477ddd3208ddda2141",
+  "proof_scope": "Six public generated contract conditions",
+  "protected_local_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-terminal-native-v2-20261017T183959Z-b05bb55d",
+  "protected_local_transfer_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T18:40:44.696353+00:00",
+  "protected_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "schema_version": "forte.private-terminal-experiment-increment.v1",
+  "scope": "Sealed nativeV2 complete original results/logs/staticOPS/rootrelease+launch; small terminal trainedclaim and frozen A14 untuned diagnosis supplement; active CPUnewprep/runtime outputs and duplicate baseweights excluded",
+  "service_changes": false,
+  "small_terminal_accounting_supplements": {
+    "exact_trained_claim_preserved": true,
+    "frozen_untuned_a14_diagnosis_preserved_protected_only": true
+  },
+  "source_bytes": 1304053,
+  "source_file_count": 88,
+  "source_unchanged_verified": true,
+  "stdout_stderr_match_terminal_receipt": true,
+  "stop_schedule_changed": false,
+  "terminal_identity_checks": {
+    "/data/forte-ml/private/quality-27b-a13-claims/4d0bea440e2f378c5166753f4cda66814e9d05ea4de3a2c3c237430599c0b5d8.json": "f84ce3ce3ba9d9462ee0f59ce786523254cb39d8ef74a74a8956621b27831bed",
+    "/data/forte-ml/private/quality-untuned-pilot-a13-control2-20261017T1714Z/a14-rule-insufficiency-diagnosis-v1/restricted-detail.private.json": "ab40624fae20ae837ece79e7801395aa1956a6e38fd53b22ec2e77b821df90b6",
+    "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2-generated-results.safe.json": "4e5e0093db5bfae1f4b2e966a9f7969ba55bdd56528009b2707f5d75d95605d2",
+    "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2-terminal.safe.receipt.json": "5ea39bd22a19d409a8103fe4a0f99c78017a966ded07d028786629b681faaa63",
+    "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2.container.stderr.log": "d099cb2ddfdcb1413881df45aa4b73becfb8aa943a73335a2064e3431cc50e2f",
+    "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2.container.stdout.log": "e83c79bc7b2fc6f63a9705b910430dc26c9e12bb390adc9c0d7d9049a57c365c",
+    "/data/forte-ml/qwen38-root-operations/trained-terminal-native-v2-release-20261017T1824Z.json": "5e83146b1921d3a9ca1e4961a6c696bfe9968f2f4991c4cae99af58fcc6bf5a6",
+    "/data/forte-ml/qwen38-root-operations/trained-terminal-native-v2-release-20261017T1824Z.launch.json": "c1579875823c4db29f0fa8a2e1b55d7209693a3aa46e09c6420bd2f39137a0b3"
+  },
+  "total_archive_bytes": 537615,
+  "verification_completed_at_utc": "2026-10-17T18:41:12.753749+00:00"
+}

@@ -1,0 +1,3 @@
+# Build only in the optional GPU worker image, not the CPU API or live VLM.
+rfdetr==1.11.2
+supervision==0.29.1

@@ -1,0 +1,29 @@
+{
+  "candidate_deployed": false,
+  "captured_at_utc": "2026-10-17T13:21:38.386696+00:00",
+  "changes": [
+    "Public Python src/forte/evidence retained by both source selectors; private evidence media remains excluded.",
+    "Candidate training image build definition, requirements, runtime lock and helper included in subsequent ML sources when present."
+  ],
+  "controls_sha256": {
+    "deploy/package_ml_code.py": "d2566f48b241eabbca637ab4004453a87d0576cb3059992647937967ce6de06b",
+    "deploy/package_policy.py": "e6a388b7271a27b518f04f217ca63ec46094a2324c3cfbeeba26bcac86c8122a",
+    "tests/test_release_packaging.py": "231ea1bae95d7e496d39bcd0286fa852bdc8ff0c81eea2d705842744b553dbc4"
+  },
+  "final_integration_freeze": false,
+  "phase1_archive_sha256": "a2464bf268c1bfc639b6ae630b33b09b79505fa5bd1804579329c69b10066e6e",
+  "phase1_archive_unchanged": "tmp/qwen38-ml-phase1-20261017T131841Z.tar.gz",
+  "prior_audit": "docs/submission/qwen38-release-packaging-audit-20261017.json",
+  "public_selection_counts_at_capture": {
+    "deployment": 210,
+    "ml": 182
+  },
+  "schema_version": "forte.qwen38.release-packaging-followup.v1",
+  "training_performed": false,
+  "validation": {
+    "actual_windows_ancestor_junction_rejected": true,
+    "packaging_passed": 73,
+    "symlink_creation_skip": 1,
+    "synthetic_dataset_audit_checks": 15
+  }
+}

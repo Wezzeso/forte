@@ -1,0 +1,462 @@
+{
+  "schema_version": "forte.public-cctv-research-metadata.v1",
+  "captured_at_utc": "2026-10-17T14:42:18.013249+00:00",
+  "media_downloaded": false,
+  "files": [
+    {
+      "path": "meva-license.txt",
+      "source_url": "https://mevadata.org/resources/MEVA-data-license.txt",
+      "size_bytes": 19055,
+      "sha256": "bdeedfb765049c87f92a2450369ad70882fca3371190b2a6b7e560e103c922e8",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "meva-readme.html",
+      "source_url": "https://mevadata.org/resources/README-meva-kf1-data.html",
+      "size_bytes": 12139,
+      "sha256": "b5091bd172e53152eeb77155c930f511df8e438cb594cad62ffbc3ef33976c31",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "meva-activity-names.txt",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/documents%2Factivity-names.txt/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 848,
+      "sha256": "ab062f1feee2a44fdb7e2f20021149211aed727443286ba314dd966d25309233",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "meva-training-readme.md",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2FREADME.md/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 758,
+      "sha256": "17e325d1be6c8137ff08f7e4f1d8bf63be040d0c9c37d42e3d26bb15fb92bc14",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "meva-training-status.csv",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2Fstatus.csv/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 1490,
+      "sha256": "bd414b3361f51c561d37ed382793d4b643b451f816e0abda8e0f83b47a884bae",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "carr-v4.api.json",
+      "source_url": "https://api.figshare.com/v2/articles/29470079/versions/4",
+      "size_bytes": 3694,
+      "sha256": "bb76ee7fcde7b906f9d41977545db4a66bd033981ec67c94b9b27ade3755c7b1",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "carr-current.api.json",
+      "source_url": "https://api.figshare.com/v2/articles/29470079",
+      "size_bytes": 2613,
+      "sha256": "1a25a53584160a942a51425ded853083f407302d5cd2c41ff69c7bf84e78a6bf",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "retailaction-LICENSE.txt",
+      "source_url": "https://huggingface.co/datasets/standard-cognition/RetailAction/resolve/49cb590723db921a4bd5a38adea92f6abd3f7a00/LICENSE",
+      "size_bytes": 8249,
+      "sha256": "89f78a96b61776eb17584edd1ea7451d90feb0fe1901fe94265335c46bb4ab40",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "retailaction-README.md",
+      "source_url": "https://huggingface.co/datasets/standard-cognition/RetailAction/resolve/49cb590723db921a4bd5a38adea92f6abd3f7a00/README.md",
+      "size_bytes": 8463,
+      "sha256": "a30ee7ee7ab1c5e4dde7cc350b3a1eea433e58fa066a86d050db774eb0431519",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "nvidia-README.md",
+      "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Event-Videos/resolve/7f79b39fcd1ef1dc39f23f227cd8a9480d6077db/README.md",
+      "size_bytes": 14831,
+      "sha256": "6b1521c5c5d2cf9a675f64bb689730b1934be41fcdc7f3d43045aad01cc7c2eb",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "nvidia-provenance.json",
+      "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Event-Videos/resolve/7f79b39fcd1ef1dc39f23f227cd8a9480d6077db/2026/provenance.json",
+      "size_bytes": 5142,
+      "sha256": "b5d3b9dfd549bdecd815961c30bcff605da7b084b1fe7ff9a90635a4f9da61c3",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "nvidia-labels.json",
+      "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Event-Videos/resolve/7f79b39fcd1ef1dc39f23f227cd8a9480d6077db/2026/train/labels.json",
+      "size_bytes": 8656320,
+      "sha256": "c3404d97c7fe1cd8ad4e131590d6261c346e80754c6e1778d559b03066961cb3",
+      "kind": "public_metadata_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-00.11-00-00.bus.G331.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-00.11-00-00.bus.G331.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 22999,
+      "sha256": "9ae26fe9a3f755fe14e8b3fe970604dd30d44f2f6f43356ed13dce25edf039a9",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-00.11-00-00.hospital.G436.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-00.11-00-00.hospital.G436.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 21782,
+      "sha256": "b694eaa6efe46d1517b229755cb74839128e556721ede797a0022c1efdee14e2",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-00.11-00-00.school.G299.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-00.11-00-00.school.G299.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 229,
+      "sha256": "2f81e9d98ebfa177221118a792dacc9f0ca24ccc13b1c80467fbf15763ce7a06",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-00.11-00-00.school.G330.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-00.11-00-00.school.G330.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 229,
+      "sha256": "f68e97925d9ea51cbee97d1ba7a6f952dca03f631b16c675b63f7fc5b4243b71",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-00.11-00-00.school.G420.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-00.11-00-00.school.G420.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 639,
+      "sha256": "e0963688bada47a65a31d9ab2aecf1982116becbb67a96dac0034e944a960e11",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.admin.G326.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.admin.G326.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 2166,
+      "sha256": "10d771e15f855cf73c20cdd202fbe7ab6e0f11fd2259cae5abc5d1081e22ff6b",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.bus.G506.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.bus.G506.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 10054,
+      "sha256": "eb2bb9d709db0cc086999c8f6de1a239a0b61c4404e3ac196077ee6557f063da",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.bus.G509.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.bus.G509.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 3542,
+      "sha256": "1611973c135d346b113e4e3bcbde5e4ef5b195a3140964246e4994511fda796f",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.school.G421.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.school.G421.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 42123,
+      "sha256": "160bf7889512ca9cf17f1a21066d12efc20a4e59783d35d0ecd2900091f26f07",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-06.11-00-05.school.G336.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-06.11-00-05.school.G336.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 29435,
+      "sha256": "f2deaaadbf1b9fbd7377620cc320877d0049c818f67b2650be383ec00ea5a29f",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-06.11-00-06.bus.G340.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-06.11-00-06.bus.G340.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 7294,
+      "sha256": "1955d5d20a23e335947523f294cde0159840c51e318036166d3fefa4b78f4fa4",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-06.11-00-06.school.G300.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-06.11-00-06.school.G300.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 987,
+      "sha256": "9364fe51a39053b27fa78411eef5e7246a90ce3959f98dd776b1137fe070e016",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-07.11-00-07.hospital.G301.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-07.11-00-07.hospital.G301.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 77,
+      "sha256": "fe0474b6c1071d239ceae49ec66005a1edc73a567a48eb7cb3c7fe3cb0c9761b",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-00.11-05-00.bus.G331.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-00.11-05-00.bus.G331.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 31605,
+      "sha256": "84e5f4bab7cb162ca26975a67c1fa270f39faf03633339cc841d2f60450704ae",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-00.11-05-00.hospital.G436.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-00.11-05-00.hospital.G436.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 36693,
+      "sha256": "877f581ca1939716b029e8926f1dff07d07ff59076f9f01eb1a6993d2c49bf26",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-00.11-05-00.school.G299.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-00.11-05-00.school.G299.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 834,
+      "sha256": "5d07a39c1e3c4bae1199d065596ed4ea8173de853cae92c367f03b6e9c003e69",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-00.11-05-00.school.G330.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-00.11-05-00.school.G330.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 471,
+      "sha256": "bb476d2d03d7e880628e1f1ee43c0f8d8c24a196d00b72b2b5f1a74126d1a625",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-00.11-05-00.school.G423.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-00.11-05-00.school.G423.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 2441,
+      "sha256": "c153b2a49a0974affdbdff9167cec86f0089ea42c0d5f95993e769323ce7bf74",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-01.11-05-00.admin.G326.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-01.11-05-00.admin.G326.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 1179,
+      "sha256": "3c0e05883dad3fa60ea7fa9c5b00e68c3f2c82876fd6bc3442c2c6ffc5fd145e",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-05.11-05-05.school.G424.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-05.11-05-05.school.G424.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 31945,
+      "sha256": "b5abb72e016db403dfa833a4bb78375d5d74a0fccd6baaafa45019f67042aa63",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-06.11-05-06.bus.G340.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-06.11-05-06.bus.G340.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 8225,
+      "sha256": "85d7c515fc4c894bf7a11264f07046caee3f7e3584db17f00e9558bf9c50815c",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-00-07.11-05-07.hospital.G301.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-00-07.11-05-07.hospital.G301.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 77,
+      "sha256": "0144780f6d2fc36a44ccc37f6108ac23a1cb70be8ce1bc24fddebac426f237ad",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-00.11-10-00.hospital.G436.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-00.11-10-00.hospital.G436.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 14221,
+      "sha256": "e70cb7c2ff8e29ff8a4fe544e465d11b30fc954e7cdcf8ceb9841ef45a425aa3",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-00.11-10-00.school.G299.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-00.11-10-00.school.G299.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 180,
+      "sha256": "f8f69725c8898747a89cd95a1fb8c3a6c89f67d79261d9bc2ee509b9ee4c9ccf",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-00.11-10-00.school.G330.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-00.11-10-00.school.G330.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 75,
+      "sha256": "b1eb6d85f89e6c126910af05e7db71a052446c4cf36037fc015c9ab86312ce34",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-00.11-10-00.school.G420.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-00.11-10-00.school.G420.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 388,
+      "sha256": "24a46e2be09599eb0b3845a0eb3434b0c639c35ce5f31b7e74f15a6f0f23890b",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-00.11-10-00.school.G423.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-00.11-10-00.school.G423.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 1946,
+      "sha256": "096054e9e20446978ca3839bda166c6e4e7dcc06d2dba7a035e3c656e8e88083",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.admin.G329.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.admin.G329.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 4264,
+      "sha256": "d9006e25f332f29c46bc10727184957c5a949ca6bcca0c80b3580ee1557a019a",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.bus.G505.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.bus.G505.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 2519,
+      "sha256": "2032ce2c41c5e13d0000e04ef85ccc33c18a7bc30c3cbdc776afe041c51a6072",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.bus.G506.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.bus.G506.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 12246,
+      "sha256": "5a41d1d49d7da7b3b5554532d5b9baf4ad388d806445fe8116f3390cdc2352e2",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.bus.G509.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.bus.G509.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 600,
+      "sha256": "267ba690f2b33e81d51d9e442197f24e63e24bd78b74ba3b8e66917f01985743",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.school.G421.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.school.G421.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 32989,
+      "sha256": "ff241a1684635f22e49e0ccc12a3ca2007cc24521775b0c1cab24c470dc0f28b",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-05.11-10-05.school.G424.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-05.11-10-05.school.G424.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 28904,
+      "sha256": "92bef9558ab2c713eb6c4e035dbaa209861ee082772de2d5d78d1ec3152d7895",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-06.11-10-05.school.G336.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-06.11-10-05.school.G336.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 22236,
+      "sha256": "5f024fee9b4a7cd7f17f0bc230b4c03770ffdbc0452a334da174ee9512362161",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-07.11-10-07.hospital.G301.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-07.11-10-07.hospital.G301.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 77,
+      "sha256": "8f9222b06905caffaa2127ad3e49fd617fa0b0374acee5adba19b94278cd51cb",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-00.11-15-00.bus.G331.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.bus.G331.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 17563,
+      "sha256": "45bb14e506213a6079e3e9b827d4084388ffd9987a4519fa1b4dd4057aa72b36",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-00.11-15-00.school.G330.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.school.G330.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 75,
+      "sha256": "f420c6cfbd6051ab8dc4fcc9aa8a3559d23dfead14d492b4962289ca3dd05788",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-00.11-15-00.school.G423.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.school.G423.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 2941,
+      "sha256": "4c12effc8ed5a0fe748ce2e05d9e859e815e47f2d06a4e7a91180b1b706bc637",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-01.11-15-01.bus.G509.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-01.11-15-01.bus.G509.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 1284,
+      "sha256": "7b0192e79f259042446936f72c34c11dee41e9595ee09f3c63a63dc53cda29c2",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-01.11-15-01.school.G328.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-01.11-15-01.school.G328.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 8103,
+      "sha256": "a00936d44ad2da030ff1d122aaa381fdcbfa8595371ddc5fd69ff5d68e07efed",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-05.11-15-05.school.G424.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-05.11-15-05.school.G424.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 17179,
+      "sha256": "0f7272758692df4b1fbe37671a4c14844356e0c8ad187ece92c44edf7544705f",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-06.11-15-05.school.G336.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-06.11-15-05.school.G336.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 19254,
+      "sha256": "ab20c46d69f990a6921d83ec20ca6712daf71b955564e0b1fcbb89b68cde4822",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-06.11-15-06.bus.G340.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-06.11-15-06.bus.G340.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 8773,
+      "sha256": "ee6cce80f100bb12985fe4f5ded9465290e467c729028b7239e8a38df1e7fd59",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-07.11-15-07.hospital.G301.activities.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-07.11-15-07.hospital.G301.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 77,
+      "sha256": "8f93d395226d9accf3fd814a2d76397c26f36c0e149faff1e3880255b54538cc",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "MEVA-Annotation-Definitions.pdf",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/documents%2FMEVA-Annotation-Definitions.pdf/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 199708,
+      "sha256": "6a32c2d27f5aab6418c2a0d35cc5880425af48b729e99387fd074987d5d1792b",
+      "kind": "public_annotation_definition"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.school.G421.geom.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.school.G421.geom.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 5151298,
+      "sha256": "60100496781faa4af54516f669b4fb61b2e76294de88deb96ee0b0ea3fc92af9",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.10-55-01.11-00-01.school.G421.types.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.school.G421.types.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 16938,
+      "sha256": "1b620b8ec991038ee3ac0d270e499e63dfa6417504306ffc4e8c4a61135792d8",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.school.G421.geom.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.school.G421.geom.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 15456335,
+      "sha256": "26b90db446524f2b919854523d7461fe9882da79468deeae793915a9075e18c3",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-01.11-10-01.school.G421.types.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.school.G421.types.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 12582,
+      "sha256": "315694bf28424d22b368f0958f169a205200eef71ea1f6626c40f087b6ef3d5b",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-00.11-15-00.bus.G331.geom.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.bus.G331.geom.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 6066532,
+      "sha256": "3963c8ddd9aa1c9f5f707f728bbe5880325b065c1866fb44270964093bbd7b37",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-10-00.11-15-00.bus.G331.types.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.bus.G331.types.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 6230,
+      "sha256": "e1965c91cdef53136b7693bd57d48d4c9f3cf7c03341a8503f2b846cd0aeee2d",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-05.11-10-05.school.G424.geom.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-05.11-10-05.school.G424.geom.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 4607219,
+      "sha256": "8bc16c879d70b71efac82b27a2f1dcbbf8ec0226ed2d5f8e92399d348768c76e",
+      "kind": "public_train_annotation_no_media"
+    },
+    {
+      "path": "2018-03-07.11-05-05.11-10-05.school.G424.types.yml",
+      "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-05.11-10-05.school.G424.types.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+      "size_bytes": 10377,
+      "sha256": "0690b8e8df180574496467422bc962b096e7d07636403ed0ceff2e6514373637",
+      "kind": "public_train_annotation_no_media"
+    }
+  ]
+}

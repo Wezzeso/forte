@@ -1,0 +1,166 @@
+{
+  "schema_version": "forte.original_profile_snapshot.v1",
+  "scope": "original_all19_before_staged_or_concise_trials",
+  "private_record_contents_emitted": false,
+  "artifact_count": 26,
+  "artifacts": [
+    {
+      "source": "benchmarks/private/a18-inputs.json",
+      "snapshot": "evaluation/private/original-all19/a18-inputs.json",
+      "sha256": "3b7d2c984cf9185cf5c4be30403bef6238b7fe8e7fb282ec692299283efc6348",
+      "bytes": 2553
+    },
+    {
+      "source": "benchmarks/private/a18-terminal-verdicts.json",
+      "snapshot": "evaluation/private/original-all19/a18-terminal-verdicts.json",
+      "sha256": "e091c085b8d64d5090e8d07247751a5704c540da52d8e589cab32ec33dd28f2d",
+      "bytes": 1192
+    },
+    {
+      "source": "benchmarks/performance/gpu-performance-findings.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-performance-findings.json",
+      "sha256": "d0562898efd78ebe940e038d4efcc10299ff53a3bdcc18bd0f3a810aa02ec65c",
+      "bytes": 3508
+    },
+    {
+      "source": "benchmarks/performance/gpu-observed-summary.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-observed-summary.json",
+      "sha256": "2a4b2489e072bdc52380cfbc7619b781977b0132456cc9f3c99a6752a1de6743",
+      "bytes": 12832
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline.json",
+      "sha256": "5a8b8a098cda1dbe294d947ff8f38fc2a5f974ac1aaab7f8de843a3afe3624ba",
+      "bytes": 39139
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst.json",
+      "sha256": "204c7b1038f735148aa9184d7e54d0f12c2c556266f89d5da3125f297a05ebad",
+      "bytes": 541387
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-stages.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-stages.json",
+      "sha256": "9872bca1163975616526cf3b75f9b5fb0d92773e44c470912c74ec9d4dd0c519",
+      "bytes": 7631
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-stages.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-stages.json",
+      "sha256": "7088d108ba8fe3e16619aa68d3ae5eac43239d05a470c9badc5f994cfb6b2d2b",
+      "bytes": 15566
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-model-timing-delta.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-model-timing-delta.json",
+      "sha256": "b45791752046c0c71a5d878abbf7a770e792e246ff47aaec6f841a3b2ecd1300",
+      "bytes": 2319
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-model-timing-delta.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-model-timing-delta.json",
+      "sha256": "dfd83ea8c946cd437fccee99391ca9b8cc7cd57465f1d2f673f9a357e311c44f",
+      "bytes": 2328
+    },
+    {
+      "source": "benchmarks/performance/gpu-hardware-observed.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-hardware-observed.json",
+      "sha256": "974c96e113d9a9b5ce4555c547f8104e345d7c8a575be189b3c05e7fadb03ec9",
+      "bytes": 778
+    },
+    {
+      "source": "benchmarks/performance/gpu-original-profile-proof.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-original-profile-proof.json",
+      "sha256": "c2151257ed69285d505307d2aecd9c9e671bd4110887dd806b19030f36a7340b",
+      "bytes": 1743
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-terminal-technical.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-terminal-technical.json",
+      "sha256": "5833440fbebf814c45c42f312ecf45d5b7428e70094b427e1b7939cb6bb60ab3",
+      "bytes": 992
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-terminal-technical.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-terminal-technical.json",
+      "sha256": "8df53e601eb579daed2c5f024589a80c9637cde3c78fde4752833fe72ae33254",
+      "bytes": 2692
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-acceptance-reconciliation.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-acceptance-reconciliation.json",
+      "sha256": "9f099518aa5256103d13c79579fe2bc6fd20cb0d63d47635d7991b276f7afae7",
+      "bytes": 1060
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-queue.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-queue.json",
+      "sha256": "b52d8b78b058d6219b3df75be269b454769de3aa07d55bbcfe54c013ba178a2a",
+      "bytes": 639
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-queue.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-queue.json",
+      "sha256": "50c5d4f507bb9ecde55596b32f9798cd077395f4ee4b8b087ed62f2ffdb66f12",
+      "bytes": 1159
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-metrics-before.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-metrics-before.json",
+      "sha256": "d1266dd90c1a1ed88b64ac11e3f6a7c8358b2781da837293e9d2d7f83f567d95",
+      "bytes": 6928
+    },
+    {
+      "source": "benchmarks/performance/gpu-baseline-metrics-after.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-baseline-metrics-after.json",
+      "sha256": "fdf739305fa530dd4eee7e3ee63a741022b288b7fa1d3c1fa3a40bd1dfe659d1",
+      "bytes": 6930
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-metrics-before.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-metrics-before.json",
+      "sha256": "5e1d70872dca99091a7e9bd93d85f1ee65cca648bbdd5328bd136a9b6b4da2cd",
+      "bytes": 6930
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-metrics-after.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-metrics-after.json",
+      "sha256": "df53d45db25d5683656bad7fb118c701c9eece632daf802309f79f1fe160e5da",
+      "bytes": 6944
+    },
+    {
+      "source": "benchmarks/performance/gpu-burst-metrics-after-drain.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-burst-metrics-after-drain.json",
+      "sha256": "41066eff9fbfd733988d84da524066e54101d4274777ee7e2896504187da8efa",
+      "bytes": 6927
+    },
+    {
+      "source": "benchmarks/performance/gpu-model-prebenchmark-numeric-snapshot.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-model-prebenchmark-numeric-snapshot.json",
+      "sha256": "356c7d184b60a1fc34ae07dece41beb362ce24e6888300a86a6518e26bdd8356",
+      "bytes": 393
+    },
+    {
+      "source": "benchmarks/performance/gpu-model-prebenchmark-numeric-snapshot-2.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-model-prebenchmark-numeric-snapshot-2.json",
+      "sha256": "0cfa2f86b6ea7c1f48041d8a7ab8659412f9782d03c6ca06bb53fafcd7411653",
+      "bytes": 6920
+    },
+    {
+      "source": "benchmarks/performance/gpu-vllm-metric-names.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-vllm-metric-names.json",
+      "sha256": "7e7a6d9f7a1bb691a64512abe2e05dfa093863e0006969382a151a3c7f60db13",
+      "bytes": 4813
+    },
+    {
+      "source": "benchmarks/performance/gpu-queue-collector-preflight.json",
+      "snapshot": "benchmarks/quality/original-all19/gpu-queue-collector-preflight.json",
+      "sha256": "9d004d0df3e637308eafa756eb1a779b5dfcec2b78d3fb7435efcaa8a01e6eee",
+      "bytes": 451
+    }
+  ],
+  "note": "Byte-preserved benchmark records; model/profile details are evidenced by original aggregate performance findings rather than inferred from filenames.",
+  "profile_binding": "gpu-original-profile-proof.json binds immutable deployed CPU image and runtime override evidence. Post-run local config digests do not prove effective deployed runtime; no retrospective live rule catalog digest is asserted."
+}

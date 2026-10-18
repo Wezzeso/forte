@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "experiment_kind": "paired_reused_content_exploratory",
+  "profile_label": "staged-concise",
+  "primary_novel_content_slo_evidence_eligible": false,
+  "profile_evidence": "benchmarks/quality/trials/staged-concise/deployed-profile.json",
+  "immutable_api_worker_images": [
+    "sha256:c4528d19724dff4477f9c4f3e9bfb6c43b2075a5428eb5192e632b36283e48c8"
+  ],
+  "required_flags_verified": true,
+  "api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "load": "six sequential reused-content uploads; zero repeat-completed GETs",
+  "inputs_metadata_aggregate": {
+    "status": "measured",
+    "success_count": 6,
+    "failure_count": 0,
+    "duration_sec_min": 11.633333333333333,
+    "duration_sec_max": 142.53302083333332,
+    "upright_resolutions": [
+      {
+        "width": 464,
+        "height": 848,
+        "count": 6
+      }
+    ]
+  },
+  "attempt_accounting": {
+    "expected_attempt_count": 6,
+    "actual_terminal_record_count": 6,
+    "expected_ids_and_samples_exactly_accounted_for": true,
+    "attempt_plan_sha256_matches_http_report": true,
+    "attempted_uploads": 6,
+    "durably_accepted": 6,
+    "validated_completed": 5,
+    "failed": 1,
+    "client_timeouts": 0,
+    "terminal_states_verified": 6,
+    "failed_static_error_code_counts": {
+      "invalid_model_output": 1
+    }
+  },
+  "completed_upload_to_full_json_ms": {
+    "count": 5,
+    "p50_ms": 26484.8922,
+    "p95_ms": null,
+    "max_ms": 149597.0322,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+    "min_ms": 18242.1151
+  },
+  "strict_10000ms_exploratory_observation": {
+    "completed_under_threshold": 0,
+    "all_expected_attempt_denominator": 6,
+    "all_attempt_under_threshold": "missed",
+    "result_latency_unknown_or_invalid": 1,
+    "timing_origin": "client_upload_start_to_full_result_byte",
+    "quality_or_universal100percent_claim": false
+  },
+  "completed_under_240000ms_failure_inclusive": {
+    "passed": 5,
+    "denominator": 6
+  },
+  "completed_under_300000ms_failure_inclusive": {
+    "passed": 5,
+    "denominator": 6
+  },
+  "original_observation": {
+    "attempted": 6,
+    "completed": 1,
+    "failed_or_client_timeout": 5,
+    "client_outcome_counts": {
+      "failed": 5,
+      "completed": 1
+    },
+    "observed_durable_status_counts": {
+      "failed": 4,
+      "done": 1
+    },
+    "static_error_code_counts": {
+      "insufficient_visible_evidence": 2,
+      "none": 1,
+      "deadline_exceeded": 2
+    },
+    "terminal_state_verified_count": 5
+  },
+  "comparison_limits": [
+    "Original run used public origin and one baseline plus a five-upload burst; this run uses direct Brev and sequential repeated contents.",
+    "Both routing and profile changed; this is not an isolated causal speedup estimate or primary novel-content SLO evidence.",
+    "Five completions do not establish a video-latency population p95.",
+    "Repeated source contents do not add independent videos.",
+    "Organizer-label diagnostics are separate and exploratory; reviewed event/evidence ground truth was not measured here."
+  ],
+  "model_lifecycle_evidence": "benchmarks/quality/trials/staged-concise/model-timing-delta.json",
+  "model_counter_window_attributed": true,
+  "same_model_process_observed": true,
+  "running_waiting_zero_at_both_boundaries": true,
+  "service_exposure_coverage": {
+    "before_accepted_jobs": 9,
+    "after_accepted_jobs": 15,
+    "expected_accepted_increase": 6,
+    "actual_accepted_increase": 6,
+    "after_active_jobs": 0,
+    "captured_at_utc": "2026-10-17T11:39:51.020303+00:00",
+    "later_uploads_included": false
+  },
+  "privacy": "No provided-media content, labels, verdicts, event descriptions, original paths, or content hashes exported."
+}

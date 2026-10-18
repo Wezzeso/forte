@@ -1,0 +1,50 @@
+{
+  "schema_version": "forte.qwen38.public-wheel-research.v1",
+  "captured_at_utc": "2026-10-17T13:15:53.032802+00:00",
+  "source": "https://pypi.org/pypi/bitsandbytes/0.50.2/json",
+  "official_docs": "https://huggingface.co/docs/bitsandbytes/v0.50.2/en/installation",
+  "wheel": "bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+  "wheel_source_url": "https://files.pythonhosted.org/packages/a5/6e/e4e8b75716dbe5e50964f070266e06f4e6806ce051bfb97f52ee162b9310/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+  "wheel_sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283",
+  "wheel_bytes": 43139553,
+  "license": "MIT",
+  "requires_python": ">=3.10",
+  "requires_dist": [
+    "torch<3,>=2.4",
+    "numpy>=1.17",
+    "packaging>=20.9",
+    "pandas; extra == \"benchmark\"",
+    "matplotlib; extra == \"benchmark\"",
+    "hf-doc-builder==0.5.0; extra == \"docs\"",
+    "bitsandbytes[test]; extra == \"dev\"",
+    "build<2,>=1.0.0; extra == \"dev\"",
+    "ruff~=0.14.3; extra == \"dev\"",
+    "pre-commit<4,>=3.5.0; extra == \"dev\"",
+    "wheel<1,>=0.42; extra == \"dev\"",
+    "einops~=0.8.0; extra == \"test\"",
+    "lion-pytorch==0.2.3; extra == \"test\"",
+    "pytest~=8.3; extra == \"test\"",
+    "scipy<2,>=1.11.4; extra == \"test\"",
+    "transformers<5,>=4.30.1; extra == \"test\""
+  ],
+  "native_cuda_libraries": [
+    "bitsandbytes/libbitsandbytes_cuda118.so",
+    "bitsandbytes/libbitsandbytes_cuda121.so",
+    "bitsandbytes/libbitsandbytes_cuda124.so",
+    "bitsandbytes/libbitsandbytes_cuda126.so",
+    "bitsandbytes/libbitsandbytes_cuda128.so",
+    "bitsandbytes/libbitsandbytes_cuda130.so",
+    "bitsandbytes/libbitsandbytes_cuda132.so"
+  ],
+  "installed_file_sha256": {
+    "bitsandbytes/libbitsandbytes_cuda128.so": "d6dd06a7bf8b2ecc43dd7d7dc5b558dc70884fd193252a8597ee065a9c8b0f4e",
+    "bitsandbytes/cextension.py": "a7ce4d7bcb504bf7d268ce96658dbe832804b6f6ed999f61eaf2beeb9385c9bd",
+    "bitsandbytes/nn/modules.py": "f7ab2160681e2f089caae80d6fd283ac6a9b9f1b82269e6f395c3b046faf606e"
+  },
+  "source_selection_observation": "Exact wheel cextension selects highest same-major packaged CUDA version <= runtime, hence CUDA12.9 uses CUDA12.8 with no override.",
+  "actual_cuda_kernel_test_performed": false,
+  "actual_qwen_model_test_performed": false,
+  "private_input_used": false,
+  "core_upgrade_required_by_metadata": false,
+  "core_upgrade_performed": false
+}

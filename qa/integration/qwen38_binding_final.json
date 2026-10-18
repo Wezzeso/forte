@@ -1,0 +1,10 @@
+{
+  "schema_version": "forte.qwen38.binding-followup-qa.v1",
+  "captured_at_utc": "2026-10-17T13:31:19.283080+00:00",
+  "pytest_summary": "2 passed in 0.18s",
+  "source_hashes": {
+    "training/qwen38_bind.py": "696ab4ce6da0862fa45d9a89bb7e7c614553c8e6485ae21aa13159a6d016227d",
+    "training/test_qwen38_bind.py": "79b2d5da067a138af3010855ff1cad8afadf0f204f800bdecbc67ec7200d864b"
+  },
+  "scope": "Focused final-byte follow-up for only concurrent helper/test changes in qwen38_cpu_final_verified.json; these are not additional independent broad-suite cases."
+}

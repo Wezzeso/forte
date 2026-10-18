@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:forte:strict-targets:v1",
+  "title": "Optional strict observed-sample target acceptance report",
+  "type": "object",
+  "required": ["schema_version", "status", "targets", "claim_limits", "denominators", "all_attempt_metrics", "whole_video", "events", "timestamp_diagnostics", "evidence_blocker_counts", "input_binding", "limitations"],
+  "properties": {
+    "schema_version": {"const": "forte.strict_targets.v1"},
+    "status": {"enum": ["PASS", "FAIL", "UNMEASURED", "SYNTHETIC_ONLY"]},
+    "targets": {
+      "type": "object",
+      "required": ["observed_detection_rate", "observed_grounding_and_evidence_rate", "end_to_end_deadline_ms", "latency_comparison", "latency_origin", "event_match_tolerance_ms", "max_original_frame_anchor_error_ms"],
+      "properties": {
+        "observed_detection_rate": {"const": 1.0},
+        "observed_grounding_and_evidence_rate": {"const": 1.0},
+        "end_to_end_deadline_ms": {"const": 10000.0},
+        "latency_comparison": {"const": "strictly_less_than"},
+        "latency_origin": {"const": "client_upload_start_to_full_result_byte"},
+        "event_match_tolerance_ms": {"type": "number", "minimum": 0},
+        "max_original_frame_anchor_error_ms": {"type": ["number", "null"], "minimum": 0}
+      }
+    },
+    "claim_limits": {
+      "type": "object",
+      "required": ["universal_100_percent_accuracy_claim_permitted", "observed_reviewed_sample_all_criteria_passed", "synthetic_results_are_software_checks_only", "one_millisecond_action_timing_claim_permitted"],
+      "properties": {
+        "universal_100_percent_accuracy_claim_permitted": {"const": false},
+        "observed_reviewed_sample_all_criteria_passed": {"type": "boolean"},
+        "synthetic_results_are_software_checks_only": {"type": "boolean"},
+        "one_millisecond_action_timing_claim_permitted": {"const": false}
+      }
+    },
+    "denominators": {
+      "type": "object",
+      "required": ["expected_attempts", "completed", "failed_or_unprocessed", "missing_attempt_results", "fully_reviewed_locked_truth_attempts", "distinct_sample_count"],
+      "properties": {
+        "expected_attempts": {"$ref": "#/$defs/count"},
+        "completed": {"$ref": "#/$defs/count"},
+        "failed_or_unprocessed": {"$ref": "#/$defs/count"},
+        "missing_attempt_results": {"$ref": "#/$defs/count"},
+        "fully_reviewed_locked_truth_attempts": {"$ref": "#/$defs/count"},
+        "distinct_sample_count": {"$ref": "#/$defs/count"}
+      }
+    },
+    "all_attempt_metrics": {
+      "type": "object",
+      "required": ["strict_latency_passed", "strict_latency_rate", "detection_passed", "detection_rate", "grounding_and_evidence_passed", "grounding_and_evidence_rate", "all_criteria_passed", "all_criteria_rate", "timing_unknown_or_invalid", "upload_start_to_full_result_ms"],
+      "properties": {
+        "strict_latency_passed": {"$ref": "#/$defs/count"},
+        "strict_latency_rate": {"$ref": "#/$defs/rate"},
+        "detection_passed": {"$ref": "#/$defs/count"},
+        "detection_rate": {"$ref": "#/$defs/rate"},
+        "grounding_and_evidence_passed": {"$ref": "#/$defs/count"},
+        "grounding_and_evidence_rate": {"$ref": "#/$defs/rate"},
+        "all_criteria_passed": {"$ref": "#/$defs/count"},
+        "all_criteria_rate": {"$ref": "#/$defs/rate"},
+        "timing_unknown_or_invalid": {"$ref": "#/$defs/count"},
+        "upload_start_to_full_result_ms": {"$ref": "#/$defs/distribution"}
+      }
+    },
+    "whole_video": {"type": "object", "required": ["tp", "fp", "fn", "tn", "unprocessed_positive", "unprocessed_negative"], "additionalProperties": {"$ref": "#/$defs/count"}},
+    "events": {"type": "object", "required": ["tp", "fp", "fn", "matched_grounding_and_evidence_passed"], "additionalProperties": {"$ref": "#/$defs/count"}},
+    "timestamp_diagnostics": {
+      "type": "object",
+      "required": ["numeric_unit", "display_rounding_error_ms", "error_to_human_selected_original_frame_anchor_ms", "adjacent_original_frame_spacing_ms", "sampling_spacing_is_not_source_frame_resolution", "source_frame_spacing_does_not_establish_true_action_onset"],
+      "properties": {
+        "numeric_unit": {"const": "milliseconds"},
+        "display_rounding_error_ms": {"$ref": "#/$defs/distribution"},
+        "error_to_human_selected_original_frame_anchor_ms": {"$ref": "#/$defs/distribution"},
+        "adjacent_original_frame_spacing_ms": {"$ref": "#/$defs/distribution"},
+        "sampling_spacing_is_not_source_frame_resolution": {"const": true},
+        "source_frame_spacing_does_not_establish_true_action_onset": {"const": true}
+      }
+    },
+    "evidence_blocker_counts": {"type": "object", "additionalProperties": {"$ref": "#/$defs/count"}},
+    "input_binding": {"type": "object", "required": ["expected_attempt_manifest_sha256", "split_manifest_sha256", "split_records_sha256", "model_revision", "conditions_sha256", "rules_sha256", "exposure_registry_sha256"]},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  },
+  "allOf": [
+    {"if": {"properties": {"status": {"const": "SYNTHETIC_ONLY"}}}, "then": {"properties": {"claim_limits": {"properties": {"observed_reviewed_sample_all_criteria_passed": {"const": false}, "synthetic_results_are_software_checks_only": {"const": true}}}}}},
+    {"if": {"properties": {"status": {"const": "PASS"}}}, "then": {"properties": {"claim_limits": {"properties": {"observed_reviewed_sample_all_criteria_passed": {"const": true}, "synthetic_results_are_software_checks_only": {"const": false}}}}}}
+  ],
+  "$defs": {
+    "count": {"type": "integer", "minimum": 0},
+    "rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "distribution": {"type": "object", "required": ["count", "mean", "p50", "p95", "max"], "properties": {"count": {"$ref": "#/$defs/count"}, "mean": {"type": ["number", "null"]}, "p50": {"type": ["number", "null"]}, "p95": {"type": ["number", "null"]}, "max": {"type": ["number", "null"]}}}
+  },
+  "$comment": "Schema validates report shape; it cannot prove actual local execution or genuine human review. The evaluator and the private review/audit workflow establish those prerequisites. No finite sample permits a universal 100% accuracy claim."
+}

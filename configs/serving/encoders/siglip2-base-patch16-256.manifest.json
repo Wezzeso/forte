@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "image_encoder",
+  "candidate_role": "detail_first",
+  "model_id": "google/siglip2-base-patch16-256",
+  "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+  "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+  "license": "apache-2.0",
+  "license_verified": true,
+  "license_declaration_source": "https://huggingface.co/google/siglip2-base-patch16-256/blob/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md",
+  "license_text_source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "artifact_metadata_source": "https://huggingface.co/api/models/google/siglip2-base-patch16-256?blobs=true",
+  "selected_adapter": null,
+  "loading_contract": {
+    "architecture": "SiglipVisionModel",
+    "image_processor": "SiglipImageProcessor",
+    "model_type": "siglip",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "tokenizer_required": false,
+    "input_shape": ["batch",3,256,256],
+    "feature_kind": "pooler_output",
+    "feature_dim": 768,
+    "l2_normalization": false,
+    "patch_tokens": 256
+  },
+  "files": [
+    {"path":"model.safetensors","size_bytes":1500985224,"sha256":"6125cacc01fa93bdc98a0c5101cefcd69b2ed1f8ab4f38d86f4ad5984f5dc863"},
+    {"path":"config.json","size_bytes":276,"sha256":"7b5aedcb8893e31376e129c1ffd7a5392f1a806dbc793ce53eda220c2ec59edf"},
+    {"path":"preprocessor_config.json","size_bytes":394,"sha256":"d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff"},
+    {"path":"README.md","size_bytes":3375,"sha256":"3f093559c3a18d94d9336249cf2e4e42ec8752413f07eb6634e2820e4ea120ad"}
+  ],
+  "total_bytes": 1500989269,
+  "scope_note": "Immutable public artifact identities. Presence, full local hash verification, offline load, GPU performance and bank-task quality require separate observed reports. This manifest does not select an inference head or alter Qwen serving."
+}

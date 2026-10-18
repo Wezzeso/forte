@@ -1,0 +1,8 @@
+# Exact public-only context. The build controller also creates a five-file TAR.
+**
+!deploy/
+deploy/**
+!deploy/Dockerfile.qwen38-fla
+!deploy/requirements-qwen38-fla.lock
+!deploy/qwen38-fla-runtime-lock.json
+!deploy/qwen38_fla_runtime_check.py

@@ -1,0 +1,35 @@
+[
+  {
+    "label": "transformers-v5.17.0",
+    "url": "https://api.github.com/repos/huggingface/transformers/commits/v5.17.0",
+    "sha": "856157a2f3e9594954310df18fdccc31ffddebe9",
+    "response_sha256": "97bdcf9e48c2d5873f679fd8efaed4af9bb65a03ef479f4ab97363db45268fb3",
+    "bitsandbytes_paths": []
+  },
+  {
+    "label": "vllm-v0.31.0",
+    "url": "https://api.github.com/repos/vllm-project/vllm/commits/v0.31.0",
+    "sha": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+    "response_sha256": "c03eac7f1d6ef6745b7ff3f3e032e4090d051915bcbb0cec0360e4dfca59a8b5",
+    "bitsandbytes_paths": []
+  },
+  {
+    "label": "ms-swift-main",
+    "url": "https://api.github.com/repos/modelscope/ms-swift/commits/main",
+    "sha": "80e55df909c83d198ad1091a6cebceb5428a46ff",
+    "response_sha256": "0166cfefaab08cc16d158fb96616763c2b1d531f7fda79bcd03e47536d0b7cac",
+    "bitsandbytes_paths": []
+  },
+  {
+    "label": "vllm-v0.31.0-tree",
+    "url": "https://api.github.com/repos/vllm-project/vllm/git/trees/v0.31.0?recursive=1",
+    "sha": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+    "response_sha256": "c86b78652ef82e521aa3e7af4a210a831090361427ae720612416fb0e5ece5b5",
+    "bitsandbytes_paths": [
+      "tests/plugins_tests/bitsandbytes",
+      "tests/plugins_tests/bitsandbytes/__init__.py",
+      "tests/plugins_tests/bitsandbytes/test_bitsandbytes.py",
+      "tests/plugins_tests/bitsandbytes/test_transformers.py"
+    ]
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "captured_at_utc": "2026-10-17T17:03:37.430411+00:00",
+  "cuda_initialized": false,
+  "earlier_cpu_attempts": [
+    {
+      "engine_instances": 0,
+      "reason": "device_type_not_inferable_when_GPU_hidden",
+      "stage": "help_auto_platform"
+    },
+    {
+      "engine_instances": 0,
+      "reason": "unsupported_chat_template_kwargs_CLI_flag_removed_use_request_body",
+      "stage": "argv_parse"
+    }
+  ],
+  "engine_instances": 0,
+  "exact_pilot_args_parse_passed": true,
+  "gpu_device_nodes_present": false,
+  "help_exit_code": 0,
+  "help_flags_present": {
+    "--chat-template-kwargs": false,
+    "--dtype": true,
+    "--enable-lora": true,
+    "--enable-prefix-caching": true,
+    "--generation-config": true,
+    "--gpu-memory-utilization": true,
+    "--host": true,
+    "--limit-mm-per-prompt": true,
+    "--lora-dtype": true,
+    "--lora-modules": true,
+    "--max-lora-rank": true,
+    "--max-loras": true,
+    "--max-model-len": true,
+    "--max-num-batched-tokens": true,
+    "--max-num-seqs": true,
+    "--model": true,
+    "--override-generation-config": true,
+    "--port": true,
+    "--served-model-name": true,
+    "--structured-outputs-config": true,
+    "--tensor-parallel-size": true,
+    "--trust-remote-code": true
+  },
+  "help_text_sha256": "05d9b86721db21c9aa4803d2e2cce6fc0c7cee2b218654fc09a089c6f9270699",
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "model_calls": 0,
+  "model_class_imported": true,
+  "model_instances": 0,
+  "operator_helper_sha256": "b1d1f312bdc9b74038f5caa4a7277b45e7ea9c3d610386e2a26b9860bd1f771c",
+  "package_stderr_sha256": "7df5c3efd0417f383f661a9c5f84af75abc978ad4bbf7ac82117fc35b1231f6a",
+  "packed_modules_mapping": {
+    "gate_up_proj": [
+      "gate_proj",
+      "up_proj"
+    ],
+    "in_proj_ba": [
+      "in_proj_b",
+      "in_proj_a"
+    ],
+    "in_proj_qkvz": [
+      "in_proj_qkv",
+      "in_proj_z"
+    ],
+    "qkv": [
+      "qkv"
+    ],
+    "qkv_proj": [
+      "q_proj",
+      "k_proj",
+      "v_proj"
+    ]
+  },
+  "parser_platform_override": "CPU process only; CUDA device defaults unverified",
+  "peft_config_rank8_alpha16_biasnone_modulesnone_accepted": true,
+  "pilot_api_server_args": [
+    "--model",
+    "/models/Qwen3.8-27B",
+    "--served-model-name",
+    "forte-qwen38-base-bf16-pilot",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "32768",
+    "--tensor-parallel-size",
+    "1",
+    "--max-num-seqs",
+    "1",
+    "--max-num-batched-tokens",
+    "8192",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--limit-mm-per-prompt",
+    "{\"image\":16,\"video\":0}",
+    "--enable-lora",
+    "--lora-modules",
+    "{\"name\":\"forte-qwen38-fit-bf16-pilot\",\"path\":\"/candidate/adapter\",\"base_model_name\":\"Qwen/Qwen3.8-27B\"}",
+    "--max-lora-rank",
+    "8",
+    "--max-loras",
+    "1",
+    "--lora-dtype",
+    "bfloat16",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--generation-config",
+    "vllm",
+    "--override-generation-config",
+    "{\"eos_token_id\":[248046,248044],\"pad_token_id\":248044}",
+    "--structured-outputs-config",
+    "{\"backend\":\"xgrammar\"}",
+    "--no-enable-prefix-caching"
+  ],
+  "private_inputs_mounted": false,
+  "raw_help_or_package_stderr_exposed": false,
+  "schema_version": "forte.qwen38.vllm-cpu-preparation.v1",
+  "scope": "Parser/class import/config legality only. No EngineArgs config creation, model config resolution, weight loading, engine construction or GPU launch.",
+  "vllm_version": "0.31.0+cu129",
+  "weights_mounted": false
+}

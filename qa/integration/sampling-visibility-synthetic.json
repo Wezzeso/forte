@@ -1,0 +1,155 @@
+{
+  "schema_version": "forte.synthetic-sampling-visibility.v1",
+  "synthetic_only": true,
+  "model_calls": 0,
+  "gpu_used": false,
+  "claims_real_bank_violation_or_model_accuracy": false,
+  "duration_sec": 8.0,
+  "source_dimensions": [
+    96,
+    64
+  ],
+  "native_source_frames": 200,
+  "native_marker_frame_count": 4,
+  "native_marker_pts_sec": [
+    0.2,
+    0.24,
+    0.28,
+    0.32
+  ],
+  "marker_duration_sec": 0.16,
+  "original_bytes_unchanged": true,
+  "profiles": [
+    {
+      "profile": "default_sparse",
+      "window_seconds": 8.0,
+      "stride_seconds": 4.0,
+      "sample_fps": 2.0,
+      "requests": 1,
+      "unique_selected_frames": 16,
+      "model_frame_uses": 16,
+      "maximum_frames_per_request": 16,
+      "selected_source_pts_sec": [
+        0.0,
+        0.52,
+        1.08,
+        1.6,
+        2.12,
+        2.68,
+        3.2,
+        3.72,
+        4.28,
+        4.8,
+        5.32,
+        5.88,
+        6.4,
+        6.92,
+        7.48,
+        7.96
+      ],
+      "maximum_selected_gap_sec": 0.5600000000000005,
+      "marker_selected_frames": 0,
+      "marker_selected_pts_sec": [],
+      "interval_coverage_complete_if_requests_succeed": true,
+      "sampled_motion_cues": 0
+    },
+    {
+      "profile": "diagnostic_denser",
+      "window_seconds": 4.0,
+      "stride_seconds": 2.0,
+      "sample_fps": 4.0,
+      "requests": 3,
+      "unique_selected_frames": 47,
+      "model_frame_uses": 48,
+      "maximum_frames_per_request": 16,
+      "selected_source_pts_sec": [
+        0.0,
+        0.28,
+        0.52,
+        0.8,
+        1.08,
+        1.32,
+        1.6,
+        1.88,
+        2.0,
+        2.12,
+        2.28,
+        2.4,
+        2.52,
+        2.68,
+        2.8,
+        2.92,
+        3.08,
+        3.2,
+        3.32,
+        3.48,
+        3.6,
+        3.72,
+        3.88,
+        4.0,
+        4.12,
+        4.28,
+        4.4,
+        4.52,
+        4.68,
+        4.8,
+        4.92,
+        5.08,
+        5.2,
+        5.32,
+        5.48,
+        5.6,
+        5.72,
+        5.88,
+        6.0,
+        6.12,
+        6.4,
+        6.68,
+        6.92,
+        7.2,
+        7.48,
+        7.72,
+        7.96
+      ],
+      "maximum_selected_gap_sec": 0.28000000000000025,
+      "marker_selected_frames": 1,
+      "marker_selected_pts_sec": [
+        0.28
+      ],
+      "interval_coverage_complete_if_requests_succeed": true,
+      "sampled_motion_cues": 1
+    }
+  ],
+  "current_refinement_schedules": [
+    {
+      "span_sec": 2.0,
+      "configured_sample_fps": 4.0,
+      "requested_frames": 8,
+      "maximum_target_gap_sec": 0.2857142857142858
+    },
+    {
+      "span_sec": 4.0,
+      "configured_sample_fps": 4.0,
+      "requested_frames": 16,
+      "maximum_target_gap_sec": 0.26666666666666705
+    },
+    {
+      "span_sec": 8.0,
+      "configured_sample_fps": 2.0,
+      "requested_frames": 16,
+      "maximum_target_gap_sec": 0.5333333333333341
+    },
+    {
+      "span_sec": 16.0,
+      "configured_sample_fps": 1.0,
+      "requested_frames": 16,
+      "maximum_target_gap_sec": 1.0666666666666682
+    },
+    {
+      "span_sec": 32.0,
+      "configured_sample_fps": 0.5,
+      "requested_frames": 16,
+      "maximum_target_gap_sec": 2.1333333333333364
+    }
+  ]
+}

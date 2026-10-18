@@ -1,0 +1,15 @@
+{
+  "name": "FORTE Panopticon",
+  "short_name": "Panopticon",
+  "description": "Проверка видео, события и исходные кадры для вашего решения.",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#A31551",
+  "background_color": "#A31551",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

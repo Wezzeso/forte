@@ -1,0 +1,131 @@
+{
+  "recorded_date": "2026-10-17",
+  "timezone": "Asia/Qyzylorda",
+  "python": "3.14.0",
+  "dependency_install": "uv sync --locked succeeded",
+  "installed_cpu_packages": 39,
+  "compatible_training_lock_check": {
+    "resolved_packages": 85,
+    "core_cpu_dependency_pins_changed": false,
+    "targeted_training_contract_tests_passed": 37,
+    "targeted_subtests_passed": 39,
+    "runner_duration_seconds": 0.58,
+    "actual_gpu_training_run": false
+  },
+  "annotation_rebase_targeted_check": {
+    "passed": 9,
+    "skipped": 1,
+    "subtests_passed": 8,
+    "runner_duration_seconds": 1.02,
+    "skip_reason": "local account lacks symlink creation permission",
+    "included_in_final_command": true
+  },
+  "integration_command": "python -m pytest tests/test_integration.py -q",
+  "integration_cases_passed": 9,
+  "runner_duration_seconds": 11.79,
+  "runner_duration_is_analysis_latency": false,
+  "media_origin": "generated synthetic MOV",
+  "model_provider": "explicit test-only invented structured observations",
+  "real_components_exercised": [
+    "authenticated ASGI API and multipart ingestion",
+    "owned upload hashing and durable SQLite job",
+    "independent worker lease and fair clip scheduler",
+    "FFprobe and PyAV visual decoder with source timestamps",
+    "timeline sampling, decision schema and refinement",
+    "actual public rule catalog and deterministic event builder",
+    "original-source JPEG evidence and immutable result publication",
+    "public done/processing/failed projection and repeated bytes"
+  ],
+  "synthetic_paths": [
+    "positive",
+    "normal",
+    "unclear",
+    "provider_failure"
+  ],
+  "learned_detection_measured": false,
+  "real_banking_procedure_applicability_reviewed": false,
+  "external_public_smoke_run": true,
+  "final_broad_suite": {
+    "status": "passed_on_final_source_freeze",
+    "command": "python -m pytest tests rules/tests serving/tests training/test_training.py training/test_alignment.py annotations/test_workflow.py annotations/test_rebase.py qa/system -q",
+    "passed": 526,
+    "failed": 0,
+    "skipped": 3,
+    "subtests_passed": 125,
+    "runner_duration_seconds": 37.4,
+    "skip_reason": "Two live PostgreSQL opt-ins (separate actual PostgreSQL18.6 run passed26) plus Windows symlink permission.",
+    "warnings": "One Starlette TestClient HTTPX deprecation.",
+    "includes": "Final staged/concise profiles, strict audit provenance, adapter retry/cleanup patch, corrected fixture defaults, training alignment, annotation rebase and system QA.",
+    "learned_detection_or_gpu_capacity_proof": false,
+    "versions": {
+      "python": "3.14.0",
+      "fastapi": "0.143.3",
+      "pydantic": "2.14.1",
+      "starlette": "1.8.0",
+      "sqlalchemy": "2.1.5",
+      "psycopg": "3.3.6",
+      "av": "19.0.1",
+      "pillow": "13.0.0",
+      "httpx": "0.28.1",
+      "pytest": "9.1.1"
+    }
+  },
+  "wheel_build": "succeeded",
+  "source_bundle_builder": "qa/integration/build_release_bundle.py",
+  "this_synthetic_integration_uses_gpu": false,
+  "external_public_smoke_success": false,
+  "external_public_smoke_proof": "qa/integration/public-smoke.json",
+  "separate_model_startup_proof": "configs/serving/startup-validation.json",
+  "post_snapshot_parent_reported_diagnostics": {
+    "scoped_test_passes": [
+      71,
+      33
+    ],
+    "new_diagnostic_regressions_in_33": 2,
+    "latest_focused_failure_audit_assertion_passed": true,
+    "overlaps_original_broad_suite": true,
+    "scope": "Only sanitized error codes and numeric failed-request/job telemetry; no schema/prompt/verdict changes."
+  },
+  "superseded_broad_snapshots": [
+    {
+      "command": "python -m pytest tests rules/tests serving/tests training/test_training.py annotations/test_workflow.py annotations/test_rebase.py qa/system -q",
+      "passed": 470,
+      "skipped": 3,
+      "subtests_passed": 107,
+      "runner_duration_seconds": 36.82,
+      "additional_disjoint_alignment_check": {
+        "path": "training/test_alignment.py",
+        "passed": 8,
+        "runner_duration_seconds": 0.23,
+        "overlaps_broad_suite": false
+      },
+      "skip_reason": "two live PostgreSQL opt-ins (separate actual PostgreSQL 18.6 run passed 26) plus local account symlink creation permission",
+      "warnings": "one Starlette TestClient HTTPX deprecation",
+      "learned_detection_or_gpu_capacity_proof": false,
+      "versions": {
+        "python": "3.14.0",
+        "fastapi": "0.143.3",
+        "pydantic": "2.14.1",
+        "starlette": "1.8.0",
+        "sqlalchemy": "2.1.5",
+        "psycopg": "3.3.6",
+        "av": "19.0.1",
+        "pillow": "13.0.0",
+        "httpx": "0.28.1",
+        "pytest": "9.1.1"
+      },
+      "status": "superseded_by_later_source_changes"
+    }
+  ],
+  "latest_pre_adapter_broad_snapshot": {
+    "status": "superseded_fixture_corrected_adapter_hardened_final_run_passed",
+    "command": "python -m pytest tests rules/tests serving/tests training/test_training.py training/test_alignment.py annotations/test_workflow.py annotations/test_rebase.py qa/system -q",
+    "passed": 514,
+    "failed": 2,
+    "skipped": 3,
+    "subtests_passed": 113,
+    "runner_duration_seconds": 35.26,
+    "failures": "Two A06 synthetic _Batch objects lacked newly required prompt_version/config_version/prompt_hash audit attributes. Actual DecisionBatch provenance remains strict.",
+    "interrupted_prefreeze_run_included": false
+  }
+}

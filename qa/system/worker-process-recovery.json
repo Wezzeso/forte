@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:10:00.404772+00:00",
+  "status": "PASS",
+  "old_attempt_fenced": true,
+  "attempts": 2,
+  "actual_worker_process_abruptly_killed": true,
+  "synthetic_pipeline": true,
+  "real_gpu_or_video_analysis": false,
+  "storage": "SQLite durable file",
+  "lease_seconds": 1.5,
+  "kill_to_replacement_publication_ms": 3326.2954,
+  "total_check_ms": 5875.6676,
+  "scope": "actual Worker/job-store/publication behavior with synthetic pipeline only"
+}

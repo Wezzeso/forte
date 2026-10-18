@@ -1,0 +1,110 @@
+{
+  "review_date": "2026-10-17",
+  "timezone": "Asia/Qyzylorda",
+  "reviewer": "A19",
+  "scope": "Synthetic UI screenshots plus A16 browser assertions; no private evidence or real-model/deployment validation",
+  "desktop_viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "narrow_viewport": {
+    "height": 900,
+    "width": 360
+  },
+  "screenshots": [
+    {
+      "path": "web/qa/screenshots/upload-desktop.png",
+      "sha256": "0d46e33aca96fc3800bc592246f587be65dee6abe340c5a23fb0d7a158d9fc1f",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/upload-360.png",
+      "sha256": "d7bc19b5013733b34d92157ac764c13ba1f6806557b197db63c7867c408272f5",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/positive-multiple-desktop.png",
+      "sha256": "cd4b303f6f6b65eb6970c9dea399dab961dc01142326a6b13b95ea847c66b51f",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/positive-multiple-360.png",
+      "sha256": "2faebbfa1727d37a45b19dc55979e4e2356d64d3ee7cb38117c13730b0b78f58",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/negative-desktop.png",
+      "sha256": "484227ebf29a1e4447696779cc2ebf433b03b75622d0c7fc4331fddb92ad998f",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/failed-desktop.png",
+      "sha256": "60f3d899860f9ddc64d4d6292cb70951eb2c78ce1ee528a829033e208822905b",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/processing-desktop.png",
+      "sha256": "cf2166697e5df10d6a43aaa2ccbf6dcf48c3f81d2a70a9cefb036c30dd423261",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    },
+    {
+      "path": "web/qa/screenshots/evidence-modal.png",
+      "sha256": "748dd6c760493ff02dd43ce6a5fd4b22aa2018530c41a0f4c2fa7df57ea63b92",
+      "visually_reviewed": true,
+      "content": "Synthetic test pattern and contract JPEG only"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "web/src/App.tsx",
+      "sha256": "48c6378350b5456c393b67131fb2663ae6a4b9211ee4e4afdeb294fae5f0c8ad"
+    },
+    {
+      "path": "web/src/styles.css",
+      "sha256": "6558ad9b8bbf12b527c769de3c5d1dcd272e623e37e698e4739ba656b84ab97f"
+    },
+    {
+      "path": "web/vite.config.ts",
+      "sha256": "b4a33811c2eb69952ec523004405a0de9f6c27570e2a870da166327d95d9b9b9"
+    },
+    {
+      "path": "web/qa/reviewer.spec.ts",
+      "sha256": "5c49dd71b84dcbe321ab1cf017d42f55e17b8a2d5841908fc12c221ff58ef4fd"
+    },
+    {
+      "path": "web/qa/results.json",
+      "sha256": "a58bd397275703fe58083864e09ae7c6997b7d21e39d3359a16c35aabff5175c"
+    }
+  ],
+  "browser_results": {
+    "startTime": "2026-10-17T10:07:24.194Z",
+    "duration": 14358.613,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "font_loaded_assertion": "A16 test asserts document.fonts.load returns an Open Sans face",
+  "closed_findings": [
+    "Small text sizes",
+    "Six muted text contrast pairs",
+    "Modal callback/focus lifecycle",
+    "Narrow evidence gallery columns",
+    "Full-page modal screenshot artifact",
+    "Russian small brand context",
+    "Vite dev font allowlist, verified actual local font loading"
+  ],
+  "not_measured": [
+    "200 percent browser zoom",
+    "Full WCAG audit",
+    "Live backend/inference performance",
+    "Public deployment"
+  ]
+}

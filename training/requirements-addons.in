@@ -1,0 +1,4 @@
+# Core ML and processor dependencies come from the immutable cu129 image.
+# Resolve these wheels without dependencies; never upgrade the producer stack.
+peft==0.21.2
+accelerate==1.15.0

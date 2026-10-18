@@ -1,0 +1,56 @@
+# Optional private CPU runner. GPU inference is sent only to the existing warm
+# model on the internal forte_private network; there are no host ports.
+name: forte-teacher
+services:
+  teacher:
+    image: ${FORTE_TEACHER_IMAGE:?Set the immutable tested CPU image ID}
+    pull_policy: never
+    profiles: [teacher]
+    entrypoint: [python]
+    command: [-c, "import training.teacher_sampling; print('teacher_import_passed')"]
+    working_dir: /app
+    user: "1000:1000"
+    restart: "no"
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    cpus: 2
+    mem_limit: 4g
+    environment:
+      PYTHONPATH: /teacher/code/src:/teacher/code:/app
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+      FORTE_MODEL_BASE_URL: http://model:8000/v1
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      HOME: /tmp
+      OMP_NUM_THREADS: "2"
+    volumes:
+      - type: bind
+        source: ${FORTE_TEACHER_CODE:?Set the separate verified public teacher code directory}
+        target: /teacher/code
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_TEACHER_PRIVATE:?Set the separate restricted private teacher metadata directory}
+        target: /teacher/metadata
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_TEACHER_SOURCES:?Set the SHA256-verified original MOV source directory}
+        target: /private/sources
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_TEACHER_OUTPUT:?Set the new private W2 teacher output directory}
+        target: /teacher/w2
+        bind: {create_host_path: false}
+    tmpfs: ["/tmp:size=2g,nosuid,nodev,mode=1777"]
+    networks: [private]
+    logging: {driver: none}
+networks:
+  private:
+    external: true
+    name: forte_private

@@ -1,0 +1,20 @@
+{
+  "scope": "actual HTTP with generated synthetic MOV; no accuracy or required-video latency claim",
+  "checks": {
+    "missing_key_post_rejected": true,
+    "missing_key_get_rejected": true,
+    "wrong_key_post_rejected": true,
+    "wrong_key_get_rejected": true,
+    "unknown_job_404": true,
+    "upload_202": true
+  },
+  "completed_schema_valid": false,
+  "synthetic_upload_start_to_result_sec": null,
+  "error_code": "synthetic_analysis_failed",
+  "pass": false,
+  "terminal_status": "failed",
+  "job_id": "697b03f3000648b4a04eefcde98397ae",
+  "static_internal_error_code": "processing_failed",
+  "static_error_proof": "qa/system/a20-generated-mov-static-error.json",
+  "internal_failure_details_read": false
+}

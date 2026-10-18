@@ -1,0 +1,8 @@
+# Official PyPI Linux x86_64 universal-Python wheel verified 2026-10-17.
+# bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl; 43,139,553 bytes.
+# MIT. Requires Python>=3.10, torch>=2.4,<3, numpy>=1.17, packaging>=20.9.
+# The inherited image already satisfies these; install with --no-deps only.
+# The official wheel chooses CUDA12.8 for a Torch CUDA12.9 runtime. This is
+# upstream same-major fallback, not proof of a successful A100 NF4 operation.
+bitsandbytes @ https://files.pythonhosted.org/packages/a5/6e/e4e8b75716dbe5e50964f070266e06f4e6806ce051bfb97f52ee162b9310/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl \
+    --hash=sha256:55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283

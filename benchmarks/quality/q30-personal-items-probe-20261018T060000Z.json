@@ -1,0 +1,662 @@
+{
+  "bank_labels_mounted": false,
+  "container_user": "1001:1001",
+  "data": {
+    "diagnostic_only": true,
+    "labels_used_for_processing": false,
+    "model": "q30test",
+    "pipeline_change_qualified": false,
+    "policy": {
+      "decision_thresholds_fitted": 0,
+      "decode_fps": 2,
+      "desk_crops": 3,
+      "full_frames": 6,
+      "label_tuned_parameters": 0,
+      "max_requests": 64,
+      "max_tokens": 128,
+      "max_wall_s": 150,
+      "native_unresized_crops": true,
+      "parallel_videos": 2,
+      "phrasings": 2,
+      "preset_controls": 8,
+      "proposal_window": "inherited_reference_verify_window",
+      "request_concurrency": 4,
+      "transport": "existing_jpeg_data_url_default_quality_88"
+    },
+    "results": [
+      {
+        "name": "X-1",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-10",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-11",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-12",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-13",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-14",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-15",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-16",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-17",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-18",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-19",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": false,
+                "fixed_equipment": false,
+                "object_kind": "unclear",
+                "on_work_surface": false,
+                "recognizable": false,
+                "touched_or_lifted": false
+              },
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "cash_or_documents",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": false
+              }
+            ],
+            "desk_crops": 3,
+            "end": 33.0,
+            "full_frames": 6,
+            "start": 25.0,
+            "status": "done",
+            "supported": false,
+            "t": 29.0
+          }
+        ],
+        "run": "a"
+      },
+      {
+        "name": "X-2",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-20",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-21",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-22",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-23",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-24",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-25",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-26",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-27",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-28",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-29",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-3",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-30",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-31",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-32",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-33",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-34",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-35",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-37",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-38",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-39",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-4",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-40",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": false,
+                "fixed_equipment": false,
+                "object_kind": "unclear",
+                "on_work_surface": false,
+                "recognizable": false,
+                "touched_or_lifted": false
+              },
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "coat_or_handbag",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              }
+            ],
+            "desk_crops": 3,
+            "end": 23.0,
+            "full_frames": 6,
+            "start": 15.0,
+            "status": "done",
+            "supported": false,
+            "t": 19.0
+          }
+        ],
+        "run": "a"
+      },
+      {
+        "name": "X-43",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-44",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-45",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-46",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "drink_container",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              },
+              {
+                "consistent_across_frames": false,
+                "fixed_equipment": true,
+                "object_kind": "fixed_equipment",
+                "on_work_surface": false,
+                "recognizable": false,
+                "touched_or_lifted": false
+              }
+            ],
+            "desk_crops": 3,
+            "end": 14.0,
+            "full_frames": 6,
+            "start": 6.0,
+            "status": "done",
+            "supported": false,
+            "t": 10.0
+          }
+        ],
+        "run": "a"
+      },
+      {
+        "name": "X-5",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-8",
+        "proposals": [],
+        "run": "a"
+      },
+      {
+        "name": "X-1",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-10",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-11",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-12",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-13",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-14",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-15",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-16",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-17",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-18",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-19",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "drink_container",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              },
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "cash_or_documents",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": false
+              }
+            ],
+            "desk_crops": 3,
+            "end": 33.0,
+            "full_frames": 6,
+            "start": 25.0,
+            "status": "done",
+            "supported": false,
+            "t": 29.0
+          }
+        ],
+        "run": "b"
+      },
+      {
+        "name": "X-2",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-20",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-21",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-22",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-23",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-24",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-25",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-26",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-27",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-28",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-29",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-3",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-30",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-31",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-32",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-33",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-34",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-35",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-37",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-38",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-39",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-4",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-40",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "coat_or_handbag",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              },
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "coat_or_handbag",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              }
+            ],
+            "desk_crops": 3,
+            "end": 22.0,
+            "full_frames": 6,
+            "start": 14.0,
+            "status": "done",
+            "supported": true,
+            "t": 18.0
+          }
+        ],
+        "run": "b"
+      },
+      {
+        "name": "X-43",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-44",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-45",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-46",
+        "proposals": [
+          {
+            "answers": [
+              {
+                "consistent_across_frames": true,
+                "fixed_equipment": false,
+                "object_kind": "drink_container",
+                "on_work_surface": true,
+                "recognizable": true,
+                "touched_or_lifted": true
+              },
+              {
+                "consistent_across_frames": false,
+                "fixed_equipment": true,
+                "object_kind": "fixed_equipment",
+                "on_work_surface": false,
+                "recognizable": false,
+                "touched_or_lifted": false
+              }
+            ],
+            "desk_crops": 3,
+            "end": 14.0,
+            "full_frames": 6,
+            "start": 6.0,
+            "status": "done",
+            "supported": false,
+            "t": 10.0
+          }
+        ],
+        "run": "b"
+      },
+      {
+        "name": "X-5",
+        "proposals": [],
+        "run": "b"
+      },
+      {
+        "name": "X-8",
+        "proposals": [],
+        "run": "b"
+      }
+    ],
+    "schema": "forte.personal-items-probe.v1",
+    "scoring": {
+      "labels_opened_only_after_all_queries": true,
+      "per_run": {
+        "a": {
+          "failed_proposed_videos": 0,
+          "negative_videos": 19,
+          "proposed_videos_completed": 3,
+          "supported_on_negative_videos": 0,
+          "supported_on_positive_videos": 0,
+          "videos": 40,
+          "videos_with_cached_personal_proposal": 3
+        },
+        "b": {
+          "failed_proposed_videos": 0,
+          "negative_videos": 19,
+          "proposed_videos_completed": 3,
+          "supported_on_negative_videos": 0,
+          "supported_on_positive_videos": 1,
+          "videos": 40,
+          "videos_with_cached_personal_proposal": 3
+        }
+      },
+      "pipeline_accuracy_claim": false,
+      "scope": "cached_personal_item_proposals_only; binary_labels_have_no_type_ground_truth",
+      "type_enablement_qualified": false
+    },
+    "summary": {
+      "attempted_calls": 12,
+      "calls": 12,
+      "completion_tokens": 576,
+      "prompt_tokens": 32836,
+      "proposals": 6,
+      "source_runs": 2,
+      "timed_out": false,
+      "videos": 40,
+      "wall_s": 3.878
+    },
+    "type_enablement_qualified": false
+  },
+  "diagnostic_container_id": "c8f8bedde899fb2374ba896b2f3838915b56bb04b0af91cc2f8c0f4cb4b645dc",
+  "diagnostic_only": true,
+  "evaluation_image_id": "sha256:3adf4de21b17384ab3ad92db2712c458866d551a740598912bd270709e8a4b3a",
+  "frozen_source_modified": false,
+  "generated_at_utc": "2026-10-18T05:58:47.224844+00:00",
+  "input_sha256": "d87ef2fe133fbb64edea26c053444a4708e46049c4c747ae710c7b28a3b75113",
+  "instance_id": "plp5me7vz",
+  "labels_opened_only_after_all_queries": true,
+  "labels_used_for_processing": false,
+  "maximum_wrapper_seconds": 178,
+  "model": "q30test",
+  "model_container_id": "ba7da63d617787637a48006961eeadd59b83ba3e3ff98553aff896caef900fee",
+  "model_source_profile_unchanged": true,
+  "model_stop_or_reload_performed": false,
+  "pipeline_change_qualified": false,
+  "requested_tool_sha256": "0387e9e47e433c94e09ce09115a98c6a5d309c0e24fedfa894d2a9468e1b3c3d",
+  "schema": "forte.q30-personal-items-host.v1",
+  "source_manifest_sha256": "a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+  "source_reports_sha256": {
+    "q30base20261018a": "74fc4683091762cd2f09fc46d1b790032d4a612863da033eaa628a56947c5f63",
+    "q30base20261018b": "9d19cbcf1fee098033bbbea45279ded49e165010b23cdd684c70da3076f4bc32"
+  },
+  "status": "done",
+  "tool_sha256": "0387e9e47e433c94e09ce09115a98c6a5d309c0e24fedfa894d2a9468e1b3c3d",
+  "type_enablement_qualified": false,
+  "wall_s": 5.067
+}

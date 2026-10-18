@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "audit_utc": "2026-10-17T18:37:51.091834+00:00",
+  "scope": "read-only public-source and existing local installed-source audit; no GPU/model imports/requests/runtime mutations",
+  "vllm_version": "0.31.0",
+  "public_revision": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+  "native_image_id": "baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "runtime_observations_reference": "infra/qwen38-native-bf16-pilot-v2-monitor.latest-20261017.json",
+  "installed_source_checks": [
+    {
+      "source_path": "vllm/envs.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/envs.py",
+      "installed_capture_bytes": 118029,
+      "installed_capture_sha256": "0b7b10e7e26135e28696e90d5358224688f5f17b6cfbed8f3df38bfdde821f78",
+      "public_sha256": "1d7101800f67b803a700fbf7489292cf1f0022b570085166ad407e6b1513dc15",
+      "newline_normalized_sha256": "1d7101800f67b803a700fbf7489292cf1f0022b570085166ad407e6b1513dc15",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/config/speculative.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/config/speculative.py",
+      "installed_capture_bytes": 90466,
+      "installed_capture_sha256": "0cb7f6c8f505fba7fc2808945a756ca89be0c80eb33ff029cb70a8135980ca9e",
+      "public_sha256": "88cec427b52bb1cb56842f9034a4d49a915d05302b92b0249227feaf4d81f3e1",
+      "newline_normalized_sha256": "88cec427b52bb1cb56842f9034a4d49a915d05302b92b0249227feaf4d81f3e1",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/config/vllm.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/config/vllm.py",
+      "installed_capture_bytes": 166997,
+      "installed_capture_sha256": "7a625b61092a956508ad22d60204177473cef2f6c95a2a2259e0b69c472e9536",
+      "public_sha256": "057b0a7f80db28522ee46b41f9ae5bd7a0c1998a08e111c5a6ddcb8c08f07f8d",
+      "newline_normalized_sha256": "057b0a7f80db28522ee46b41f9ae5bd7a0c1998a08e111c5a6ddcb8c08f07f8d",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/config/cache.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/config/cache.py",
+      "installed_capture_bytes": 18402,
+      "installed_capture_sha256": "7c99ce4d35c3195fd17b3b53dcc1f40e6969995eac80e4dab4b72165ecbc447f",
+      "public_sha256": "a9b2a804c9c353e7bded64081bf920c79432d4e44ca180c05e275c69e642a280",
+      "newline_normalized_sha256": "a9b2a804c9c353e7bded64081bf920c79432d4e44ca180c05e275c69e642a280",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/v1/worker/mamba_utils.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/v1/worker/mamba_utils.py",
+      "installed_capture_bytes": 71223,
+      "installed_capture_sha256": "f81f2a0ed697de7ecbec64535fafcf3e384aad5f52e7619c8c8e57104144f606",
+      "public_sha256": "28c8a9bb07a56e3612e245ccc48cd7f29d85181dbe5e4cf8940c6bcd086df856",
+      "newline_normalized_sha256": "28c8a9bb07a56e3612e245ccc48cd7f29d85181dbe5e4cf8940c6bcd086df856",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/v1/attention/backends/gdn_attn.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/v1/attention/backends/gdn_attn.py",
+      "installed_capture_bytes": 29388,
+      "installed_capture_sha256": "8e6fd286ca8b4a09704d0205948510107f845397ffbbf2c2406bf605386d17e8",
+      "public_sha256": "496f383285de2fe92626091309a56a96a64b496f37d5585f8b7b55d0260e1a84",
+      "newline_normalized_sha256": "496f383285de2fe92626091309a56a96a64b496f37d5585f8b7b55d0260e1a84",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/v1/structured_output/__init__.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/v1/structured_output/__init__.py",
+      "installed_capture_bytes": 20923,
+      "installed_capture_sha256": "0bab03360ec89d82864d30cbc937b83922c67ddf4bc933d40e4d8430d2e624c6",
+      "public_sha256": "92f2b2550d988abd1ac4edf9664b14dd8c2afb4cee4dc585c7348ce3995d5ac5",
+      "newline_normalized_sha256": "92f2b2550d988abd1ac4edf9664b14dd8c2afb4cee4dc585c7348ce3995d5ac5",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py",
+      "installed_capture_bytes": 75562,
+      "installed_capture_sha256": "ba3aa002a4ae8c4a57369c567ffade967efab9d8c29b6edab30d8db7f40136c0",
+      "public_sha256": "3bd2f805f0f4b821e6902ef18da8ba66ad42a7e5a633b76abe96892532293d9c",
+      "newline_normalized_sha256": "3bd2f805f0f4b821e6902ef18da8ba66ad42a7e5a633b76abe96892532293d9c",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/v1/worker/gpu_model_runner.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/v1/worker/gpu_model_runner.py",
+      "installed_capture_bytes": 342873,
+      "installed_capture_sha256": "5b63d0c03d8653676af7fb49a1e1600ed9d77563471edaa4132b79812442406a",
+      "public_sha256": "bb903dffcb5a6e5b8a477daf0854b3812e135349d61fc20c6133f91cd3c9752a",
+      "newline_normalized_sha256": "bb903dffcb5a6e5b8a477daf0854b3812e135349d61fc20c6133f91cd3c9752a",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/v1/structured_output/backend_xgrammar.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/v1/structured_output/backend_xgrammar.py",
+      "installed_capture_bytes": 16409,
+      "installed_capture_sha256": "7cf28ece01ed342e77a60421a08bfa8b61a5779901a06079755d5ae6f5899f89",
+      "public_sha256": "7fab895e89f98f2a38e1007ec2c48557d77603a6de9c2c33df1b3432cbbe1876",
+      "newline_normalized_sha256": "7fab895e89f98f2a38e1007ec2c48557d77603a6de9c2c33df1b3432cbbe1876",
+      "newline_normalized_equal": true
+    },
+    {
+      "source_path": "vllm/model_executor/models/qwen3_5.py",
+      "installed_capture_path": "tmp/qwen38-vllm-installed-source/vllm/model_executor/models/qwen3_5.py",
+      "installed_capture_bytes": 28745,
+      "installed_capture_sha256": "5bf387ebc4d721950cfe1330cbec56ea743cd4aed2292c32eed073e9883e893f",
+      "public_sha256": "d261726aae3ce5d52c37b868c317d9377d5e1d7c344961707acc07785a4ec4ab",
+      "newline_normalized_sha256": "d261726aae3ce5d52c37b868c317d9377d5e1d7c344961707acc07785a4ec4ab",
+      "newline_normalized_equal": true
+    }
+  ],
+  "official_api_status": [
+    {
+      "url": "https://github.com/vllm-project/vllm/issues/39273",
+      "api_snapshot": "issues-39273.api.json",
+      "sha256": "447a4ef9a0b8633b603e98ac9f1cc173f26c5a03ee5fa133d1302ae07f0338dd",
+      "state": "open",
+      "merged": null,
+      "updated_at": "2026-08-28T10:30:03Z",
+      "head_sha": null
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/pull/40738",
+      "api_snapshot": "pulls-40738.api.json",
+      "sha256": "dc03ea0994b27a9c5762a585c11cf4d2a8930f937941e92babcc68834520ea6c",
+      "state": "open",
+      "merged": false,
+      "updated_at": "2026-09-06T01:42:50Z",
+      "head_sha": "6b5632cda8af914481b2cfa8fa6faad7b2678e0b"
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/issues/54498",
+      "api_snapshot": "issues-54498.api.json",
+      "sha256": "6d99477b77a0450e3c7687ff0362c216312f4f2a9280b53558e7c083254148ac",
+      "state": "open",
+      "merged": null,
+      "updated_at": "2026-09-02T01:01:27Z",
+      "head_sha": null
+    }
+  ],
+  "source_inventory": [
+    {
+      "source_path": "vllm/config/speculative.py",
+      "local_path": "vllm__config__speculative.py",
+      "size_bytes": 88471,
+      "sha256": "88cec427b52bb1cb56842f9034a4d49a915d05302b92b0249227feaf4d81f3e1",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/speculative.py"
+    },
+    {
+      "source_path": "vllm/config/mamba.py",
+      "local_path": "vllm__config__mamba.py",
+      "size_bytes": 4025,
+      "sha256": "2090f791201ca45dd4f1d72b8651268890eb07574b6084721194eb8fdf612c48",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/mamba.py"
+    },
+    {
+      "source_path": "vllm/config/vllm.py",
+      "local_path": "vllm__config__vllm.py",
+      "size_bytes": 163374,
+      "sha256": "057b0a7f80db28522ee46b41f9ae5bd7a0c1998a08e111c5a6ddcb8c08f07f8d",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/vllm.py"
+    },
+    {
+      "source_path": "vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py",
+      "local_path": "vllm__model_executor__layers__mamba__gdn__qwen_gdn_linear_attn.py",
+      "size_bytes": 73599,
+      "sha256": "3bd2f805f0f4b821e6902ef18da8ba66ad42a7e5a633b76abe96892532293d9c",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py"
+    },
+    {
+      "source_path": "vllm/model_executor/layers/mamba/gdn/base.py",
+      "local_path": "vllm__model_executor__layers__mamba__gdn__base.py",
+      "size_bytes": 2072,
+      "sha256": "e326cba09aceca3e247d0b51e6073240d04591ca433dbb20359c720167869fa0",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/layers/mamba/gdn/base.py"
+    },
+    {
+      "source_path": "vllm/v1/attention/backends/gdn_attn.py",
+      "local_path": "vllm__v1__attention__backends__gdn_attn.py",
+      "size_bytes": 28720,
+      "sha256": "496f383285de2fe92626091309a56a96a64b496f37d5585f8b7b55d0260e1a84",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/attention/backends/gdn_attn.py"
+    },
+    {
+      "source_path": "vllm/v1/spec_decode/ngram_proposer.py",
+      "local_path": "vllm__v1__spec_decode__ngram_proposer.py",
+      "size_bytes": 11231,
+      "sha256": "b7c0a80715b946ca57f4946dddbf9c6b256b1eaff5e872c55ccf841d9a6db7c5",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/spec_decode/ngram_proposer.py"
+    },
+    {
+      "source_path": "vllm/v1/spec_decode/ngram_proposer_gpu.py",
+      "local_path": "vllm__v1__spec_decode__ngram_proposer_gpu.py",
+      "size_bytes": 25282,
+      "sha256": "e9331592955d221919ea7d4a06e070005cf75fcbd160878ab7cdf18c528bc806",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/spec_decode/ngram_proposer_gpu.py"
+    },
+    {
+      "source_path": "vllm/v1/spec_decode/suffix_decoding.py",
+      "local_path": "vllm__v1__spec_decode__suffix_decoding.py",
+      "size_bytes": 4543,
+      "sha256": "6b60b3d0e0668e1c011f5754260eaf142dd03be40ced12859fb9bac0fda669bb",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/spec_decode/suffix_decoding.py"
+    },
+    {
+      "source_path": "vllm/v1/structured_output/__init__.py",
+      "local_path": "vllm__v1__structured_output____init__.py",
+      "size_bytes": 20453,
+      "sha256": "92f2b2550d988abd1ac4edf9664b14dd8c2afb4cee4dc585c7348ce3995d5ac5",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/structured_output/__init__.py"
+    },
+    {
+      "source_path": "vllm/v1/structured_output/backend_xgrammar.py",
+      "local_path": "vllm__v1__structured_output__backend_xgrammar.py",
+      "size_bytes": 15971,
+      "sha256": "7fab895e89f98f2a38e1007ec2c48557d77603a6de9c2c33df1b3432cbbe1876",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/structured_output/backend_xgrammar.py"
+    },
+    {
+      "source_path": "vllm/v1/worker/gpu_model_runner.py",
+      "local_path": "vllm__v1__worker__gpu_model_runner.py",
+      "size_bytes": 335342,
+      "sha256": "bb903dffcb5a6e5b8a477daf0854b3812e135349d61fc20c6133f91cd3c9752a",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/worker/gpu_model_runner.py"
+    },
+    {
+      "source_path": "tests/v1/spec_decode/test_mtp_structured_output.py",
+      "local_path": "tests__v1__spec_decode__test_mtp_structured_output.py",
+      "size_bytes": 5772,
+      "sha256": "7e4a73c66be8986a340a86a3aa81054c52c1cb21e7d59b9eea1af57d671519d5",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/v1/spec_decode/test_mtp_structured_output.py"
+    },
+    {
+      "source_path": "vllm/envs.py",
+      "local_path": "vllm__envs.py",
+      "size_bytes": 115599,
+      "sha256": "1d7101800f67b803a700fbf7489292cf1f0022b570085166ad407e6b1513dc15",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/envs.py"
+    },
+    {
+      "source_path": "vllm/config/structured_outputs.py",
+      "local_path": "vllm__config__structured_outputs.py",
+      "size_bytes": 3175,
+      "sha256": "3dad9318d6a200ddfc7a5336120539ab9817601703716168b0f35cb28889dedd",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/structured_outputs.py"
+    },
+    {
+      "source_path": "vllm/v1/structured_output/backend_types.py",
+      "local_path": "vllm__v1__structured_output__backend_types.py",
+      "size_bytes": 3980,
+      "sha256": "182f63743c4d96022ed22a415b4e317a203b7ba89c177010489039cacfd1ec17",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/structured_output/backend_types.py"
+    },
+    {
+      "source_path": "tests/v1/spec_decode/test_ngram.py",
+      "local_path": "tests__v1__spec_decode__test_ngram.py",
+      "size_bytes": 8303,
+      "sha256": "d2b7498396c0872c33a438afbdc52b23654b1149d18c2e9b1022b14d81715715",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/v1/spec_decode/test_ngram.py"
+    },
+    {
+      "source_path": "vllm/v1/worker/mamba_utils.py",
+      "local_path": "vllm__v1__worker__mamba_utils.py",
+      "size_bytes": 69536,
+      "sha256": "28c8a9bb07a56e3612e245ccc48cd7f29d85181dbe5e4cf8940c6bcd086df856",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/worker/mamba_utils.py"
+    },
+    {
+      "source_path": "vllm/model_executor/models/qwen3_5.py",
+      "local_path": "vllm__model_executor__models__qwen3_5.py",
+      "size_bytes": 27990,
+      "sha256": "d261726aae3ce5d52c37b868c317d9377d5e1d7c344961707acc07785a4ec4ab",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/models/qwen3_5.py"
+    },
+    {
+      "source_path": "vllm/config/cache.py",
+      "local_path": "vllm__config__cache.py",
+      "size_bytes": 18023,
+      "sha256": "a9b2a804c9c353e7bded64081bf920c79432d4e44ca180c05e275c69e642a280",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/cache.py"
+    },
+    {
+      "source_path": "cmake/external_projects/flashmla.cmake",
+      "local_path": "cmake__external_projects__flashmla.cmake",
+      "size_bytes": 12989,
+      "sha256": "677dca1f21a5bed182f023184d96679b12b4a4aa4e4d23fb01345e05b872446a",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/cmake/external_projects/flashmla.cmake"
+    },
+    {
+      "source_path": "CMakeLists.txt",
+      "local_path": "CMakeLists.txt",
+      "size_bytes": 69045,
+      "sha256": "08d602cd160b444634fe1c555cef410f19976731d00869f7fa55644e236bc0e5",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/CMakeLists.txt"
+    },
+    {
+      "source_path": "tests/v1/e2e/spec_decode/ngram_suffix/test_ngram_suffix.py",
+      "local_path": "tests__v1__e2e__spec_decode__ngram_suffix__test_ngram_suffix.py",
+      "size_bytes": 5992,
+      "sha256": "5f4cccac99ee3fd8af91f067e36faed3fa3aee4d1c0191df31d3e643f075f561",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/v1/e2e/spec_decode/ngram_suffix/test_ngram_suffix.py"
+    },
+    {
+      "source_path": "tests/kernels/mamba/test_gdn_fused_mtp.py",
+      "local_path": "tests__kernels__mamba__test_gdn_fused_mtp.py",
+      "size_bytes": 12588,
+      "sha256": "28e1f6bda73c95c1ce88e2caa63d7dbd7811ee10185bb141f760889384e36c1a",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/mamba/test_gdn_fused_mtp.py"
+    },
+    {
+      "source_path": "tests/kernels/mamba/test_gdn_forward_core_split.py",
+      "local_path": "tests__kernels__mamba__test_gdn_forward_core_split.py",
+      "size_bytes": 11405,
+      "sha256": "b6b6ff5e19bf4e067ef86d3ff9e05116700cf7f348c2eca8f94cd2d4e9a3a6f4",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/mamba/test_gdn_forward_core_split.py"
+    },
+    {
+      "source_path": "tests/kernels/fla/test_fused_gdn_post_conv.py",
+      "local_path": "tests__kernels__fla__test_fused_gdn_post_conv.py",
+      "size_bytes": 12477,
+      "sha256": "1c2f68b4ba6d8b225123903e7f89a2d138fd72ef91021df43068bae637acf26c",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/fla/test_fused_gdn_post_conv.py"
+    },
+    {
+      "source_path": "csrc/libtorch_stable/gdn/fused_gdn_decode_kernel.cu",
+      "local_path": "csrc__libtorch_stable__gdn__fused_gdn_decode_kernel.cu",
+      "size_bytes": 25094,
+      "sha256": "9581d256847b1922b21a54c39086d92da4f402b7310b0e8649e45ec0cae341fe",
+      "immutable_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/csrc/libtorch_stable/gdn/fused_gdn_decode_kernel.cu"
+    }
+  ],
+  "findings": [
+    {
+      "id": "gdn_prefill_sm80",
+      "status": "source_verified",
+      "conclusion": "A100 SM80 resolves to Triton; FlashInfer/CuteDSL prefill selectors cannot enable unsupported kernels."
+    },
+    {
+      "id": "fused_gdn_sm80",
+      "status": "architecturally_supported_runtime_unverified",
+      "knob": "VLLM_GDN_DECODE_KERNEL=cuda",
+      "default": "cuda",
+      "build_requirement": "CUDA compiler >=13.0; SM80 included",
+      "runtime_requirements": [
+        "BF16 model and conv state",
+        "BF16 or FP32 recurrent state",
+        "K=V=128",
+        "SiLU/sigmoid",
+        "non-interleaved GQA",
+        "compiled torch.ops._C.fused_gdn_decode_post_conv_mtp"
+      ],
+      "unresolved": "Existing image reports CUDA12.9 and configured Triton/fused0; actual selector override/fallback reason and op build not established by this audit."
+    },
+    {
+      "id": "packed_triton",
+      "status": "source_verified",
+      "knob": "VLLM_ENABLE_FLA_PACKED_RECURRENT_DECODE=1",
+      "default": true,
+      "eligibility": "decode-only non-spec batches",
+      "unresolved": "Actual recorded flag not located."
+    },
+    {
+      "id": "ngram_gpu",
+      "status": "present_not_lossless_verified",
+      "configuration_candidate_only": {
+        "method": "ngram_gpu",
+        "num_speculative_tokens": 2,
+        "prompt_lookup_min": 8,
+        "prompt_lookup_max": 12,
+        "rejection_sample_method": "standard"
+      },
+      "requires_new_weights": false,
+      "supports_async_scheduling_in_config": true,
+      "blocker": "Open upstream hybrid GDN silent-corruption issue39273/PR40738; exact hybrid+video+LoRA+JSON combination unverified."
+    },
+    {
+      "id": "cpu_ngram_suffix",
+      "status": "lower_priority_not_lossless_verified",
+      "async_scheduling": "CPU ngram/suffix disable auto async scheduling; explicit async unsupported for these methods.",
+      "suffix_dependency": "arctic-inference==0.1.1",
+      "blocker": "Shared unresolved hybrid state correctness risk."
+    },
+    {
+      "id": "grammar_jump_forward",
+      "status": "not_implemented_in_inspected_v1_path",
+      "conclusion": "Grammar masks speculative positions, but no stock V1 forced-token span skip knob found; find_jump_forward_string appears only in backend comment."
+    }
+  ],
+  "preserved_controls": [
+    "full19 semantics",
+    "original frame coverage and PTS",
+    "adapter/base/processor/template identity",
+    "JSON schema",
+    "generation seed4096",
+    "generation settings and deadlines"
+  ],
+  "runtime_changes_made": false,
+  "gpu_work_performed": false,
+  "recommended_next_step": "Resolve recorded fused-decode fallback/build identity, then root may schedule one isolated runtime candidate with correctness/latency gate. Do not promote ngram from acceptance/JSON validity alone."
+}

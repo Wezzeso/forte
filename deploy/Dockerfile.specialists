@@ -1,0 +1,17 @@
+# Optional local GPU perception worker. Build and validate before selecting it.
+# No weights, footage, credentials or private gates enter this image.
+ARG BASE_IMAGE=forte-review:fast
+FROM ${BASE_IMAGE}
+USER 0
+RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 libgl1 \
+    && rm -rf /var/lib/apt/lists/*
+RUN python -m ensurepip --upgrade \
+    && python -m pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cu129 \
+       'torch==2.13.0' 'torchvision==0.28.0'
+COPY deploy/requirements-specialist-runtime.txt /tmp/requirements-specialists.txt
+RUN python -m pip install --no-cache-dir -r /tmp/requirements-specialists.txt \
+    && python -m pip check \
+    && python -c "import torch, rfdetr, supervision; from forte.fast.specialists import SpecialistRuntime" \
+    && rm /tmp/requirements-specialists.txt
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_TELEMETRY=1
+USER 10001:10001

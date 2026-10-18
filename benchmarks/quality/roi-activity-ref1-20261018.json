@@ -1,0 +1,1351 @@
+{
+ "schema": "forte.roi-activity.v1",
+ "fps": 10.0,
+ "active": 0.08,
+ "results": [
+  {
+   "name": "X-1",
+   "duration": 25.9,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.6,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [
+    {
+     "start": 1.0,
+     "end": 25.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.6,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 22
+   }
+  },
+  {
+   "name": "X-10",
+   "duration": 15.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-11",
+   "duration": 25.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.4,
+    "counting_machine_active_s": 0.4,
+    "safe_active_s": 0.6,
+    "laptop_active_s": 0.8,
+    "desk_active_s": 0.4,
+    "door_active_s": 0.4
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 18
+   }
+  },
+  {
+   "name": "X-12",
+   "duration": 42.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.3,
+    "counting_machine_active_s": 1.6,
+    "safe_active_s": 0.5,
+    "laptop_active_s": 1.6,
+    "desk_active_s": 0.3,
+    "door_active_s": 0.3
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-13",
+   "duration": 65.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0.2,
+    "laptop_active_s": 0.9,
+    "desk_active_s": 0,
+    "door_active_s": 0.1
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 47
+   }
+  },
+  {
+   "name": "X-14",
+   "duration": 142.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.2,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.9,
+    "laptop_active_s": 1.6,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-15",
+   "duration": 20.8,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0.3,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 1.1
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 15
+   }
+  },
+  {
+   "name": "X-16",
+   "duration": 22.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.7,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.5
+   },
+   "visits": [
+    {
+     "start": 3.0,
+     "end": 22.0,
+     "cash": true,
+     "counting": false,
+     "bag": true,
+     "detector_active_s": 1.7,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0.4
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-17",
+   "duration": 14.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.7
+   },
+   "visits": [
+    {
+     "start": 3.0,
+     "end": 12.0,
+     "cash": false,
+     "counting": false,
+     "bag": true,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0.4
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 7
+   }
+  },
+  {
+   "name": "X-18",
+   "duration": 22.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0.5,
+    "desk_active_s": 1.6,
+    "door_active_s": 0.9
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 22.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.5,
+     "desk_active_s": 1.6,
+     "door_active_s": 0.9
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 20
+   }
+  },
+  {
+   "name": "X-19",
+   "duration": 57.4,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.6,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0.8,
+    "desk_active_s": 0.1,
+    "door_active_s": 1.6
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 47.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 1.5,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.8,
+     "desk_active_s": 0.1,
+     "door_active_s": 0.9
+    },
+    {
+     "start": 48.0,
+     "end": 57.0,
+     "cash": true,
+     "counting": false,
+     "bag": false,
+     "detector_active_s": 0.1,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0.7
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-2",
+   "duration": 17.0,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.4
+   },
+   "visits": [
+    {
+     "start": 3.0,
+     "end": 17.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 1.0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0.4
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 10
+   }
+  },
+  {
+   "name": "X-20",
+   "duration": 11.6,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0.8,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 5
+   }
+  },
+  {
+   "name": "X-21",
+   "duration": 19.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.1,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-22",
+   "duration": 21.0,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 2.2,
+    "laptop_active_s": 0.8,
+    "desk_active_s": 0,
+    "door_active_s": 0.1
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 14
+   }
+  },
+  {
+   "name": "X-23",
+   "duration": 18.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.7,
+    "laptop_active_s": 0.1,
+    "desk_active_s": 0,
+    "door_active_s": 0.2
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-24",
+   "duration": 14.6,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.9,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 8
+   }
+  },
+  {
+   "name": "X-25",
+   "duration": 31.6,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 4.3,
+    "laptop_active_s": 0.1,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-26",
+   "duration": 19.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.9,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 9
+   }
+  },
+  {
+   "name": "X-27",
+   "duration": 26.4,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.6,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-28",
+   "duration": 16.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.1,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 2.2,
+    "laptop_active_s": 0.2,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 7
+   }
+  },
+  {
+   "name": "X-29",
+   "duration": 17.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 2.3,
+    "laptop_active_s": 0.7,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-3",
+   "duration": 20.0,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.5,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 20.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 1.5,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-30",
+   "duration": 18.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0.4,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.1
+   },
+   "visits": [
+    {
+     "start": 12.0,
+     "end": 18.0,
+     "cash": false,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0.3,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 13
+   }
+  },
+  {
+   "name": "X-31",
+   "duration": 23.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.2,
+    "counting_machine_active_s": 0.2,
+    "safe_active_s": 1.1,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.2
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-32",
+   "duration": 21.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 1.5,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.9
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 5
+   }
+  },
+  {
+   "name": "X-33",
+   "duration": 14.3,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0.2,
+    "safe_active_s": 2.3,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0.7
+   },
+   "visits": [
+    {
+     "start": 8.0,
+     "end": 14.0,
+     "cash": false,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0.2,
+     "safe_active_s": 0.9,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 6
+   }
+  },
+  {
+   "name": "X-34",
+   "duration": 17.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.4,
+    "counting_machine_active_s": 0.8,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 3.2
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 15.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.2,
+     "counting_machine_active_s": 0.4,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 2.8
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 13
+   }
+  },
+  {
+   "name": "X-35",
+   "duration": 56.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.3,
+    "counting_machine_active_s": 1.8,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 3.8
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 54.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 1.2,
+     "counting_machine_active_s": 1.8,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 3.2
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-37",
+   "duration": 15.8,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.5,
+    "counting_machine_active_s": 0.6,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 1.8
+   },
+   "visits": [
+    {
+     "start": 3.0,
+     "end": 15.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.5,
+     "counting_machine_active_s": 0.6,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 1.8
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-38",
+   "duration": 58.9,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.7,
+    "counting_machine_active_s": 1.9,
+    "safe_active_s": 0,
+    "laptop_active_s": 0.1,
+    "desk_active_s": 0,
+    "door_active_s": 7.7
+   },
+   "visits": [
+    {
+     "start": 1.0,
+     "end": 30.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.9,
+     "counting_machine_active_s": 0.8,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 3.4
+    },
+    {
+     "start": 30.0,
+     "end": 54.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.8,
+     "counting_machine_active_s": 1.1,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.1,
+     "desk_active_s": 0,
+     "door_active_s": 3.1
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 33
+   }
+  },
+  {
+   "name": "X-39",
+   "duration": 78.7,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 5.5,
+    "counting_machine_active_s": 4.2,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 7.3
+   },
+   "visits": [
+    {
+     "start": 4.0,
+     "end": 38.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 3.1,
+     "counting_machine_active_s": 3.0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 2.0
+    },
+    {
+     "start": 46.0,
+     "end": 75.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 2.1,
+     "counting_machine_active_s": 1.2,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 2.4
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-4",
+   "duration": 72.6,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.1,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0.7,
+    "desk_active_s": 0,
+    "door_active_s": 0.5
+   },
+   "visits": [
+    {
+     "start": 6.0,
+     "end": 53.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 1.1,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.6,
+     "desk_active_s": 0,
+     "door_active_s": 0.5
+    },
+    {
+     "start": 55.0,
+     "end": 72.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.1,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 57
+   }
+  },
+  {
+   "name": "X-40",
+   "duration": 25.2,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.4,
+    "counting_machine_active_s": 0.4,
+    "safe_active_s": 6.0,
+    "laptop_active_s": 0.6,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [
+    {
+     "start": 17.0,
+     "end": 25.0,
+     "cash": false,
+     "counting": true,
+     "bag": true,
+     "detector_active_s": 0.4,
+     "counting_machine_active_s": 0.1,
+     "safe_active_s": 1.1,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 17
+   }
+  },
+  {
+   "name": "X-43",
+   "duration": 23.3,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.4,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-44",
+   "duration": 20.4,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": true,
+    "t": 16
+   }
+  },
+  {
+   "name": "X-45",
+   "duration": 33.3,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 1.6,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [
+    {
+     "start": 2.0,
+     "end": 10.0,
+     "cash": false,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    },
+    {
+     "start": 19.0,
+     "end": 33.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.5,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-46",
+   "duration": 19.1,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [
+    {
+     "start": 0.0,
+     "end": 19.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0
+    }
+   ],
+   "label": {
+    "violation": true,
+    "t": 11
+   }
+  },
+  {
+   "name": "X-5",
+   "duration": 71.5,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.9,
+    "counting_machine_active_s": 0,
+    "safe_active_s": 0,
+    "laptop_active_s": 0.8,
+    "desk_active_s": 0,
+    "door_active_s": 0.9
+   },
+   "visits": [
+    {
+     "start": 1.0,
+     "end": 60.0,
+     "cash": true,
+     "counting": true,
+     "bag": false,
+     "detector_active_s": 0.9,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0.8,
+     "desk_active_s": 0,
+     "door_active_s": 0.3
+    },
+    {
+     "start": 63.0,
+     "end": 71.0,
+     "cash": true,
+     "counting": false,
+     "bag": false,
+     "detector_active_s": 0,
+     "counting_machine_active_s": 0,
+     "safe_active_s": 0,
+     "laptop_active_s": 0,
+     "desk_active_s": 0,
+     "door_active_s": 0.4
+    }
+   ],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  },
+  {
+   "name": "X-8",
+   "duration": 38.0,
+   "regions": [
+    "counting_machine",
+    "desk",
+    "detector",
+    "door",
+    "laptop",
+    "safe"
+   ],
+   "whole": {
+    "detector_active_s": 0.1,
+    "counting_machine_active_s": 0.2,
+    "safe_active_s": 0,
+    "laptop_active_s": 0,
+    "desk_active_s": 0,
+    "door_active_s": 0
+   },
+   "visits": [],
+   "label": {
+    "violation": false,
+    "t": null
+   }
+  }
+ ]
+}

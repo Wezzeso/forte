@@ -1,0 +1,9 @@
+{
+  "captured_at_utc": "2026-10-17T16:30:01.381452+00:00",
+  "sources": {
+    "deploy/qwen38_startup_ops.py": "c48d9756978a577cbd788b9d40248fa961b9b86f718ab396f4694a294e07a543",
+    "deploy/qwen38_full19_generated_gate.py": "cca69c25f3762e4f64118bf661bca9dcf5d4985b9530008ba39eabb06d4f80c0",
+    "qa/integration/qwen38_startup_ops_test.py": "4cfd1d224d1c33bc93a8223d842186c2d383328ca05da7c8ab5277cf92b71f50",
+    "qa/integration/qwen38_full19_ops_test.py": "a8a5a66c420c4f41acfb7920888cbb3075e7f34aee0ad0d99d370ac308274238"
+  }
+}

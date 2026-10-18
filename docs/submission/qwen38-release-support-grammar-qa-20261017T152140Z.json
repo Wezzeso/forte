@@ -1,0 +1,23 @@
+{
+  "all225_archive_members_still_match_sources": true,
+  "broad_suite_rerun_performed": false,
+  "captured_at_utc": "2026-10-17T15:22:16.631235+00:00",
+  "counts": {
+    "failed": 0,
+    "passed_main_tests": 167,
+    "passed_subtests": 46,
+    "skipped_main_tests": 1
+  },
+  "cpu_worker_image_id": "sha256:32251d4c72d02dfc24f119d9e51033e7e464db912971db2f5cc4a144c94aabc0",
+  "independent_qa_receipt": "qa/integration/qwen38_native_closure_verified.json",
+  "independent_qa_receipt_sha256": "5d0da96ef273841da8239de3a98206529cfe456460a05a4ee0b5ffbe0759f891",
+  "model_gpu_private_inference_or_activation_performed": false,
+  "runtime_or_archive_regeneration_after_fixture_fix": false,
+  "schema_version": "forte.source-worker-qa-closure.v1",
+  "source_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "source_worker_receipt": "docs/submission/qwen38-release-support-grammar-worker-20261017T151420Z.json",
+  "source_worker_receipt_sha256": "863b2b4c66735e18b269dcf656d0b0f03191cbac46664cebe15330e7e34d828c",
+  "status": "PASSED_NOT_ACTIVATED",
+  "two_external_generated_test_fixtures_fixed": true,
+  "union_method": "Retain immutable initial focused capture and replace only the same32 affected test cases after fixture-only repair; no broad rerun."
+}

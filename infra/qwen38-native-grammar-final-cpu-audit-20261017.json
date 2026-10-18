@@ -1,0 +1,130 @@
+{
+  "allowed_stop_token_masks_after_complete_json": {
+    "248044": true,
+    "248046": true
+  },
+  "cached_processor_seconds": 0.000123427998914849,
+  "captured_at_utc": "2026-10-17T15:09:26.628994+00:00",
+  "cold_compile_seconds": 0.00018210700000054203,
+  "compiled_grammar_memory_bytes": 12948568,
+  "cpu_logits_processor_max_milliseconds": 3.0105950027063955,
+  "cpu_logits_processor_mean_milliseconds": 1.382882727853733,
+  "cuda_initialized": false,
+  "fresh_processor_identity": true,
+  "fresh_processor_restarts_at_document_start": true,
+  "gpu_device_nodes_present": false,
+  "image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "installed_source_sha256": {
+    "xgrammar/compiler.py": "aaaf3e52c5c0efaa0ea60918451f3c4f16429a8d3560342f8c7ec709a0a5d797",
+    "xgrammar/contrib/hf.py": "f81e92e9ce8465c7e4f4c8ab5785c0b660380177c0f88c7c61023b99aaa45f17",
+    "xgrammar/tokenizer_info.py": "05afed275b89b868568cebbea53606a046e4894fc1b62121dbcb23f97e8d6871"
+  },
+  "model_calls": 0,
+  "model_instances": 0,
+  "native_grammar_init_seconds": 0.8293928710008913,
+  "native_receipt": {
+    "any_order": false,
+    "any_whitespace": false,
+    "backend": "xgrammar_hf",
+    "compiled_cache_bytes": 12948568,
+    "compiled_cache_entries": 1,
+    "fresh_matcher_per_generate": true,
+    "gpu_overhead_measured": false,
+    "initialization_seconds": 0.829384234999452,
+    "max_cache_bytes": 67108864,
+    "max_cache_entries": 8,
+    "model_vocab_size": 248320,
+    "public_schema_warmup": {
+      "compact_aliases": "f00_through_f15",
+      "compile_seconds": 6.399047150000115,
+      "concise_observations": true,
+      "event_type_count": 3,
+      "fact_count": 19,
+      "frame_count": 16,
+      "model_calls": 0,
+      "private_media_read": false,
+      "rule_count": 4,
+      "schema_sha256": "a514e2238190cbc50967f74d984143cc467e2c2a32fc9ac0a01e3363abe96f1d"
+    },
+    "requests_bound_to_grammar": 2,
+    "schema_policy": "forte.decision-json-subset.v1",
+    "stop_token_ids": [
+      248046,
+      248044
+    ],
+    "strict_mode": true,
+    "strict_post_generation_validation": true,
+    "version": "0.2.7"
+  },
+  "native_source_sha256": "6c8a7549c16d60660ee66b5caf1fb2118fbdddee5a37347a61669825c47c7957",
+  "private_input_used": false,
+  "public_input_sha256": {
+    "case.json": "d2f13cea989212f9878a8a7c6b8bdb9c299196b4889d2d1bd8ebc036ad0934f5",
+    "forte/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "forte/decision/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "forte/decision/scopes.py": "0b13e19b4f152d9e3ffc5e751e00e94562e1bb3615a7427e129fb7da67daeeb0",
+    "forte/decision/structured.py": "027640c241dc7e7f528e82e5bf9022a33b6d29eb9eed903cdb8484a5b8c87d65",
+    "forte/shared/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "forte/shared/schemas.py": "1e60771f61258e89a7331ddf1143339fde15ff2f25b95ae5c0128e7c60d98818",
+    "native_audit.py": "96f18f9273bc8f1b22ffd378518fdd27910adf72e353327ecb123b98da029d9c",
+    "rules/catalog.json": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "serving/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "serving/qwen38_grammar.py": "6c8a7549c16d60660ee66b5caf1fb2118fbdddee5a37347a61669825c47c7957",
+    "serving/qwen38_identity.py": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41"
+  },
+  "public_schema_warmup": {
+    "compact_aliases": "f00_through_f15",
+    "compile_seconds": 6.399047150000115,
+    "concise_observations": true,
+    "event_type_count": 3,
+    "fact_count": 19,
+    "frame_count": 16,
+    "model_calls": 0,
+    "private_media_read": false,
+    "rule_count": 4,
+    "schema_sha256": "a514e2238190cbc50967f74d984143cc467e2c2a32fc9ac0a01e3363abe96f1d"
+  },
+  "public_schema_warmup_seconds": 6.451926556001126,
+  "schema_feature_tests": {
+    "duplicate_fact_id_is_semantic_validation_responsibility": true,
+    "duplicate_json_key_rejected": true,
+    "extra_key_rejected": true,
+    "missing_required_key_rejected": true,
+    "trailing_prose_rejected": true,
+    "unknown_fact_rejected": true,
+    "valid_19_fact_complete": true,
+    "wrong_fact_count_rejected": true
+  },
+  "schema_version": "forte.qwen38.native-grammar-cpu-audit.v1",
+  "scope": "Actual source wrapper with public tokenizer/schema and fake configuration/shape metadata only; no model, weights, media or GPU. CPU timings do not establish CUDA overhead or endpoint latency.",
+  "synthetic_completion_tokens": 485,
+  "transformers_version": "5.17.0",
+  "unsupported_schema_probes": {
+    "not": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "pattern_plus_maxLength": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "trusted_pattern_plus_maxLength": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "uniqueItems": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "unknown_format": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    }
+  },
+  "xgrammar_version": "0.2.7"
+}

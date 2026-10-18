@@ -1,0 +1,18 @@
+{
+  "schema": "forte.user-type-annotations.v1",
+  "generated_at_utc": "2026-10-18T06:06:00.202922+00:00",
+  "purpose": "scorer_only_not_training_or_model_input",
+  "annotations": [
+    {
+      "name": "X-13",
+      "type_id": "NO_RECOUNT",
+      "source": "explicit_user_annotation_20261018",
+      "label": {
+        "t": 47,
+        "violation": true
+      },
+      "event_time_source": "original_supplied_label",
+      "used_for_training": false
+    }
+  ]
+}

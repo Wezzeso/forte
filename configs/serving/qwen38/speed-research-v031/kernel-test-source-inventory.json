@@ -1,0 +1,44 @@
+[
+  {
+    "path": "CMakeLists.txt",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/CMakeLists.txt",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\CMakeLists.txt",
+    "size_bytes": 69045,
+    "sha256": "08d602cd160b444634fe1c555cef410f19976731d00869f7fa55644e236bc0e5"
+  },
+  {
+    "path": "tests/v1/e2e/spec_decode/ngram_suffix/test_ngram_suffix.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/v1/e2e/spec_decode/ngram_suffix/test_ngram_suffix.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\tests__v1__e2e__spec_decode__ngram_suffix__test_ngram_suffix.py",
+    "size_bytes": 5992,
+    "sha256": "5f4cccac99ee3fd8af91f067e36faed3fa3aee4d1c0191df31d3e643f075f561"
+  },
+  {
+    "path": "tests/kernels/mamba/test_gdn_fused_mtp.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/mamba/test_gdn_fused_mtp.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\tests__kernels__mamba__test_gdn_fused_mtp.py",
+    "size_bytes": 12588,
+    "sha256": "28e1f6bda73c95c1ce88e2caa63d7dbd7811ee10185bb141f760889384e36c1a"
+  },
+  {
+    "path": "tests/kernels/mamba/test_gdn_forward_core_split.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/mamba/test_gdn_forward_core_split.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\tests__kernels__mamba__test_gdn_forward_core_split.py",
+    "size_bytes": 11405,
+    "sha256": "b6b6ff5e19bf4e067ef86d3ff9e05116700cf7f348c2eca8f94cd2d4e9a3a6f4"
+  },
+  {
+    "path": "tests/kernels/fla/test_fused_gdn_post_conv.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/kernels/fla/test_fused_gdn_post_conv.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\tests__kernels__fla__test_fused_gdn_post_conv.py",
+    "size_bytes": 12477,
+    "sha256": "1c2f68b4ba6d8b225123903e7f89a2d138fd72ef91021df43068bae637acf26c"
+  },
+  {
+    "path": "csrc/libtorch_stable/gdn/fused_gdn_decode_kernel.cu",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/csrc/libtorch_stable/gdn/fused_gdn_decode_kernel.cu",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\csrc__libtorch_stable__gdn__fused_gdn_decode_kernel.cu",
+    "size_bytes": 25094,
+    "sha256": "9581d256847b1922b21a54c39086d92da4f402b7310b0e8649e45ec0cae341fe"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "schema_version": "forte.synthetic-json-size-proxy.v1",
+  "synthetic_only": true,
+  "fact_count": 19,
+  "frame_count": 16,
+  "measurement": "compact JSON character and UTF-8 byte counts; proxies only",
+  "token_counts_measured": false,
+  "inference_performed": false,
+  "scope": "fixed public fact IDs and synthetic unclear decisions; no actual-output assumption",
+  "outputs": {
+    "synthetic_repeated_visibility_notes": {
+      "characters": 3298,
+      "utf8_bytes": 4590,
+      "facts_validated": 19,
+      "candidates_validated": 0
+    },
+    "concise_null_notes": {
+      "characters": 1854,
+      "utf8_bytes": 1854,
+      "facts_validated": 19,
+      "candidates_validated": 0
+    },
+    "fixed_fact_set_minimum_without_optional_notes": {
+      "characters": 1607,
+      "utf8_bytes": 1607,
+      "facts_validated": 19,
+      "candidates_validated": 0
+    }
+  }
+}

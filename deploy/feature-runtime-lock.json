@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.training.runtime.v1",
+  "status": "prepared_not_built_or_gpu_tested",
+  "base_image": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "target_platform": "linux/amd64",
+  "target_python": "3.12",
+  "cuda_version": "12.9",
+  "core_packages": {
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0",
+    "pillow": "12.3.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0"
+  },
+  "addon_packages": {},
+  "optional_media_packages": {"av": "19.0.1"},
+  "training_addon_packages": {"peft": "0.21.2", "accelerate": "1.15.0"},
+  "media_probe": "Existing CPU FFprobe creates source-bound VideoAsset metadata; PyAV reads video frames in the isolated runtime.",
+  "gpu_use_policy": "Serialize after the A18 full-drain release: A15 owns encoder and feature extraction, then A09 owns head training. Never modify the active Qwen container."
+}

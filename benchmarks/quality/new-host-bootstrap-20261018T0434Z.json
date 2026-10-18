@@ -1,0 +1,15 @@
+{
+  "schema": "forte.new-host-bootstrap.v1",
+  "generated_at_utc": "2026-10-18T04:31:08.440900+00:00",
+  "workspace": "/ephemeral/forte",
+  "models_root": "/ephemeral/models",
+  "vllm_image_tag": "vllm/vllm-openai:v0.31.0-cu129",
+  "vllm_image_id": "sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "evaluation_image_id": "sha256:3adf4de21b17384ab3ad92db2712c458866d551a740598912bd270709e8a4b3a",
+  "driver_major": 570,
+  "torchcodec_uninstall_required_before_serve": true,
+  "docker_root": "/var/lib/docker",
+  "gpu": "NVIDIA H100 PCIe, 81559 MiB, 570.195.03",
+  "weights_downloaded": false,
+  "model_started": false
+}

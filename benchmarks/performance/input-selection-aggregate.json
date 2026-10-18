@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:13:14.662917+00:00",
+  "selection_scope": "proposed_train_benchmark_only",
+  "training_authorized": false,
+  "split_locked": false,
+  "selected_distinct_contents": 6,
+  "baseline_count": 1,
+  "burst_count": 5,
+  "baseline_disjoint_from_burst": true,
+  "labels_used_for_selection": false,
+  "media_pixels_or_audio_inspected": false,
+  "final_check_media_opened": false,
+  "source_hashes_verified": true,
+  "duration_seconds_min": 11.633333,
+  "duration_seconds_max": 142.533021,
+  "resolution_counts": [
+    {
+      "width": 464,
+      "height": 848,
+      "count": 6
+    }
+  ],
+  "selection_rule": "shortest train baseline; five disjoint train duration quantiles including train maximum",
+  "quality_review": "unmeasured; benchmark selection is not reviewed ground truth"
+}

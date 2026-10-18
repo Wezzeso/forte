@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "EvidenceFrame": {
+      "additionalProperties": false,
+      "properties": {
+        "timestamp_sec": {
+          "description": "Seconds from the beginning of the original video",
+          "minimum": 0,
+          "title": "Timestamp Sec",
+          "type": "number"
+        },
+        "image_base64": {
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpeg",
+          "description": "Raw base64-encoded JPEG, without a data URI prefix",
+          "minLength": 1,
+          "title": "Image Base64",
+          "type": "string"
+        }
+      },
+      "required": [
+        "timestamp_sec",
+        "image_base64"
+      ],
+      "title": "EvidenceFrame",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "minLength": 1,
+      "title": "Type",
+      "type": "string"
+    },
+    "timecode_sec": {
+      "description": "Event anchor in seconds from the original video start",
+      "minimum": 0,
+      "title": "Timecode Sec",
+      "type": "number"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "evidence_frames": {
+      "items": {
+        "$ref": "#/$defs/EvidenceFrame"
+      },
+      "maxItems": 3,
+      "minItems": 1,
+      "title": "Evidence Frames",
+      "type": "array"
+    }
+  },
+  "required": [
+    "type",
+    "timecode_sec",
+    "description",
+    "evidence_frames"
+  ],
+  "title": "PublicViolation",
+  "type": "object"
+}

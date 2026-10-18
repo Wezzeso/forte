@@ -1,0 +1,157 @@
+{
+  "observed_at": "2026-10-17T14:55:34+05:00",
+  "timezone": "Asia/Qyzylorda",
+  "method": "HTTPS source fetch; no browser screenshot, private media, or labels were read.",
+  "sources": [
+    {
+      "requested_url": "https://forte.kz/en/logo",
+      "final_url": "https://forte.kz/en/logo",
+      "status": 200,
+      "sha256": "43ba5ba5dc52e2a83bd21710043d8cd968f20c802b1bfc59ae325050d1cad430",
+      "bytes": 362932,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": null
+    },
+    {
+      "requested_url": "https://forte.kz/_next/static/chunks/1aluifwpkd4wx.css",
+      "final_url": "https://forte.kz/_next/static/chunks/1aluifwpkd4wx.css",
+      "status": 200,
+      "sha256": "9acdb1f034c812a306b2d36ff5371edf01f9d7ef094a676823148dd8b6fe3e7b",
+      "bytes": 5052,
+      "content_type": "text/css; charset=UTF-8",
+      "last_modified": "Tue, 13 Oct 2026 13:23:08 GMT"
+    },
+    {
+      "requested_url": "https://forte.kz/docs/open-sans.zip",
+      "final_url": "https://forte.kz/docs/open-sans.zip",
+      "status": 200,
+      "sha256": "892311005949084d44c6c42c65f69793740dedb95e1f62a07730c0e6ecb93787",
+      "bytes": 5942450,
+      "content_type": "application/zip",
+      "last_modified": "Tue, 13 Oct 2026 13:24:03 GMT"
+    },
+    {
+      "requested_url": "https://forte.kz/docs/forte-logos.zip",
+      "final_url": "https://forte.kz/docs/forte-logos.zip",
+      "status": 200,
+      "sha256": "bbcd068edf6a22ba7ceb2c11ba2e29ff04e0d6bf0095cb943d173555286213e0",
+      "bytes": 360832,
+      "content_type": "application/zip",
+      "last_modified": "Tue, 13 Oct 2026 13:24:03 GMT"
+    }
+  ],
+  "observed_styles": [
+    {
+      "selector": "body",
+      "property": "color",
+      "value": "#1D1D1D",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": "body",
+      "property": "background-color",
+      "value": "#FFF",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": "body",
+      "property": "font-size",
+      "value": "1rem",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": "body",
+      "property": "line-height",
+      "value": "1.5",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": "a",
+      "property": "color",
+      "value": "#185AC5",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": ".css-72hos7",
+      "property": "border-radius",
+      "value": "12px",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    },
+    {
+      "selector": ".css-72hos7",
+      "property": "border",
+      "value": "1px solid #D5D5D5",
+      "matched_in_response": true,
+      "source_url": "https://forte.kz/en/logo",
+      "status": "observed_official_styling",
+      "restriction": "An observed declaration, not a universal brand requirement; generated selectors may change."
+    }
+  ],
+  "font_css_source_url": "https://forte.kz/_next/static/chunks/1aluifwpkd4wx.css",
+  "font_css_uses_open_sans": true,
+  "logo_archive_inventory_only": [
+    {
+      "entry": "Forte_logos/",
+      "bytes": 0
+    },
+    {
+      "entry": "Forte_logos/Forte_Market_0e0ee014b1.7z",
+      "bytes": 32429
+    },
+    {
+      "entry": "Forte_logos/Forte_Mobile_028c749d60.7z",
+      "bytes": 31886
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_ab793cad8e (1).7z",
+      "bytes": 23801
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Business_c6f7582d49.7z",
+      "bytes": 35932
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Corporate_571bfeca06.7z",
+      "bytes": 38916
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Finance_b1d29c2a17.7z",
+      "bytes": 32981
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Leasing_36fcab2f02 (1).7z",
+      "bytes": 34160
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Leasing_36fcab2f02.7z",
+      "bytes": 34160
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Premier_8956c93a69.7z",
+      "bytes": 60790
+    },
+    {
+      "entry": "Forte_logos/Logo_Forte_Solo_611f2dc485.7z",
+      "bytes": 33643
+    }
+  ],
+  "logo_decision": "No logo extracted: redistribution terms not established by the public outer archive; use a plain text project label."
+}

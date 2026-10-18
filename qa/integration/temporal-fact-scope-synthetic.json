@@ -1,0 +1,47 @@
+{
+  "schema_version": "forte.temporal-fact-scope.generated-proof.v1",
+  "captured_at_utc": "2026-10-17T14:09:32.841264+00:00",
+  "generated_decisions_only": true,
+  "private_inputs_read": false,
+  "model_calls": 0,
+  "remote_mutations": false,
+  "before": {
+    "regressions_executed": 3,
+    "failed": 3,
+    "direct_candidate": "unresolved_conflicting_visual_support",
+    "raw_candidate": "schema_mismatch",
+    "compact_raw_candidate": "schema_mismatch"
+  },
+  "after": {
+    "focused_tests_passed": 247,
+    "subtests_passed": 51,
+    "pytest_seconds": 4.27,
+    "command": "python -m pytest tests/test_temporal_fact_scope.py tests/test_decisions.py tests/test_events.py tests/test_recall_refutation_support.py rules/tests/test_qwen38_rule_gates.py tests/test_staged_screening.py tests/test_worker_errorcodes.py -q --tb=short",
+    "transition": "explicit supported local absence after disjoint earlier presence produces a violation; original batch presence remains unchanged",
+    "contradictions_rejected": [
+      "overlapping_source_support",
+      "shared_boundary_pts",
+      "straddling_prior_support_span",
+      "unknown_source_id",
+      "unsupported_absence",
+      "unclear_state_upgrade",
+      "uncited_local_support",
+      "duplicate_or_unreferenced_local_fact"
+    ]
+  },
+  "prompt_version": "forte.visual-observation.v1.1.0",
+  "optional_raw_candidate_field": "local_facts",
+  "source_sha256": {
+    "src/forte/events/builder.py": "80c7ca8c9bb31834707fe268d4264b7c418905de3d39f1a3a4303ed480b58249",
+    "src/forte/decision/scopes.py": "0b13e19b4f152d9e3ffc5e751e00e94562e1bb3615a7427e129fb7da67daeeb0",
+    "src/forte/decision/structured.py": "027640c241dc7e7f528e82e5bf9022a33b6d29eb9eed903cdb8484a5b8c87d65",
+    "src/forte/decision/aliasing.py": "4dd6d83f685dd6f1c9f59b89abd75d364fe4a85179600ecd1581b106de6e0045",
+    "tests/test_temporal_fact_scope.py": "8459f0ca3d04bbb707c94d4005790623490b1fd7da6fad547b26f92f82c8938f"
+  },
+  "frozen_catalogue": {
+    "catalog_sha256": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "matches_fact_axis_pin": true,
+    "taxonomy_sha256": "817b24496dc55d060e944491f877747dde52cb5195ffd1edeea2cd7ffffbe9da",
+    "taxonomy_matches_fact_axis_pin": true
+  }
+}

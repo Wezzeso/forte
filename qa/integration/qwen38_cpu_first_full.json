@@ -1,0 +1,49 @@
+{
+  "schema_version": "forte.qwen38.cpu-qa.v1",
+  "started_at_utc": "2026-10-17T13:11:28.294375+00:00",
+  "finished_at_utc": "2026-10-17T13:11:32.475155+00:00",
+  "elapsed_sec": 4.181,
+  "interpreter": "C:\\Users\\Wezeso\\Desktop\\Forte\\.venv\\Scripts\\python.exe",
+  "suites": [
+    "tests",
+    "qa/integration",
+    "qa/system",
+    "annotations",
+    "rules",
+    "scripts",
+    "serving/tests",
+    "training"
+  ],
+  "excluded_marker": "gpu",
+  "environment": {
+    "offline_model_downloads": true,
+    "cuda_visible_devices": "",
+    "live_postgresql_opt_in": false
+  },
+  "exit_code": 2,
+  "counts": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 1,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "class": "",
+      "name": "serving.tests.test_grounding_pilot"
+    }
+  ],
+  "log": "qa/integration/qwen38_cpu_first_full.log",
+  "junit": "qa/integration/qwen38_cpu_first_full.xml",
+  "limitations": [
+    "Synthetic/component software verification; no private model inference or GPU execution.",
+    "Does not establish real-video accuracy, semantic onset precision, model training, deployment, or upload-to-ready latency.",
+    "Live PostgreSQL behavior requires its own opt-in integration receipt."
+  ],
+  "source_hashes": {
+    "pyproject.toml": "b0cc98a287b4b175021c01dde6f3dd08c3792a1023fbc91840a2e9924204d644",
+    "src/forte/pipeline.py": "fdc20a565243b67a4e1e2f6ec5455577adb653a37e70139d57076de7f8aa7701",
+    "src/forte/config.py": "816ee588690e92731ce5fdb6485c35dd8c6532f0358f3ed072234c06da616e8a",
+    "src/forte/worker.py": "1331a299763cb1b10a67ca7ba2012d3ede61c1ff6af36a8bf53924597dd69921"
+  }
+}

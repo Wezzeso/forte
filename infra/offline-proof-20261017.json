@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "instance_id": "wd88a7vvt",
+  "container": "forte-model-1",
+  "network_probe": {
+    "checked_at": "2026-10-17T10:38:56.947453+00:00",
+    "network": "forte_private",
+    "internal": true,
+    "published_model_ports": {},
+    "external_tcp_target": "1.1.1.1:443",
+    "external_tcp_reachable": false,
+    "application_payload_sent": false,
+    "failure_type": "OSError",
+    "HF_HUB_OFFLINE": true,
+    "TRANSFORMERS_OFFLINE": true,
+    "VLLM_NO_USAGE_STATS": true
+  },
+  "paired_inference": {
+    "synthetic_only": true,
+    "real_local_inference": true,
+    "schema_and_semantic_validation_passed": true,
+    "synthetic_visual_sanity_passed": true,
+    "input_frames": 3,
+    "input_dimensions": [[448, 448], [448, 448], [448, 448]],
+    "facts_validated": 1,
+    "candidates_validated": 1,
+    "elapsed_sec": 1.9243117589999201,
+    "prompt_tokens": 1346,
+    "generated_tokens": 148,
+    "model": "Qwen3-VL-8B-Instruct",
+    "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "model_files_verified": true,
+    "vllm_version": "0.31.0",
+    "model_manifest_sha256": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc",
+    "event_accuracy_measured": false
+  },
+  "external_readiness": {
+    "url": "https://hackathon.wezeso.me/readyz",
+    "http_status": 200,
+    "status": "ready",
+    "components": {"authentication": true, "database": true, "storage": true, "model": true, "worker": true}
+  },
+  "scope": "Actual synthetic inference on the same isolated model service. No private footage, frames, prompts, predictions or credentials are recorded. The fixed-IP TCP probe is a route check, not an exhaustive egress audit. Video event accuracy and end-to-end video latency are not established by this smoke test."
+}

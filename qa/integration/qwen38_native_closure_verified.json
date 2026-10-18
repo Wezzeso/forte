@@ -1,0 +1,33 @@
+{
+  "schema_version": "forte.qwen38.native-closure-union.v1",
+  "captured_at_utc": "2026-10-17T15:21:40.274564+00:00",
+  "status": "passed",
+  "method": "Retain immutable initial focused capture and replace only the same32 affected test cases after fixture-only repair; no broad rerun.",
+  "counts": {
+    "passed_main_tests": 167,
+    "skipped_main_tests": 1,
+    "passed_subtests": 46,
+    "failed": 0
+  },
+  "initial_failed_capture_sha256": "d7f8f9463897815f84cd9a20416497b4824c5ca030a926f17f3e1f8b60c327e2",
+  "fixture_followup_sha256": "d5d0ca6a1dcf054b7923b221fed482a399d7cc501e93641ac9f2c9eeb5eb2e3c",
+  "archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "archive_member_count": 225,
+  "all_archive_members_verified": true,
+  "all_unaffected_source_bytes_still_match": true,
+  "fixtures_outside_225_member_archive": [
+    "tests/test_api_candidate_readiness.py",
+    "tests/test_candidate_pipeline_config.py"
+  ],
+  "fixture_source_hashes": {
+    "tests/test_api_candidate_readiness.py": "49eb67d68f159271f90626a410de12c1c7ea8195bac531a3b38a4f9032c50b2b",
+    "tests/test_candidate_pipeline_config.py": "e47c380454200ff80213dec102c1336c4272da79d42cd0a23ba1ceececc58dd5"
+  },
+  "failed_initial_cases_fully_replaced": 27,
+  "test_case_identity_sets_equal": true,
+  "no_runtime_source_or_archive_change": true,
+  "limitations": [
+    "Focused CPU/generated fixture tests only; no real model, GPU kernel, private inference or serving activation evidence.",
+    "Union counts overlap older broad checks and are not additive."
+  ]
+}

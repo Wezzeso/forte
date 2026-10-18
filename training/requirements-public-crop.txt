@@ -1,0 +1,2 @@
+# Official Linux x86_64 wheel, immutable PyPI SHA256; foundation stays unchanged.
+bitsandbytes==0.50.2 --hash=sha256:55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283

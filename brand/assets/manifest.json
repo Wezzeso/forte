@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-17T14:55:34+05:00",
+  "assets": [
+    {
+      "path": "assets/fonts/OFL.txt",
+      "archive_entry": "OFL.txt",
+      "source_url": "https://forte.kz/docs/open-sans.zip",
+      "source_page": "https://forte.kz/en/logo",
+      "source_section": "04 Typography",
+      "sha256": "6c632858146b13645c7730e2b98881f00f4e545949d2c0368a65b071ed8301da",
+      "bytes": 4484,
+      "license": "OFL-1.1",
+      "status": "permitted_local_asset",
+      "modified": false,
+      "restrictions": [
+        "Keep OFL.txt and its copyright notice with redistributed font copies.",
+        "Do not sell the font on its own."
+      ]
+    },
+    {
+      "path": "assets/fonts/OpenSans-Variable.ttf",
+      "archive_entry": "OpenSans-VariableFont_wdth,wght.ttf",
+      "source_url": "https://forte.kz/docs/open-sans.zip",
+      "source_page": "https://forte.kz/en/logo",
+      "source_section": "04 Typography",
+      "sha256": "13744bbc079f0f492e4fb3b14a15d242b8d9600faacd423d58cdf937fea7ce6b",
+      "bytes": 529700,
+      "license": "OFL-1.1",
+      "status": "permitted_local_asset",
+      "modified": false,
+      "restrictions": [
+        "Keep OFL.txt and its copyright notice with redistributed font copies.",
+        "Do not sell the font on its own."
+      ]
+    }
+  ],
+  "not_packaged": [
+    {
+      "type": "Forte logos",
+      "source_url": "https://forte.kz/docs/forte-logos.zip",
+      "status": "unresolved",
+      "reason": "No redistribution license established; no logo or lookalike created."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "job_id": "synthetic-job-001",
+  "status": "done",
+  "verdict": "violation",
+  "violations": [
+    {
+      "type": "Synthetic contract event",
+      "timecode_sec": 2.5,
+      "description": "Synthetic image used only to validate the API contract. Synthetic fixture document, section TEST-1; no real procedure or legal finding.",
+      "evidence_frames": [
+        {
+          "timestamp_sec": 2.5,
+          "image_base64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABgAIADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6looryqaXx34j+J3izRtG8b/2FY6P9j8qL+yobnd50O48tgjlSeSfvdsVulcxbseq0V53/wAIl8Tv+iuf+W5bf/FUf8Il8Tv+iuf+W5bf/FU7eYX8j0SivO/+ES+J3/RXP/Lctv8A4qj/AIRL4nf9Fc/8ty2/+Kot5hfyPRKK87/4RL4nf9Fc/wDLctv/AIqj/hEvid/0Vz/y3Lb/AOKot5hfyPRKK87/AOES+J3/AEVz/wAty2/+Ko/4RL4nf9Fc/wDLctv/AIqi3mF/I9Eorzv/AIRL4nf9Fc/8ty2/+Ko/4RL4nf8ARXP/AC3Lb/4qi3mF/I9Eorzv/hEvid/0Vz/y3Lb/AOKo/wCES+J3/RXP/Lctv/iqLeYX8j0SivKoZfHfhz4neE9G1nxv/btjrH2zzYv7Khttvkw7hyuSeWB4I+73zXqtJqwJ3CvO/Af/ACWj4k/9wv8A9Jmr0SvO/Af/ACWj4k/9wv8A9JmprqD6HolFFFSMKKKKACiiigAooooAKKKKACiiigDzvx5/yWj4bf8AcU/9Jlr0SvO/Hn/JaPht/wBxT/0mWvRKp9BLqFed+A/+S0fEn/uF/wDpM1eiV534D/5LR8Sf+4X/AOkzULqD6HolFct4i8WS6b4kj0S10+3urg2y3WyW9EEk6l2UrbqVIlddpJUlcbk5+bjM174hnS7TVUXR/O1LSo72e7tPtO0JBbxGRJd+w8SBoQBjgyN12GpGd5RXJaX4vn1OXTbSz0uNb68sLyeWGe6KC3ntpYIpIGIRifmmb5gP4AcHdxX0Pxjq15Ppgv8AQrG1i1DWLvSlaDUWmZHtxdbnIMKcE2pA56ODxjBAO1orkNR8X3qau+ladpFvcXI1waShnvTEh/4l4vTISI3I4ym3B9cjpUmt694n02+0W0GgaPK+qXJtQTq8iiOQQTTH/l3OV2wkZ65I470AdXRXF6b4y1PV5ZLPSNBtp763e5+1RzX5jjjSK6mtkIcRks0jQSEDaAADk9M9ZptybzTra7a3mtjPEshhmXbJGWAO1h2YZwR60AWKKKKACiiigDzvx5/yWj4bf9xT/wBJlr0SvO/Hn/JaPht/3FP/AEmWvRKp9BLqFed+A/8AktHxJ/7hf/pM1eiV534D/wCS0fEn/uF/+kzULqD6G3408LXfiRZ7RtVhj065hWKWCazErRMCf3sD7l8uTDfeIbBVSACDk8R+EE1h/E7i9WBte0NNJLeRuMO37T+86jdn7QPl4+51546mipGcxa+EltviNL4tgvykMtlLA9j5XBmkaDdMHzxlbeNSuO2c9c15PAtlc2em2eoyW99bWWuXurPDPah0m+0G6IjKkkDYbkHdzny+gzx19FAHAaj8NbJw6ad/Y9vbHXBqyWU+lCW1H+gi1MZjDoDzmTdxz2PWug/4R53Tw5vns4Tot21x5dpaeTDIDbzwBFTefLAE2erfdx3436KAOMsfBuo6Tdz3uia7DbXVy919paexMqOkt3NcxgKJFw0ZnkUNkg5OV6Y6zT7c2dhb2hnmuDBEsZmmbdJJtAG5j3Y4yT61PRQAUUUUAFFFFAHnfjz/AJLR8Nv+4p/6TLXoled+PP8AktHw2/7in/pMteiVT6CXUK878B/8lo+JP/cL/wDSZq9ErzvwH/yWj4k/9wv/ANJmoXUH0PRKKKKkYUUUUAFFFFABRRRQAUUUUAFFFFAHnfjz/ktHw2/7in/pMteiV5348/5LR8Nv+4p/6TLXolU+gl1CvKpovHfhz4neLNZ0bwR/btjrH2Pypf7Vhttvkw7Tw2SeWI5A+73zXqtFJOwNXPO/+Et+J3/RI/8Ay47b/wCJo/4S34nf9Ej/APLjtv8A4mvRKKd/ILeZ53/wlvxO/wCiR/8Alx23/wATR/wlvxO/6JH/AOXHbf8AxNeiUUX8gt5nnf8AwlvxO/6JH/5cdt/8TR/wlvxO/wCiR/8Alx23/wATXolFF/ILeZ53/wAJb8Tv+iR/+XHbf/E0f8Jb8Tv+iR/+XHbf/E16JRRfyC3med/8Jb8Tv+iR/wDlx23/AMTR/wAJb8Tv+iR/+XHbf/E16JRRfyC3med/8Jb8Tv8Aokf/AJcdt/8AE0f8Jb8Tv+iR/wDlx23/AMTXolFF/ILeZ5VDF478R/E7wnrOs+CP7CsdH+2ebL/asNzu86HaOFwRyoHAP3u2K9VoopN3BKx//9k="
+        }
+      ]
+    }
+  ]
+}

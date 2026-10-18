@@ -1,0 +1,32 @@
+{
+  "created_at_utc": "2026-10-17T23:33:38.745570+00:00",
+  "crop_counts": {
+    "train": {
+      "id_card": 36,
+      "single_banknote": 256
+    },
+    "validation": {
+      "id_card": 16,
+      "single_banknote": 16
+    }
+  },
+  "dataset_lock_sha256": "eef3f1ad5fabb9cb720e42522265a6946a02196af01221af6ebf0522bf498fb8",
+  "limitation": "This checks pinned metadata and selected train/development image hashes; final full public-import verification and GPU smoke are separate gates.",
+  "model_loaded": false,
+  "planned_training_draws": {
+    "id_card": 160,
+    "single_banknote": 160
+  },
+  "planned_unique_drawn_crops": {
+    "id_card": 36,
+    "single_banknote": 160
+  },
+  "promotion_eligible": false,
+  "runner_sha256": "e9b401f94331417917084547d1c217ead0f51b7762c47024173860962a810d4b",
+  "runtime_image_digest": "sha256:2be4db9629837c6a3c0e252d2a4b45b54bd0a0d25d41e04274dbff0dd2755712",
+  "schema_version": "forte.public-crop-lora.data-preflight.v1",
+  "sealed_pixels_read": false,
+  "smoke_config_sha256": "5e6057fdd578831919f5499c69adfeb7f66d7ba572ce957d0104613af4d85638",
+  "state": "actual_public_train_dev_data_preflight_passed",
+  "training_completed": false
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>FORTE Panopticon</title>
+  <!-- Exact f subpaths from logo/Group 1.svg; only uniform scale and translation. -->
+  <rect width="512" height="512" fill="#A31551"/>
+  <g transform="translate(135.859602168974 64) scale(1.784245668325)">
+    <path d="M134.668 0V38.4443H107.599C76.6431 38.4443 50.352 58.8838 41.5747 86.9958C24.02 97.0621 9.57527 111.916 0 129.798V107.599C0 48.2651 48.2651 0 107.599 0H134.668ZM107.599 123.925V85.501C103.302 85.501 99.0877 85.7465 94.9343 86.2375C73.5741 88.7541 54.0962 97.5519 38.4238 110.749C22.8333 123.843 11.0279 141.295 4.82855 161.203C1.69818 171.29 0 181.99 0 193.1V215.217H38.4238V193.1C38.4238 154.963 69.4821 123.925 107.599 123.925Z" fill="white" fill-rule="evenodd" clip-rule="evenodd"/>
+  </g>
+</svg>

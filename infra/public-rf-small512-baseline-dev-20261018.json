@@ -1,0 +1,17 @@
+{
+  "dataset_lock_sha256": "eef3f1ad5fabb9cb720e42522265a6946a02196af01221af6ebf0522bf498fb8",
+  "metrics": {
+    "val/AP/id_card": 0.0001266013423446566,
+    "val/AP/single_banknote": 0.1243862509727478,
+    "val/F1": 0.10954616218805313,
+    "val/mAP_50": 0.1287594437599182,
+    "val/mAP_50_95": 0.062256425619125366,
+    "val/mAP_75": 0.04924159497022629,
+    "val/mAR": 0.7361361980438232,
+    "val/precision": 0.06457564234733582,
+    "val/recall": 0.36082473397254944
+  },
+  "scope": "initial_untrained_target_head_on_pretrained_backbone",
+  "trainable_parameters_sha256": "220e18d9f871aea162b39d634d2824c33a654af602ff2171accb1ab68558682c"
+}
+

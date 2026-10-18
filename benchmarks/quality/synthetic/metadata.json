@@ -1,0 +1,9 @@
+{
+  "conditions_sha256": "synthetic",
+  "final_check_used_for_tuning": false,
+  "inference_kind": "synthetic",
+  "model_id": "synthetic_fixture_no_model",
+  "model_revision": "synthetic",
+  "rules_sha256": "synthetic",
+  "taxonomy_sha256": "synthetic"
+}

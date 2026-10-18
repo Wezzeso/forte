@@ -1,0 +1,25 @@
+{
+  "scope": "actual external TLS/UI/assets/auth preflight only; no accepted media or inference",
+  "origin": "https://hackathon.wezeso.me",
+  "checks": {
+    "ui_html_200": true,
+    "local_asset_0_200": true,
+    "local_asset_1_200": true,
+    "missing_post_401": true,
+    "missing_get_401": true,
+    "wrong_post_401": true,
+    "wrong_get_401": true,
+    "valid_key_unknown_job_404": true,
+    "readiness_honest_503_model_false": true
+  },
+  "ready_http_status": 503,
+  "ready_components": {
+    "authentication": true,
+    "database": true,
+    "storage": true,
+    "model": false,
+    "worker": true
+  },
+  "passed": 9,
+  "failed": 0
+}

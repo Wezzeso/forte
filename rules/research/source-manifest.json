@@ -1,0 +1,70 @@
+{
+  "schema_version": "forte.legal_research_sources.v1",
+  "accessed_on": "2026-10-17",
+  "active_runtime_catalog_changed": false,
+  "sources": [
+    {
+      "source_id": "NBK_14_2020_CURRENT_RESEARCH",
+      "document_title": "Об утверждении Правил организации охраны и устройства помещений банков второго уровня, филиалов банков-нерезидентов Республики Казахстан, Национального оператора почты, юридических лиц, исключительной деятельностью которых является инкассация банкнот, монет и ценностей, и юридических лиц, осуществляющих деятельность исключительно через обменные пункты на основании лицензии Национального Банка Республики Казахстан на обменные операции с наличной иностранной валютой",
+      "official_name": "Постановление Правления Национального Банка Республики Казахстан от 24 февраля 2020 года № 14. Зарегистрировано в Министерстве юстиции Республики Казахстан 27 февраля 2020 года № 20075.",
+      "url": "https://adilet.zan.kz/rus/docs/V2000020075",
+      "issuing_body": "Правление Национального Банка Республики Казахстан",
+      "current_document_id": "4bd1c354-b40c-4b38-ab7d-53aaa7b4f39c",
+      "official_is_actual": true,
+      "official_status": "upd",
+      "latest_revision_date": "2024-12-24",
+      "api_urls": [
+        "https://adilet.zan.kz/api/documents/by-ngr/V2000020075?language=rus",
+        "https://adilet.zan.kz/api/documents/4bd1c354-b40c-4b38-ab7d-53aaa7b4f39c/content",
+        "https://adilet.zan.kz/api/documents/4bd1c354-b40c-4b38-ab7d-53aaa7b4f39c/versions?page_size=100"
+      ],
+      "archives": [
+        {
+          "path": "nbk_14_content.json",
+          "sha256": "e7365d0ff3b3784f8c145e2d4bfc953850153341ae3873bcbf5c044ec372af06",
+          "bytes": 47527
+        },
+        {
+          "path": "nbk_14_current.json",
+          "sha256": "73ff0076bbc9fbfc6d4d31a360534a1fd6aa65e1e3a3176a069a644aef898a51",
+          "bytes": 53051
+        },
+        {
+          "path": "nbk_14_current.txt",
+          "sha256": "9dece00b5108f818e813ab5d6c3c92a1d0075b8ba31fbce96976fb5b0581a6a9",
+          "bytes": 37873
+        },
+        {
+          "path": "nbk_14_versions.json",
+          "sha256": "a68a059fd8d9ff056f1a86561eaad9d550bc3793a11d5baaa6030f8f3462c65e",
+          "bytes": 6882
+        }
+      ],
+      "important_effective_text": "No.88 of 24.12.2024 suspends specified clauses through 01.01.2027 and inserts temporary text. In particular, paragraph16 must be read with that temporary text; no rule was enabled from future permanent wording."
+    },
+    {
+      "source_id": "NBK_231_2019_CURRENT",
+      "catalog_reference": "../sources/manifest.json",
+      "notes": "Current full text/version archive from initial A04 legal verification, unchanged."
+    },
+    {
+      "source_id": "ORGANIZER_TZ",
+      "path": "../../Кейс_ForteBank.docx.pdf",
+      "sha256": "376d6fc5970f406a29211cc00ccd732d837eea900ca79f5a6dfa016f00aadf8f",
+      "sections": [
+        "1",
+        "3",
+        "4",
+        "6",
+        "7",
+        "FAQ3",
+        "FAQ8",
+        "FAQ9",
+        "FAQ30",
+        "FAQ31",
+        "FAQ32"
+      ],
+      "provided_internal_regulations": false
+    }
+  ]
+}

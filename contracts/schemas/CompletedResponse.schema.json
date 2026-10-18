@@ -1,0 +1,139 @@
+{
+  "$defs": {
+    "EvidenceFrame": {
+      "additionalProperties": false,
+      "properties": {
+        "timestamp_sec": {
+          "description": "Seconds from the beginning of the original video",
+          "minimum": 0,
+          "title": "Timestamp Sec",
+          "type": "number"
+        },
+        "image_base64": {
+          "contentEncoding": "base64",
+          "contentMediaType": "image/jpeg",
+          "description": "Raw base64-encoded JPEG, without a data URI prefix",
+          "minLength": 1,
+          "title": "Image Base64",
+          "type": "string"
+        }
+      },
+      "required": [
+        "timestamp_sec",
+        "image_base64"
+      ],
+      "title": "EvidenceFrame",
+      "type": "object"
+    },
+    "PublicViolation": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "minLength": 1,
+          "title": "Type",
+          "type": "string"
+        },
+        "timecode_sec": {
+          "description": "Event anchor in seconds from the original video start",
+          "minimum": 0,
+          "title": "Timecode Sec",
+          "type": "number"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence_frames": {
+          "items": {
+            "$ref": "#/$defs/EvidenceFrame"
+          },
+          "maxItems": 3,
+          "minItems": 1,
+          "title": "Evidence Frames",
+          "type": "array"
+        }
+      },
+      "required": [
+        "type",
+        "timecode_sec",
+        "description",
+        "evidence_frames"
+      ],
+      "title": "PublicViolation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "violation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "violations": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "no_violation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "violations": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "job_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Job Id",
+      "type": "string"
+    },
+    "status": {
+      "const": "done",
+      "default": "done",
+      "title": "Status",
+      "type": "string"
+    },
+    "verdict": {
+      "enum": [
+        "violation",
+        "no_violation"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    },
+    "violations": {
+      "items": {
+        "$ref": "#/$defs/PublicViolation"
+      },
+      "title": "Violations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "job_id",
+    "status",
+    "verdict",
+    "violations"
+  ],
+  "title": "CompletedResponse",
+  "type": "object"
+}

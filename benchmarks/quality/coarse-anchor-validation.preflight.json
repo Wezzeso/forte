@@ -1,0 +1,17 @@
+{
+  "anchor_source_sha256": "9d0f807b2433e651b16bae9086fd9405a78f3e4fadb998208f9282c211dc843a",
+  "assignments_sha256": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c",
+  "event_type_boundary_legal_ground_truth": "UNKNOWN",
+  "exact_event_F1_or_100ms_claim_permitted": false,
+  "model_API_GPU_calls_by_A10": 0,
+  "provided_coarse_points": 4,
+  "provided_positive_contents": 3,
+  "role_and_source_pins_passed": true,
+  "schema_version": "forte.coarse_anchor_preflight.v1",
+  "source_uncertainty_unspecified": true,
+  "split_assignments_unchanged": true,
+  "status": "READY_FOR_POSTPREDICTION_DIAGNOSTIC_PENDING_ACTUAL_TEMPORAL_EXPORT",
+  "validation_anchor_manifest_sha256": "b6c0cdf36d903b9cc53890b0a1ec5b0d5f7a4b7b38437cc41e5cd5658eb5ae80",
+  "validation_anchors_used_by_A10_for_training_prompts_or_thresholds": false,
+  "validation_unique_contents": 6
+}

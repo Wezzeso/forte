@@ -1,0 +1,36 @@
+# Merge AFTER compose.yaml and compose.qwen38-candidate.yaml. This binds the
+# immutable source used by the completed candidate run; the a28 image contains no app.
+# Root must prepare cache/config/output ACLs and complete the run bind helper
+# before any GPU launch. Never use together with the baseline GPU override.
+services:
+  model:
+    image: ${FORTE_QWEN38_IMAGE:?Set exact image ID after root actual model and selected-kernel proof}
+    user: "1000:1000"
+    working_dir: /app
+    entrypoint: [/opt/forte-features/bin/python, -m, serving.qwen38_launch]
+    environment:
+      HOME: /cache
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPATH: /app:/app/src
+      FORTE_RUNTIME_IMAGE_SHA256: ${FORTE_QWEN38_IMAGE_SHA256:?Set independently inspected selected image SHA256}
+    volumes:
+      - type: bind
+        source: ${FORTE_QWEN38_SOURCE_ROOT:?Set exact immutable source tree matching the completed actual run receipt}
+        target: /app
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_QWEN38_SOURCE_ARCHIVE:?Set exact immutable source archive matching the completed actual run receipt}
+        target: /release/source.tar
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_QWEN38_PRIVATE_CACHE:?Set fresh UID1000:GID1000 mode0700 candidate cache directory}
+        target: /cache
+        read_only: false
+        bind: {create_host_path: false}
+    tmpfs:
+      - /tmp:size=6g,nosuid,nodev,exec,mode=1777,uid=1000,gid=1000
+      - /run/forte:size=2m,noexec,nosuid,nodev,mode=0700,uid=1000,gid=1000
+    healthcheck:
+      test: [CMD, /opt/forte-features/bin/python, -m, serving.qwen38_launch, --config, /run/configs/qwen38-runtime.json, --check-ready]

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "date_local": "2026-10-17",
+  "reviewer_role": "A02 dataset integrity agent; automated metadata review",
+  "scope": "root-authorized proposed-train benchmark only",
+  "candidate_assignments_integrity_passed": 42,
+  "selected_hash_distinct_contents": 6,
+  "all_selected_proposed_train": true,
+  "final_check_hash_intersection_count": 0,
+  "source_manifest_and_split_digests_match": true,
+  "source_media_hashes_match": true,
+  "split_locked": false,
+  "training_authorized": false,
+  "human_quality_or_scenario_review": false
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "forte.new-host-data.v1",
+  "generated_at_utc": "2026-10-18T04:32:17.291176+00:00",
+  "videos": 40,
+  "media_identical_to_production": true,
+  "input_inventory_sha256": "681eb95eaabff397167ae9344a071c14264931dec8c199e84424488134590548",
+  "source_manifest_sha256": "fe1ce19c8305e37ece3eb5bb640f7375475e65c3f7cb43138df3fda420583655",
+  "labels_file_sha256": "3ade1ced5efe9d17549a15dd998298518fe420cafae47efcca5eef4152fff0a6",
+  "config_file_sha256": "8fc400ec761c0c0484938fc84b750fbbba5f7b98fa2e34f011b9e08e68b140fd",
+  "model_schema_smoke_sha256": "1ab92e5987f28ffd546f8dd55b14af759f00c2d8eeea1e124586fcca617d2264",
+  "private_stage": "/ephemeral/forte/data-stage.nEPCAjPy",
+  "media_root": "/ephemeral/forte/videos",
+  "config_unchanged_candA": true,
+  "inference_executed": false
+}

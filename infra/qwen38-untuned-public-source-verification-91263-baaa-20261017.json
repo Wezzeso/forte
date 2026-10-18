@@ -1,0 +1,39 @@
+{
+  "schema_version": "forte.qwen38.untuned-public-source-verification.v1",
+  "status": "passed",
+  "captured_at_utc": "2026-10-17T15:36:02.681972+00:00",
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "remote_source_root": "/home/ubuntu/forte-worker-source-91263a59cb2e/source",
+  "remote_source_archive": "/home/ubuntu/forte-worker-source-91263a59cb2e/qwen38-ml-support-grammar-final-20261017T151420Z.tar.gz",
+  "verification": {
+    "source_verification": {
+      "source_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+      "archive_files_verified": 225,
+      "archive_bytes_verified": 3227157,
+      "executed_core_files": {
+        "configs/serving/qwen38/public-candidate.manifest.json": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225",
+        "serving/qwen38_comparison_profile.py": "1d28faafba4f7c76f7029f98238a8b4b1e2657b52b369995085cdb8f4a8987b0",
+        "serving/qwen38_grammar.py": "a0de282d2ee719b5ce143bc69effd0fb9c204e058a871eb6885f357eec4a8e5d",
+        "serving/qwen38_identity.py": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41",
+        "serving/qwen38_launch.py": "8af7e2917d465304a6aeb2677821b461b046ccdfb25d56025c3280cd8e677d50",
+        "serving/qwen38_service.py": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+        "serving/qwen38_untuned.py": "31dd4a1fded3b6bf376db304d42765620f21da1921853d0ff874f491f7159e61",
+        "serving/readiness.py": "26b7ff646c9a840b21034105d53f9b798e58f21861d2b2917652e6ef7ae8821b",
+        "serving/security.py": "a7643e83cfc7f780090bae10b0f1c52469bdf55b1f71c2bf72defa48eb3bb169",
+        "serving/stage_qwen38.py": "1b6f05035d8ab0840adc7ebdddef727fe309e3cab7274d6f5861c263b07cc65f",
+        "src/forte/model/adapter.py": "96c8ed5f0826d203b56372edc6d8cb96b54029c9d69eba4307cc0dda145a4a8e",
+        "src/forte/model/smoke.py": "291b2665c9dbdfbdfebac1c9a2bb5dbebff3351cb8e2641c98351599103876e6"
+      },
+      "all_executed_python_files_sha256": "6c27561819653356bdc9bfd8cf1699150728d7b68da3c0523165598b3e4aaacd",
+      "source_verified_before_import": true
+    },
+    "model_loaded": false,
+    "gpu_initialized": false
+  },
+  "gpu_access": false,
+  "private_media_mounted": false,
+  "model_weights_mounted": false,
+  "network_mode": "none",
+  "serving_changed": false,
+  "image_mutated": false
+}

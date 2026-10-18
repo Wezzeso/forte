@@ -1,0 +1,20 @@
+{
+  "schema_version": "forte.qwen38.exclusive-gpu-handoff.v1",
+  "owner": "root",
+  "captured_at_utc": "2026-10-17T13:37:29.465950+00:00",
+  "active_jobs": 0,
+  "api_admission_paused": true,
+  "worker_paused": true,
+  "model_queue_running_waiting": 0,
+  "baseline_model_stopped": true,
+  "baseline_before": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e|2026-10-17T10:36:11.954566283Z",
+  "free_vram_mib": 81156,
+  "train_only_mount_verified": true,
+  "train_media_frames": 252,
+  "private_mount_readonly_required": true,
+  "current_backup_receipt_sha256": "3be9403e6a645fafd162257410ebc2cd2a08411866450ccd8c4f673052969fe5",
+  "runtime_image_sha256": "a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "source_archive_sha256": "df11c1e2fafa5d44a7c431d1f6a09ec2fcaa68ffd5bef6d3d08889b25db14c7e",
+  "fixed_stop_utc": "2026-10-18T06:01:25Z",
+  "private_model_calls": 0
+}

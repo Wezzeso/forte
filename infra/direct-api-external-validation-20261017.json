@@ -1,0 +1,19 @@
+{
+  "public_runtime_bootstrap": true,
+  "content_type_json": true,
+  "cache_control_no_store": true,
+  "direct_api_strict_ready_http_status": 200,
+  "ready_components": {
+    "authentication": true,
+    "database": true,
+    "storage": true,
+    "model": true,
+    "worker": true
+  },
+  "approved_origin_preflight_http_status": 204,
+  "missing_api_key_http_status": 401,
+  "forbidden_origin_http_status": 403,
+  "frontend_asset_sha256": "b8d43f28b4c26c0d772aa489f2fee50fb8e05fb83964615828cdc58d1f3d63a4",
+  "model_inference_calls": 0,
+  "uploads_performed": 0
+}

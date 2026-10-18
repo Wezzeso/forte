@@ -1,0 +1,94 @@
+{
+  "schema_version": "forte.native-serial-public-source-stage-release.v1",
+  "date_utc": "2026-10-17",
+  "status": "PUBLIC_SOURCE_STAGED_ACTUAL_CPU_GATE_PENDING_UNSELECTED",
+  "source_archive": "tmp/qwen38-native-serial-public-20261017T182801Z.tar.gz",
+  "source_archive_sha256": "1ffc97b17727c16e1c0101a9058eb3b7d343d9d917189e3b9e85730b675d6702",
+  "source_archive_bytes": 741526,
+  "source_members": 242,
+  "source_manifest": "tmp/qwen38-native-serial-public-20261017T182801Z.tar.gz.manifest.json",
+  "source_manifest_sha256": "bba84d4e51b5967f74815cf353a49b7222d712862decf052ed1aba83b7d2cebd",
+  "public_overlay": "tmp/qwen38-native-serial-overlay-20261017T182801Z.tar.gz",
+  "public_overlay_sha256": "59b923d5b936507e6ae9b79735ecbe16cb55e7831e0e1ffa8857d07e5b279333",
+  "public_overlay_bytes": 30154,
+  "public_overlay_members": 10,
+  "public_overlay_manifest_sha256": "76ce6d341b2c227c5d1c83faef9f2f8ff1252ca48dd67b5b3f0f5ea494651785",
+  "parent_source_archive_sha256": "3f603ca07fe818b92e7f7c63a6836d20e772e511ebe3f3039266251b1e40009f",
+  "parent_source_manifest_sha256": "f5947da438b41f069d2c2e54446fd05f22403550835a7742cc6e90b930914745",
+  "previous_members_byte_identical": 232,
+  "changed_previous_members": [],
+  "removed_previous_members": [],
+  "added_files_sha256": {
+    "serving/qwen38_vllm_identity.py": "2f0006908e8ebd3c081fd13e011dd19bd5c896e5a18c0ee83b9924e655f0cef4",
+    "serving/qwen38_vllm_launch.py": "eaa32dfd7f6f7023a6dcfadf51ec0b3d3235ad496df5e480db1d9b630cf2ef43",
+    "serving/qwen38_vllm_profile.py": "da3dc8ebf846c11f8d92d14caf9d2d334d4e2dc5df120e7948c71a2f4f0e6f82",
+    "serving/qwen38_vllm_provider.py": "5da7482baac4b167e0b6d30096958b38b574c109ae5fe0bbbd6ae329361e4060",
+    "serving/qwen38_vllm_worker.py": "16f7d9b948177cd4488b20a439e469deb591f3e2ba4fe6d6d749b02ab6391328",
+    "configs/serving/qwen38/vllm-bf16.runtime.example.json": "c490a9fe8cbdbf744272ba24df462934b53780acd6e7d39774c3646db9abfb46",
+    "deploy/qwen38_vllm_prepare_provider_ops.py": "735acc189667f6e7c75c8b218c9dd1edf3ef3bd39d90b93033344f8cd33f8b6a",
+    "deploy/qwen38_vllm_pilot/__init__.py": "7b2d94810a0c096ec90e1cf422d9444a6c56dc88bc0003586126c787c0729072",
+    "deploy/qwen38_vllm_pilot/request.py": "04e9579ae1b2424ae0b8ae36bee2e8afcd1e56c604ca3ceb8bbd15de90f10f47",
+    "deploy/qwen38_vllm_pilot/adapter_probe.py": "6a503bd9eb94bff88ea2e1f0a29c8e1736d43b657fac5d2956c2065a99f08ff0"
+  },
+  "provenance": {
+    "prepared_public_sources_captured_by_exact_path_and_hash_only": true,
+    "broad_private_prepared_directory_enumerated_or_copied": false,
+    "frozen_private_model_media_labels_predictions_or_exposure_artifacts_read": false,
+    "explicit_old_public_pilot_dependencies_added_to_runtime_archive": 3,
+    "all_python_additions_parsed": true,
+    "public_target_path_policy_verified": true,
+    "all_members_and_sidecar_independently_verified_locally_and_remotely": true
+  },
+  "qa": {
+    "generated_boundary_receipt": "qa/integration/qwen38_native_http.json",
+    "generated_boundary_receipt_sha256": "1fb4bacbbbe034fbe00ac481ae607e7cc2d1dd5f7ce692cfa1d6d8e542082b74",
+    "generated_boundary_tests_passed": 121,
+    "failed": 0,
+    "skipped": 0,
+    "generated_boundary_scope": "Mock transport and fake-engine in-process ASGI; no actual vLLM engine, HTTP endpoint, GPU, model or private input.",
+    "actual_model_image_interface_gate": {
+      "owner": "A10",
+      "status": "pending",
+      "receipt_sha256": null
+    },
+    "actual_B6_CPU_consumer_prepare": {
+      "owner": "A10",
+      "status": "pending",
+      "receipt_sha256": null
+    },
+    "actual_same_engine_generated_GPU_and_HTTP_gate": {
+      "owner": "Root",
+      "status": "pending",
+      "receipt_sha256": null
+    }
+  },
+  "host_stage": {
+    "source_root": "/home/ubuntu/forte-native-source-1ffc97b17727/source",
+    "archive": "/home/ubuntu/forte-native-source-1ffc97b17727/qwen38-native-serial-public-20261017T182801Z.tar.gz",
+    "staging_receipt": "/home/ubuntu/forte-native-source-1ffc97b17727/staging.receipt.json",
+    "local_staging_receipt": "tmp/qwen38-native-stage-proof-1ffc97b1.json",
+    "staging_receipt_sha256": "01d4773f41fe57390b796b05ef53265841784a062fcc45546257e3bb2bc9d5e8",
+    "external_CPU_interface_helper": "/home/ubuntu/forte-native-source-1ffc97b17727/native_interface_cpu_prepare.py",
+    "external_CPU_interface_helper_sha256": "fa3cd3180bc8ad4a3ecb0fc21d1da6865d81ab3129e2abb0e93e578dcbb463ec",
+    "external_CPU_interface_helper_in_runtime_archive": false
+  },
+  "privacy": {
+    "private_data_included": false,
+    "bound_configs_keys_backups_media_labels_predictions_observations_weights_included": false,
+    "experimental_parallel4_included": false,
+    "QA_or_test_cache_included": false,
+    "bulky_public_datasets_included": false
+  },
+  "selected_runtime_or_private_outcomes_authorized": false,
+  "actual_model_or_HTTP_readiness_established": false,
+  "native_BF16_arithmetic_equivalent_to_historical_HF_NF4": false,
+  "root_active_public_probe_separate_identity": true,
+  "producer_B6_image_remains": "sha256:b6d7828dd9e657aa6200fac52e66d050de3fba96b57e376cdeb71a3fcb2258ca",
+  "model_image_pin_in_inert_template": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "original_FIT_adapter_and_older_archives_unchanged": true,
+  "API_UI_model_or_worker_service_changes": false,
+  "GPU_HTTP_or_model_operations_by_packaging": 0,
+  "production_deadline_seconds_unchanged": 285,
+  "quality_latency_or_deployment_claim_made": false,
+  "git_commit": null
+}

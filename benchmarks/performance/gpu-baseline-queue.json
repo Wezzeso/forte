@@ -1,0 +1,18 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "status": "failed",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 201.47699999999998,
+      "recovery_queue_note": null
+    }
+  ],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:52:11.492332+00:00",
+  "clock_domain": "same team GPU host UTC for API and worker containers",
+  "clock_assumption": "containers share host kernel clock; no client/server clock subtraction",
+  "measurement": "durable accepted_at to recorded claimed UTC; dispatch after claim excluded",
+  "ntp_state": "not measured by this collector"
+}

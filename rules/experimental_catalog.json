@@ -1,0 +1,1139 @@
+{
+  "schema_version": "forte.experimental.rules.v1",
+  "catalog_version": "2026-10-17.priority1.observable.v1",
+  "status": "optional_experimental_not_default",
+  "accessed_on": "2026-10-17",
+  "requires_temporal_wrapper": true,
+  "manual_annotation_prerequisite": false,
+  "baseline_snapshot": {
+    "catalog_sha256": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "catalog_version": "2026-10-17.nbk231.v1",
+    "fact_axis_count": 19,
+    "fact_axis_order": [
+      "ALL_COUNTING_PATHS_VISIBLE",
+      "BANK_CASH_WORKSTATION",
+      "CASH_COUNT_VISIBLE",
+      "CASH_HANDLER_LEAVES_WORKSTATION",
+      "CASH_HANDLER_PRESENT",
+      "CASH_HANDOVER_VISIBLE",
+      "CASH_ISSUE_OPERATION",
+      "CASH_ON_WORK_SURFACE",
+      "CASH_PLACED_IN_CLOTHING_POCKET",
+      "CASH_PLACED_IN_PERSONAL_CONTAINER",
+      "CASH_RECEIPT_OPERATION",
+      "CASH_VISIBLE",
+      "CUSTOMER_SERVICE_CONTINUES",
+      "LOOSE_BANKNOTES_ISSUED",
+      "LOOSE_BANKNOTES_RECEIVED",
+      "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+      "PREVIOUS_RECEIPT_COMPLETE",
+      "PROCEDURE_CONTEXT_COMPLETE",
+      "WORK_AREA_CONTINUOUSLY_VISIBLE"
+    ],
+    "fact_axis_sha256": "f806672d8659f46b4fc4fed54dedc697a3d84a1831b13486296d15a5b55c1d09"
+  },
+  "vocabulary": {
+    "schema_version": "forte.experimental.fact_axes.priority1.v1",
+    "feature_axis_order": [
+      "ALL_COUNTING_PATHS_VISIBLE",
+      "BANK_CASH_WORKSTATION",
+      "CASH_COUNT_VISIBLE",
+      "CASH_HANDLER_LEAVES_WORKSTATION",
+      "CASH_HANDLER_PRESENT",
+      "CASH_HANDOVER_VISIBLE",
+      "CASH_ISSUE_OPERATION",
+      "CASH_ON_WORK_SURFACE",
+      "CASH_PLACED_IN_CLOTHING_POCKET",
+      "CASH_PLACED_IN_PERSONAL_CONTAINER",
+      "CASH_RECEIPT_OPERATION",
+      "CASH_VISIBLE",
+      "CUSTOMER_SERVICE_CONTINUES",
+      "LOOSE_BANKNOTES_ISSUED",
+      "LOOSE_BANKNOTES_RECEIVED",
+      "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+      "PREVIOUS_RECEIPT_COMPLETE",
+      "PROCEDURE_CONTEXT_COMPLETE",
+      "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE",
+      "EXP_ANY_CLIENT_AREA_PERSON_PRESENT",
+      "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+      "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR",
+      "EXP_CASH_TRACK_CONTINUOUS",
+      "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS",
+      "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA",
+      "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+      "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE",
+      "EXP_ISSUE_PREPARATION_START_VISIBLE",
+      "EXP_LOOSE_COINS_RECEIVED",
+      "EXP_NEXT_RECEIPT_ACTIVE",
+      "EXP_NEXT_RECEIPT_START_VISIBLE",
+      "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER",
+      "EXP_PRIOR_RECEIPT_START_VISIBLE",
+      "EXP_RECEIPT_COMPLETE_VISIBLE",
+      "EXP_RECEIPT_EPISODES_DISTINCT",
+      "EXP_RECEIPT_START_VISIBLE"
+    ],
+    "feature_axis_count": 37,
+    "feature_axis_sha256": "fbfa2c2b3cffb033b6827d18ed030642955fb5fcd8347d78cc356a5816870673",
+    "baseline_axis_count": 19,
+    "new_axis_ids": [
+      "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE",
+      "EXP_ANY_CLIENT_AREA_PERSON_PRESENT",
+      "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+      "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR",
+      "EXP_CASH_TRACK_CONTINUOUS",
+      "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS",
+      "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA",
+      "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+      "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE",
+      "EXP_ISSUE_PREPARATION_START_VISIBLE",
+      "EXP_LOOSE_COINS_RECEIVED",
+      "EXP_NEXT_RECEIPT_ACTIVE",
+      "EXP_NEXT_RECEIPT_START_VISIBLE",
+      "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER",
+      "EXP_PRIOR_RECEIPT_START_VISIBLE",
+      "EXP_RECEIPT_COMPLETE_VISIBLE",
+      "EXP_RECEIPT_EPISODES_DISTINCT",
+      "EXP_RECEIPT_START_VISIBLE"
+    ],
+    "model_axis_manifest_must_match": true,
+    "baseline_checkpoint_compatible": false
+  },
+  "experimental_rule_ids": [
+    "EXP_RK_NBK231_P20_PRIOR_CASH_OUTSIDE_STORAGE",
+    "EXP_RK_NBK231_P20_RECEIPT_CLIENT_ABSENT",
+    "EXP_RK_NBK231_P19_2_COIN_RECEIPT_COUNT",
+    "EXP_RK_NBK231_P32_DAMAGED_BUNDLE_COUNT"
+  ],
+  "sources": [
+    {
+      "source_id": "NBK_231_2019_CURRENT",
+      "document_title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "issuing_body": "Правление Национального Банка Республики Казахстан",
+      "document_date": "2019-11-29",
+      "document_number": "231",
+      "registration_number": "19680",
+      "url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "accessed_on": "2026-10-17",
+      "legal_status": "current_official_version",
+      "official_document_id": "c4cd4052-63e3-475b-ba9e-93f23de13fdb",
+      "revision_date": "2026-07-12",
+      "revision_date_basis": "Official versions[0].revision_date 2026-07-11T18:00:00Z; 12.07.2026 clause footnote effective date. Not inferred from execution-host timezone.",
+      "official_api_urls": [
+        "https://adilet.zan.kz/api/documents/by-ngr/V1900019680?language=rus",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/content",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/versions?page_size=100"
+      ],
+      "primary_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "text_archive_path": "sources/nbk_231_current.txt",
+      "archives": [
+        {
+          "path": "sources/nbk_231_current.json",
+          "sha256": "c7d02be30022c13b2e8a5ae63bc1a290ce51faaeff964d40794076f038658c68",
+          "bytes": 274526
+        },
+        {
+          "path": "sources/nbk_231_content.json",
+          "sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+          "bytes": 268918
+        },
+        {
+          "path": "sources/nbk_231_versions.json",
+          "sha256": "4567a0fc4107807c0196891fe0d41b623bfa5c952982bf5eedfdf607ccd14b8b",
+          "bytes": 21105
+        },
+        {
+          "path": "sources/nbk_231_current.txt",
+          "sha256": "f408a9303bfd9a2707be920c5208d1eafd30cc401a03cbfe5eafa92730fe0bfb",
+          "bytes": 215722
+        }
+      ],
+      "metadata_caveats": [
+        "API end_date equals latest revision boundary while is_actual=true and versions.is_current=true; do not interpret it as repeal.",
+        "API adopting_organ_name_ru says Ministry of Justice; issuing body is established by official_name and normative text: NB RK Board.",
+        "Public HTML route is now a JavaScript shell. Archive includes the official public content API response, not a third-party mirror."
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "EXP_RK_NBK231_P20_PRIOR_CASH_OUTSIDE_STORAGE",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "пункт 20, часть вторая",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Правление Национального Банка Республики Казахстан; ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Прослеженные ранее принятые деньги после завершенного предыдущего приема остаются без обработки на обычной поверхности вне устройств хранения во время следующего отдельного приема.",
+      "required_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_VISIBLE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "CASH_RECEIPT_OPERATION",
+        "PREVIOUS_RECEIPT_COMPLETE",
+        "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+        "EXP_RECEIPT_EPISODES_DISTINCT",
+        "EXP_NEXT_RECEIPT_ACTIVE",
+        "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER"
+      ],
+      "temporal_conditions": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: prior_receipt_start → prior_receipt_complete → next_receipt_start → prior_cash_idle_during_next_receipt.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия."
+      ],
+      "exceptions": [
+        "Исключаются наличные текущего незавершенного приема, предназначенные для хранения ящики/кассеты, текущий внутренний пересчет, упаковка или передача этой наличности."
+      ],
+      "verification_state": "verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Экспериментальная необязательная ветвь. Только явный experimental loader и детерминированное доказательство фаз A11. Это не результат по частному видео и не активация производственного каталога."
+    },
+    {
+      "rule_id": "EXP_RK_NBK231_P20_RECEIPT_CLIENT_ABSENT",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "пункт 20, часть первая",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Правление Национального Банка Республики Казахстан; ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Прием и пересчет той же наличности до завершения клиентского приема; после видимого ухода вносившего деньги человека вся клиентская зона физически пуста на протяжении пересчета.",
+      "required_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_VISIBLE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "CASH_RECEIPT_OPERATION",
+        "CASH_COUNT_VISIBLE",
+        "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+        "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE",
+        "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS",
+        "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA"
+      ],
+      "temporal_conditions": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: contribution → client_leaves → count_with_client_area_empty → receipt_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия."
+      ],
+      "exceptions": [
+        "Исключаются самостоятельный внутренний повторный пересчет после обслуживания, неполный обзор клиентской зоны, скрытый клиент/представитель и любой человек в клиентской зоне независимо от предполагаемой роли."
+      ],
+      "verification_state": "verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Экспериментальная необязательная ветвь. Только явный experimental loader и детерминированное доказательство фаз A11. Это не результат по частному видео и не активация производственного каталога."
+    },
+    {
+      "rule_id": "EXP_RK_NBK231_P19_2_COIN_RECEIPT_COUNT",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "подпункт 2 пункта 19 (монеты)",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Правление Национального Банка Республики Казахстан; ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Завершенный полностью наблюдаемый прием отдельных монет от клиента; отсутствует ручной или машинный пересчет по кружкам на всем этапе конкретного приема.",
+      "required_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_VISIBLE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "CASH_RECEIPT_OPERATION",
+        "EXP_LOOSE_COINS_RECEIVED",
+        "CASH_HANDOVER_VISIBLE",
+        "ALL_COUNTING_PATHS_VISIBLE"
+      ],
+      "temporal_conditions": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: procedure_start → no_count_handover → procedure_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия.",
+        "Отсутствие пересчета и видимость всех ручных/машинных путей должны подтверждать весь этап от начала подготовки/приема до завершения передачи/приема."
+      ],
+      "exceptions": [
+        "Исключаются закрытые сумки инкассации и неизвестное содержимое, этап до записи, скрытый счетчик монет и автоматический путь приема вне наблюдения. Пункт 6 допускает автоматические устройства."
+      ],
+      "verification_state": "verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Экспериментальная необязательная ветвь. Только явный experimental loader и детерминированное доказательство фаз A11. Это не результат по частному видео и не активация производственного каталога."
+    },
+    {
+      "rule_id": "EXP_RK_NBK231_P32_DAMAGED_BUNDLE_COUNT",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "пункт 32, часть первая, второе предложение, с учетом подпункта 4 пункта 31",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Правление Национального Банка Республики Казахстан; ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Именно поврежденный корешок банкнот, а не внешняя сумка, выдается клиенту; полный этап подготовки и выдачи прослежен без ручного или машинного полистного пересчета.",
+      "required_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_VISIBLE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "CASH_ISSUE_OPERATION",
+        "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+        "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR",
+        "CASH_HANDOVER_VISIBLE",
+        "ALL_COUNTING_PATHS_VISIBLE"
+      ],
+      "temporal_conditions": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: procedure_start → no_count_handover → procedure_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия.",
+        "Отсутствие пересчета и видимость всех ручных/машинных путей должны подтверждать весь этап от начала подготовки/приема до завершения передачи/приема."
+      ],
+      "exceptions": [
+        "Исключаются целые неповрежденные пачки и корешки, выдаваемые по сумме на упаковке согласно пункту 32; повреждение только внешней сумки; неизвестная единица упаковки; пересчет до начала видимого этапа или скрытым устройством."
+      ],
+      "verification_state": "verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Экспериментальная необязательная ветвь. Только явный experimental loader и детерминированное доказательство фаз A11. Это не результат по частному видео и не активация производственного каталога."
+    }
+  ],
+  "bindings": {
+    "EXP_RK_NBK231_P20_PRIOR_CASH_OUTSIDE_STORAGE": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "пункт 20, часть вторая",
+      "source_excerpt": "На рабочем месте кассового работника находятся наличные деньги клиента. Все ранее принятые наличные деньги хранятся в специальных устройствах, находящихся на рабочем месте кассового работника, закрывающихся на ключ, предназначенных для хранения наличных денег (металлический шкаф, сейф, тележка, ящики стола, тумба).",
+      "event_type_id": "EXP_PREVIOUS_CASH_OUTSIDE_STORAGE",
+      "required_fact_states": {
+        "BANK_CASH_WORKSTATION": "present",
+        "CASH_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "PROCEDURE_CONTEXT_COMPLETE": "present",
+        "EXP_CASH_TRACK_CONTINUOUS": "present",
+        "CASH_RECEIPT_OPERATION": "present",
+        "PREVIOUS_RECEIPT_COMPLETE": "present",
+        "PREVIOUSLY_ACCEPTED_CASH_TRACKED": "present",
+        "EXP_RECEIPT_EPISODES_DISTINCT": "present",
+        "EXP_NEXT_RECEIPT_ACTIVE": "present",
+        "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER": "present"
+      },
+      "applicability_fact_ids": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_RECEIPT_OPERATION",
+        "PREVIOUS_RECEIPT_COMPLETE",
+        "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+        "EXP_RECEIPT_EPISODES_DISTINCT"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS"
+      ],
+      "is_omission": false,
+      "omission": false,
+      "context_complete_fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "visibility_fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "exception_fact_ids": [],
+      "min_context_sec": null,
+      "temporal_requirements": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: prior_receipt_start → prior_receipt_complete → next_receipt_start → prior_cash_idle_during_next_receipt.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия."
+      ],
+      "experimental_temporal": {
+        "schema_version": "forte.experimental.temporal.v1",
+        "ordered_phases": [
+          {
+            "phase_id": "prior_receipt_start",
+            "fact_ids": [
+              "EXP_PRIOR_RECEIPT_START_VISIBLE"
+            ]
+          },
+          {
+            "phase_id": "prior_receipt_complete",
+            "fact_ids": [
+              "PREVIOUS_RECEIPT_COMPLETE"
+            ]
+          },
+          {
+            "phase_id": "next_receipt_start",
+            "fact_ids": [
+              "EXP_NEXT_RECEIPT_START_VISIBLE"
+            ]
+          },
+          {
+            "phase_id": "prior_cash_idle_during_next_receipt",
+            "fact_ids": [
+              "EXP_NEXT_RECEIPT_ACTIVE",
+              "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER"
+            ]
+          }
+        ],
+        "distinct_procedure_ids": true,
+        "phase_procedure_roles": {
+          "prior_receipt_start": "prior",
+          "prior_receipt_complete": "prior",
+          "next_receipt_start": "current",
+          "prior_cash_idle_during_next_receipt": "current"
+        },
+        "required_track_kinds": [
+          "cash"
+        ],
+        "track_phase_ids": {
+          "cash": [
+            "prior_receipt_start",
+            "prior_receipt_complete",
+            "next_receipt_start",
+            "prior_cash_idle_during_next_receipt"
+          ]
+        },
+        "track_fact_ids": {
+          "cash": "EXP_CASH_TRACK_CONTINUOUS"
+        },
+        "absence_must_cover_procedure": false,
+        "absence_phase_ids": [],
+        "counting_paths_must_cover_procedure": false,
+        "required_procedure_boundary_fact_ids": [
+          "EXP_PRIOR_RECEIPT_START_VISIBLE",
+          "PREVIOUS_RECEIPT_COMPLETE",
+          "EXP_NEXT_RECEIPT_START_VISIBLE"
+        ],
+        "strict_phase_order": true,
+        "max_visibility_gap_sec": null,
+        "visibility_gap_policy": "no_unknown_gap_or_blind_area_in_required_procedure",
+        "context_is_automated_local_evidence": true,
+        "face_identification_permitted": false,
+        "event_phase_id": "prior_cash_idle_during_next_receipt",
+        "candidate_interval_policy": "event_phase_source_bounds"
+      },
+      "description_fact_ids": [
+        "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+        "EXP_NEXT_RECEIPT_ACTIVE",
+        "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER"
+      ],
+      "implication_ru": "Возможные признаки хранения ранее принятых наличных вне предусмотренных пунктом 20 устройств во время следующего приема.",
+      "anchor_policy": "first_supported",
+      "anchor_convention": "Первый исходный кадр наблюдаемого действия в подтвержденной фазе события.",
+      "experimental_only": true
+    },
+    "EXP_RK_NBK231_P20_RECEIPT_CLIENT_ABSENT": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "пункт 20, часть первая",
+      "source_excerpt": "20. Наличные деньги принимаются и пересчитываются кассовым работником в присутствии клиента.",
+      "event_type_id": "EXP_CLIENT_ABSENT_DURING_RECEIPT_COUNT",
+      "required_fact_states": {
+        "BANK_CASH_WORKSTATION": "present",
+        "CASH_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "PROCEDURE_CONTEXT_COMPLETE": "present",
+        "EXP_CASH_TRACK_CONTINUOUS": "present",
+        "CASH_RECEIPT_OPERATION": "present",
+        "CASH_COUNT_VISIBLE": "present",
+        "EXP_COUNT_DURING_ACTIVE_RECEIPT": "present",
+        "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE": "present",
+        "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS": "present",
+        "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA": "present",
+        "EXP_ANY_CLIENT_AREA_PERSON_PRESENT": "absent"
+      },
+      "applicability_fact_ids": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_RECEIPT_OPERATION"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE",
+        "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS"
+      ],
+      "is_omission": false,
+      "omission": false,
+      "context_complete_fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "visibility_fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "exception_fact_ids": [],
+      "min_context_sec": null,
+      "temporal_requirements": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: contribution → client_leaves → count_with_client_area_empty → receipt_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия."
+      ],
+      "experimental_temporal": {
+        "schema_version": "forte.experimental.temporal.v1",
+        "ordered_phases": [
+          {
+            "phase_id": "contribution",
+            "fact_ids": [
+              "EXP_RECEIPT_START_VISIBLE",
+              "CASH_HANDOVER_VISIBLE"
+            ]
+          },
+          {
+            "phase_id": "client_leaves",
+            "fact_ids": [
+              "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA"
+            ]
+          },
+          {
+            "phase_id": "count_with_client_area_empty",
+            "fact_ids": [
+              "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+              "CASH_COUNT_VISIBLE",
+              "EXP_ANY_CLIENT_AREA_PERSON_PRESENT"
+            ]
+          },
+          {
+            "phase_id": "receipt_complete",
+            "fact_ids": [
+              "EXP_RECEIPT_COMPLETE_VISIBLE"
+            ]
+          }
+        ],
+        "distinct_procedure_ids": false,
+        "phase_procedure_roles": {
+          "contribution": "current",
+          "client_leaves": "current",
+          "count_with_client_area_empty": "current",
+          "receipt_complete": "current"
+        },
+        "required_track_kinds": [
+          "cash",
+          "contributor"
+        ],
+        "track_phase_ids": {
+          "cash": [
+            "contribution",
+            "count_with_client_area_empty",
+            "receipt_complete"
+          ],
+          "contributor": [
+            "contribution",
+            "client_leaves"
+          ]
+        },
+        "track_fact_ids": {
+          "cash": "EXP_CASH_TRACK_CONTINUOUS",
+          "contributor": "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS"
+        },
+        "absence_must_cover_procedure": false,
+        "absence_phase_ids": [
+          "count_with_client_area_empty"
+        ],
+        "counting_paths_must_cover_procedure": false,
+        "required_procedure_boundary_fact_ids": [
+          "EXP_RECEIPT_START_VISIBLE",
+          "EXP_RECEIPT_COMPLETE_VISIBLE"
+        ],
+        "strict_phase_order": true,
+        "max_visibility_gap_sec": null,
+        "visibility_gap_policy": "no_unknown_gap_or_blind_area_in_required_procedure",
+        "context_is_automated_local_evidence": true,
+        "face_identification_permitted": false,
+        "event_phase_id": "count_with_client_area_empty",
+        "candidate_interval_policy": "event_phase_source_bounds"
+      },
+      "description_fact_ids": [
+        "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+        "EXP_ANY_CLIENT_AREA_PERSON_PRESENT",
+        "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE"
+      ],
+      "implication_ru": "Возможные признаки пересчета в рамках приема наличных без физического присутствия клиента, предусмотренного пунктом 20.",
+      "anchor_policy": "first_supported",
+      "anchor_convention": "Первый исходный кадр наблюдаемого действия в подтвержденной фазе события.",
+      "experimental_only": true
+    },
+    "EXP_RK_NBK231_P19_2_COIN_RECEIPT_COUNT": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "подпункт 2 пункта 19 (монеты)",
+      "source_excerpt": "2) принимает банкноты с полистным пересчетом, монеты с пересчетом по кружкам с проверкой на подлинность и платежность наличных денег в соответствии с пунктами 57 и 58 Правил;",
+      "event_type_id": "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+      "required_fact_states": {
+        "BANK_CASH_WORKSTATION": "present",
+        "CASH_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "PROCEDURE_CONTEXT_COMPLETE": "present",
+        "EXP_CASH_TRACK_CONTINUOUS": "present",
+        "CASH_RECEIPT_OPERATION": "present",
+        "EXP_LOOSE_COINS_RECEIVED": "present",
+        "CASH_HANDOVER_VISIBLE": "present",
+        "ALL_COUNTING_PATHS_VISIBLE": "present",
+        "CASH_COUNT_VISIBLE": "absent"
+      },
+      "applicability_fact_ids": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_RECEIPT_OPERATION",
+        "EXP_LOOSE_COINS_RECEIVED"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "ALL_COUNTING_PATHS_VISIBLE"
+      ],
+      "is_omission": true,
+      "omission": true,
+      "context_complete_fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "visibility_fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "exception_fact_ids": [],
+      "min_context_sec": null,
+      "temporal_requirements": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: procedure_start → no_count_handover → procedure_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия.",
+        "Отсутствие пересчета и видимость всех ручных/машинных путей должны подтверждать весь этап от начала подготовки/приема до завершения передачи/приема."
+      ],
+      "experimental_temporal": {
+        "schema_version": "forte.experimental.temporal.v1",
+        "ordered_phases": [
+          {
+            "phase_id": "procedure_start",
+            "fact_ids": [
+              "EXP_RECEIPT_START_VISIBLE",
+              "EXP_LOOSE_COINS_RECEIVED"
+            ]
+          },
+          {
+            "phase_id": "no_count_handover",
+            "fact_ids": [
+              "CASH_HANDOVER_VISIBLE"
+            ]
+          },
+          {
+            "phase_id": "procedure_complete",
+            "fact_ids": [
+              "EXP_RECEIPT_COMPLETE_VISIBLE"
+            ]
+          }
+        ],
+        "distinct_procedure_ids": false,
+        "phase_procedure_roles": {
+          "procedure_start": "current",
+          "no_count_handover": "current",
+          "procedure_complete": "current"
+        },
+        "required_track_kinds": [
+          "cash"
+        ],
+        "track_phase_ids": {
+          "cash": [
+            "procedure_start",
+            "no_count_handover",
+            "procedure_complete"
+          ]
+        },
+        "track_fact_ids": {
+          "cash": "EXP_CASH_TRACK_CONTINUOUS"
+        },
+        "absence_must_cover_procedure": true,
+        "absence_phase_ids": [],
+        "counting_paths_must_cover_procedure": true,
+        "required_procedure_boundary_fact_ids": [
+          "EXP_RECEIPT_START_VISIBLE",
+          "EXP_RECEIPT_COMPLETE_VISIBLE"
+        ],
+        "strict_phase_order": true,
+        "max_visibility_gap_sec": null,
+        "visibility_gap_policy": "no_unknown_gap_or_blind_area_in_required_procedure",
+        "context_is_automated_local_evidence": true,
+        "face_identification_permitted": false,
+        "event_phase_id": "procedure_complete",
+        "candidate_interval_policy": "full_procedure_source_bounds"
+      },
+      "description_fact_ids": [
+        "EXP_LOOSE_COINS_RECEIVED",
+        "CASH_COUNT_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE"
+      ],
+      "implication_ru": "Возможные признаки приема отдельных монет без наблюдаемого обязательного пересчета по кружкам.",
+      "anchor_policy": "last_supported",
+      "anchor_convention": "Последний исходный кадр на границе завершенного этапа процедуры.",
+      "experimental_only": true
+    },
+    "EXP_RK_NBK231_P32_DAMAGED_BUNDLE_COUNT": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "пункт 32, часть первая, второе предложение, с учетом подпункта 4 пункта 31",
+      "source_excerpt": "Банкноты из неполных, а также поврежденных корешков выдаются кассовым работником полистным пересчетом.",
+      "event_type_id": "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+      "required_fact_states": {
+        "BANK_CASH_WORKSTATION": "present",
+        "CASH_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "PROCEDURE_CONTEXT_COMPLETE": "present",
+        "EXP_CASH_TRACK_CONTINUOUS": "present",
+        "CASH_ISSUE_OPERATION": "present",
+        "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE": "present",
+        "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR": "present",
+        "CASH_HANDOVER_VISIBLE": "present",
+        "ALL_COUNTING_PATHS_VISIBLE": "present",
+        "CASH_COUNT_VISIBLE": "absent"
+      },
+      "applicability_fact_ids": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_ISSUE_OPERATION",
+        "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+        "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "EXP_CASH_TRACK_CONTINUOUS",
+        "ALL_COUNTING_PATHS_VISIBLE"
+      ],
+      "is_omission": true,
+      "omission": true,
+      "context_complete_fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "visibility_fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "exception_fact_ids": [],
+      "min_context_sec": null,
+      "temporal_requirements": [
+        "Фазы должны быть подтверждены исходными кадрами строго в указанном порядке: procedure_start → no_count_handover → procedure_complete.",
+        "Треки наличности/тела и идентификаторы процедур привязаны к исходным FrameRef; пропуск или неизвестный участок не подтверждает отсутствие действия.",
+        "Отсутствие пересчета и видимость всех ручных/машинных путей должны подтверждать весь этап от начала подготовки/приема до завершения передачи/приема."
+      ],
+      "experimental_temporal": {
+        "schema_version": "forte.experimental.temporal.v1",
+        "ordered_phases": [
+          {
+            "phase_id": "procedure_start",
+            "fact_ids": [
+              "EXP_ISSUE_PREPARATION_START_VISIBLE",
+              "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+              "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR"
+            ]
+          },
+          {
+            "phase_id": "no_count_handover",
+            "fact_ids": [
+              "CASH_HANDOVER_VISIBLE"
+            ]
+          },
+          {
+            "phase_id": "procedure_complete",
+            "fact_ids": [
+              "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE"
+            ]
+          }
+        ],
+        "distinct_procedure_ids": false,
+        "phase_procedure_roles": {
+          "procedure_start": "current",
+          "no_count_handover": "current",
+          "procedure_complete": "current"
+        },
+        "required_track_kinds": [
+          "cash"
+        ],
+        "track_phase_ids": {
+          "cash": [
+            "procedure_start",
+            "no_count_handover",
+            "procedure_complete"
+          ]
+        },
+        "track_fact_ids": {
+          "cash": "EXP_CASH_TRACK_CONTINUOUS"
+        },
+        "absence_must_cover_procedure": true,
+        "absence_phase_ids": [],
+        "counting_paths_must_cover_procedure": true,
+        "required_procedure_boundary_fact_ids": [
+          "EXP_ISSUE_PREPARATION_START_VISIBLE",
+          "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE"
+        ],
+        "strict_phase_order": true,
+        "max_visibility_gap_sec": null,
+        "visibility_gap_policy": "no_unknown_gap_or_blind_area_in_required_procedure",
+        "context_is_automated_local_evidence": true,
+        "face_identification_permitted": false,
+        "event_phase_id": "procedure_complete",
+        "candidate_interval_policy": "full_procedure_source_bounds"
+      },
+      "description_fact_ids": [
+        "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+        "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR",
+        "CASH_COUNT_VISIBLE"
+      ],
+      "implication_ru": "Возможные признаки выдачи поврежденного корешка банкнот без наблюдаемого обязательного полистного пересчета.",
+      "anchor_policy": "last_supported",
+      "anchor_convention": "Последний исходный кадр на границе завершенного этапа процедуры.",
+      "experimental_only": true
+    }
+  },
+  "facts": {
+    "CASH_VISIBLE": {
+      "fact_id": "CASH_VISIBLE",
+      "question_ru": "Виден ли объект, уверенно различимый как наличные деньги?",
+      "definition_ru": "Купюры или монеты различимы по визуальным признакам без распознавания номинала.",
+      "absence_requires_ru": "Достаточное разрешение и полный обзор рассматриваемой поверхности; закрытая область означает unclear.",
+      "observable_phrase_ru": "В кадре различимы наличные.",
+      "absence_phrase_ru": "В полностью проверенной видимой зоне наличные не обнаружены.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "различимы наличные деньги"
+    },
+    "CASH_ON_WORK_SURFACE": {
+      "fact_id": "CASH_ON_WORK_SURFACE",
+      "question_ru": "Лежат ли видимые наличные на рабочей поверхности?",
+      "definition_ru": "Видны наличные и поверхность, на которой они лежат; владение деньгами не определяется.",
+      "absence_requires_ru": "Рабочая поверхность видна целиком в оцениваемом интервале.",
+      "observable_phrase_ru": "Наличные находятся на рабочей поверхности.",
+      "absence_phrase_ru": "На полностью проверенной поверхности наличные не обнаружены.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наличные остаются на рабочей поверхности"
+    },
+    "CASH_HANDLER_PRESENT": {
+      "fact_id": "CASH_HANDLER_PRESENT",
+      "question_ru": "Находится ли человек, непосредственно работающий с наличными, у рабочей зоны?",
+      "definition_ru": "Роль определяется только по наблюдаемому действию; имя, должность и личность не устанавливаются.",
+      "absence_requires_ru": "Достаточный непрерывный обзор рабочей зоны и возможных заслонений.",
+      "observable_phrase_ru": "Работающий с наличными человек находится у рабочей зоны.",
+      "absence_phrase_ru": "В непрерывно наблюдаемой рабочей зоне работающий с наличными человек отсутствует.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "работающий с наличными человек находится у рабочей зоны",
+      "absence_description_ru": "после видимого ухода обслуживающий кассовый работник отсутствует у рабочего места"
+    },
+    "WORK_AREA_CONTINUOUSLY_VISIBLE": {
+      "fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "question_ru": "Достаточно ли непрерывно видна рабочая зона?",
+      "definition_ru": "Ключевые действия можно проследить без склейки, закрытия обзора или выхода за кадр.",
+      "absence_requires_ru": "Разрыв, заслонение или слишком низкое разрешение фиксируются как absent либо unclear, а не как отсутствие действия.",
+      "observable_phrase_ru": "Релевантная рабочая зона непрерывно видна.",
+      "absence_phrase_ru": "Релевантная рабочая зона не видна непрерывно.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "релевантная рабочая зона непрерывно видна"
+    },
+    "CASH_HANDOVER_VISIBLE": {
+      "fact_id": "CASH_HANDOVER_VISIBLE",
+      "question_ru": "Видна ли передача наличных между людьми?",
+      "definition_ru": "Виден непрерывный переход наличных из одной зоны рук в другую; тип операции не выводится.",
+      "absence_requires_ru": "Весь потенциальный эпизод передачи виден достаточно подробно.",
+      "observable_phrase_ru": "Видна передача наличных между людьми.",
+      "absence_phrase_ru": "В полностью проверенном этапе передача наличных не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается передача наличных"
+    },
+    "CASH_COUNT_VISIBLE": {
+      "fact_id": "CASH_COUNT_VISIBLE",
+      "question_ru": "Виден ли ручной или машинный пересчет наличных?",
+      "definition_ru": "Наблюдается последовательное перебирание наличных либо их помещение в счетное устройство и его работа; точность суммы не утверждается.",
+      "absence_requires_ru": "Весь релевантный этап операции и счетная зона видны; сам по себе короткий фрагмент не подтверждает отсутствие пересчета.",
+      "observable_phrase_ru": "Наблюдается пересчет наличных.",
+      "absence_phrase_ru": "В полном проверенном этапе при видимости всех зон пересчет наличных не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается ручной или машинный пересчет",
+      "absence_description_ru": "пересчет не наблюдается на всем полностью видимом релевантном этапе"
+    },
+    "CASH_PLACED_IN_PERSONAL_CONTAINER": {
+      "fact_id": "CASH_PLACED_IN_PERSONAL_CONTAINER",
+      "question_ru": "Виден ли переход наличных в карман или явно личный контейнер?",
+      "definition_ru": "Непрерывно видны исходный объект, движение и место помещения. Назначение сумки и разрешение операции не предполагаются.",
+      "absence_requires_ru": "Движение рук и место назначения видны; выход объекта за кадр означает unclear.",
+      "observable_phrase_ru": "Видно помещение наличных в подтвержденный личный контейнер.",
+      "absence_phrase_ru": "В полностью проверенном движении помещения наличных в личный контейнер не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается перемещение наличных в личную зону хранения"
+    },
+    "OTHER_PERSON_ENTERS_WORKSPACE": {
+      "fact_id": "OTHER_PERSON_ENTERS_WORKSPACE",
+      "question_ru": "Пересекает ли другой человек видимую границу рабочей зоны?",
+      "definition_ru": "Фиксируется только физическое перемещение относительно явно заданной зоны; право доступа не определяется.",
+      "absence_requires_ru": "Заданная граница и весь проверяемый период видны.",
+      "observable_phrase_ru": "Другой человек пересекает подтвержденную границу рабочей зоны.",
+      "absence_phrase_ru": "За полный проверенный период другой человек не пересекает заданную границу.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "другой человек пересекает границу рабочей зоны"
+    },
+    "WORKSPACE_BOUNDARY_VISIBLE": {
+      "fact_id": "WORKSPACE_BOUNDARY_VISIBLE",
+      "question_ru": "Можно ли надежно определить границу рабочей зоны?",
+      "definition_ru": "Граница видна либо задана проверенной локальной разметкой; предполагаемая граница не принимается.",
+      "absence_requires_ru": "При неизвестной конфигурации зона имеет состояние unclear.",
+      "observable_phrase_ru": "Граница рабочей зоны надежно определена.",
+      "absence_phrase_ru": "Граница рабочей зоны не определена надежно.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "граница рабочей зоны надежно определена"
+    },
+    "PROCEDURE_CONTEXT_COMPLETE": {
+      "fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "question_ru": "Виден ли весь этап процедуры, необходимый для проверки действия?",
+      "definition_ru": "Начало, окончание и релевантные зоны конкретного этапа доступны для проверки без неизвестных фрагментов; запись всего видео сама по себе не подтверждает полноту процедуры.",
+      "absence_requires_ru": "Если этап начался ранее записи, продолжается после ее конца или часть его проходит вне кадра, полнота не подтверждена.",
+      "observable_phrase_ru": "Весь релевантный этап процедуры доступен проверке.",
+      "absence_phrase_ru": "Полнота релевантного этапа процедуры не подтверждена.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "полный релевантный этап процедуры доступен проверке"
+    },
+    "BANK_CASH_WORKSTATION": {
+      "fact_id": "BANK_CASH_WORKSTATION",
+      "question_ru": "Подтвержден ли локально контекст банковского кассового рабочего места?",
+      "definition_ru": "Требуется доверенный локально подтвержденный контекст банковской кассы и видимое рабочее место. По одежде, вывеске или форме мебели контекст не устанавливается; без подтверждения unclear.",
+      "description_ru": "локально подтвержден контекст банковского кассового рабочего места"
+    },
+    "CASH_RECEIPT_OPERATION": {
+      "fact_id": "CASH_RECEIPT_OPERATION",
+      "question_ru": "Наблюдается ли именно прием наличных от клиента кассовым работником?",
+      "definition_ru": "Направление и назначение подтверждены полным видимым этапом приема от клиента. Выдача, размен, собственные деньги клиента и внутреннее перемещение не считаются приемом.",
+      "description_ru": "наблюдается прием наличных от клиента кассовым работником"
+    },
+    "CASH_ISSUE_OPERATION": {
+      "fact_id": "CASH_ISSUE_OPERATION",
+      "question_ru": "Наблюдается ли именно выдача наличных кассовым работником клиенту?",
+      "definition_ru": "Подтвержден полный видимый этап выдачи кассовым работником клиенту. Прием, внутреннее перемещение и размен не заменяют это условие.",
+      "description_ru": "наблюдается выдача наличных клиенту кассовым работником"
+    },
+    "CASH_HANDLER_LEAVES_WORKSTATION": {
+      "fact_id": "CASH_HANDLER_LEAVES_WORKSTATION",
+      "question_ru": "Виден ли уход обслуживающего клиента кассового работника со своего рабочего места?",
+      "definition_ru": "Виден переход от рабочего места за его надежно определенную границу. Наклон, поворот, заслонение и шаг внутри рабочего места уходом не считаются.",
+      "description_ru": "кассовый работник видимо покидает свое рабочее место"
+    },
+    "CUSTOMER_SERVICE_CONTINUES": {
+      "fact_id": "CUSTOMER_SERVICE_CONTINUES",
+      "question_ru": "Подтверждено ли, что в момент ухода обслуживание принимаемого клиента еще не окончено?",
+      "definition_ru": "Требуется видимое продолжение того же этапа приема до и после ухода; одного присутствия или ожидания клиента недостаточно. Если граница окончания обслуживания не видна, unclear.",
+      "description_ru": "уход происходит до наблюдаемого окончания обслуживания того же клиента"
+    },
+    "PREVIOUSLY_ACCEPTED_CASH_TRACKED": {
+      "fact_id": "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+      "question_ru": "Прослежены ли именно ранее принятые банком наличные после предыдущего приема?",
+      "definition_ru": "Нужен непрерывный путь одной и той же наличности от завершенного приема до рассматриваемого размещения. Не выводить принадлежность из положения объекта; клиентские или выдаваемые клиенту деньги не подходят.",
+      "description_ru": "непрерывно прослежены наличные, ранее принятые кассой"
+    },
+    "PREVIOUS_RECEIPT_COMPLETE": {
+      "fact_id": "PREVIOUS_RECEIPT_COMPLETE",
+      "question_ru": "Виден ли завершенный предыдущий этап приема отслеживаемых наличных?",
+      "definition_ru": "Начало, прием и завершение предыдущего обслуживания подтверждены в полном контексте. Выход клиента из кадра или временная пауза сами по себе завершение не доказывают.",
+      "description_ru": "предыдущий этап приема отслеживаемых наличных завершен"
+    },
+    "CASH_PLACED_IN_CLOTHING_POCKET": {
+      "fact_id": "CASH_PLACED_IN_CLOTHING_POCKET",
+      "question_ru": "Видно ли помещение прослеженных наличных именно в карман одежды кассового работника?",
+      "definition_ru": "Нужны различимые наличные и непрерывный путь внутрь видимого кармана одежды. Не применять к закрытой сумке, служебной кассете, ящику, бумаге или движению вне кадра. Умысел и хищение не определяются.",
+      "description_ru": "прослеженные наличные помещены в видимый карман одежды"
+    },
+    "LOOSE_BANKNOTES_RECEIVED": {
+      "fact_id": "LOOSE_BANKNOTES_RECEIVED",
+      "question_ru": "Принимаются ли отдельные неупакованные банкноты?",
+      "definition_ru": "Виден прием отдельных банкнот; прием закрытой сумки инкассации или запечатанной пачки не соответствует этому узкому условию.",
+      "description_ru": "принимаются отдельные неупакованные банкноты"
+    },
+    "LOOSE_BANKNOTES_ISSUED": {
+      "fact_id": "LOOSE_BANKNOTES_ISSUED",
+      "question_ru": "Выдаются ли отдельные неупакованные банкноты?",
+      "definition_ru": "Видна выдача отдельных банкнот; целая неповрежденная пачка или корешок с выдачей по сумме на упаковке не соответствует условию.",
+      "description_ru": "выдаются отдельные неупакованные банкноты"
+    },
+    "ALL_COUNTING_PATHS_VISIBLE": {
+      "fact_id": "ALL_COUNTING_PATHS_VISIBLE",
+      "question_ru": "Видны ли все возможные пути ручного и машинного пересчета за полный релевантный этап?",
+      "definition_ru": "Видны руки, банкноты, счетные и автоматические устройства от начала подготовки/приема до завершения выдачи/приема. При наличии скрытого устройства, участка до записи, слепой зоны или пробела состояние unclear.",
+      "description_ru": "весь релевантный этап и пути ручного и машинного пересчета доступны наблюдению"
+    },
+    "EXP_PRIOR_RECEIPT_START_VISIBLE": {
+      "fact_id": "EXP_PRIOR_RECEIPT_START_VISIBLE",
+      "question_ru": "Видно ли начало именно предыдущего приема отслеживаемой наличности?",
+      "definition_ru": "Граница начала приема подтверждена исходными кадрами передачи наличных от клиента. Запись, начавшаяся после приема, не подтверждает этот факт. Это граница отдельного эпизода процедуры, а не установление личности клиента.",
+      "description_ru": "видно начало предыдущего приема отслеживаемой наличности"
+    },
+    "EXP_NEXT_RECEIPT_START_VISIBLE": {
+      "fact_id": "EXP_NEXT_RECEIPT_START_VISIBLE",
+      "question_ru": "Видно ли начало следующего отдельного приема после завершения предыдущего?",
+      "definition_ru": "Новая передача наличных начинается после видимого завершения предыдущего приема. Предыдущий и текущий эпизоды должны иметь разные локальные procedure_id. Не считать новым приемом продолжение, паузу или вторую руку в том же незавершенном действии.",
+      "description_ru": "после предыдущего завершенного приема начинается следующий отдельный прием"
+    },
+    "EXP_NEXT_RECEIPT_ACTIVE": {
+      "fact_id": "EXP_NEXT_RECEIPT_ACTIVE",
+      "question_ru": "Идет ли следующий отдельный прием в момент нахождения ранее принятых денег на поверхности?",
+      "definition_ru": "На исходном кадре подтвержден активный этап нового приема от клиента и одновременно прослеженные ранее принятые деньги. Две отдельные операции устанавливаются по последовательности, без распознавания лиц.",
+      "description_ru": "следующий отдельный прием наличных уже идет"
+    },
+    "EXP_RECEIPT_EPISODES_DISTINCT": {
+      "fact_id": "EXP_RECEIPT_EPISODES_DISTINCT",
+      "question_ru": "Подтверждены ли два различных завершенный/последующий эпизода приема?",
+      "definition_ru": "Полный контекст показывает завершенный предыдущий прием, затем начало нового приема. Локальные идентификаторы эпизодов различаются и связаны с исходными кадрами. Различие имен, лиц или предположенная принадлежность денег не используются.",
+      "description_ru": "предыдущий и последующий приемы являются разными эпизодами процедуры"
+    },
+    "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER": {
+      "fact_id": "EXP_PRIOR_CASH_IDLE_ON_ORDINARY_COUNTER",
+      "question_ru": "Остаются ли прослеженные ранее принятые деньги без обработки на обычной поверхности во время следующего приема?",
+      "definition_ru": "Одна и та же ранее принятая наличность лежит на обычной рабочей поверхности вне металлического шкафа, сейфа, тележки, ящика стола или тумбы, предназначенных для хранения и закрывающихся на ключ. В этот момент эти деньги не пересчитываются, не упаковываются и не передаются на следующий внутренний этап. Нельзя считать нарушением само открытие устройства или нахождение денег внутри предназначенного для хранения ящика.",
+      "description_ru": "ранее принятая наличность без обработки остается на обычной поверхности вне устройств хранения"
+    },
+    "EXP_CASH_TRACK_CONTINUOUS": {
+      "fact_id": "EXP_CASH_TRACK_CONTINUOUS",
+      "question_ru": "Прослежена ли одна и та же наличность через все обязательные этапы без подмены или неизвестного разрыва?",
+      "definition_ru": "Один локальный cash_track_id связан с исходными кадрами всех требуемых фаз. Виден непрерывный путь объекта; смешение двух стопок, заслонение с возможной подменой и выход из наблюдаемой зоны требуют unclear. Факт не определяет владельца, сумму, номинал, умысел или разрешение.",
+      "description_ru": "одна и та же наличность непрерывно прослежена между обязательными этапами"
+    },
+    "EXP_RECEIPT_START_VISIBLE": {
+      "fact_id": "EXP_RECEIPT_START_VISIBLE",
+      "question_ru": "Видно ли начало конкретного приема наличных от клиента кассовым работником?",
+      "definition_ru": "Исходные кадры показывают начало передачи наличных от клиента в конкретном эпизоде приема. Если подготовка/прием начались раньше записи или вне кадра, состояние unclear.",
+      "description_ru": "видно начало конкретного приема наличных от клиента"
+    },
+    "EXP_RECEIPT_COMPLETE_VISIBLE": {
+      "fact_id": "EXP_RECEIPT_COMPLETE_VISIBLE",
+      "question_ru": "Видна ли граница завершения этого же приема наличных?",
+      "definition_ru": "Окончание релевантного приема подтверждено исходным контекстом и относится к тому же procedure_id и cash_track_id. Уход человека, пауза, окончание ролика или выход предмета из кадра сами по себе не доказывают завершение.",
+      "description_ru": "видно завершение того же приема наличных"
+    },
+    "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS": {
+      "fact_id": "EXP_CONTRIBUTOR_BODY_TRACK_CONTINUOUS",
+      "question_ru": "Прослежено ли тело внесшего наличные человека от передачи до выхода из клиентской зоны?",
+      "definition_ru": "Непрерывность анонимного локального contributor_track_id устанавливается по движению тела в исходных кадрах передачи и выхода. Не распознавать или сопоставлять лица, имена и личность. Трек не требуется в фазе, где человек уже физически отсутствует.",
+      "description_ru": "анонимный телесный трек вносившего наличные прослежен от передачи до выхода"
+    },
+    "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA": {
+      "fact_id": "EXP_CONTRIBUTOR_LEAVES_CLIENT_AREA",
+      "question_ru": "Виден ли фактический выход вносившего наличные человека из всей рассматриваемой клиентской зоны?",
+      "definition_ru": "Виден выход за надежно определенную границу зоны присутствия клиента после передачи наличных и до пересчета того же незавершенного приема. Наклон, заслонение, перемещение в пределах зоны или изменение кропа выходом не считаются.",
+      "description_ru": "вносивший наличные человек видимо выходит из клиентской зоны до пересчета"
+    },
+    "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE": {
+      "fact_id": "EXP_ALL_CLIENT_AREAS_CONTINUOUSLY_VISIBLE",
+      "question_ru": "Полностью и непрерывно видны ли все места возможного присутствия клиента при этом приеме?",
+      "definition_ru": "Виден весь относящийся к кассе клиентский участок и возможные заслоненные/соседние положения, от передачи до пересчета. Если клиент или его представитель может находиться в слепой зоне, вне кропа или за перегородкой, состояние unclear. Не выводить отсутствие по одному пустому фрагменту поверхности.",
+      "description_ru": "все места возможного присутствия клиента непрерывно доступны наблюдению"
+    },
+    "EXP_ANY_CLIENT_AREA_PERSON_PRESENT": {
+      "fact_id": "EXP_ANY_CLIENT_AREA_PERSON_PRESENT",
+      "question_ru": "Находится ли хоть один человек в относящейся к кассе клиентской зоне во время приема-пересчета?",
+      "definition_ru": "Оценивается физическое присутствие любого человека на стороне клиента в фазе пересчета, без определения личности, полномочий или представительства. absent разрешено только при полном непрерывном обзоре всей зоны и подтвержденной ее пустоте на всем пересчете. Любой находящийся там человек исключает эту узкую ветвь независимо от предполагаемой роли.",
+      "description_ru": "в клиентской зоне физически присутствует человек",
+      "absence_description_ru": "на всем наблюдаемом этапе пересчета клиентская зона физически пуста"
+    },
+    "EXP_COUNT_DURING_ACTIVE_RECEIPT": {
+      "fact_id": "EXP_COUNT_DURING_ACTIVE_RECEIPT",
+      "question_ru": "Пересчитываются ли те же вносимые деньги до завершения именно клиентского приема?",
+      "definition_ru": "Наблюдается ручной или машинный пересчет той же наличности после клиентской передачи и до завершения того же приема. Самостоятельный внутренний повторный пересчет после завершенного обслуживания не подходит.",
+      "description_ru": "те же деньги пересчитываются в еще не завершенном клиентском приеме"
+    },
+    "EXP_LOOSE_COINS_RECEIVED": {
+      "fact_id": "EXP_LOOSE_COINS_RECEIVED",
+      "question_ru": "Принимаются ли от клиента различимые отдельные неупакованные монеты?",
+      "definition_ru": "Видна передача отдельных монет в конкретном клиентском приеме. Не применять к банкнотам, жетонам, бумаге, закрытой сумке инкассации или неизвестному содержимому пакета. Монетный номинал и сумма не требуются.",
+      "description_ru": "от клиента принимаются отдельные неупакованные монеты"
+    },
+    "EXP_ISSUE_PREPARATION_START_VISIBLE": {
+      "fact_id": "EXP_ISSUE_PREPARATION_START_VISIBLE",
+      "question_ru": "Видно ли начало полного этапа подготовки рассматриваемой наличности к выдаче?",
+      "definition_ru": "Исходная последовательность охватывает подготовку до любого возможного ручного или машинного пересчета. Если деньги могли быть пересчитаны до начала записи, состояние unclear. Та же наличность прослеживается до передачи клиенту.",
+      "description_ru": "подготовка той же наличности к выдаче видна с начала"
+    },
+    "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE": {
+      "fact_id": "EXP_ISSUE_HANDOVER_COMPLETE_VISIBLE",
+      "question_ru": "Виден ли завершенный этап передачи той же наличности клиенту?",
+      "definition_ru": "Кадры показывают границу завершения конкретной выдачи и относятся к тому же procedure_id и cash_track_id. Не заменять фактическое завершение окончанием ролика, заслонением или паузой.",
+      "description_ru": "видно завершение передачи той же наличности клиенту"
+    },
+    "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE": {
+      "fact_id": "EXP_BANKNOTE_BUNDLE_IDENTIFIABLE",
+      "question_ru": "Можно ли уверенно различить именно корешок банкнот, а не внешнюю сумку, пачку или отдельный документ?",
+      "definition_ru": "Достаточное разрешение и вид упаковки позволяют установить единицу «корешок банкнот» для пункта 32. Число листов, сумму или номинал по приблизительному размеру не предполагать. Если видна только внешняя сумка/конверт или единица упаковки неоднозначна, unclear.",
+      "description_ru": "различим именно корешок банкнот"
+    },
+    "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR": {
+      "fact_id": "EXP_BUNDLE_WRAPPER_DAMAGE_CLEAR",
+      "question_ru": "Явно ли повреждена упаковка самого выдаваемого корешка до передачи клиенту?",
+      "definition_ru": "На исходном детальном кадре до выдачи виден разрыв, вскрытие или нарушение упаковки самого корешка банкнот. Тень, складка, дефект внешней сумки, снятый внешний пакет при неповрежденном корешке и недостаточное разрешение не подтверждают факт. Неповрежденные пачки/корешки исключаются.",
+      "description_ru": "до передачи явно повреждена упаковка самого корешка банкнот"
+    }
+  },
+  "event_types": {
+    "EXP_PREVIOUS_CASH_OUTSIDE_STORAGE": {
+      "name_ru": "Возможное хранение ранее принятой наличности вне устройств хранения",
+      "definition_ru": "Ранее принятая наличность прослежена на обычной поверхности во время следующего отдельного приема."
+    },
+    "EXP_CLIENT_ABSENT_DURING_RECEIPT_COUNT": {
+      "name_ru": "Возможный пересчет при приеме без присутствия клиента",
+      "definition_ru": "Пересчет того же незавершенного приема идет после ухода вносившего наличные человека при полностью пустой видимой клиентской зоне."
+    },
+    "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT": {
+      "name_ru": "Передача наличных без наблюдаемого пересчета",
+      "definition_ru": "Передача наблюдается, но пересчет отсутствует во всем проверенном релевантном этапе. Отсутствие пересчета вне кадра или до начала записи не устанавливается."
+    }
+  },
+  "coverage_gaps": [
+    {
+      "event_type_id": "CASH_UNATTENDED",
+      "state": "partial",
+      "covered_by": [
+        "RK_NBK231_P22_RECEIPT_DEPARTURE"
+      ],
+      "gap": "Оставленная наличность сама по себе не доказывает нарушение. Пункт 22 применяется только при подтвержденном незавершенном приеме наличных от клиента."
+    },
+    {
+      "event_type_id": "CASH_MOVED_TO_PERSONAL_STORAGE",
+      "state": "partial",
+      "covered_by": [
+        "RK_NBK231_P20_PREVIOUS_CASH_POCKET"
+      ],
+      "gap": "Покрыт только видимый карман одежды с непрерывно прослеженными ранее принятыми кассой деньгами. Сумка или кассета без подтвержденного назначения, свои деньги и текущие клиентские деньги не покрыты."
+    },
+    {
+      "event_type_id": "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+      "state": "partial",
+      "covered_by": [
+        "RK_NBK231_P19_2_RECEIPT_COUNT",
+        "RK_NBK231_P31_4_ISSUE_COUNT"
+      ],
+      "gap": "Только отдельные неупакованные банкноты при полностью видимом этапе и всех способах пересчета. Неизвестный/невидимый пересчет не является пропуском; запечатанные пачки имеют исключение пункта 32."
+    },
+    {
+      "event_type_id": "WORKSPACE_ACCESS_BY_OTHER_PERSON",
+      "state": "unresolved_disabled",
+      "covered_by": [],
+      "source_context": {
+        "source_id": "NBK_231_2019_CURRENT",
+        "clause": "пункт 75"
+      },
+      "gap": "Пункт 75 регулирует именно кладовую/сейфовую комнату и допускает ответственных лиц либо лиц по распорядительному документу с сопровождением. Полномочия, документы и статус помещения по обычному видео не устанавливаются. Нельзя переносить на любую рабочую зону."
+    },
+    {
+      "event_type_id": null,
+      "category": "customer_identification",
+      "state": "unresolved_disabled",
+      "covered_by": [],
+      "source_context": {
+        "source_id": "NBK_231_2019_CURRENT",
+        "clause": "подпункты 1 пунктов 19 и 31; пункт 7"
+      },
+      "gap": "Разрешена идентификация через сервис цифровых документов. Невидимый бумажный документ не доказывает отсутствие надлежащей проверки; банковские записи и личность не анализируются."
+    },
+    {
+      "event_type_id": null,
+      "category": "phone_use_clothing_gestures",
+      "state": "unsupported_disabled",
+      "covered_by": [],
+      "gap": "Самостоятельного применимого общего запрета не установлено. Не связывать телефон, одежду, жест или присутствие другого лица с нарушением автоматически."
+    },
+    {
+      "event_type_id": null,
+      "category": "cashroom_controller_absence",
+      "state": "unresolved_disabled",
+      "covered_by": [],
+      "source_context": {
+        "source_id": "NBK_231_2019_CURRENT",
+        "clause": "пункт 42"
+      },
+      "gap": "Пересчет/сортировка/упаковка требуют контролирующего работника, кроме приема/выдачи клиенту. Не подтверждены отдельная процедура, роль другого лица и полный обзор комнаты."
+    },
+    {
+      "event_type_id": null,
+      "category": "vault_storage_accounting",
+      "state": "unresolved_disabled",
+      "covered_by": [],
+      "source_context": {
+        "source_id": "NBK_231_2019_CURRENT",
+        "clause": "пункты 74-76"
+      },
+      "gap": "Требуются учет в автоматизированной цифровой системе, внутренние документы, роли и место хранения. Эти сведения недоступны визуальному анализу."
+    }
+  ],
+  "approved_limitations_ru": [
+    "Вывод требует проверки человеком",
+    "Полномочия лиц и сведения банковских систем по изображению не устанавливаются",
+    "Факт не устанавливает умысел, хищение или принадлежность средств"
+  ]
+}

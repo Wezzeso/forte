@@ -1,0 +1,35 @@
+{
+  "schema_version": "forte.specialists.train.v1",
+  "rfdetr_version": "1.11.2",
+  "model_class": "RFDETRSmall",
+  "dataset_dir": "training/private/specialists/dataset",
+  "expected_dataset_lock_sha256": "REPLACE_WITH_PREPARE_OUTPUT_SHA256",
+  "pretrain_weights": "weights/private/rf-detr-small.pth",
+  "expected_pretrain_weights_sha256": "REPLACE_WITH_VERIFIED_WEIGHT_SHA256",
+  "output_dir": "training/private/specialists/run",
+  "device": "cuda",
+  "epochs": 50,
+  "batch_size": 4,
+  "grad_accum_steps": 4,
+  "resolution": 768,
+  "lr": 0.0001,
+  "seed": 20261018,
+  "num_workers": 2,
+  "thresholds": {
+    "id_card": 0.5,
+    "banknote_stack": 0.5,
+    "key_in_lock": 0.5,
+    "cup": 0.5,
+    "detector_device": 0.5,
+    "person": 0.5
+  },
+  "gate_policy": {
+    "minimum_recall": 0.95,
+    "minimum_positive_instances": 20,
+    "minimum_clean_images": 20
+  },
+  "compute_release_authorization": {
+    "released_by_A18_or_root": false,
+    "release_reference": "REPLACE_AFTER_SHARED_GPU_OWNER_RELEASES_COMPUTE"
+  }
+}

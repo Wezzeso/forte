@@ -1,0 +1,10 @@
+{
+  "status": "measured",
+  "accepted_since_utc": "2026-10-17T11:00:00Z",
+  "unrecognized_accepted_count": 1,
+  "unrecognized_status_counts": {
+    "failed": 1
+  },
+  "unrecognized_active_count": 0,
+  "scope": "aggregate status counts only; excludes known A18 opaque job IDs; no names,hashes,results or unknown IDs inspected"
+}

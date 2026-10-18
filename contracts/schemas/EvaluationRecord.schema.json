@@ -1,0 +1,73 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "sample_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Sample Id",
+      "type": "string"
+    },
+    "group_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Group Id",
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "validation",
+        "final_check"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "predictions": {
+      "additionalProperties": true,
+      "title": "Predictions",
+      "type": "object"
+    },
+    "matched_errors": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Matched Errors",
+      "type": "array"
+    },
+    "timings": {
+      "additionalProperties": {
+        "minimum": 0,
+        "type": "number"
+      },
+      "title": "Timings",
+      "type": "object"
+    },
+    "model_version": {
+      "minLength": 1,
+      "title": "Model Version",
+      "type": "string"
+    },
+    "config_version": {
+      "minLength": 1,
+      "title": "Config Version",
+      "type": "string"
+    },
+    "rule_version": {
+      "minLength": 1,
+      "title": "Rule Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sample_id",
+    "group_id",
+    "split",
+    "predictions",
+    "model_version",
+    "config_version",
+    "rule_version"
+  ],
+  "title": "EvaluationRecord",
+  "type": "object"
+}

@@ -1,0 +1,81 @@
+{
+  "actual_cpu_overlay_proof": {
+    "actual_cpu_image_id": "sha256:5f635274bd9dd7d8ca0bde5a430332607972031c976b11ec91c63ab1d22277cf",
+    "application_services_or_training_modified": false,
+    "base_archive_sha256": "bca671eaaf3679491048016beaee39d248022010d43a946a65e0dd0dfd808cb3",
+    "base_source_unchanged": true,
+    "captured_at_utc": "2026-10-17T14:52:28.925894+00:00",
+    "changed_public_members": [
+      "deploy/ml_source_smoke.py",
+      "training/coverage_export.py"
+    ],
+    "container_exit_code": 0,
+    "container_removed": true,
+    "cpu_limit": 1,
+    "gpu_devices": 0,
+    "memory_bytes": 805306368,
+    "network": "none",
+    "operational_generated_smoke": {
+      "catalog_archives_checksum_verified": 4,
+      "catalog_rules": 4,
+      "generated_all_invalid_export_blocked": true,
+      "generated_attested_exact_frame_targets": 17,
+      "generated_combined_records": 17,
+      "generated_coverage_export_records": 17,
+      "generated_one_invalid_source_retained_records": 16,
+      "generated_original_jpegs_copied": 17,
+      "generated_outputs_removed": true,
+      "generated_window_receipts": 17,
+      "gpu_calls": 0,
+      "machine_schema_validated": true,
+      "model_calls": 0,
+      "private_inputs_read": false,
+      "public_module_imports": 13,
+      "schema_version": "forte.ml-source-dependency-smoke.v1",
+      "source_media_decoded": false,
+      "status": "passed"
+    },
+    "overlay_archives": [
+      {
+        "member": "training/coverage_export.py",
+        "member_sha256": "bba0e4871828eb27588bdcbfff5568a23f5a4ab5d218ba981a257fbac5a0390c",
+        "name": "qwen38-postprocess-failure-inclusive-a05-v2.tar.gz",
+        "sha256": "3dd59efa724b93de1688130b6ad532aa0ff44c9f82c1d39967d5353cf67e68c3"
+      },
+      {
+        "member": "deploy/ml_source_smoke.py",
+        "member_sha256": "2e71b807a318522bcec4ffce7acdbf96af1b8cb4b8be268e6f803ecd7221183a",
+        "name": "qwen38-ml-smoke-fixture-overlay-20261017T145134Z.tar.gz",
+        "sha256": "f41bbd00c0f845a354f622e13cf195fa9ac770f3f9ed0e462b39910b7083d82e"
+      }
+    ],
+    "private_inputs": 0,
+    "readonly_public_mount": true,
+    "schema_version": "forte.ml-generated-fixture-overlay-proof.v1",
+    "source_directory": "/home/ubuntu/forte-ml-smoke-overlay-f41bbd00c0f8/source"
+  },
+  "actual_cpu_overlay_proof_sha256": "27d7ea932e0539ec371b503102f13453bee205b27b91192bb769326b06749d21",
+  "base_archive_and_source_unchanged": true,
+  "captured_at_utc": "2026-10-17T14:52:53.327313+00:00",
+  "focused_passed": 98,
+  "focused_verification_command": ".venv/Scripts/python.exe -m pytest tests/test_coverage_export.py tests/test_silver_combine.py tests/test_release_packaging.py -q",
+  "frozen_base_archive_sha256": "bca671eaaf3679491048016beaee39d248022010d43a946a65e0dd0dfd808cb3",
+  "git_commit": null,
+  "gpu_or_model_calls": 0,
+  "helper": "deploy/ml_source_smoke.py",
+  "helper_sha256": "2e71b807a318522bcec4ffce7acdbf96af1b8cb4b8be268e6f803ecd7221183a",
+  "host_symlink_creation_skip": 1,
+  "independent_qa_receipt": "qa/integration/qwen38_export_final_verified.json",
+  "model_or_worker_activated": false,
+  "old_receipts_modified": false,
+  "overlay_archive": "tmp/qwen38-ml-smoke-fixture-overlay-20261017T145134Z.tar.gz",
+  "overlay_archive_sha256": "f41bbd00c0f845a354f622e13cf195fa9ac770f3f9ed0e462b39910b7083d82e",
+  "overlay_manifest_sha256": "63f0c72bb713aa23273a7a43dcfb491612d10c36f891e2efcff8f687a0bd8582",
+  "private_inputs_read": false,
+  "required_exporter_overlay_sha256": "3dd59efa724b93de1688130b6ad532aa0ff44c9f82c1d39967d5353cf67e68c3",
+  "required_exporter_sha256": "bba0e4871828eb27588bdcbfff5568a23f5a4ab5d218ba981a257fbac5a0390c",
+  "schema_version": "forte.qwen38.generated-smoke-fixture-overlay.v1",
+  "scope": "Generatedfixturecompatibilitywithstrictfailure-inclusiveexporter; frozenMLarchiveunchanged",
+  "test_source_sha256": "1358580492b8683737a437eaf2576561311e83c0a3287ab0117c9211b383b2ba",
+  "training_or_production_core_changed_by_fixture": false
+}

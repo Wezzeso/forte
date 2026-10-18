@@ -1,0 +1,91 @@
+{
+  "artifacts": {
+    "data.tar.gz": {
+      "bytes": 314349380,
+      "file_count": 1961,
+      "sha256": "01447db38529b4e21eeedcd01e417d6ba603d4cce5bb39d2d6fc0abf704ce530"
+    },
+    "database.dump": {
+      "bytes": 9136,
+      "sha256": "a20522d7af2979cf1f21dc2d2fd330444a126f4f926c8618caaa036a39123a34"
+    },
+    "runtime-config.tar.gz": {
+      "bytes": 14403,
+      "file_count": 17,
+      "sha256": "bcde3f8cf2ed98112d3d608a8e29530123e3d1aec130d8fce51033f1e3a614e4"
+    },
+    "source.tar.gz": {
+      "bytes": 1863571,
+      "file_count": 179,
+      "sha256": "2b34ffe0fd940b31ece97854113d0c1eefcff4fb14b81327879e8952f754b5ce"
+    }
+  },
+  "backup_remains_on_current_host_until_protected_local_transfer": false,
+  "baseline_service_identity": {
+    "api": {
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T13:26:57.837778225Z"
+    },
+    "db": {
+      "image": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at_utc": "2026-10-17T10:16:06.044486303Z"
+    },
+    "model": {
+      "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at_utc": "2026-10-17T10:36:11.954566283Z"
+    },
+    "worker": {
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T13:26:57.840298044Z"
+    }
+  },
+  "created_at_utc": "2026-10-17T13:35:30.309943+00:00",
+  "directory": "/data/forte-backups/qwen38-pretrain-20261017T133529Z-8c69c23d",
+  "final_job_counts": {
+    "active": 0,
+    "done": 9,
+    "failed": 9,
+    "total": 18
+  },
+  "gpu_model_calls": 0,
+  "independent_integrity_verified": true,
+  "local_receipt_written_at_utc": "2026-10-17T13:35:48.451345+00:00",
+  "model_and_database_preserved_running": true,
+  "onhost_backup_retained": true,
+  "partial_upload_files": 0,
+  "postgres_major": 18,
+  "postgres_toc_verified": true,
+  "preflight_job_counts": {
+    "active": 0,
+    "done": 9,
+    "failed": 9,
+    "total": 18
+  },
+  "prior_local_backup_receipt": "infra/qwen38-backup-verification-20261017T131821Z.json",
+  "private_content_printed": false,
+  "protected_local_backup_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-pretrain-20261017T133529Z-8c69c23d",
+  "protected_local_transfer_hashes_and_archives_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T13:43:45.587212+00:00",
+  "protected_local_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "rental_or_account_changes": false,
+  "restoration_performed": false,
+  "schema_version": "forte.private-onhost-pretrain-backup.v1",
+  "scope": "Current DB, complete durable data volume, runtime secrets/config and actual baseline remote source; model weights preserved in place",
+  "services_intentionally_paused": [
+    "api",
+    "worker"
+  ],
+  "snapshot_consistent": true,
+  "source_host_alias": "forte-a100-smoke-20261017",
+  "stop_schedule_changed": false,
+  "verified_at_utc": "2026-10-17T13:35:48.139949+00:00",
+  "vllm_queue": {
+    "vllm:num_requests_running": 0.0,
+    "vllm:num_requests_waiting": 0.0
+  }
+}

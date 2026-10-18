@@ -1,0 +1,38 @@
+{
+  "binary_exact_export_count": 54,
+  "containers_preserved": true,
+  "gpu_mutations": 0,
+  "model_calls": 0,
+  "remote_restricted_files": {
+    "native-v2-generated-results.safe.json": {
+      "mode": "0o600",
+      "path": "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2-generated-results.safe.json",
+      "sha256": "4e5e0093db5bfae1f4b2e966a9f7969ba55bdd56528009b2707f5d75d95605d2",
+      "size_bytes": 23206,
+      "uid": 1000
+    },
+    "native-v2-terminal.safe.receipt.json": {
+      "mode": "0o600",
+      "path": "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2-terminal.safe.receipt.json",
+      "sha256": "5ea39bd22a19d409a8103fe4a0f99c78017a966ded07d028786629b681faaa63",
+      "size_bytes": 21253,
+      "uid": 1000
+    },
+    "native-v2.container.stderr.log": {
+      "mode": "0o600",
+      "path": "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2.container.stderr.log",
+      "sha256": "d099cb2ddfdcb1413881df45aa4b73becfb8aa943a73335a2064e3431cc50e2f",
+      "size_bytes": 5296,
+      "uid": 1000
+    },
+    "native-v2.container.stdout.log": {
+      "mode": "0o600",
+      "path": "/data/forte-ml/private/rootops-a08-native-bf16-v2-20261017/native-v2.container.stdout.log",
+      "sha256": "e83c79bc7b2fc6f63a9705b910430dc26c9e12bb390adc9c0d7d9049a57c365c",
+      "size_bytes": 45475,
+      "uid": 1000
+    }
+  },
+  "sealed_at_utc": "2026-10-17T18:35:57.801232+00:00",
+  "source_results_preserved": true
+}

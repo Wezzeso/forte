@@ -1,0 +1,17 @@
+{
+  "status": "independently_verified",
+  "artifact_sha256": "a5b62ded9208bc7112d8996dbb7475df1e715aba5f34415786cf0e87f1f35f8e",
+  "fact_count": 19,
+  "event_type_count": 3,
+  "checks": {
+    "artifact_pin_matches": true,
+    "exact_enabled_fact_axis": true,
+    "exact_enabled_event_axis": true,
+    "catalog_source_pin_matches": true,
+    "taxonomy_source_pin_matches": true,
+    "state_order_exact": true,
+    "experimental_axes_excluded": true
+  },
+  "private_data_accessed": false,
+  "model_or_gpu_called": false
+}

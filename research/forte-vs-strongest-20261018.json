@@ -1,0 +1,288 @@
+{
+  "as_of": "18 October 2026, 07:37 Asia/Qyzylorda",
+  "scope": "Read-only source and aggregate benchmark comparison; no new GPU inference, training, model activation or deployment was performed. Peer figures are author reports on different protocols, not a leaderboard.",
+  "our_baseline": {
+    "accuracy": "34/40 (85%); TP15, FN6, TN19, FP0; recall 71.43%; observed precision 100%",
+    "scope": "Exposed development regression; direct analyzer run, not a new 40-video public API quality run; no validated type accuracy or unseen-camera score.",
+    "timing": "Direct analyzer: median31.320s, max97.710s, four evaluator slots. Fresh six-concurrent public API: median92.076s, max142.568s, all6 completed; warm GPU-host client, includes upload/queue/polling and excludes19.261s preparation.",
+    "model": "Qwen3-VL-30B-A3B-Instruct, BF16, vLLM, A10080GB; per-video layout, repeated full-scene/crop states, temporal rules and candidate verification.",
+    "calls": {
+      "accepted": 5745,
+      "clips": 40,
+      "mean_per_clip": 143.625
+    },
+    "sources": [
+      {
+        "label": "Methods and measured benchmarks",
+        "url": "file:///C:/Users/Wezeso/Desktop/Forte/docs/integration/accuracy-methods-benchmarks-20261018.md"
+      },
+      {
+        "label": "Accepted comparison",
+        "url": "file:///C:/Users/Wezeso/Desktop/Forte/benchmarks/quality/accuracy-upgrade-candidate-comparison-20261018.json"
+      },
+      {
+        "label": "Fresh six-upload API check",
+        "url": "file:///C:/Users/Wezeso/Desktop/Forte/benchmarks/quality/final-public-six-load-20261018T005948Z.json"
+      }
+    ]
+  },
+  "peers": [
+    {
+      "name": "AliNurym / CashGuard",
+      "approach": "RT-DETR + OWLv2, DINOv2 crop-state heads, targeted Qwen4B.",
+      "quality": "34/40; TP15/FN6, FP0/TN19. Setup-classifier LOSO 33/40.",
+      "timing": "L4: reported API median14s/max62s; six longest together finish by195s.",
+      "adopt": "Event-driven questions (typically0–5, cap12), masked safe crops, tiled desk cash, learned states.",
+      "caveat": "Deployed classifiers fitted on all40; setup LOSO does not hold out all system development. Safe-state transfer remains weak.",
+      "sources": [
+        {
+          "label": "Submission and measurements",
+          "url": "https://github.com/AliNurym/cashguard-datathon26/blob/main/docs/submission.md"
+        },
+        {
+          "label": "Actual pipeline",
+          "url": "https://github.com/AliNurym/cashguard-datathon26/blob/main/cashguard/pipeline.py"
+        }
+      ]
+    },
+    {
+      "name": "rsduv",
+      "approach": "Faster R-CNN MobileNet + targeted OWLv2 + geometry/time rules.",
+      "quality": "33/40; TP14/FN7, FP0/TN19.",
+      "timing": "RTX3090: reported5–38s including upload.",
+      "adopt": "Use cheap people/object observations for persistent scene facts and event anchors.",
+      "caveat": "Same-set thresholds and camera proxies; silent time-budget truncation can become a clean verdict. Do not copy those behaviors.",
+      "sources": [
+        {
+          "label": "README/results",
+          "url": "https://github.com/rsduv/datathon26-forte/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "name": "Hotel-zulu — refreshed",
+      "approach": "Fine-tuned RT-DETRv2, people detector, IoU tracks and temporal rules; no VLM verifier.",
+      "quality": "Updated source now35/42 (83.3%); TP15/FN7, FP0/TN20; median timecode1.6s; type14/15. Previous report snapshot was34/42.",
+      "timing": "M4 claim8–10fps; estimated150s for five-minute video, not a full API latency distribution.",
+      "adopt": "Bank-domain detector classes and 2-of-5-frame object persistence.",
+      "caveat": "42rows include duplicate videos; final training includes validation data and rule thresholds use same set. Not an independent test.",
+      "sources": [
+        {
+          "label": "Updated rules and results",
+          "url": "https://github.com/Hotel-zulu/ForteDatathon/blob/main/docs/RULES.md"
+        },
+        {
+          "label": "Training",
+          "url": "https://github.com/Hotel-zulu/ForteDatathon/blob/main/scripts/train_rtdetr.py"
+        }
+      ]
+    },
+    {
+      "name": "tztzlk / CompVision",
+      "approach": "RT-DETR + OWLv2 zones + SigLIP crop states and learned heads, temporal hysteresis/rules.",
+      "quality": "No published whole-video confusion matrix. Cash-crop grouped OOF AUC0.987 is a component metric.",
+      "timing": "RTX3050Laptop6GB:142.5s clip in58s, peak3.7GB.",
+      "adopt": "Small crop-state heads, separate on/off thresholds, event histories and precise transition anchors.",
+      "caveat": "AUC is not violation accuracy. Pose gesture classifiers still generated5–11 false alarms among19 clean videos and remain disabled.",
+      "sources": [
+        {
+          "label": "Component evidence and limits",
+          "url": "https://github.com/tztzlk/CompVision/blob/main/README.md"
+        },
+        {
+          "label": "Temporal event logic",
+          "url": "https://github.com/tztzlk/CompVision/blob/main/worker/events/detectors.py"
+        }
+      ]
+    },
+    {
+      "name": "i-oeng / Veriti v12",
+      "approach": "RF-DETR + tracking, Qwen4B and27B reviewer.",
+      "quality": "31/42 (73.8%); TP21/FN1, FP10/TN10; median timecode1.2s.",
+      "timing": "Reported max181s; separate8GB and24GB model hosts.",
+      "adopt": "High-recall proposals can be evaluated in shadow mode to find missed candidates.",
+      "caveat": "50% false-alarm rate on clean rows. Full v12 lower accuracy than lite v11. Avoid a broad production review pass or copying its operating point.",
+      "sources": [
+        {
+          "label": "Results and ablations",
+          "url": "https://github.com/i-oeng/forte-veriti/blob/main/service/MODEL_RESULTS.md"
+        }
+      ]
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "name": "Replace repeated VLM state questions with tracked, learned scene states",
+      "benefit": "Largest plausible coupled speed/consistency improvement; an experiment, not an established gain.",
+      "adopt": "CashGuard event-triggered query scheduling and DINOv2/CompVision SigLIP state heads.",
+      "change": "Add a replacement observation producer: cheap people/object tracks → compact shared crop encoder → calibrated cash/safe/screen/presence states → temporal transitions. Invoke q30 for uncertainty and event verification; preserve periodic whole-video coverage and a union of proposal signals.",
+      "current": "Our accepted run uses5745 Qwen calls/40clips (143.625 per clip). Full-frame plus up to4 region questions repeat at every state sample. Crops, factual prompts, rules and verification already exist; those are not new features to add.",
+      "acceptance": "Measure state recall, full-video verdicts, candidate recall, VLM call/token counts, latency and fallback rate. Keep at least current15/21 positives, all19 clean negatives and zero processing failures on regression; freeze a separate camera/setup evaluation for generalization.",
+      "sources": [
+        {
+          "label": "Repeated questions",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L245"
+        },
+        {
+          "label": "Accepted call counts",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/benchmarks/quality/accuracy-upgrade-candidate-comparison-20261018.json"
+        },
+        {
+          "label": "CashGuard scheduling",
+          "url": "https://github.com/AliNurym/cashguard-datathon26/blob/main/cashguard/pipeline.py"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Use dense local action windows and better event timestamps",
+      "benefit": "Targets brief-event misses and localization while keeping broad scanning inexpensive.",
+      "adopt": "Event anchors from tracking, minimum durations, hysteresis and event-history guards.",
+      "change": "Expand original-frame sampling near departures, client changes, object appearance/disappearance and uncertain hand/device activity. Keep action onset separate from the later time at which enough evidence confirms it. Recheck supported event intervals with the current verifier.",
+      "current": "State sampling is capped at100 samples and at most1Hz. A142s clip therefore has a nominal spacing around1.42s. Verification then reduces a roughly8s window to10 sampled frames. The accepted confirmation change removed1 false alarm but nearest-event median error worsened1.0→1.5s and within2s hits12→11.",
+      "acceptance": "Review event type/start/end, actor, object and visibility on permitted material; one-to-one type/time matching. Maintain a uniform coverage floor; do not turn unobserved ID/device/counting actions into proof of omission.",
+      "sources": [
+        {
+          "label": "Sampling",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L228"
+        },
+        {
+          "label": "Verification",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L528"
+        },
+        {
+          "label": "Matched regression evidence",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/docs/integration/accuracy-methods-benchmarks-20261018.md"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Broaden domain-specific perception and complete procedural fact producers",
+      "benefit": "Needed to address missing violation categories; public object training alone is insufficient.",
+      "adopt": "Hotel-style dedicated domain classes and persistent object tracks, trained against difficult normal examples.",
+      "change": "Use authorized own/permitted data for keys in locks, cups/coats/bags, small ID versus notes, hand/device interactions, actor roles and transaction boundaries. Qualify object classes, then qualify each procedural type separately. Start with observable states and simple temporal logic before a new temporal transformer.",
+      "current": "RF-DETR+ByteTrack, RTMPose, temporal checks and a transformer interface already exist, but are inactive/unqualified. The public RF candidate covers cards/notes, missed3/16 IDs and has6 banknote false positives. Crop2B primary macro score94.53125% failed its95% gate and did not test absence or procedural actions.",
+      "acceptance": "Camera/setup-grouped class and complete-video tests, hard negatives, event-level precision/recall and full visibility. New types require their own approved producer and release gate. Do not enable staged weights simply because they trained successfully.",
+      "sources": [
+        {
+          "label": "Public training outcome",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/docs/integration/public-training-results-20261018.md"
+        },
+        {
+          "label": "Specialist interfaces",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/specialists.py"
+        },
+        {
+          "label": "Temporal contracts",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/temporal_events.py#L34"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Profile and test small existing scheduling optimizations",
+      "benefit": "Lower implementation cost; likely smaller upside than replacing the state producer.",
+      "adopt": "Use existing parallel_layout first; test verify_concise separately after agreement checks. Measure batching and expensive detector cadence in a future replacement producer.",
+      "change": "Record queue, decode, layout, state questions, verification, evidence, prefill/decode tokens and fallback counts for the accepted q30 pipeline. Test one flag at a time against frozen regression and identical hardware/network load. Detector inference should use a measured sampling/batching policy with dense windows when needed.",
+      "current": "parallel_layout, verify_concise, job_priority and change_gating already exist, default off. Earlier staged-concise results belong to another architecture and do not establish a q30 gain. Prefix/multimodal caching and bounded admission already exist. Current summaries do not isolate exact state/verify or GPU-prefill percentages.",
+      "acceptance": "Identical verdicts, no lost true positives, validated timestamps/evidence, zero failures; compare direct and public API timings separately. Change gating needs brief-event recall tests; job priority changes completion order rather than total GPU work.",
+      "sources": [
+        {
+          "label": "Existing flags",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L110"
+        },
+        {
+          "label": "Agreement tool",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/tools/fast_agreement.py#L178"
+        },
+        {
+          "label": "Serving settings",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/deploy/compose.fast.yaml"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Test a smaller VLM only on the focused questions",
+      "benefit": "Potential serving-cost/latency reduction after request sparsification; no automatic speedup from a smaller model name.",
+      "adopt": "Targeted4B door/screen verification, not an unrestricted whole-video violation search.",
+      "change": "Benchmark a compact model on frozen crop/window tasks with ambiguous, absent-object and clean examples. Keep q30 fallback until complete-video and load results support promotion.",
+      "current": "No compact candidate is qualified for our actual scene/verification tasks. The2B adapter’s oracle-box card-versus-note metric is a different task. Veriti’s larger reviewer harmed overall accuracy, illustrating why parameter count alone is a poor selection rule.",
+      "acceptance": "Task-level accuracy, uncertain rate, calibrated thresholds and full-video type/time/evidence results on the same hardware; count cascade fallback work and both models’ memory. Retain q30 unless quality and operational gates pass.",
+      "sources": [
+        {
+          "label": "Crop model limits",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/docs/integration/accuracy-methods-benchmarks-20261018.md"
+        },
+        {
+          "label": "Veriti comparison",
+          "url": "https://github.com/i-oeng/forte-veriti/blob/main/service/MODEL_RESULTS.md"
+        }
+      ]
+    }
+  ],
+  "implementation_gaps": [
+    {
+      "title": "Specialists currently add work; they do not replace the VLM state producer.",
+      "detail": "The service processes native-frame specialist perception under one lock and then analyze() still runs the usual VLM states before specialist proposals. Enabling specialists alone can increase latency. A replacement producer and measured detector batching/cadence are required.",
+      "sources": [
+        {
+          "label": "Service",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/service.py#L174"
+        },
+        {
+          "label": "Analyzer",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L634"
+        }
+      ]
+    },
+    {
+      "title": "Long-video sampling can conflict with specialist departure continuity.",
+      "detail": "The100-state cap makes long-video spacing exceed1s, while _state_departures requires adjacent supporting observations within specialist_max_gap_s=1.1 and a sustained absence interval. This can prevent support on a142s clip. Generate denser role observations or explicitly reconcile sampling with coverage; do not increase a gap allowance and claim missing frames were observed. This is a dormant-path issue, not an established explanation for the current six misses.",
+      "sources": [
+        {
+          "label": "State sampling",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L228"
+        },
+        {
+          "label": "Departure continuity",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/temporal_events.py#L228"
+        }
+      ]
+    },
+    {
+      "title": "LEFT_DURING_SERVICE still needs its own specialist producer.",
+      "detail": "The type is protected/disabled and is absent from specialist and tracked-head supported sets. Broad detector weights or a switch cannot establish completed service, actor roles or a departure-during-service event.",
+      "sources": [
+        {
+          "label": "Disabled types",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/analyzer.py#L108"
+        },
+        {
+          "label": "Specialist supported types",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/temporal_events.py#L25"
+        },
+        {
+          "label": "Tracked head supported types",
+          "url": "file:///C:/Users/Wezeso/Desktop/Forte/src/forte/fast/tracked_head.py#L19"
+        }
+      ]
+    }
+  ],
+  "experiment_order": [
+    "CPU/source-level sampling and producer-contract checks, then isolated parallel_layout agreement/latency trial.",
+    "Train/calibrate narrow crop states on permitted camera-grouped data and evaluate as shadow proposals with q30 fallback.",
+    "Replace repeated state requests only after state/event regression evidence; benchmark one request, four active jobs and six public uploads on the same host.",
+    "Use separate reviewed type/time/camera tests for accuracy gains; target at least one additional valid positive without losing existing correct verdicts or adding false alarms.",
+    "Evaluate compact focused VLM and deployment tuning only after request scheduling is efficient."
+  ],
+  "guardrails": [
+    "Keep current verification: it removed one observed false alarm.",
+    "No blind reduction of temporal sampling, global threshold relaxation, broad second-pass recall mode or activation of unqualified weights.",
+    "Do not translate crop AUC, object recall, test counts or all-positive F1 into bank-video accuracy.",
+    "The exposed40-video suite remains regression; a fresh camera/setup test is needed for generalization.",
+    "No estimated speed multiplier or under30s guarantee is established by this comparison."
+  ]
+}

@@ -1,0 +1,46 @@
+/* Generated from brand/tokens.json by build_tokens.py. Provenance lives in JSON. */
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+}
+:root {
+  --forte-magenta: #A31551;
+  --forte-dark: #4A0221;
+  --forte-coral: #FC9385;
+  --forte-sky: #61CFFF;
+  --forte-font-family: "Open Sans";
+  --forte-text: #1D1D1D;
+  --forte-surface: #FFFFFF;
+  --forte-link: #185AC5;
+  --forte-border: #D5D5D5;
+  --forte-radius-control: 12px;
+  --forte-body-size: 1rem;
+  --forte-body-line-height: 1.5;
+  --forte-page: #F6F5F7;
+  --forte-muted: #5E5660;
+  --forte-control-border: #827883;
+  --forte-focus: #A31551;
+  --forte-normal: #146C43;
+  --forte-normal-bg: #EAF5EE;
+  --forte-possible: #7C4800;
+  --forte-possible-bg: #FFF3DA;
+  --forte-failed: #A12B2B;
+  --forte-failed-bg: #FDECEC;
+  --forte-processing: #185AC5;
+  --forte-processing-bg: #EEF4FF;
+  --forte-visibility: #5E5660;
+  --forte-visibility-bg: #F1EEF2;
+  --forte-radius-panel: 20px;
+  --forte-max-width: 1440px;
+  --forte-stack-at: 900px;
+  --forte-target-size: 44px;
+  --forte-h1-size: clamp(1.75rem, 3vw, 2.5rem);
+  --forte-h2-size: 1.25rem;
+  --forte-caption-size: 0.875rem;
+  --forte-motion-duration: 160ms;
+  --forte-evidence-fit: contain;
+}
+/* Consumer: font-family: var(--forte-font-family), system-ui, sans-serif; */

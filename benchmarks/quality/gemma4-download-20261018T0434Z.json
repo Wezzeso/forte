@@ -1,0 +1,18 @@
+{
+  "schema": "forte.local-model-download.v1",
+  "generated_at_utc": "2026-10-18T04:32:56.440777+00:00",
+  "repo": "google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "license": "apache-2.0",
+  "gated": false,
+  "complete": true,
+  "architectures": [
+    "Gemma4ForConditionalGeneration"
+  ],
+  "model_type": "gemma4",
+  "config_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+  "weight_bytes": 62546338248,
+  "weight_manifest_sha256": "46dcb3dd1349e2076c8961e95f75111d2459f5b82755072f2566f1e872d1b952",
+  "weight_file_count": 2,
+  "download_s": 98.46
+}

@@ -1,0 +1,12 @@
+# Live-host override: API/worker use the fast analyzer against the already running local vLLM
+# container "vlm30" (Qwen3-VL-30B-A3B-Instruct) on the private network.
+services:
+  api:
+    environment: &fast-env
+      FORTE_ANALYZER: fast
+      FORTE_FAST_MODEL_BASE_URL: http://vlm30:8000/v1
+      FORTE_FAST_MODEL_NAME: q30
+      FORTE_FAST_CONCURRENCY: "64"
+      FORTE_ADMISSION_PAUSED: "false"
+  worker:
+    environment: *fast-env

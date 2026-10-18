@@ -1,0 +1,20 @@
+{
+  "A10_model_API_GPU_calls": 0,
+  "actual_validation_labels": 6,
+  "assignment_freeze_sha256": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c",
+  "event_fact_timing_evidence_legal_ground_truth": "UNKNOWN",
+  "human_gold_track": "SEPARATE_UNAVAILABLE_WITHOUT_REVIEW",
+  "manual_event_annotation_required_for_weak_track": false,
+  "original_all19_evidence_changed": false,
+  "provided_negative_labels": 3,
+  "provided_positive_labels": 3,
+  "provided_validation_labels_sha256": "14033545f724483bdbc579115b55eaa57f14f19dae9d42e6dff9131375d5e967",
+  "requires_fresh_exposure_gate_at_actual_execution": true,
+  "schema_version": "forte.weak_operational_status.v1",
+  "teacher_agreement_is_accuracy": false,
+  "track": "authorized_automatic_first_pass",
+  "universal_100_percent_accuracy_claim_permitted": false,
+  "weak_candidate_selected": false,
+  "weak_candidate_video_metrics": "PENDING_ACTUAL_WEAK_CANDIDATE_PREDICTIONS",
+  "weak_gate_last_observed_pass": true
+}

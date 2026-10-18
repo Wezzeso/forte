@@ -1,0 +1,680 @@
+{
+  "schema_version": "forte.accuracy-final-benchmark.v1",
+  "generated_at_utc": "2026-10-18T01:07:14.732705+00:00",
+  "status": "complete_quality_targets_unmet",
+  "headline": {
+    "universal_100_percent_accuracy_demonstrated": false,
+    "all_accuracy_and_zero_false_positive_targets_met": false,
+    "unseen_bank_video_accuracy_measured": false,
+    "public_model_fusion_evaluated": false
+  },
+  "measurements": {
+    "bank_video_exposed_regression": {
+      "source_receipt": "exposed_bank_regression",
+      "stage": "candidate-verified",
+      "scope": "Previously exposed supplied development clips; recorded inference report, not untouched heldout, fresh final inference, or cross-validation.",
+      "whole_video_verdicts": {
+        "n": 40,
+        "positive": 21,
+        "negative": 19,
+        "tp": 15,
+        "fp": 0,
+        "tn": 19,
+        "fn": 6,
+        "failed": 0,
+        "failed_positive": 0,
+        "failed_negative": 0,
+        "processed": 40,
+        "correct": 34,
+        "accuracy": 0.85,
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "negative_video_false_alarm_rate": 0.0
+      },
+      "type_accuracy": {
+        "measured": false,
+        "type_labeled_videos": 0
+      },
+      "nearest_event_timecode": {
+        "scope": "Nearest event on detected positive videos; not typed event matching.",
+        "labeled_positive_videos": 21,
+        "scored_detected_positive_videos": 15,
+        "median_absolute_error_seconds": 1.5,
+        "within_2_seconds": 11
+      },
+      "timing": {
+        "analysis_only_seconds": {
+          "scored": 40,
+          "max": 97.71,
+          "median": 31.32
+        },
+        "scope": "Recorded evaluator analysis excludes its client queue and API upload; not public API end-to-end latency."
+      },
+      "new_final_40_video_run_performed": false
+    },
+    "fresh_six_parallel_public_api": {
+      "source_receipt": "fresh_public_api_load",
+      "parallel": 6,
+      "requests": 6,
+      "passed": 6,
+      "failed": 0,
+      "deadline_seconds": 240,
+      "elapsed_seconds": 142.58929,
+      "max_request_seconds": 142.567703,
+      "pass": true,
+      "timing_scope": "client_start_through_upload_queue_processing_poll_and_terminal_schema_validation",
+      "accuracy_measured": false,
+      "accepted_jobs": 6,
+      "completed_schema_valid_count": 6,
+      "timeline_validated_jobs": 6,
+      "terminal_status_counts": {
+        "done": 6
+      },
+      "median_request_seconds": 92.076184,
+      "mean_request_seconds": 89.32843133333333,
+      "min_request_seconds": 34.191399,
+      "repeated_attempts": 0,
+      "source_preparation_seconds_excluded_from_upload_clock": 19.261137,
+      "client_origin": "existing GPU host -> public HTTPS gateway",
+      "cache_state": "Current post-sealed-job warm/cache state; cold start not measured.",
+      "desktop_upload_latency_measured": false,
+      "release_identity": {
+        "attempt_id": "20261018T005948Z",
+        "benchmark_wrapper_sha256": "f82f796b054b91ae925ca90c11da3d1465021a008bcba4e83130f4f6e68dc22e",
+        "model_identity": "q30;container=d8dd1da4a4a811ccac2dc3f8b0ff34aeafe433dd94dd5926d3bdc7b6929e0691;image=sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e;started=2026-10-17T19:14:49.608401273Z",
+        "profile_config_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+        "serving_image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d"
+      },
+      "source_client_sha256": "2830549122489e697dd265e309494fc9209e718c945660482c623b6cf148b8cc",
+      "shared_schema_sha256": "1e60771f61258e89a7331ddf1143339fde15ff2f25b95ae5c0128e7c60d98818"
+    },
+    "public_detector_sealed": {
+      "source_receipt": "rf_final",
+      "model": "RF-DETR Small, 512 input, two foreground classes",
+      "state": "complete",
+      "member_id": "detector",
+      "sealed_test_evaluation_count": 1,
+      "fixed_operating_point": {
+        "images": 879,
+        "confidence_threshold": 0.5,
+        "iou_threshold": 0.5,
+        "per_class": {
+          "single_banknote": {
+            "tp": 278,
+            "fp": 6,
+            "fn": 3,
+            "positive_instances": 281,
+            "precision": 0.9788732394366197,
+            "recall": 0.9893238434163701
+          },
+          "id_card": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 3,
+            "positive_instances": 16,
+            "precision": 1.0,
+            "recall": 0.8125
+          }
+        },
+        "negative_images": 582,
+        "false_positive_negative_images": 1,
+        "negative_image_FPR": 0.001718213058419244,
+        "total_false_positives": 6,
+        "annotated_object_tp": 291,
+        "annotated_object_fn": 6,
+        "annotated_object_recall": 0.9797979797979798
+      },
+      "background_proposals_excluded": 0,
+      "native_coco_metrics": {
+        "test/AP/id_card": 0.9564387798309326,
+        "test/AP/single_banknote": 0.8544171452522278,
+        "test/F1": 0.9920914173126221,
+        "test/loss": 1.3804864883422852,
+        "test/mAP_50": 0.9991624355316162,
+        "test/mAP_50_95": 0.9054279327392578,
+        "test/mAP_75": 0.9975531697273254,
+        "test/mAR": 0.9329515099525452,
+        "test/precision": 0.9861111044883728,
+        "test/recall": 0.9982206225395203
+      },
+      "native_metric_scope": "COCO AP/AR uses ranking across confidence and differs from fixed-confidence precision/recall. Evaluation uses public original object scales at 512 input.",
+      "timing": {
+        "whole_evaluation_attempt_seconds": 56.807910365998396,
+        "whole_evaluation_attempt_scope": "Setup, native COCO evaluation, fixed prediction pass and scoring: two inference passes; not single-pass throughput.",
+        "whole_host_guard_seconds": 93.425,
+        "single_pass_images_per_second": null
+      },
+      "memory": {
+        "torch_max_allocated_mib": 310.52099609375,
+        "torch_max_reserved_mib": 342.0,
+        "nvml_max_sampled_evaluation_mib": 876
+      },
+      "host_execution_passed": true,
+      "quality_gate": {
+        "metric": "fixed_confidence_id_card_recall",
+        "passed": false,
+        "reason": "primary_metric_below_predeclared_target",
+        "status": "failed",
+        "target": 0.95,
+        "value": 0.8125
+      },
+      "zero_object_false_positive_target_met": false,
+      "serving_eligible": false,
+      "approved_types": []
+    },
+    "public_crop_vlm_sealed": {
+      "source_receipt": "crop_final",
+      "model": "Qwen3-VL-2B-Instruct saved QLoRA adapter",
+      "member_id": "crop_vlm",
+      "sealed_test_evaluation_count": 1,
+      "adapter_only": true,
+      "heldout_base_model_comparison_performed": false,
+      "unique_originals": 48,
+      "unique_class_support": {
+        "single_banknote": 32,
+        "id_card": 16
+      },
+      "conditions": {
+        "0": {
+          "correct": 48,
+          "total": 48,
+          "pooled_accuracy": 1.0,
+          "macro_class_accuracy": 1.0,
+          "per_class": {
+            "id_card": {
+              "tp": 16,
+              "fp": 0,
+              "fn": 0,
+              "examples": 16,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "single_banknote": {
+              "tp": 32,
+              "fp": 0,
+              "fn": 0,
+              "examples": 32,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          },
+          "invalid_outputs": 0,
+          "timing": {
+            "crops_per_second": 3.6229837444066146,
+            "examples": 48,
+            "generation_seconds": 12.113570547015115,
+            "mean_generation_seconds": 0.2523660530628149,
+            "scope": "single_crop_microbatches_includes_preprocessing_not_whole_video_api_latency",
+            "total_seconds": 13.248748376005096
+          }
+        },
+        "64": {
+          "correct": 48,
+          "total": 48,
+          "pooled_accuracy": 1.0,
+          "macro_class_accuracy": 1.0,
+          "per_class": {
+            "id_card": {
+              "tp": 16,
+              "fp": 0,
+              "fn": 0,
+              "examples": 16,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "single_banknote": {
+              "tp": 32,
+              "fp": 0,
+              "fn": 0,
+              "examples": 32,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          },
+          "invalid_outputs": 0,
+          "timing": {
+            "crops_per_second": 4.176845343998327,
+            "examples": 48,
+            "generation_seconds": 9.925316841014137,
+            "mean_generation_seconds": 0.2067774341877945,
+            "scope": "single_crop_microbatches_includes_preprocessing_not_whole_video_api_latency",
+            "total_seconds": 11.491926572998636
+          }
+        },
+        "32": {
+          "correct": 43,
+          "total": 48,
+          "pooled_accuracy": 0.8958333333333334,
+          "macro_class_accuracy": 0.859375,
+          "per_class": {
+            "id_card": {
+              "tp": 12,
+              "fp": 1,
+              "fn": 4,
+              "examples": 16,
+              "precision": 0.9230769230769231,
+              "recall": 0.75
+            },
+            "single_banknote": {
+              "tp": 31,
+              "fp": 4,
+              "fn": 1,
+              "examples": 32,
+              "precision": 0.8857142857142857,
+              "recall": 0.96875
+            }
+          },
+          "invalid_outputs": 0,
+          "timing": {
+            "crops_per_second": 4.08242856521073,
+            "examples": 48,
+            "generation_seconds": 10.210771763013327,
+            "mean_generation_seconds": 0.2127244117294443,
+            "scope": "single_crop_microbatches_includes_preprocessing_not_whole_video_api_latency",
+            "total_seconds": 11.757707264994679
+          }
+        },
+        "16": {
+          "correct": 45,
+          "total": 48,
+          "pooled_accuracy": 0.9375,
+          "macro_class_accuracy": 0.921875,
+          "per_class": {
+            "id_card": {
+              "tp": 14,
+              "fp": 1,
+              "fn": 2,
+              "examples": 16,
+              "precision": 0.9333333333333333,
+              "recall": 0.875
+            },
+            "single_banknote": {
+              "tp": 31,
+              "fp": 2,
+              "fn": 1,
+              "examples": 32,
+              "precision": 0.9393939393939394,
+              "recall": 0.96875
+            }
+          },
+          "invalid_outputs": 0,
+          "timing": {
+            "crops_per_second": 4.129062050890014,
+            "examples": 48,
+            "generation_seconds": 10.122847788028594,
+            "mean_generation_seconds": 0.2108926622505957,
+            "scope": "single_crop_microbatches_includes_preprocessing_not_whole_video_api_latency",
+            "total_seconds": 11.624916120999842
+          }
+        }
+      },
+      "macro_accuracy": 0.9453125,
+      "views_reuse_originals": true,
+      "task": "oracle_box_two_class_crop_classification",
+      "primary_metric_definition": "Equal class recall within each condition, then equal average across original/64/32/16 short-side conditions.",
+      "pooled_correlated_decisions": {
+        "correct": 184,
+        "total": 192,
+        "accuracy": 0.9583333333333334,
+        "independent_examples": false,
+        "is_primary_metric": false
+      },
+      "timing": {
+        "whole_host_guard_seconds": 116.193,
+        "condition_timing_path": "conditions.<short_side>.timing",
+        "scope": "Recorded single-crop microbatches include preprocessing; not whole-video API latency or cold-start speed."
+      },
+      "memory": {
+        "nvml_max_sampled_evaluation_mib": 2704
+      },
+      "absent_object_or_bank_false_alarm_rate_measured": false,
+      "host_execution_passed": true,
+      "quality_gate": {
+        "metric": "class_and_resolution_macro_accuracy",
+        "passed": false,
+        "reason": "primary_metric_below_predeclared_target",
+        "status": "failed",
+        "target": 0.95,
+        "value": 0.9453125
+      },
+      "serving_eligible": false,
+      "approved_types": []
+    }
+  },
+  "training_and_development": {
+    "detector": {
+      "source_receipt": "rf_frozen_fit",
+      "training_completed": true,
+      "unique_training_images": 1370,
+      "optimizer_updates": 2752,
+      "physical_batches": 22016,
+      "physical_batches_are_unique_images": false,
+      "fit_walltime_seconds": 2106.1282124610007,
+      "run_elapsed_seconds": 2145.7554093979998,
+      "selected_development_epoch": 10,
+      "selected_development_native_map_50_95": 0.9291189908981323,
+      "last_epoch_index": 15,
+      "last_epoch_native_map_50_95": 0.900782585144043,
+      "selected_development_fixed_metrics": {
+        "images": 905,
+        "confidence_threshold": 0.5,
+        "iou_threshold": 0.5,
+        "per_class": {
+          "single_banknote": {
+            "tp": 287,
+            "fp": 0,
+            "fn": 4,
+            "positive_instances": 291,
+            "precision": 1.0,
+            "recall": 0.9862542955326461
+          },
+          "id_card": {
+            "tp": 16,
+            "fp": 0,
+            "fn": 0,
+            "positive_instances": 16,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "negative_images": 598,
+        "false_positive_negative_images": 0,
+        "negative_image_FPR": 0.0,
+        "total_false_positives": 0,
+        "annotated_object_tp": 303,
+        "annotated_object_fn": 4,
+        "annotated_object_recall": 0.9869706840390879
+      },
+      "development_phase_timings": {
+        "fixed_detection_evaluation": {
+          "development_images": 905,
+          "images_per_second": 60.48595556107671,
+          "wall_seconds": 14.962150991996168
+        },
+        "native_evaluate_val": {
+          "development_images": 905,
+          "images_per_second": 34.519155589409785,
+          "wall_seconds": 26.217327293998096
+        }
+      },
+      "development_timing_scope": "Development-only native/fixed evaluation loops; not heldout or bank-video throughput.",
+      "strict_training_host_guard_passed": false,
+      "strict_training_host_postcheck_failures": [
+        "production_postcheck_failed"
+      ],
+      "operational_note": "Native training exited zero. An external API/frontend restart failed the fit host guard; protected worker/model/DB/ingress and later final/load readiness were independently verified. Original failure retained."
+    },
+    "crop_vlm": {
+      "source_receipt": "crop_frozen_fit",
+      "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "training_completed": true,
+      "optimizer_steps": 80,
+      "fit_walltime_seconds": 112.54206143000192,
+      "total_command_walltime_seconds": 197.7161912820011,
+      "available_unique_training_crop_support": {
+        "id_card": 36,
+        "single_banknote": 256
+      },
+      "planned_training_draws": {
+        "id_card": 160,
+        "single_banknote": 160
+      },
+      "planned_unique_drawn_crops": {
+        "id_card": 36,
+        "single_banknote": 160
+      },
+      "trainable_parameters": 1605632,
+      "frozen_base_unchanged": true,
+      "adapter_updated": true,
+      "development_unique_originals": 32,
+      "development_base_macro_accuracy": 0.921875,
+      "development_adapter_macro_accuracy": 0.9609375,
+      "development_16px_id_correct_before": 14,
+      "development_16px_id_correct_after": 13,
+      "development_16px_id_support": 16,
+      "development_regression_retained": true,
+      "training_host_guard_passed": true
+    },
+    "crop_saved_adapter_cpu_reload": {
+      "source_receipt": "crop_cpu_cold_reload",
+      "passed": true,
+      "adapter_tensor_count": 224,
+      "adapter_parameter_count": 1605632,
+      "exact_keys_shapes_dtypes_values": true,
+      "all_cpu_and_frozen": true,
+      "elapsed_seconds": 30.467507765002665,
+      "inference_executed": false,
+      "dataset_accessed": false,
+      "nf4_gpu_numeric_equivalence_verified": false,
+      "prior_failed_operator_helper_attempts_retained": true
+    }
+  },
+  "no_test_tuning_protocol": {
+    "cohort_source_receipt": "cohort",
+    "cohort_sha256": "0ab06fd0e9c17c259b8464fc43d7466f8b55cc2e2bfd8182df5ab73942a0a437",
+    "registered_before_member_claims": true,
+    "exact_frozen_members": [
+      "crop_vlm",
+      "detector"
+    ],
+    "attempt_policy": "one_per_declared_member_failure_consumes_no_reset",
+    "observed_test_attempts": {
+      "detector": 1,
+      "crop_vlm": 1
+    },
+    "failure_consumes_attempt": true,
+    "retuning_after_test_permitted": false,
+    "additional_heldout_base_comparison_performed": false,
+    "source_40_role": "Exposed development regression only.",
+    "dataset_lock_sha256": "eef3f1ad5fabb9cb720e42522265a6946a02196af01221af6ebf0522bf498fb8",
+    "sealed_inventory_sha256": "6fd01ecf63dceb738a069626bdebf59e286565e73c0c38b67a9715097b474a29",
+    "source_image_counts": {
+      "train": 1370,
+      "development": 905,
+      "sealed": 879,
+      "quarantined": 1114
+    },
+    "sealed_population_support": {
+      "prepared_images": 879,
+      "combined_template_components": 5,
+      "id_images": 16,
+      "id_physical_mock_documents_or_clips": 4,
+      "id_designs": 2,
+      "non_id_images_without_reliable_capture_session_metadata": 863
+    },
+    "detector_and_crop_tasks_are_different": true
+  },
+  "deployment": {
+    "live_public_api": "https://forte-review-wd88a7vvt.gobrev.dev",
+    "live_serving_model": "Qwen3-VL-30B-A3B-Instruct (q30)",
+    "live_profile_source_receipt": "verified_live_profile",
+    "live_profile_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+    "trained_specialists_enabled_in_live_profile": false,
+    "public_candidates": {
+      "source_receipt": "candidate_release",
+      "verification_source_receipt": "candidate_release_verification",
+      "state": "staged_disabled",
+      "copied_files": 48,
+      "copied_bytes": 135469180,
+      "activation": false,
+      "serving_eligible": false,
+      "promotion_eligible": false,
+      "approved_types": [],
+      "quality_gate_approval": false,
+      "live_configuration_changed_during_staging": false,
+      "staging_inference_performed": false,
+      "models": {
+        "crop_vlm": {
+          "checkpoint_sha256": "a3733ccf3c888224c2887dd24900e45d2462e9481299ed71cec82518cfc6c7ad",
+          "run_sha256": "aaec63508133bf227170be43e10f426d6804cd09c804fdc58b4e913e33e0ffcd",
+          "saved_config_sha256": "d029457071b32e13fb71a0563fdbd1e40f124dfbeeea6a03ccbd960e34625f64",
+          "protocol_sha256": "b5be8845c6bd69e3033d953c80e3270a1d08064d9ceaf4f10b245e895a693b12",
+          "final_result_sha256": "d2b71ebb677909913ddaa7433a742983925230f77e84fd3d087879cfe08f0b2a",
+          "training_image_id": "sha256:2be4db9629837c6a3c0e252d2a4b45b54bd0a0d25d41e04274dbff0dd2755712",
+          "quality_gate": {
+            "metric": "class_and_resolution_macro_accuracy",
+            "passed": false,
+            "reason": "primary_metric_below_predeclared_target",
+            "status": "failed",
+            "target": 0.95,
+            "value": 0.9453125
+          }
+        },
+        "detector": {
+          "checkpoint_sha256": "f01c7b9c897f6eee5a519a72d9dbe5d9f7344ebec4bf9e0187dcd44b683f848e",
+          "run_sha256": "662def0d466404ad9efa1e828ddcda372915cf9487733add0c9c881562307d2b",
+          "saved_config_sha256": "194c888c1c957c39942d4d59a03e206c3dd367332cf7e64d59cee5f97ca14e16",
+          "protocol_sha256": "9d407311f31fb7ef6aa46fda98a4479c13823fd7674866b14f278fd3c036880d",
+          "final_result_sha256": "26d369c730456abd96ec0673ed0a8350cdf572835bc032a19f630ff5ccbe7af1",
+          "training_image_id": "sha256:2a7af0c822817bda42d8eabba5085b1756ffd051d37f2c3aa3ec138a166462ba",
+          "quality_gate": {
+            "metric": "fixed_confidence_id_card_recall",
+            "passed": false,
+            "reason": "primary_metric_below_predeclared_target",
+            "status": "failed",
+            "target": 0.95,
+            "value": 0.8125
+          }
+        }
+      }
+    },
+    "postload_source_receipt": "postload_bindings",
+    "accepted_fast_source_matches": true,
+    "worker_model_bindings_unchanged": true,
+    "ready": true,
+    "queue": {
+      "active": 0,
+      "queued": 0
+    }
+  },
+  "limitations": [
+    "100% on every test and zero false positives were not achieved. Finite observed tests cannot guarantee unseen-video perfection.",
+    "The supplied 40 bank clips were already exposed in development; 34/40 is not heldout performance or grouped cross-validation.",
+    "The fresh six-upload cohort measures latency/schema/JPEG/source-timeline validity, not new accuracy or six independent unseen scenarios.",
+    "The 879 public images represent five combined/template components; 16 ID frames cover four mock documents across two designs. Images and derived crop views are correlated.",
+    "Class is confounded with publisher/source. Non-ID capture-session grouping is unavailable; upstream pretrained contamination is unknown.",
+    "Object false positives are relative to publisher annotations, not verified bank procedural false alarms or exhaustive cross-class absence labels.",
+    "RF heldout inference uses original public object scales at 512 input. Training-only 12-96px zoomout and oracle 16px crop classification do not establish tiny-object localization, 4x6px key recall, hand contact or procedural accuracy.",
+    "Crop tests use known publisher boxes and two present-object classes; they do not test object absence, localization, bank false alarms, temporal violations or free-form video reasoning.",
+    "The two models were evaluated on different tasks. No fusion accuracy or statistical independence of detector/VLM errors was established.",
+    "RF whole-attempt time includes two inference passes and setup/scoring. Crop condition rates are single-crop microbatch rates; neither is bank-video throughput.",
+    "Both candidates failed primary quality targets and remain staged with activation false; public scores cannot authorize bank violation types."
+  ],
+  "aggregate_integrity_audit": {
+    "mode": "CPU-only recomputation of sanitized aggregates; no new inference, images or per-example test predictions inspected.",
+    "validator": {
+      "path": "evaluation/final_benchmark.py",
+      "sha256": "994d25cd7637edb4fe4234e3c32981cb5882a3822738e390f51a316be31c6826",
+      "bytes": 12469
+    },
+    "focused_tests": {
+      "path": "tests/test_final_benchmark.py",
+      "sha256": "de5d6ff35fc046cf2bfdc098222a4f6a3db9794f077dc9b1e2e424b72965689f",
+      "bytes": 5900
+    },
+    "focused_cpu_tests_passed": 19
+  },
+  "documentation": [
+    "docs/integration/accuracy-methods-benchmarks-20261018.md",
+    "docs/integration/public-model-cards-20261018.md",
+    "docs/integration/accuracy-public-training-protocol-20261018.md"
+  ],
+  "source_receipts": {
+    "exposed_bank_regression": {
+      "path": "benchmarks/quality/accuracy-upgrade-candidate-comparison-20261018.json",
+      "sha256": "44d356f901b7a7a32e70dec637b54b4fd1aa7d89623c207530fb1b47889cd407",
+      "bytes": 11584
+    },
+    "verified_live_profile": {
+      "path": "benchmarks/quality/accuracy-upgrade-verified-config-20261018.json",
+      "sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "bytes": 617
+    },
+    "historical_public_load": {
+      "path": "benchmarks/quality/accuracy-upgrade-public-load-20261018.json",
+      "sha256": "fc5fe97d50c06598838437b2ac8f5367afa403e32d184bea98065bc03ca22007",
+      "bytes": 3597
+    },
+    "rf_frozen_fit": {
+      "path": "infra/public-rf-small512-fit-frozen-20261018.json",
+      "sha256": "6315615b3471e6fcd97536c0e91fb08539d89cc257c18eac8d1a1b97d88fd915",
+      "bytes": 10057
+    },
+    "rf_development": {
+      "path": "infra/public-rf-small512-selected-dev-20261018.json",
+      "sha256": "d418107fae87d3321c27710d621c6ff6abd37d32a38c5b46c379bc7ae58760a4",
+      "bytes": 10592
+    },
+    "rf_config_equivalence": {
+      "path": "infra/public-rf-small512-config-equivalence-20261018.json",
+      "sha256": "5c664090a2616a83798b440d6cf51888ec51e15dba211033be2eea2b95432c2c",
+      "bytes": 666
+    },
+    "crop_frozen_fit": {
+      "path": "infra/public-crop2b-fit-frozen-20261018.json",
+      "sha256": "7ed764a093b0da3d77f050c96df1d46827505ebf0ee7b90bb40f1bf4dc49791c",
+      "bytes": 73165
+    },
+    "crop_cpu_cold_reload": {
+      "path": "infra/public-crop2b-cold-load-20261018.json",
+      "sha256": "67712ef48b4fa7219dd204401e526cd4c0a273b246cc72b07feecedeb04c47ea",
+      "bytes": 45030
+    },
+    "cohort_review": {
+      "path": "infra/public-training-cohort-root-review-20261018.json",
+      "sha256": "4d99c76473f001d1e1b919f9a81e9fa84899d82d1dd78843585d76d972648488",
+      "bytes": 1278
+    },
+    "cohort_registration": {
+      "path": "infra/public-training-cohort-registration-20261018.json",
+      "sha256": "8a7498fe59c014a194a6f2ed46c90b2e8d31fa76d93d34723806bba1eb1163c8",
+      "bytes": 579
+    },
+    "cohort": {
+      "path": "infra/public-training-cohort-20261018.json",
+      "sha256": "0ab06fd0e9c17c259b8464fc43d7466f8b55cc2e2bfd8182df5ab73942a0a437",
+      "bytes": 10755
+    },
+    "rf_final": {
+      "path": "infra/public-rf-small512-final-20261018.json",
+      "sha256": "5ff5f41c463f9ea17b388904db2faa40745aae07968a0d92232be7417b40114b",
+      "bytes": 10101
+    },
+    "rf_preflight_restoration": {
+      "path": "infra/public-rf-final-preflight-restoration-20261018.json",
+      "sha256": "e0ae148c1579b6d0572f2b4d04cfc99f545c496e9b5f64e9c0186e4250be42a0",
+      "bytes": 1352
+    },
+    "crop_final": {
+      "path": "infra/public-crop2b-final-20261018.json",
+      "sha256": "b5493d2dd8a034df72c1dfe8829b0394b0c68c8d4f8142a45bb6aad6a1351a05",
+      "bytes": 14702
+    },
+    "fresh_public_api_load": {
+      "path": "benchmarks/quality/final-public-six-load-20261018T005948Z.json",
+      "sha256": "d6e97127fa403522cd35763b91e214184eeec6b8dca1e4ea2664188cd2c2ffd0",
+      "bytes": 3263
+    },
+    "postload_bindings": {
+      "path": "infra/public-training-final-postload-bindings-20261018.json",
+      "sha256": "819c966eff88e6beb665f92fb302d9fd0658ae9e70a22aa0eb63b38aa1e69775",
+      "bytes": 5378
+    },
+    "candidate_release": {
+      "path": "infra/public-trained-candidates-release-20261018.json",
+      "sha256": "411149db3579915380295557401fe9311745b47874eaf49ecf2c4070489c52c9",
+      "bytes": 21214
+    },
+    "candidate_release_verification": {
+      "path": "infra/public-trained-candidates-release-verification-20261018.json",
+      "sha256": "dfd73913022d62ad468a885cb1b9474d00c281d9782880dda1b5912fe54d5a59",
+      "bytes": 1557
+    },
+    "public_model_cards": {
+      "path": "docs/integration/public-model-cards-20261018.md",
+      "sha256": "4eecd5e40ae8c8e448b5e4be64feaa907a9cbc24103343f4170419b88e70f0bb",
+      "bytes": 29082
+    }
+  }
+}

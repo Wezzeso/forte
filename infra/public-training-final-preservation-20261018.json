@@ -1,0 +1,16 @@
+{
+  "schema_version": "forte.public-final-local-preservation.v1",
+  "verified": true,
+  "verified_files": 17,
+  "archive_sha256": "48a74e2baf64204447da4cb7c44df2153eef45690a1f4a77dd881be723b2ae92",
+  "destination": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\public_runs\\20261018\\final-sidecars",
+  "images_or_datasets_included": false,
+  "remote_originals_retained": true,
+  "immutable_fit_run_sha256": {
+    "rf": "662def0d466404ad9efa1e828ddcda372915cf9487733add0c9c881562307d2b",
+    "crop": "aaec63508133bf227170be43e10f426d6804cd09c804fdc58b4e913e33e0ffcd"
+  },
+  "local_free_after_bytes": 45364715520,
+  "minimum_reserve_bytes": 4294967296,
+  "native_adapter_three_files_preserved": true
+}

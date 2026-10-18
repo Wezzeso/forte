@@ -1,0 +1,13 @@
+{
+  "schema_version": "forte.public-final-detached-launch.v1",
+  "member_id": "crop_vlm",
+  "phase": "crop-final",
+  "host_guard_pid": 1145191,
+  "started_at_utc": "2026-10-18T00:57:21.802695+00:00",
+  "cohort_sha256": "0ab06fd0e9c17c259b8464fc43d7466f8b55cc2e2bfd8182df5ab73942a0a437",
+  "run_sha256": "aaec63508133bf227170be43e10f426d6804cd09c804fdc58b4e913e33e0ffcd",
+  "report_path": "/data/claude/training/public-20261018/reports/crop2b-final-v1-host.json",
+  "detached_session": true,
+  "stdin_closed": true,
+  "attempt_policy": "one_per_member_no_reset"
+}

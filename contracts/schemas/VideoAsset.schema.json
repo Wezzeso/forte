@@ -1,0 +1,122 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "job_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Job Id",
+      "type": "string"
+    },
+    "owned_path": {
+      "title": "Owned Path",
+      "type": "string"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Content Hash",
+      "type": "string"
+    },
+    "duration_sec": {
+      "exclusiveMinimum": 0,
+      "title": "Duration Sec",
+      "type": "number"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "title": "Height",
+      "type": "integer"
+    },
+    "fps": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Fps"
+    },
+    "time_base": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Time Base"
+    },
+    "source_start_sec": {
+      "default": 0.0,
+      "title": "Source Start Sec",
+      "type": "number"
+    },
+    "rotation_deg": {
+      "default": 0,
+      "enum": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "title": "Rotation Deg",
+      "type": "integer"
+    },
+    "codec": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Codec"
+    },
+    "frame_count": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Frame Count"
+    },
+    "stream_index": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Stream Index",
+      "type": "integer"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    }
+  },
+  "required": [
+    "job_id",
+    "owned_path",
+    "content_hash",
+    "duration_sec",
+    "width",
+    "height"
+  ],
+  "title": "VideoAsset",
+  "type": "object"
+}

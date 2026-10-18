@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1.7
+FROM vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb
+# This pipeline sends JPEG images only. The upstream cu129 image bundles an
+# optional torchcodec binary requiring CUDA13 libnvrtc; remove that unused
+# video/audio codec so vLLM's supported optional-import path can start on cu129.
+RUN uv pip uninstall --system torchcodec
+WORKDIR /app
+# Code and the nonsecret manifest only; full verified weights are a read-only mount.
+COPY serving/ /app/serving/
+COPY configs/serving/ /app/configs/serving/
+COPY src/forte/ /app/src/forte/
+COPY models/manifest.json /app/models/manifest.json
+ENV PYTHONPATH=/app:/app/src
+ENTRYPOINT ["python3", "-m", "serving.launch"]
+CMD ["--config", "/app/configs/serving/baseline.json"]

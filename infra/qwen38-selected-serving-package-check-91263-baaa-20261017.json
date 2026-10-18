@@ -1,0 +1,29 @@
+{
+  "schema_version": "forte.qwen38.selected-serving-package-check.v1",
+  "status": "passed",
+  "captured_at_utc": "2026-10-17T15:35:17.637442+00:00",
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "code_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "package_versions": {
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "fastapi": "0.136.3",
+    "uvicorn": "0.54.0",
+    "pillow": "12.3.0",
+    "jsonschema": "4.26.0",
+    "bitsandbytes": "0.50.2",
+    "xgrammar": "0.2.7",
+    "fla-core": "0.5.2",
+    "flash-linear-attention": "0.5.2"
+  },
+  "network_mode": "none",
+  "runtime": "runc",
+  "gpu_access": false,
+  "cuda_initialized": false,
+  "private_inputs_mounted": false,
+  "model_weights_mounted": false,
+  "public_source_readonly_mount": true,
+  "image_mutated": false,
+  "serving_changed": false
+}

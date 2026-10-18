@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:forte:weak-operational-evaluation:v1",
+  "title": "Independent provided-video-label weak-supervision operational evaluation",
+  "type": "object",
+  "required": ["schema_version", "track", "status", "evaluation_gate_passed", "model_selection_eligible", "training_authorized_by_report", "ground_truth_scopes", "split_assignments_sha256", "provided_labels_sha256", "input_set_sha256", "attempt_population_sha256", "expected_attempts_sha256", "predictions_sha256", "provenance", "labels", "all_attempt_completion", "whole_video_per_unique_content", "whole_video_per_attempt", "end_to_end_10s", "target_observations", "gate_blocker_counts", "provided_evaluation_attestation_sha256", "limitations"],
+  "properties": {
+    "schema_version": {"const": "forte.weak_operational_evaluation.v1"},
+    "track": {"const": "weak_supervision_independent_provided_video_binary"},
+    "status": {"enum": ["SYNTHETIC_ONLY", "OPERATIONAL_VALIDATION_READY", "BLOCKED_OR_UNMEASURED"]},
+    "evaluation_gate_passed": {"type": "boolean"},
+    "model_selection_eligible": {"type": "boolean"},
+    "training_authorized_by_report": {"const": false},
+    "split_assignments_sha256": {"type": ["string", "null"]},
+    "provided_labels_sha256": {"$ref": "#/$defs/sha256"},
+    "input_set_sha256": {"$ref": "#/$defs/sha256"},
+    "attempt_population_sha256": {"$ref": "#/$defs/sha256"},
+    "expected_attempts_sha256": {"$ref": "#/$defs/sha256"},
+    "predictions_sha256": {"$ref": "#/$defs/sha256"},
+    "provided_evaluation_attestation_sha256": {"$ref": "#/$defs/sha256"},
+    "ground_truth_scopes": {"type": "object", "required": ["video_binary", "event_types", "facts", "event_timing", "evidence_support", "legal_applicability", "teacher_support_agreement_is_accuracy"], "properties": {"video_binary": {"const": "independent_organizer_PROVIDED_labels_not_human_reverified"}, "event_types": {"const": "UNKNOWN"}, "facts": {"const": "UNKNOWN"}, "event_timing": {"const": "UNKNOWN"}, "evidence_support": {"const": "UNKNOWN"}, "legal_applicability": {"const": "UNKNOWN"}, "teacher_support_agreement_is_accuracy": {"const": false}}},
+    "provenance": {"type": "object", "required": ["model_revision", "conditions_sha256", "comparison_scope", "threshold_selection_sha256", "provided_label_source_sha256", "weak_gate_proof_sha256", "exposure_registry_tip_sha256", "coverage_snapshot_sha256", "grouping_independence"], "properties": {"comparison_scope": {"enum": ["weak_model_only", "full_service", null]}, "grouping_independence": {"const": "automated_provisional_not_human_established"}}},
+    "labels": {"type": "object", "required": ["required_validation_unique_contents", "provided_binary_labels", "positive", "negative", "missing_or_conflicting", "event_labels_from_binary"], "properties": {"event_labels_from_binary": {"const": false}}},
+    "all_attempt_completion": {"type": "object", "required": ["required", "classification_predictions_completed", "classification_failed_or_unprocessed", "public_results_completed", "public_results_failed_or_unprocessed", "missing_predictions"]},
+    "whole_video_per_unique_content": {"$ref": "#/$defs/confusion"},
+    "whole_video_per_attempt": {"$ref": "#/$defs/confusion"},
+    "end_to_end_10s": {"type": "object", "required": ["comparison", "origin", "required_attempts", "passed", "failed_or_unmeasured", "rate", "upload_start_to_full_result_ms", "head_compute_time_substitutes_for_service_e2e"], "properties": {"comparison": {"const": "strictly_less_than_10000_ms"}, "origin": {"const": "client_upload_start_to_full_result_byte"}, "head_compute_time_substitutes_for_service_e2e": {"const": false}}},
+    "target_observations": {"type": "object", "required": ["provided_binary_detection_target_met", "all_attempt_public_e2e_10s_target_met", "human_event_grounding_100_percent_target_met", "universal_accuracy_claim_permitted"], "properties": {"provided_binary_detection_target_met": {"type": "boolean"}, "all_attempt_public_e2e_10s_target_met": {"type": "boolean"}, "human_event_grounding_100_percent_target_met": {"const": false}, "universal_accuracy_claim_permitted": {"const": false}}},
+    "gate_blocker_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "confusion": {"type": "object", "required": ["tp", "fp", "fn", "tn", "unprocessed_positive", "unprocessed_negative", "completed_labeled_denominator", "all_provided_label_denominator", "effective_positive_recall_including_failures", "effective_correct_rate_including_failures"]}
+  },
+  "$comment": "Allows explicit weak operational progress without human event labels. Provided binary metrics are independent of teacher pseudo labels; event/fact/timing/evidence/legal accuracy remains unknown. Attestation digest integrity is checked by evaluation.weak_supervision, not by JSON Schema."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.qwen38.ui-unchanged-audit.v1",
+  "captured_at_utc": "2026-10-17T14:45:36.345170+00:00",
+  "prior_test_capture_utc": "2026-10-17T13:25:23.055Z",
+  "changed_paths": [],
+  "prior_source_hashes": {
+    "web/src/App.tsx": "db5b71bf27412a0ebfa4a243f2445bfdf04b21dbca1a540dadac363ad6935627",
+    "web/src/styles.css": "62dcf8d6068fd2886078a84b3826bc069a5dc7a8c83d42960cdaaa09311b322c",
+    "web/src/HumanReviewPanel.tsx": "1f62f4cf02ac9737ff90af00093da2134eea2708addc588ecbc944617a1d8dbd",
+    "web/src/api.ts": "269826ef2636fb599ac2bf84303dea90cdc3fd0f8b91a69e4e630de95e580638",
+    "qa/integration/qwen38_ui.spec.ts": "1324c26e53c3ea3297d65ab9802d38c0601fbbcbe464eaae52cd6ac4c0e5a551"
+  },
+  "current_source_hashes": {
+    "web/src/App.tsx": "db5b71bf27412a0ebfa4a243f2445bfdf04b21dbca1a540dadac363ad6935627",
+    "web/src/styles.css": "62dcf8d6068fd2886078a84b3826bc069a5dc7a8c83d42960cdaaa09311b322c",
+    "web/src/HumanReviewPanel.tsx": "1f62f4cf02ac9737ff90af00093da2134eea2708addc588ecbc944617a1d8dbd",
+    "web/src/api.ts": "269826ef2636fb599ac2bf84303dea90cdc3fd0f8b91a69e4e630de95e580638",
+    "qa/integration/qwen38_ui.spec.ts": "1324c26e53c3ea3297d65ab9802d38c0601fbbcbe464eaae52cd6ac4c0e5a551"
+  },
+  "ui_retest_performed": false
+}

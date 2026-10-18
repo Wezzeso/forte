@@ -1,0 +1,35 @@
+# Raw Compose source for the dedicated Forte Ingress service on existing Dokploy.
+# Dokploy's Domains tab maps hackathon.wezeso.me to edge:80 with Let's Encrypt.
+services:
+  edge:
+    image: caddy:2.11.7-alpine
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    # Official Caddy carries a bind-service file capability; retain this single
+    # capability in the bounding set so exec succeeds and it can listen on 80.
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp, /data, /config]
+    command:
+      - caddy
+      - reverse-proxy
+      - --from
+      - http://:80
+      - --to
+      - https://forte-review-wd88a7vvt.gobrev.dev
+      - --change-host-header
+      - --header-down
+      - "X-Content-Type-Options: nosniff"
+      - --header-down
+      - "Referrer-Policy: same-origin"
+    expose: ["80"]
+    networks: [dokploy-network]
+    logging:
+      # Caddy's error logger may include request headers on upstream failure.
+      # Health checks and API/worker safe diagnostics remain available.
+      driver: none
+
+networks:
+  dokploy-network:
+    external: true

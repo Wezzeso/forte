@@ -1,0 +1,8 @@
+{
+  "status": "measured",
+  "unrecognized_accepted_count": 1,
+  "earliest_unrecognized_acceptance_utc": "2026-10-17T11:07:11.907907+00:00",
+  "latest_unrecognized_acceptance_utc": "2026-10-17T11:07:11.907907+00:00",
+  "scope": "aggregate accepted-time envelope only; excludes known A18 IDs; no names/hashes/results/unknown IDs",
+  "does_not_prove_ingress_idle": true
+}

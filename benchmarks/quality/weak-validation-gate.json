@@ -1,0 +1,26 @@
+{
+  "coverage_snapshot_sha256": "840da1752939e9bf476aaa78c47b35d2c483c669d06e78b4084af6e45f0eea2a",
+  "errors": {},
+  "event_fact_ground_truth_validated": false,
+  "expected_assignments_sha256": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c",
+  "exposure_registry_file_sha256": "df4dc5b6e73450a8e566065c55f3af66d46f6e773d7533f9aff021f7a2c96998",
+  "exposure_registry_tip_sha256": "042dca9a287e9c2486db72e1e698263ab83dad4dc1de1c7beca9a25db46b7cf6",
+  "grouping_provenance": {
+    "confidence_status": "heuristic_unvalidated",
+    "config_sha256": "0ae10ef4c68f0188d5bfd601df357b984603ace98fee5581b3130b99984d0214",
+    "human_reviewed": false,
+    "origin": "local_model_and_metadata",
+    "scenario_independence_verified": false
+  },
+  "human_reviewed": false,
+  "human_verified_training_authorized": false,
+  "label_split": "validation",
+  "ok": true,
+  "provided_binary_records": 6,
+  "provided_label_manifest_sha256": "14033545f724483bdbc579115b55eaa57f14f19dae9d42e6dff9131375d5e967",
+  "provided_label_source_sha256": "4faf595a2679c2f8b2b41be041de59bb3c11cd6e77d57226f1cbcc14b2cc3e75",
+  "scenario_independence_verified": false,
+  "target_scope": "video_binary_mil_only",
+  "track": "automated_weak_supervision",
+  "training_authority_inferred_from_exposure": false
+}

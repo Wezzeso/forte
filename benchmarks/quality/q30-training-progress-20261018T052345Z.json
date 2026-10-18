@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-10-18T05:23:45.081094+00:00",
+  "instance_id": "xw5720fii",
+  "execution": {
+    "status": "training",
+    "training_started": true
+  },
+  "training": {
+    "state": "training",
+    "optimizer_steps": 46,
+    "started_at_utc": "2026-10-18T05:20:53.146676+00:00",
+    "trainable_parameters": 3342336
+  },
+  "last_steps": [
+    {
+      "gradient_norm": 1.8382477760314941,
+      "learning_rate": 5e-05,
+      "mean_loss": 0.06682498095324263,
+      "peak_allocated_mib": 59547.87939453125,
+      "peak_reserved_mib": 60136.0,
+      "seconds": 1.502270560999932,
+      "step": 44
+    },
+    {
+      "gradient_norm": 0.1943558156490326,
+      "learning_rate": 5e-05,
+      "mean_loss": 0.008856641390593722,
+      "peak_allocated_mib": 59547.87939453125,
+      "peak_reserved_mib": 60136.0,
+      "seconds": 1.458069192000039,
+      "step": 45
+    },
+    {
+      "gradient_norm": 0.20684726536273956,
+      "learning_rate": 5e-05,
+      "mean_loss": 0.010937678220216185,
+      "peak_allocated_mib": 59547.87939453125,
+      "peak_reserved_mib": 60136.0,
+      "seconds": 1.4963516689999778,
+      "step": 46
+    }
+  ],
+  "containers": {
+    "qwen30train": {
+      "Status": "running",
+      "Running": true,
+      "OOMKilled": false,
+      "ExitCode": 0,
+      "StartedAt": "2026-10-18T05:20:13.586987231Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    }
+  },
+  "gpu_utilization_pct": 64,
+  "gpu_memory_mib": 60823
+}

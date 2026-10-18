@@ -1,0 +1,17 @@
+{
+  "schema_version": "forte.qwen38.fla-cpu-qa.v1",
+  "captured_at_utc": "2026-10-17T14:47:53.820794+00:00",
+  "pytest_summary": "18 passed in 0.39s",
+  "source_hashes": {
+    "deploy/Dockerfile.qwen38-fla": "d49bc33485cdbd85314c5d305825c7a8d59e7fdcc5bb76490be6435ab59c3427",
+    "deploy/Dockerfile.qwen38-fla.dockerignore": "037549f348083f93673fbc23086d79360438642366ef82c9be91fcdc61cb3e10",
+    "deploy/requirements-qwen38-fla.lock": "6876e8526f7c9c78539ac017b7d01f7114ba309cd973839723fcad2de770f49a",
+    "deploy/qwen38-fla-runtime-lock.json": "7d16f8c626cc1bf62904895a9b0b4032645e260c02ec3ab7222136141d6674b1",
+    "deploy/qwen38_fla_runtime_check.py": "dc450c3f2024649283c8496f2b32f357841a6e58718b673ac443404d5b5ef378",
+    "tests/test_qwen38_fla_runtime_check.py": "aaa51a784af13cad380c4aabc69c2c5f99fa35d7cb8efd309bc30dd67896c3b1",
+    "tests/test_qwen38_runtime_check.py": "ae0728a92c96a5fbcb1e213969f75c5cc7457f61c345fcf69e0b5178bdd1f9b3"
+  },
+  "limitations": [
+    "CPU metadata/runtime guard tests only; no actual CUDA kernel, model load or FLA performance proof."
+  ]
+}

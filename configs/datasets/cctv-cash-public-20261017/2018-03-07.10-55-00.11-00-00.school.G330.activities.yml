@@ -1,0 +1,1 @@
+- {'act': {'act2': {'person_picks_up_object': 1.0}, 'actors': [{'id1': 2, 'timespan': [{'tsr0': [919, 938]}]}, {'id1': 3, 'timespan': [{'tsr0': [919, 938]}]}], 'id2': 1, 'src_status': 'good', 'timespan': [{'tsr0': [919, 938]}]}}

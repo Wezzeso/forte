@@ -1,0 +1,1329 @@
+{
+  "schema": "forte.fast-agreement.v1",
+  "labels_used": false,
+  "videos": 40,
+  "verdicts_equal": 39,
+  "events_equal": 35,
+  "candidates_equal": 37,
+  "layout_equal": 2,
+  "state_agreement_overall": 0.9911,
+  "state_agreement_per_field": {
+    "cash_bag": 0.9992,
+    "cash_in_hands": 0.9977,
+    "cash_on_desk": 0.9859,
+    "cashier_at_desk": 1.0,
+    "cashier_in_room": 0.9984,
+    "cashier_seat": 0.9608,
+    "client_at_desk": 1.0,
+    "client_seat": 0.8812,
+    "counting_machine": 0.9977,
+    "desk.cash": 0.9859,
+    "desk.cash_bag": 0.9984,
+    "desk.coat_or_handbag": 0.9992,
+    "desk.coins_or_valuables": 0.9992,
+    "desk.drink": 0.9984,
+    "desk.id_or_document": 0.9773,
+    "detector": 0.9992,
+    "drink": 0.9984,
+    "hand_counting": 0.993,
+    "id_card_shown": 0.9789,
+    "laptop": 0.9961,
+    "other_people": 0.9984,
+    "person_at_door": 0.9992,
+    "personal_items": 0.9992,
+    "valuables_on_desk": 0.9851
+  },
+  "gate": {
+    "all_present": true,
+    "verdicts_identical": false,
+    "events_identical": false,
+    "state_fields_min": 0.8812,
+    "state_fields_ok": false,
+    "min_field_threshold": 0.98,
+    "passed": false
+  },
+  "load": {
+    "reference": {
+      "calls": 5712,
+      "prompt_tokens": 2634860,
+      "completion_tokens": 211729,
+      "total_s": 223.345,
+      "calls_per_video": 142.8,
+      "prompt_tokens_per_video": 65871.5,
+      "completion_tokens_per_video": 5293.2
+    },
+    "candidate": {
+      "calls": 5745,
+      "prompt_tokens": 2648921,
+      "completion_tokens": 212082,
+      "total_s": 217.891,
+      "calls_per_video": 143.6,
+      "prompt_tokens_per_video": 66223.0,
+      "completion_tokens_per_video": 5302.1
+    }
+  },
+  "timings": {
+    "reference": {
+      "analysis_wall_s": {
+        "n": 40,
+        "p50": 17.18,
+        "p95": 42.649,
+        "max": 53.76,
+        "mean": 21.342
+      },
+      "calls": {
+        "n": 40,
+        "p50": 99.5,
+        "p95": 368.45,
+        "max": 405.0,
+        "mean": 142.8
+      },
+      "decode_s": {
+        "n": 40,
+        "p50": 0.3,
+        "p95": 1.094,
+        "max": 1.61,
+        "mean": 0.43
+      },
+      "timings.layout": {
+        "n": 40,
+        "p50": 4.86,
+        "p95": 12.836,
+        "max": 18.12,
+        "mean": 6.063
+      },
+      "timings.states": {
+        "n": 40,
+        "p50": 14.475,
+        "p95": 39.953,
+        "max": 50.62,
+        "mean": 19.101
+      },
+      "timings.total": {
+        "n": 40,
+        "p50": 16.96,
+        "p95": 41.98,
+        "max": 52.59,
+        "mean": 20.912
+      },
+      "timings.verify": {
+        "n": 16,
+        "p50": 2.29,
+        "p95": 11.587,
+        "max": 13.53,
+        "mean": 4.52
+      },
+      "wall_s": {
+        "n": 40,
+        "p50": 108.589,
+        "p95": 207.258,
+        "max": 223.343,
+        "mean": 113.781
+      }
+    },
+    "candidate": {
+      "analysis_wall_s": {
+        "n": 40,
+        "p50": 18.63,
+        "p95": 37.983,
+        "max": 38.08,
+        "mean": 21.004
+      },
+      "calls": {
+        "n": 40,
+        "p50": 99.5,
+        "p95": 367.5,
+        "max": 405.0,
+        "mean": 143.625
+      },
+      "decode_s": {
+        "n": 40,
+        "p50": 0.245,
+        "p95": 0.821,
+        "max": 1.58,
+        "mean": 0.393
+      },
+      "timings.layout": {
+        "n": 40,
+        "p50": 4.505,
+        "p95": 16.947,
+        "max": 18.35,
+        "mean": 6.417
+      },
+      "timings.states": {
+        "n": 40,
+        "p50": 17.145,
+        "p95": 34.529,
+        "max": 37.33,
+        "mean": 18.359
+      },
+      "timings.total": {
+        "n": 40,
+        "p50": 18.185,
+        "p95": 37.338,
+        "max": 37.81,
+        "mean": 20.611
+      },
+      "timings.verify": {
+        "n": 15,
+        "p50": 3.21,
+        "p95": 14.262,
+        "max": 14.43,
+        "mean": 5.995
+      },
+      "wall_s": {
+        "n": 40,
+        "p50": 107.41,
+        "p95": 210.552,
+        "max": 217.889,
+        "mean": 111.312
+      }
+    }
+  },
+  "config_sha256": {
+    "reference": "128fac06fbf9cd6db70f0cca9b36ad75624bb142447e04fd0e7eb3072fbeb770",
+    "candidate": "128fac06fbf9cd6db70f0cca9b36ad75624bb142447e04fd0e7eb3072fbeb770"
+  },
+  "per_video": [
+    {
+      "name": "X-1",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 26,
+      "state_frames_ref": 26,
+      "state_frames_cand": 26,
+      "state_agreement": 0.9952,
+      "state_disagreements": {
+        "desk.id_or_document": 1,
+        "hand_counting": 1,
+        "id_card_shown": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 21.07,
+      "wall_s_cand": 19.3
+    },
+    {
+      "name": "X-10",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 16,
+      "state_frames_ref": 16,
+      "state_frames_cand": 16,
+      "state_agreement": 0.9918,
+      "state_disagreements": {
+        "cashier_seat": 1,
+        "laptop": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 10.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 10.29,
+      "wall_s_cand": 7.93
+    },
+    {
+      "name": "X-11",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "WORKSTATION_UNLOCKED",
+          "t_ref": 16.0,
+          "t_cand": 16.0,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 26,
+      "state_frames_ref": 26,
+      "state_frames_cand": 26,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 13.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 21.06,
+      "wall_s_cand": 19.18
+    },
+    {
+      "name": "X-12",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 43,
+      "state_frames_ref": 43,
+      "state_frames_cand": 43,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": true,
+      "layout_max_diff": 0.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 19.76,
+      "wall_s_cand": 18.0
+    },
+    {
+      "name": "X-13",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 66,
+      "state_frames_ref": 66,
+      "state_frames_cand": 66,
+      "state_agreement": 0.9987,
+      "state_disagreements": {
+        "cash_bag": 1,
+        "hand_counting": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 10.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 26.51,
+      "wall_s_cand": 26.42
+    },
+    {
+      "name": "X-14",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 101,
+      "state_frames_ref": 101,
+      "state_frames_cand": 101,
+      "state_agreement": 0.9522,
+      "state_disagreements": {
+        "cash_on_desk": 11,
+        "cashier_seat": 46,
+        "desk.cash": 11,
+        "desk.coins_or_valuables": 1,
+        "desk.drink": 1,
+        "desk.id_or_document": 15,
+        "drink": 1,
+        "id_card_shown": 15,
+        "valuables_on_desk": 10
+      },
+      "layout_equal": false,
+      "layout_max_diff": 460.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 34.51,
+      "wall_s_cand": 33.98
+    },
+    {
+      "name": "X-15",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "CASH_LEFT_UNATTENDED",
+          "t_ref": 8.5,
+          "t_cand": 8.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 21,
+      "state_frames_ref": 21,
+      "state_frames_cand": 21,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 8.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 32.98,
+      "wall_s_cand": 32.34
+    },
+    {
+      "name": "X-16",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 23,
+      "state_frames_ref": 23,
+      "state_frames_cand": 23,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 1.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 18.97,
+      "wall_s_cand": 21.25
+    },
+    {
+      "name": "X-17",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "COLLECTOR_NO_DOCUMENTS",
+          "t_ref": 7.5,
+          "t_cand": 7.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 15,
+      "state_frames_ref": 15,
+      "state_frames_cand": 15,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 37.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 37.79,
+      "wall_s_cand": 37.98
+    },
+    {
+      "name": "X-18",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "UNAUTHORIZED_PERSON",
+          "t_ref": 18.5,
+          "t_cand": 18.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 23,
+      "state_frames_ref": 23,
+      "state_frames_cand": 23,
+      "state_agreement": 0.9982,
+      "state_disagreements": {
+        "desk.id_or_document": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 7.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 34.62,
+      "wall_s_cand": 31.8
+    },
+    {
+      "name": "X-19",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t_ref": 29.5,
+          "t_cand": 29.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 58,
+      "state_frames_ref": 58,
+      "state_frames_cand": 58,
+      "state_agreement": 0.9993,
+      "state_disagreements": {
+        "client_seat": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 10.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 21.99,
+      "wall_s_cand": 21.28
+    },
+    {
+      "name": "X-2",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 18,
+      "state_frames_ref": 18,
+      "state_frames_cand": 18,
+      "state_agreement": 0.9907,
+      "state_disagreements": {
+        "client_seat": 1,
+        "desk.id_or_document": 1,
+        "detector": 1,
+        "id_card_shown": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 14.05,
+      "wall_s_cand": 20.51
+    },
+    {
+      "name": "X-20",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 12,
+      "state_frames_ref": 12,
+      "state_frames_cand": 12,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 10.09,
+      "wall_s_cand": 8.93
+    },
+    {
+      "name": "X-21",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 20,
+      "state_frames_ref": 20,
+      "state_frames_cand": 20,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 10.94,
+      "wall_s_cand": 10.99
+    },
+    {
+      "name": "X-22",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 22,
+      "state_frames_ref": 22,
+      "state_frames_cand": 22,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 4.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 12.84,
+      "wall_s_cand": 12.99
+    },
+    {
+      "name": "X-23",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 19,
+      "state_frames_ref": 19,
+      "state_frames_cand": 19,
+      "state_agreement": 0.9978,
+      "state_disagreements": {
+        "person_at_door": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 13.46,
+      "wall_s_cand": 13.66
+    },
+    {
+      "name": "X-24",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "CASH_LEFT_UNATTENDED",
+          "t_ref": 5.5,
+          "t_cand": 5.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 15,
+      "state_frames_ref": 15,
+      "state_frames_cand": 15,
+      "state_agreement": 0.9913,
+      "state_disagreements": {
+        "cash_in_hands": 1,
+        "cashier_in_room": 1,
+        "hand_counting": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 4.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 20.7,
+      "wall_s_cand": 20.57
+    },
+    {
+      "name": "X-25",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 32,
+      "state_frames_ref": 32,
+      "state_frames_cand": 32,
+      "state_agreement": 0.9973,
+      "state_disagreements": {
+        "cash_in_hands": 1,
+        "hand_counting": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 15.04,
+      "wall_s_cand": 12.95
+    },
+    {
+      "name": "X-26",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "CASH_LEFT_UNATTENDED",
+          "t_ref": 10.5,
+          "t_cand": 10.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 20,
+      "state_frames_ref": 20,
+      "state_frames_cand": 20,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 16.26,
+      "wall_s_cand": 16.74
+    },
+    {
+      "name": "X-27",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 27,
+      "state_frames_ref": 27,
+      "state_frames_cand": 27,
+      "state_agreement": 0.9919,
+      "state_disagreements": {
+        "cash_on_desk": 1,
+        "cashier_seat": 1,
+        "desk.cash": 1,
+        "hand_counting": 1,
+        "valuables_on_desk": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 4.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 14.28,
+      "wall_s_cand": 15.78
+    },
+    {
+      "name": "X-28",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": false,
+      "events_matched": [],
+      "events_only_ref": [
+        {
+          "type_id": "WORKSTATION_UNLOCKED",
+          "t": 14.5
+        }
+      ],
+      "events_only_cand": [
+        {
+          "type_id": "WORKSTATION_UNLOCKED",
+          "t": 7.5
+        }
+      ],
+      "candidates_only_ref": [
+        {
+          "type_id": "WORKSTATION_UNLOCKED",
+          "t": 12.0
+        }
+      ],
+      "candidates_only_cand": [
+        {
+          "type_id": "WORKSTATION_UNLOCKED",
+          "t": 8.0
+        }
+      ],
+      "state_pairs": 17,
+      "state_frames_ref": 17,
+      "state_frames_cand": 17,
+      "state_agreement": 0.9949,
+      "state_disagreements": {
+        "cashier_seat": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 17.82,
+      "wall_s_cand": 18.08
+    },
+    {
+      "name": "X-29",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 18,
+      "state_frames_ref": 18,
+      "state_frames_cand": 18,
+      "state_agreement": 0.9977,
+      "state_disagreements": {
+        "cashier_in_room": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 10.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 12.75,
+      "wall_s_cand": 10.66
+    },
+    {
+      "name": "X-3",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 21,
+      "state_frames_ref": 21,
+      "state_frames_cand": 21,
+      "state_agreement": 0.996,
+      "state_disagreements": {
+        "client_seat": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 13.3,
+      "wall_s_cand": 13.66
+    },
+    {
+      "name": "X-30",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": false,
+      "events_matched": [],
+      "events_only_ref": [
+        {
+          "type_id": "CASH_ROOM_DOOR_OPEN",
+          "t": 4.0
+        }
+      ],
+      "events_only_cand": [
+        {
+          "type_id": "CASH_ROOM_DOOR_OPEN",
+          "t": 3.0
+        }
+      ],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 19,
+      "state_frames_ref": 19,
+      "state_frames_cand": 19,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 13.34,
+      "wall_s_cand": 13.73
+    },
+    {
+      "name": "X-31",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 24,
+      "state_frames_ref": 24,
+      "state_frames_cand": 24,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 5.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 9.25,
+      "wall_s_cand": 10.96
+    },
+    {
+      "name": "X-32",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "CASH_ROOM_DOOR_OPEN",
+          "t_ref": 5.5,
+          "t_cand": 5.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 22,
+      "state_frames_ref": 22,
+      "state_frames_cand": 22,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": true,
+      "layout_max_diff": 0.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 14.05,
+      "wall_s_cand": 14.91
+    },
+    {
+      "name": "X-33",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "CASH_ROOM_DOOR_OPEN",
+          "t_ref": 5.5,
+          "t_cand": 5.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 15,
+      "state_frames_ref": 15,
+      "state_frames_cand": 15,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 4.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 16.48,
+      "wall_s_cand": 15.11
+    },
+    {
+      "name": "X-34",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "COUNT_WITHOUT_CLIENT",
+          "t_ref": 12.5,
+          "t_cand": 12.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 18,
+      "state_frames_ref": 18,
+      "state_frames_cand": 18,
+      "state_agreement": 1.0,
+      "state_disagreements": {},
+      "layout_equal": false,
+      "layout_max_diff": 4.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 15.05,
+      "wall_s_cand": 13.65
+    },
+    {
+      "name": "X-35",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 57,
+      "state_frames_ref": 57,
+      "state_frames_cand": 57,
+      "state_agreement": 0.9985,
+      "state_disagreements": {
+        "desk.id_or_document": 1,
+        "id_card_shown": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 2.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 21.11,
+      "wall_s_cand": 19.85
+    },
+    {
+      "name": "X-37",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 16,
+      "state_frames_ref": 16,
+      "state_frames_cand": 16,
+      "state_agreement": 0.9946,
+      "state_disagreements": {
+        "counting_machine": 1,
+        "other_people": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 13.39,
+      "wall_s_cand": 15.34
+    },
+    {
+      "name": "X-38",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": false,
+      "events_matched": [],
+      "events_only_ref": [
+        {
+          "type_id": "PREVIOUS_CASH_ON_DESK",
+          "t": 36.0
+        }
+      ],
+      "events_only_cand": [
+        {
+          "type_id": "PREVIOUS_CASH_ON_DESK",
+          "t": 33.5
+        }
+      ],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 59,
+      "state_frames_ref": 59,
+      "state_frames_cand": 59,
+      "state_agreement": 0.9951,
+      "state_disagreements": {
+        "client_seat": 3,
+        "desk.id_or_document": 2,
+        "id_card_shown": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 10.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 53.76,
+      "wall_s_cand": 38.04
+    },
+    {
+      "name": "X-39",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 79,
+      "state_frames_ref": 79,
+      "state_frames_cand": 79,
+      "state_agreement": 0.9984,
+      "state_disagreements": {
+        "client_seat": 3
+      },
+      "layout_equal": false,
+      "layout_max_diff": 1.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 40.23,
+      "wall_s_cand": 38.08
+    },
+    {
+      "name": "X-4",
+      "verdict_ref": "violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": false,
+      "events_equal": false,
+      "events_matched": [],
+      "events_only_ref": [
+        {
+          "type_id": "PREVIOUS_CASH_ON_DESK",
+          "t": 57.0
+        }
+      ],
+      "events_only_cand": [],
+      "candidates_only_ref": [
+        {
+          "type_id": "PREVIOUS_CASH_ON_DESK",
+          "t": 57.0
+        }
+      ],
+      "candidates_only_cand": [],
+      "state_pairs": 73,
+      "state_frames_ref": 73,
+      "state_frames_cand": 73,
+      "state_agreement": 0.9766,
+      "state_disagreements": {
+        "cash_on_desk": 4,
+        "client_seat": 20,
+        "desk.cash": 4,
+        "desk.drink": 1,
+        "desk.id_or_document": 4,
+        "drink": 1,
+        "id_card_shown": 3,
+        "valuables_on_desk": 4
+      },
+      "layout_equal": false,
+      "layout_max_diff": 3.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 42.53,
+      "wall_s_cand": 35.23
+    },
+    {
+      "name": "X-40",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": false,
+      "events_matched": [
+        {
+          "type_id": "COLLECTOR_NO_DOCUMENTS",
+          "t_ref": 19.5,
+          "t_cand": 19.5,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t": 19.5
+        }
+      ],
+      "events_only_cand": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t": 18.5
+        }
+      ],
+      "candidates_only_ref": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t": 19.0
+        }
+      ],
+      "candidates_only_cand": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t": 18.0
+        }
+      ],
+      "state_pairs": 26,
+      "state_frames_ref": 26,
+      "state_frames_cand": 26,
+      "state_agreement": 0.9888,
+      "state_disagreements": {
+        "counting_machine": 1,
+        "desk.cash_bag": 2,
+        "desk.coat_or_handbag": 1,
+        "personal_items": 1,
+        "valuables_on_desk": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 8.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 44.91,
+      "wall_s_cand": 37.51
+    },
+    {
+      "name": "X-43",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 24,
+      "state_frames_ref": 24,
+      "state_frames_cand": 24,
+      "state_agreement": 0.9982,
+      "state_disagreements": {
+        "counting_machine": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 37.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 17.21,
+      "wall_s_cand": 24.93
+    },
+    {
+      "name": "X-44",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 21,
+      "state_frames_ref": 21,
+      "state_frames_cand": 21,
+      "state_agreement": 0.9979,
+      "state_disagreements": {
+        "laptop": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 8.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 12.76,
+      "wall_s_cand": 19.37
+    },
+    {
+      "name": "X-45",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 34,
+      "state_frames_ref": 34,
+      "state_frames_cand": 34,
+      "state_agreement": 0.9412,
+      "state_disagreements": {
+        "cash_on_desk": 2,
+        "client_seat": 34,
+        "desk.cash": 2,
+        "desk.id_or_document": 3,
+        "hand_counting": 2,
+        "id_card_shown": 3,
+        "valuables_on_desk": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 5.0,
+      "layout_keys_diff": [
+        "client_chair"
+      ],
+      "wall_s_ref": 16.67,
+      "wall_s_cand": 15.98
+    },
+    {
+      "name": "X-46",
+      "verdict_ref": "violation",
+      "verdict_cand": "violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [
+        {
+          "type_id": "PERSONAL_ITEMS",
+          "t_ref": 14.0,
+          "t_cand": 14.0,
+          "dt": 0.0
+        }
+      ],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 20,
+      "state_frames_ref": 20,
+      "state_frames_cand": 20,
+      "state_agreement": 0.9875,
+      "state_disagreements": {
+        "cash_in_hands": 1,
+        "client_seat": 2,
+        "hand_counting": 1,
+        "laptop": 2
+      },
+      "layout_equal": false,
+      "layout_max_diff": 272.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 17.15,
+      "wall_s_cand": 35.67
+    },
+    {
+      "name": "X-5",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 72,
+      "state_frames_ref": 72,
+      "state_frames_cand": 72,
+      "state_agreement": 0.9977,
+      "state_disagreements": {
+        "client_seat": 3,
+        "other_people": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 30.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 30.15,
+      "wall_s_cand": 29.34
+    },
+    {
+      "name": "X-8",
+      "verdict_ref": "no_violation",
+      "verdict_cand": "no_violation",
+      "verdict_equal": true,
+      "events_equal": true,
+      "events_matched": [],
+      "events_only_ref": [],
+      "events_only_cand": [],
+      "candidates_only_ref": [],
+      "candidates_only_cand": [],
+      "state_pairs": 39,
+      "state_frames_ref": 39,
+      "state_frames_cand": 39,
+      "state_agreement": 0.9967,
+      "state_disagreements": {
+        "desk.id_or_document": 1,
+        "hand_counting": 1,
+        "id_card_shown": 1
+      },
+      "layout_equal": false,
+      "layout_max_diff": 17.0,
+      "layout_keys_diff": [],
+      "wall_s_ref": 24.58,
+      "wall_s_cand": 17.49
+    }
+  ],
+  "generated_at_utc": "2026-10-18T05:44:59.990179+00:00",
+  "scope": "frozen_q30_baseline_repeat_noise; development_set_in_sample; no_parameter_fitting",
+  "source_collection_sha256": "0385975f7fd139fc9d809305d4103b4959f25940a4b147708ba0fe932a3c8273"
+}

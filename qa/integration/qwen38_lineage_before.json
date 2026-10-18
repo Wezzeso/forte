@@ -1,0 +1,12 @@
+{
+  "deploy/qwen38_bind_runtime.py": "630b7fa4bd009fd4fb03ebd82e9801a4291696fc4ba1e62ee3d9cdb015b1b2fe",
+  "serving/qwen38_identity.py": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959",
+  "serving/qwen38_adapter_contract.py": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222",
+  "serving/qwen38_source_lineage.py": "f232d47a5c25f2f4ef22e29264986987787ebfa5b338318172f26f14ded31ba9",
+  "serving/qwen38_untuned.py": "31dd4a1fded3b6bf376db304d42765620f21da1921853d0ff874f491f7159e61",
+  "serving/tests/test_qwen38_adapter_contract.py": "dd8893ffb01ce990b5d9af187bf1d0a4c55069e8d6190d236dcc8c027b455b4a",
+  "serving/tests/qwen38_adapter_fixtures.py": "78283e2b11ea54c42d555d9adf3619b92b90b8b6ec1ca9e4e743781367344bd7",
+  "serving/tests/test_qwen38_candidate.py": "4aaabeb53a0c39b0f565f1cfba6cfce0a5a31468ffd4e55cc71c9faaa1da08aa",
+  "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664",
+  "qa/integration/qwen38_adapter_boundary_test.py": "4e04246af45a5fc56faf48f340a721004630d58ff98e3997ff5fc14683637909"
+}

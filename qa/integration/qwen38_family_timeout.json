@@ -1,0 +1,52 @@
+{
+  "schema_version": "forte.qwen38.independent-family-timeout-binding-qa.v1",
+  "captured_at_utc": "2026-10-17T16:41:30.279407+00:00",
+  "status": "passed",
+  "tests_passed": 22,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "elapsed_seconds": 18.31,
+  "test_paths": [
+    "qa/integration/qwen38_family_timeout_binding_test.py",
+    "serving/tests/test_qwen38_runtime_binding.py"
+  ],
+  "source_hashes_before": {
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "serving/qwen38_source_lineage.py": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+    "evaluation/qwen38_quality_equivalence.py": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+    "qa/integration/qwen38_family_timeout_binding_test.py": "ec43c4079ef20c8df3aca8be8f51ce96a5d6487ae522e8b02587e718ed84cb39",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664"
+  },
+  "source_hashes_after": {
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "serving/qwen38_source_lineage.py": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+    "evaluation/qwen38_quality_equivalence.py": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+    "qa/integration/qwen38_family_timeout_binding_test.py": "ec43c4079ef20c8df3aca8be8f51ce96a5d6487ae522e8b02587e718ed84cb39",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664"
+  },
+  "changed_during_run": [],
+  "fixture_boundary": "Generated family metadata, actual original91263 public source bytes for all88 common pins, generated actual runtime tar and actual verify_source_lineage result; no private family population, model, GPU, service or HTTP.",
+  "verified_common_pins": 88,
+  "byte_identical_common_pins": 87,
+  "audited_timeout_pins": 1,
+  "family_file_bytes_unchanged": true,
+  "binder_guard_cases": [
+    "separately computed archive lineage proof required",
+    "old family pipeline SHA equals proof old SHA",
+    "actual pipeline SHA equals proof new SHA",
+    "runtime archive SHA matches config",
+    "exact lineage/delta schema and true verification flags",
+    "exact request_timeout_sec keyword and config limit expression",
+    "missing/wrong/unverified proof rejects",
+    "all other prompt/rule/taxonomy pins exact"
+  ],
+  "prior_timeout_closure_receipt_sha256": "99366c1e5fb03b821caa5a3eb4b8f201a1dd8e98a5c2bac204d2fe2abd6c90a3",
+  "prior_timeout_closure_repeated": false,
+  "original_training_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "preserved_intermediate_serving_archive_sha256": "b8950fcdb8d3ea5c767937329cc036bc5f54534a9b5cba4215954aa26f34ff94",
+  "test_log_sha256": "05f9bd499b755488defa4e9f5b89fb0364e5b0ad467954352709409421759bb7",
+  "test_xml_sha256": "87db92cc74f7bd334448e7584cd9d1cd1c24bd87ba36149b4da4f00686d70a40"
+}

@@ -1,0 +1,193 @@
+{
+  "added_public_files": {
+    "deploy/Dockerfile.qwen38-fla": "d49bc33485cdbd85314c5d305825c7a8d59e7fdcc5bb76490be6435ab59c3427",
+    "deploy/Dockerfile.qwen38-fla.dockerignore": "037549f348083f93673fbc23086d79360438642366ef82c9be91fcdc61cb3e10",
+    "deploy/qwen38-fla-runtime-lock.json": "7d16f8c626cc1bf62904895a9b0b4032645e260c02ec3ab7222136141d6674b1",
+    "deploy/qwen38_fla_runtime_check.py": "dc450c3f2024649283c8496f2b32f357841a6e58718b673ac443404d5b5ef378",
+    "deploy/requirements-qwen38-fla.lock": "6876e8526f7c9c78539ac017b7d01f7114ba309cd973839723fcad2de770f49a",
+    "evaluation/qwen38_quality_equivalence.py": "3f3bcdc69d9363d195d28976c3fa868ffbc5cea86f5e0f5dd1c4ea28959f19b2",
+    "serving/qwen38_grammar.py": "a0de282d2ee719b5ce143bc69effd0fb9c204e058a871eb6885f357eec4a8e5d",
+    "serving/tests/test_qwen38_grammar.py": "1815a4a295b758c39c6c0774d798b20023d9fd613d8f9d59a96b64bd725d08cf"
+  },
+  "api_maintenance_activation_unchanged": true,
+  "application_service_modified": false,
+  "archive": "tmp/qwen38-ml-support-grammar-final-20261017T151420Z.tar.gz",
+  "archive_bytes": 695829,
+  "archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "captured_at_utc": "2026-10-17T15:18:05.815083+00:00",
+  "change_reasons": {
+    "deploy/ml_source_smoke.py": "Real generated native-ledger/attested-window export plus original JPEG dependency check; valid17, one-invalid16, all-invalid blocked.",
+    "deploy/optional_fla_build_files": "Public optional build provenance only; archive does not select a runtime or assert GPU compatibility.",
+    "deploy/qwen38_bind_runtime.py": "Bind actual frozen source/config/grammar/profile with measured package metadata.",
+    "evaluation/qwen38_quality_equivalence.py": "Preserve genuine evaluator and actual serving archive identities with common source equivalence.",
+    "examples_and_tests": "Reflect optional support policy and strict native grammar contracts; real bound configs excluded.",
+    "serving/": "Explicit27B native HF XGrammar constraints with trusted canonical requested-fact order; shared pipeline/decision schemas unchanged; both27B arms use same bound profile.",
+    "training/coverage_export.py": "Failure-inclusive source accounting and rejection of empty or ineligible exports.",
+    "training/qwen38_silver.py": "Optional whole-fact support budget masking; strict default retained; no partial citation support accepted."
+  },
+  "change_witness": "tmp/qwen38-ml-support-grammar-final-20261017T151420Z.tar.gz.changes.json",
+  "change_witness_sha256": "c28b1b05aad843778113eaa8bcbc378c0b3f7c668339780f1bf302e25076f60f",
+  "changed_public_files": {
+    "configs/serving/qwen38/candidate.runtime.example.json": {
+      "after": "3bdb5641dc447274d5be07a2a9743cb1e86d036ea7726c908639e664e1e25dd7",
+      "before": "d30b44126cbe23ed931687024a0378dbe99838e8368567d0e55ea8ce46274758"
+    },
+    "configs/serving/qwen38/untuned.runtime.example.json": {
+      "after": "5e77f6ad7daebd074e13bdba30e0e6cc19521fd61ab8fa26e445f508b7caa64a",
+      "before": "ce28882c65ef00d5fab8768ea526d13532a34d2b8529900e0790aa5559dc61d1"
+    },
+    "deploy/compose.qwen38-candidate-operational.yaml": {
+      "after": "32a03336ce7d081ebae5a38100eda93b8de8fbe6ef09a9db0ed90d4abf7ae0a6",
+      "before": "ee6dca110efa85f0d4b6908875e69d4ece294c160021d263b6ec29b8c761a1ec"
+    },
+    "deploy/ml_source_smoke.py": {
+      "after": "2e71b807a318522bcec4ffce7acdbf96af1b8cb4b8be268e6f803ecd7221183a",
+      "before": "eaa3e67807fa70a993324b1f1aa18978b86ae0d7a918c9676ba983f9fb3e9502"
+    },
+    "deploy/package_ml_code.py": {
+      "after": "712ae0c0247250959297f5448dee192a7f13845ef1767423abfdc659a3ddb1b1",
+      "before": "d4586d0a37f779ae18c96cbdf01cda9ceb09dab32318df22978c6084316328fb"
+    },
+    "deploy/qwen38_bind_runtime.py": {
+      "after": "e71b040f7b0be89d1b7598fe4de66d4934faee2dbb18aae4f809dd00dff39bed",
+      "before": "d417470a1dcea773771c578435f5eadf8d8e4491a8a5013334e4cee466ae900f"
+    },
+    "serving/qwen38_comparison_profile.py": {
+      "after": "1d28faafba4f7c76f7029f98238a8b4b1e2657b52b369995085cdb8f4a8987b0",
+      "before": "e7506792884b983231016bcd559cfbfb91f039d59e5800f3eed736e0afc4c9e5"
+    },
+    "serving/qwen38_identity.py": {
+      "after": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41",
+      "before": "3645fbda52927d5194c373a22255694c5cf62249f84d375eb4f5076e8f37caea"
+    },
+    "serving/qwen38_service.py": {
+      "after": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+      "before": "9166bf030c78e92057dc5cd23d212e0cfb92dd7573acb22aab5d2a154c0c1b02"
+    },
+    "serving/qwen38_untuned.py": {
+      "after": "31dd4a1fded3b6bf376db304d42765620f21da1921853d0ff874f491f7159e61",
+      "before": "008d149f1044eafe4364e22ba84cd0968275f9a4a04b65fdec13aea2ef2f818b"
+    },
+    "serving/tests/test_qwen38_candidate.py": {
+      "after": "d72fed302816cd650bfc67024e56ce4c9e20ef01707d87ad3e24e7f2c2fabe2f",
+      "before": "ae95fefbd1bf9ba9e22728d0fd6b6c23e67ed5bab8861117da24550caf1b45f6"
+    },
+    "serving/tests/test_qwen38_runtime_binding.py": {
+      "after": "2fd3817c6808441730e64aca5b5d83f9ab3cad12cb93ed36d735c93f97038e7b",
+      "before": "b2ff69d4de7093873a95b41ca96f2d560200bf72ca9c6465f854dc83bba42199"
+    },
+    "training/configs/qwen38-balanced-silver.example.json": {
+      "after": "da8750e8e273030f380583554d7e72312315ab2c0fb402970da465f610c7d4f0",
+      "before": "458cc323c2e0698248a1828a5f7bd8296d14f927175e2655c3c85117df4d9d08"
+    },
+    "training/configs/qwen38-silver.example.json": {
+      "after": "96691137bdeb1784d955841f817a4cfc1d9cd9cf086699ad606302f6b772e765",
+      "before": "e7630efe8f29c459cdfe9276116b1b8bc3edc39851c97b7c819843b70db26861"
+    },
+    "training/coverage_export.py": {
+      "after": "bba0e4871828eb27588bdcbfff5568a23f5a4ab5d218ba981a257fbac5a0390c",
+      "before": "c5b2bf80c0ee51adb71b34c59478101cb213959ab1de33aa89c152069c1ad157"
+    },
+    "training/qwen38_silver.py": {
+      "after": "cce03a2eb386b7f1a4fc4a03d474be38737d182eef68dbf2cd57a14a8d6467c3",
+      "before": "142f4ca889f3d50b4842b8e3337ceb08eecd83f9d083e12410cc18f120e25c75"
+    },
+    "training/test_qwen38_silver.py": {
+      "after": "e321767fdb7d6c4c627e5f4e73d8fb327020dbe7b21fe82295c749d9314b1d1b",
+      "before": "4e604f9097aefb2c0f1f3a3655359dd6486b79eefdf631175bad218af17db8e8"
+    }
+  },
+  "common_critical_files_identical_to_bca": 88,
+  "cpu_worker": {
+    "actual_loaded_module_hashes_verified": 53,
+    "app_source_duplicate_removed": true,
+    "container_removed": true,
+    "cpu_limit": 1,
+    "dockerfile_sha256": "d269f6105bd2a738dbc0abc637aa4c87ac1f8db485998d86279c7b4cbca36f91",
+    "generated_dependency_smoke": {
+      "catalog_archives_checksum_verified": 4,
+      "catalog_rules": 4,
+      "generated_all_invalid_export_blocked": true,
+      "generated_attested_exact_frame_targets": 17,
+      "generated_combined_records": 17,
+      "generated_coverage_export_records": 17,
+      "generated_one_invalid_source_retained_records": 16,
+      "generated_original_jpegs_copied": 17,
+      "generated_outputs_removed": true,
+      "generated_window_receipts": 17,
+      "gpu_calls": 0,
+      "machine_schema_validated": true,
+      "model_calls": 0,
+      "private_inputs_read": false,
+      "public_module_imports": 13,
+      "schema_version": "forte.ml-source-dependency-smoke.v1",
+      "source_media_decoded": false,
+      "status": "passed"
+    },
+    "gpu_devices": 0,
+    "image_id": "sha256:32251d4c72d02dfc24f119d9e51033e7e464db912971db2f5cc4a144c94aabc0",
+    "image_size_bytes": 802800767,
+    "image_tag": "forte-review:qwen38-worker-source-20261017-91263a59",
+    "installed_forte_origin": "/app/.venv/lib/python3.12/site-packages/forte",
+    "installed_member_hashes_verified": 225,
+    "metadata_only_entrypoint_used": true,
+    "network": "none",
+    "parent_image_id": "sha256:5f635274bd9dd7d8ca0bde5a430332607972031c976b11ec91c63ab1d22277cf",
+    "parent_ui_and_entrypoint_hashes": {
+      "/app/deploy/entrypoint.py": "507e3f9b918dacf6cee4876bedfe0f1c4559f6825b8ba0ff41c49cea09250d83",
+      "/app/deploy/worker_health.py": "ef3c6b222830a3ba439076e67f49ef00a820c7a25d6bb1dabb79e55c4b7698c7",
+      "/app/web/dist/assets/index-0ahxg1pR.js": "183fd3d239c090903b8f222a1ca6107d00b3b08c46cc4412c81d189e547a2cbc",
+      "/app/web/dist/assets/index-DZIHIHMZ.css": "5627a6c798c88740639405ac6738f5f14c3b8d71a08599c824cb648ceee76839"
+    },
+    "parent_ui_source_archive_sha256": "5543a09ee33fa45e4787e1b8b00636b9dd936b54a286e961bff743d36c2de2aa",
+    "pipeline_or_provider_constructed": false,
+    "private_mounts": 0,
+    "proof": "tmp/qwen38-worker-source-build-proof-91263a59.json",
+    "proof_sha256": "517232747391e59eeac1f22b96b1508cb14a9b6e6fd7c887453a694149719b5f",
+    "public_app_module_roots_replaced": true,
+    "public_context_archive": "tmp/qwen38-worker-public-context-91263a59cb2e.tar.gz",
+    "public_context_manifest_sha256": "40812ab1ee9830d6e45ebfca730e4d3bc5338131bceef0b34f6134e02ece1de2",
+    "public_context_sha256": "31227df542419641602c64ff72e65f384a001504ebed8294b145b835b155643d",
+    "venv_preserved": true
+  },
+  "file_count": 225,
+  "git_commit": null,
+  "historical_bca_archive_unchanged": true,
+  "intermediate_precanonical_08d5_not_selected": true,
+  "manifest": "tmp/qwen38-ml-support-grammar-final-20261017T151420Z.tar.gz.manifest.json",
+  "manifest_sha256": "f8b40f92889c57f2bcc2318b3ae2ebf438e53b644bd8d91bca6691fe8eaaface",
+  "model_or_worker_activated": false,
+  "packaging_check": {
+    "passed": 80,
+    "skipped_windows_symlink_creation": 1
+  },
+  "privacy": {
+    "bulky_public_research_datasets_included": false,
+    "known_private_filename_matches": 0,
+    "known_private_filenames_checked": 42,
+    "private_bound_configs_included": false,
+    "private_data_included": false,
+    "private_media_labels_observations_raw_backups_keys_splits_selections_included": false,
+    "public_normative_archives": 4
+  },
+  "public_qa_receipts_sha256": {
+    "infra/qwen38-native-grammar-canonical-final-cpu-audit-20261017.json": "c0fbe7ccf2093bbbcc5610920be6e5362f45085b516c14fdc1a6c714003b22c2",
+    "infra/qwen38-structured-decoding-final-audit-20261017.json": "5b8d53afc460918e1e5431b7f6e30cc2e05a06c7f48a867610cfe62aaf5cb6c3",
+    "qa/integration/qwen38_export_final_verified.json": "f4de1666df75f1917324a7c972b4b6aff89a51c2cec03a61c5f7c2c2d5169e9b",
+    "qa/integration/qwen38_support_budget_qa.json": "d26714926cd2a18a8ce7ce9b39a659d6a5c9403985a48ed66bd21dc010ac1e76",
+    "qa/integration/qwen38_support_budget_torch.json": "f663a728cc9f476fb1f8a6e6318e36f8209e476324fc2ae394007a72ff53a58d"
+  },
+  "quality_family_actual_equivalence": {
+    "baseline_or_frozen_family_modified": false,
+    "common_files": 88,
+    "private_receipt_sha256": "372f3daf3147ce776ee2a24b4200917d445a94abef8806e1f7e116ef82061468",
+    "semantic_sha256": "fcad0da090ff58258424a3eb35b8186958f8c156a36466d2bb70967fab349a72"
+  },
+  "remote_archive": "/home/ubuntu/forte-worker-source-91263a59cb2e/qwen38-ml-support-grammar-final-20261017T151420Z.tar.gz",
+  "remote_source_directory": "/home/ubuntu/forte-worker-source-91263a59cb2e/source",
+  "runtime_selected_by_packaging": false,
+  "schema_version": "forte.ml-source-release-and-cpu-worker-receipt.v1",
+  "status": "SOURCE_AND_CPU_WORKER_VERIFIED_NOT_ACTIVATED",
+  "training_performed_by_packaging": false,
+  "unchanged_existing_files": 200
+}

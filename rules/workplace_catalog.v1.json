@@ -1,0 +1,678 @@
+{
+  "schema_version": "forte.optional.workplace.rules.v1",
+  "catalog_version": "2026-10-17.workplace.public.v1",
+  "accessed_on": "2026-10-17",
+  "deployment_selected": false,
+  "independent_accuracy_measured": false,
+  "baseline_snapshot": {
+    "catalog_sha256": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "taxonomy_sha256": "817b24496dc55d060e944491f877747dde52cb5195ffd1edeea2cd7ffffbe9da"
+  },
+  "vocabulary": {
+    "version": "forte.optional.workplace.fact-axes.v1",
+    "fact_ids": [
+      "ALL_COUNTING_PATHS_VISIBLE",
+      "BANK_CASH_WORKSTATION",
+      "CASH_COUNT_VISIBLE",
+      "CASH_HANDLER_LEAVES_WORKSTATION",
+      "CASH_HANDLER_PRESENT",
+      "CASH_HANDOVER_VISIBLE",
+      "CASH_ISSUE_OPERATION",
+      "CASH_ON_WORK_SURFACE",
+      "CASH_PLACED_IN_CLOTHING_POCKET",
+      "CASH_PLACED_IN_PERSONAL_CONTAINER",
+      "CASH_RECEIPT_OPERATION",
+      "CASH_VISIBLE",
+      "CUSTOMER_SERVICE_CONTINUES",
+      "LOOSE_BANKNOTES_ISSUED",
+      "LOOSE_BANKNOTES_RECEIVED",
+      "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+      "PREVIOUS_RECEIPT_COMPLETE",
+      "PROCEDURE_CONTEXT_COMPLETE",
+      "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM",
+      "WP_CASH_NODE_BOUNDARY_VISIBLE",
+      "WP_COMM_DEVICE_IDENTIFIABLE",
+      "WP_CONFIRMED_BANK_CASH_NODE",
+      "WP_CONFIRMED_INDOOR_WORKPLACE",
+      "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE",
+      "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+      "WP_PERSONAL_STORAGE_EPISODE_VISIBLE",
+      "WP_RECORDING_CAPABILITY_VISIBLE",
+      "WP_TOBACCO_CONSUMPTION_VISIBLE",
+      "WP_TOBACCO_PRODUCT_CLEAR",
+      "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+      "WP_WORKER_ROLE_BY_CASH_ACTIONS"
+    ],
+    "fact_axis_sha256": "64978c299ebe0ed6c556fef44ce733199bbaa2ab286caa09b9ff018e602ede1d",
+    "state_order": [
+      "absent",
+      "present",
+      "unclear"
+    ],
+    "baseline_prefix_length": 19,
+    "new_axis_ids": [
+      "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM",
+      "WP_CASH_NODE_BOUNDARY_VISIBLE",
+      "WP_COMM_DEVICE_IDENTIFIABLE",
+      "WP_CONFIRMED_BANK_CASH_NODE",
+      "WP_CONFIRMED_INDOOR_WORKPLACE",
+      "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE",
+      "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+      "WP_PERSONAL_STORAGE_EPISODE_VISIBLE",
+      "WP_RECORDING_CAPABILITY_VISIBLE",
+      "WP_TOBACCO_CONSUMPTION_VISIBLE",
+      "WP_TOBACCO_PRODUCT_CLEAR",
+      "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+      "WP_WORKER_ROLE_BY_CASH_ACTIONS"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "NBK_231_2019_CURRENT",
+      "document_title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "issuing_body": "Правление Национального Банка Республики Казахстан",
+      "document_date": "2019-11-29",
+      "document_number": "231",
+      "registration_number": "19680",
+      "url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "accessed_on": "2026-10-17",
+      "legal_status": "current_official_version",
+      "official_document_id": "c4cd4052-63e3-475b-ba9e-93f23de13fdb",
+      "revision_date": "2026-07-12",
+      "revision_date_basis": "Official versions[0].revision_date 2026-07-11T18:00:00Z; 12.07.2026 clause footnote effective date. Not inferred from execution-host timezone.",
+      "official_api_urls": [
+        "https://adilet.zan.kz/api/documents/by-ngr/V1900019680?language=rus",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/content",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/versions?page_size=100"
+      ],
+      "primary_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "text_archive_path": "sources/nbk_231_current.txt",
+      "archives": [
+        {
+          "path": "sources/nbk_231_current.json",
+          "sha256": "c7d02be30022c13b2e8a5ae63bc1a290ce51faaeff964d40794076f038658c68",
+          "bytes": 274526
+        },
+        {
+          "path": "sources/nbk_231_content.json",
+          "sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+          "bytes": 268918
+        },
+        {
+          "path": "sources/nbk_231_versions.json",
+          "sha256": "4567a0fc4107807c0196891fe0d41b623bfa5c952982bf5eedfdf607ccd14b8b",
+          "bytes": 21105
+        },
+        {
+          "path": "sources/nbk_231_current.txt",
+          "sha256": "f408a9303bfd9a2707be920c5208d1eafd30cc401a03cbfe5eafa92730fe0bfb",
+          "bytes": 215722
+        }
+      ],
+      "metadata_caveats": [
+        "API end_date equals latest revision boundary while is_actual=true and versions.is_current=true; do not interpret it as repeal.",
+        "API adopting_organ_name_ru says Ministry of Justice; issuing body is established by official_name and normative text: NB RK Board.",
+        "Public HTML route is now a JavaScript shell. Archive includes the official public content API response, not a third-party mirror."
+      ]
+    },
+    {
+      "source_id": "RK_HEALTH_CODE_110_CURRENT_OPTIONAL",
+      "url": "https://adilet.zan.kz/rus/docs/K2000000360",
+      "document_title": "Кодекс Республики Казахстан «О здоровье народа и системе здравоохранения» от 7 июля 2020 года № 360-VI",
+      "legal_status": "current_official_version",
+      "accessed_on": "2026-10-17",
+      "official_document_id": "44307b10-cd74-4f8e-86e5-5e5a10179e99",
+      "primary_sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841",
+      "archives": [
+        {
+          "path": "workplace_sources/health_code_content.json",
+          "sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841",
+          "bytes": 1847397
+        },
+        {
+          "path": "workplace_sources/health_code_versions.json",
+          "sha256": "558abfb39005f1123ecc580a6b836917cd7d2d503196593bfd263553afbfa27f",
+          "bytes": 37491
+        },
+        {
+          "path": "workplace_sources/health_code_article110.txt",
+          "sha256": "5229b29de075c16c7bbbae93121cf837d1168187a0f5a825b32345efd63f7af9",
+          "bytes": 25752
+        },
+        {
+          "path": "workplace_sources/health_code_metadata.json",
+          "sha256": "bfcb9880d243f6c1384904fea63246c29370ff9ba733b6ad2f94e1bc49008df6",
+          "bytes": 442
+        }
+      ],
+      "text_archive_path": "workplace_sources/health_code_article110.txt",
+      "version_boundary_utc": "2026-09-05T18:00:00Z",
+      "provenance": "Unmodified official content/history responses; deterministic article extraction and explicitly derived metadata snapshot."
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "OPT_RK_NBK231_P12_PERSONAL_STORAGE",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "пункт 12, часть первая, с учетом части второй",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Официальная ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Изолированная опциональная ветвь; каждый положительный факт и исключение должны подтверждаться исходными кадрами и отдельным доверенным контекстом зоны.",
+      "required_facts": [
+        "WP_CONFIRMED_BANK_CASH_NODE",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "WP_PERSONAL_STORAGE_EPISODE_VISIBLE"
+      ],
+      "temporal_conditions": [
+        "Непрерывная связь обязательных наблюдений относится к тому же работнику/предмету; действие подтверждено внутри интервала кандидата."
+      ],
+      "exceptions": [
+        "Лекарства, медицинские изделия и средства связи без функции фото/видео; неизвестное содержимое, банковское оборудование и клиентское имущество исключаются положительными фактами."
+      ],
+      "verification_state": "source_verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Enabled only inside explicit optional loader; production profile selection is absent and unmeasured."
+    },
+    {
+      "rule_id": "OPT_RK_NBK231_P12_RECORDING_COMM_DEVICE",
+      "title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "clause": "пункт 12, часть вторая, во взаимосвязи с частью первой",
+      "source_url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "source_publisher": "Официальная ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "jurisdiction": "KZ",
+      "applicability": "Изолированная опциональная ветвь; каждый положительный факт и исключение должны подтверждаться исходными кадрами и отдельным доверенным контекстом зоны.",
+      "required_facts": [
+        "WP_CONFIRMED_BANK_CASH_NODE",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "WP_COMM_DEVICE_IDENTIFIABLE",
+        "WP_RECORDING_CAPABILITY_VISIBLE",
+        "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE"
+      ],
+      "temporal_conditions": [
+        "Непрерывная связь обязательных наблюдений относится к тому же работнику/предмету; действие подтверждено внутри интервала кандидата."
+      ],
+      "exceptions": [
+        "Средства связи без фото/видео, медицинские изделия, неизвестные прямоугольные предметы, клиентские устройства снаружи узла и штатное банковское оборудование не удовлетворяют узкой ветви."
+      ],
+      "verification_state": "source_verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Enabled only inside explicit optional loader; production profile selection is absent and unmeasured."
+    },
+    {
+      "rule_id": "OPT_RK_HEALTH110_5_9_WORKPLACE_TOBACCO",
+      "title": "Кодекс Республики Казахстан «О здоровье народа и системе здравоохранения» от 7 июля 2020 года № 360-VI",
+      "clause": "подпункт 9 пункта 5 статьи 110 с учетом пункта 6",
+      "source_url": "https://adilet.zan.kz/rus/docs/K2000000360",
+      "source_publisher": "Официальная ИПС «Әділет»",
+      "accessed_at": "2026-10-17",
+      "source_sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841",
+      "jurisdiction": "KZ",
+      "applicability": "Изолированная опциональная ветвь; каждый положительный факт и исключение должны подтверждаться исходными кадрами и отдельным доверенным контекстом зоны.",
+      "required_facts": [
+        "WP_CONFIRMED_INDOOR_WORKPLACE",
+        "WP_TOBACCO_PRODUCT_CLEAR",
+        "WP_TOBACCO_CONSUMPTION_VISIBLE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "temporal_conditions": [
+        "Непрерывная связь обязательных наблюдений относится к тому же работнику/предмету; действие подтверждено внутри интервала кандидата."
+      ],
+      "exceptions": [
+        "Неизвестный предмет/вейп, лекарственный ингалятор, простое держание изделия и улица не подходят. Исключение пункта 6 относится к подпунктам 3 и 7 пункта 5, а не к рабочей зоне по подпункту 9."
+      ],
+      "verification_state": "source_verified",
+      "applicability_verified": true,
+      "enabled": true,
+      "notes": "Enabled only inside explicit optional loader; production profile selection is absent and unmeasured."
+    }
+  ],
+  "bindings": {
+    "OPT_RK_NBK231_P12_PERSONAL_STORAGE": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "пункт 12, часть первая, с учетом части второй",
+      "source_excerpt": "12. Хранение личных вещей, наличных денег и ценностей работников банка осуществляется вне кассового узла в порядке, установленном внутренними документами банка.",
+      "event_type_id": "OPT_PERSONAL_STORAGE_IN_CASH_NODE",
+      "required_fact_states": {
+        "WP_CONFIRMED_BANK_CASH_NODE": "present",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE": "present",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS": "present",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR": "present",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "WP_PERSONAL_STORAGE_EPISODE_VISIBLE": "present",
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM": "absent"
+      },
+      "applicability_fact_ids": [
+        "WP_CONFIRMED_BANK_CASH_NODE",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "violation_fact_ids": [
+        "WP_PERSONAL_STORAGE_EPISODE_VISIBLE"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "required_context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "exception_fact_ids": [
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM"
+      ],
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "is_omission": false,
+      "description_fact_ids": [
+        "WP_PERSONAL_STORAGE_EPISODE_VISIBLE",
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM"
+      ],
+      "implication_ru": "Возможные признаки хранения личных вещей работника внутри кассового узла при исключенных разрешенных категориях пункта 12.",
+      "profile_scope": "optional_workplace_only",
+      "anchor_policy": "first_supported_action",
+      "remaining_limit": "Composite continuity/scope predicates require actual local visual proof; the builder does not independently recover tracks or identify devices."
+    },
+    "OPT_RK_NBK231_P12_RECORDING_COMM_DEVICE": {
+      "source_id": "NBK_231_2019_CURRENT",
+      "clause": "пункт 12, часть вторая, во взаимосвязи с частью первой",
+      "source_excerpt": "Допускается внос работниками банка в кассовый узел лекарственных средств, медицинских изделий и средств связи, не имеющих функции фото и видео фиксации.",
+      "event_type_id": "OPT_RECORDING_COMM_DEVICE_IN_CASH_NODE",
+      "required_fact_states": {
+        "WP_CONFIRMED_BANK_CASH_NODE": "present",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE": "present",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS": "present",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR": "present",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "WP_COMM_DEVICE_IDENTIFIABLE": "present",
+        "WP_RECORDING_CAPABILITY_VISIBLE": "present",
+        "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE": "present",
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM": "absent"
+      },
+      "applicability_fact_ids": [
+        "WP_CONFIRMED_BANK_CASH_NODE",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE",
+        "WP_COMM_DEVICE_IDENTIFIABLE",
+        "WP_RECORDING_CAPABILITY_VISIBLE"
+      ],
+      "violation_fact_ids": [
+        "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "required_context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "exception_fact_ids": [
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM"
+      ],
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "is_omission": false,
+      "description_fact_ids": [
+        "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE",
+        "WP_RECORDING_CAPABILITY_VISIBLE"
+      ],
+      "implication_ru": "Возможные признаки вноса личного средства связи с наблюдаемо подтвержденной функцией фото- или видеофиксации внутрь кассового узла; разрешение части второй пункта 12 относится к средствам связи без такой функции.",
+      "profile_scope": "optional_workplace_only",
+      "anchor_policy": "first_supported_action",
+      "remaining_limit": "Composite continuity/scope predicates require actual local visual proof; the builder does not independently recover tracks or identify devices."
+    },
+    "OPT_RK_HEALTH110_5_9_WORKPLACE_TOBACCO": {
+      "source_id": "RK_HEALTH_CODE_110_CURRENT_OPTIONAL",
+      "clause": "подпункт 9 пункта 5 статьи 110 с учетом пункта 6",
+      "source_excerpt": "9) в помещениях, являющихся рабочими местами и рабочими зонами;",
+      "event_type_id": "OPT_TOBACCO_CONSUMPTION_INDOOR_WORKPLACE",
+      "required_fact_states": {
+        "WP_CONFIRMED_INDOOR_WORKPLACE": "present",
+        "WP_TOBACCO_PRODUCT_CLEAR": "present",
+        "WP_TOBACCO_CONSUMPTION_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present"
+      },
+      "applicability_fact_ids": [
+        "WP_CONFIRMED_INDOOR_WORKPLACE",
+        "WP_TOBACCO_PRODUCT_CLEAR",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "violation_fact_ids": [
+        "WP_TOBACCO_CONSUMPTION_VISIBLE"
+      ],
+      "context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "required_context_fact_ids": [
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "exception_fact_ids": [],
+      "temporal_verified": true,
+      "exceptions_verified": true,
+      "is_omission": false,
+      "description_fact_ids": [
+        "WP_CONFIRMED_INDOOR_WORKPLACE",
+        "WP_TOBACCO_CONSUMPTION_VISIBLE"
+      ],
+      "implication_ru": "Возможные признаки потребления ясно различимого табачного изделия в помещении рабочего места или рабочей зоны, где действует запрет подпункта 9 пункта 5 статьи 110.",
+      "profile_scope": "optional_workplace_only",
+      "anchor_policy": "first_supported_action",
+      "remaining_limit": "Composite continuity/scope predicates require actual local visual proof; the builder does not independently recover tracks or identify devices."
+    }
+  },
+  "facts": {
+    "CASH_VISIBLE": {
+      "fact_id": "CASH_VISIBLE",
+      "question_ru": "Виден ли объект, уверенно различимый как наличные деньги?",
+      "definition_ru": "Купюры или монеты различимы по визуальным признакам без распознавания номинала.",
+      "absence_requires_ru": "Достаточное разрешение и полный обзор рассматриваемой поверхности; закрытая область означает unclear.",
+      "observable_phrase_ru": "В кадре различимы наличные.",
+      "absence_phrase_ru": "В полностью проверенной видимой зоне наличные не обнаружены.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "различимы наличные деньги"
+    },
+    "CASH_ON_WORK_SURFACE": {
+      "fact_id": "CASH_ON_WORK_SURFACE",
+      "question_ru": "Лежат ли видимые наличные на рабочей поверхности?",
+      "definition_ru": "Видны наличные и поверхность, на которой они лежат; владение деньгами не определяется.",
+      "absence_requires_ru": "Рабочая поверхность видна целиком в оцениваемом интервале.",
+      "observable_phrase_ru": "Наличные находятся на рабочей поверхности.",
+      "absence_phrase_ru": "На полностью проверенной поверхности наличные не обнаружены.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наличные остаются на рабочей поверхности"
+    },
+    "CASH_HANDLER_PRESENT": {
+      "fact_id": "CASH_HANDLER_PRESENT",
+      "question_ru": "Находится ли человек, непосредственно работающий с наличными, у рабочей зоны?",
+      "definition_ru": "Роль определяется только по наблюдаемому действию; имя, должность и личность не устанавливаются.",
+      "absence_requires_ru": "Достаточный непрерывный обзор рабочей зоны и возможных заслонений.",
+      "observable_phrase_ru": "Работающий с наличными человек находится у рабочей зоны.",
+      "absence_phrase_ru": "В непрерывно наблюдаемой рабочей зоне работающий с наличными человек отсутствует.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "работающий с наличными человек находится у рабочей зоны",
+      "absence_description_ru": "после видимого ухода обслуживающий кассовый работник отсутствует у рабочего места"
+    },
+    "WORK_AREA_CONTINUOUSLY_VISIBLE": {
+      "fact_id": "WORK_AREA_CONTINUOUSLY_VISIBLE",
+      "question_ru": "Достаточно ли непрерывно видна рабочая зона?",
+      "definition_ru": "Ключевые действия можно проследить без склейки, закрытия обзора или выхода за кадр.",
+      "absence_requires_ru": "Разрыв, заслонение или слишком низкое разрешение фиксируются как absent либо unclear, а не как отсутствие действия.",
+      "observable_phrase_ru": "Релевантная рабочая зона непрерывно видна.",
+      "absence_phrase_ru": "Релевантная рабочая зона не видна непрерывно.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "релевантная рабочая зона непрерывно видна"
+    },
+    "CASH_HANDOVER_VISIBLE": {
+      "fact_id": "CASH_HANDOVER_VISIBLE",
+      "question_ru": "Видна ли передача наличных между людьми?",
+      "definition_ru": "Виден непрерывный переход наличных из одной зоны рук в другую; тип операции не выводится.",
+      "absence_requires_ru": "Весь потенциальный эпизод передачи виден достаточно подробно.",
+      "observable_phrase_ru": "Видна передача наличных между людьми.",
+      "absence_phrase_ru": "В полностью проверенном этапе передача наличных не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается передача наличных"
+    },
+    "CASH_COUNT_VISIBLE": {
+      "fact_id": "CASH_COUNT_VISIBLE",
+      "question_ru": "Виден ли ручной или машинный пересчет наличных?",
+      "definition_ru": "Наблюдается последовательное перебирание наличных либо их помещение в счетное устройство и его работа; точность суммы не утверждается.",
+      "absence_requires_ru": "Весь релевантный этап операции и счетная зона видны; сам по себе короткий фрагмент не подтверждает отсутствие пересчета.",
+      "observable_phrase_ru": "Наблюдается пересчет наличных.",
+      "absence_phrase_ru": "В полном проверенном этапе при видимости всех зон пересчет наличных не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается ручной или машинный пересчет",
+      "absence_description_ru": "пересчет не наблюдается на всем полностью видимом релевантном этапе"
+    },
+    "CASH_PLACED_IN_PERSONAL_CONTAINER": {
+      "fact_id": "CASH_PLACED_IN_PERSONAL_CONTAINER",
+      "question_ru": "Виден ли переход наличных в карман или явно личный контейнер?",
+      "definition_ru": "Непрерывно видны исходный объект, движение и место помещения. Назначение сумки и разрешение операции не предполагаются.",
+      "absence_requires_ru": "Движение рук и место назначения видны; выход объекта за кадр означает unclear.",
+      "observable_phrase_ru": "Видно помещение наличных в подтвержденный личный контейнер.",
+      "absence_phrase_ru": "В полностью проверенном движении помещения наличных в личный контейнер не наблюдается.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "наблюдается перемещение наличных в личную зону хранения"
+    },
+    "OTHER_PERSON_ENTERS_WORKSPACE": {
+      "fact_id": "OTHER_PERSON_ENTERS_WORKSPACE",
+      "question_ru": "Пересекает ли другой человек видимую границу рабочей зоны?",
+      "definition_ru": "Фиксируется только физическое перемещение относительно явно заданной зоны; право доступа не определяется.",
+      "absence_requires_ru": "Заданная граница и весь проверяемый период видны.",
+      "observable_phrase_ru": "Другой человек пересекает подтвержденную границу рабочей зоны.",
+      "absence_phrase_ru": "За полный проверенный период другой человек не пересекает заданную границу.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "другой человек пересекает границу рабочей зоны"
+    },
+    "WORKSPACE_BOUNDARY_VISIBLE": {
+      "fact_id": "WORKSPACE_BOUNDARY_VISIBLE",
+      "question_ru": "Можно ли надежно определить границу рабочей зоны?",
+      "definition_ru": "Граница видна либо задана проверенной локальной разметкой; предполагаемая граница не принимается.",
+      "absence_requires_ru": "При неизвестной конфигурации зона имеет состояние unclear.",
+      "observable_phrase_ru": "Граница рабочей зоны надежно определена.",
+      "absence_phrase_ru": "Граница рабочей зоны не определена надежно.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "граница рабочей зоны надежно определена"
+    },
+    "PROCEDURE_CONTEXT_COMPLETE": {
+      "fact_id": "PROCEDURE_CONTEXT_COMPLETE",
+      "question_ru": "Виден ли весь этап процедуры, необходимый для проверки действия?",
+      "definition_ru": "Начало, окончание и релевантные зоны конкретного этапа доступны для проверки без неизвестных фрагментов; запись всего видео сама по себе не подтверждает полноту процедуры.",
+      "absence_requires_ru": "Если этап начался ранее записи, продолжается после ее конца или часть его проходит вне кадра, полнота не подтверждена.",
+      "observable_phrase_ru": "Весь релевантный этап процедуры доступен проверке.",
+      "absence_phrase_ru": "Полнота релевантного этапа процедуры не подтверждена.",
+      "unclear_phrase_ru": "Видимость или контекст недостаточны для проверки признака.",
+      "description_ru": "полный релевантный этап процедуры доступен проверке"
+    },
+    "BANK_CASH_WORKSTATION": {
+      "fact_id": "BANK_CASH_WORKSTATION",
+      "question_ru": "Подтвержден ли локально контекст банковского кассового рабочего места?",
+      "definition_ru": "Требуется доверенный локально подтвержденный контекст банковской кассы и видимое рабочее место. По одежде, вывеске или форме мебели контекст не устанавливается; без подтверждения unclear.",
+      "description_ru": "локально подтвержден контекст банковского кассового рабочего места"
+    },
+    "CASH_RECEIPT_OPERATION": {
+      "fact_id": "CASH_RECEIPT_OPERATION",
+      "question_ru": "Наблюдается ли именно прием наличных от клиента кассовым работником?",
+      "definition_ru": "Направление и назначение подтверждены полным видимым этапом приема от клиента. Выдача, размен, собственные деньги клиента и внутреннее перемещение не считаются приемом.",
+      "description_ru": "наблюдается прием наличных от клиента кассовым работником"
+    },
+    "CASH_ISSUE_OPERATION": {
+      "fact_id": "CASH_ISSUE_OPERATION",
+      "question_ru": "Наблюдается ли именно выдача наличных кассовым работником клиенту?",
+      "definition_ru": "Подтвержден полный видимый этап выдачи кассовым работником клиенту. Прием, внутреннее перемещение и размен не заменяют это условие.",
+      "description_ru": "наблюдается выдача наличных клиенту кассовым работником"
+    },
+    "CASH_HANDLER_LEAVES_WORKSTATION": {
+      "fact_id": "CASH_HANDLER_LEAVES_WORKSTATION",
+      "question_ru": "Виден ли уход обслуживающего клиента кассового работника со своего рабочего места?",
+      "definition_ru": "Виден переход от рабочего места за его надежно определенную границу. Наклон, поворот, заслонение и шаг внутри рабочего места уходом не считаются.",
+      "description_ru": "кассовый работник видимо покидает свое рабочее место"
+    },
+    "CUSTOMER_SERVICE_CONTINUES": {
+      "fact_id": "CUSTOMER_SERVICE_CONTINUES",
+      "question_ru": "Подтверждено ли, что в момент ухода обслуживание принимаемого клиента еще не окончено?",
+      "definition_ru": "Требуется видимое продолжение того же этапа приема до и после ухода; одного присутствия или ожидания клиента недостаточно. Если граница окончания обслуживания не видна, unclear.",
+      "description_ru": "уход происходит до наблюдаемого окончания обслуживания того же клиента"
+    },
+    "PREVIOUSLY_ACCEPTED_CASH_TRACKED": {
+      "fact_id": "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+      "question_ru": "Прослежены ли именно ранее принятые банком наличные после предыдущего приема?",
+      "definition_ru": "Нужен непрерывный путь одной и той же наличности от завершенного приема до рассматриваемого размещения. Не выводить принадлежность из положения объекта; клиентские или выдаваемые клиенту деньги не подходят.",
+      "description_ru": "непрерывно прослежены наличные, ранее принятые кассой"
+    },
+    "PREVIOUS_RECEIPT_COMPLETE": {
+      "fact_id": "PREVIOUS_RECEIPT_COMPLETE",
+      "question_ru": "Виден ли завершенный предыдущий этап приема отслеживаемых наличных?",
+      "definition_ru": "Начало, прием и завершение предыдущего обслуживания подтверждены в полном контексте. Выход клиента из кадра или временная пауза сами по себе завершение не доказывают.",
+      "description_ru": "предыдущий этап приема отслеживаемых наличных завершен"
+    },
+    "CASH_PLACED_IN_CLOTHING_POCKET": {
+      "fact_id": "CASH_PLACED_IN_CLOTHING_POCKET",
+      "question_ru": "Видно ли помещение прослеженных наличных именно в карман одежды кассового работника?",
+      "definition_ru": "Нужны различимые наличные и непрерывный путь внутрь видимого кармана одежды. Не применять к закрытой сумке, служебной кассете, ящику, бумаге или движению вне кадра. Умысел и хищение не определяются.",
+      "description_ru": "прослеженные наличные помещены в видимый карман одежды"
+    },
+    "LOOSE_BANKNOTES_RECEIVED": {
+      "fact_id": "LOOSE_BANKNOTES_RECEIVED",
+      "question_ru": "Принимаются ли отдельные неупакованные банкноты?",
+      "definition_ru": "Виден прием отдельных банкнот; прием закрытой сумки инкассации или запечатанной пачки не соответствует этому узкому условию.",
+      "description_ru": "принимаются отдельные неупакованные банкноты"
+    },
+    "LOOSE_BANKNOTES_ISSUED": {
+      "fact_id": "LOOSE_BANKNOTES_ISSUED",
+      "question_ru": "Выдаются ли отдельные неупакованные банкноты?",
+      "definition_ru": "Видна выдача отдельных банкнот; целая неповрежденная пачка или корешок с выдачей по сумме на упаковке не соответствует условию.",
+      "description_ru": "выдаются отдельные неупакованные банкноты"
+    },
+    "ALL_COUNTING_PATHS_VISIBLE": {
+      "fact_id": "ALL_COUNTING_PATHS_VISIBLE",
+      "question_ru": "Видны ли все возможные пути ручного и машинного пересчета за полный релевантный этап?",
+      "definition_ru": "Видны руки, банкноты, счетные и автоматические устройства от начала подготовки/приема до завершения выдачи/приема. При наличии скрытого устройства, участка до записи, слепой зоны или пробела состояние unclear.",
+      "description_ru": "весь релевантный этап и пути ручного и машинного пересчета доступны наблюдению"
+    },
+    "WP_CONFIRMED_BANK_CASH_NODE": {
+      "fact_id": "WP_CONFIRMED_BANK_CASH_NODE",
+      "question_ru": "Подтвержден ли именно банковский кассовый узел?",
+      "definition_ru": "Требуются отдельная доверенная настройка bank_cash_node и видимая зона внутри кассового узла. Настройка bank_cash_workstation, логотип, стол, одежда или присутствие денег не доказывают эту границу. Операционный зал и зона клиента снаружи не подходят.",
+      "description_ru": "подтверждена зона внутри банковского кассового узла"
+    },
+    "WP_CASH_NODE_BOUNDARY_VISIBLE": {
+      "fact_id": "WP_CASH_NODE_BOUNDARY_VISIBLE",
+      "question_ru": "Надежно ли определена и видна граница кассового узла?",
+      "definition_ru": "Кадры и доверенная схема зоны позволяют отличить внутреннюю часть кассового узла от клиентского зала. Не считать весь кадр служебной зоной по умолчанию; неизвестная граница означает unclear.",
+      "description_ru": "граница кассового узла надежно определена и видна"
+    },
+    "WP_WORKER_ROLE_BY_CASH_ACTIONS": {
+      "fact_id": "WP_WORKER_ROLE_BY_CASH_ACTIONS",
+      "question_ru": "Установлена ли роль работника по его наблюдаемым кассовым действиям?",
+      "definition_ru": "Тот же анонимно прослеживаемый человек непосредственно выполняет банковскую кассовую работу на стороне кассы. Одежда, возраст, лицо, бейдж, пол и нахождение за столом сами по себе роль не устанавливают. Личность и полномочия не определяются.",
+      "description_ru": "роль работника подтверждена наблюдаемыми кассовыми действиями"
+    },
+    "WP_PERSONAL_ITEM_PROVENANCE_CLEAR": {
+      "fact_id": "WP_PERSONAL_ITEM_PROVENANCE_CLEAR",
+      "question_ru": "Подтверждено ли личное назначение именно этого предмета?",
+      "definition_ru": "Нужен положительный наблюдаемый контекст личного использования и непрерывная связь предмета с тем же работником. Не выводить собственность из расположения, кармана, цвета или вида сумки. Предмет клиента, кассета, банковское рабочее устройство и неизвестное содержимое сумки требуют absent либо unclear.",
+      "description_ru": "личное назначение прослеженного предмета подтверждено наблюдаемым контекстом"
+    },
+    "WP_PERSONAL_STORAGE_EPISODE_VISIBLE": {
+      "fact_id": "WP_PERSONAL_STORAGE_EPISODE_VISIBLE",
+      "question_ru": "Виден ли законченный эпизод хранения личного предмета внутри узла?",
+      "definition_ru": "Виден переход того же предмета в место хранения и его оставление там после завершения размещения. Просто носимая одежда, краткий перенос, процесс кассовой обработки и неизвестная дальнейшая судьба предмета не доказывают хранение.",
+      "description_ru": "прослеженный личный предмет оставлен на хранение внутри кассового узла"
+    },
+    "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM": {
+      "fact_id": "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM",
+      "question_ru": "Является ли предмет лекарством, медицинским изделием или средством связи без камеры?",
+      "definition_ru": "Проверяются лекарства, медицинские изделия и средства связи без функции фото/видеофиксации. absent допустимо только если сам предмет достаточно различим и его принадлежность к этим категориям исключена положительными признаками. Скрытое содержимое сумки, неизвестный прибор или неразличимая камера означают unclear, а не absent.",
+      "description_ru": "предмет относится к разрешенным лекарствам, медицинским изделиям или средствам связи без камеры",
+      "absence_description_ru": "по различимым признакам предмет не относится к разрешенным медицинским изделиям, лекарствам или средствам связи без камеры"
+    },
+    "WP_WORKER_ITEM_TRACK_CONTINUOUS": {
+      "fact_id": "WP_WORKER_ITEM_TRACK_CONTINUOUS",
+      "question_ru": "Прослежены ли тот же работник и тот же предмет без разрыва?",
+      "definition_ru": "Исходные кадры связывают наблюдаемую кассовую роль, личный контекст предмета и рассматриваемое размещение либо переход границы. Подмена, заслонение с возможной подменой и выход из кадра требуют unclear. Не распознавать лица. Отдельные несвязанные предметы и люди не объединяются.",
+      "description_ru": "тот же работник и предмет непрерывно прослежены через необходимые действия"
+    },
+    "WP_COMM_DEVICE_IDENTIFIABLE": {
+      "fact_id": "WP_COMM_DEVICE_IDENTIFIABLE",
+      "question_ru": "Различимо ли именно переносимое средство связи?",
+      "definition_ru": "Нужно отличить конкретное переносимое коммуникационное устройство от калькулятора, кошелька, блокнота, медицинского прибора и неподвижной банковской системы видеонаблюдения. Прямоугольная форма, касание экрана или жест у лица недостаточны.",
+      "description_ru": "прослеженный предмет различим как переносимое средство связи"
+    },
+    "WP_RECORDING_CAPABILITY_VISIBLE": {
+      "fact_id": "WP_RECORDING_CAPABILITY_VISIBLE",
+      "question_ru": "Подтверждена ли функция фото или видео у этого устройства?",
+      "definition_ru": "Требуется ясно различимая камера/ее функция у того же средства связи либо наблюдаемое реальное действие съемки. Не предполагать камеру у любого телефона, прямоугольника или темного пятна. Содержимое личной переписки и изображений не читать и не раскрывать. Неизвестная функция означает unclear.",
+      "description_ru": "у того же средства связи наблюдаемо подтверждена функция фото- или видеофиксации"
+    },
+    "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE": {
+      "fact_id": "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE",
+      "question_ru": "Виден ли внос того же устройства работником внутрь кассового узла?",
+      "definition_ru": "Непрерывная последовательность показывает перенос работником того же устройства снаружи внутрь надежно определенной границы. Уже лежащий неизвестный предмет, нахождение клиента снаружи или неизвестное начало переноса не доказывают внос.",
+      "description_ru": "наблюдается внос того же средства связи работником внутрь кассового узла"
+    },
+    "WP_CONFIRMED_INDOOR_WORKPLACE": {
+      "fact_id": "WP_CONFIRMED_INDOOR_WORKPLACE",
+      "question_ru": "Подтверждено ли помещение, являющееся рабочим местом или рабочей зоной?",
+      "definition_ru": "Нужно видимое закрытое помещение и положительно установленная рабочая функция зоны. Улица, клиентская зона неизвестного назначения, специально не классифицированное помещение и наличие одного стола не достаточны. Банковская принадлежность для этой нормы не требуется.",
+      "description_ru": "подтверждено внутреннее помещение рабочего места или рабочей зоны"
+    },
+    "WP_TOBACCO_PRODUCT_CLEAR": {
+      "fact_id": "WP_TOBACCO_PRODUCT_CLEAR",
+      "question_ru": "Ясно ли различимо именно табачное изделие?",
+      "definition_ru": "Нужны достаточные визуальные признаки табачной сигареты/сигары или иного однозначно табачного изделия. Ручка, лекарственный ингалятор, еда, неизвестный вейп и неразличимый предмет не подходят. Не определять состав неизвестного пара и не выводить употребление алкоголя или наркотиков.",
+      "description_ru": "ясно различимо табачное изделие"
+    },
+    "WP_TOBACCO_CONSUMPTION_VISIBLE": {
+      "fact_id": "WP_TOBACCO_CONSUMPTION_VISIBLE",
+      "question_ru": "Наблюдается ли фактическое потребление того же табачного изделия?",
+      "definition_ru": "В исходной последовательности видны различимое табачное изделие и фактическое курение, например тлеющий конец и согласованная последовательность затяжки/дыма. Простое держание, движение руки ко рту, пар или конденсат сами по себе не достаточны.",
+      "description_ru": "наблюдается фактическое курение различимого табачного изделия"
+    }
+  },
+  "event_types": {
+    "OPT_PERSONAL_STORAGE_IN_CASH_NODE": {
+      "name_ru": "Возможное хранение личных вещей в кассовом узле",
+      "required_fact_states": {
+        "WP_CONFIRMED_BANK_CASH_NODE": "present",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE": "present",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS": "present",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR": "present",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "WP_PERSONAL_STORAGE_EPISODE_VISIBLE": "present",
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM": "absent"
+      },
+      "definition_ru": "Прослеженный личный предмет работника оставлен на хранение в подтвержденной внутренней зоне кассового узла; предмет положительно отличим от лекарства, медицинского изделия и средства связи без камеры."
+    },
+    "OPT_RECORDING_COMM_DEVICE_IN_CASH_NODE": {
+      "name_ru": "Возможный внос средства связи с фото- или видеофиксацией в кассовый узел",
+      "required_fact_states": {
+        "WP_CONFIRMED_BANK_CASH_NODE": "present",
+        "WP_CASH_NODE_BOUNDARY_VISIBLE": "present",
+        "WP_WORKER_ROLE_BY_CASH_ACTIONS": "present",
+        "WP_PERSONAL_ITEM_PROVENANCE_CLEAR": "present",
+        "WP_WORKER_ITEM_TRACK_CONTINUOUS": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present",
+        "WP_COMM_DEVICE_IDENTIFIABLE": "present",
+        "WP_RECORDING_CAPABILITY_VISIBLE": "present",
+        "WP_DEVICE_ENTRY_INTO_NODE_VISIBLE": "present",
+        "WP_ALLOWED_MEDICAL_OR_NONCAMERA_COMM": "absent"
+      },
+      "definition_ru": "Тот же работник переносит прослеженное личное средство связи с ясно установленной фото- или видеофункцией через подтвержденную границу внутрь кассового узла."
+    },
+    "OPT_TOBACCO_CONSUMPTION_INDOOR_WORKPLACE": {
+      "name_ru": "Возможное курение табачного изделия в помещении рабочей зоны",
+      "required_fact_states": {
+        "WP_CONFIRMED_INDOOR_WORKPLACE": "present",
+        "WP_TOBACCO_PRODUCT_CLEAR": "present",
+        "WP_TOBACCO_CONSUMPTION_VISIBLE": "present",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE": "present"
+      },
+      "definition_ru": "Внутри подтвержденной рабочей зоны наблюдается фактическое курение ясно различимого табачного изделия; неизвестный пар и простое держание предмета недостаточны."
+    }
+  },
+  "coverage_gaps": [],
+  "approved_limitations_ru": [
+    "Результат является возможным признаком и требует проверки специалистом."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "auto_compile_checks_quantizer_flag": true,
+  "auto_compile_excludes_DynamicCache": true,
+  "base_is_compileable_returns_false": true,
+  "bnb4_inherits_HfQuantizer": true,
+  "bnb4_overrides_is_compileable": false,
+  "captured_at_utc": "2026-10-17T16:42:00.900905+00:00",
+  "compile_config_default_reduce_overhead": true,
+  "gpu_exposed": false,
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "linear_state_cache_advertised_compileable": true,
+  "method": "AST and source-text inspection only; no package/runtime flag patched.",
+  "model_calls": 0,
+  "package_version": "5.17.0",
+  "qwen_fullgraph_advertised": true,
+  "schema_version": "forte.qwen38.hf-compile-source-only-audit.v1",
+  "source_modified": false,
+  "source_sha256": {
+    "transformers/cache_utils.py": "702144bb44553f6339ea1bf23c8205a708bb5f8c7c09cb3a2db484182646743c",
+    "transformers/generation/configuration_utils.py": "605b86a07d08dc6e3ba932e8a90b8afca867eaa29881625b04869c4a1f1f23f8",
+    "transformers/generation/utils.py": "bb558d8676be95457126c82a32600dad206c13e4fb96b4f5d114f1f2483d7f62",
+    "transformers/models/qwen3_5/modeling_qwen3_5.py": "762feb6c7426a7f15b5bf830df54c07438bf9e7c27b8cdb23179045920412c3b",
+    "transformers/quantizers/base.py": "414e14c3c1f953e73ba857627a83774b71c6f71c24b991d9665f9954f5324458",
+    "transformers/quantizers/quantizer_bnb_4bit.py": "284dee75276e56147743c46b15af4c6855bc416f249b532c9fbe25abe13a0cbc"
+  },
+  "static_cache_dispatches_linear_attention": true,
+  "torch_imported": false
+}

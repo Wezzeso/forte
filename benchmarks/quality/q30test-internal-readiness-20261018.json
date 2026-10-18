@@ -1,0 +1,34 @@
+{
+  "schema": "forte.q30-internal-readiness.v1",
+  "generated_at_utc": "2026-10-18T05:34:25.979828+00:00",
+  "instance_id": "plp5me7vz",
+  "status": "ready",
+  "model": "q30test",
+  "readiness_probe_location": "container_namespace",
+  "gpu_process_signalled": false,
+  "container_started_stopped_or_removed": false,
+  "inference_requests_issued": false,
+  "host_readiness_poller_terminated": true,
+  "host_poller_pid": 27553,
+  "host_poller_parent_pid": 27551,
+  "container_id": "ba7da63d617787637a48006961eeadd59b83ba3e3ff98553aff896caef900fee",
+  "image_id": "sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "previous_receipt_sha256": "284d9b5d443884dbcc60769ec1f05fb0125d54feb45bdf895e458492d6622b43",
+  "server_receipt_sha256": "a6746308707e9de273c84f155d48737aa49f02d7b4af517881fd397e31070701",
+  "bootstrap_proof": {
+    "torchcodec_initially_present": true,
+    "torchcodec_uninstall_performed": true,
+    "torchcodec_absent": true
+  },
+  "runtime_probe": {
+    "alias_ready": true,
+    "torchcodec_absent": true,
+    "has_default_ipv4_route": false,
+    "ipv4_route_count": 1
+  },
+  "host_http_ready": false,
+  "model_alias_ready": true,
+  "startup_source_sha256": "2e708a5aee2610d5cf719114b3b7c1181ec5552d8c3f8b1b2487a47c619045f5",
+  "readiness_loop_lock_acquired": true,
+  "external_network_isolated": true
+}

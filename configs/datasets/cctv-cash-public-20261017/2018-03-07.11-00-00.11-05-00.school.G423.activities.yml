@@ -1,0 +1,12 @@
+- {'act': {'act2': {'person_enters_scene_through_structure': 1.0}, 'actors': [{'id1': 15, 'timespan': [{'tsr0': [7531, 7559]}]}], 'id2': 10, 'src_status': 'good', 'timespan': [{'tsr0': [7531, 7559]}]}}
+- {'act': {'act2': {'person_enters_scene_through_structure': 1.0}, 'actors': [{'id1': 18, 'timespan': [{'tsr0': [3573, 3634]}]}], 'id2': 13, 'src_status': 'good', 'timespan': [{'tsr0': [3573, 3634]}]}}
+- {'act': {'act2': {'person_enters_scene_through_structure': 1.0}, 'actors': [{'id1': 19, 'timespan': [{'tsr0': [3558, 3617]}]}], 'id2': 14, 'src_status': 'good', 'timespan': [{'tsr0': [3558, 3617]}]}}
+- {'act': {'act2': {'person_enters_scene_through_structure': 1.0}, 'actors': [{'id1': 23, 'timespan': [{'tsr0': [2873, 2925]}]}], 'id2': 18, 'src_status': 'good', 'timespan': [{'tsr0': [2873, 2925]}]}}
+- {'act': {'act2': {'person_exits_scene_through_structure': 1.0}, 'actors': [{'id1': 13, 'timespan': [{'tsr0': [6935, 7003]}]}], 'id2': 8, 'src_status': 'good', 'timespan': [{'tsr0': [6935, 7003]}]}}
+- {'act': {'act2': {'person_exits_scene_through_structure': 1.0}, 'actors': [{'id1': 20, 'timespan': [{'tsr0': [4482, 4535]}]}], 'id2': 15, 'src_status': 'good', 'timespan': [{'tsr0': [4482, 4535]}]}}
+- {'act': {'act2': {'person_exits_scene_through_structure': 1.0}, 'actors': [{'id1': 21, 'timespan': [{'tsr0': [364, 407]}]}], 'id2': 16, 'src_status': 'good', 'timespan': [{'tsr0': [364, 407]}]}}
+- {'act': {'act2': {'person_exits_scene_through_structure': 1.0}, 'actors': [{'id1': 22, 'timespan': [{'tsr0': [379, 425]}]}], 'id2': 17, 'src_status': 'good', 'timespan': [{'tsr0': [379, 425]}]}}
+- {'act': {'act2': {'person_opens_facility_door': 1.0}, 'actors': [{'id1': 12, 'timespan': [{'tsr0': [6935, 6992]}]}], 'id2': 7, 'src_status': 'good', 'timespan': [{'tsr0': [6935, 6992]}]}}
+- {'act': {'act2': {'person_opens_facility_door': 1.0}, 'actors': [{'id1': 14, 'timespan': [{'tsr0': [7531, 7559]}]}], 'id2': 9, 'src_status': 'good', 'timespan': [{'tsr0': [7531, 7559]}]}}
+- {'act': {'act2': {'person_talks_to_person': 1.0}, 'actors': [{'id1': 1, 'timespan': [{'tsr0': [0, 407]}]}, {'id1': 2, 'timespan': [{'tsr0': [0, 407]}]}], 'id2': 0, 'src_status': 'good', 'timespan': [{'tsr0': [0, 407]}]}}
+- {'act': {'act2': {'person_talks_to_person': 1.0}, 'actors': [{'id1': 4, 'timespan': [{'tsr0': [3574, 4535]}]}, {'id1': 3, 'timespan': [{'tsr0': [3574, 4535]}]}], 'id2': 1, 'src_status': 'good', 'timespan': [{'tsr0': [3574, 4535]}]}}

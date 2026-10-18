@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-17T23:29:31.020012+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "status": "deployed_and_verified",
+  "scope": "reference-style social buttons and compact WEZESO footer spacing; frontend-only API child image",
+  "image": "sha256:e59b0c719ae278b2265e0a6eb8a0749b3a4d19283deccc2ac6de16199b087c7d",
+  "base_image": "sha256:d5c15720f1c12b9b0379d313ef65e40dc833440c871ed1714df6899d814bb31d",
+  "frontend_archive_sha256": "13dec8c4fa9f171050c63cabc834a0060d5a4027fc204e4d4a3055bba8002058",
+  "ready": true,
+  "api_configuration_unchanged": true,
+  "profile_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/compact-20261018-13dec8c4/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/compact-20261018-13dec8c4/rollback.sh",
+  "rollback_command": "/home/ubuntu/forte/deploy/releases/compact-20261018-13dec8c4/rollback.sh",
+  "public_files_verified": 24,
+  "public_runtime_assets_exact_match": true,
+  "runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "social_links": {
+    "GitHub": "https://github.com/Wezzeso/forte",
+    "LinkedIn": "https://www.linkedin.com/in/timur-ryabov-9886763a4/",
+    "Instagram": "https://www.instagram.com/wezeso/"
+  },
+  "browser_validation": {
+    "service_status": "Сервис готов",
+    "console_errors_or_warnings": 0,
+    "exact_social_links_verified": true,
+    "overflow": false,
+    "spacing_desktop_mobile_verified": true
+  },
+  "build": "passed",
+  "proof_screenshot": "dist/compact-release-20261018/production-footer.png",
+  "public_verification_report": "dist/compact-release-20261018/public-verification.json"
+}

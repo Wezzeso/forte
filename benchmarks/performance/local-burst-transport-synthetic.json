@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:04:17.097825+00:00",
+  "environment": {
+    "os": "Windows",
+    "os_release": "11",
+    "architecture": "AMD64",
+    "logical_cpu_count": 12,
+    "python": "3.14.0",
+    "client_installed_versions": {
+      "httpx": "0.28.1",
+      "fastapi": "0.143.3",
+      "starlette": "1.8.0",
+      "pydantic": "2.14.1",
+      "vllm": null,
+      "torch": null,
+      "transformers": null
+    },
+    "server_versions": "unmeasured; client environment is not server evidence"
+  },
+  "input_kind": "synthetic_transport",
+  "evidence_scope": "transport_only_no_model",
+  "declared_server": {
+    "gpu_model": null,
+    "gpu_count": 0,
+    "gpu_vram_gib_each": null,
+    "model_revision": null,
+    "frame_budget": null,
+    "max_pixels_per_frame": null,
+    "metadata_provenance": "operator declaration; confirm against actual server inventory"
+  },
+  "input_metadata_aggregate": {
+    "status": "unmeasured",
+    "success_count": 0,
+    "failure_count": 0
+  },
+  "conditions": {
+    "mode": "burst",
+    "model_warmth": "unknown",
+    "whole_result_cache": "unknown",
+    "distinct_content_local_hash_check": true,
+    "local_input_probe_before_timing": false,
+    "deadline_seconds_from_client_upload_start": 2.0,
+    "poll_interval_seconds": 0.25,
+    "repeat_completed_get_per_successful_job": 0,
+    "request_timeout_seconds": 60
+  },
+  "boundaries": {
+    "T0_proxy_first_body_byte": "unmeasured",
+    "T1_api_last_body_byte": "ASGI-local when Server-Timing header exists",
+    "T2_durable_acceptance": "ASGI-local acceptance hook when installed",
+    "T3_worker_start": "unmeasured by HTTP client; use local worker StageTimer",
+    "T4_result_publication": "unmeasured by HTTP client; poll provides upper bound",
+    "T5_client_final_byte": "measured with client monotonic clock",
+    "client_last_chunk_to_ack": "client iterator yield to ACK; includes transport, not T2-T1"
+  },
+  "summary": {
+    "attempted": 5,
+    "completed": 0,
+    "failed": 5,
+    "http_request_count": 38,
+    "completed_repeat_failures": 0,
+    "timeouts": 5,
+    "metrics": {
+      "asgi_acceptance_after_body": {
+        "count": 5,
+        "p50_ms": 87.145,
+        "p95_ms": null,
+        "max_ms": 143.08,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "client_post_total": {
+        "count": 5,
+        "p50_ms": 233.7274,
+        "p95_ms": null,
+        "max_ms": 664.5868,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_asgi_lookup": {
+        "count": 29,
+        "p50_ms": 2.036,
+        "p95_ms": 6.201,
+        "max_ms": 13.017,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_full_transfer": {
+        "count": 29,
+        "p50_ms": 23.2665,
+        "p95_ms": 69.2046,
+        "max_ms": 73.0539,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_first_body_byte": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_full_transfer": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "upload_start_to_full_result_upper_bound": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      }
+    },
+    "targets": [
+      {
+        "target": "post_body_acceptance_p95",
+        "threshold_ms": 150,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_lookup_p95",
+        "threshold_ms": 25,
+        "status": "achieved",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "completed_first_body_byte_p95",
+        "threshold_ms": 50,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_safety",
+        "threshold_ms": 240000,
+        "status": "unmeasured",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      },
+      {
+        "target": "conservative_organizer_cutoff",
+        "threshold_ms": 300000,
+        "status": "unmeasured",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      }
+    ],
+    "inference_speed_claim": "not established by client transfer measurements",
+    "principal_benchmark_conditions_declared": false,
+    "condition_verification": "operator declaration only; novel-content and server cache audit required"
+  },
+  "vllm_metrics_discovery": {
+    "status": "unmeasured",
+    "names": []
+  },
+  "samples": [
+    {
+      "sample_id": "s001",
+      "input_bytes": 1048576,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 5,
+      "processing_get": [
+        {
+          "response_headers_ms": 19.5813,
+          "first_body_byte_ms": 19.9016,
+          "full_response_ms": 23.2665,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 13.017
+        },
+        {
+          "response_headers_ms": 17.1575,
+          "first_body_byte_ms": 21.8986,
+          "full_response_ms": 26.6459,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 4.452
+        },
+        {
+          "response_headers_ms": 49.2357,
+          "first_body_byte_ms": 52.2833,
+          "full_response_ms": 59.4089,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.72
+        },
+        {
+          "response_headers_ms": 39.0668,
+          "first_body_byte_ms": 45.767,
+          "full_response_ms": 49.0671,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.867
+        },
+        {
+          "response_headers_ms": 15.4863,
+          "first_body_byte_ms": 16.5923,
+          "full_response_ms": 19.4091,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.244
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 6,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 661.5049,
+        "first_body_byte_ms": 661.9033,
+        "full_response_ms": 664.3636,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 664.5868,
+        "client_last_chunk_to_ack_ms": 99.5782,
+        "asgi_post_body_acceptance_ms": 55.174
+      },
+      "client_observed_total_ms": 2003.7148
+    },
+    {
+      "sample_id": "s002",
+      "input_bytes": 1048576,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 7,
+      "processing_get": [
+        {
+          "response_headers_ms": 6.0434,
+          "first_body_byte_ms": 6.3263,
+          "full_response_ms": 8.8063,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.85
+        },
+        {
+          "response_headers_ms": 15.2848,
+          "first_body_byte_ms": 16.0846,
+          "full_response_ms": 19.7836,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.514
+        },
+        {
+          "response_headers_ms": 40.3915,
+          "first_body_byte_ms": 45.0324,
+          "full_response_ms": 52.0599,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.456
+        },
+        {
+          "response_headers_ms": 60.6641,
+          "first_body_byte_ms": 60.9622,
+          "full_response_ms": 69.2046,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.036
+        },
+        {
+          "response_headers_ms": 14.7492,
+          "first_body_byte_ms": 15.0769,
+          "full_response_ms": 18.0985,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.322
+        },
+        {
+          "response_headers_ms": 33.0773,
+          "first_body_byte_ms": 33.343,
+          "full_response_ms": 37.6796,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.994
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 8,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 222.3706,
+        "first_body_byte_ms": 222.6621,
+        "full_response_ms": 225.0716,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 225.3084,
+        "client_last_chunk_to_ack_ms": 134.513,
+        "asgi_post_body_acceptance_ms": 87.145
+      },
+      "exception_type": "TimeoutError",
+      "client_observed_total_ms": 2025.0511
+    },
+    {
+      "sample_id": "s003",
+      "input_bytes": 1048576,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 7,
+      "processing_get": [
+        {
+          "response_headers_ms": 10.1136,
+          "first_body_byte_ms": 10.4096,
+          "full_response_ms": 12.845,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 4.002
+        },
+        {
+          "response_headers_ms": 23.6352,
+          "first_body_byte_ms": 23.9495,
+          "full_response_ms": 26.5114,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.909
+        },
+        {
+          "response_headers_ms": 19.4767,
+          "first_body_byte_ms": 19.7914,
+          "full_response_ms": 22.4581,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.8
+        },
+        {
+          "response_headers_ms": 7.656,
+          "first_body_byte_ms": 7.9492,
+          "full_response_ms": 10.3381,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.074
+        },
+        {
+          "response_headers_ms": 6.5556,
+          "first_body_byte_ms": 6.846,
+          "full_response_ms": 10.6252,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.032
+        },
+        {
+          "response_headers_ms": 15.9559,
+          "first_body_byte_ms": 16.228,
+          "full_response_ms": 21.0354,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.284
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 8,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 267.5584,
+        "first_body_byte_ms": 268.2119,
+        "full_response_ms": 271.7861,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 272.0016,
+        "client_last_chunk_to_ack_ms": 183.4848,
+        "asgi_post_body_acceptance_ms": 143.08
+      },
+      "exception_type": "TimeoutError",
+      "client_observed_total_ms": 2027.1527
+    },
+    {
+      "sample_id": "s004",
+      "input_bytes": 1048576,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 7,
+      "processing_get": [
+        {
+          "response_headers_ms": 5.9682,
+          "first_body_byte_ms": 6.2351,
+          "full_response_ms": 9.347,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.911
+        },
+        {
+          "response_headers_ms": 6.6003,
+          "first_body_byte_ms": 6.8496,
+          "full_response_ms": 9.5767,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.305
+        },
+        {
+          "response_headers_ms": 49.0549,
+          "first_body_byte_ms": 49.6557,
+          "full_response_ms": 55.5893,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.871
+        },
+        {
+          "response_headers_ms": 37.8197,
+          "first_body_byte_ms": 39.5112,
+          "full_response_ms": 47.8517,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.946
+        },
+        {
+          "response_headers_ms": 14.0491,
+          "first_body_byte_ms": 19.8255,
+          "full_response_ms": 23.0009,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.704
+        },
+        {
+          "response_headers_ms": 26.6618,
+          "first_body_byte_ms": 27.5584,
+          "full_response_ms": 31.0532,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.992
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 8,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 230.7836,
+        "first_body_byte_ms": 231.0569,
+        "full_response_ms": 233.5342,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 233.7274,
+        "client_last_chunk_to_ack_ms": 150.9024,
+        "asgi_post_body_acceptance_ms": 121.174
+      },
+      "exception_type": "TimeoutError",
+      "client_observed_total_ms": 2025.12
+    },
+    {
+      "sample_id": "s005",
+      "input_bytes": 1048576,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 7,
+      "processing_get": [
+        {
+          "response_headers_ms": 16.2737,
+          "first_body_byte_ms": 16.4774,
+          "full_response_ms": 19.8731,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.933
+        },
+        {
+          "response_headers_ms": 21.7008,
+          "first_body_byte_ms": 24.4641,
+          "full_response_ms": 28.9553,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 6.201
+        },
+        {
+          "response_headers_ms": 69.2102,
+          "first_body_byte_ms": 69.5898,
+          "full_response_ms": 73.0539,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.557
+        },
+        {
+          "response_headers_ms": 44.9963,
+          "first_body_byte_ms": 45.2323,
+          "full_response_ms": 47.5944,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.927
+        },
+        {
+          "response_headers_ms": 17.6936,
+          "first_body_byte_ms": 19.6197,
+          "full_response_ms": 22.4769,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.666
+        },
+        {
+          "response_headers_ms": 33.4984,
+          "first_body_byte_ms": 33.9984,
+          "full_response_ms": 37.4839,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 3.524
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 8,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 181.7635,
+        "first_body_byte_ms": 182.4325,
+        "full_response_ms": 185.1976,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 185.4137,
+        "client_last_chunk_to_ack_ms": 100.8035,
+        "asgi_post_body_acceptance_ms": 61.41
+      },
+      "exception_type": "TimeoutError",
+      "client_observed_total_ms": 2014.1305
+    }
+  ]
+}

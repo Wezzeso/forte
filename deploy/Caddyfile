@@ -1,0 +1,31 @@
+{
+    # Admin interface is unnecessary for this deployment.
+    admin off
+    # Reverse-proxy error entries contain request headers. Keep these out of
+    # service logs so a failed upstream cannot record the jury API key.
+    log default {
+        exclude http.log.error
+    }
+}
+
+{$FORTE_SITE_ADDRESS::80} {
+    encode zstd gzip
+    request_body {
+        # Allows multipart overhead above the API's 256 MiB file limit.
+        max_size {$FORTE_PROXY_MAX_BODY:272MB}
+    }
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy same-origin
+        -Server
+    }
+    # FastAPI serves the built UI and authenticated routes from one origin.
+    # No access log is enabled: API keys, query strings, or media metadata are
+    # not copied into a proxy access log.
+    reverse_proxy api:8000 {
+        transport http {
+            dial_timeout 5s
+            response_header_timeout 30s
+        }
+    }
+}

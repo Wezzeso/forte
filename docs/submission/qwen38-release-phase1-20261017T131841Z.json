@@ -1,0 +1,27 @@
+{
+  "archive": "tmp/qwen38-ml-phase1-20261017T131841Z.tar.gz",
+  "archive_and_all_member_hashes_verified": true,
+  "archive_bytes": 443947,
+  "archive_sha256": "a2464bf268c1bfc639b6ae630b33b09b79505fa5bd1804579329c69b10066e6e",
+  "broader_draft_source_included_but_unselected": true,
+  "candidate_deployed": false,
+  "captured_at_utc": "2026-10-17T13:18:55.461177+00:00",
+  "core_files_sha256": {
+    "configs/serving/qwen38/public-candidate.manifest.json": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225",
+    "serving/qwen38_identity.py": "7aebbdac20d0f3f476f930a6dcba114704b42ef1da7966e7889d644c720a7ce6",
+    "serving/stage_qwen38.py": "1b6f05035d8ab0840adc7ebdddef727fe309e3cab7274d6f5861c263b07cc65f",
+    "training/architectures.py": "2429756bce1d5f99427c459241be9176e31ae56b446f7feeb5891d34fe82cfb7",
+    "training/check_gradient.py": "73801e89c36a1a3f1022b59d223aacb82e1983a9a0d0bd846e2309c78fa9db5e",
+    "training/data.py": "b56f73a3f69d904fbc475d871d2ff75f5665369630ede979b16e20929e202996",
+    "training/train.py": "83b279ff12feee32a8e79bdb1a9b4b85d1f3d224cb1170c90ec79f244172b066"
+  },
+  "core_matches_current_working_source_at_receipt": true,
+  "file_count": 169,
+  "git_commit": null,
+  "manifest": "tmp/qwen38-ml-phase1-20261017T131841Z.tar.gz.manifest.json",
+  "manifest_sha256": "17ecd7e300f13d9be0f878ba4c0223598fb66ab85f40a0e72738aa66c06caeb6",
+  "private_data_included": false,
+  "purpose": "Pinned public ML source for actual A100 generated synthetic gradient smoke only; no private-video train authorization or deployment claim.",
+  "schema_version": "forte.qwen38.phase1-source-release.v1",
+  "training_performed": false
+}

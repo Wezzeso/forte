@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "frame_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Frame Id",
+      "type": "string"
+    },
+    "pts_sec": {
+      "minimum": 0,
+      "title": "Pts Sec",
+      "type": "number"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "title": "Height",
+      "type": "integer"
+    },
+    "job_id": {
+      "anyOf": [
+        {
+          "maxLength": 256,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Job Id"
+    },
+    "rotation_deg": {
+      "default": 0,
+      "enum": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "title": "Rotation Deg",
+      "type": "integer"
+    },
+    "source_pts": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Pts"
+    },
+    "jpeg_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jpeg Sha256"
+    }
+  },
+  "required": [
+    "frame_id",
+    "pts_sec",
+    "path",
+    "width",
+    "height"
+  ],
+  "title": "FrameRef",
+  "type": "object"
+}

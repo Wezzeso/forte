@@ -1,0 +1,8 @@
+# Four public source/lock files only. No private material enters the context.
+**
+!deploy/
+deploy/**
+!deploy/Dockerfile.qwen38-training
+!deploy/requirements-qwen38.lock
+!deploy/qwen38-training-runtime-lock.json
+!deploy/qwen38_runtime_check.py

@@ -1,0 +1,57 @@
+{
+  "status": "tested_no_benefit_rolled_back_to_exact_before_source",
+  "production_changed": true,
+  "baseline_edge_container": "bb4da484b4bd",
+  "baseline_edge_started_at": "2026-10-17T10:26:30.984544271Z",
+  "baseline_image_id": "sha256:f77f856a30f0004200b36b322d61da17fade31e24875699d77fb968399b9eb77",
+  "baseline_effective_configuration": {
+    "binary": "caddy",
+    "subcommand": "reverse-proxy",
+    "from": "http://:80",
+    "to": "https://forte-review-wd88a7vvt.gobrev.dev",
+    "explicit_transport_version_flags": false,
+    "godebug_environment_present": false,
+    "runtime_environment_names": [
+      "PATH",
+      "CADDY_VERSION",
+      "XDG_CONFIG_HOME",
+      "XDG_DATA_HOME"
+    ],
+    "admin_api": "disabled by reverse-proxy CLI shortcut"
+  },
+  "controlled_local_protocol_test": {
+    "synthetic_only": true,
+    "scope": "Local isolated Docker network and generated test TLS certificate; no production traffic or media",
+    "caddy_version": "2.11.7",
+    "baseline_upstream_http_version": "2.0",
+    "godebug_http2client_0_upstream_http_version": "2.0",
+    "explicit_transport_versions_1_1_upstream_http_version": "1.1",
+    "conclusion": "GODEBUG does not force this Caddy transport to HTTP/1.1; explicit transport versions is required for a valid hypothesis test. This does not establish the production upload failure's cause."
+  },
+  "supported_candidate": "deploy/dokploy-ingress.http1-test.yaml",
+  "candidate_exact_embedded_config_validated": true,
+  "production_tls_verification_preserved": true,
+  "rollback_source": "infra/dokploy-ingress-before-http1.yaml",
+  "rollback_source_sha256": "8a695e81f58e68203329aee3b5d146679e38fe4b588143fa22564094f2694df5",
+  "candidate_sha256": "2d9dc8399079f61e0ec935ffb298e2ecc2fed9983a078287e24e31c7b9dd7582",
+  "next_gate": "HTTP1 experiment is closed and rolled back. Root is preparing a separate direct trusted API bootstrap plus strict CORS fix.",
+  "model_api_worker_global_traefik_unchanged": true,
+  "references": [
+    "https://raw.githubusercontent.com/caddyserver/caddy/v2.11.7/modules/caddyhttp/reverseproxy/httptransport.go",
+    "https://pkg.go.dev/net/http",
+    "https://caddyserver.com/docs/command-line"
+  ],
+  "current_explicit_http1_override": false,
+  "rollback_running_container": "21ae6aad34ee",
+  "generated_public_trial": {
+    "file_bytes": 28718927,
+    "baseline_normal_elapsed_seconds": 32.998,
+    "after_http1_elapsed_seconds": 31.8257493,
+    "after_http1_file_bytes_yielded": 15728640,
+    "multipart_footer_yielded": false,
+    "http_response_received": false,
+    "error": "ReadError",
+    "benefit_established": false,
+    "report": "benchmarks/performance/generated-transport-http1.json"
+  }
+}

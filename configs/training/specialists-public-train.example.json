@@ -1,0 +1,49 @@
+{
+  "schema_version": "forte.specialists.public-train.v1",
+  "recipe_predeclared": true,
+  "recipe_reference": "public-group-policy-v1: public-data transfer only, one fixed recipe, no organizer frames",
+  "rfdetr_version": "1.11.2",
+  "model_class": "RFDETRSmall",
+  "dataset_dir": "training/private/public_datasets/combined_public/dataset",
+  "expected_classes": ["single_banknote", "id_card"],
+  "expected_dataset_lock_sha256": "REPLACE_WITH_VERIFIED_PUBLIC_LOCK_SHA256",
+  "pretrain_weights": "weights/private/rf-detr-small.pth",
+  "expected_pretrain_weights_sha256": "REPLACE_WITH_VERIFIED_OFFICIAL_WEIGHT_SHA256",
+  "output_dir": "training/private/public_datasets/combined_public/run",
+  "device": "cuda:0",
+  "freeze_encoder": true,
+  "gradient_checkpointing": false,
+  "amp_dtype": "bf16",
+  "batch_size": 1,
+  "eval_batch_size": 1,
+  "grad_accum_steps": 8,
+  "resolution": 512,
+  "defer_sealed_test": true,
+  "train_data_policy": {
+    "schema_version": "forte.specialists.public-augmentation.v1",
+    "seed": 20261018,
+    "class_balanced_sampling": true,
+    "small_object_zoomout": {
+      "probability": 0.8,
+      "reference_resolution": 512,
+      "longest_box_min_px": 12,
+      "longest_box_max_px": 96
+    }
+  },
+  "multi_scale": false,
+  "use_ema": false,
+  "epochs": 30,
+  "early_stopping_patience": 5,
+  "lr": 0.0001,
+  "seed": 20261018,
+  "gpu_memory_budget_mib": 5120,
+  "minimum_free_margin_mib": 1024,
+  "max_fit_seconds": 14400,
+  "evaluation_reserve_seconds": 1200,
+  "stop_at_utc": "2026-10-18T06:01:00Z",
+  "test_exposure_registry_dir": "training/private/public-test-exposures",
+  "compute_release_authorization": {
+    "released_by_A18_or_root": false,
+    "release_reference": "REPLACE_WITH_EXPLICIT_SHARED_GPU_COMPUTE_RELEASE"
+  }
+}

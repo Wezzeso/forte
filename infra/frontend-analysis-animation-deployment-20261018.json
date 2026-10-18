@@ -1,0 +1,33 @@
+{
+  "image": "sha256:b6dc3251d452097cf9c8c6e70bd7be729aeb74f1fc7cc610caa6a607e4b9cdbe",
+  "archive_sha256": "79dac98f07cc571bdeb5feaede7eddce10da4ffb64cb42d0a31451485e37dab1",
+  "ready": true,
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "api_configuration_unchanged": true,
+  "profile_sha256": "8fc400ec761c0c0484938fc84b750fbbba5f7b98fa2e34f011b9e08e68b140fd",
+  "served_files_verified": 26,
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/analysis-animation-20261018-79dac98f/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/analysis-animation-20261018-79dac98f/rollback.sh",
+  "status": "deployed_and_verified",
+  "recorded_at": "2026-10-18T06:01:00.154436+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "scope": "animated Phosphor magnifying glass scanning the portrait film illustration on the analyzing screen",
+  "public_files_verified": 26,
+  "runtime_bootstrap_verified": true,
+  "browser_validation": {
+    "magnifier_moves": true,
+    "reduced_motion_respected": true,
+    "mobile_no_overflow": true,
+    "browser_errors": 0,
+    "synthetic_intercepted_api_only": true
+  },
+  "build": "passed",
+  "processing_regression": "passed",
+  "model_requests_performed": 0
+}

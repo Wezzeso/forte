@@ -1,0 +1,17 @@
+{
+  "versions": {
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "rfdetr": "1.11.2",
+    "supervision": "0.29.1",
+    "pytorch_lightning": "2.6.6",
+    "torchmetrics": "1.8.2",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "pycocotools": "2.0.11",
+    "numpy": "2.2.6"
+  },
+  "cuda_build": "12.9",
+  "cuda_initialized": false,
+  "gpu_device_nodes": []
+}

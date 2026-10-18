@@ -1,0 +1,201 @@
+{
+  "active_profile": {
+    "FORTE_COMPACT_FRAME_IDS": "true",
+    "FORTE_CONCISE_OBSERVATIONS": "true",
+    "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+    "FORTE_JOB_TIMEOUT_SECONDS": "285",
+    "FORTE_MAX_CONCURRENT_CLIPS": "2",
+    "FORTE_MAX_CONCURRENT_JOBS": "4",
+    "FORTE_MAX_INFLIGHT_PER_JOB": "2",
+    "FORTE_MAX_REFINEMENT_PASSES": "8",
+    "FORTE_MODEL_BASE_URL": "http://model:8000/v1",
+    "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+    "FORTE_STAGED_SCREENING": "true",
+    "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+  },
+  "api_readiness": {
+    "body": {
+      "components": {
+        "authentication": true,
+        "database": true,
+        "model": true,
+        "storage": true,
+        "worker": true
+      },
+      "status": "ready"
+    },
+    "status": 200
+  },
+  "captured_at_utc": "2026-10-17T12:49:33.781049+00:00",
+  "durable_job_counts": {
+    "active_jobs": 0,
+    "completed_jobs": 6,
+    "failed_jobs": 9,
+    "total_jobs": 15
+  },
+  "gpu": {
+    "gpu_util_percent": 0,
+    "memory_free_mib": 10327,
+    "memory_used_mib": 70829,
+    "memory_util_percent": 0,
+    "power_watts": 67.36
+  },
+  "isolated_running_containers": {
+    "forte-ml": [],
+    "forte-teacher": []
+  },
+  "model_queue": {
+    "vllm:num_requests_running": 0,
+    "vllm:num_requests_waiting": 0
+  },
+  "new_model_calls": 0,
+  "private_content_included": false,
+  "production_containers": {
+    "api": {
+      "health": "healthy",
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T12:19:46.726234557Z",
+      "status": "running"
+    },
+    "db": {
+      "health": "healthy",
+      "image": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at_utc": "2026-10-17T10:16:06.044486303Z",
+      "status": "running"
+    },
+    "model": {
+      "health": "healthy",
+      "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at_utc": "2026-10-17T10:36:11.954566283Z",
+      "status": "running"
+    },
+    "worker": {
+      "health": "healthy",
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T12:19:46.713374736Z",
+      "status": "running"
+    }
+  },
+  "schema_version": "forte.read-only-project-handoff-status.v1",
+  "service_mutations": false,
+  "teacher": {
+    "closure_exists": true,
+    "closure_sha256": "85701feb04be18b774cf8d4f4d66bdcdbc2f5f52e05ae67a314c4638261758c5",
+    "phase2": {
+      "aggregate": {
+        "completed_records": 0,
+        "completed_seconds": 32,
+        "eligible_frame_targets": 256,
+        "frame_fact_targets": 256,
+        "frame_target_absent": 181,
+        "frame_target_present": 46,
+        "frame_target_unclear": 29,
+        "human_reviewed_records": 0,
+        "invalid_output_requests": 0,
+        "masked_frame_targets": 0,
+        "model_requests": 30,
+        "native_source_refs": 252,
+        "partial_records": 11,
+        "partition": "train",
+        "planned_records": 28,
+        "resumed_seconds": 2,
+        "runtime_attested_windows": 32,
+        "status": "teacher_proposals_written_private",
+        "training_authorized": false,
+        "valid_teacher_windows": 32,
+        "window_fact_decisions": 608,
+        "window_unclear_facts": 76
+      },
+      "returncode": 0
+    },
+    "phase2_pid198440_state": "exited",
+    "smoke": {
+      "aggregate": {
+        "completed_records": 0,
+        "completed_seconds": 2,
+        "eligible_frame_targets": 16,
+        "frame_fact_targets": 16,
+        "frame_target_absent": 7,
+        "frame_target_present": 2,
+        "frame_target_unclear": 7,
+        "human_reviewed_records": 0,
+        "invalid_output_requests": 0,
+        "masked_frame_targets": 0,
+        "model_requests": 2,
+        "native_source_refs": 29,
+        "partial_records": 1,
+        "partition": "train",
+        "planned_records": 28,
+        "resumed_seconds": 0,
+        "runtime_attested_windows": 2,
+        "status": "teacher_proposals_written_private",
+        "training_authorized": false,
+        "valid_teacher_windows": 2,
+        "window_fact_decisions": 38,
+        "window_unclear_facts": 17
+      },
+      "returncode": 0
+    }
+  },
+  "timelens_cpu_audit": {
+    "cpu_only": true,
+    "cuda_initialized": false,
+    "final_runner_required_sha256": "752772be9f7cd5136d77cf0ec10198b01838827f7ca32b9f2d7a74b9974b9231",
+    "matches_final_runner": false,
+    "model_forward_calls": 0,
+    "model_weights_loaded": false,
+    "private_source_files_read": 0,
+    "receipt_exists": true,
+    "receipt_sha256": "253f3d8ba5a9eb374636348a8bb9d87e997ae75f566e2ac323b4c3badab89071",
+    "runner_source_sha256": "b3555a4d4d180ecd9fd5704cde62c6be48b8a4e466ad900d22aff29011417a91",
+    "target_runtime_verified": true
+  },
+  "timelens_remote_snapshot": {
+    "complete_hash_verification_receipt_found": false,
+    "root_exists": false,
+    "weight_bytes": 0,
+    "weight_file_count": 0
+  },
+  "w2_output": {
+    "checkpoint_manifest_exists": false,
+    "directory_exists": false,
+    "head_weights_exists": false
+  },
+  "w2_training_or_evaluation_process_count": 0,
+  "budget": {
+    "scheduler": {
+      "State": "Ready",
+      "NextRunUtc": "2026-10-18T06:01:25.0000000Z",
+      "WakeToRun": true,
+      "StartWhenAvailable": true,
+      "RestartCount": 10,
+      "RestartInterval": "PT2M",
+      "ExecutionTimeLimit": "PT30M",
+      "CapturedUtc": "2026-10-17T12:49:32.4627150Z"
+    },
+    "started_at_utc": "2026-10-17T10:01:25Z",
+    "approved_stop_at_utc": "2026-10-18T06:01:25Z",
+    "approved_runtime_hours": 20,
+    "current_account_cap_usd": 50,
+    "other_account_reserved_usd": 50,
+    "hourly_running_rate_usd": 2.03,
+    "expected_running_charge_usd": 5.69,
+    "expected_charge_is_not_observed_bill": true,
+    "retained_storage_rate_usd_per_hour": 0.05,
+    "compute_stop_preserves_data": true,
+    "operator_pc_network_required_for_guard": true
+  },
+  "w2_preparation": {
+    "source_archive_sha256": "c7486fc8e99702d811c2aa5db547c1a101086f0292e5bce3b701f100dc9456fb",
+    "source_files": 155,
+    "source_root": "/home/ubuntu/forte-ml-code-c7486fc8e997",
+    "runtime_env": "/data/forte-ml/private/runtime-w2-c7486fc8e997.env",
+    "metadata_preparation_archive_sha256": "65add2409846cefc14888c86fab07df8cb26893bcc8a86974b2b6224308f6e3c",
+    "metadata_preparation_root": "/data/forte-ml/private/w2-preparation-20261017T123819284068Z",
+    "inspection_receipt_sha256": "5cc43815509d967cd1ab4bf850c739aec6f0ad5ff4e0c9d4a163c5979032b2f3",
+    "final_execution_config_prepared_locally_sha256": "7710c5e09991ae6a7bed6343fb72c7b52cced21bbc689563a8e1ab521f078ec8",
+    "fresh_final_metadata_bundle_created": false,
+    "fit_launched": false,
+    "evaluation_launched": false
+  }
+}

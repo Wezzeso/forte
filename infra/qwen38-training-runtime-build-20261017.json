@@ -1,0 +1,70 @@
+{
+  "schema_version": "forte.qwen38.training-runtime-build.v1",
+  "status": "built_metadata_verified_gpu_unverified",
+  "captured_at_utc": "2026-10-17T13:18:42.930205+00:00",
+  "image_tag": "forte-qwen38-training:cu129-bnb0502-4ef81261129a",
+  "image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "repo_digests": [],
+  "image_size_bytes": 26887993808,
+  "parent_image_id": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "parent_image_tag": "forte-features:cu129-w1",
+  "public_context_sha256": "4ef81261129a9cb0ca5f8ea3d1ab9e00a1643cafeef238767604cc26d6383390",
+  "public_context_root": "/data/forte-ml/public/qwen38-runtime-build-4ef81261129a",
+  "public_context_file_count": 5,
+  "runtime_check": {
+    "captured_at_utc": "2026-10-17T13:18:42.881814+00:00",
+    "cuda_initialized": false,
+    "full_qwen38_model_verified": false,
+    "gpu_smoke_performed": false,
+    "hybrid_kernel_execution_verified": false,
+    "inspection": "package_metadata_and_exact_installed_file_hashes",
+    "model_weights_opened": false,
+    "optional_kernel_packages": {
+      "causal-conv1d": null,
+      "fla-core": null,
+      "flash-linear-attention": null
+    },
+    "private_media_opened": false,
+    "runtime_lock_sha256": "6a6e4485c367923e6d1b7e1ae14f6b4ba1af9f30cd1d4451b1e39769ff385791",
+    "runtime_packages": {
+      "accelerate": "1.15.0",
+      "av": "19.0.1",
+      "bitsandbytes": "0.50.2",
+      "numpy": "2.2.6",
+      "peft": "0.21.2",
+      "pillow": "12.3.0",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.2",
+      "torch": "2.13.0+cu129",
+      "torchvision": "0.28.0+cu129",
+      "transformers": "5.17.0",
+      "triton": "3.7.1"
+    },
+    "schema_version": "forte.qwen38.runtime-check.v1",
+    "status": "passed",
+    "verified_bnb_files": {
+      "bitsandbytes/cextension.py": "a7ce4d7bcb504bf7d268ce96658dbe832804b6f6ed999f61eaf2beeb9385c9bd",
+      "bitsandbytes/libbitsandbytes_cuda128.so": "d6dd06a7bf8b2ecc43dd7d7dc5b558dc70884fd193252a8597ee065a9c8b0f4e",
+      "bitsandbytes/nn/modules.py": "f7ab2160681e2f089caae80d6fd283ac6a9b9f1b82269e6f395c3b046faf606e"
+    }
+  },
+  "wall_seconds": 2.4321472460014775,
+  "gpu_access": false,
+  "private_input_used": false,
+  "production_service_changes": false,
+  "full_qwen38_model_tested": false,
+  "source_sha256": {
+    "deploy/Dockerfile.qwen38-training": "7f4d0d14835a8f59a9a88437d1fa2f0410810e0085696ae4d94c3ffdd9676c91",
+    "deploy/Dockerfile.qwen38-training.dockerignore": "ae222467fac82dcdf9c69b22bb220ae549d61c99463e61abf3c8c238a3c168a2",
+    "deploy/requirements-qwen38.lock": "59471165fcaae1028cd4745475ef1d30077525b6ca2137e4708cf74be480e7d9",
+    "deploy/qwen38-training-runtime-lock.json": "6a6e4485c367923e6d1b7e1ae14f6b4ba1af9f30cd1d4451b1e39769ff385791",
+    "deploy/qwen38_runtime_check.py": "68e6ec96bb161e33c391688458190ef00213e9114d5d62002a79f4fe2f2ec207"
+  },
+  "metadata_guard_tests": {
+    "passed": 13,
+    "gpu_calls": 0,
+    "private_input_used": false
+  },
+  "host_alias": "forte-a100-smoke-20261017",
+  "local_captured_at_utc": "2026-10-17T13:18:43.301170+00:00"
+}

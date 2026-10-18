@@ -1,0 +1,29 @@
+{
+  "captured_at_utc": "2026-10-17T16:37:52.382372+00:00",
+  "sources": {
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "serving/qwen38_source_lineage.py": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+    "evaluation/qwen38_quality_equivalence.py": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+    "serving/qwen38_adapter_contract.py": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222",
+    "serving/qwen38_identity.py": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959",
+    "deploy/qwen38_bind_runtime.py": "630b7fa4bd009fd4fb03ebd82e9801a4291696fc4ba1e62ee3d9cdb015b1b2fe",
+    "qa/integration/qwen38_timeout_lineage_test.py": "935f227058aadee8163828f05987617e8ba3794aae0d7726ce7b64de63d6bee7",
+    "serving/tests/test_qwen38_adapter_contract.py": "fb36e3b3325dce682b49eb0df5285b0f63655f1f21e405b10fba6ec16cdf491b",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664",
+    "serving/tests/test_qwen38_candidate.py": "4aaabeb53a0c39b0f565f1cfba6cfce0a5a31468ffd4e55cc71c9faaa1da08aa",
+    "tests/test_candidate_pipeline_config.py": "8ae1510a345466b686c39a70ee94c18691c9b5475f1ac8169e3e02be71703252",
+    "tests/test_qwen38_quality_equivalence.py": "8181574bf899305d70f8d6ec048a28e9ef569da1da30f37890996a84c13d25cc",
+    "tests/test_qwen38_quality_family.py": "52fa4766bd4b9a5a573a61ace9e1ec4ffab6bd25cc45c160f481746a0579433b",
+    "tests/test_qwen38_untuned.py": "6c93647689cd0388b096f8596cb3a1ac3151f94b8efae2bf744a9b87eb612597"
+  },
+  "tests": [
+    "qa/integration/qwen38_timeout_lineage_test.py",
+    "serving/tests/test_qwen38_adapter_contract.py",
+    "serving/tests/test_qwen38_runtime_binding.py",
+    "serving/tests/test_qwen38_candidate.py",
+    "tests/test_candidate_pipeline_config.py",
+    "tests/test_qwen38_quality_equivalence.py",
+    "tests/test_qwen38_quality_family.py",
+    "tests/test_qwen38_untuned.py"
+  ]
+}

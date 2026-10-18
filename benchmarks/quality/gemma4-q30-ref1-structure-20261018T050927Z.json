@@ -1,0 +1,1773 @@
+{
+  "reference": {
+    "videos": 40,
+    "verdict_counts": {
+      "no_violation": 24,
+      "violation": 16
+    },
+    "videos_with_states": 40,
+    "state_frames": 1277,
+    "state_value_counts": {
+      "cashier_at_desk": {
+        "true": 1042,
+        "false": 235
+      },
+      "cashier_in_room": {
+        "true": 1193,
+        "false": 84
+      },
+      "client_at_desk": {
+        "false": 829,
+        "true": 448
+      },
+      "person_at_door": {
+        "false": 937,
+        "true": 340
+      },
+      "cash_in_hands": {
+        "false": 1124,
+        "true": 153
+      },
+      "cash_bag": {
+        "false": 1151,
+        "true": 126
+      },
+      "id_card_shown": {
+        "false": 975,
+        "true": 302
+      },
+      "counting_machine": {
+        "false": 1191,
+        "true": 86
+      },
+      "detector": {
+        "false": 1273,
+        "true": 4
+      },
+      "hand_counting": {
+        "false": 1170,
+        "true": 107
+      },
+      "cash_on_desk": {
+        "false": 1121,
+        "true": 156
+      },
+      "valuables_on_desk": {
+        "false": 1038,
+        "true": 239
+      },
+      "drink": {
+        "false": 1257,
+        "true": 20
+      },
+      "personal_items": {
+        "false": 1270,
+        "true": 7
+      },
+      "cashier_seat": {
+        "true": 684,
+        "false": 593
+      },
+      "client_seat": {
+        "false": 296,
+        "true": 285,
+        "missing": 696
+      },
+      "desk.cash": {
+        "false": 1121,
+        "true": 156
+      },
+      "desk.cash_bag": {
+        "false": 1223,
+        "true": 54
+      },
+      "desk.coins_or_valuables": {
+        "false": 1247,
+        "true": 30
+      },
+      "desk.drink": {
+        "false": 1257,
+        "true": 20
+      },
+      "desk.coat_or_handbag": {
+        "false": 1270,
+        "true": 7
+      },
+      "desk.id_or_document": {
+        "false": 979,
+        "true": 298
+      },
+      "laptop": {
+        "content": 319,
+        "closed_or_off": 858,
+        "not_visible": 57,
+        "lock_screen": 43
+      },
+      "other_people": {
+        "0": 1161,
+        "1": 112,
+        "2": 4
+      }
+    },
+    "state_transition_counts": {
+      "cashier_at_desk": {
+        "changes": 46,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0372
+      },
+      "cashier_in_room": {
+        "changes": 25,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0202
+      },
+      "client_at_desk": {
+        "changes": 42,
+        "adjacent_pairs": 1237,
+        "fraction": 0.034
+      },
+      "person_at_door": {
+        "changes": 151,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1221
+      },
+      "cash_in_hands": {
+        "changes": 182,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1471
+      },
+      "cash_bag": {
+        "changes": 27,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0218
+      },
+      "id_card_shown": {
+        "changes": 124,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1002
+      },
+      "counting_machine": {
+        "changes": 79,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0639
+      },
+      "detector": {
+        "changes": 8,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0065
+      },
+      "hand_counting": {
+        "changes": 96,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0776
+      },
+      "cash_on_desk": {
+        "changes": 111,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0897
+      },
+      "valuables_on_desk": {
+        "changes": 118,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0954
+      },
+      "drink": {
+        "changes": 19,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0154
+      },
+      "personal_items": {
+        "changes": 1,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0008
+      },
+      "cashier_seat": {
+        "changes": 60,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0485
+      },
+      "client_seat": {
+        "changes": 72,
+        "adjacent_pairs": 565,
+        "fraction": 0.1274
+      },
+      "desk.cash": {
+        "changes": 111,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0897
+      },
+      "desk.cash_bag": {
+        "changes": 10,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0081
+      },
+      "desk.coins_or_valuables": {
+        "changes": 3,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0024
+      },
+      "desk.drink": {
+        "changes": 19,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0154
+      },
+      "desk.coat_or_handbag": {
+        "changes": 1,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0008
+      },
+      "desk.id_or_document": {
+        "changes": 124,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1002
+      },
+      "laptop": {
+        "changes": 48,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0388
+      },
+      "other_people": {
+        "changes": 82,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0663
+      }
+    },
+    "layout_status_counts": {
+      "desk": {
+        "valid": 40
+      },
+      "laptop": {
+        "valid": 40
+      },
+      "safe": {
+        "valid": 40
+      },
+      "door": {
+        "valid": 40
+      },
+      "counting_machine": {
+        "valid": 40
+      },
+      "detector": {
+        "valid": 40
+      },
+      "cashier_chair": {
+        "valid": 40
+      },
+      "client_chair": {
+        "valid": 16,
+        "missing": 24
+      }
+    },
+    "event_type_counts": {
+      "WORKSTATION_UNLOCKED": 2,
+      "CASH_LEFT_UNATTENDED": 3,
+      "COLLECTOR_NO_DOCUMENTS": 2,
+      "UNAUTHORIZED_PERSON": 1,
+      "PERSONAL_ITEMS": 3,
+      "CASH_ROOM_DOOR_OPEN": 3,
+      "COUNT_WITHOUT_CLIENT": 1,
+      "PREVIOUS_CASH_ON_DESK": 2
+    },
+    "candidate_type_counts": {
+      "WORKSTATION_UNLOCKED": 2,
+      "CASH_LEFT_UNATTENDED": 3,
+      "COLLECTOR_NO_DOCUMENTS": 2,
+      "UNAUTHORIZED_PERSON": 1,
+      "PERSONAL_ITEMS": 3,
+      "CASH_ROOM_DOOR_OPEN": 3,
+      "COUNT_WITHOUT_CLIENT": 1,
+      "PREVIOUS_CASH_ON_DESK": 2
+    },
+    "failure_code_counts": {}
+  },
+  "candidate": {
+    "videos": 40,
+    "verdict_counts": {
+      "no_violation": 31,
+      "violation": 9
+    },
+    "videos_with_states": 40,
+    "state_frames": 1277,
+    "state_value_counts": {
+      "cashier_at_desk": {
+        "true": 1068,
+        "false": 209
+      },
+      "cashier_in_room": {
+        "true": 1174,
+        "false": 103
+      },
+      "client_at_desk": {
+        "false": 853,
+        "true": 424
+      },
+      "person_at_door": {
+        "false": 1188,
+        "true": 89
+      },
+      "cash_in_hands": {
+        "false": 1149,
+        "true": 128
+      },
+      "cash_bag": {
+        "false": 1156,
+        "true": 121
+      },
+      "id_card_shown": {
+        "false": 1129,
+        "true": 148
+      },
+      "counting_machine": {
+        "false": 1248,
+        "true": 29
+      },
+      "detector": {
+        "false": 1266,
+        "true": 11
+      },
+      "hand_counting": {
+        "false": 1202,
+        "true": 75
+      },
+      "cash_on_desk": {
+        "false": 1202,
+        "true": 75
+      },
+      "valuables_on_desk": {
+        "false": 1143,
+        "true": 134
+      },
+      "drink": {
+        "false": 1273,
+        "true": 4
+      },
+      "personal_items": {
+        "false": 1232,
+        "true": 45
+      },
+      "cashier_seat": {
+        "true": 572,
+        "false": 432,
+        "missing": 273
+      },
+      "client_seat": {
+        "missing": 871,
+        "true": 276,
+        "false": 130
+      },
+      "desk.cash": {
+        "false": 1202,
+        "true": 75
+      },
+      "desk.cash_bag": {
+        "false": 1236,
+        "true": 41
+      },
+      "desk.coins_or_valuables": {
+        "false": 1248,
+        "true": 29
+      },
+      "desk.drink": {
+        "false": 1273,
+        "true": 4
+      },
+      "desk.coat_or_handbag": {
+        "false": 1232,
+        "true": 45
+      },
+      "desk.id_or_document": {
+        "false": 1217,
+        "true": 60
+      },
+      "laptop": {
+        "not_visible": 1051,
+        "closed_or_off": 179,
+        "lock_screen": 20,
+        "content": 27
+      },
+      "other_people": {
+        "0": 822,
+        "1": 451,
+        "2": 4
+      }
+    },
+    "state_transition_counts": {
+      "cashier_at_desk": {
+        "changes": 100,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0808
+      },
+      "cashier_in_room": {
+        "changes": 21,
+        "adjacent_pairs": 1237,
+        "fraction": 0.017
+      },
+      "client_at_desk": {
+        "changes": 55,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0445
+      },
+      "person_at_door": {
+        "changes": 97,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0784
+      },
+      "cash_in_hands": {
+        "changes": 132,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1067
+      },
+      "cash_bag": {
+        "changes": 38,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0307
+      },
+      "id_card_shown": {
+        "changes": 129,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1043
+      },
+      "counting_machine": {
+        "changes": 35,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0283
+      },
+      "detector": {
+        "changes": 4,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0032
+      },
+      "hand_counting": {
+        "changes": 78,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0631
+      },
+      "cash_on_desk": {
+        "changes": 43,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0348
+      },
+      "valuables_on_desk": {
+        "changes": 74,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0598
+      },
+      "drink": {
+        "changes": 8,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0065
+      },
+      "personal_items": {
+        "changes": 44,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0356
+      },
+      "cashier_seat": {
+        "changes": 42,
+        "adjacent_pairs": 971,
+        "fraction": 0.0433
+      },
+      "client_seat": {
+        "changes": 9,
+        "adjacent_pairs": 394,
+        "fraction": 0.0228
+      },
+      "desk.cash": {
+        "changes": 43,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0348
+      },
+      "desk.cash_bag": {
+        "changes": 40,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0323
+      },
+      "desk.coins_or_valuables": {
+        "changes": 1,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0008
+      },
+      "desk.drink": {
+        "changes": 8,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0065
+      },
+      "desk.coat_or_handbag": {
+        "changes": 44,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0356
+      },
+      "desk.id_or_document": {
+        "changes": 37,
+        "adjacent_pairs": 1237,
+        "fraction": 0.0299
+      },
+      "laptop": {
+        "changes": 210,
+        "adjacent_pairs": 1237,
+        "fraction": 0.1698
+      },
+      "other_people": {
+        "changes": 47,
+        "adjacent_pairs": 1237,
+        "fraction": 0.038
+      }
+    },
+    "layout_status_counts": {
+      "desk": {
+        "valid": 40
+      },
+      "laptop": {
+        "valid": 40
+      },
+      "safe": {
+        "valid": 40
+      },
+      "door": {
+        "valid": 40
+      },
+      "counting_machine": {
+        "valid": 40
+      },
+      "detector": {
+        "missing": 7,
+        "valid": 33
+      },
+      "cashier_chair": {
+        "valid": 33,
+        "missing": 7
+      },
+      "client_chair": {
+        "missing": 28,
+        "valid": 12
+      }
+    },
+    "event_type_counts": {
+      "PERSONAL_ITEMS": 3,
+      "UNAUTHORIZED_PERSON": 1,
+      "CASH_LEFT_UNATTENDED": 2,
+      "CASH_ROOM_DOOR_OPEN": 3
+    },
+    "candidate_type_counts": {
+      "PERSONAL_ITEMS": 5,
+      "UNAUTHORIZED_PERSON": 1,
+      "CASH_LEFT_UNATTENDED": 2,
+      "CASH_ROOM_DOOR_OPEN": 3,
+      "COLLECTOR_NO_DOCUMENTS": 2
+    },
+    "failure_code_counts": {}
+  },
+  "state_value_contingency": {
+    "cashier_at_desk": {
+      "true->true": 1014,
+      "false->true": 54,
+      "false->false": 181,
+      "true->false": 28
+    },
+    "cashier_in_room": {
+      "true->true": 1173,
+      "true->false": 20,
+      "false->false": 83,
+      "false->true": 1
+    },
+    "client_at_desk": {
+      "false->false": 817,
+      "true->true": 412,
+      "false->true": 12,
+      "true->false": 36
+    },
+    "person_at_door": {
+      "false->false": 935,
+      "true->false": 253,
+      "true->true": 87,
+      "false->true": 2
+    },
+    "cash_in_hands": {
+      "false->false": 1079,
+      "true->false": 70,
+      "true->true": 83,
+      "false->true": 45
+    },
+    "cash_bag": {
+      "false->false": 1139,
+      "true->true": 109,
+      "true->false": 17,
+      "false->true": 12
+    },
+    "id_card_shown": {
+      "false->false": 946,
+      "true->true": 119,
+      "true->false": 183,
+      "false->true": 29
+    },
+    "counting_machine": {
+      "false->false": 1183,
+      "true->false": 65,
+      "false->true": 8,
+      "true->true": 21
+    },
+    "detector": {
+      "false->false": 1263,
+      "true->false": 3,
+      "false->true": 10,
+      "true->true": 1
+    },
+    "hand_counting": {
+      "false->false": 1155,
+      "false->true": 15,
+      "true->true": 60,
+      "true->false": 47
+    },
+    "cash_on_desk": {
+      "false->false": 1098,
+      "true->false": 104,
+      "true->true": 52,
+      "false->true": 23
+    },
+    "valuables_on_desk": {
+      "false->false": 997,
+      "true->false": 146,
+      "false->true": 41,
+      "true->true": 93
+    },
+    "drink": {
+      "false->false": 1255,
+      "true->false": 18,
+      "true->true": 2,
+      "false->true": 2
+    },
+    "personal_items": {
+      "false->false": 1231,
+      "false->true": 39,
+      "true->false": 1,
+      "true->true": 6
+    },
+    "cashier_seat": {
+      "true->true": 557,
+      "true->false": 99,
+      "true->missing": 28,
+      "false->missing": 245,
+      "false->false": 333,
+      "false->true": 15
+    },
+    "client_seat": {
+      "false->missing": 125,
+      "true->missing": 89,
+      "missing->missing": 657,
+      "missing->true": 15,
+      "false->false": 61,
+      "false->true": 110,
+      "true->true": 151,
+      "true->false": 45,
+      "missing->false": 24
+    },
+    "desk.cash": {
+      "false->false": 1098,
+      "true->false": 104,
+      "true->true": 52,
+      "false->true": 23
+    },
+    "desk.cash_bag": {
+      "false->false": 1193,
+      "true->false": 43,
+      "false->true": 30,
+      "true->true": 11
+    },
+    "desk.coins_or_valuables": {
+      "false->false": 1247,
+      "true->false": 1,
+      "true->true": 29
+    },
+    "desk.drink": {
+      "false->false": 1255,
+      "true->false": 18,
+      "true->true": 2,
+      "false->true": 2
+    },
+    "desk.coat_or_handbag": {
+      "false->false": 1231,
+      "false->true": 39,
+      "true->false": 1,
+      "true->true": 6
+    },
+    "desk.id_or_document": {
+      "false->false": 965,
+      "true->false": 252,
+      "true->true": 46,
+      "false->true": 14
+    },
+    "laptop": {
+      "content->not_visible": 288,
+      "closed_or_off->not_visible": 702,
+      "not_visible->not_visible": 28,
+      "content->closed_or_off": 24,
+      "content->lock_screen": 6,
+      "lock_screen->not_visible": 33,
+      "closed_or_off->closed_or_off": 118,
+      "closed_or_off->content": 26,
+      "content->content": 1,
+      "not_visible->closed_or_off": 27,
+      "lock_screen->closed_or_off": 10,
+      "closed_or_off->lock_screen": 12,
+      "not_visible->lock_screen": 2
+    },
+    "other_people": {
+      "0->0": 801,
+      "1->1": 90,
+      "0->1": 360,
+      "2->1": 1,
+      "1->2": 1,
+      "2->2": 3,
+      "1->0": 21
+    }
+  },
+  "videos": [
+    {
+      "name": "X-1",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 26,
+      "state_disagreements": {
+        "person_at_door": 2,
+        "cash_in_hands": 4,
+        "id_card_shown": 11,
+        "counting_machine": 1,
+        "hand_counting": 1,
+        "cash_on_desk": 3,
+        "valuables_on_desk": 3,
+        "cashier_seat": 3,
+        "client_seat": 26,
+        "desk.cash": 3,
+        "desk.id_or_document": 14,
+        "laptop": 26,
+        "other_people": 20
+      }
+    },
+    {
+      "name": "X-10",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 16,
+      "state_disagreements": {
+        "cash_in_hands": 2,
+        "id_card_shown": 3,
+        "counting_machine": 1,
+        "cash_on_desk": 6,
+        "valuables_on_desk": 6,
+        "cashier_seat": 16,
+        "desk.cash": 6,
+        "desk.id_or_document": 3,
+        "laptop": 14
+      }
+    },
+    {
+      "name": "X-11",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "WORKSTATION_UNLOCKED",
+          16.0
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 26,
+      "state_disagreements": {
+        "cashier_at_desk": 1,
+        "cashier_in_room": 2,
+        "person_at_door": 9,
+        "cashier_seat": 11,
+        "laptop": 26
+      }
+    },
+    {
+      "name": "X-12",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 43,
+      "state_disagreements": {
+        "cashier_at_desk": 1,
+        "cashier_in_room": 1,
+        "person_at_door": 9,
+        "cashier_seat": 14,
+        "laptop": 38
+      }
+    },
+    {
+      "name": "X-13",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 66,
+      "state_disagreements": {
+        "cashier_at_desk": 18,
+        "cashier_in_room": 2,
+        "client_at_desk": 3,
+        "person_at_door": 13,
+        "cash_in_hands": 9,
+        "cash_bag": 7,
+        "id_card_shown": 16,
+        "hand_counting": 6,
+        "cash_on_desk": 9,
+        "valuables_on_desk": 18,
+        "personal_items": 1,
+        "cashier_seat": 66,
+        "desk.cash": 9,
+        "desk.cash_bag": 19,
+        "desk.coat_or_handbag": 1,
+        "desk.id_or_document": 17,
+        "laptop": 66,
+        "other_people": 2
+      }
+    },
+    {
+      "name": "X-14",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "violation",
+      "reference_events": [],
+      "candidate_events": [
+        [
+          "PERSONAL_ITEMS",
+          31.0
+        ]
+      ],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 1,
+      "aligned_states": 101,
+      "state_disagreements": {
+        "cashier_at_desk": 3,
+        "client_at_desk": 1,
+        "person_at_door": 3,
+        "cash_in_hands": 17,
+        "cash_bag": 4,
+        "id_card_shown": 17,
+        "counting_machine": 2,
+        "hand_counting": 10,
+        "cash_on_desk": 26,
+        "valuables_on_desk": 36,
+        "personal_items": 5,
+        "cashier_seat": 101,
+        "desk.cash": 26,
+        "desk.cash_bag": 13,
+        "desk.coat_or_handbag": 5,
+        "desk.id_or_document": 19,
+        "laptop": 100
+      }
+    },
+    {
+      "name": "X-15",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_LEFT_UNATTENDED",
+          8.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "PERSONAL_ITEMS",
+          0.0
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 21,
+      "state_disagreements": {
+        "cashier_at_desk": 3,
+        "person_at_door": 5,
+        "cash_in_hands": 2,
+        "cash_bag": 7,
+        "hand_counting": 2,
+        "cash_on_desk": 1,
+        "valuables_on_desk": 14,
+        "personal_items": 4,
+        "cashier_seat": 7,
+        "desk.cash": 1,
+        "desk.cash_bag": 14,
+        "desk.coat_or_handbag": 4,
+        "laptop": 21
+      }
+    },
+    {
+      "name": "X-16",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 23,
+      "state_disagreements": {
+        "client_at_desk": 1,
+        "person_at_door": 9,
+        "cash_in_hands": 5,
+        "cash_bag": 3,
+        "id_card_shown": 3,
+        "valuables_on_desk": 8,
+        "cashier_seat": 1,
+        "desk.cash_bag": 8,
+        "desk.id_or_document": 5,
+        "laptop": 23,
+        "other_people": 8
+      }
+    },
+    {
+      "name": "X-17",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "COLLECTOR_NO_DOCUMENTS",
+          7.5
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 15,
+      "state_disagreements": {
+        "client_at_desk": 1,
+        "person_at_door": 6,
+        "cash_bag": 2,
+        "id_card_shown": 2,
+        "valuables_on_desk": 8,
+        "client_seat": 15,
+        "desk.cash_bag": 8,
+        "laptop": 15,
+        "other_people": 1
+      }
+    },
+    {
+      "name": "X-18",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "UNAUTHORIZED_PERSON",
+          18.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "UNAUTHORIZED_PERSON",
+          16.0
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 23,
+      "state_disagreements": {
+        "client_at_desk": 2,
+        "person_at_door": 6,
+        "cash_in_hands": 3,
+        "id_card_shown": 7,
+        "counting_machine": 2,
+        "cashier_seat": 1,
+        "client_seat": 2,
+        "desk.id_or_document": 13,
+        "laptop": 23,
+        "other_people": 13
+      }
+    },
+    {
+      "name": "X-19",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "PERSONAL_ITEMS",
+          26.0
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 58,
+      "state_disagreements": {
+        "client_at_desk": 5,
+        "person_at_door": 10,
+        "cash_in_hands": 5,
+        "id_card_shown": 14,
+        "counting_machine": 1,
+        "detector": 1,
+        "cash_on_desk": 4,
+        "valuables_on_desk": 4,
+        "drink": 4,
+        "client_seat": 21,
+        "desk.cash": 4,
+        "desk.drink": 4,
+        "desk.id_or_document": 16,
+        "laptop": 57,
+        "other_people": 42
+      }
+    },
+    {
+      "name": "X-2",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 18,
+      "state_disagreements": {
+        "client_at_desk": 1,
+        "person_at_door": 4,
+        "cash_in_hands": 1,
+        "id_card_shown": 3,
+        "counting_machine": 1,
+        "detector": 1,
+        "cash_on_desk": 1,
+        "valuables_on_desk": 1,
+        "client_seat": 10,
+        "desk.cash": 1,
+        "desk.id_or_document": 1,
+        "laptop": 18,
+        "other_people": 9
+      }
+    },
+    {
+      "name": "X-20",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 12,
+      "state_disagreements": {
+        "cashier_at_desk": 3,
+        "person_at_door": 3,
+        "cash_on_desk": 3,
+        "valuables_on_desk": 4,
+        "cashier_seat": 12,
+        "desk.cash": 3,
+        "desk.coins_or_valuables": 1,
+        "laptop": 8
+      }
+    },
+    {
+      "name": "X-21",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 20,
+      "state_disagreements": {
+        "cashier_at_desk": 5,
+        "person_at_door": 4,
+        "cash_in_hands": 2,
+        "id_card_shown": 1,
+        "hand_counting": 2,
+        "cash_on_desk": 5,
+        "valuables_on_desk": 5,
+        "personal_items": 1,
+        "cashier_seat": 20,
+        "desk.cash": 5,
+        "desk.coat_or_handbag": 1,
+        "desk.id_or_document": 1,
+        "laptop": 11
+      }
+    },
+    {
+      "name": "X-22",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 22,
+      "state_disagreements": {
+        "cashier_at_desk": 4,
+        "person_at_door": 6,
+        "personal_items": 1,
+        "cashier_seat": 10,
+        "desk.coat_or_handbag": 1,
+        "laptop": 22
+      }
+    },
+    {
+      "name": "X-23",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 19,
+      "state_disagreements": {
+        "cashier_at_desk": 5,
+        "cashier_in_room": 1,
+        "person_at_door": 11,
+        "cashier_seat": 19,
+        "client_seat": 19,
+        "laptop": 19,
+        "other_people": 1
+      }
+    },
+    {
+      "name": "X-24",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_LEFT_UNATTENDED",
+          5.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "CASH_LEFT_UNATTENDED",
+          11.0
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 15,
+      "state_disagreements": {
+        "cashier_at_desk": 1,
+        "cashier_in_room": 1,
+        "person_at_door": 6,
+        "cash_in_hands": 2,
+        "id_card_shown": 8,
+        "hand_counting": 2,
+        "personal_items": 2,
+        "cashier_seat": 6,
+        "desk.coat_or_handbag": 2,
+        "desk.id_or_document": 8,
+        "laptop": 12
+      }
+    },
+    {
+      "name": "X-25",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 32,
+      "state_disagreements": {
+        "cashier_at_desk": 7,
+        "cashier_in_room": 1,
+        "person_at_door": 13,
+        "cash_in_hands": 2,
+        "id_card_shown": 6,
+        "hand_counting": 2,
+        "personal_items": 1,
+        "cashier_seat": 14,
+        "desk.coat_or_handbag": 1,
+        "desk.id_or_document": 6,
+        "laptop": 15
+      }
+    },
+    {
+      "name": "X-26",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_LEFT_UNATTENDED",
+          10.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "CASH_LEFT_UNATTENDED",
+          15.0
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 20,
+      "state_disagreements": {
+        "cashier_in_room": 1,
+        "person_at_door": 5,
+        "cash_in_hands": 2,
+        "hand_counting": 3,
+        "cash_on_desk": 1,
+        "valuables_on_desk": 1,
+        "personal_items": 3,
+        "cashier_seat": 9,
+        "client_seat": 20,
+        "desk.cash": 1,
+        "desk.coat_or_handbag": 3,
+        "laptop": 19
+      }
+    },
+    {
+      "name": "X-27",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 27,
+      "state_disagreements": {
+        "cashier_at_desk": 6,
+        "cashier_in_room": 1,
+        "person_at_door": 12,
+        "cash_in_hands": 4,
+        "hand_counting": 3,
+        "cash_on_desk": 5,
+        "valuables_on_desk": 5,
+        "drink": 1,
+        "personal_items": 1,
+        "cashier_seat": 13,
+        "desk.cash": 5,
+        "desk.drink": 1,
+        "desk.coat_or_handbag": 1,
+        "laptop": 25
+      }
+    },
+    {
+      "name": "X-28",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "WORKSTATION_UNLOCKED",
+          7.5
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 17,
+      "state_disagreements": {
+        "person_at_door": 5,
+        "personal_items": 4,
+        "desk.coat_or_handbag": 4,
+        "laptop": 17
+      }
+    },
+    {
+      "name": "X-29",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 18,
+      "state_disagreements": {
+        "person_at_door": 6,
+        "personal_items": 3,
+        "cashier_seat": 2,
+        "client_seat": 18,
+        "desk.coat_or_handbag": 3,
+        "laptop": 18
+      }
+    },
+    {
+      "name": "X-3",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 21,
+      "state_disagreements": {
+        "client_at_desk": 1,
+        "person_at_door": 3,
+        "cash_in_hands": 4,
+        "id_card_shown": 5,
+        "counting_machine": 1,
+        "detector": 1,
+        "cash_on_desk": 2,
+        "valuables_on_desk": 2,
+        "desk.cash": 2,
+        "desk.id_or_document": 12,
+        "laptop": 21,
+        "other_people": 15
+      }
+    },
+    {
+      "name": "X-30",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          3.0
+        ]
+      ],
+      "candidate_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          4.5
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 19,
+      "state_disagreements": {
+        "cashier_at_desk": 2,
+        "cashier_in_room": 1,
+        "client_at_desk": 2,
+        "person_at_door": 8,
+        "cash_bag": 1,
+        "counting_machine": 4,
+        "laptop": 19,
+        "other_people": 1
+      }
+    },
+    {
+      "name": "X-31",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 24,
+      "state_disagreements": {
+        "cashier_in_room": 3,
+        "person_at_door": 5,
+        "cash_bag": 1,
+        "counting_machine": 5,
+        "cashier_seat": 4,
+        "laptop": 24,
+        "other_people": 1
+      }
+    },
+    {
+      "name": "X-32",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          5.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          5.0
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 22,
+      "state_disagreements": {
+        "cashier_in_room": 1,
+        "client_at_desk": 1,
+        "person_at_door": 4,
+        "cash_in_hands": 1,
+        "counting_machine": 7,
+        "cashier_seat": 1,
+        "laptop": 22,
+        "other_people": 2
+      }
+    },
+    {
+      "name": "X-33",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          5.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "CASH_ROOM_DOOR_OPEN",
+          5.5
+        ]
+      ],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 1,
+      "aligned_states": 15,
+      "state_disagreements": {
+        "cashier_in_room": 2,
+        "person_at_door": 7,
+        "counting_machine": 4,
+        "cashier_seat": 6,
+        "client_seat": 5,
+        "laptop": 7,
+        "other_people": 1
+      }
+    },
+    {
+      "name": "X-34",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "COUNT_WITHOUT_CLIENT",
+          12.5
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 18,
+      "state_disagreements": {
+        "client_at_desk": 3,
+        "person_at_door": 6,
+        "cash_in_hands": 1,
+        "id_card_shown": 5,
+        "counting_machine": 4,
+        "cash_on_desk": 2,
+        "valuables_on_desk": 2,
+        "desk.cash": 2,
+        "desk.id_or_document": 4,
+        "laptop": 10,
+        "other_people": 6
+      }
+    },
+    {
+      "name": "X-35",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 57,
+      "state_disagreements": {
+        "cashier_at_desk": 7,
+        "client_at_desk": 3,
+        "person_at_door": 7,
+        "cash_in_hands": 2,
+        "id_card_shown": 3,
+        "counting_machine": 2,
+        "cash_on_desk": 3,
+        "valuables_on_desk": 3,
+        "desk.cash": 3,
+        "desk.id_or_document": 5,
+        "laptop": 44,
+        "other_people": 44
+      }
+    },
+    {
+      "name": "X-37",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 16,
+      "state_disagreements": {
+        "cashier_at_desk": 1,
+        "client_at_desk": 2,
+        "person_at_door": 4,
+        "id_card_shown": 1,
+        "counting_machine": 2,
+        "cashier_seat": 9,
+        "desk.id_or_document": 1,
+        "laptop": 7,
+        "other_people": 8
+      }
+    },
+    {
+      "name": "X-38",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "PREVIOUS_CASH_ON_DESK",
+          33.5
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 59,
+      "state_disagreements": {
+        "cashier_at_desk": 4,
+        "client_at_desk": 10,
+        "person_at_door": 17,
+        "cash_in_hands": 4,
+        "id_card_shown": 30,
+        "counting_machine": 5,
+        "cash_on_desk": 5,
+        "valuables_on_desk": 5,
+        "cashier_seat": 2,
+        "client_seat": 59,
+        "desk.cash": 5,
+        "desk.id_or_document": 29,
+        "laptop": 45,
+        "other_people": 40
+      }
+    },
+    {
+      "name": "X-39",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 79,
+      "state_disagreements": {
+        "cashier_at_desk": 7,
+        "client_at_desk": 2,
+        "person_at_door": 17,
+        "cash_in_hands": 4,
+        "id_card_shown": 5,
+        "counting_machine": 10,
+        "hand_counting": 1,
+        "cash_on_desk": 2,
+        "valuables_on_desk": 2,
+        "client_seat": 46,
+        "desk.cash": 2,
+        "desk.id_or_document": 5,
+        "laptop": 63,
+        "other_people": 53
+      }
+    },
+    {
+      "name": "X-4",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "PREVIOUS_CASH_ON_DESK",
+          57.0
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 73,
+      "state_disagreements": {
+        "client_at_desk": 4,
+        "person_at_door": 12,
+        "cash_in_hands": 11,
+        "id_card_shown": 23,
+        "counting_machine": 1,
+        "hand_counting": 3,
+        "cash_on_desk": 15,
+        "valuables_on_desk": 15,
+        "drink": 1,
+        "client_seat": 32,
+        "desk.cash": 15,
+        "desk.drink": 1,
+        "desk.id_or_document": 43,
+        "laptop": 73,
+        "other_people": 56
+      }
+    },
+    {
+      "name": "X-40",
+      "reference_verdict": "violation",
+      "candidate_verdict": "violation",
+      "reference_events": [
+        [
+          "COLLECTOR_NO_DOCUMENTS",
+          18.5
+        ],
+        [
+          "PERSONAL_ITEMS",
+          19.5
+        ]
+      ],
+      "candidate_events": [
+        [
+          "PERSONAL_ITEMS",
+          9.5
+        ]
+      ],
+      "reference_candidate_count": 2,
+      "candidate_candidate_count": 3,
+      "aligned_states": 26,
+      "state_disagreements": {
+        "cashier_at_desk": 3,
+        "cashier_in_room": 4,
+        "client_at_desk": 4,
+        "person_at_door": 5,
+        "cash_in_hands": 1,
+        "cash_bag": 4,
+        "id_card_shown": 1,
+        "counting_machine": 1,
+        "valuables_on_desk": 11,
+        "personal_items": 6,
+        "desk.cash_bag": 11,
+        "desk.coat_or_handbag": 6,
+        "desk.id_or_document": 1,
+        "laptop": 23,
+        "other_people": 4
+      }
+    },
+    {
+      "name": "X-43",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 24,
+      "state_disagreements": {
+        "cash_in_hands": 4,
+        "counting_machine": 2,
+        "detector": 3,
+        "hand_counting": 3,
+        "cash_on_desk": 11,
+        "valuables_on_desk": 11,
+        "client_seat": 24,
+        "desk.cash": 11,
+        "laptop": 23
+      }
+    },
+    {
+      "name": "X-44",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 21,
+      "state_disagreements": {
+        "cash_in_hands": 2,
+        "counting_machine": 4,
+        "hand_counting": 3,
+        "cash_on_desk": 7,
+        "valuables_on_desk": 7,
+        "drink": 1,
+        "desk.cash": 7,
+        "desk.drink": 1,
+        "laptop": 7
+      }
+    },
+    {
+      "name": "X-45",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 34,
+      "state_disagreements": {
+        "cash_in_hands": 5,
+        "id_card_shown": 4,
+        "counting_machine": 11,
+        "detector": 7,
+        "hand_counting": 11,
+        "cash_on_desk": 8,
+        "valuables_on_desk": 8,
+        "personal_items": 3,
+        "client_seat": 20,
+        "desk.cash": 8,
+        "desk.coat_or_handbag": 3,
+        "desk.id_or_document": 4,
+        "laptop": 22
+      }
+    },
+    {
+      "name": "X-46",
+      "reference_verdict": "violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [
+        [
+          "PERSONAL_ITEMS",
+          14.0
+        ]
+      ],
+      "candidate_events": [],
+      "reference_candidate_count": 1,
+      "candidate_candidate_count": 0,
+      "aligned_states": 20,
+      "state_disagreements": {
+        "cash_in_hands": 1,
+        "counting_machine": 1,
+        "hand_counting": 1,
+        "cash_on_desk": 1,
+        "valuables_on_desk": 1,
+        "drink": 9,
+        "client_seat": 19,
+        "desk.cash": 1,
+        "desk.drink": 9,
+        "laptop": 18
+      }
+    },
+    {
+      "name": "X-5",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 0,
+      "aligned_states": 72,
+      "state_disagreements": {
+        "cashier_at_desk": 1,
+        "client_at_desk": 2,
+        "person_at_door": 12,
+        "cash_in_hands": 7,
+        "id_card_shown": 29,
+        "hand_counting": 1,
+        "cash_on_desk": 2,
+        "valuables_on_desk": 2,
+        "drink": 4,
+        "cashier_seat": 1,
+        "client_seat": 72,
+        "desk.cash": 2,
+        "desk.drink": 4,
+        "desk.id_or_document": 46,
+        "laptop": 72,
+        "other_people": 56
+      }
+    },
+    {
+      "name": "X-8",
+      "reference_verdict": "no_violation",
+      "candidate_verdict": "no_violation",
+      "reference_events": [],
+      "candidate_events": [],
+      "reference_candidate_count": 0,
+      "candidate_candidate_count": 1,
+      "aligned_states": 39,
+      "state_disagreements": {
+        "person_at_door": 1,
+        "cash_in_hands": 8,
+        "id_card_shown": 15,
+        "counting_machine": 1,
+        "hand_counting": 8,
+        "cash_on_desk": 5,
+        "valuables_on_desk": 5,
+        "personal_items": 5,
+        "cashier_seat": 39,
+        "desk.cash": 5,
+        "desk.coat_or_handbag": 5,
+        "desk.id_or_document": 13,
+        "laptop": 37
+      }
+    }
+  ],
+  "schema": "forte.model-structure-diagnostic.v1",
+  "labels_used": false,
+  "parameters_fitted": 0,
+  "generated_at_utc": "2026-10-18T05:09:37.375697+00:00",
+  "reference_file_sha256": "2e2d9867feeddbecd452836d1ef0bfa80d0cbf0be398e171b7655149ea4b3c65",
+  "candidate_file_sha256": "f013ea6c34e5a595a48623ee74288b2a9d071c04618099e427bad5db4cea6465"
+}

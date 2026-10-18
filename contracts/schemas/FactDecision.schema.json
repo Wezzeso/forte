@@ -1,0 +1,73 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "fact_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Fact Id",
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "present",
+        "absent",
+        "unclear"
+      ],
+      "title": "State",
+      "type": "string"
+    },
+    "supporting_frame_ids": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Supporting Frame Ids",
+      "type": "array"
+    },
+    "model_score": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Score"
+    },
+    "score_provenance": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Score Provenance"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "fact_id",
+    "state"
+  ],
+  "title": "FactDecision",
+  "type": "object"
+}

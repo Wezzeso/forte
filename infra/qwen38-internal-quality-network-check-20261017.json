@@ -1,0 +1,66 @@
+{
+  "schema_version": "forte.qwen38.internal-quality-network-plan-check.v1",
+  "status": "passed",
+  "captured_at_utc": "2026-10-17T15:42:22.814874+00:00",
+  "network_name": "forte_private",
+  "network_id": "641a6a15a9abae97c197eea98e1c74dadc8d114089b05065a2eaab4fe31ca49d",
+  "driver": "bridge",
+  "internal": true,
+  "attachable": false,
+  "ipv6_enabled": false,
+  "proposed_untuned_alias": "model-3",
+  "alias_collision_found": false,
+  "members": [
+    {
+      "name": "forte-ingress-1",
+      "container_id": "02bbcd169d45c278b27a4d2e8cdcb6135df2347ff47c8afc6615ede1406a7f66",
+      "status": "running",
+      "network_aliases": [
+        "forte-ingress-1",
+        "ingress"
+      ],
+      "dns_names": [
+        "forte-ingress-1",
+        "ingress",
+        "02bbcd169d45"
+      ]
+    },
+    {
+      "name": "forte-api-1",
+      "container_id": "32e4d8c62409062ca6f741209a4b67f1f9c82f764720ae73605efd94b6b6039f",
+      "status": "running",
+      "network_aliases": [
+        "forte-api-1",
+        "api"
+      ],
+      "dns_names": [
+        "forte-api-1",
+        "api",
+        "32e4d8c62409"
+      ]
+    },
+    {
+      "name": "forte-db-1",
+      "container_id": "d89d47017db9e5f7408d74afc3a674f6b7296198fd47b91cf633a563a07d3d27",
+      "status": "running",
+      "network_aliases": [
+        "forte-db-1",
+        "db"
+      ],
+      "dns_names": [
+        "forte-db-1",
+        "db",
+        "d89d47017db9"
+      ]
+    }
+  ],
+  "inspection_read_only": true,
+  "network_modified": false,
+  "container_created": false,
+  "gpu_access": false,
+  "serving_activated": false,
+  "model_ports_published_by_this_task": false,
+  "admission_paused_verified": false,
+  "worker_stopped_verified": false,
+  "later_activation_requires_fresh_pause_worker_stop_and_gpu_handoff": true
+}

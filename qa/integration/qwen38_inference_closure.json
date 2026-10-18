@@ -1,0 +1,326 @@
+{
+  "schema_version": "forte.qwen38.independent-peft-inference-lineage-qa.v1",
+  "captured_at_utc": "2026-10-17T17:44:24.623957+00:00",
+  "status": "passed",
+  "tests_passed": 52,
+  "subtests_passed": 7,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "elapsed_seconds": 7.36,
+  "test_paths": [
+    "qa/integration/qwen38_inference_boundary_test.py",
+    "serving/tests/test_qwen38_inference_lineage.py",
+    "serving/tests/test_qwen38_timeout_lineage.py",
+    "serving/tests/test_qwen38_runtime_binding.py",
+    "tests/test_qwen38_quality_equivalence.py"
+  ],
+  "source_hashes_before": {
+    "serving/qwen38_service.py": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f",
+    "serving/qwen38_source_lineage.py": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c",
+    "evaluation/qwen38_quality_equivalence.py": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906",
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "tests/test_qwen38_peft_inference.py": "94ef1362b50a3d775005f6e48db8aafec0b59c4d0c5121a3cf590e808aa69dd0",
+    "qa/integration/qwen38_inference_boundary_test.py": "06ecd8f9b0b0e8fd49fbaeac0abf39c9a5cd33d74de1c084a799fcc115d2216a",
+    "serving/tests/test_qwen38_inference_lineage.py": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880",
+    "serving/tests/test_qwen38_timeout_lineage.py": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664",
+    "tests/test_qwen38_quality_equivalence.py": "59675c2b700851b1876adcc9c065e794fdf9426c30708376ea64722c4c376520"
+  },
+  "source_hashes_after": {
+    "serving/qwen38_service.py": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f",
+    "serving/qwen38_source_lineage.py": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c",
+    "evaluation/qwen38_quality_equivalence.py": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906",
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "tests/test_qwen38_peft_inference.py": "94ef1362b50a3d775005f6e48db8aafec0b59c4d0c5121a3cf590e808aa69dd0",
+    "qa/integration/qwen38_inference_boundary_test.py": "06ecd8f9b0b0e8fd49fbaeac0abf39c9a5cd33d74de1c084a799fcc115d2216a",
+    "serving/tests/test_qwen38_inference_lineage.py": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880",
+    "serving/tests/test_qwen38_timeout_lineage.py": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664",
+    "tests/test_qwen38_quality_equivalence.py": "59675c2b700851b1876adcc9c065e794fdf9426c30708376ea64722c4c376520"
+  },
+  "changed_during_run": [],
+  "frozen_overlay_paths": {
+    "serving/qwen38_service.py": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f",
+    "serving/qwen38_source_lineage.py": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c",
+    "evaluation/qwen38_quality_equivalence.py": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906",
+    "serving/tests/test_qwen38_inference_lineage.py": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880"
+  },
+  "existing_da8_member_deltas": {
+    "evaluation/qwen38_quality_equivalence.py": {
+      "old_sha256": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+      "current_sha256": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906"
+    },
+    "serving/qwen38_service.py": {
+      "old_sha256": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+      "current_sha256": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f"
+    },
+    "serving/qwen38_source_lineage.py": {
+      "old_sha256": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+      "current_sha256": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c"
+    }
+  },
+  "original_training_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+  "preserved_da8_predecessor_archive_sha256": "da8a4b838003783ab6d201efc1e3b0eff54bbaa10aaa30db7cabe3cbecc98b28",
+  "original_training_archive_files_verified": 225,
+  "da8_predecessor_files_verified": 231,
+  "candidate_overlay_inventory_sha256": "80468412dfef175d13aa7a331e17f202fdccad874494c41d9fef6e064f6f8458",
+  "actual_new_immutable_archive_created_by_qa": false,
+  "source_chain_inventory_measurements": [
+    {
+      "from_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+      "to_archive_sha256": "da8a4b838003783ab6d201efc1e3b0eff54bbaa10aaa30db7cabe3cbecc98b28",
+      "from_file_count": 225,
+      "to_file_count": 231,
+      "byte_identical_file_count": 219,
+      "changed_existing_file_count": 6,
+      "added_file_count": 6,
+      "removed_file_count": 0,
+      "protected_common_path_count": 88,
+      "byte_identical_protected_common_path_count": 87,
+      "changed_protected_common_path_count": 1,
+      "changed_members": [
+        {
+          "path": "deploy/qwen38_bind_runtime.py",
+          "before_sha256": "e71b040f7b0be89d1b7598fe4de66d4934faee2dbb18aae4f809dd00dff39bed",
+          "after_sha256": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916"
+        },
+        {
+          "path": "evaluation/qwen38_quality_equivalence.py",
+          "before_sha256": "3f3bcdc69d9363d195d28976c3fa868ffbc5cea86f5e0f5dd1c4ea28959f19b2",
+          "after_sha256": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3"
+        },
+        {
+          "path": "serving/qwen38_adapter_contract.py",
+          "before_sha256": null,
+          "after_sha256": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222"
+        },
+        {
+          "path": "serving/qwen38_identity.py",
+          "before_sha256": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41",
+          "after_sha256": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959"
+        },
+        {
+          "path": "serving/qwen38_source_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e"
+        },
+        {
+          "path": "serving/tests/qwen38_adapter_fixtures.py",
+          "before_sha256": null,
+          "after_sha256": "78283e2b11ea54c42d555d9adf3619b92b90b8b6ec1ca9e4e743781367344bd7"
+        },
+        {
+          "path": "serving/tests/test_qwen38_adapter_contract.py",
+          "before_sha256": null,
+          "after_sha256": "fb36e3b3325dce682b49eb0df5285b0f63655f1f21e405b10fba6ec16cdf491b"
+        },
+        {
+          "path": "serving/tests/test_qwen38_candidate.py",
+          "before_sha256": "d72fed302816cd650bfc67024e56ce4c9e20ef01707d87ad3e24e7f2c2fabe2f",
+          "after_sha256": "4aaabeb53a0c39b0f565f1cfba6cfce0a5a31468ffd4e55cc71c9faaa1da08aa"
+        },
+        {
+          "path": "serving/tests/test_qwen38_family_timeout_binding.py",
+          "before_sha256": null,
+          "after_sha256": "769c40c3c7483e0e8458e1d0e9d73ff2e7a527d82502449dfaa5a70b08cd9c62"
+        },
+        {
+          "path": "serving/tests/test_qwen38_runtime_binding.py",
+          "before_sha256": "2fd3817c6808441730e64aca5b5d83f9ab3cad12cb93ed36d735c93f97038e7b",
+          "after_sha256": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664"
+        },
+        {
+          "path": "serving/tests/test_qwen38_timeout_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928"
+        },
+        {
+          "path": "src/forte/pipeline.py",
+          "before_sha256": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+          "after_sha256": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30"
+        }
+      ]
+    },
+    {
+      "from_archive_sha256": "da8a4b838003783ab6d201efc1e3b0eff54bbaa10aaa30db7cabe3cbecc98b28",
+      "to_archive_sha256": "PENDING_A19_IMMUTABLE_ARCHIVE",
+      "from_file_count": 231,
+      "to_file_count": 232,
+      "byte_identical_file_count": 228,
+      "changed_existing_file_count": 3,
+      "added_file_count": 1,
+      "removed_file_count": 0,
+      "protected_common_path_count": 88,
+      "byte_identical_protected_common_path_count": 88,
+      "changed_protected_common_path_count": 0,
+      "changed_members": [
+        {
+          "path": "evaluation/qwen38_quality_equivalence.py",
+          "before_sha256": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+          "after_sha256": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906"
+        },
+        {
+          "path": "serving/qwen38_service.py",
+          "before_sha256": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+          "after_sha256": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f"
+        },
+        {
+          "path": "serving/qwen38_source_lineage.py",
+          "before_sha256": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+          "after_sha256": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c"
+        },
+        {
+          "path": "serving/tests/test_qwen38_inference_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880"
+        }
+      ]
+    },
+    {
+      "from_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+      "to_archive_sha256": "PENDING_A19_IMMUTABLE_ARCHIVE",
+      "from_file_count": 225,
+      "to_file_count": 232,
+      "byte_identical_file_count": 218,
+      "changed_existing_file_count": 7,
+      "added_file_count": 7,
+      "removed_file_count": 0,
+      "protected_common_path_count": 88,
+      "byte_identical_protected_common_path_count": 87,
+      "changed_protected_common_path_count": 1,
+      "changed_members": [
+        {
+          "path": "deploy/qwen38_bind_runtime.py",
+          "before_sha256": "e71b040f7b0be89d1b7598fe4de66d4934faee2dbb18aae4f809dd00dff39bed",
+          "after_sha256": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916"
+        },
+        {
+          "path": "evaluation/qwen38_quality_equivalence.py",
+          "before_sha256": "3f3bcdc69d9363d195d28976c3fa868ffbc5cea86f5e0f5dd1c4ea28959f19b2",
+          "after_sha256": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906"
+        },
+        {
+          "path": "serving/qwen38_adapter_contract.py",
+          "before_sha256": null,
+          "after_sha256": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222"
+        },
+        {
+          "path": "serving/qwen38_identity.py",
+          "before_sha256": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41",
+          "after_sha256": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959"
+        },
+        {
+          "path": "serving/qwen38_service.py",
+          "before_sha256": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+          "after_sha256": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f"
+        },
+        {
+          "path": "serving/qwen38_source_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c"
+        },
+        {
+          "path": "serving/tests/qwen38_adapter_fixtures.py",
+          "before_sha256": null,
+          "after_sha256": "78283e2b11ea54c42d555d9adf3619b92b90b8b6ec1ca9e4e743781367344bd7"
+        },
+        {
+          "path": "serving/tests/test_qwen38_adapter_contract.py",
+          "before_sha256": null,
+          "after_sha256": "fb36e3b3325dce682b49eb0df5285b0f63655f1f21e405b10fba6ec16cdf491b"
+        },
+        {
+          "path": "serving/tests/test_qwen38_candidate.py",
+          "before_sha256": "d72fed302816cd650bfc67024e56ce4c9e20ef01707d87ad3e24e7f2c2fabe2f",
+          "after_sha256": "4aaabeb53a0c39b0f565f1cfba6cfce0a5a31468ffd4e55cc71c9faaa1da08aa"
+        },
+        {
+          "path": "serving/tests/test_qwen38_family_timeout_binding.py",
+          "before_sha256": null,
+          "after_sha256": "769c40c3c7483e0e8458e1d0e9d73ff2e7a527d82502449dfaa5a70b08cd9c62"
+        },
+        {
+          "path": "serving/tests/test_qwen38_inference_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880"
+        },
+        {
+          "path": "serving/tests/test_qwen38_runtime_binding.py",
+          "before_sha256": "2fd3817c6808441730e64aca5b5d83f9ab3cad12cb93ed36d735c93f97038e7b",
+          "after_sha256": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664"
+        },
+        {
+          "path": "serving/tests/test_qwen38_timeout_lineage.py",
+          "before_sha256": null,
+          "after_sha256": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928"
+        },
+        {
+          "path": "src/forte/pipeline.py",
+          "before_sha256": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+          "after_sha256": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30"
+        }
+      ]
+    }
+  ],
+  "quality_common_paths": 88,
+  "quality_common_byte_identical_to_original_training": 87,
+  "audited_timeout_common_delta_count": 1,
+  "quality_common_byte_identical_to_da8_predecessor": 88,
+  "separate_audited_serving_activation_delta_count": 1,
+  "service_delta_proof": {
+    "schema_version": "forte.qwen38.candidate-inference-mode-delta.v1",
+    "verified": true,
+    "old_source_sha256": "3b97e3ea1c30d086da0b1a0286cd8a84fbfb173ec0e88c314a0fa70a5af191c8",
+    "new_source_sha256": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f",
+    "unchanged_ast_sha256": "4e7ae4af21af17dfd3a047cbb3e240a8303bc54d5c0f7bf3c80d65b70640f31c",
+    "added_keyword": "inference_mode",
+    "added_value": "True",
+    "candidate_runtime_load_only": true,
+    "other_ast_identical": true,
+    "other_source_bytes_identical": true,
+    "serving_only": true,
+    "comparison_condition_difference": "PEFT candidate activation explicitly preserves inference mode"
+  },
+  "timeout_delta_proof": {
+    "schema_version": "forte.qwen38.candidate-http-timeout-delta.v1",
+    "verified": true,
+    "old_source_sha256": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+    "new_source_sha256": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "unchanged_ast_sha256": "cb204981c03dfc32f00a2bb9b6c27033cd3005a0ca2459c1bc14498d8eb14797",
+    "added_keyword": "request_timeout_sec",
+    "added_value": "config[\"limits\"][\"request_timeout_seconds\"]",
+    "candidate_branch_only": true,
+    "other_ast_identical": true,
+    "other_source_bytes_identical": true,
+    "baseline_default_unchanged": true,
+    "comparison_condition_difference": "candidate HTTP timeout now inherits the configured request budget"
+  },
+  "actual_config_source_profile_ids_preserved": true,
+  "pure_model_only_causal_claim": false,
+  "historical_failures_or_results_rewritten": false,
+  "fit_or_adapter_files_changed": false,
+  "a06_actual_image_cpu_evidence": {
+    "receipt_sha256": "c27841529abbe5c892d1abcb775b7f6d5b4ae1b402bc345fb2983353020b303b",
+    "test_source_sha256": "94ef1362b50a3d775005f6e48db8aafec0b59c4d0c5121a3cf590e808aa69dd0",
+    "runtime_image_sha256": "baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+    "status": "passed",
+    "generated_linear_shape": [
+      7,
+      5
+    ],
+    "adapter_tensor_count": 2,
+    "all_parameter_bytes_unchanged": true,
+    "cpu_forward_output_exactly_equal": true,
+    "unexpected_trainable_base_still_detected": true,
+    "private_inputs_mounted": false,
+    "model_generation_calls": 0,
+    "executed_by": "A06 separately; not this QA run"
+  },
+  "a02_independent_cpu_receipt_sha256": "4aa957edc54e16683ca69e5c4beee8872d61a55c209141368442b6fe618b5cd8",
+  "scope": "Genuine preserved public91263/DA8 archive bytes plus generated exactfourpath overlay; CPU metadata/AST/archive/provider-binding checks only. Real PEFT generatedLinear proof is separately attributed to A06/A02. No Torch forward/model/GPU/HTTP/service/private input operation by QA. Local Python3.14 AST proof is local evidence; actual chosen Python3.12 producer must regenerate/revalidate runtime receipt before calls. New immutable release and actual trained readiness remain root/A19/A06 gates.",
+  "test_log_sha256": "ac3829663b3c1af314c54516ef0c832003fe60ad32ed17a79bac254f56e5dd3b",
+  "test_xml_sha256": "0ac9d6432da398548518aa494116526aa39eb51e3d33becd797c193f59992b8e"
+}

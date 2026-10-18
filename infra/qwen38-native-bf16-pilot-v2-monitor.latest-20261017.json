@@ -1,0 +1,215 @@
+{
+  "adapter_proof": [
+    {
+      "active_slot": 0,
+      "adapter_id": 1,
+      "arithmetic_equivalent_to_hf_nf4": false,
+      "b_scale_folded": 2,
+      "checkpoint_dtype": "F32",
+      "execution_dtype": "BF16",
+      "loaded_cpu_and_active_gpu_exact_equality": true,
+      "logical_targets_verified": 496,
+      "no_model_forward_by_probe": true,
+      "no_partial_adapter_allowed": true,
+      "original_tensors_verified": 992,
+      "physical_output_slices_verified": 592,
+      "physical_wrappers_verified": 304,
+      "status": "passed",
+      "wrapper_classes": {
+        "MergedColumnParallelLinearWithLoRA": 160,
+        "MergedQKVParallelLinearWithLoRA": 16,
+        "RowParallelLinearWithLoRA": 128
+      }
+    }
+  ],
+  "captured_at_utc": "2026-10-17T18:32:01.582085+00:00",
+  "completed_calls": [
+    {
+      "actual_lora_int_id": null,
+      "arm": "base",
+      "completion_tokens": 696,
+      "elapsed_seconds": 30.331311432000803,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 0,
+      "strict_original_schema_and_semantics": true
+    },
+    {
+      "actual_lora_int_id": 1,
+      "arm": "fit",
+      "completion_tokens": 696,
+      "elapsed_seconds": 33.16111941000054,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 0,
+      "strict_original_schema_and_semantics": true
+    },
+    {
+      "actual_lora_int_id": null,
+      "arm": "base",
+      "completion_tokens": 696,
+      "elapsed_seconds": 26.97248881700216,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 1,
+      "strict_original_schema_and_semantics": true
+    },
+    {
+      "actual_lora_int_id": 1,
+      "arm": "fit",
+      "completion_tokens": 696,
+      "elapsed_seconds": 31.62710902699837,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 1,
+      "strict_original_schema_and_semantics": true
+    },
+    {
+      "actual_lora_int_id": null,
+      "arm": "base",
+      "completion_tokens": 696,
+      "elapsed_seconds": 27.040797798999847,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 2,
+      "strict_original_schema_and_semantics": true
+    },
+    {
+      "actual_lora_int_id": 1,
+      "arm": "fit",
+      "completion_tokens": 696,
+      "elapsed_seconds": 31.69589600400286,
+      "finish_reason": "stop",
+      "prompt_tokens": 5848,
+      "repeat": 2,
+      "strict_original_schema_and_semantics": true
+    }
+  ],
+  "container_id": "40cca8906b0dbe0c074e87d955aa9eb095f5f397acde0511c73098a4954a95e5",
+  "container_present": true,
+  "engine_initialization_seconds": 246.95280645499952,
+  "exit_code": 0,
+  "fixed_log_stage_markers": {
+    "cuda_graph_capture": true,
+    "kv_cache_allocation": true,
+    "model_weight_loading": true,
+    "model_weight_loading_complete": true,
+    "torch_compile": true
+  },
+  "generated_call_attempts": 6,
+  "gpu_operations_by_monitor": 0,
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "latest_durable_phase": {
+    "adapter_gate_passed": true,
+    "captured_at_utc": "2026-10-17T18:31:17.552731+00:00",
+    "completions_validated": 6,
+    "current_arm": "fit",
+    "current_call_index": 5,
+    "current_repeat": 2,
+    "engine_initialized": true,
+    "generation_calls_entered": 6,
+    "generation_calls_returned": 6,
+    "output_owned": true,
+    "phase": "completed",
+    "phase_index": 34,
+    "root_release_id": "root-native-bf16-v2-generated-20261017T1824Z"
+  },
+  "log_error_classes": {},
+  "model_calls_by_monitor": 0,
+  "native_grammar": {
+    "compile_seconds": 2.270656208998844,
+    "compiled_memory_bytes": 14098064,
+    "stop_tokens": {
+      "248044": true,
+      "248046": true
+    },
+    "vocab_size": 248320
+  },
+  "oom_killed": false,
+  "output_folder_present": true,
+  "pid": 0,
+  "preengine_byte_checks": {
+    "adapter_files_verified": 3,
+    "adapter_tree_sha256": "51780bf7369885f4157c6b08966f425a2196f0b4a0480f07dc9255b6fb6760d5",
+    "base_files_verified": 32,
+    "model_calls": 0,
+    "status": "passed",
+    "worker_extension_sha256": "16f7d9b948177cd4488b20a439e469deb591f3e2ba4fe6d6d749b02ab6391328"
+  },
+  "raw_logs_exposed": false,
+  "root_release_id": "root-native-bf16-v2-generated-20261017T1824Z",
+  "running": false,
+  "runtime.after.json": [
+    {
+      "active_adapter_ids": [
+        1
+      ],
+      "allocated_bytes": 70555777536,
+      "base_dtype": "BF16",
+      "cuda_version": "12.9",
+      "full_attention_layers": 16,
+      "gdn_decode_configurations": {
+        "triton": 48
+      },
+      "gdn_fused_decode_configured": 0,
+      "gdn_layers": 48,
+      "gdn_prefill_configurations": {
+        "triton": 48
+      },
+      "gpu_compute_capability": [
+        8,
+        0
+      ],
+      "kernel_execution_profiled": false,
+      "language_layer_count": 64,
+      "linear_attention_layers": 48,
+      "model_class": "Qwen3_5ForConditionalGeneration",
+      "peak_allocated_bytes": 71598382592,
+      "peak_reserved_bytes": 72714551296,
+      "quantization": null,
+      "reserved_bytes": 72714551296
+    }
+  ],
+  "runtime.before.json": [
+    {
+      "active_adapter_ids": [
+        1
+      ],
+      "allocated_bytes": 70523671040,
+      "base_dtype": "BF16",
+      "cuda_version": "12.9",
+      "full_attention_layers": 16,
+      "gdn_decode_configurations": {
+        "triton": 48
+      },
+      "gdn_fused_decode_configured": 0,
+      "gdn_layers": 48,
+      "gdn_prefill_configurations": {
+        "triton": 48
+      },
+      "gpu_compute_capability": [
+        8,
+        0
+      ],
+      "kernel_execution_profiled": false,
+      "language_layer_count": 64,
+      "linear_attention_layers": 48,
+      "model_class": "Qwen3_5ForConditionalGeneration",
+      "peak_allocated_bytes": 70531721728,
+      "peak_reserved_bytes": 70602719232,
+      "quantization": null,
+      "reserved_bytes": 70581747712
+    }
+  ],
+  "safe_log_numeric_metrics": {
+    "kv_cache_available_gib": 14.35,
+    "model_load_gib": 51.23,
+    "weights_load_seconds": 7.75
+  },
+  "terminal_receipt": {
+    "arithmetic_equivalent_to_hf_nf4": false,
+    "generated_requests": 6,
+    "private_quality_measured": false,
+    "status": "passed"
+  }
+}

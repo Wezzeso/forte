@@ -1,0 +1,111 @@
+{
+  "captured_at_utc": "2026-10-17T13:10:05.095484+00:00",
+  "sources": [
+    {
+      "path": "transformers-v5.17.0-modeling_qwen3_5.py",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/src/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "resolved_url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/src/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "size_bytes": 95685,
+      "sha256": "762feb6c7426a7f15b5bf830df54c07438bf9e7c27b8cdb23179045920412c3b",
+      "fetched": true,
+      "scope": "Public upstream source inspection; no installed-runtime attestation",
+      "immutable_source_url": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "immutable_bytes_match": true
+    },
+    {
+      "path": "transformers-v5.17.0-processing_qwen3_vl.py",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/src/transformers/models/qwen3_vl/processing_qwen3_vl.py",
+      "resolved_url": "https://raw.githubusercontent.com/huggingface/transformers/v5.17.0/src/transformers/models/qwen3_vl/processing_qwen3_vl.py",
+      "size_bytes": 9494,
+      "sha256": "8ce525e56e0ddade5a665a70f0727b5576f6f51610d068ddfaf4cc60333415f0",
+      "fetched": true,
+      "scope": "Public upstream source inspection; no installed-runtime attestation",
+      "immutable_source_url": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/models/qwen3_vl/processing_qwen3_vl.py",
+      "immutable_bytes_match": true
+    },
+    {
+      "path": "vllm-v0.31.0-qwen3_5.py",
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/model_executor/models/qwen3_5.py",
+      "resolved_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/model_executor/models/qwen3_5.py",
+      "size_bytes": 27990,
+      "sha256": "d261726aae3ce5d52c37b868c317d9377d5e1d7c344961707acc07785a4ec4ab",
+      "fetched": true,
+      "scope": "Public upstream source inspection; no installed-runtime attestation",
+      "immutable_source_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/models/qwen3_5.py",
+      "immutable_bytes_match": true
+    },
+    {
+      "path": "vllm-v0.31.0-bitsandbytes.py",
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/model_executor/layers/quantization/bitsandbytes.py",
+      "fetched": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "ms-swift-Qwen3_8-Best-Practice.md",
+      "url": "https://raw.githubusercontent.com/modelscope/ms-swift/main/docs/source_en/BestPractices/Qwen3_8-Best-Practice.md",
+      "resolved_url": "https://raw.githubusercontent.com/modelscope/ms-swift/main/docs/source_en/BestPractices/Qwen3_8-Best-Practice.md",
+      "size_bytes": 24220,
+      "sha256": "e8860bc73348d38a6c73dd8da68049c1c55d6aaf93e1d15653c8dffa57209bd3",
+      "fetched": true,
+      "scope": "Public upstream source inspection; no installed-runtime attestation"
+    },
+    {
+      "path": "vllm-qwen38-recipe.html",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "resolved_url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "size_bytes": 2243543,
+      "sha256": "2abc96034223090a9acd5285ead36fc4189163e5ed80932068cfc4f5bfab4494",
+      "fetched": true,
+      "scope": "Public upstream source inspection; no installed-runtime attestation"
+    },
+    {
+      "path": "ms-swift-Qwen3_8-Best-Practice.pinned.md",
+      "url": "https://raw.githubusercontent.com/modelscope/ms-swift/80e55df909c83d198ad1091a6cebceb5428a46ff/docs/source_en/BestPractices/Qwen3_8-Best-Practice.md",
+      "immutable_source_url": "https://raw.githubusercontent.com/modelscope/ms-swift/80e55df909c83d198ad1091a6cebceb5428a46ff/docs/source_en/BestPractices/Qwen3_8-Best-Practice.md",
+      "size_bytes": 24220,
+      "sha256": "e8860bc73348d38a6c73dd8da68049c1c55d6aaf93e1d15653c8dffa57209bd3",
+      "fetched": true,
+      "scope": "Public pinned source only; no installed-runtime attestation"
+    },
+    {
+      "path": "vllm-v0.31.0-test_bitsandbytes.py",
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/plugins_tests/bitsandbytes/test_bitsandbytes.py",
+      "immutable_source_url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/tests/plugins_tests/bitsandbytes/test_bitsandbytes.py",
+      "size_bytes": 8669,
+      "sha256": "97afe851b869679a4f5e13ac1726b1d581b2d2de0ff13fcbd9b4eacadf2259ab",
+      "fetched": true,
+      "scope": "Public pinned source only; no installed-runtime attestation"
+    },
+    {
+      "path": "vllm-bnb-plugin-README.pinned.md",
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/README.md",
+      "immutable_source_url": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/README.md",
+      "size_bytes": 749,
+      "sha256": "21c7402ddfe5be272527424b968d36f4a05914e517c912a65a8192f94a4b15f6",
+      "fetched": true,
+      "scope": "Public pinned source only; no installed-runtime attestation"
+    },
+    {
+      "path": "vllm-bnb-plugin-pyproject.pinned.toml",
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/pyproject.toml",
+      "immutable_source_url": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/pyproject.toml",
+      "size_bytes": 792,
+      "sha256": "3c520ef063a4d84a7a68dd2015626385d1e6d360691abb31490af059f1872925",
+      "fetched": true,
+      "scope": "Public pinned source only; no installed-runtime attestation"
+    },
+    {
+      "path": "vllm-bnb-plugin-main.api.json",
+      "url": "https://api.github.com/repos/vllm-project/vllm-bnb-plugin/commits/main",
+      "captured_revision": "d4914a9e3c5927b33b7ef941385a4fda2187e2b9",
+      "sha256": "38dd357fcf74c273a312dd46a4a592a1c415713fb50e2dfd399cceff41ea58d7",
+      "fetched": true
+    }
+  ],
+  "checked_at_utc": "2026-10-17T13:13:18.789112+00:00",
+  "notes": [
+    "The old in-tree vLLM bitsandbytes.py path is recorded as a 404; v0.31.0 uses the out-of-tree vllm-bnb-plugin.",
+    "Source tags and mutable Swift main were resolved to immutable public commits; exact matching bytes checked.",
+    "No requirements change, package install, remote call, kernel execution or model load performed."
+  ]
+}

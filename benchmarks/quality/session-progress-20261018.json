@@ -1,0 +1,154 @@
+{
+  "schema": "forte.session-progress.v1",
+  "updated_at_utc": "2026-10-18T06:03:00.418191+00:00",
+  "deadline_local": "2026-10-18T11:30:00+05:00",
+  "target": {
+    "correct_min": 37,
+    "videos": 40,
+    "fp_max": 0,
+    "independent_runs": 2
+  },
+  "tasks": {
+    "T0": "complete: structured q32/q38 results saved; old H100 deletion verified",
+    "T1": "complete: isolated new account login verified",
+    "T2": "complete: new H100 running, setup images built, approved17:55 budget guard installed",
+    "T3": "cancelled_by_user: Gemma first26/40 FP1 FN13, second interrupted; server stopped",
+    "T4": "cancelled_by_user: Q38 no-thinking first29/40 FP0 FN11, second interrupted; server stopped",
+    "T5": "in_progress: rejectQ30LoRA30/40FP3twice; originalQ30safe-keysequence and action-protocol diagnostics",
+    "T6": "not_qualified_no_production_switch",
+    "T7": "in_progress: baseline docs/licenses updated",
+    "T8": "pending: final new test-host deletion"
+  },
+  "production": "healthy: public ready200 and short smoke1/1,6.303s at05:47:57Z; image/profile unchanged; old shutdown disabled by approval",
+  "gemma_smoke_benchmark": "benchmarks/quality/gemma4-smoke-20261018T043700Z.json",
+  "new_account_compute_ceiling_through_approved_cutoffs_usd": 30.75,
+  "fine_tuning": {
+    "model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "state": "trained_not_qualified",
+    "training_precision": "bfloat16",
+    "method": "frozen base/vision; rank8 LM q/v LoRA, only supported cash/id boolean token loss",
+    "train_examples": 1024,
+    "public_validation_examples": 128,
+    "optimizer_step_cap": 100,
+    "training_seconds_cap": 1500,
+    "trainer_sha256": "a212688529dde4a7f04672b9eb1e1ac725a20c4108db408ff4f3e5e0f459897e",
+    "config_sha256": "1b31f03a72f34c66e28fe1cb924cb0ccf6fbb6193930b3c0948b5fba453563f5",
+    "manifest_sha256": "c5da042b0470649db0a1a1360889421a759c702ba05031f3c48d443155cd3ea3",
+    "user_authorized": true,
+    "gpu_training_started": true,
+    "optimizer_steps_completed_at_last_snapshot": 100,
+    "progress_benchmark": "benchmarks/quality/q30-training-progress-20261018T052345Z.json",
+    "optimizer_steps_completed": 100,
+    "frozen_weights_unchanged": true,
+    "adapter_changed": true,
+    "training_restarted_for_recovery": false,
+    "training_summary": "benchmarks/quality/qwen30-training-summary-20261018.json",
+    "serving_state": "ready_and_synthetic_19_of_19_passed",
+    "bank_video_accuracy_measured": true,
+    "public_validation": {
+      "report": "benchmarks/quality/q30-public-paired-20261018T054834Z-bf75ffe5.json",
+      "examples": 128,
+      "known_values": 224,
+      "base_correct": 184,
+      "adapter_correct": 219,
+      "adapter_cash_fp": 3,
+      "adapter_cash_fn": 2,
+      "adapter_id_correct": 96,
+      "adapter_id_known": 96,
+      "scope": "reused_public_validation_only_not_bank_video_accuracy"
+    },
+    "bank_video_evaluation_state": "two_runs_rejected_stable_regression",
+    "first_bank_run": {
+      "report": "benchmarks/quality/q30-adapted-first-20261018T055500Z.json",
+      "correct": 30,
+      "n": 40,
+      "fp": 3,
+      "fn": 7,
+      "failed": 0,
+      "batch_total_s": 300.63,
+      "calls": 7006,
+      "status": "unqualified_regression"
+    },
+    "bank_video_pair": {
+      "report": "benchmarks/quality/q30-adapted-runs-20261018.json",
+      "correct": [
+        30,
+        30
+      ],
+      "fp": [
+        3,
+        3
+      ],
+      "fn": [
+        7,
+        7
+      ],
+      "failed": [
+        0,
+        0
+      ],
+      "batch_total_s": [
+        300.63,
+        302.264
+      ],
+      "qualification": "rejected"
+    }
+  },
+  "pipeline_step_benchmark": {
+    "state": "complete_for_q30_ref1_ref2_q32a_q38a_gemma_pending",
+    "latest_report": "benchmarks/quality/pipeline-steps-enhanced-models-20261018T050317Z.json",
+    "prior_report_retained": "benchmarks/quality/pipeline-steps-existing-models-20261018T050102Z.json",
+    "recorded_video_evaluations": 160,
+    "technical_failures": 0,
+    "parameters_fitted": 0,
+    "inference_executed": false,
+    "stage_calls": "not_recorded_per_stage",
+    "gemma_report_pending": true
+  },
+  "latest_q38_step_benchmark": "benchmarks/quality/q38-no-thinking-pipeline-steps-20261018T050825Z.json",
+  "latest_q38_qualification": "benchmarks/quality/q38-no-thinking-qualification-20261018T050825Z.json",
+  "gemma_first_benchmark": "benchmarks/quality/gemma4-first-run-20261018.json",
+  "user_stopped_experiments": false,
+  "active_target_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "gemma_q38_experiments_cancelled_by_user": true,
+  "latest_q30_baseline": {
+    "report": "benchmarks/quality/q30-baseline-runs-20261018.json",
+    "runs": [
+      {
+        "correct": 33,
+        "fp": 1,
+        "fn": 6,
+        "failed": 0,
+        "batch_total_s": 223.345
+      },
+      {
+        "correct": 32,
+        "fp": 1,
+        "fn": 7,
+        "failed": 0,
+        "batch_total_s": 217.891
+      }
+    ],
+    "scope": "40_unique_development_videos_in_sample",
+    "qualification": "not_qualified"
+  },
+  "baseline_stage_par6": {
+    "report": "benchmarks/quality/q30-baseline-stage-par6-20261018T054619Z.json",
+    "jobs": 6,
+    "failed": 0,
+    "p50_s": 43.783,
+    "max_s": 74.316,
+    "all_under_285_s": true,
+    "all_under_60_s": false,
+    "completion_in_arrival_order": false
+  },
+  "latest_q30_step_benchmark": "benchmarks/quality/pipeline-steps-q30-baseline-pair-20261018T054438Z.json",
+  "contextual_procedure": {
+    "report": "benchmarks/quality/q30-procedure-visible-r2-20261018T055000Z.json",
+    "done": 21,
+    "failed": 13,
+    "abstained": 6,
+    "qualification": false,
+    "further_check": "affirmative_prompt_protocol_smoke_preparing"
+  }
+}

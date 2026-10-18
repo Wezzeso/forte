@@ -1,0 +1,110 @@
+{
+  "schema_version": "forte.qwen38.serving-options-cpu.v1",
+  "captured_at_utc": "2026-10-17T14:05:18.766972+00:00",
+  "status": "advisory_only_not_deployed_or_latency_measured",
+  "assessment": {
+    "path": "infra\\qwen38-throughput-cpu-assessment-20261017.json",
+    "sha256": "8fd9a439d595c982d3c78861552b6716e32883ddbd4aab14366305d34ec40f12"
+  },
+  "gpu_calls": 0,
+  "model_calls": 0,
+  "private_inputs": false,
+  "service_changes": false,
+  "root_confirmed_initial_profile": {
+    "max_concurrent_clips": 1,
+    "max_inflight_per_job": 1,
+    "staged_screening": false,
+    "sampling_unchanged": {
+      "window_seconds": 8,
+      "stride_seconds": 4,
+      "sample_fps": 2,
+      "max_frames_per_window": 16
+    },
+    "full_fact_count": 19
+  },
+  "admission_and_queue": {
+    "recommend_active_jobs": 1,
+    "active_jobs_is_not_admission_limit": true,
+    "api_absolute_deadline_created_before_upload_body_read": true,
+    "durable_queue_wait_consumes_deadline": true,
+    "candidate_busy_429_is_not_retried": true,
+    "policy": "One active candidate job; concurrent durable admissions remain truthful queued work and may expire. A separate bounded admission rule is needed to promise latency, with rejected attempts retained in denominators."
+  },
+  "generation": {
+    "initial_max_new_tokens": 4096,
+    "do_sample": false,
+    "num_beams": 1,
+    "thinking": false,
+    "notes": "Retain compact frame IDs and concise observations. Lower maximum tokens does not accelerate responses that already stop early; a 512-token cap is below a 542-token generated 19-fact no-event envelope. Any lower cap needs measured complete-JSON/token-budget evidence and must fail closed on truncation."
+  },
+  "deadline_arithmetic": {
+    "long_duration_seconds": 142.53302083333332,
+    "coverage_calls": 35,
+    "max_calls_with_refinements": 43,
+    "reserved_nonmodel_seconds_assumption": 15,
+    "available_model_seconds_at_285s": 270,
+    "max_average_call_seconds_35": 7.714285714285714,
+    "max_average_call_seconds_43": 6.27906976744186,
+    "representative_synthetic_output_tokens": 542,
+    "hypothetical_prefill_seconds": 1,
+    "required_decode_tokens_per_second_35": 80.72340425531915,
+    "required_decode_tokens_per_second_43": 102.66960352422909,
+    "under10s_decode_rate_required_for_representative35calls_ignoring_all_overhead": 1897.0,
+    "measured_candidate_throughput": null
+  },
+  "co_residence": {
+    "baseline_weight_file_gib": 16.330126218497753,
+    "candidate_all4bit_raw_lowerbound_gib": 12.93673550337553,
+    "candidate_unquantized_embedding_plus_lm_head_bf16_gib_if_kept": 4.736328125,
+    "baseline_current_used_mib": 70829,
+    "baseline_current_free_mib": 10327,
+    "unmodified_baseline_allows_candidate_load_proven": false,
+    "hypothetical8b_helper_profile": {
+      "max_num_seqs": 1,
+      "gpu_memory_utilization_planning_range": [
+        0.35,
+        0.4
+      ],
+      "total_engine_budget_gib_range": [
+        28,
+        32
+      ],
+      "max_model_len_general_current_image_budget": 32768,
+      "max_model_len_only_after_native_pixel_envelope_validation": 16384,
+      "baseline_bf16_kv_gib_32768_one_sequence": 4.5,
+      "baseline_bf16_kv_gib_16384_one_sequence": 2.25,
+      "profile_tested": false
+    },
+    "warning": "Memory residency is not compute capacity. Keep GPU compute serialized and validate startup, prewarm, and the worst 16-image peak. The candidate NF4 footprint, nonquantized parameter scopes, recurrent states, and workspace peak remain unmeasured. Prefer exclusive 27B operation for the first latency proof and preserve the 8B rollback."
+  },
+  "bounded_options_without_sampling_drop": [
+    {
+      "option": "Bypass redundant four-fact screening",
+      "status": "Existing configuration; root chose staged_screening=false",
+      "effect": "35 full coverage calls instead of up to 35 screen calls plus 35 full calls, preserving all 19 facts and all windows."
+    },
+    {
+      "option": "True independent microbatch of two",
+      "status": "Future service implementation and actual quality/memory tests required; the current single lock cannot do this",
+      "effect": "Queue at most two independent 16-frame windows, collate two prompts with left padding and correct per-item masks, positions, and EOS handling. Validate every result and source ID separately. Do not wait to fill a batch or combine two windows into one 32-image question."
+    },
+    {
+      "option": "Within-job exact preprocessing reuse",
+      "status": "Future cache proof and profiling required",
+      "effect": "Reuse source-bound JPEGs or processor tensors keyed by exact image bytes and processor/configuration identity. No answer, prediction, or cross-upload cache. The long clip has 528 planned unique targets versus 560 frame uses, so overlap reuse alone may offer little benefit."
+    },
+    {
+      "option": "Verified fast hybrid kernels",
+      "status": "Optional future exact-wheel/kernel benchmark; no current fast-path claim",
+      "effect": "The current image lacks FLA and causal-conv1d distributions. The pinned Transformers 5.17 fallback performs FP32 gated-delta chunk scans on 48 linear-attention layers. Successful NF4 loading or package presence does not establish efficient kernel execution."
+    }
+  ],
+  "specific_risks": [
+    "The current HF endpoint validates JSON after unconstrained generation. This differs from baseline vLLM xgrammar and may add invalid-output failures.",
+    "An 8k context cannot fit the native 16-frame full-fact prompt. General 16-image requests at the 1M-pixel ceiling require more than 16k context. Bind context to the declared input envelope.",
+    "Reducing the pixel ceiling from 1M to 524k or 393k does not resize native 464x848 sources. A 262k ceiling reduces detail and needs quality validation.",
+    "Increasing worker concurrency does not create model batching. The current candidate lock rejects concurrent requests.",
+    "Preserve coverage, support requirements, rule mapping, original evidence, and failure denominators.",
+    "CPU arithmetic and historical 8B request means do not establish 27B quality, runtime, or universal 100% accuracy."
+  ]
+}

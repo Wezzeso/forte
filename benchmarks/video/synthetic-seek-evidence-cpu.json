@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "measurement": "generated_cpu_exact_seek_evidence_only",
+  "implementation_sha256": "53e50b29498cdf6e3d35840f9b91dfc403bf92c4aced10eb16db8c3cf99b653d",
+  "fixture": {
+    "generated": true,
+    "duration_sec": 142.53333333333333,
+    "native_frames": 4276,
+    "width": 464,
+    "height": 848
+  },
+  "selected_evidence_frames": 3,
+  "native_index_setup_sec": 1.4140070000012201,
+  "full_forward_evidence_sec": 2.827217500000188,
+  "grouped_seek_passes": [
+    {
+      "decode_jpeg_sec": 0.09209179999925254,
+      "decoded_source_frames": 36,
+      "keyframe_groups": 2,
+      "selected_frame_count": 3,
+      "full_forward_fallback_used": 0,
+      "source_hash_sec": 0.01997299999857205,
+      "total_sec": 0.1617500000011205,
+      "exact_ids_and_jpeg_sha_equal_full_forward": true
+    },
+    {
+      "decode_jpeg_sec": 0.0969215000004624,
+      "decoded_source_frames": 36,
+      "keyframe_groups": 2,
+      "selected_frame_count": 3,
+      "full_forward_fallback_used": 0,
+      "source_hash_sec": 0.017706700000417186,
+      "total_sec": 0.15549759999885282,
+      "exact_ids_and_jpeg_sha_equal_full_forward": true
+    }
+  ],
+  "grouped_seek_median_sec": 0.15862379999998666,
+  "grouped_seek_spawn_isolation": {
+    "decode_jpeg_sec": 0.14039059999959136,
+    "decoded_source_frames": 36,
+    "keyframe_groups": 2,
+    "selected_frame_count": 3,
+    "full_forward_fallback_used": 0,
+    "source_hash_sec": 0.01966779999929713,
+    "total_sec": 0.7077448000000004,
+    "exact_ids_and_jpeg_sha_equal_full_forward": true
+  },
+  "limitations": [
+    "Generated local CPU fixture only; no supplied pixels, events, GPU or model calls.",
+    "The native index is reused from the feature pass in production; setup cost is separately recorded.",
+    "This is evidence materialization timing, not upload-to-result latency."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "catalog_sha256": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+  "event_type_ids": [
+    "CASH_MOVED_TO_PERSONAL_STORAGE",
+    "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+    "CASH_UNATTENDED"
+  ],
+  "fact_axis_origin": "enabled_catalog_required_fact_states_sorted",
+  "fact_ids": [
+    "ALL_COUNTING_PATHS_VISIBLE",
+    "BANK_CASH_WORKSTATION",
+    "CASH_COUNT_VISIBLE",
+    "CASH_HANDLER_LEAVES_WORKSTATION",
+    "CASH_HANDLER_PRESENT",
+    "CASH_HANDOVER_VISIBLE",
+    "CASH_ISSUE_OPERATION",
+    "CASH_ON_WORK_SURFACE",
+    "CASH_PLACED_IN_CLOTHING_POCKET",
+    "CASH_PLACED_IN_PERSONAL_CONTAINER",
+    "CASH_RECEIPT_OPERATION",
+    "CASH_VISIBLE",
+    "CUSTOMER_SERVICE_CONTINUES",
+    "LOOSE_BANKNOTES_ISSUED",
+    "LOOSE_BANKNOTES_RECEIVED",
+    "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+    "PREVIOUS_RECEIPT_COMPLETE",
+    "PROCEDURE_CONTEXT_COMPLETE",
+    "WORK_AREA_CONTINUOUSLY_VISIBLE"
+  ],
+  "schema_version": "forte.temporal-fact-axis.v1",
+  "state_order": [
+    "absent",
+    "present",
+    "unclear"
+  ],
+  "taxonomy_sha256": "817b24496dc55d060e944491f877747dde52cb5195ffd1edeea2cd7ffffbe9da"
+}

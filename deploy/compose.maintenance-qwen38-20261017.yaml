@@ -1,0 +1,8 @@
+# Operational maintenance override; use with compose.yaml and deploy/.env.
+services:
+  api:
+    environment:
+      FORTE_ADMISSION_PAUSED: "${FORTE_ADMISSION_PAUSED:-true}"
+  worker:
+    environment:
+      FORTE_STAGED_SCREENING: "${FORTE_STAGED_SCREENING:-false}"

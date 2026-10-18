@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "fact_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Fact Id",
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "required": {
+      "default": true,
+      "title": "Required",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "fact_id",
+    "description"
+  ],
+  "title": "FactDefinition",
+  "type": "object"
+}

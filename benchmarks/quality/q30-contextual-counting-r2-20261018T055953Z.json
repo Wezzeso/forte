@@ -1,0 +1,3046 @@
+{
+  "schema": "forte.contextual-procedure-diagnostic.v1",
+  "generated_at_utc": "2026-10-18T05:59:53.636165+00:00",
+  "labels_sha256": "1525e16117ee375a1581967a4f2f855c4d88c107dec4998878f9306031be73d8",
+  "tool_sha256": "9cc80a7dc72c44cc7144736dea205bdd8d9e19ed478dfe2c2fee904f7d82549a",
+  "procedure_coverage_helper_sha256": "5a99f5e6f45964a377f8c92aa68cee47e645f54076d38de3d9d0d146107eaacc",
+  "diagnostic_only": true,
+  "inference_executed": false,
+  "type_enablement_qualified": false,
+  "production_change_authorized": false,
+  "heldout_accuracy_claim": false,
+  "cross_validation_claim": false,
+  "source": {
+    "source_guard_and_policy_verified": true,
+    "paired_consensus_policy_verified": true,
+    "sample_interval_s": 0.2,
+    "source_success": true,
+    "sampling_policy_verified": true
+  },
+  "definition": {
+    "action": "paired_cash_recount_yes",
+    "counterparty": "paired_visitor_absent; no_visitor_present",
+    "required_clear": [
+      "desk_visibility",
+      "counting_machine_visibility",
+      "cashier_hands_visibility"
+    ],
+    "counting_modality_resolved": false,
+    "duration": "last_qualifying_sample_minus_first_qualifying_sample; no_extrapolation",
+    "maximum_consecutive_sample_gap_s": 0.25,
+    "unclear_samples_break_runs": true,
+    "continuous_condition_proven": false
+  },
+  "operating_point": {
+    "threshold_s": 2.8,
+    "comparison": "duration_proxy_s >= threshold_s",
+    "maximum_observed_negative_episode_s": 2.6,
+    "one_sample_margin_s": 0.2,
+    "negative_videos_expected": 19,
+    "negative_rows_recorded": 19,
+    "negative_rows_with_complete_coverage": 0,
+    "negative_episode_count": 1,
+    "negative_episode_duration_distribution": {
+      "2.6": 1
+    },
+    "calibration_complete": false,
+    "reasons": [
+      "not_all_19_negatives_have_complete_contextual_sampling_coverage"
+    ],
+    "labels_used_for": "negative_membership_only; no_positive_labels_or_times_in_operating_point",
+    "calibration_scope": "in_sample_negative_envelope; zero_negative_fires_is_not_independent_validation",
+    "fitted_parameters": 1,
+    "margin_tuned": false
+  },
+  "count_without_client": {
+    "summary": {
+      "n": 40,
+      "processed": 0,
+      "failed": 40,
+      "correct": 0,
+      "accuracy": 0.0,
+      "positive": 21,
+      "negative": 19,
+      "tp": 0,
+      "fn": 0,
+      "fp": 0,
+      "tn": 0,
+      "failed_positive": 21,
+      "failed_negative": 19,
+      "recall": 0.0,
+      "precision": null,
+      "type_labeled": 0,
+      "type_correct": 0,
+      "time_labeled_videos": 21,
+      "timecode_scored": 0,
+      "timecode_err_median": null,
+      "timecode_within_2s": 0,
+      "event_time_labels": 0,
+      "event_time_matches": 0,
+      "wall_max": null,
+      "wall_median": null,
+      "wall_scored": 0
+    },
+    "gate": {
+      "passed": false,
+      "reasons": [
+        "processing_failures",
+        "negative_calibration_incomplete"
+      ],
+      "regressed_videos": [],
+      "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+    },
+    "positive_score_passes_after_threshold_freeze": 1,
+    "type_correctness_measured": false,
+    "videos": [
+      {
+        "name": "X-1",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-10",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-11",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-12",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-13",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-14",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-15",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-16",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-17",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-18",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-19",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-2",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-20",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-21",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-22",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-23",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-24",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-25",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-26",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-27",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-28",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-29",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-3",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-30",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-31",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-32",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-33",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-34",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-35",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-37",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-38",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-39",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-4",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-40",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-43",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-44",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-45",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-46",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-5",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-8",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      }
+    ]
+  },
+  "observation_reliability": {
+    "negative": {
+      "expected_videos": 19,
+      "recorded_videos": 19,
+      "source_status_counts": {
+        "done": 9,
+        "abstained": 3,
+        "failed": 7
+      },
+      "windows_recorded": 17,
+      "windows_with_valid_observations": 16,
+      "windows_failed_or_invalid": 1,
+      "videos_with_complete_contextual_coverage": 0,
+      "sampled_observations": 1288,
+      "clear_context_observations": 833,
+      "clear_context_observation_fraction": 0.6467391304347826,
+      "action_counts_paired_consensus": {
+        "banknote_to_detector": {
+          "no": 241,
+          "unclear": 1044,
+          "yes": 3
+        },
+        "card_to_cashier": {
+          "no": 214,
+          "unclear": 1071,
+          "yes": 3
+        },
+        "cash_recount": {
+          "no": 213,
+          "unclear": 1061,
+          "yes": 14
+        },
+        "cash_accepted": {
+          "no": 220,
+          "unclear": 1068
+        },
+        "cash_stored": {
+          "no": 213,
+          "unclear": 1075
+        }
+      },
+      "visibility_counts_paired_consensus": {
+        "detector_visibility": {
+          "clear": 1054,
+          "too_small": 109,
+          "unclear": 125
+        },
+        "desk_visibility": {
+          "clear": 1281,
+          "unclear": 7
+        },
+        "counting_machine_visibility": {
+          "too_small": 290,
+          "clear": 858,
+          "unclear": 140
+        },
+        "cashier_hands_visibility": {
+          "clear": 1288
+        },
+        "visitor_hands_visibility": {
+          "absent": 771,
+          "clear": 484,
+          "unclear": 33
+        }
+      },
+      "eligible_episode_count": 1,
+      "eligible_episode_durations_s": [
+        2.6
+      ],
+      "disabled_type_coverage": {
+        "NO_AUTHENTICITY_CHECK": {
+          "window_status_counts": {
+            "insufficient_coverage": 15,
+            "step_observed": 1
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 12,
+          "action_known_fraction_90pct_windows": 0
+        },
+        "NO_CLIENT_ID": {
+          "window_status_counts": {
+            "insufficient_coverage": 15,
+            "step_observed": 1
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 15,
+          "action_known_fraction_90pct_windows": 0
+        },
+        "NO_RECOUNT": {
+          "window_status_counts": {
+            "insufficient_coverage": 15,
+            "step_observed": 1
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 6,
+          "action_known_fraction_90pct_windows": 0
+        }
+      }
+    },
+    "positive": {
+      "expected_videos": 21,
+      "recorded_videos": 21,
+      "source_status_counts": {
+        "done": 12,
+        "abstained": 3,
+        "failed": 6
+      },
+      "windows_recorded": 13,
+      "windows_with_valid_observations": 12,
+      "windows_failed_or_invalid": 1,
+      "videos_with_complete_contextual_coverage": 0,
+      "sampled_observations": 1040,
+      "clear_context_observations": 530,
+      "clear_context_observation_fraction": 0.5096153846153846,
+      "action_counts_paired_consensus": {
+        "banknote_to_detector": {
+          "no": 291,
+          "unclear": 742,
+          "yes": 7
+        },
+        "card_to_cashier": {
+          "no": 256,
+          "unclear": 784
+        },
+        "cash_recount": {
+          "no": 235,
+          "unclear": 805
+        },
+        "cash_accepted": {
+          "no": 248,
+          "unclear": 792
+        },
+        "cash_stored": {
+          "no": 235,
+          "unclear": 805
+        }
+      },
+      "visibility_counts_paired_consensus": {
+        "detector_visibility": {
+          "too_small": 112,
+          "clear": 844,
+          "unclear": 84
+        },
+        "desk_visibility": {
+          "clear": 1040
+        },
+        "counting_machine_visibility": {
+          "too_small": 305,
+          "unclear": 156,
+          "clear": 579
+        },
+        "cashier_hands_visibility": {
+          "clear": 1040
+        },
+        "visitor_hands_visibility": {
+          "absent": 521,
+          "unclear": 82,
+          "clear": 437
+        }
+      },
+      "eligible_episode_count": 0,
+      "eligible_episode_durations_s": [],
+      "disabled_type_coverage": {
+        "NO_AUTHENTICITY_CHECK": {
+          "window_status_counts": {
+            "insufficient_coverage": 11,
+            "step_observed": 1
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 8,
+          "action_known_fraction_90pct_windows": 0
+        },
+        "NO_CLIENT_ID": {
+          "window_status_counts": {
+            "insufficient_coverage": 12
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 9,
+          "action_known_fraction_90pct_windows": 0
+        },
+        "NO_RECOUNT": {
+          "window_status_counts": {
+            "insufficient_coverage": 12
+          },
+          "whole_transaction_windows": 0,
+          "paired_boundary_agreement_windows": 0,
+          "meets_sampled_visibility_proxy_windows": 4,
+          "action_known_fraction_90pct_windows": 0
+        }
+      }
+    }
+  },
+  "disabled_type_signals": {
+    "NO_AUTHENTICITY_CHECK": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 26,
+        "step_observed": 2
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    },
+    "NO_CLIENT_ID": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 27,
+        "step_observed": 1
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    },
+    "NO_RECOUNT": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 27,
+        "step_observed": 1
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    }
+  },
+  "observations": [
+    {
+      "name": "X-1",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 25.933333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.161954,
+            "sampled_frames": 131,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 131,
+            "clear_context_samples": 21,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 42,
+                "unclear": 89
+              },
+              "card_to_cashier": {
+                "no": 35,
+                "unclear": 96
+              },
+              "cash_recount": {
+                "no": 28,
+                "unclear": 103
+              },
+              "cash_accepted": {
+                "no": 28,
+                "unclear": 103
+              },
+              "cash_stored": {
+                "no": 28,
+                "unclear": 103
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 28,
+                "clear": 75,
+                "unclear": 28
+              },
+              "desk_visibility": {
+                "clear": 131
+              },
+              "counting_machine_visibility": {
+                "too_small": 89,
+                "unclear": 21,
+                "clear": 21
+              },
+              "cashier_hands_visibility": {
+                "clear": 131
+              },
+              "visitor_hands_visibility": {
+                "absent": 11,
+                "unclear": 11,
+                "clear": 109
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-10",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 3.0,
+          "end": 10.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.414286,
+            "sampled_frames": 36,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 36,
+            "clear_context_samples": 15,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 7,
+                "unclear": 29
+              },
+              "card_to_cashier": {
+                "no": 7,
+                "unclear": 29
+              },
+              "cash_recount": {
+                "no": 7,
+                "unclear": 29
+              },
+              "cash_accepted": {
+                "no": 7,
+                "unclear": 29
+              },
+              "cash_stored": {
+                "no": 7,
+                "unclear": 29
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 36
+              },
+              "desk_visibility": {
+                "clear": 36
+              },
+              "counting_machine_visibility": {
+                "too_small": 21,
+                "clear": 15
+              },
+              "cashier_hands_visibility": {
+                "clear": 36
+              },
+              "visitor_hands_visibility": {
+                "absent": 36
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 11.0,
+          "end": 15.566667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.408759,
+            "sampled_frames": 24,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 24,
+            "clear_context_samples": 10,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 17,
+                "no": 7
+              },
+              "card_to_cashier": {
+                "unclear": 17,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 17,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 17,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 17,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 24
+              },
+              "desk_visibility": {
+                "clear": 24
+              },
+              "counting_machine_visibility": {
+                "too_small": 14,
+                "clear": 10
+              },
+              "cashier_hands_visibility": {
+                "clear": 24
+              },
+              "visitor_hands_visibility": {
+                "absent": 24
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-11",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-12",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-13",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 48.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.622917,
+            "sampled_frames": 241,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.012448,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 241,
+            "clear_context_samples": 150,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 24,
+                "unclear": 217
+              },
+              "card_to_cashier": {
+                "no": 24,
+                "unclear": 217
+              },
+              "cash_recount": {
+                "no": 24,
+                "unclear": 217
+              },
+              "cash_accepted": {
+                "no": 24,
+                "unclear": 217
+              },
+              "cash_stored": {
+                "no": 24,
+                "unclear": 217
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 241
+              },
+              "desk_visibility": {
+                "clear": 241
+              },
+              "counting_machine_visibility": {
+                "unclear": 56,
+                "clear": 157,
+                "too_small": 28
+              },
+              "cashier_hands_visibility": {
+                "clear": 241
+              },
+              "visitor_hands_visibility": {
+                "absent": 108,
+                "clear": 119,
+                "unclear": 14
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-14",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 40.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.896296,
+            "sampled_frames": 203,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.206897,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 203,
+            "clear_context_samples": 182,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 161,
+                "no": 42
+              },
+              "card_to_cashier": {
+                "unclear": 161,
+                "no": 42
+              },
+              "cash_recount": {
+                "unclear": 161,
+                "no": 42
+              },
+              "cash_accepted": {
+                "unclear": 161,
+                "no": 42
+              },
+              "cash_stored": {
+                "unclear": 161,
+                "no": 42
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 203
+              },
+              "desk_visibility": {
+                "clear": 203
+              },
+              "counting_machine_visibility": {
+                "clear": 203
+              },
+              "cashier_hands_visibility": {
+                "clear": 203
+              },
+              "visitor_hands_visibility": {
+                "absent": 126,
+                "clear": 56,
+                "unclear": 21
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 43.5,
+          "end": 67.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.883333,
+            "sampled_frames": 120,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.058333,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 120,
+            "clear_context_samples": 106,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 113,
+                "no": 7
+              },
+              "card_to_cashier": {
+                "unclear": 113,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 113,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 113,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 113,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 120
+              },
+              "desk_visibility": {
+                "clear": 120
+              },
+              "counting_machine_visibility": {
+                "unclear": 14,
+                "clear": 106
+              },
+              "cashier_hands_visibility": {
+                "clear": 120
+              },
+              "visitor_hands_visibility": {
+                "absent": 120
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 69.5,
+          "end": 97.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.85,
+            "sampled_frames": 140,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 140,
+            "clear_context_samples": 119,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 140
+              },
+              "card_to_cashier": {
+                "unclear": 140
+              },
+              "cash_recount": {
+                "unclear": 140
+              },
+              "cash_accepted": {
+                "unclear": 140
+              },
+              "cash_stored": {
+                "unclear": 140
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 140
+              },
+              "desk_visibility": {
+                "clear": 140
+              },
+              "counting_machine_visibility": {
+                "clear": 119,
+                "unclear": 21
+              },
+              "cashier_hands_visibility": {
+                "clear": 140
+              },
+              "visitor_hands_visibility": {
+                "absent": 140
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 98.0,
+          "end": 114.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.915152,
+            "sampled_frames": 83,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 83,
+            "clear_context_samples": 76,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 83
+              },
+              "card_to_cashier": {
+                "unclear": 83
+              },
+              "cash_recount": {
+                "unclear": 83
+              },
+              "cash_accepted": {
+                "unclear": 83
+              },
+              "cash_stored": {
+                "unclear": 83
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 83
+              },
+              "desk_visibility": {
+                "clear": 83
+              },
+              "counting_machine_visibility": {
+                "clear": 76,
+                "unclear": 7
+              },
+              "cashier_hands_visibility": {
+                "clear": 83
+              },
+              "visitor_hands_visibility": {
+                "absent": 83
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 115.0,
+          "end": 120.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 28,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 28,
+            "clear_context_samples": 28,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 28
+              },
+              "card_to_cashier": {
+                "unclear": 28
+              },
+              "cash_recount": {
+                "unclear": 28
+              },
+              "cash_accepted": {
+                "unclear": 28
+              },
+              "cash_stored": {
+                "unclear": 28
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 28
+              },
+              "desk_visibility": {
+                "clear": 28
+              },
+              "counting_machine_visibility": {
+                "clear": 28
+              },
+              "cashier_hands_visibility": {
+                "clear": 28
+              },
+              "visitor_hands_visibility": {
+                "absent": 28
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-15",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 20.866667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.602236,
+            "sampled_frames": 106,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.273585,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 106,
+            "clear_context_samples": 64,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 50,
+                "unclear": 56
+              },
+              "card_to_cashier": {
+                "no": 50,
+                "unclear": 56
+              },
+              "cash_recount": {
+                "no": 50,
+                "unclear": 56
+              },
+              "cash_accepted": {
+                "no": 50,
+                "unclear": 56
+              },
+              "cash_stored": {
+                "no": 50,
+                "unclear": 56
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "unclear": 7,
+                "clear": 99
+              },
+              "desk_visibility": {
+                "clear": 106
+              },
+              "counting_machine_visibility": {
+                "unclear": 14,
+                "clear": 78,
+                "too_small": 14
+              },
+              "cashier_hands_visibility": {
+                "clear": 106
+              },
+              "visitor_hands_visibility": {
+                "unclear": 28,
+                "absent": 71,
+                "clear": 7
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-16",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 22.733021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.270101,
+            "sampled_frames": 105,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 105,
+            "clear_context_samples": 28,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 35,
+                "unclear": 70
+              },
+              "card_to_cashier": {
+                "no": 29,
+                "unclear": 75,
+                "yes": 1
+              },
+              "cash_recount": {
+                "no": 28,
+                "unclear": 77
+              },
+              "cash_accepted": {
+                "no": 29,
+                "unclear": 76
+              },
+              "cash_stored": {
+                "no": 28,
+                "unclear": 77
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 14,
+                "clear": 70,
+                "unclear": 21
+              },
+              "desk_visibility": {
+                "clear": 105
+              },
+              "counting_machine_visibility": {
+                "too_small": 56,
+                "clear": 28,
+                "unclear": 21
+              },
+              "cashier_hands_visibility": {
+                "clear": 105
+              },
+              "visitor_hands_visibility": {
+                "absent": 10,
+                "clear": 95
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-17",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 14.733333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.246606,
+            "sampled_frames": 75,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.093333,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 75,
+            "clear_context_samples": 19,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 28,
+                "unclear": 47
+              },
+              "card_to_cashier": {
+                "no": 28,
+                "unclear": 47
+              },
+              "cash_recount": {
+                "no": 28,
+                "unclear": 47
+              },
+              "cash_accepted": {
+                "no": 28,
+                "unclear": 47
+              },
+              "cash_stored": {
+                "no": 28,
+                "unclear": 47
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 14,
+                "clear": 61
+              },
+              "desk_visibility": {
+                "clear": 75
+              },
+              "counting_machine_visibility": {
+                "too_small": 42,
+                "clear": 26,
+                "unclear": 7
+              },
+              "cashier_hands_visibility": {
+                "clear": 75
+              },
+              "visitor_hands_visibility": {
+                "absent": 30,
+                "clear": 38,
+                "unclear": 7
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-18",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 22.6,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.0,
+            "sampled_frames": 114,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 114,
+            "clear_context_samples": 0,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 98,
+                "unclear": 16
+              },
+              "card_to_cashier": {
+                "no": 77,
+                "unclear": 37
+              },
+              "cash_recount": {
+                "no": 63,
+                "unclear": 51
+              },
+              "cash_accepted": {
+                "no": 76,
+                "unclear": 38
+              },
+              "cash_stored": {
+                "no": 63,
+                "unclear": 51
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 44,
+                "too_small": 35,
+                "unclear": 35
+              },
+              "desk_visibility": {
+                "clear": 114
+              },
+              "counting_machine_visibility": {
+                "too_small": 84,
+                "unclear": 30
+              },
+              "cashier_hands_visibility": {
+                "clear": 114
+              },
+              "visitor_hands_visibility": {
+                "absent": 35,
+                "clear": 79
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-19",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 46.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.35,
+            "sampled_frames": 221,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 221,
+            "clear_context_samples": 77,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 67,
+                "unclear": 154
+              },
+              "card_to_cashier": {
+                "no": 60,
+                "unclear": 161
+              },
+              "cash_recount": {
+                "no": 60,
+                "unclear": 161
+              },
+              "cash_accepted": {
+                "no": 60,
+                "unclear": 161
+              },
+              "cash_stored": {
+                "no": 60,
+                "unclear": 161
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "unclear": 49,
+                "clear": 126,
+                "too_small": 46
+              },
+              "desk_visibility": {
+                "clear": 221
+              },
+              "counting_machine_visibility": {
+                "too_small": 95,
+                "unclear": 49,
+                "clear": 77
+              },
+              "cashier_hands_visibility": {
+                "clear": 221
+              },
+              "visitor_hands_visibility": {
+                "absent": 12,
+                "unclear": 8,
+                "clear": 201
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 48.0,
+          "end": 57.433021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.0,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 48,
+            "clear_context_samples": 0,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 41,
+                "unclear": 7
+              },
+              "card_to_cashier": {
+                "no": 34,
+                "unclear": 14
+              },
+              "cash_recount": {
+                "no": 34,
+                "unclear": 14
+              },
+              "cash_accepted": {
+                "no": 34,
+                "unclear": 14
+              },
+              "cash_stored": {
+                "no": 34,
+                "unclear": 14
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 14,
+                "unclear": 27,
+                "clear": 7
+              },
+              "desk_visibility": {
+                "clear": 48
+              },
+              "counting_machine_visibility": {
+                "too_small": 34,
+                "unclear": 14
+              },
+              "cashier_hands_visibility": {
+                "clear": 48
+              },
+              "visitor_hands_visibility": {
+                "absent": 7,
+                "clear": 41
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-2",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 3.0,
+          "end": 17.066667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.310427,
+            "sampled_frames": 72,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 72,
+            "clear_context_samples": 23,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 28,
+                "unclear": 37,
+                "yes": 7
+              },
+              "card_to_cashier": {
+                "no": 21,
+                "unclear": 51
+              },
+              "cash_recount": {
+                "no": 21,
+                "unclear": 51
+              },
+              "cash_accepted": {
+                "no": 21,
+                "unclear": 51
+              },
+              "cash_stored": {
+                "no": 21,
+                "unclear": 51
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 35,
+                "clear": 23,
+                "unclear": 14
+              },
+              "desk_visibility": {
+                "clear": 72
+              },
+              "counting_machine_visibility": {
+                "too_small": 35,
+                "clear": 23,
+                "unclear": 14
+              },
+              "cashier_hands_visibility": {
+                "clear": 72
+              },
+              "visitor_hands_visibility": {
+                "absent": 11,
+                "clear": 60,
+                "unclear": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-20",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 11.633333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.633166,
+            "sampled_frames": 34,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 34,
+            "clear_context_samples": 21,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 34
+              },
+              "card_to_cashier": {
+                "unclear": 34
+              },
+              "cash_recount": {
+                "unclear": 34
+              },
+              "cash_accepted": {
+                "unclear": 34
+              },
+              "cash_stored": {
+                "unclear": 34
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 34
+              },
+              "desk_visibility": {
+                "clear": 34
+              },
+              "counting_machine_visibility": {
+                "too_small": 13,
+                "clear": 21
+              },
+              "cashier_hands_visibility": {
+                "clear": 34
+              },
+              "visitor_hands_visibility": {
+                "absent": 34
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-21",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [
+        {
+          "start": 13.4,
+          "end": 16.0,
+          "duration_proxy_s": 2.6,
+          "qualifying_samples": 14,
+          "prior_visitor_clear_in_window": false,
+          "prior_cash_acceptance_seen_in_window": false,
+          "continuous_condition_proven": false
+        }
+      ],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [
+            {
+              "start": 13.4,
+              "end": 16.0,
+              "duration_proxy_s": 2.6,
+              "qualifying_samples": 14,
+              "prior_visitor_clear_in_window": false,
+              "prior_cash_acceptance_seen_in_window": false,
+              "continuous_condition_proven": false
+            }
+          ],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 17.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.883333,
+            "sampled_frames": 61,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.344262,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 61,
+            "clear_context_samples": 54,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 54,
+                "no": 7
+              },
+              "card_to_cashier": {
+                "unclear": 54,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 40,
+                "no": 7,
+                "yes": 14
+              },
+              "cash_accepted": {
+                "unclear": 54,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 54,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 61
+              },
+              "desk_visibility": {
+                "clear": 61
+              },
+              "counting_machine_visibility": {
+                "clear": 54,
+                "too_small": 7
+              },
+              "cashier_hands_visibility": {
+                "clear": 61
+              },
+              "visitor_hands_visibility": {
+                "absent": 61
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-22",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-23",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-24",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 3.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.566667,
+            "sampled_frames": 16,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 16,
+            "clear_context_samples": 9,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 16
+              },
+              "card_to_cashier": {
+                "unclear": 16
+              },
+              "cash_recount": {
+                "unclear": 16
+              },
+              "cash_accepted": {
+                "unclear": 16
+              },
+              "cash_stored": {
+                "unclear": 16
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 16
+              },
+              "desk_visibility": {
+                "clear": 16
+              },
+              "counting_machine_visibility": {
+                "unclear": 7,
+                "clear": 9
+              },
+              "cashier_hands_visibility": {
+                "clear": 16
+              },
+              "visitor_hands_visibility": {
+                "absent": 16
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-25",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 3.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 16,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.4375,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 16,
+            "clear_context_samples": 16,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 9,
+                "no": 7
+              },
+              "card_to_cashier": {
+                "unclear": 9,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 9,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 9,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 9,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 16
+              },
+              "desk_visibility": {
+                "clear": 16
+              },
+              "counting_machine_visibility": {
+                "clear": 16
+              },
+              "cashier_hands_visibility": {
+                "clear": 16
+              },
+              "visitor_hands_visibility": {
+                "absent": 16
+              }
+            }
+          }
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 7.0,
+          "end": 11.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 21,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 21,
+            "clear_context_samples": 21,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 21
+              },
+              "card_to_cashier": {
+                "unclear": 21
+              },
+              "cash_recount": {
+                "unclear": 21
+              },
+              "cash_accepted": {
+                "unclear": 21
+              },
+              "cash_stored": {
+                "unclear": 21
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 21
+              },
+              "desk_visibility": {
+                "clear": 21
+              },
+              "counting_machine_visibility": {
+                "clear": 21
+              },
+              "cashier_hands_visibility": {
+                "clear": 21
+              },
+              "visitor_hands_visibility": {
+                "absent": 21
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-26",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 19.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.764045,
+            "sampled_frames": 90,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.077778,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 90,
+            "clear_context_samples": 69,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 83,
+                "no": 7
+              },
+              "card_to_cashier": {
+                "unclear": 83,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 83,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 83,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 83,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 90
+              },
+              "desk_visibility": {
+                "clear": 90
+              },
+              "counting_machine_visibility": {
+                "clear": 83,
+                "unclear": 7
+              },
+              "cashier_hands_visibility": {
+                "clear": 90
+              },
+              "visitor_hands_visibility": {
+                "absent": 69,
+                "unclear": 14,
+                "clear": 7
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-27",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 9.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.777778,
+            "sampled_frames": 46,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 46,
+            "clear_context_samples": 35,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 46
+              },
+              "card_to_cashier": {
+                "unclear": 46
+              },
+              "cash_recount": {
+                "unclear": 46
+              },
+              "cash_accepted": {
+                "unclear": 46
+              },
+              "cash_stored": {
+                "unclear": 46
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 46
+              },
+              "desk_visibility": {
+                "clear": 46
+              },
+              "counting_machine_visibility": {
+                "too_small": 7,
+                "clear": 39
+              },
+              "cashier_hands_visibility": {
+                "clear": 46
+              },
+              "visitor_hands_visibility": {
+                "absent": 42,
+                "unclear": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-28",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-29",
+      "source_status": "abstained",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-3",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 20.033021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.232906,
+            "sampled_frames": 91,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.076923,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 91,
+            "clear_context_samples": 21,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 77,
+                "no": 14
+              },
+              "card_to_cashier": {
+                "unclear": 82,
+                "no": 7,
+                "yes": 2
+              },
+              "cash_recount": {
+                "unclear": 84,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 78,
+                "no": 13
+              },
+              "cash_stored": {
+                "unclear": 84,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "too_small": 35,
+                "unclear": 28,
+                "clear": 28
+              },
+              "desk_visibility": {
+                "clear": 84,
+                "unclear": 7
+              },
+              "counting_machine_visibility": {
+                "too_small": 56,
+                "clear": 21,
+                "unclear": 14
+              },
+              "cashier_hands_visibility": {
+                "clear": 91
+              },
+              "visitor_hands_visibility": {
+                "clear": 91
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-30",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 6.0,
+          "end": 18.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 65,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 65,
+            "clear_context_samples": 65,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 65
+              },
+              "card_to_cashier": {
+                "unclear": 65
+              },
+              "cash_recount": {
+                "unclear": 65
+              },
+              "cash_accepted": {
+                "unclear": 65
+              },
+              "cash_stored": {
+                "unclear": 65
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 65
+              },
+              "desk_visibility": {
+                "clear": 65
+              },
+              "counting_machine_visibility": {
+                "clear": 65
+              },
+              "cashier_hands_visibility": {
+                "clear": 65
+              },
+              "visitor_hands_visibility": {
+                "absent": 47,
+                "clear": 18
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-31",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 15.0,
+          "end": 23.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 45,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.155556,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 45,
+            "clear_context_samples": 45,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 35,
+                "no": 7,
+                "yes": 3
+              },
+              "card_to_cashier": {
+                "unclear": 38,
+                "no": 7
+              },
+              "cash_recount": {
+                "unclear": 38,
+                "no": 7
+              },
+              "cash_accepted": {
+                "unclear": 38,
+                "no": 7
+              },
+              "cash_stored": {
+                "unclear": 38,
+                "no": 7
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 45
+              },
+              "desk_visibility": {
+                "clear": 45
+              },
+              "counting_machine_visibility": {
+                "clear": 45
+              },
+              "cashier_hands_visibility": {
+                "clear": 45
+              },
+              "visitor_hands_visibility": {
+                "absent": 45
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-32",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 12.0,
+          "end": 21.3,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 48,
+            "clear_context_samples": 48,
+            "action_counts": {
+              "banknote_to_detector": {
+                "unclear": 48
+              },
+              "card_to_cashier": {
+                "unclear": 48
+              },
+              "cash_recount": {
+                "unclear": 48
+              },
+              "cash_accepted": {
+                "unclear": 48
+              },
+              "cash_stored": {
+                "unclear": 48
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 48
+              },
+              "desk_visibility": {
+                "clear": 48
+              },
+              "counting_machine_visibility": {
+                "clear": 48
+              },
+              "cashier_hands_visibility": {
+                "clear": 48
+              },
+              "visitor_hands_visibility": {
+                "absent": 48
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-33",
+      "source_status": "done",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 14.333333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.860714,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.145833,
+          "coverage_complete": false,
+          "sampling_reliability": {
+            "samples": 48,
+            "clear_context_samples": 41,
+            "action_counts": {
+              "banknote_to_detector": {
+                "no": 14,
+                "unclear": 34
+              },
+              "card_to_cashier": {
+                "no": 14,
+                "unclear": 34
+              },
+              "cash_recount": {
+                "no": 14,
+                "unclear": 34
+              },
+              "cash_accepted": {
+                "no": 14,
+                "unclear": 34
+              },
+              "cash_stored": {
+                "no": 14,
+                "unclear": 34
+              }
+            },
+            "visibility_counts": {
+              "detector_visibility": {
+                "clear": 48
+              },
+              "desk_visibility": {
+                "clear": 48
+              },
+              "counting_machine_visibility": {
+                "clear": 48
+              },
+              "cashier_hands_visibility": {
+                "clear": 48
+              },
+              "visitor_hands_visibility": {
+                "unclear": 7,
+                "absent": 41
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "X-34",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": false,
+          "episodes": [],
+          "failure_codes": [
+            "window_projection_or_source_failure"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "X-35",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": false,
+          "episodes": [],
+          "failure_codes": [
+            "window_projection_or_source_failure"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "X-37",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-38",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-39",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-4",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-40",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-43",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-44",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-45",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-46",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-5",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-8",
+      "source_status": "failed",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    }
+  ],
+  "limitations": [
+    "5_fps_local_action_intervals_and_nearest_sample_visibility_are_proxies; between_sample_behavior_is_unobserved",
+    "state_selected_transaction_windows_do_not_exhaust_the_video; abstained_rows_are_unassessed",
+    "paired_visitor_absence_is_model_perception; no_person_tracking_or_cash_ownership_proof",
+    "all_negative_calibration_reuses_development_data; no_LOVO_or_augmented_non_target_qualification",
+    "typed_ground_truth_original_evidence_rule_grounding_and_API_deadline_checks_not_measured"
+  ],
+  "source_report_sha256": "e61c92c2cbb13030c0b7d8da487dd967538f73bbae7806e1f002585f14d87581"
+}

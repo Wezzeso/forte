@@ -1,0 +1,25 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "timestamp_sec": {
+      "description": "Seconds from the beginning of the original video",
+      "minimum": 0,
+      "title": "Timestamp Sec",
+      "type": "number"
+    },
+    "image_base64": {
+      "contentEncoding": "base64",
+      "contentMediaType": "image/jpeg",
+      "description": "Raw base64-encoded JPEG, without a data URI prefix",
+      "minLength": 1,
+      "title": "Image Base64",
+      "type": "string"
+    }
+  },
+  "required": [
+    "timestamp_sec",
+    "image_base64"
+  ],
+  "title": "EvidenceFrame",
+  "type": "object"
+}

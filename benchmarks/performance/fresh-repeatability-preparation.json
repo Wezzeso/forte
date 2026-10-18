@@ -1,0 +1,32 @@
+{
+  "schema_version": "forte.repeatability-preparation.v1",
+  "captured_at_utc": "2026-10-17T12:09:24Z",
+  "status": "implemented_not_executed",
+  "scope": "fresh_decode_encoder_head",
+  "model_lifetime": "persistent_three_calls",
+  "planned_attempt_count": 3,
+  "planned_independent_source_count": 1,
+  "actual_source_selection_frozen": false,
+  "actual_checkpoint_bound": false,
+  "actual_model_calls_made": 0,
+  "actual_gpu_repeatability": "UNMEASURED",
+  "actual_full_source_latency": "UNMEASURED",
+  "jury_legal_completion_eligible": false,
+  "primary_ten_second_evidence_eligible": false,
+  "binary_threshold_policy": "fixed_zero_logit_diagnostic_not_calibrated_deployment",
+  "contract_review": "A01_read_only_no_blocking_issue_in_prepared_scope",
+  "verification": {
+    "kind": "generated_only_cpu_tests",
+    "passed": 36,
+    "failed": 0,
+    "persistent_process_pin_failure_attempts": 3,
+    "gpu_or_provided_media_used_by_tests": false
+  },
+  "execution_prerequisites": [
+    "real_selected_checkpoint_and_matching_feature_spec",
+    "final_deterministic_runtime_and_deployment_proof",
+    "frozen_train_or_validation_source_and_three_attempt_ids",
+    "central_exposure_reservation_receipt",
+    "explicit_root_gpu_window_release"
+  ]
+}

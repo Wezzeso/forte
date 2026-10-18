@@ -1,0 +1,82 @@
+{
+  "accuracy_claim": false,
+  "base_image_id": "sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "base_image_ref": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "base_repo_digests": [
+    "vllm/vllm-openai@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb"
+  ],
+  "bootstrap_sha256": "7d99cd4d759d8a4c43ad5cb9d03116d91c0877d1f01e3bcd05a0b111bdd6ffa6",
+  "build_context": "/ephemeral/forte/build-context/gemma4-training-v1",
+  "build_files_sha256": {
+    ".dockerignore": "74bea65c7d40a2f0de3322bcfbab72de43c9165900c0eca7a5e7de50a4bbdc03",
+    "Dockerfile": "46bd2d8801214d2e33795747fd9a1b9b24127c72bd44be761d060e37a42ded75",
+    "addons.lock": "faf77a882b95a5780f54b3d7d6178e0a1980cd80558b51145c8e5b34207d099e",
+    "runtime_scan.py": "8958a0e6b49aa395fe1743100753f83953369a0f2d5101eb54a70d28224a44a4"
+  },
+  "checked_at_utc": "2026-10-18T04:55:45.247245+00:00",
+  "cpu_architecture_import_check_passed": true,
+  "cpu_check_network": "none",
+  "docker_root": "/var/lib/docker",
+  "elapsed_s": 24.635,
+  "gemma4-download_json_sha256": "fcd59fa71a296a20faa8cd2a0d1896d08bfb679d0329668140e1ff8c720efa18",
+  "gemma4-weight-sha256_json_sha256": "25e859b0dc6865d0a2ba9be0a9feb937d421aafd5da3230e77d7318447d76ae6",
+  "generated_at_utc": "2026-10-18T04:55:20.612379+00:00",
+  "gpu_access_requested": false,
+  "gpu_training_verified": false,
+  "image_created_utc": "2026-10-18T04:55:22.875488763Z",
+  "image_id": "sha256:e1c593d20cdb5f9b1583b9471c9caecb0f7e437b4ad5964f05f2b40caa2956a1",
+  "image_size_bytes": 11103552064,
+  "instance_id": "xw5720fii",
+  "instance_name": "forte-new-q38",
+  "licenses": {
+    "accelerate": "Apache-2.0",
+    "base_vllm_code": "Apache-2.0",
+    "bitsandbytes": "MIT",
+    "model_weights": "Apache-2.0",
+    "peft": "Apache-2.0",
+    "pillow": "MIT-CMU/HPND",
+    "torch": "BSD-3-Clause",
+    "torchvision": "BSD-3-Clause",
+    "transformers": "Apache-2.0"
+  },
+  "media_or_labels_mounted": false,
+  "model_path": "/ephemeral/models/gemma4",
+  "model_repo": "google/gemma-4-31B-it",
+  "model_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "network_required_for_dependency_install_only": true,
+  "package_scan_sha256": "8f6c8b451ac78c9df4925fc6cb1e6244a3e5ab39b34fdacf3d7cb32c58e65f4b",
+  "pinned_packages": {
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2",
+    "pillow": "12.3.0",
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0"
+  },
+  "ready_for_root_triggered_gpu_smoke": true,
+  "runtime_packages_verified": true,
+  "runtime_tag": "forte-gemma4-training:20261018-cu129-v1",
+  "schema": "forte.gemma4-training-runtime.v1",
+  "serving_containers_modified": false,
+  "sources": {
+    "accelerate": "https://github.com/huggingface/accelerate/blob/v1.15.0/LICENSE",
+    "base_image": "https://hub.docker.com/r/vllm/vllm-openai",
+    "bitsandbytes": "https://github.com/bitsandbytes-foundation/bitsandbytes/blob/0.50.2/LICENSE",
+    "bitsandbytes_artifact_metadata": "https://pypi.org/pypi/bitsandbytes/0.50.2/json",
+    "peft": "https://github.com/huggingface/peft/blob/v0.21.2/LICENSE",
+    "pillow": "https://github.com/python-pillow/Pillow/blob/12.3.0/LICENSE",
+    "torch": "https://github.com/pytorch/pytorch/blob/v2.13.0/LICENSE",
+    "torchvision": "https://github.com/pytorch/vision/blob/v0.28.0/LICENSE",
+    "transformers": "https://github.com/huggingface/transformers/blob/v5.17.0/LICENSE"
+  },
+  "status": "cpu_ready_not_gpu_verified",
+  "training_config": "/ephemeral/forte/gemma4_training_config.json",
+  "training_entrypoint": [
+    "python",
+    "-m",
+    "training.gemma4_lora_train"
+  ],
+  "training_started": false,
+  "weights_loaded": false
+}

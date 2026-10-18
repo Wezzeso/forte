@@ -1,0 +1,142 @@
+{
+  "captured_at_utc": "2026-10-17T16:16:28.099372+00:00",
+  "file_metadata": {
+    "diagnostic/after_readonly.diff.json": {
+      "bytes": 399,
+      "mtime_epoch_seconds": 1792250833.6012378,
+      "mtime_utc": "2026-10-17T15:27:13.601238+00:00",
+      "sha256": "e2c9cef717c17fcdaaa78b9d1bf6bd7bcec62c2de8a022377d88f702a22f6d86"
+    },
+    "diagnostic/after_readonly.frozen.json": {
+      "bytes": 1213791,
+      "mtime_epoch_seconds": 1792250833.5812376,
+      "mtime_utc": "2026-10-17T15:27:13.581238+00:00",
+      "sha256": "b1275e1a262702bda4486be753e0f2582db3dc7f23be0e8f9c6741fccefe8d89"
+    },
+    "diagnostic/after_two_steps.frozen.json": {
+      "bytes": 1213791,
+      "mtime_epoch_seconds": 1792250950.1373935,
+      "mtime_utc": "2026-10-17T15:29:10.137393+00:00",
+      "sha256": "b1275e1a262702bda4486be753e0f2582db3dc7f23be0e8f9c6741fccefe8d89"
+    },
+    "diagnostic/before_generated_forward.frozen.json": {
+      "bytes": 1213791,
+      "mtime_epoch_seconds": 1792250747.2251241,
+      "mtime_utc": "2026-10-17T15:25:47.225124+00:00",
+      "sha256": "b1275e1a262702bda4486be753e0f2582db3dc7f23be0e8f9c6741fccefe8d89"
+    },
+    "diagnostic/canonicalization.json": {
+      "bytes": 127476,
+      "mtime_epoch_seconds": 1792250718.1410863,
+      "mtime_utc": "2026-10-17T15:25:18.141086+00:00",
+      "sha256": "f8b015a734d46025c5690b8d0c533f22f289daefc7a07f4379f9f19cb3d002d2"
+    },
+    "diagnostic/initialization-proof.json": {
+      "bytes": 269582,
+      "mtime_epoch_seconds": 1792250950.4213939,
+      "mtime_utc": "2026-10-17T15:29:10.421394+00:00",
+      "sha256": "7f792baa12a4f8c6ba1b56e930c67c62aaaec80e63391b2f450660292575f332"
+    },
+    "full-initialization.stderr.private.log": {
+      "bytes": 5425,
+      "mtime_epoch_seconds": 1792250748.9931264,
+      "mtime_utc": "2026-10-17T15:25:48.993126+00:00",
+      "sha256": "7255da36d6f9690bf1ba35efc6e87afa1e2e1a4cee509183e37333bb677d649f"
+    },
+    "full-initialization.stdout.private.log": {
+      "bytes": 1322,
+      "mtime_epoch_seconds": 1792250950.5293941,
+      "mtime_utc": "2026-10-17T15:29:10.529394+00:00",
+      "sha256": "38e54f849f392c561d230afd5f8a9f2a6c36108a94c71a6a74cde503263f52ed"
+    },
+    "gate-summary.json": {
+      "bytes": 1172,
+      "mtime_epoch_seconds": 1792250951.8133957,
+      "mtime_utc": "2026-10-17T15:29:11.813396+00:00",
+      "sha256": "dccb293256a66c465aebbb82934b06d214d8aaf2768dd97a0c3b45b0ff1ec6c3"
+    }
+  },
+  "gate": {
+    "attempts": [
+      {
+        "name": "fla-metadata",
+        "private_input_used": false,
+        "returncode": 0,
+        "status": "passed"
+      },
+      {
+        "name": "nf4-generated",
+        "private_input_used": false,
+        "returncode": 0,
+        "status": "passed"
+      },
+      {
+        "name": "full-initialization",
+        "private_input_used": false,
+        "returncode": 0,
+        "status": "passed"
+      }
+    ],
+    "code_archive_sha256": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+    "elapsed_seconds": 342.17268683099974,
+    "passed": true
+  },
+  "inference_limits": [
+    "Full311.033s proof includes load/quantization/canonicalization, frozen snapshots, collation, one readonly teacher-forced forward and two training updates; it is not one inference latency.",
+    "86.356s first snapshot to readonly snapshot is an envelope including collation, first full forward and a full frozen-parameter hash snapshot; no separately measured forward or JIT duration exists.",
+    "116.536s readonly diff to final snapshot includes adapter hash/optimizer setup, two training forwards/backwards/updates and full hash snapshot; no isolated backward duration exists.",
+    "No per-stage timestamped chunk/recurrent compile warning is present. Absence of logging does not establish absence of JIT compilation.",
+    "Training helper disables cache and never calls generate; the single-token cached recurrent decode branch is unexercised and may compile separately on first serving generation.",
+    "Generated2frame64x64 teacher-forced shape does not establish16frame464x848 full19fact window latency, per-token decode speed, p95, or clip throughput.",
+    "These logs establish neither success nor failure against frozen240s serving request timeout. Bound startup failure and retain original policy; actual generated startup/prefill/recurrent decode timing requires a root-owned model run."
+  ],
+  "measured_file_boundary_envelopes_seconds": {
+    "canonicalization_to_first_full_frozen_snapshot": 29.08403778076172,
+    "first_snapshot_to_readonly_snapshot": 86.35611343383789,
+    "readonly_diff_to_two_step_snapshot": 116.5361557006836
+  },
+  "proof": {
+    "elapsed_seconds": 311.03271385399785,
+    "frozen_post_initialization_bytes_unchanged": true,
+    "helper_source_sha256": "b807ecdfbbd8c8e3a484285576728453b71eba20f940297795b06e12a6ed72a8",
+    "optimizer_steps": 2,
+    "proof_source_sha256": "8dd230dc9d510f86ce8a996995c07371214c36c667ebc6d65a53d44a6d8047ce",
+    "quantization_state_unchanged": true,
+    "readonly_generated_forwards": 1,
+    "runtime_image_sha256": "baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+    "status": "passed"
+  },
+  "schema_version": "forte.qwen38.fla-existing-cold-log-assessment.v1",
+  "scope": {
+    "gpu_operations": 0,
+    "new_model_calls": 0,
+    "raw_log_lines_exposed": 0,
+    "remote_mutations": 0,
+    "source_changes": 0
+  },
+  "source_base": "/data/forte-ml/qwen38-fla-generated-final-91263-root/full-cpu-visibility-v2",
+  "source_observations": {
+    "cached_single_token_branch_requires_previous_state": true,
+    "configure_adapter_disables_cache": true,
+    "full_proof_is_autoregressive_generate": false,
+    "local_proof_source_sha256": "8dd230dc9d510f86ce8a996995c07371214c36c667ebc6d65a53d44a6d8047ce",
+    "optimizer_steps": 2,
+    "proof_helper_generated_images": {
+      "count": 2,
+      "height": 64,
+      "width": 64
+    },
+    "readonly_forward_has_no_grad": true,
+    "serving_generate_enables_cache": true
+  },
+  "warning_flags": {
+    "causal_conv_mentioned": true,
+    "chunk_identifier_mentioned": false,
+    "compile_mentioned": false,
+    "cuda_error_mentioned": false,
+    "recurrent_identifier_mentioned": false,
+    "torch_fallback_mentioned": true,
+    "traceback_mentioned": false,
+    "triton_mentioned": false
+  }
+}

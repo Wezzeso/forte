@@ -1,0 +1,34 @@
+{
+  "arithmetic_equivalence_claimed": false,
+  "gpu_operations": 0,
+  "manifest": {
+    "path": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\qwen38-vllm-bf16-generated-pilot-a08\\variant.manifest.json",
+    "sha256": "fa8d52b8dbb977b5a677f88019458e5f0da1807ef839f2444aebc97b1c815580"
+  },
+  "mapping_inventory": {
+    "path": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\qwen38-vllm-bf16-generated-pilot-a08\\all-496-logical-targets.expected.json",
+    "sha256": "6e9f8c821aab28be6476e46baeeba44e2ca10005b73587fb3933637a4118f359"
+  },
+  "memory_budget": {
+    "bf16_conv_state_per_sequence_all48_linear_layers_bytes": 3932160,
+    "bf16_conv_state_per_sequence_per_linear_layer_bytes": 81920,
+    "bf16_runtime_adapter_bytes": 116727808,
+    "fp32_recurrent_state_per_sequence_all48_linear_layers_bytes": 150994944,
+    "fp32_recurrent_state_per_sequence_per_linear_layer_bytes": 3145728,
+    "fp32_serialized_adapter_bytes": 233455616,
+    "full_attention_bf16_kv_at32768_one_sequence_bytes": 2147483648,
+    "gpu_memory_utilization": 0.85,
+    "limits": "Weights/file bytes approximate resident tensors; quantization is disabled. Vision prefill intermediates, CUDA graphs, allocator/workspace, state-pool padding and duplicate loading buffers are not measured. No fit guarantee. Start one active sequence; fail on OOM, do not silently offload or quantize.",
+    "public_weight_file_bytes": 55563006776,
+    "weight_file_gib": 51.7470825240016
+  },
+  "model_calls": 0,
+  "operations_plan": {
+    "path": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\qwen38-vllm-bf16-generated-pilot-a08\\acceptance-and-operations.plan.json",
+    "sha256": "9a4408e1b61498fc6c0803554390462e2b237cb0ddcf8e20b366b223f665749d"
+  },
+  "private_media_reads": 0,
+  "production_changes": false,
+  "schema_version": "forte.qwen38.vllm-bf16-preparation-summary.v1",
+  "status": "cpu_only_prepared_not_launched"
+}

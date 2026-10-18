@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:forte:annotations:v1",
+  "title": "Forte private reviewed annotation export",
+  "type": "object",
+  "required": ["schema_version", "sample_id", "recording_ids", "content_sha256", "group_id", "split", "split_lock_verified", "review_state", "review_status", "reviewer_id", "reviewed_at", "duration_sec", "events", "negative_windows", "frames", "unresolved_items"],
+  "properties": {
+    "schema_version": {"const": "forte.annotations.v1"},
+    "sample_id": {"type": "string", "minLength": 1},
+    "recording_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "content_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "group_id": {"type": "string", "minLength": 1},
+    "split": {"enum": ["train", "validation", "final_check", "test"]},
+    "split_lock_verified": {"const": true},
+    "split_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "review_state": {"const": "reviewed"},
+    "review_status": {"const": "human_reviewed"},
+    "review_origin": {"const": "human"},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "duration_sec": {"type": "number", "exclusiveMinimum": 0},
+    "full_review_complete": {"type": "boolean"},
+    "verdict": {"enum": ["violation", "no_violation", null]},
+    "events": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+    "frames": {"type": "array", "items": {"type": "object", "required": ["frame_id", "path", "pts_sec", "width", "height"], "properties": {"frame_id": {"type": "string", "minLength": 1}, "path": {"type": "string", "minLength": 1}, "pts_sec": {"type": "number", "minimum": 0}, "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1}}}},
+    "negative_windows": {"type": "array", "items": {"$ref": "#/$defs/negative"}},
+    "unresolved_items": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "fact": {"type": "object", "required": ["fact_id", "state", "supporting_frame_ids"], "properties": {"fact_id": {"type": "string", "minLength": 1}, "state": {"enum": ["present", "absent", "unclear"]}, "supporting_frame_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}},
+    "event": {"type": "object", "required": ["event_id", "event_type_id", "start_sec", "end_sec", "anchor_sec", "rule_grounding_status", "evidence_frame_ids", "facts"], "properties": {"event_id": {"type": "string", "minLength": 1}, "event_type_id": {"type": "string", "minLength": 1}, "start_sec": {"type": "number", "minimum": 0}, "end_sec": {"type": "number", "exclusiveMinimum": 0}, "anchor_sec": {"type": "number", "minimum": 0}, "rule_id": {"type": ["string", "null"]}, "rule_grounding_status": {"enum": ["unresolved", "source_verified", "verified_applicable"]}, "temporal_verified": {"type": "boolean"}, "exceptions_verified": {"type": "boolean"}, "evidence_frame_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3, "uniqueItems": true}, "facts": {"type": "array", "items": {"$ref": "#/$defs/fact"}}}},
+    "negative": {"type": "object", "required": ["start_sec", "end_sec", "negative_verified", "context_complete", "visibility", "criteria_version"], "properties": {"start_sec": {"type": "number", "minimum": 0}, "end_sec": {"type": "number", "exclusiveMinimum": 0}, "negative_verified": {"const": true}, "context_complete": {"const": true}, "visibility": {"const": "clear"}, "criteria_version": {"type": "string", "minLength": 1}}}
+  },
+  "$comment": "Use annotations.store.validate_annotation for finite, source-bound timeline/frame/rule validation, overlap checks and full negative coverage. JSON Schema alone cannot establish these or prove the observation."
+}

@@ -1,0 +1,586 @@
+{
+  "schema": "forte.q30-stage-check.v1",
+  "mode": "build",
+  "generated_at_utc": "2026-10-18T05:31:48.991033+00:00",
+  "image": "forte-q30-stage:a6ce184f962f",
+  "image_id": "sha256:62d2a2175650077be56d808e3c89f79240e8ee323ac1a7febb7f7cd1a95d3250",
+  "source_sha256": "a6ce184f962fe8b084e321fb6af755e816c4be6f1164fdc30400c008c651e77d",
+  "source_manifest": [
+    {
+      "path": "Dockerfile",
+      "sha256": "b9cc110b7602ccaa71d6d555adedc653961d2467c13ecbd4312a24f00db813ea"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9951bacfd502bb3a830b60c088e1e92fdf73bb791e292cb6b6759bf3c5ab6b26"
+    },
+    {
+      "path": "annotations/__init__.py",
+      "sha256": "7eed4f5554ebb640b0accb54563d25a149c69e33970241cb2f96ed45ffefa8e5"
+    },
+    {
+      "path": "annotations/catalog.py",
+      "sha256": "9fb16811e3eedfefacb14978a6e768517a8f15b8086ab932835ce63d90046f0f"
+    },
+    {
+      "path": "annotations/taxonomy.v1.json",
+      "sha256": "817b24496dc55d060e944491f877747dde52cb5195ffd1edeea2cd7ffffbe9da"
+    },
+    {
+      "path": "deploy/entrypoint.py",
+      "sha256": "507e3f9b918dacf6cee4876bedfe0f1c4559f6825b8ba0ff41c49cea09250d83"
+    },
+    {
+      "path": "models/manifest.json",
+      "sha256": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b0cc98a287b4b175021c01dde6f3dd08c3792a1023fbc91840a2e9924204d644"
+    },
+    {
+      "path": "rules/README.md",
+      "sha256": "e9d6eb018b2b1f8c3a0fe444efc2b3e9f325ae924a5990ead0741fbf1bd69517"
+    },
+    {
+      "path": "rules/__init__.py",
+      "sha256": "aec5d3791239e0901f489e141cbad37dab0f17561b8c1a453ecea04ac74ede05"
+    },
+    {
+      "path": "rules/catalog.json",
+      "sha256": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd"
+    },
+    {
+      "path": "rules/catalog.py",
+      "sha256": "af0d27929a7289a604cb5c7b8822320669c7fc27ddb27693beddf3b33e2a2b8f"
+    },
+    {
+      "path": "rules/experimental_README.md",
+      "sha256": "4a383159e2cf1aaf0fedf55ba33e5a13ca9d6cabe33a2c46c218a75cfcaba67f"
+    },
+    {
+      "path": "rules/experimental_catalog.json",
+      "sha256": "0f0b83684d674752ffe82f94942f6d98ea89368f74bed21ad775e5d31e4fde35"
+    },
+    {
+      "path": "rules/experimental_catalog.py",
+      "sha256": "df69f99894835128c8a329dfeac677e07374aa92b7a7156945ef1e59c6873d8b"
+    },
+    {
+      "path": "rules/experimental_test_catalog.py",
+      "sha256": "8e28f300b0d65c9741d56876b4d10a772fa4daa4ad9c135d45a21bb7950d03e6"
+    },
+    {
+      "path": "rules/research/coverage-reassessment.json",
+      "sha256": "851dcd3a280d9b4b2faac258075c4c99c4e1551e0c27f345711fdd034b4cb8fb"
+    },
+    {
+      "path": "rules/research/nbk_14_content.json",
+      "sha256": "e7365d0ff3b3784f8c145e2d4bfc953850153341ae3873bcbf5c044ec372af06"
+    },
+    {
+      "path": "rules/research/nbk_14_current.json",
+      "sha256": "73ff0076bbc9fbfc6d4d31a360534a1fd6aa65e1e3a3176a069a644aef898a51"
+    },
+    {
+      "path": "rules/research/nbk_14_current.txt",
+      "sha256": "9dece00b5108f818e813ab5d6c3c92a1d0075b8ba31fbce96976fb5b0581a6a9"
+    },
+    {
+      "path": "rules/research/nbk_14_versions.json",
+      "sha256": "a68a059fd8d9ff056f1a86561eaad9d550bc3793a11d5baaa6030f8f3462c65e"
+    },
+    {
+      "path": "rules/research/source-manifest.json",
+      "sha256": "465ab132134041c2b008f2e2d0c01f798fc0a9ccba4b4f524f148fdf7414f1ce"
+    },
+    {
+      "path": "rules/sources/manifest.json",
+      "sha256": "320f4febca75fc3e3ceb4eb4769d254b597ce542772ed3ed629cdd227bb1e4a4"
+    },
+    {
+      "path": "rules/sources/nbk_231_content.json",
+      "sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec"
+    },
+    {
+      "path": "rules/sources/nbk_231_current.json",
+      "sha256": "c7d02be30022c13b2e8a5ae63bc1a290ce51faaeff964d40794076f038658c68"
+    },
+    {
+      "path": "rules/sources/nbk_231_current.txt",
+      "sha256": "f408a9303bfd9a2707be920c5208d1eafd30cc401a03cbfe5eafa92730fe0bfb"
+    },
+    {
+      "path": "rules/sources/nbk_231_versions.json",
+      "sha256": "4567a0fc4107807c0196891fe0d41b623bfa5c952982bf5eedfdf607ccd14b8b"
+    },
+    {
+      "path": "rules/workplace_README.md",
+      "sha256": "0044d60c7016aee1252bc74cfd532ad8692e781f364ca2b84d4e42fe10416619"
+    },
+    {
+      "path": "rules/workplace_catalog.py",
+      "sha256": "66c4c097371e879686aae226789052007d2bbac081cf0f82275805b97487cb76"
+    },
+    {
+      "path": "rules/workplace_catalog.v1.json",
+      "sha256": "ac169b5087369dfcfa92f98eeae595e654552caba9bc7b870c3ac9da42f1b1b3"
+    },
+    {
+      "path": "rules/workplace_sources/health_code_article110.txt",
+      "sha256": "5229b29de075c16c7bbbae93121cf837d1168187a0f5a825b32345efd63f7af9"
+    },
+    {
+      "path": "rules/workplace_sources/health_code_content.json",
+      "sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841"
+    },
+    {
+      "path": "rules/workplace_sources/health_code_metadata.json",
+      "sha256": "bfcb9880d243f6c1384904fea63246c29370ff9ba733b6ad2f94e1bc49008df6"
+    },
+    {
+      "path": "rules/workplace_sources/health_code_versions.json",
+      "sha256": "558abfb39005f1123ecc580a6b836917cd7d2d503196593bfd263553afbfa27f"
+    },
+    {
+      "path": "rules/workplace_sources/manifest.json",
+      "sha256": "228f35762707cfd740e5af8a6c7b8466e05d5b66e4290979328afc0aeea01ca3"
+    },
+    {
+      "path": "runtime-requirements.txt",
+      "sha256": "2ee523d556c511e358b9c24249fcee5ba646894ab4710c1a2135012f2a91db33"
+    },
+    {
+      "path": "serving/__init__.py",
+      "sha256": "a61ec505cb9ca2553f80128dc46c51d1b74aea76a5ce8cd1eef067d694f97113"
+    },
+    {
+      "path": "serving/bench_synthetic.py",
+      "sha256": "fb7f769210aab11f20a4a2ba09f30eb99b211e8ffeddee0fedf280ad8efa1bed"
+    },
+    {
+      "path": "serving/diagnose_cancel.py",
+      "sha256": "bdb8109b7d37b5834319463a663c8cdd02ea11c703d590719ad9c0e37162e0f8"
+    },
+    {
+      "path": "serving/fast_encoder.py",
+      "sha256": "53177f9b10cc6f5280e2fe99bd7a812d9232285e914c3f768d2b5348560a7fe7"
+    },
+    {
+      "path": "serving/fast_service.py",
+      "sha256": "00fcf9a11926bbcb91023ca4b6a95220f691d0326b8e224733d4c367350b1a0f"
+    },
+    {
+      "path": "serving/feature_stream.py",
+      "sha256": "ead8aeed799a6e00454b2af3bc53ebe4d89fb317a707f1049a98dcccfeb254c1"
+    },
+    {
+      "path": "serving/gpu_check.py",
+      "sha256": "d8c92d76088d8f9f7ca255c9dade9b54de41575e1ad3fd2365a76e04402bdd60"
+    },
+    {
+      "path": "serving/grounding_pilot.py",
+      "sha256": "752772be9f7cd5136d77cf0ec10198b01838827f7ca32b9f2d7a74b9974b9231"
+    },
+    {
+      "path": "serving/launch.py",
+      "sha256": "d941e83d3650eb1c9f99a001d2625424fda8319766753822f39af947cdb3375f"
+    },
+    {
+      "path": "serving/qwen38_adapter_contract.py",
+      "sha256": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222"
+    },
+    {
+      "path": "serving/qwen38_comparison_profile.py",
+      "sha256": "1d28faafba4f7c76f7029f98238a8b4b1e2657b52b369995085cdb8f4a8987b0"
+    },
+    {
+      "path": "serving/qwen38_grammar.py",
+      "sha256": "a0de282d2ee719b5ce143bc69effd0fb9c204e058a871eb6885f357eec4a8e5d"
+    },
+    {
+      "path": "serving/qwen38_identity.py",
+      "sha256": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959"
+    },
+    {
+      "path": "serving/qwen38_launch.py",
+      "sha256": "8af7e2917d465304a6aeb2677821b461b046ccdfb25d56025c3280cd8e677d50"
+    },
+    {
+      "path": "serving/qwen38_service.py",
+      "sha256": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f"
+    },
+    {
+      "path": "serving/qwen38_source_lineage.py",
+      "sha256": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c"
+    },
+    {
+      "path": "serving/qwen38_untuned.py",
+      "sha256": "31dd4a1fded3b6bf376db304d42765620f21da1921853d0ff874f491f7159e61"
+    },
+    {
+      "path": "serving/qwen38_untuned_provider.py",
+      "sha256": "586b40cdf71e6a6df18a507464560a8c8961955ca1cb90829688e79e507b3b92"
+    },
+    {
+      "path": "serving/readiness.py",
+      "sha256": "26b7ff646c9a840b21034105d53f9b798e58f21861d2b2917652e6ef7ae8821b"
+    },
+    {
+      "path": "serving/scheduler.py",
+      "sha256": "94887fa813a985bac1dae36db203fd25c0b31447dc81fa973b16d9cbfb8f29e1"
+    },
+    {
+      "path": "serving/security.py",
+      "sha256": "a7643e83cfc7f780090bae10b0f1c52469bdf55b1f71c2bf72defa48eb3bb169"
+    },
+    {
+      "path": "serving/stage_qwen38.py",
+      "sha256": "1b6f05035d8ab0840adc7ebdddef727fe309e3cab7274d6f5861c263b07cc65f"
+    },
+    {
+      "path": "src/forte/__init__.py",
+      "sha256": "4373d763d1f945f0c12df6b58d5b71e70e13e3e6feedd16e07ae514fda748c9f"
+    },
+    {
+      "path": "src/forte/api/__init__.py",
+      "sha256": "ccef146019219dfa15cca3c1b0a5612df6da8c84ec4256d1584d26915edaabcd"
+    },
+    {
+      "path": "src/forte/api/config.py",
+      "sha256": "b5874f650310f5da77558e004d3495439a2903c8c3ab6c896cc41cd15aff6e25"
+    },
+    {
+      "path": "src/forte/api/main.py",
+      "sha256": "565138bef3e8a109a8344e96c51602ade32d6950c14b38465b326eddf6ad0576"
+    },
+    {
+      "path": "src/forte/api/metadata.py",
+      "sha256": "03ec1d4013ac79dbe2a201ae7816cfcab7ca4f95077ad1793819657dd964a394"
+    },
+    {
+      "path": "src/forte/api/reviews.py",
+      "sha256": "a374663cf947eb78e1681ec9ffa2186523a0cb79408759c3e3c4be33eaec347c"
+    },
+    {
+      "path": "src/forte/api/security.py",
+      "sha256": "750bb95c61f4288664291bb10e5c68d405883753f9b055f8d151a69d728623c9"
+    },
+    {
+      "path": "src/forte/api/uploads.py",
+      "sha256": "83f25fc524ea453918d5e5694b2b0edf0c39badccbaca1f699d15c5710d27f6a"
+    },
+    {
+      "path": "src/forte/config.py",
+      "sha256": "202b4f2e4993746a04bb3e19e4394db9c343f0b887a2c97356a7b6c7cafdcd61"
+    },
+    {
+      "path": "src/forte/decision/__init__.py",
+      "sha256": "2f484e01515a04d883756ff6900c237568fde86d4e9d97446ea6f121ea58e959"
+    },
+    {
+      "path": "src/forte/decision/aliasing.py",
+      "sha256": "4dd6d83f685dd6f1c9f59b89abd75d364fe4a85179600ecd1581b106de6e0045"
+    },
+    {
+      "path": "src/forte/decision/engine.py",
+      "sha256": "ada890567fbc67090272b59d4a3f5220042ae5baab3df3a545c409b4f0c1d321"
+    },
+    {
+      "path": "src/forte/decision/head_contract.py",
+      "sha256": "180ebef3167d9c82a57c4619fd143e73133c2b49be3c951e77c14cf891d105c1"
+    },
+    {
+      "path": "src/forte/decision/machine_artifacts.py",
+      "sha256": "b4ae805c00dfc7d46c636944d6b1247cb18e3a608bb22f63056be1cd0eb72b29"
+    },
+    {
+      "path": "src/forte/decision/machine_contract.py",
+      "sha256": "ef8cbfd86ede086bcb2669644b238136ec02cc000bea1231fed8db0b13595e60"
+    },
+    {
+      "path": "src/forte/decision/scopes.py",
+      "sha256": "0b13e19b4f152d9e3ffc5e751e00e94562e1bb3615a7427e129fb7da67daeeb0"
+    },
+    {
+      "path": "src/forte/decision/structured.py",
+      "sha256": "027640c241dc7e7f528e82e5bf9022a33b6d29eb9eed903cdb8484a5b8c87d65"
+    },
+    {
+      "path": "src/forte/decision/temporal_backend.py",
+      "sha256": "8f71dcd8d29b4076433d7852f0af3637abdddfd739c450cdb09a35635e2db602"
+    },
+    {
+      "path": "src/forte/decision/temporal_http.py",
+      "sha256": "6c4d951ae286237b34adf6c9070ecfe8bf4315555ea24901669b6fd64570b5a3"
+    },
+    {
+      "path": "src/forte/decision/temporal_native.py",
+      "sha256": "78b1250a5e5a258c9e57ad159490f104a39c685e07e223917dd9a689dcdee1d9"
+    },
+    {
+      "path": "src/forte/decision/temporal_observations.py",
+      "sha256": "110b55c8271dad87b4c1c7303507584e21cb2bb71da04ba16968e07912ce466b"
+    },
+    {
+      "path": "src/forte/decision/temporal_provider.py",
+      "sha256": "8c7368a26110e4fa15ddd4f011f8f47dc06481ee7711d0e9579bc14d60559253"
+    },
+    {
+      "path": "src/forte/events/__init__.py",
+      "sha256": "cea7efd0dddb6630f6c2d43957d67c6b91337e2ab51e837207412ece1047511d"
+    },
+    {
+      "path": "src/forte/events/builder.py",
+      "sha256": "80c7ca8c9bb31834707fe268d4264b7c418905de3d39f1a3a4303ed480b58249"
+    },
+    {
+      "path": "src/forte/events/experimental.py",
+      "sha256": "8dbc0b8d5deb6be5269e4c46fe7bc0f845242ad589c5b44bf673bbace0de1970"
+    },
+    {
+      "path": "src/forte/evidence/__init__.py",
+      "sha256": "55af6fe9c9c86dfa39898d68382e9c776ebb1df920047a51eb256fb03e4f585c"
+    },
+    {
+      "path": "src/forte/evidence/_jpeg.py",
+      "sha256": "7c70a0875539701e1ad01dce3135ecd3477e7dbc26fafc160452592ae9291a4f"
+    },
+    {
+      "path": "src/forte/evidence/assembly.py",
+      "sha256": "fe2ef49e9856f66943260ef307f830594f0797ac98cfd48341f84a932486ab34"
+    },
+    {
+      "path": "src/forte/evidence/types.py",
+      "sha256": "5657cccf08117077dc6637b28e751857e6a41cb4be01440c3926146f97067172"
+    },
+    {
+      "path": "src/forte/fast/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/forte/fast/analyzer.py",
+      "sha256": "bef702adbd433cd5788d112541544de3b09cec9d02c800f927682fed2ee69d53"
+    },
+    {
+      "path": "src/forte/fast/catalog.py",
+      "sha256": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e"
+    },
+    {
+      "path": "src/forte/fast/policy.py",
+      "sha256": "5c3353d9d7cccfe4481709037248d5a7323c166e905e44da38df01129831439b"
+    },
+    {
+      "path": "src/forte/fast/probes.py",
+      "sha256": "d01fb10096e4120334a7d0d92b5ffed41b24a761bfe68470c2f5ee51085bc00e"
+    },
+    {
+      "path": "src/forte/fast/prompts.py",
+      "sha256": "c6c153ba5b49af2b781795c96d145ee93659793c86b475b0b9acb5927f97d2d5"
+    },
+    {
+      "path": "src/forte/fast/service.py",
+      "sha256": "9e1dc59b024dad52fda0dd68607a8cd6fd0cf5d3e298bf7cf698b3c7280c4bbe"
+    },
+    {
+      "path": "src/forte/fast/specialists.py",
+      "sha256": "b2a47a2c493227b7d6a3967f28f411750709043e6b4e046837728fdae6e74058"
+    },
+    {
+      "path": "src/forte/fast/temporal_events.py",
+      "sha256": "d3fea06bec03ac265ef0e6cad62d2376f63636956f05c15438a7dffcc4e47f22"
+    },
+    {
+      "path": "src/forte/fast/tracked_head.py",
+      "sha256": "d15ef08d8d9f3eaa4665ef657338629ac760aaa29debf8023ab5e516f71b790a"
+    },
+    {
+      "path": "src/forte/fast/video.py",
+      "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+    },
+    {
+      "path": "src/forte/fast/vlm.py",
+      "sha256": "2273dba2c7a3675c5c78eef88c331fcee14d72d5b9666028dffc12fa4bfe3f37"
+    },
+    {
+      "path": "src/forte/jobs/__init__.py",
+      "sha256": "f07064fca848f0261b09940b61c2094bc3aeb7c1389f8441640d13efe46b1d12"
+    },
+    {
+      "path": "src/forte/jobs/__main__.py",
+      "sha256": "a0ca29e394fb996334293faf17d15895db1e49bb41d0e5acf8c38719bde1213b"
+    },
+    {
+      "path": "src/forte/jobs/store.py",
+      "sha256": "0bc8438d5a4ec44a7f37bd5ff46aab9e82fa79a0ea9dd075cf62cce91a120655"
+    },
+    {
+      "path": "src/forte/model/__init__.py",
+      "sha256": "5d3849b21ef049643bf0c2cd3b259143457f47ba4c605619a23a52adec28e8ea"
+    },
+    {
+      "path": "src/forte/model/__main__.py",
+      "sha256": "b2d667a87d4d8f7a30308a5a49180a53ee018d19f7dd190f80ff07278720fcde"
+    },
+    {
+      "path": "src/forte/model/adapter.py",
+      "sha256": "96c8ed5f0826d203b56372edc6d8cb96b54029c9d69eba4307cc0dda145a4a8e"
+    },
+    {
+      "path": "src/forte/model/encoder_staging.py",
+      "sha256": "27ee97866bf09996602f4c1f0b413cd36d7e7bac97d6ea56348851ce9e48e204"
+    },
+    {
+      "path": "src/forte/model/manifest.py",
+      "sha256": "bd69fa5d02a52f4581910781bec857b90a59f686d64b15ef9ec1942b0eca31c2"
+    },
+    {
+      "path": "src/forte/model/refresh_metadata.py",
+      "sha256": "6214208a935bde088e5cd8a2a33d5572f2b83a70256198b4192f15b1df7f11ad"
+    },
+    {
+      "path": "src/forte/model/smoke.py",
+      "sha256": "291b2665c9dbdfbdfebac1c9a2bb5dbebff3351cb8e2641c98351599103876e6"
+    },
+    {
+      "path": "src/forte/model/staging.py",
+      "sha256": "fd8f0e0d255f3acebfa95218d0dc43f51fbe33c49c254be5f7c590f8517597dc"
+    },
+    {
+      "path": "src/forte/native_dispatch.py",
+      "sha256": "3fd6fa79b5dd9a6d7a4fb0277620e52a773ba62cfcd3c5ea68db7a556039fa1a"
+    },
+    {
+      "path": "src/forte/native_pipeline.py",
+      "sha256": "fe866db2dcefee09cbbbc49053a1b291dd0c6979d7d09c28a334daba81220117"
+    },
+    {
+      "path": "src/forte/observability/__init__.py",
+      "sha256": "ac93f7149e2a96f1b81dadced286245b171041936a9057b1298b7645f9153857"
+    },
+    {
+      "path": "src/forte/observability/benchmark.py",
+      "sha256": "1e3a34d68cb0b453b950b2e8fd387617d4210f33c03500660cfd6bb4a8a7ceb4"
+    },
+    {
+      "path": "src/forte/observability/metrics.py",
+      "sha256": "8da5ab49da4ebdfe2c66a687aa4b09503f97279dd64a676ee8fdc1ff5bc6dc72"
+    },
+    {
+      "path": "src/forte/observability/middleware.py",
+      "sha256": "e70db820430039b313b61fc7f488676ab85769782d14e69df5b511d5e26c9e80"
+    },
+    {
+      "path": "src/forte/observability/model_metrics.py",
+      "sha256": "abe467406f2916c3c23a491b755300a64db5b4b609b235a213ca32e82e654a05"
+    },
+    {
+      "path": "src/forte/observability/timing.py",
+      "sha256": "d304dbcfe313030eb506bbbe4f26bee3991c752808dd2262520fb092393f223c"
+    },
+    {
+      "path": "src/forte/pipeline.py",
+      "sha256": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30"
+    },
+    {
+      "path": "src/forte/reproducibility.py",
+      "sha256": "cdacff857343744d4b3383419b7a22a1274a1353cfe196f870342cc5c9885080"
+    },
+    {
+      "path": "src/forte/shared/schemas.py",
+      "sha256": "1e60771f61258e89a7331ddf1143339fde15ff2f25b95ae5c0128e7c60d98818"
+    },
+    {
+      "path": "src/forte/video/__init__.py",
+      "sha256": "23cdd3bc767f612ab1c6692eeb9b3a84225c9948b972d1316287bb2c2999e2b5"
+    },
+    {
+      "path": "src/forte/video/batches.py",
+      "sha256": "6d774e77d3e629fc2c09b3620b68974cedf4581ead251a7c9475e0220f666583"
+    },
+    {
+      "path": "src/forte/video/crops.py",
+      "sha256": "513c93041374903cae6d8ba5a7e1e78f040bc558af99366368a4557efba325d1"
+    },
+    {
+      "path": "src/forte/video/decode.py",
+      "sha256": "53fa8363146e47d15ba47f8d2fad51709560870c136d8c799616cd96d9358981"
+    },
+    {
+      "path": "src/forte/video/evidence_seek.py",
+      "sha256": "53e50b29498cdf6e3d35840f9b91dfc403bf92c4aced10eb16db8c3cf99b653d"
+    },
+    {
+      "path": "src/forte/video/probe.py",
+      "sha256": "0cc1d1e6332412050fb3b6a1d64da0998ac3717bb6483628236287217afc7312"
+    },
+    {
+      "path": "src/forte/video/sampling.py",
+      "sha256": "aace82575cd12222ade587a413a2e330f81d277bee7038e11378d9cc25459a9a"
+    },
+    {
+      "path": "src/forte/worker.py",
+      "sha256": "5d70c3535ba027c81438d106e284be53f901b4a93d92b4933033abda02a3a318"
+    },
+    {
+      "path": "tools/fast_eval.py",
+      "sha256": "bfecde2425be3384b7d5adbd0d96519fc05a134eebc897800c70655d9754cb49"
+    },
+    {
+      "path": "tools/fast_latency.py",
+      "sha256": "3a6ae7abff279fdd5c60f8a6912acbe369d9004156e1176f5d0a2af481b1281a"
+    },
+    {
+      "path": "tools/fast_validation.py",
+      "sha256": "ee6df5ed8e8762c23c529aa628d91580cd349a9dd542651ed59e9e16695b855c"
+    }
+  ],
+  "runtime_dependencies": [
+    "av==19.0.1",
+    "fastapi==0.143.3",
+    "httpx==0.28.1",
+    "jsonschema==4.26.0",
+    "pillow==13.0.0",
+    "psycopg[binary]==3.3.6",
+    "pydantic==2.14.1",
+    "python-multipart==0.0.32",
+    "sqlalchemy==2.1.5",
+    "uvicorn==0.54.0"
+  ],
+  "gpu_used": false,
+  "inference_executed": false,
+  "production_changed": false,
+  "build_s": 47.054,
+  "instance_id": "plp5me7vz",
+  "frozen_eval_binding": {
+    "instance_id": "plp5me7vz",
+    "install_receipt_sha256": "18cc252dacd58d3346aabd3660d7510d44c6f1a40e073676b52aa232f1961c54",
+    "source_manifest_sha256": "a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+    "source_sha256": {
+      "src/forte/fast/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/forte/fast/analyzer.py": "bef702adbd433cd5788d112541544de3b09cec9d02c800f927682fed2ee69d53",
+      "src/forte/fast/catalog.py": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e",
+      "src/forte/fast/policy.py": "5c3353d9d7cccfe4481709037248d5a7323c166e905e44da38df01129831439b",
+      "src/forte/fast/probes.py": "d01fb10096e4120334a7d0d92b5ffed41b24a761bfe68470c2f5ee51085bc00e",
+      "src/forte/fast/prompts.py": "c6c153ba5b49af2b781795c96d145ee93659793c86b475b0b9acb5927f97d2d5",
+      "src/forte/fast/service.py": "9e1dc59b024dad52fda0dd68607a8cd6fd0cf5d3e298bf7cf698b3c7280c4bbe",
+      "src/forte/fast/specialists.py": "b2a47a2c493227b7d6a3967f28f411750709043e6b4e046837728fdae6e74058",
+      "src/forte/fast/temporal_events.py": "d3fea06bec03ac265ef0e6cad62d2376f63636956f05c15438a7dffcc4e47f22",
+      "src/forte/fast/tracked_head.py": "d15ef08d8d9f3eaa4665ef657338629ac760aaa29debf8023ab5e516f71b790a",
+      "src/forte/fast/video.py": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718",
+      "src/forte/fast/vlm.py": "2273dba2c7a3675c5c78eef88c331fcee14d72d5b9666028dffc12fa4bfe3f37",
+      "tools/fast_eval.py": "bfecde2425be3384b7d5adbd0d96519fc05a134eebc897800c70655d9754cb49",
+      "tools/fast_validation.py": "ee6df5ed8e8762c23c529aa628d91580cd349a9dd542651ed59e9e16695b855c"
+    },
+    "harness_sha256": "697bf5963127b441564821e78a32d44b41a951924d39c0b349faff7fc4bff6f9",
+    "profile_file_sha256": {
+      "cfg_q30base.json": "436ebad34ec35caf6b38df6590c3894fad13b91a207d8afabe14835962c18a41",
+      "cfg_q30desk.json": "a95e038578132063f933ef145021099152f62e383b4353422ce7f834fa5eb293"
+    },
+    "frozen_code_root": "/ephemeral/forte/q30-eval-source/a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+    "strict_model_protocol": true,
+    "default_flags_off": true
+  },
+  "support_receipt_sha256": "ffdc8bb61f0cc90f1138ea90f7765bdd2b79a11d8976c2369bd4649762e74363",
+  "support_files_sha256": "3d98b9e68ce3cefee279e23fb2880c3b9ac04ee2b4380d79c96486482ac4c6cd"
+}

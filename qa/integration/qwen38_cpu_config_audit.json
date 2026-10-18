@@ -1,0 +1,8 @@
+{
+  "schema_version": "forte.qwen38.cpu-config-mtime-audit.v1",
+  "scope": "public deploy compose YAML, Dockerfiles and requirements locks",
+  "interval_start_utc": "2026-10-17T13:28:26.874731+00:00",
+  "interval_end_utc": "2026-10-17T13:30:03.896564+00:00",
+  "files_modified_in_interval": [],
+  "limitation": "Modification-time observation plus current hashes, not an immutable initial-byte snapshot."
+}

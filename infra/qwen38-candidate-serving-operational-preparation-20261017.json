@@ -1,0 +1,70 @@
+{
+  "schema_version": "forte.qwen38.candidate-serving-operational-preparation.v1",
+  "status": "prepared_pending_phase3_training_and_root_gpu_release",
+  "captured_at_utc": "2026-10-17T14:02:10.268288+00:00",
+  "actual_image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "actual_package_metadata_check": {
+    "path": "infra/qwen38-candidate-serving-package-check-20261017.json",
+    "sha256": "d65a13c790d9afa4998103bfff4b0338a78fe7bb9482c71bc3e736fb7461096b",
+    "status": "passed",
+    "network_mode": "none",
+    "gpu_access": false,
+    "private_inputs_mounted": false
+  },
+  "package_versions": {
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "fastapi": "0.136.3",
+    "uvicorn": "0.54.0",
+    "pillow": "12.3.0",
+    "jsonschema": "4.26.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "runtime_requirements": {
+    "uid": 1000,
+    "gid": 1000,
+    "temporary_jit_mount_exec": true,
+    "run_state_mount_exec": false,
+    "cache_fresh_private_uid1000_mode0700": true,
+    "source_readonly_bind_required": true,
+    "source_archive_readonly_bind_required": true,
+    "model_ports_public": false,
+    "single_active_clip": true,
+    "single_model_inflight": true,
+    "staged_screening": false
+  },
+  "source_policy": {
+    "phase2_archive_immutable_retained": true,
+    "phase2_archive_sha256": "df11c1e2fafa5d44a7c431d1f6a09ec2fcaa68ffd5bef6d3d08889b25db14c7e",
+    "phase2_is_not_next_run_default": true,
+    "phase3_source_root": null,
+    "phase3_archive_sha256": null,
+    "phase3_source_must_match_completed_training_run": true
+  },
+  "operational_public_helper_remote_root": "/data/forte-ml/public/qwen38-serving-ops-d417470a1dce",
+  "operational_source_files": {
+    "deploy/qwen38_bind_runtime.py": "d417470a1dcea773771c578435f5eadf8d8e4491a8a5013334e4cee466ae900f",
+    "deploy/compose.qwen38-candidate.yaml": "6aac8036947bc88b1710ab15cda96e02752dc8d0c983eb9f93631639f3295044",
+    "deploy/compose.qwen38-candidate-operational.yaml": "ee6dca110efa85f0d4b6908875e69d4ece294c160021d263b6ec29b8c761a1ec",
+    "docs/ops/qwen38-candidate-serving.md": "b569530d9f0af121104f3d7d52ee7db5462dc985954a6a37473201e6d4eaf445"
+  },
+  "cpu_tests": {
+    "focused_binder_tests_passed": 6,
+    "actual_df11_source_archive_used_with_explicitly_synthetic_run_fixture": true,
+    "test_did_not_load_model_or_initialize_cuda": true
+  },
+  "model_loaded": false,
+  "adapter_trained_by_this_receipt": false,
+  "production_selected": false,
+  "serving_changed": false,
+  "image_mutated": false,
+  "remaining_gates": [
+    "Fresh phase3 immutable source and successful actual training receipt",
+    "Counted root release for generated serving warmup",
+    "Actual full-shard/adapter/source verification in runtime",
+    "Actual candidate load/warm readiness and external offline/auth checks",
+    "Untuned/tuned quality and fresh-upload runtime comparison",
+    "Separately bound selection and root cutover"
+  ]
+}

@@ -1,0 +1,12 @@
+provider: NVIDIA Brev
+authorized_account_or_org: null
+billing_currency: null
+max_total_charge: null
+max_hourly_charge: null
+max_concurrent_instances: null
+max_billable_runtime_hours: null
+max_storage_gib: null
+allowed_regions: []
+judging_keepalive_until: null
+cleanup_owner: null
+purchase_authorization_reference: null

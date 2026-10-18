@@ -1,0 +1,126 @@
+{
+  "prewarm_completed": true,
+  "server_pid": 57,
+  "config_sha256": "723c8b9283134e0f751d42395767fa2d79635ae234deb42fc1b5b41fc7015846",
+  "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "vllm_version": "0.31.0",
+  "package_versions": {
+    "vllm": "0.31.0+cu129",
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0",
+    "pillow": "12.3.0",
+    "jsonschema": "4.26.0"
+  },
+  "model_files_verified": true,
+  "snapshot_verification": {
+    "verified": true,
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "processor_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "files_verified": 15,
+    "bytes_verified": 17545914364,
+    "manifest_sha256": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc"
+  },
+  "ready_at": "2026-10-17T10:37:46.987316+00:00",
+  "warmup": [
+    {
+      "shape": {
+        "frames": 1,
+        "width": 448,
+        "height": 448
+      },
+      "elapsed_seconds": 0.6125227829998039,
+      "prompt_tokens": 219,
+      "completion_tokens": 6
+    },
+    {
+      "shape": {
+        "frames": 8,
+        "width": 672,
+        "height": 672
+      },
+      "elapsed_seconds": 0.5721778540000741,
+      "prompt_tokens": 3565,
+      "completion_tokens": 6
+    },
+    {
+      "shape": {
+        "frames": 16,
+        "width": 1024,
+        "height": 1024
+      },
+      "elapsed_seconds": 2.6767373800003043,
+      "prompt_tokens": 16437,
+      "completion_tokens": 6
+    },
+    {
+      "shape": {
+        "frames": 16,
+        "width": 1024,
+        "height": 1024
+      },
+      "elapsed_seconds": 4.9121691029999965,
+      "prompt_tokens": 16437,
+      "completion_tokens": 6
+    },
+    {
+      "shape": {
+        "frames": 16,
+        "width": 1024,
+        "height": 1024
+      },
+      "elapsed_seconds": 4.869663968000168,
+      "prompt_tokens": 16437,
+      "completion_tokens": 6
+    }
+  ],
+  "schema_smoke": {
+    "synthetic_only": true,
+    "real_local_inference": true,
+    "schema_and_semantic_validation_passed": true,
+    "synthetic_visual_sanity_passed": true,
+    "facts_validated": 1,
+    "candidates_validated": 1,
+    "metrics": {
+      "elapsed_sec": 3.824500722999801,
+      "http_elapsed_sec": 3.810650644999896,
+      "preprocessing_sec": 0.013222001000031014,
+      "attempts": 1,
+      "input_frames": 3,
+      "input_dimensions": [
+        [
+          448,
+          448
+        ],
+        [
+          448,
+          448
+        ],
+        [
+          448,
+          448
+        ]
+      ],
+      "encoded_media_bytes": 22720,
+      "prompt_tokens": 1346,
+      "generated_tokens": 148,
+      "total_tokens": 1494,
+      "readiness_sec": 0,
+      "serving_attestation": null,
+      "server_metrics": {
+        "time_to_first_token_ms": 123.50044799995885,
+        "generation_time_ms": 1701.1898770001608,
+        "queue_time_ms": 1896.2155659996824,
+        "mean_itl_ms": 11.572720251701774,
+        "tokens_per_second": 81.10965349695176
+      },
+      "processor_output_dimensions": null,
+      "visual_tokens": null,
+      "score_provenance": null
+    },
+    "model": "Qwen3-VL-8B-Instruct",
+    "event_accuracy_measured": false
+  },
+  "capacity_benchmark_completed": false
+}

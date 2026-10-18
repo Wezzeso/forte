@@ -1,0 +1,11 @@
+{
+  "schema_version": "forte.qwen38.teacher-resume.v1",
+  "started_at_utc": "2026-10-17T14:08:28.404995+00:00",
+  "baseline_model_image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+  "model_container": "forte-model-1",
+  "purpose": "bounded_train_teacher_and_baseline_comparison",
+  "worker_started": false,
+  "admission_resume_authorized": false,
+  "private_model_calls_by_operation": 0,
+  "gpu_owner": "root"
+}

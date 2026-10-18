@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "date_local": "2026-10-17",
+  "timezone": "Asia/Qyzylorda",
+  "source": "actual nvidia-smi over the existing team SSH connection",
+  "gpu_count_observed": 1,
+  "gpu_model": "NVIDIA A100 80GB PCIe",
+  "gpu_memory_mib": 81920,
+  "gpu_memory_gib": 80,
+  "driver_version": "565.57.01",
+  "host_ntp_synchronized_observed": true,
+  "clock_source_check": "actual timedatectl NTPSynchronized=yes over existing team SSH",
+  "api_worker_clock_domain": "single deployed GPU host kernel clock; client clocks are not subtracted from server clocks",
+  "model_runtime_status_at_inventory_observation": "awaiting cu129 image and actual readiness verification",
+  "provisioning_is_not_inference": true,
+  "private_clips_uploaded_at_inventory_observation": false
+}

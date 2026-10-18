@@ -1,0 +1,66 @@
+{
+  "approved_by": "synthetic_fixture_author",
+  "locked_at": "2026-10-17T00:00:00Z",
+  "records": [
+    {
+      "content_sha256": "18dd1c356b56f75bd29487d52b8378ec384ce8b5b71edb391612d86aabb76a3b",
+      "group_id": "synthetic_group_1",
+      "has_violation": true,
+      "sample_id": "synthetic_01",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "893bb9fc61b678889a18e5f5f12b9b1f2027733d6723db978550bfe825ee7fc2",
+      "group_id": "synthetic_group_2",
+      "has_violation": true,
+      "sample_id": "synthetic_02",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "2d0d8fe3c5a08948465e725fc50ea8b3baddef013b814f1a1a21869a7de9bd4c",
+      "group_id": "synthetic_group_3",
+      "has_violation": false,
+      "sample_id": "synthetic_03",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "30e636f9b4845f31b085d221e959aa6d3a0ecdaabdfacc8b2573655cef6c3d82",
+      "group_id": "synthetic_group_4",
+      "has_violation": false,
+      "sample_id": "synthetic_04",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "2f00b45b9e1a02db7aa77817cb6aeccd1c53bac8bf226257af70353ce1d41e16",
+      "group_id": "synthetic_group_5",
+      "has_violation": true,
+      "sample_id": "synthetic_05",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "a5b2eeaf5d579addc161fdb832d33ec67c13118263ae8d7fc644e8cf26cfd866",
+      "group_id": "synthetic_group_6",
+      "has_violation": true,
+      "sample_id": "synthetic_06",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "9807df1b782ca906a7dea93dff5f1b58382519a76271641056dffa8d3710ebe5",
+      "group_id": "synthetic_group_7",
+      "has_violation": false,
+      "sample_id": "synthetic_07",
+      "split": "validation"
+    },
+    {
+      "content_sha256": "e6a07ea5dc1680ed8cf9a6fcb8b29f15ce4197104854d0dd942541081cb141c6",
+      "group_id": "synthetic_group_8",
+      "has_violation": false,
+      "sample_id": "synthetic_08",
+      "split": "validation"
+    }
+  ],
+  "records_sha256": "f301ffd0ab6401b5732a03a230543f936cb3f0a7e4f6eb8109cfc5cc8a42d160",
+  "scenario_groups_reviewed": true,
+  "source_manifest_sha256": "de98858e30e441360c33c06443d00e766ff71bc61023965db78eb81aad0d62ae",
+  "state": "locked"
+}

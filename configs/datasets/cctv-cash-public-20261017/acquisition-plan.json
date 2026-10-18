@@ -1,0 +1,225 @@
+{
+  "schema_version": "forte.cctv-cash-public-acquisition.v1",
+  "checked_at_utc": "2026-10-17T14:45:16.038915+00:00",
+  "status": "acquisition_complete_no_frame_review_no_model_call_no_training",
+  "primary_result": "No exact bank-cash-procedure video corpus with clear commercial-compatible license verified. MEVA is the closest unconditional commercial-compatible verified CCTV+payment activity source in this pass.",
+  "preferred_dataset": {
+    "id": "MEVA",
+    "publisher": "Kitware / IARPA",
+    "official_url": "https://mevadata.org/",
+    "repository": "https://gitlab.kitware.com/meva/meva-data-repo",
+    "revision": "421841a75577b697c314e952e585aecbb1b99e17",
+    "license_id": "CC-BY-4.0",
+    "license_sha256": "bdeedfb765049c87f92a2450369ad70882fca3371190b2a6b7e560e103c922e8",
+    "label_scope": "auxiliary purchase/transfer/actor behavior; not cash legality",
+    "published_training_role": "kitware-meva-training reduced-audit annotations",
+    "published_training_counts": {
+      "person_purchases": 107,
+      "person_transfers_object": 630,
+      "person_abandons_package": 1,
+      "person_steals_object": 3
+    },
+    "published_counts_source": "meva-training-status.csv (contains its own original status git hash; not newly measured media truth)"
+  },
+  "bounded_plan": {
+    "metadata_bytes_downloaded": 40711741,
+    "media_bytes_downloaded": 603857450,
+    "first_batch_parent_clip_count": 3,
+    "first_batch_bytes": 443174144,
+    "first_batch_annotation_instances": {
+      "purchases": 16,
+      "transfers": 23
+    },
+    "optional_fourth_view_bytes": 160683306,
+    "all_four_bytes": 603857450,
+    "hard_media_byte_cap": 629145600,
+    "max_parent_clips": 4,
+    "max_source_duration_minutes": 20,
+    "views_camera_ids": [
+      "G421",
+      "G331",
+      "G424"
+    ],
+    "counts_caution": "Annotation instances, not distinct scenarios. G421 clips share a camera/session. Camera IDs do not prove bankcounter viewpoint; perform original-frame suitability audit.",
+    "media_candidates": [
+      {
+        "path": "2018-03-07.10-55-01.11-00-01.school.G421.activities.yml",
+        "source_path": "annotation/DIVA-phase-2/MEVA/kitware-meva-training/2018-03-07/11/2018-03-07.10-55-01.11-00-01.school.G421.activities.yml",
+        "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.10-55-01.11-00-01.school.G421.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+        "size_bytes": 42123,
+        "sha256": "160bf7889512ca9cf17f1a21066d12efc20a4e59783d35d0ecd2900091f26f07",
+        "purchases": 8,
+        "transfers": 15,
+        "empty37": false,
+        "video": {
+          "source_url": "https://mevadata-public-01.s3.amazonaws.com/drops-123-r13/2018-03-07/11/2018-03-07.10-55-01.11-00-01.school.G421.r13.avi",
+          "size_bytes": 162927962,
+          "etag": "\"9990b38c22013c0a233b320b036c122b-20\""
+        }
+      },
+      {
+        "path": "2018-03-07.11-05-01.11-10-01.school.G421.activities.yml",
+        "source_path": "annotation/DIVA-phase-2/MEVA/kitware-meva-training/2018-03-07/11/2018-03-07.11-05-01.11-10-01.school.G421.activities.yml",
+        "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-01.11-10-01.school.G421.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+        "size_bytes": 32989,
+        "sha256": "ff241a1684635f22e49e0ccc12a3ca2007cc24521775b0c1cab24c470dc0f28b",
+        "purchases": 3,
+        "transfers": 8,
+        "empty37": false,
+        "video": {
+          "source_url": "https://mevadata-public-01.s3.amazonaws.com/drops-123-r13/2018-03-07/11/2018-03-07.11-05-01.11-10-01.school.G421.r13.avi",
+          "size_bytes": 148976200,
+          "etag": "\"401a5ba0e444574877105fed24c54208-18\""
+        }
+      },
+      {
+        "path": "2018-03-07.11-10-00.11-15-00.bus.G331.activities.yml",
+        "source_path": "annotation/DIVA-phase-2/MEVA/kitware-meva-training/2018-03-07/11/2018-03-07.11-10-00.11-15-00.bus.G331.activities.yml",
+        "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-10-00.11-15-00.bus.G331.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+        "size_bytes": 17563,
+        "sha256": "45bb14e506213a6079e3e9b827d4084388ffd9987a4519fa1b4dd4057aa72b36",
+        "purchases": 5,
+        "transfers": 0,
+        "empty37": false,
+        "video": {
+          "source_url": "https://mevadata-public-01.s3.amazonaws.com/drops-123-r13/2018-03-07/11/2018-03-07.11-10-00.11-15-00.bus.G331.r13.avi",
+          "size_bytes": 131269982,
+          "etag": "\"aa8ba7a1cc50ebe6a0d8065dd3364344-16\""
+        }
+      },
+      {
+        "path": "2018-03-07.11-05-05.11-10-05.school.G424.activities.yml",
+        "source_path": "annotation/DIVA-phase-2/MEVA/kitware-meva-training/2018-03-07/11/2018-03-07.11-05-05.11-10-05.school.G424.activities.yml",
+        "source_url": "https://gitlab.kitware.com/api/v4/projects/4078/repository/files/annotation%2FDIVA-phase-2%2FMEVA%2Fkitware-meva-training%2F2018-03-07%2F11%2F2018-03-07.11-05-05.11-10-05.school.G424.activities.yml/raw?ref=421841a75577b697c314e952e585aecbb1b99e17",
+        "size_bytes": 28904,
+        "sha256": "92bef9558ab2c713eb6c4e035dbaa209861ee082772de2d5d78d1ec3152d7895",
+        "purchases": 0,
+        "transfers": 2,
+        "empty37": false,
+        "video": {
+          "source_url": "https://mevadata-public-01.s3.amazonaws.com/drops-123-r13/2018-03-07/11/2018-03-07.11-05-05.11-10-05.school.G424.r13.avi",
+          "size_bytes": 160683306,
+          "etag": "\"f749f39224fad9304d5e6fde7afbc164-20\""
+        }
+      }
+    ],
+    "remote_subset_metadata_bytes": 31669459,
+    "remote_destination": "/data/forte-public-data/meva-counter-train-v1",
+    "subset_manifest_sha256": "30f157ce24c586db1e91979351ae4845a5fcbefccb0ac59d07d9cfd41a16aac4",
+    "parent_split_group": "MEVA-KF1-20180307T1055-1115-all-selected-cameras"
+  },
+  "annotation_definition_limits": {
+    "purchases": "Payment may be cash, card or phone; original tracks cover purchaser. Must inspect exact visible medium before cash supervision.",
+    "purchases_timing": "Publisher intervals include 1 second before payment presentation and 1 second after item/payment return; not exact cash-contact boundary.",
+    "pickup": "Money, individual paper, phones and other small objects explicitly excluded; absence of pickup labels cannot supervise absent cash handling.",
+    "abandonment": "Package at least small-purse size with no-return or 2-minute neglect criteria; not the project cash-attendance rule.",
+    "steals_object": "Uses ownership/permission semantics unavailable from appearance alone; no direct bank-law target."
+  },
+  "adapter_plan": {
+    "separate_task": "forte.public-cctv-primitive.v1",
+    "retain_fields": [
+      "dataset_revision",
+      "license_identity",
+      "published_partition",
+      "source_original_sha256",
+      "source_native_pts_ledger",
+      "camera_id",
+      "scenario_time_group",
+      "original_activity",
+      "annotation_id",
+      "actor_track_ids",
+      "original_frame_bounds",
+      "source_annotation_sha256",
+      "support_frame_ids",
+      "fact_uncertainty",
+      "target_masks"
+    ],
+    "allowed_auxiliary_targets": [
+      "generic_object_transfer",
+      "payment_gesture_context",
+      "person_presence_and_departure",
+      "object_actor_continuity",
+      "phone_document_and_hand_hard_normals"
+    ],
+    "forbidden_automatic_mappings": [
+      "person_purchases -> CASH_RECEIPT_OPERATION or CASH_ISSUE_OPERATION",
+      "person_transfers_object -> CASH_HANDOVER_VISIBLE",
+      "missing pickup label -> CASH_VISIBLE absent",
+      "person_abandons_package -> CASH_UNATTENDED",
+      "person_steals_object -> Kazakhstan legal violation"
+    ],
+    "supervision": "Original public action labels remain public auxiliary task. New local machine-verified visual cash fields are separate SILVER with exact source support and masked unknowns. Never fabricate E1 human gold.",
+    "split_rule": "Keep official TRAIN only; group synchronized cameras and adjacent source intervals in one role. No promotion of official validation/test to project blind gold.",
+    "normal_sampling": "Use same-scene temporal context and explicit supported phone/document/idle interactions; unannotated time does not guarantee negative activity.",
+    "evaluation": "Frozen development ablation plus all-attempt precision/recall and false-positive categories; final-check remains untouched.",
+    "future_teacher_cap": {
+      "windows": 12,
+      "calls": 24,
+      "max_original_frames_per_window": 8,
+      "executed_calls": 0,
+      "current_status": "future_plan_no_call_release",
+      "user_project_TRAIN_priority": true
+    },
+    "before_call_gates": [
+      "Actual source-clock/annotation r13 alignment verified",
+      "Original-frame camera/domain suitability checked locally",
+      "Exact source support and target schema approved by serialized compute owner",
+      "Existing private TRAIN training remains priority; no queue/GPU conflict"
+    ]
+  },
+  "screened_candidates": [
+    {
+      "id": "CARR",
+      "official_metadata_url": "https://api.figshare.com/v2/articles/29470079",
+      "state": "deferred_unavailable_current",
+      "reason": "Current v5 published 2026-10-17 says OLD Dataset / Deleted and has no files. Historical v4 CC BY 4.0 link-only Drive does not establish current availability or media scope."
+    },
+    {
+      "id": "RetailAction",
+      "revision": "49cb590723db921a4bd5a38adea92f6abd3f7a00",
+      "license_state": "conditional_commercial_not_unrestricted",
+      "reason": "Standard.AI custom license requires a separate grant once relevant product/service revenue exceeds USD10,000. No user financial status was assumed. Shelf take/put/touch labels do not establish cash procedures.",
+      "source_url": "https://huggingface.co/datasets/standard-cognition/RetailAction/blob/49cb590723db921a4bd5a38adea92f6abd3f7a00/LICENSE"
+    },
+    {
+      "id": "NVIDIA_PhysicalAI_Event_Videos",
+      "revision": "7f79b39fcd1ef1dc39f23f227cd8a9480d6077db",
+      "state": "deferred_license_and_generator_provenance",
+      "reason": "Published card adds Google terms for Veo-generated videos including restrictions relevant to similar or competing models. Downloaded provenance does not map generator per video, so a clearly usable Cosmos-only Qwen-training subset was not established. Three checkout-text records are normal and are not cash-action gold.",
+      "expected_chunks_zip_bytes": 3853242520,
+      "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Event-Videos"
+    },
+    {
+      "id": "RPC",
+      "license_state": "CC-BY-NC-SA-4.0",
+      "state": "excluded_noncommercial",
+      "source_url": "https://rpc-dataset.github.io/"
+    },
+    {
+      "id": "MERL_Shopping",
+      "state": "excluded_no_commercial_grant_verified",
+      "source_url": "https://www.merl.com/research/highlights/merl-shopping-dataset",
+      "reason": "Official page permits free download for research; no commercial permission verified."
+    },
+    {
+      "id": "AI_City_2022_ARC_real_video",
+      "state": "excluded_noncommercial_after_challenge",
+      "source_url": "https://www.aicitychallenge.org/wp-content/uploads/2022/02/Dataset-License-AIC2022.pdf",
+      "reason": "Official dataset license restricts post-challenge use, including derived models, to noncommercial academic purposes. MIT generator software does not relicense challenge videos."
+    },
+    {
+      "id": "UCF_Crime_and_derived_Shoplifting",
+      "state": "excluded_no_commercial_grant_verified",
+      "source_url": "https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/",
+      "reason": "Official publication/download page viewed; no explicit commercial video license verified. Third-party mirror license tags or code licenses are insufficient."
+    },
+    {
+      "id": "ShanghaiTech_Campus",
+      "state": "excluded_no_commercial_grant_verified",
+      "source_url": "https://svip-lab.github.io/dataset/campus_dataset.html",
+      "reason": "Official dataset page has download and citation information but no commercial video license verified; campus anomalies also differ from cash procedures."
+    }
+  ],
+  "metadata_inventory_path": "configs\\datasets\\cctv-cash-public-20261017\\metadata.inventory.json",
+  "privacy_scope": "Public source text/annotations only; no private footage or model observations left the machine; no signup/contact sharing/cloud inference."
+}

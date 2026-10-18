@@ -1,0 +1,95 @@
+{
+  "app_image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+  "archive_hash_size_complete_read_verification_passed": true,
+  "artifact_count": 5,
+  "artifacts": {
+    "data.tar.gz": {
+      "bytes": 278201111,
+      "file_count": 1746,
+      "sha256": "7c09acc875ca61ef77687f8de36fec62f001894ba85aa0e1f1f779ea71b5a299"
+    },
+    "database.dump": {
+      "bytes": 8559,
+      "file_count": null,
+      "sha256": "14301f235340f356333aa529bb0512d22089d297c6b0c13eb6e497b569abd4fb"
+    },
+    "experiments.tar.gz": {
+      "bytes": 73342125,
+      "file_count": 630,
+      "sha256": "b4d974088b707c5a064e6c42d60f5f3f5b67f471e9ca6790bf6f6af51305b12f"
+    },
+    "runtime-config.tar.gz": {
+      "bytes": 14403,
+      "file_count": 17,
+      "sha256": "bcde3f8cf2ed98112d3d608a8e29530123e3d1aec130d8fce51033f1e3a614e4"
+    },
+    "source.tar.gz": {
+      "bytes": 1863584,
+      "file_count": 179,
+      "sha256": "19353b7293673b7701fb1b10683de694174166111fa9369c6b54c8d234ce0e33"
+    }
+  },
+  "backup_created_at_utc": "2026-10-17T13:10:31.210596+00:00",
+  "backup_manifest_sha256": "09eb3b7977fb78f370c2be6eabb4edefec21ae8674a4d1e137ea9d31b5e62a42",
+  "experiment_scope": {
+    "included": true,
+    "media_and_nested_archives_independently_rejected": true,
+    "original_training_movs_included": false,
+    "public_encoder_weights_included": false,
+    "teacher_private_outputs_included": true
+  },
+  "gpu_model_calls": 0,
+  "helper_compatibility_fix": {
+    "local_only_after_snapshot_started": true,
+    "remote_calls_in_synthetic_test": 0,
+    "synthetic_two_run_verification_passed": true,
+    "unique_source_snapshot_paths": true
+  },
+  "independent_verify_command_passed": true,
+  "no_restore_performed": true,
+  "original_files_or_volumes_deleted": false,
+  "post_resume": {
+    "active_jobs": 0,
+    "api_worker_database_model_running": true,
+    "api_worker_resumed": true,
+    "components": {
+      "authentication": true,
+      "database": true,
+      "model": true,
+      "storage": true,
+      "worker": true
+    },
+    "internal_readyz_http_status": 200,
+    "public_readyz_http_status": 200
+  },
+  "postgres_major": 18,
+  "postgres_toc_verified": true,
+  "preflight": {
+    "active_jobs": 0,
+    "fresh_idle_capture_at_utc": "2026-10-17T13:09:47Z",
+    "helper_processing_jobs": 0,
+    "isolated_ml_teacher_running": false,
+    "partial_upload_files": 0,
+    "root_exclusive_quiet_window_authorized": true,
+    "vllm_running": 0,
+    "vllm_waiting": 0
+  },
+  "private_backup_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-handoff-20261017T1310Z",
+  "private_content_printed": false,
+  "remaining_restore_gate": "A separately authorized fresh empty PostgreSQL18/data-volume target must restore and validate this specific snapshot before live cutover.",
+  "rental_or_account_changes": false,
+  "restricted_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "schema_version": "forte.qwen38-current-data-backup-verification.v1",
+  "scope": "Actual current remote data, configuration, source and optional experiment snapshot before candidate deployment; no restoration performed",
+  "snapshot_consistent": true,
+  "source_host_alias": "forte-a100-smoke-20261017",
+  "source_snapshot_scope": "The captured source/image is the existing baseline remote deployment. It is distinct from any subsequent candidate public release.",
+  "stop_schedule_changed": false,
+  "total_bytes": 353429782,
+  "verified_at_utc": "2026-10-17T13:18:21.515467+00:00"
+}

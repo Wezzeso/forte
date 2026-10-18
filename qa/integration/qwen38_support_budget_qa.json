@@ -1,0 +1,29 @@
+{
+  "schema_version": "forte.qwen38.support-budget-qa.v1",
+  "captured_at_utc": "2026-10-17T15:03:15.617281+00:00",
+  "policy": "mask_whole_fact_if_full_support_exceeds_budget.v1",
+  "default": "require_all_support_within_frame_budget.v1",
+  "focused_cpu_summary": "52 passed, 3 skipped in 0.85s",
+  "actual_torch_cpu_summary": "33 passed in 21.16s",
+  "torch_source_changed_during_check": [],
+  "source_hashes": {
+    "training/qwen38_silver.py": "cce03a2eb386b7f1a4fc4a03d474be38737d182eef68dbf2cd57a14a8d6467c3",
+    "training/test_qwen38_silver.py": "e321767fdb7d6c4c627e5f4e73d8fb327020dbe7b21fe82295c749d9314b1d1b",
+    "training/data.py": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f",
+    "training/silver_balance.py": "c8a560ac4f0e2c42abe93bb64fa08cfe10192de5c0907b6fe0023a127e101ace",
+    "training/silver_combine.py": "cb17cea9a294e8a3098f8ae4f20e6b707d714ba791c15197afb6505710acd7b4",
+    "qa/integration/qwen38_support_budget_test.py": "80cf8a7b2c35032dba011b3ff79d6dcd93fbad2d387c6145a4851896273e116c"
+  },
+  "shared_pipeline_quality_sources_changed_since_prior_qa": [],
+  "composed_contracts": [
+    "Missing or explicit strict policy rejects nine required supports under a four-frame budget.",
+    "Explicit policy masks the entire target to unclear with empty support; nine raw citations and teacher hash remain unchanged.",
+    "Other eligible facts remain active; balanced class/content mass is computed before compact aliases.",
+    "The masked fact receives no actual staged-processor completion tokens and exact zero token weight.",
+    "Exclusion, effective rows, weights and objective hashes are bound; tampered pins are rejected."
+  ],
+  "limitations": [
+    "Generated CPU and processor fixtures only; no private data, model or GPU calls, or training/serving selection.",
+    "The latest base broad 1876-pass capture remains separate; this focused follow-up is not additive."
+  ]
+}

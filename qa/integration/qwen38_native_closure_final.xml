@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="27" skipped="1" tests="214" time="12.627" timestamp="2026-10-17T20:19:26.279765+05:00" hostname="Wezeso"><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_actual_public_full_schema_is_compiled_before_any_model_request" time="0.014" /><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_canonical_fact_transform_preserves_truth_states_and_original_contract" time="0.003" /><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_compile_errors_and_memory_limits_never_fallback" time="0.001" /><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_compiled_cache_is_bounded_and_matcher_state_always_fresh" time="0.001" /><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_ignored_or_remote_schema_features_fail" time="0.002" /><testcase classname="serving.tests.test_qwen38_grammar.NativeGrammarTests" name="test_real_full_decision_schema_is_in_explicit_subset" time="0.002" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_adapter_bytes_and_unlisted_files_fail" time="0.086" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_default_route_forbidden" time="0.053" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_duplicate_json_keys_rejected" time="0.054" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_exact_hashes_do_not_claim_loaded_or_selected" time="0.093" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_http_surface_uses_candidate_readiness_and_bounds_media" time="0.196" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_jpeg_request_bound_to_template_and_generation" time="0.048" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_preparation_and_quantization_mismatch_cannot_be_served" time="0.105" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_processor_budget_and_hybrid_coverage_are_bound" time="0.111" /><testcase classname="serving.tests.test_qwen38_candidate.CandidateTests" name="test_remote_media_and_remote_schema_never_fetch" time="0.048" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_all_archived_core_bytes_verified_without_model_claim" time="0.108" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_bind_completed_fixture_against_immutable_real_source_in_fresh_process" time="2.654" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_changed_source_and_unarchived_python_fail" time="0.099" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_frozen_family_exact_profile_and_prompt_bytes_are_bound" time="0.055" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_nonfinite_and_duplicate_input_rejected" time="0.016" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_outputs_are_private_and_never_overwritten" time="0.015" /><testcase classname="serving.tests.test_qwen38_runtime_binding.RuntimeBindingTests" name="test_unsafe_member_and_archive_digest_fail" time="0.036" /><testcase classname="tests.test_api_candidate_readiness" name="test_transformers_candidate_ready_without_baseline_manifest_or_vllm_version" time="0.020"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_transformers_candid..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793F9223F0&gt;
+
+    async def test_transformers_candidate_ready_without_baseline_manifest_or_vllm_version(
+            candidate_settings, monkeypatch):
+        settings = replace(candidate_settings, model_manifest_path=candidate_settings.data_dir / "absent.json")
+&gt;       paths = install_model_transport(monkeypatch, settings)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_api_candidate_readiness.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[model_id]" time="0.008"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793E6168D0&gt;
+field = 'model_id'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[model_revision]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793F94F790&gt;
+field = 'model_revision'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[processor_revision]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FA75250&gt;
+field = 'processor_revision'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[backend]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB2CF50&gt;
+field = 'backend'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[model_manifest_sha256]" time="0.008"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793D49ADD0&gt;
+field = 'model_manifest_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[tokenizer_sha256]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793E740710&gt;
+field = 'tokenizer_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[chat_template_sha256]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB728E0&gt;
+field = 'chat_template_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[adapter_sha256]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793D54CC30&gt;
+field = 'adapter_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[adapter_config_sha256]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB5C050&gt;
+field = 'adapter_config_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[training_run_sha256]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB743D0&gt;
+field = 'training_run_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[quantization_sha256]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB49FD0&gt;
+field = 'quantization_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[generation_sha256]" time="0.005"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FB4B150&gt;
+field = 'generation_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[image_sha256]" time="0.005"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAED940&gt;
+field = 'image_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[source_sha256]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAECA60&gt;
+field = 'source_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_every_candidate_identity_field_is_required[config_sha256]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_every_candidate_ide..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAECEC0&gt;
+field = 'config_sha256'
+
+    @pytest.mark.parametrize("field", [
+        "model_id", "model_revision", "processor_revision", "backend", "model_manifest_sha256",
+        "tokenizer_sha256", "chat_template_sha256", "adapter_sha256", "adapter_config_sha256",
+        "training_run_sha256", "quantization_sha256", "generation_sha256", "image_sha256", "source_sha256", "config_sha256",
+    ])
+    async def test_every_candidate_identity_field_is_required(candidate_settings, monkeypatch, field):
+&gt;       install_model_transport(monkeypatch, candidate_settings, {field: "wrong"})
+
+tests\test_api_candidate_readiness.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates0]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAED7F0&gt;
+updates = {'ready': False}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates1]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAEE270&gt;
+updates = {'model_files_verified': False}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates2]" time="0.005"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAEF1C0&gt;
+updates = {'model_loaded': False}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates3]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAEDFD0&gt;
+updates = {'prewarm_completed': False}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates4]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAF0910&gt;
+updates = {'model_loaded': 1}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates5]" time="0.006"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAF1080&gt;
+updates = {'prewarm_completed': 1}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates6]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAF18D0&gt;
+updates = {'adapter_loaded_tensor_count': 0}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_artifact_pins_without_actual_load_and_prewarm_are_not_ready[updates7]" time="0.007"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate_settings = Settings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_artifact_pins_witho..._timeout_seconds=2.0, job_timeout_seconds=285, cors_allowed_origins=(), public_api_base_url='', admission_paused=False)
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002793FAF2190&gt;
+updates = {'adapter_loaded_tensor_count': True}
+
+    @pytest.mark.parametrize("updates", [
+        {"ready": False}, {"model_files_verified": False}, {"model_loaded": False},
+        {"prewarm_completed": False}, {"model_loaded": 1}, {"prewarm_completed": 1},
+        {"adapter_loaded_tensor_count": 0}, {"adapter_loaded_tensor_count": True},
+    ])
+    async def test_artifact_pins_without_actual_load_and_prewarm_are_not_ready(
+            candidate_settings, monkeypatch, updates):
+&gt;       install_model_transport(monkeypatch, candidate_settings, updates)
+
+tests\test_api_candidate_readiness.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_api_candidate_readiness.py:44: in install_model_transport
+    identity = load_expected_runtime_identity(candidate_settings.model_candidate_launch_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_api_candidate_readiness" name="test_missing_candidate_config_cannot_fall_back_to_baseline" time="0.005" /><testcase classname="tests.test_api_candidate_readiness" name="test_api_candidate_selection_is_explicit_environment_opt_in" time="0.004" /><testcase classname="tests.test_candidate_pipeline_config" name="test_candidate_provider_binds_exact_identity_and_generation" time="0.016"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate = (WorkerSettings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_pr...sPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_provider_binds_0/candidate.json'))
+
+    def test_candidate_provider_binds_exact_identity_and_generation(candidate):
+        settings, config, path = candidate
+&gt;       provider = _provider_configuration(settings)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_candidate_pipeline_config.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\forte\pipeline.py:328: in _provider_configuration
+    identity = load_expected_runtime_identity(path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_candidate_pipeline_config" name="test_candidate_alias_or_frame_budget_cannot_silently_fallback[changes0]" time="0.015"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate = (WorkerSettings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_al...sPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_alias_or_frame_0/candidate.json'))
+changes = {'model_name': 'unbound-alias'}
+
+    @pytest.mark.parametrize("changes", [{"model_name": "unbound-alias"}, {"max_frames_per_window": 17}])
+    def test_candidate_alias_or_frame_budget_cannot_silently_fallback(candidate, changes):
+        with pytest.raises(AnalysisIncomplete, match="candidate_worker_configuration_mismatch"):
+&gt;           _provider_configuration(replace(candidate[0], **changes))
+
+tests\test_candidate_pipeline_config.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\forte\pipeline.py:328: in _provider_configuration
+    identity = load_expected_runtime_identity(path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_candidate_pipeline_config" name="test_candidate_alias_or_frame_budget_cannot_silently_fallback[changes1]" time="0.011"><failure message="serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required">candidate = (WorkerSettings(data_dir=WindowsPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_al...sPath('C:/Users/Wezeso/AppData/Local/Temp/pytest-of-Wezeso/pytest-295/test_candidate_alias_or_frame_1/candidate.json'))
+changes = {'max_frames_per_window': 17}
+
+    @pytest.mark.parametrize("changes", [{"model_name": "unbound-alias"}, {"max_frames_per_window": 17}])
+    def test_candidate_alias_or_frame_budget_cannot_silently_fallback(candidate, changes):
+        with pytest.raises(AnalysisIncomplete, match="candidate_worker_configuration_mismatch"):
+&gt;           _provider_configuration(replace(candidate[0], **changes))
+
+tests\test_candidate_pipeline_config.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\forte\pipeline.py:328: in _provider_configuration
+    identity = load_expected_runtime_identity(path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+serving\qwen38_identity.py:166: in load_expected_runtime_identity
+    validate_config(config)
+serving\qwen38_identity.py:100: in validate_config
+    require(config.get("structured_decoding") == POLICY, "candidate_structured_decoding_policy_required")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, code = 'candidate_structured_decoding_policy_required'
+
+    def require(condition: bool, code: str) -&gt; None:
+        if not condition:
+&gt;           raise CandidateError(code)
+E           serving.qwen38_identity.CandidateError: candidate_structured_decoding_policy_required
+
+serving\qwen38_identity.py:27: CandidateError</failure></testcase><testcase classname="tests.test_candidate_pipeline_config" name="test_missing_candidate_config_fails_closed" time="0.005" /><testcase classname="tests.test_candidate_pipeline_config" name="test_baseline_defaults_remain_strict_without_opt_in" time="0.004" /><testcase classname="tests.test_candidate_pipeline_config" name="test_candidate_worker_environment_opt_in" time="0.005" /><testcase classname="tests.test_qwen38_quality_equivalence.SourceEquivalenceTests" name="test_changed_common_prompt_pipeline_rule_taxonomy_or_manifest_fails" time="0.083" /><testcase classname="tests.test_qwen38_quality_equivalence.SourceEquivalenceTests" name="test_missing_disclosure_or_tampered_proof_or_wrong_actual_source_fails" time="0.027" /><testcase classname="tests.test_qwen38_quality_equivalence.SourceEquivalenceTests" name="test_original_baseline_plan_and_failure_terminals_are_never_rewritten" time="0.031" /><testcase classname="tests.test_qwen38_quality_equivalence.SourceEquivalenceTests" name="test_training_and_disclosed_serving_changes_keep_both_real_source_pins" time="0.025" /><testcase classname="tests.test_qwen38_quality_family.QualityFamilyTests" name="test_baseline_first_needs_no_future_adapter_and_freezes_208_slots" time="0.001" /><testcase classname="tests.test_qwen38_quality_family.QualityFamilyTests" name="test_original_family_results_compare_without_rewriting_provenance" time="0.004" /><testcase classname="tests.test_qwen38_quality_family.QualityFamilyTests" name="test_shared_source_recipe_or_heldout_population_changes_are_rejected" time="0.001" /><testcase classname="tests.test_qwen38_quality_family.QualityFamilyTests" name="test_tuned_arm_requires_actual_adapter_before_its_execution_plan" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_base_only_identity_is_explicitly_untrained_and_nonproduction" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_no_dummy_adapter_or_zero_step_training_workaround_is_accepted" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_runtime_reuses_shared_loader_and_generates_without_adapter" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_same_runtime_profile_excludes_only_arm_adapter_and_served_alias" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_unpinned_or_changed_effective_generation_and_pixel_profile_fails" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_untuned_config_never_passes_existing_trained_candidate_gate" time="0.000" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_unverified_snapshot_cannot_construct_runtime" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedContracts" name="test_verification_never_opens_adapter_or_training_artifact" time="0.001" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_absent_null_adapter_field_is_still_incomplete_identity" time="0.083" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_default_provider_does_not_accept_untuned_diagnostic_readiness" time="0.073" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_every_identity_pin_and_warmth_failure_is_rejected" time="0.808" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_exact_identity_loaded_warmup_and_zero_adapter_required" time="0.099" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_inherited_media_parser_request_and_generation_controls_are_used" time="0.152" /><testcase classname="tests.test_qwen38_untuned.UntunedProviderTests" name="test_pipeline_injection_preserves_recipe_and_does_not_read_trained_config" time="0.190" /><testcase classname="tests.test_qwen38_operational_evaluation.FullPipelinePreparationTests" name="test_candidate_runtime_image_source_and_base_must_match_release" time="0.001" /><testcase classname="tests.test_qwen38_operational_evaluation.FullPipelinePreparationTests" name="test_exact_six_population_prepares_true_window_plus_refinement_budget" time="0.021" /><testcase classname="tests.test_qwen38_operational_evaluation.FullPipelinePreparationTests" name="test_stages_wrap_exact_functions_without_changing_return_values" time="0.001" /><testcase classname="tests.test_qwen38_operational_evaluation.ReservedProviderTests" name="test_failed_model_request_consumes_slot_and_unused_slots_remain_visible" time="0.032" /><testcase classname="tests.test_qwen38_operational_evaluation.WorkerTraceTests" name="test_missing_actual_decode_fails_witness_instead_of_backfilling_stage" time="0.037" /><testcase classname="tests.test_qwen38_operational_evaluation.WorkerTraceTests" name="test_wrapper_records_actual_stages_and_preserves_result_object_bytes" time="0.037" /><testcase classname="tests.test_qwen38_operational_evaluation.ServerExportTests" name="test_historical_audit_cannot_invent_fresh_witness" time="0.005" /><testcase classname="tests.test_qwen38_operational_evaluation.ServerExportTests" name="test_native_ledger_decodes_generated_source_and_preserves_actual_pts" time="0.278" /><testcase classname="tests.test_qwen38_operational_evaluation.ServerExportTests" name="test_processing_witness_or_missing_actual_preprocessing_is_not_accepted" time="0.004" /><testcase classname="tests.test_qwen38_operational_evaluation.ServerExportTests" name="test_receipt_is_compatible_with_existing_acceptance_binder" time="0.011" /><testcase classname="tests.test_qwen38_operational_evaluation.ServerExportTests" name="test_result_hash_source_frame_identity_or_bound_attempt_mismatch_rejected" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/secrets/api_keys]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/Secrets/postgres_password]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/.env]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/.env.production]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/session.local.env]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/runtime.env]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/selection.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/trial.labels.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/raw_outputs.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/raw-output.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/machine_annotations.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/x.split.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/user_coarse_anchors.train.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/observations.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[serving/private/a.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[serving/Private/a.py]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/backups/a.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/splits/a.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/selections/a.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[brand/reference-captures/a.png]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[web/qa/screenshots/a.png]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[web/test-results/results.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/id_ed25519]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/id_rsa.pub]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/key.pem]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/key.key]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/source.tar.gz]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/backup.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/a.sqlite]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/a.db]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/weights.gguf]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/model.safetensors]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/a.jsonl]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/a.npy]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/a.parquet]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[web/public/secret.MOV]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[web/public/secret.MP4]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[web/public/secret.webm]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/serving/qwen38/public-snapshot/tokenizer.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/source-frame.jpg]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/credentials.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/password.txt]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/access_token.txt]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/api_key.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/unknown.credentials]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/token.dump]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/candidate.runtime.bound.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[configs/candidate.runtime.local.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/credentials/session.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_private_paths_are_excluded[deploy/keys/token.json]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[deploy/.env.example]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[deploy/ml.env.example]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[deploy/Dockerfile.model]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[serving/qwen38_service.py]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[src/forte/observations.py]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[scripts/split_gate.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[training/qwen38_silver.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[training/configs/qwen38-silver.example.json]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[configs/serving/qwen38/public-candidate.manifest.json]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[rules/sources/manifest.json]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[rules/sources/nbk_231_current.txt]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[brand/assets/logo.png]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[web/public/logo.svg]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[src/forte/evidence/assembly.py]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_public_source_and_placeholders_are_allowed[src/forte/observations/catalog.py]" time="0.005" /><testcase classname="tests.test_release_packaging" name="test_links_and_linked_ancestors_are_rejected" time="0.005"><skipped type="pytest.skip" message="symlinks unavailable on this host">C:\Users\Wezeso\Desktop\Forte\tests\test_release_packaging.py:68: symlinks unavailable on this host</skipped></testcase><testcase classname="tests.test_release_packaging" name="test_capture_rejects_a_source_changing_between_reads" time="0.008" /><testcase classname="tests.test_release_packaging" name="test_capture_rejects_tree_membership_changes" time="0.009" /><testcase classname="tests.test_release_packaging" name="test_archives_are_deterministic_immutable_and_hash_bound" time="0.015" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[../escape]" time="0.004" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[/absolute.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[x/../escape]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[C:/escape.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[x\\escape.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_archive_rejects_unsafe_member_names[x//escape.py]" time="0.003" /><testcase classname="tests.test_release_packaging" name="test_verifier_rejects_changed_archive_and_member_binding" time="0.020" /><testcase classname="tests.test_release_packaging" name="test_missing_required_source_fails_and_excludes_are_relative" time="0.006" /><testcase classname="tests.test_release_packaging" name="test_real_selections_keep_policy_and_no_private_artifacts" time="2.889" /><testcase classname="tests.test_release_packaging" name="test_ml_package_contains_runtime_postprocessing_dependencies" time="0.218" /><testcase classname="tests.test_release_packaging" name="test_regulatory_dependencies_fail_closed_on_missing_tampered_or_escaping_files" time="0.028" /><testcase classname="tests.test_release_packaging" name="test_generated_ml_dependency_smoke_runs_without_private_inputs_or_models" time="1.468" /></testsuite></testsuites>

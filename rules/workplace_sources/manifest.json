@@ -1,0 +1,47 @@
+{
+  "schema_version": "forte.optional.workplace.public-source-manifest.v1",
+  "accessed_on": "2026-10-17",
+  "deployment_selected": false,
+  "source": {
+    "source_id": "RK_HEALTH_CODE_110_CURRENT_OPTIONAL",
+    "url": "https://adilet.zan.kz/rus/docs/K2000000360",
+    "document_title": "Кодекс Республики Казахстан «О здоровье народа и системе здравоохранения» от 7 июля 2020 года № 360-VI",
+    "legal_status": "current_official_version",
+    "accessed_on": "2026-10-17",
+    "official_document_id": "44307b10-cd74-4f8e-86e5-5e5a10179e99",
+    "primary_sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841",
+    "archives": [
+      {
+        "path": "workplace_sources/health_code_content.json",
+        "sha256": "e82209a5873bb32eec17a52d933e1bffd82195eee5300b6d3fe5d0bfd132c841",
+        "bytes": 1847397
+      },
+      {
+        "path": "workplace_sources/health_code_versions.json",
+        "sha256": "558abfb39005f1123ecc580a6b836917cd7d2d503196593bfd263553afbfa27f",
+        "bytes": 37491
+      },
+      {
+        "path": "workplace_sources/health_code_article110.txt",
+        "sha256": "5229b29de075c16c7bbbae93121cf837d1168187a0f5a825b32345efd63f7af9",
+        "bytes": 25752
+      },
+      {
+        "path": "workplace_sources/health_code_metadata.json",
+        "sha256": "bfcb9880d243f6c1384904fea63246c29370ff9ba733b6ad2f94e1bc49008df6",
+        "bytes": 442
+      }
+    ],
+    "text_archive_path": "workplace_sources/health_code_article110.txt",
+    "version_boundary_utc": "2026-09-05T18:00:00Z",
+    "provenance": "Unmodified official content/history responses; deterministic article extraction and explicitly derived metadata snapshot."
+  },
+  "hash_definition": "Archive sha256 values cover exact file bytes; extracted article is UTF-8 text; metadata is explicitly derived, content/history responses are unmodified.",
+  "text_content_utf8_sha256": "3550d47dfb01e934c27b973ac740c1ecffe4bc107e441d2cf91ee63c46d1d435",
+  "source_text_length_characters": 1106182,
+  "official_metadata_url": "https://adilet.zan.kz/api/documents/by-ngr/K2000000360?language=rus",
+  "official_content_url": "https://adilet.zan.kz/api/documents/44307b10-cd74-4f8e-86e5-5e5a10179e99/content",
+  "official_versions_url": "https://adilet.zan.kz/api/documents/44307b10-cd74-4f8e-86e5-5e5a10179e99/versions?page_size=100",
+  "reviewed_clause": "Article110 paragraph5 subparagraph9, read with paragraph6",
+  "frozen_default_catalog_modified": false
+}

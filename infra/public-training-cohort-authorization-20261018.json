@@ -1,0 +1,14 @@
+{
+  "authorization_reference": "User authorized public-dataset training and no test overfitting on 2026-10-18; root fixed this joint two-model evaluation before any held-out model metrics.",
+  "authorized_at_utc": "2026-10-17T23:31:36.941840+00:00",
+  "authorized_by": "root",
+  "dataset_lock_sha256": "eef3f1ad5fabb9cb720e42522265a6946a02196af01221af6ebf0522bf498fb8",
+  "member_ids": [
+    "crop_vlm",
+    "detector"
+  ],
+  "registry_dir": "/data/claude/training/public-20261018/test-exposure-registry",
+  "schema_version": "forte.public-eval-cohort-authorization.v1",
+  "scope": "One attempt per frozen selected model; failures consume the attempt. Both models and protocols must be frozen before registration. No test-driven tuning; no production promotion.",
+  "sealed_inventory_sha256": "6fd01ecf63dceb738a069626bdebf59e286565e73c0c38b67a9715097b474a29"
+}

@@ -1,0 +1,5 @@
+# Isolated Linux/Python 3.12 GPU environment; do not install into the live VLM.
+# Verify the selected torch/CUDA wheel and record exact resolved dependency hashes.
+rfdetr[train]==1.11.2
+# Newer supervision releases remove the legacy ByteTrack adapter used here.
+supervision==0.29.1

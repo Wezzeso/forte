@@ -1,0 +1,94 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "status": "failed",
+      "attempt": 1,
+      "error_code": "insufficient_visible_evidence",
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "failed",
+        "error_code": "insufficient_visible_evidence",
+        "coarse_requests": 3,
+        "refinement_requests": 1,
+        "stages_ms": {
+          "refinement": 81075.902872,
+          "coarse_model": 134451.426186,
+          "probe_decode": 1873.557935,
+          "rules": 1.633441,
+          "frame_preparation": 0.423837
+        },
+        "model_requests": null
+      }
+    },
+    {
+      "sample_id": "s002",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 4,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "coarse_model": 228432.899656,
+          "probe_decode": 2187.582486,
+          "evidence": 2.086031,
+          "rules": 1.532748,
+          "frame_preparation": 0.514111
+        },
+        "model_requests": null
+      }
+    },
+    {
+      "sample_id": "s003",
+      "status": "failed",
+      "attempt": 1,
+      "error_code": "deadline_exceeded",
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "failed",
+        "error_code": "refinement_model_incomplete",
+        "coarse_requests": 5,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "coarse_model": 262406.290517,
+          "probe_decode": 2375.211313,
+          "rules": 1.021596,
+          "frame_preparation": 0.642133
+        },
+        "model_requests": null
+      }
+    },
+    {
+      "sample_id": "s004",
+      "status": "failed",
+      "attempt": 1,
+      "error_code": "deadline_exceeded",
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "failed",
+        "error_code": "coarse_model_incomplete",
+        "coarse_requests": 4,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "probe_decode": 3530.242743,
+          "frame_preparation": 1.192959
+        },
+        "model_requests": null
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:58:53.353002+00:00",
+  "scope": "benchmark-owned terminal technical metadata only",
+  "media_or_prediction_or_error_detail_exported": false,
+  "model_inference_called": false
+}

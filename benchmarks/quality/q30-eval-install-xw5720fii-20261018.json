@@ -1,0 +1,54 @@
+{
+  "base_speed_flags_off": true,
+  "default_flags_off": true,
+  "evaluation_image_id": "sha256:6d2aa5099743fc398d31a9b563f58597ee4c146d05176c4772c40b139bc99115",
+  "frozen_code_root": "/ephemeral/forte/q30-eval-source/a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+  "generated_at_utc": "2026-10-18T05:20:44.733180+00:00",
+  "harness_sha256": "697bf5963127b441564821e78a32d44b41a951924d39c0b349faff7fc4bff6f9",
+  "instance_id": "xw5720fii",
+  "instance_name": "forte-new-q38",
+  "model_inference_executed": false,
+  "original_source_sha256": {
+    "src/forte/fast/analyzer.py": "c974ed52ac8904186314db99e801a522a073fe1ebf162f52fae421e9c816d5b4",
+    "src/forte/fast/vlm.py": "299b56b09a58009d61cbb3d93961698260924d76bf1d470c868ef3c4f246fd19"
+  },
+  "production_modified": false,
+  "profile_canonical_sha256": {
+    "cfg_q30base.json": "097aa5982d2d96259fe3fe9715c358f1b8f34ef86bae8080be295ae191bb3d2a",
+    "cfg_q30desk.json": "e53468f51e0ef13093193dc2cfef8943ca476f13420cecdf80afe7c4f7a56e4f"
+  },
+  "profile_difference_keys": [
+    "desk_adapter_model"
+  ],
+  "profile_file_sha256": {
+    "cfg_q30base.json": "436ebad34ec35caf6b38df6590c3894fad13b91a207d8afabe14835962c18a41",
+    "cfg_q30desk.json": "a95e038578132063f933ef145021099152f62e383b4353422ce7f834fa5eb293"
+  },
+  "reference_profile_bytes_preserved": true,
+  "reference_profile_file_sha256": "b236180cd0ab3324c521f9f29a154bbcdb32220129c31bd905931ebdc73e08fe",
+  "rollback_directory": "/ephemeral/forte/q30-source-stage.qqo5zGq0/rollback",
+  "runtime_check": {
+    "default_flags_off": true,
+    "desk_routing_parameter_present": true
+  },
+  "schema": "forte.q30-eval-install.v1",
+  "source_manifest_sha256": "a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+  "source_sha256": {
+    "src/forte/fast/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/forte/fast/analyzer.py": "bef702adbd433cd5788d112541544de3b09cec9d02c800f927682fed2ee69d53",
+    "src/forte/fast/catalog.py": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e",
+    "src/forte/fast/policy.py": "5c3353d9d7cccfe4481709037248d5a7323c166e905e44da38df01129831439b",
+    "src/forte/fast/probes.py": "d01fb10096e4120334a7d0d92b5ffed41b24a761bfe68470c2f5ee51085bc00e",
+    "src/forte/fast/prompts.py": "c6c153ba5b49af2b781795c96d145ee93659793c86b475b0b9acb5927f97d2d5",
+    "src/forte/fast/service.py": "9e1dc59b024dad52fda0dd68607a8cd6fd0cf5d3e298bf7cf698b3c7280c4bbe",
+    "src/forte/fast/specialists.py": "b2a47a2c493227b7d6a3967f28f411750709043e6b4e046837728fdae6e74058",
+    "src/forte/fast/temporal_events.py": "d3fea06bec03ac265ef0e6cad62d2376f63636956f05c15438a7dffcc4e47f22",
+    "src/forte/fast/tracked_head.py": "d15ef08d8d9f3eaa4665ef657338629ac760aaa29debf8023ab5e516f71b790a",
+    "src/forte/fast/video.py": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718",
+    "src/forte/fast/vlm.py": "2273dba2c7a3675c5c78eef88c331fcee14d72d5b9666028dffc12fa4bfe3f37",
+    "tools/fast_eval.py": "bfecde2425be3384b7d5adbd0d96519fc05a134eebc897800c70655d9754cb49",
+    "tools/fast_validation.py": "ee6df5ed8e8762c23c529aa628d91580cd349a9dd542651ed59e9e16695b855c"
+  },
+  "status": "installed",
+  "strict_model_protocol_both_profiles": true
+}

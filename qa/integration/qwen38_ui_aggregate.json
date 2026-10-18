@@ -1,0 +1,98 @@
+{
+  "schema_version": "forte.qwen38.synthetic-ui-qa.v1",
+  "captured_at_utc": "2026-10-17T13:25:23.055Z",
+  "outcomes": [
+    {
+      "title": "synthetic upload/result at 1440px has no horizontal overflow and supports keyboard evidence",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 1762
+    },
+    {
+      "title": "synthetic upload/result at 360px has no horizontal overflow and supports keyboard evidence",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 1343
+    },
+    {
+      "title": "200% CSS layout zoom reflows upload, multiple findings and review controls",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 1208
+    },
+    {
+      "title": "negative synthetic state preserves honest verdict and timing",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 618
+    },
+    {
+      "title": "failed synthetic state preserves honest verdict and timing",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 557
+    },
+    {
+      "title": "processing synthetic state preserves honest verdict and timing",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 525
+    },
+    {
+      "title": "network polling error keeps job and offers explicit recovery",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 423
+    },
+    {
+      "title": "broken JPEG in an unselected finding prevents full client timing credit",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 653
+    },
+    {
+      "title": "source decode failure prevents a completed client timing claim",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 609
+    },
+    {
+      "title": "authenticated configured upload cap is displayed and blocks oversized synthetic file",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 614
+    },
+    {
+      "title": "unavailable upload cap is disclosed without inventing a configured value",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 639
+    },
+    {
+      "title": "review conflict preserves drafts and frozen full client timing before explicit retry",
+      "status": "passed",
+      "expectedStatus": "passed",
+      "durationMs": 1087
+    }
+  ],
+  "source_hashes_before": {
+    "web/src/App.tsx": "db5b71bf27412a0ebfa4a243f2445bfdf04b21dbca1a540dadac363ad6935627",
+    "web/src/styles.css": "62dcf8d6068fd2886078a84b3826bc069a5dc7a8c83d42960cdaaa09311b322c",
+    "web/src/HumanReviewPanel.tsx": "1f62f4cf02ac9737ff90af00093da2134eea2708addc588ecbc944617a1d8dbd",
+    "web/src/api.ts": "269826ef2636fb599ac2bf84303dea90cdc3fd0f8b91a69e4e630de95e580638",
+    "qa/integration/qwen38_ui.spec.ts": "1324c26e53c3ea3297d65ab9802d38c0601fbbcbe464eaae52cd6ac4c0e5a551"
+  },
+  "source_hashes_after": {
+    "web/src/App.tsx": "db5b71bf27412a0ebfa4a243f2445bfdf04b21dbca1a540dadac363ad6935627",
+    "web/src/styles.css": "62dcf8d6068fd2886078a84b3826bc069a5dc7a8c83d42960cdaaa09311b322c",
+    "web/src/HumanReviewPanel.tsx": "1f62f4cf02ac9737ff90af00093da2134eea2708addc588ecbc944617a1d8dbd",
+    "web/src/api.ts": "269826ef2636fb599ac2bf84303dea90cdc3fd0f8b91a69e4e630de95e580638",
+    "qa/integration/qwen38_ui.spec.ts": "1324c26e53c3ea3297d65ab9802d38c0601fbbcbe464eaae52cd6ac4c0e5a551"
+  },
+  "source_changed_during_check": [],
+  "fixtures": "Generated local MOV/JPEG and mocked local HTTP routes only",
+  "zoom_check": "200% CSS layout zoom, not browser menu zoom or full WCAG certification",
+  "limitations": [
+    "No private footage, model inference, production readiness, or real upload-to-ready latency claim."
+  ]
+}

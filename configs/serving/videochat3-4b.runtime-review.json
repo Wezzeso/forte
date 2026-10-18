@@ -1,0 +1,320 @@
+{
+  "schema_version": "forte.videochat3-static-runtime-review.v1",
+  "reviewed_at_utc": "2026-10-17T12:42:10.471319+00:00",
+  "scope": "Public checkpoint/source/package metadata and static Python AST/text review only",
+  "model_id": "MCG-NJU/VideoChat3-4B",
+  "revision": "9f6107bdfee9686dfe493444022f5cf79a1a6acf",
+  "github_commit": "015f52eb2ea70b5abda30192aee18034f2c5f13b",
+  "gated": false,
+  "license": {
+    "publisher_card": "apache-2.0",
+    "reviewed_custom_source_headers": "Apache-2.0",
+    "standalone_hf_license_file_seen": false,
+    "dataset_terms_are_separate": true
+  },
+  "weights": [
+    {
+      "path": "model-0001-others-save_rank0.safetensors",
+      "size_bytes": 4252181336,
+      "sha256": "4c173466ec6a2c5e1544859021fbeac825067ccd54e80b887372d83b1c281654",
+      "git_blob_sha1": "b2d505fa805c752f99bbcd8e9503c41a64d170cc"
+    },
+    {
+      "path": "model-0002-others-save_rank0.safetensors",
+      "size_bytes": 4288942328,
+      "sha256": "322af91f1ba81f290cee20d66bf0841be4826091e6e942688243b38bbc26e597",
+      "git_blob_sha1": "444926d2580dab4bad0f0b6a6f0d3ab1955f402c"
+    },
+    {
+      "path": "model-0003-others-save_rank0.safetensors",
+      "size_bytes": 403726088,
+      "sha256": "1c16eb013f0224c018db06148e28ee60bc1e2b47b1fffde0e311ed9debd63b90",
+      "git_blob_sha1": "bc84002a7b87d9b60c78829a13eb4fb3711055ad"
+    }
+  ],
+  "weight_bytes": 8944849752,
+  "weight_identity_scope": "Publisher LFS metadata; model weights not downloaded or locally hashed by this review",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "bytes": 4594,
+      "sha256": "38f459632abe8c3f8d03c121d3c8496ad7d5eeb016c9d3e4e8d3f986385be70d",
+      "git_blob_sha1": "55136083c65fa13816ee7259af9085319b4c2000",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "__init__.py",
+      "bytes": 1267,
+      "sha256": "42febf2deb974981707227466958e4e969eda2beb2cde6fcfaf0e5588c15ab7c",
+      "git_blob_sha1": "acd398016271bcc0d0efb970bc307af211ba00ab",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "config.json",
+      "bytes": 1765,
+      "sha256": "d855aa0d9c6b6f223c9a293b9f1617a877a1ed0fb68a106ffcc084226ab3bf57",
+      "git_blob_sha1": "5744392f49e2a4c343f7034e76f21c0dd84f81f2",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "configuration_videochat3.py",
+      "bytes": 7220,
+      "sha256": "b2c6fe79f9fc9ac75466dc9be6cf2b95a530f6c1a06638bf87ae75289444d02e",
+      "git_blob_sha1": "9195f0081beefe02281782ead1d8dcbeb05574ba",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "modeling_videochat3.py",
+      "bytes": 44545,
+      "sha256": "853a76844c94612f350f222247983e734d70ebe37fc6778a4b3ea0e22bdc36f8",
+      "git_blob_sha1": "d91935ae9a3bea9c453f3a814295ea44e0b96cc5",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "processing_videochat3.py",
+      "bytes": 16139,
+      "sha256": "2cf662dca1391ad133ef80dad5cbb6505a0e30e3564881f6174dc6633e2c3696",
+      "git_blob_sha1": "6008ea785d0245f0ce06732991971b10802e6e0f",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "video_processing_videochat3.py",
+      "bytes": 18675,
+      "sha256": "bf33cff1b70465ed3cb1e9dc748504ab2a612f54037324068aab1b487189f6d1",
+      "git_blob_sha1": "ed0a913f2f66bf17da080e9b373546331024ac2b",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "videochat3_utils.py",
+      "bytes": 2897,
+      "sha256": "fd528475338cce9969f43b65df88faf0a72455ab0eeb59cad740733060cef5ab",
+      "git_blob_sha1": "7c54e99637dcf3499312b4be612c492eb021f8a9",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "demo_vc3.py",
+      "bytes": 1951,
+      "sha256": "40424c77acafca9478c5efceb1f4175eff5770edd46279d83365fc1d58d4f711",
+      "git_blob_sha1": "95f083142eaa63b2af84a53e093cec0435a8baa4",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "demo_vc3_proactive.py",
+      "bytes": 5948,
+      "sha256": "656bcaa3d7e52679e868ae83d8866650e0bb4b505108759eb00da6f0765256bb",
+      "git_blob_sha1": "6f9cec49065aed2e992b9892674b8a9a8665ecaa",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "inference_fast_vc3.py",
+      "bytes": 18656,
+      "sha256": "1357cea6ff00632f480728102b1f04bf0792306f7c45be173890e95a9eca5bd1",
+      "git_blob_sha1": "b2cd637eb5805f076c0b2ba1f30a2433ba7ac35e",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 870,
+      "sha256": "07da331d7669dff1e23296d8424faff30ad31f218913fe71c2017c2fc432b691",
+      "git_blob_sha1": "7f14571fd1167d0b2a9fd7e6b833d8051ba32163",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "processor_config.json",
+      "bytes": 133,
+      "sha256": "f98ed88117277cdf2f456a57ed1507a264079b53b1144b1d2ebfb4c4b928e899",
+      "git_blob_sha1": "11e1f15d302c4ba86823d4a1335a47b84542fb2d",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "bytes": 1020,
+      "sha256": "ef1c765da73497a917138d4448c470074b5edc3cdb00b1c347ed0faabb1007e4",
+      "git_blob_sha1": "f667c152d648c0d7456a84b7fa4e785ec36c1e65",
+      "publisher_metadata_size_and_git_blob_match": true
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 269,
+      "sha256": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+      "git_blob_sha1": "7bb37933d2d86e4ceaabcc6540be989658f238e9",
+      "publisher_metadata_size_and_git_blob_match": true
+    }
+  ],
+  "runtime_execution": {
+    "candidate_imported": false,
+    "custom_code_executed": false,
+    "weights_downloaded": false,
+    "model_loaded": false,
+    "gpu_used": false,
+    "private_media_read": false,
+    "inference_verified": false,
+    "latency_verified": false,
+    "quality_verified": false,
+    "selected_for_production": false,
+    "existing_service_mutated": false
+  },
+  "architecture": {
+    "class": "VideoChat3ForConditionalGeneration",
+    "model_type": "videochat3",
+    "text_model_type": "qwen3",
+    "safetensors_bf16_parameters": 4472378352,
+    "custom_code_required_by_snapshot_auto_map": true,
+    "native_video_inputs": [
+      "pixel_values_videos",
+      "video_grid_thw"
+    ],
+    "patch_size": 14,
+    "temporal_patch_size": 1,
+    "temporal_merge_size": 4,
+    "motion_path": "A video T,H,W grid is split into consecutive groups of at most four frames. Joint vision attention includes temporal positional embeddings; the projector temporally pools each group and spatially merges 2x2 patches.",
+    "image_list_is_equivalent_to_native_video": false,
+    "image_list_limit": "Separately encoded images have T=1 and do not use the same joint four-frame motion attention.",
+    "upstream_vllm_supported": false,
+    "upstream_vllm_evidence": "Pinned official evaluation adapter raises NotImplementedError for use_vllm."
+  },
+  "current_runtime": {
+    "source": "configs/serving/actual-packages.json plus static inspection of the lock-pinned Transformers wheel",
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "torchvision": "0.28.0+cu129",
+    "transformers_wheel_sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801",
+    "transformers_wheel_bytes": 12295140,
+    "video_processing_utils_sha256": "2ef4ecce4a870332333dc6744673fc74c5ecc59c4fd3d43d669264c1a5b008ea",
+    "generation_utils_sha256": "bb558d8676be95457126c82a32600dad206c13e4fb96b4f5d114f1f2483d7f62",
+    "unchanged_candidate_compatible": false,
+    "blockers": [
+      {
+        "kind": "static_import_blocker",
+        "candidate_file": "video_processing_videochat3.py",
+        "line": 28,
+        "detail": "Imports BASE_VIDEO_PROCESSOR_DOCSTRING from transformers.video_processing_utils; the verified 5.17.0 wheel module has no such definition/import/dynamic module __getattr__. Unchanged processor cannot import through this reference.",
+        "runtime_import_executed": false
+      },
+      {
+        "kind": "generation_api_incompatibility",
+        "candidate_file": "modeling_videochat3.py",
+        "line": 1109,
+        "detail": "prepare_inputs_for_generation dereferences its local cache_position[0]. Transformers 5.17 does not maintain this as a generate caller kwarg; its remote-code compatibility path creates cache_position only inside the returned model_inputs dictionary. Requires an audited port or an older compatible isolated library branch.",
+        "runtime_failure_reproduced": false
+      }
+    ],
+    "a100_cuda_assessment": "BF16/SDPA are plausible on the already working A100/Torch CUDA12.9 base. This review did not test candidate kernels, peak memory, co-residency, a flash-attn wheel ABI, or driver compatibility."
+  },
+  "proposed_isolated_runtime": {
+    "status": "Static-compatible candidate profile only; no installation/import/load validation",
+    "publisher_training_transformers_pin": "4.57.0",
+    "publisher_4570_yanked": true,
+    "publisher_4570_yank_reason": "Error in the setup causing installation issues",
+    "preferred_transformers_candidate": "4.57.1",
+    "preferred_wheel_yanked": false,
+    "preferred_wheel_url": "https://files.pythonhosted.org/packages/71/d3/c16c3b3cf7655a67db1144da94b021c200ac1303f82428f2beef6c2e72bb/transformers-4.57.1-py3-none-any.whl",
+    "preferred_wheel_bytes": 11990925,
+    "preferred_wheel_sha256": "b10d05da8fa67dc41644dbbf9bc45a44cb86ae33da6f9295f5fbf5b7890bd267",
+    "preferred_video_processing_utils_bytes": 41231,
+    "preferred_video_processing_utils_sha256": "067dc959fe800d5a5a5ab39c54b53817a4b59424f31436767d7361c20b3ba409",
+    "preferred_video_processing_utils_matches_4570": true,
+    "preferred_generation_utils_sha256": "a20024b1e82ed5361a524d238d2197be5407abc91297dd9888c57e8284d63fef",
+    "dependency_constraints": [
+      "huggingface-hub>=0.34.0,<1.0",
+      "tokenizers>=0.22.0,<=0.23.0",
+      "safetensors>=0.4.3",
+      "publisher torch>=2.6.0",
+      "publisher Python>=3.10"
+    ],
+    "torch_candidate": "Retain locked Torch2.13.0+cu129 and Torchvision0.28.0+cu129 only in a separate tested image; no compatibility proof is claimed.",
+    "isolation_reason": "Transformers4.57 dependency constraints can conflict with current5.17/vLLM dependencies; do not downgrade the running service. Resolve and hash a dedicated minimal environment.",
+    "do_not_install_full_training_or_eval_toolkit": true
+  },
+  "attention_backends": {
+    "vision_default": "flash_attention_2",
+    "vision_config_key": "vision_config.attn_impl",
+    "top_level_attn_implementation_alone_changes_custom_vision_field": false,
+    "sdpa_implemented": true,
+    "sdpa_profile_requirement": "Set the custom vision_config.attn_impl to sdpa before constructing the model, separately select text SDPA, and attest both effective values.",
+    "sdpa_scaling_limit": "Custom SDPA allocates a boolean [1,N,N] mask over ALL unmerged vision patches in the packet. Bound frames/resolution before allocation; no full-native long-video throughput claim.",
+    "eager_allowed_for_pilot": false,
+    "eager_static_concern": "The eager implementation adds a boolean allowed-attention mask to logits rather than masking disallowed blocks to negative infinity; cross-group behavior differs from the SDPA/varlen path. No candidate execution was used to assess this.",
+    "flash_attn_import_behavior": "If package availability check fails, flash_attn_varlen_func becomes None; default custom vision FA2 path would still call it. Pin and independently test any compiled extension if FA2 is chosen."
+  },
+  "timestamps": {
+    "upstream_metadata_clock": "video_start_time + frame_index / fps",
+    "group_timestamp": "Midpoint of first and last timestamp in each up-to-four-frame group",
+    "rendered_precision_decimals": 1,
+    "upstream_default_fps": 2,
+    "source_millisecond_grounding_proven": false,
+    "vfr_warning": "Average source FPS arithmetic does not preserve arbitrary original PTS; native source PTS must remain authoritative.",
+    "required_adapter_clock_proof": "Bind every sampled ordinal/frame ID to original source_pts/time_base and verify the actual grouped, rendered processor timestamp sequence. A native-PTS metadata override/subclass or tick-clock scheme needs its own CPU proof for this processor; do not reuse the TimeLens two-frame proof unchanged.",
+    "precision_limit": "One-decimal pooled model prompt timestamps cannot establish an exact frame boundary. Report model intervals as coarse proposals with source-frame brackets and uncertainty; never round a proposal into fake millisecond certainty."
+  },
+  "offline_safety": {
+    "direct_network_or_audio_io_found_in_five_core_custom_modules": false,
+    "review_scope_limit": "Static review of the five listed core modules, not a proof about all transitive library behavior.",
+    "upstream_network_surfaces": [
+      "HF from_pretrained without revision/offline flags",
+      "Parent processors can fetch remote image/video URLs",
+      "Full upstream evaluation can use cloud judges and download datasets"
+    ],
+    "required_execution_controls": [
+      "Pinned local snapshot with all config/tokenizer/custom-source/shard hashes verified",
+      "local_files_only=True with HF_HUB_OFFLINE and TRANSFORMERS_OFFLINE plus telemetry disabled",
+      "Isolated container network disabled, no ports, no outbound credentials",
+      "Only accepted owned local sources or in-memory RGB frames; no URL/data-URL media",
+      "Read-only model/source mounts and bounded writable scratch/module cache",
+      "No upstream evaluation judge, remote API, verbose private-input logging, audio decoding, or private response printing"
+    ]
+  },
+  "minimal_adapter_contract": {
+    "kind": "Separate experimental native-video physical-fact HF provider, not a legal verdict provider",
+    "inputs": [
+      "Accepted owned source and content SHA-256",
+      "Full original source PTS ledger and explicit packet coverage",
+      "Chronological native-video RGB packet with no implicit re-sampling",
+      "Pinned physical question IDs from the existing19-fact taxonomy; no organizer labels/filenames/verdicts in prompts",
+      "Optional exact original anchor image for frame-specific facts, distinguished from surrounding video context"
+    ],
+    "processor": "Use the custom VideoChat3Processor; pass a video array as videos plus its reviewed VideoChat3 metadata. Use do_sample_frames=False for externally decoded packets. Do not flatten chronological video into independent image prompts. Fix/attest resize recipe, 14-pixel patches and28-pixel spatial divisibility, video_grid_thw, up-to-four-frame timestamp groups and output token cap.",
+    "generation": "Explicit do_sample=False, num_beams=1, fixed seed, bounded max_new_tokens and deadline/cancel; override publisher generation_config do_sample=True. Validate generated continuation only; keep raw response/tokens private.",
+    "output": {
+      "facts": [
+        {
+          "fact_id": "requested taxonomy ID",
+          "state": "present|absent|unclear",
+          "scope": "window|explicit_anchor_frame",
+          "supporting_frame_ids": "only source IDs actually supplied; anchor-only for exact frame facts"
+        }
+      ],
+      "coarse_temporal_proposals": "Optional bounded intervals; separately bind to source-frame brackets and retain quantization/coverage uncertainty"
+    },
+    "validation": "Reject unexpected IDs/fields, unsupported citations, malformed JSON, out-of-window intervals and invented source references. Window facts never become per-frame labels by broadcasting. Unseen/occluded/incomplete procedure context stays unclear; no candidate must not become no_violation.",
+    "legal_output": "Existing independently verified rule catalog and applicability/exception/temporal/evidence gates only; never ask the model to invent Kazakhstan law or paragraph text.",
+    "training_and_release": "Machine labels remain provisional; keep the locked split and final blind set. Do not promote without actual local comparisons and repeatability/latency evidence. Human operational confirmation remains a separate immutable ledger."
+  },
+  "timelens_reuse": {
+    "reuse": [
+      "Owned-source validation and content hash binding",
+      "Full native PTS decode ledger and bounded sampling infrastructure",
+      "Offline snapshot/hash checks and private logging policy",
+      "Persistent-run resource accounting, deadline/cancellation skeleton and raw result provenance"
+    ],
+    "replace_or_reprove": [
+      "Hard-coded Qwen3VL class/config identity and loader",
+      "AutoProcessor/Qwen3VL processor identity checks",
+      "Patch16/two-frame temporal grid and clock proof",
+      "TimeLens interval-only prompt/parser",
+      "Manifest identity and runtime package pins",
+      "Model output validation for physical-fact JSON"
+    ],
+    "drop_in_reuse": false,
+    "recommended_next_step": "Finish the existing small TimeLens pilot independently. Prepare a separate4.57.1-compatible VideoChat3 native-video adapter; after authorized public-weight staging and a coordinated GPU slot, run bounded generated-video load/forward smoke before any train/validation private-media experiment."
+  },
+  "primary_sources": [
+    "https://huggingface.co/MCG-NJU/VideoChat3-4B/tree/9f6107bdfee9686dfe493444022f5cf79a1a6acf",
+    "https://github.com/MCG-NJU/VideoChat3/tree/015f52eb2ea70b5abda30192aee18034f2c5f13b",
+    "https://github.com/MCG-NJU/VideoChat3/blob/015f52eb2ea70b5abda30192aee18034f2c5f13b/xtuner-videochat3/pyproject.toml",
+    "https://github.com/MCG-NJU/VideoChat3/blob/015f52eb2ea70b5abda30192aee18034f2c5f13b/vlmevalkit-videochat3/vlmeval/vlm/videochat3/model.py",
+    "https://pypi.org/pypi/transformers/4.57.0/json",
+    "https://pypi.org/pypi/transformers/4.57.1/json",
+    "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl"
+  ]
+}

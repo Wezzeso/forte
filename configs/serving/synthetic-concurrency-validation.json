@@ -1,0 +1,39 @@
+{
+  "recorded_date": "2026-10-17",
+  "synthetic_only": true,
+  "whole_video_latency_measured": false,
+  "event_accuracy_measured": false,
+  "statistical_capacity_claim": false,
+  "hardware": "NVIDIA A100 80GB PCIe",
+  "vllm_version": "0.31.0+cu129",
+  "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "frames_per_request": 16,
+  "fact_count": 19,
+  "production_fact_definitions": true,
+  "image_side": 672,
+  "replica_concurrency": 2,
+  "trials_per_condition": 1,
+  "requests_per_condition": 2,
+  "media_processor_cache_enabled": false,
+  "prefix_cache_enabled": false,
+  "grammar_compilation_included": true,
+  "conditions_ordered": true,
+  "comparability_limits": [
+    "Generated synthetic images have different source identities per condition, with equal dimensions and fact definitions.",
+    "Raw canonical frame-ID schema enums are fresh per request; compact aliases can reuse the grammar after first compilation.",
+    "One trial per condition establishes a local tuning observation, not sustained capacity or accuracy."
+  ],
+  "records": [
+    {"trial":0,"compact_frame_ids":false,"max_inflight_per_job":1,"requests":2,"completed_requests":2,"failure_types":[],"elapsed_seconds":53.56493547800028,"requests_per_second":0.03733785884651018,"request_latency_seconds":[27.237687267000183,53.56121470300013],"prompt_tokens_total":22834,"generated_tokens_total":3978,"all_schema_and_semantic_validation_passed":true},
+    {"trial":0,"compact_frame_ids":false,"max_inflight_per_job":2,"requests":2,"completed_requests":2,"failure_types":[],"elapsed_seconds":26.21107826699972,"requests_per_second":0.07630361405307162,"request_latency_seconds":[25.20605692900017,26.209543633000067],"prompt_tokens_total":22836,"generated_tokens_total":3334,"all_schema_and_semantic_validation_passed":true},
+    {"trial":0,"compact_frame_ids":true,"max_inflight_per_job":1,"requests":2,"completed_requests":2,"failure_types":[],"elapsed_seconds":25.335967748999792,"requests_per_second":0.07893915953058298,"request_latency_seconds":[12.674977608000063,25.333975889000158],"prompt_tokens_total":19388,"generated_tokens_total":1814,"all_schema_and_semantic_validation_passed":true},
+    {"trial":0,"compact_frame_ids":true,"max_inflight_per_job":2,"requests":2,"completed_requests":2,"failure_types":[],"elapsed_seconds":14.547171960000014,"requests_per_second":0.13748376698229378,"request_latency_seconds":[14.522544349999862,14.545415436999974],"prompt_tokens_total":19388,"generated_tokens_total":1814,"all_schema_and_semantic_validation_passed":true}
+  ],
+  "recommended_worker_overrides": {
+    "FORTE_COMPACT_FRAME_IDS": "true",
+    "FORTE_MAX_INFLIGHT_PER_JOB": "2",
+    "FORTE_MAX_CONCURRENT_CLIPS": "2"
+  },
+  "generation_max_tokens_unchanged": 4096,
+  "command": "python3 -m serving.bench_synthetic --base-url http://model:8000/v1 --production-facts --frames 16 --side 672 --requests 2 --trials 1 --compact-mode both --timeout 600"
+}

@@ -1,0 +1,163 @@
+{
+  "$defs": {
+    "FactDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "fact_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "present",
+            "absent",
+            "unclear"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "supporting_frame_ids": {
+          "items": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Supporting Frame Ids",
+          "type": "array"
+        },
+        "model_score": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Score"
+        },
+        "score_provenance": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score Provenance"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "fact_id",
+        "state"
+      ],
+      "title": "FactDecision",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Event Id",
+      "type": "string"
+    },
+    "event_type_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Event Type Id",
+      "type": "string"
+    },
+    "rule_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "start_sec": {
+      "minimum": 0,
+      "title": "Start Sec",
+      "type": "number"
+    },
+    "end_sec": {
+      "minimum": 0,
+      "title": "End Sec",
+      "type": "number"
+    },
+    "anchor_frame_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Anchor Frame Id",
+      "type": "string"
+    },
+    "evidence_frame_ids": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 3,
+      "minItems": 1,
+      "title": "Evidence Frame Ids",
+      "type": "array"
+    },
+    "observed_facts": {
+      "items": {
+        "$ref": "#/$defs/FactDecision"
+      },
+      "title": "Observed Facts",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    }
+  },
+  "required": [
+    "event_id",
+    "event_type_id",
+    "rule_id",
+    "start_sec",
+    "end_sec",
+    "anchor_frame_id",
+    "evidence_frame_ids",
+    "observed_facts"
+  ],
+  "title": "VerifiedEvent",
+  "type": "object"
+}

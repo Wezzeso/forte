@@ -1,0 +1,27 @@
+{
+  "coverage_snapshot_sha256": "4e398fa63a4ab235336390378d94b58c51ebe0f2e66d23441281b35d3222be67",
+  "errors": {
+    "exposure_inventory_snapshot_stale": 1
+  },
+  "event_fact_ground_truth_validated": false,
+  "expected_assignments_sha256": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c",
+  "exposure_registry_tip_sha256": "84dccc1154ab5efb5c8ab5387d26e7c55908c60022099afcb6d01f5e3e24337f",
+  "grouping_provenance": {
+    "confidence_status": "heuristic_unvalidated",
+    "config_sha256": "0ae10ef4c68f0188d5bfd601df357b984603ace98fee5581b3130b99984d0214",
+    "human_reviewed": false,
+    "origin": "local_model_and_metadata",
+    "scenario_independence_verified": false
+  },
+  "human_reviewed": false,
+  "human_verified_training_authorized": false,
+  "label_split": "validation",
+  "ok": false,
+  "provided_binary_records": 6,
+  "provided_label_manifest_sha256": "14033545f724483bdbc579115b55eaa57f14f19dae9d42e6dff9131375d5e967",
+  "provided_label_source_sha256": "4faf595a2679c2f8b2b41be041de59bb3c11cd6e77d57226f1cbcc14b2cc3e75",
+  "scenario_independence_verified": false,
+  "target_scope": "video_binary_mil_only",
+  "track": "automated_weak_supervision",
+  "training_authority_inferred_from_exposure": false
+}

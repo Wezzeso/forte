@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-10-18T00:56:22.976711+00:00",
+  "worker_profile": {
+    "path": "/var/lib/forte/fast_config.json",
+    "file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+    "effective_canonical_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+    "require_corroboration": true,
+    "use_verify": true,
+    "specialists_enabled": false
+  }
+}

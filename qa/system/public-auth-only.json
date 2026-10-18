@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:22:42.431796+00:00",
+  "layer": "HTTP auth-only; no accepted media jobs created",
+  "input": "synthetic invalid auth bytes only",
+  "cases": [
+    {
+      "id": "missing_key_post",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "missing_key_get",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "wrong_key_post",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "wrong_key_get",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "unknown_job",
+      "status": "PASS",
+      "http_status": 404
+    }
+  ],
+  "counts": {
+    "PASS": 5,
+    "FAIL": 0,
+    "UNMEASURED": 0
+  },
+  "corrupt_media_terminal_state": "unmeasured; not requested",
+  "pre_body_auth_note": "HTTP rejection measured; receive-not-called proof is an ASGI test"
+}

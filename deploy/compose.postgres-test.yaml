@@ -1,0 +1,8 @@
+# Development-only temporary override for real PostgreSQL QA. Bind loopback only.
+services:
+  db:
+    ports: ["127.0.0.1:54329:5432"]
+    networks: [private, postgres_test]
+
+networks:
+  postgres_test: {}

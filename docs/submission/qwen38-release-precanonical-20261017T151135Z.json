@@ -1,0 +1,23 @@
+{
+  "archive": "tmp/qwen38-ml-support-grammar-20261017T151135Z.tar.gz",
+  "archive_bytes": 694513,
+  "archive_sha256": "08d5a9d43360735b151fb852d35e4337fc9edac87723f0103f8390a1869747a3",
+  "built": false,
+  "captured_at_utc": "2026-10-17T15:12:03.822149+00:00",
+  "change_witness": "tmp/qwen38-ml-support-grammar-20261017T151135Z.tar.gz.changes.json",
+  "change_witness_sha256": "db256e7e4913f94a28b2243959bb7cf68e212a57817660bddba034599f907b6e",
+  "common_critical_files_identical_to_bca": 88,
+  "deployed": false,
+  "file_count": 225,
+  "git_commit": null,
+  "gpu_calls": 0,
+  "historical_bca_modified": false,
+  "manifest_sha256": "5a2886199b1fd0c3b5e01c4da9535b6224f6dc1e3c5b713c89d79343fc3930c1",
+  "model_calls": 0,
+  "private_data_included": false,
+  "root_later_requested_bounded_canonical_fact_order_fix": true,
+  "runtime_selected": false,
+  "schema_version": "forte.ml-source-release-receipt.v1",
+  "status": "INTERMEDIATE_PRE_CANONICAL_ORDER_NOT_SELECTED",
+  "transferred": false
+}

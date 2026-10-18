@@ -1,0 +1,54 @@
+{
+  "schema_version": "forte.qwen38.cpu-qa.v1",
+  "started_at_utc": "2026-10-17T14:40:34.685258+00:00",
+  "finished_at_utc": "2026-10-17T14:42:25.402504+00:00",
+  "elapsed_sec": 109.959,
+  "interpreter": "C:\\Users\\Wezeso\\Desktop\\Forte\\.venv\\Scripts\\python.exe",
+  "suites": [
+    "tests",
+    "qa/integration",
+    "qa/system",
+    "annotations",
+    "rules",
+    "scripts",
+    "serving/tests",
+    "training"
+  ],
+  "excluded_marker": "gpu",
+  "environment": {
+    "offline_model_downloads": true,
+    "cuda_visible_devices": "",
+    "live_postgresql_opt_in": false
+  },
+  "exit_code": 0,
+  "code_snapshot_before_sha256": "8a45885025eae138e278eeb2efc8c1c72b078c67b7d6b7167aa5f5daca8a1286",
+  "code_snapshot_after_sha256": "17a9698e18055ebd6a273722c969ee047d05b265590639765242a4d48831bdbc",
+  "code_changed_during_check": [
+    "tests/test_coverage_export.py",
+    "training/coverage_export.py"
+  ],
+  "counts": {
+    "tests": 2151,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 25,
+    "passed_cases": 1876,
+    "passed_subtests": 250
+  },
+  "failures": [],
+  "log": "qa/integration/qwen38_cpu_postprocess_final.log",
+  "junit": "qa/integration/qwen38_cpu_postprocess_final.xml",
+  "limitations": [
+    "Synthetic/component software verification; no private model inference or GPU execution.",
+    "Does not establish real-video accuracy, semantic onset precision, model training, deployment, or upload-to-ready latency.",
+    "Live PostgreSQL behavior requires its own opt-in integration receipt."
+  ],
+  "pytest_summary": "1876 passed, 25 skipped, 1 warning, 250 subtests passed in 107.36s (0:01:47)",
+  "junit_test_count_includes_subtests": true,
+  "source_hashes": {
+    "pyproject.toml": "b0cc98a287b4b175021c01dde6f3dd08c3792a1023fbc91840a2e9924204d644",
+    "src/forte/pipeline.py": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+    "src/forte/config.py": "c98303d65cc2d5060f2bbc931aec0755c3da6960ae60291b885401c23b85cf74",
+    "src/forte/worker.py": "1331a299763cb1b10a67ca7ba2012d3ede61c1ff6af36a8bf53924597dd69921"
+  }
+}

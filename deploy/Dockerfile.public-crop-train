@@ -1,0 +1,12 @@
+# CPU-only build. Inherits the dependency-checked isolated CUDA foundation.
+ARG BASE_IMAGE=forte-specialist-training:rfdetr1112-cu129
+FROM ${BASE_IMAGE}
+ENV NVIDIA_VISIBLE_DEVICES=void CUDA_VISIBLE_DEVICES=""
+COPY requirements-public-crop.txt /opt/forte-training/
+RUN python3 -m pip install --no-cache-dir --no-deps --require-hashes \
+      --index-url https://pypi.org/simple \
+      --requirement /opt/forte-training/requirements-public-crop.txt \
+      --report /opt/forte-training/crop-pip-resolver.json \
+    && python3 -m pip check \
+    && python3 -m pip freeze > /opt/forte-training/crop-pip-freeze.txt
+RUN python3 -c "import bitsandbytes,glob,importlib.metadata as m,json,pathlib,torch; from transformers import Qwen3VLForConditionalGeneration,AutoProcessor; from peft import LoraConfig,get_peft_model; p=pathlib.Path('/opt/forte-training'); r=json.loads((p/'crop-pip-resolver.json').read_text()); w=next(x for x in r['install'] if x['metadata']['name'].lower()=='bitsandbytes'); assert w['download_info']['archive_info']['hashes']['sha256']=='55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283'; expected={'torch':'2.13.0+cu129','transformers':'5.17.0','peft':'0.21.2','accelerate':'1.15.0','bitsandbytes':'0.50.2'}; assert all(m.version(k)==v for k,v in expected.items()); assert not torch.cuda.is_initialized() and not glob.glob('/dev/nvidia*'); (p/'crop-versions.json').write_text(json.dumps({'versions':expected,'cuda_build':torch.version.cuda,'cuda_initialized':False,'gpu_device_nodes':[]},indent=2)+'\n')"

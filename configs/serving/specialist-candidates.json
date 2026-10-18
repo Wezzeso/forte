@@ -1,0 +1,1267 @@
+{
+  "schema_version": 1,
+  "researched_at_utc": "2026-10-17T12:19:48.977264+00:00",
+  "status": "research_only_not_a_download_or_deployment_manifest",
+  "first_practical_comparisons": [
+    "cosmos_embed1_anomaly",
+    "videomaev2_distilled_b_k710"
+  ],
+  "explainability_comparator": "holmesvau_2b",
+  "candidates": [
+    {
+      "candidate_id": "cosmos_embed1_anomaly",
+      "model_id": "nvidia/Cosmos-Embed1-448p-anomaly-detection",
+      "role": "anomaly video embeddings plus a bank-trained temporal head",
+      "priority": 1,
+      "revision": "8f4a7e904f07ccb7848a7cf2bdcb71b0db3ba3d3",
+      "primary_model_card": "https://huggingface.co/nvidia/Cosmos-Embed1-448p-anomaly-detection",
+      "metadata_source": "https://huggingface.co/api/models/nvidia/Cosmos-Embed1-448p-anomaly-detection?blobs=true",
+      "downloaded": false,
+      "deployed": false,
+      "selected_for_production": false,
+      "download_authorized": false,
+      "bank_latency_measured": false,
+      "bank_latency_sec": null,
+      "bank_quality_measured": false,
+      "bank_quality": null,
+      "weight_identity_source": "publisher public metadata; checkpoint bytes not downloaded or hashed locally",
+      "gated": false,
+      "weight_bytes": 4792128248,
+      "weights": [
+        {
+          "path": "model-00001-of-00010.safetensors",
+          "size_bytes": 517488448,
+          "sha256": "fea3de5d5625b8e729eda58e5cd32289955cf0dff448c8fb0195d7466633fea1"
+        },
+        {
+          "path": "model-00002-of-00010.safetensors",
+          "size_bytes": 493842736,
+          "sha256": "ee78b9fa3abcbdb6a481a00a708ac33d9d7539a3dd6f592d3a454fdd2607ad89"
+        },
+        {
+          "path": "model-00003-of-00010.safetensors",
+          "size_bytes": 505010128,
+          "sha256": "3bed2818905e39a6ec71ebbbea9448d4f880e54645d98ccd4e7065a19dd12fcd"
+        },
+        {
+          "path": "model-00004-of-00010.safetensors",
+          "size_bytes": 505010136,
+          "sha256": "e4b18aafc406e637b98711dd7cb2ba08ee495e12a3edc4193bd23417e45ecccf"
+        },
+        {
+          "path": "model-00005-of-00010.safetensors",
+          "size_bytes": 505010120,
+          "sha256": "1f5dbf38683fb3817862a46169f69b201a65c6347156b73876631ecc4c7583ba"
+        },
+        {
+          "path": "model-00006-of-00010.safetensors",
+          "size_bytes": 505010136,
+          "sha256": "2c8513ab357cea6e912dc6ac4362d966cce2cc1d7141f954689e2a1c8a160527"
+        },
+        {
+          "path": "model-00007-of-00010.safetensors",
+          "size_bytes": 505010120,
+          "sha256": "d147a76e22cee63211afe47d1c57f8f86efc725f8166c3337583372590ae2f92"
+        },
+        {
+          "path": "model-00008-of-00010.safetensors",
+          "size_bytes": 505010136,
+          "sha256": "6ef8272be1e43ace55c82984146f565109155bc851d8babe19e50d236f69e0c1"
+        },
+        {
+          "path": "model-00009-of-00010.safetensors",
+          "size_bytes": 505010088,
+          "sha256": "aca7e54bbb969f81f462184048fd0acfab6ac2c25b2ec78c5fecef3aa5f56950"
+        },
+        {
+          "path": "model-00010-of-00010.safetensors",
+          "size_bytes": 245726200,
+          "sha256": "9f7d209bb3ece2bb5ceb7c3e709d3221b043d4189f0f06262a77eb3ed8022e7d"
+        }
+      ],
+      "auxiliary_files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1519,
+          "sha256": null,
+          "git_blob_sha1": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 28227,
+          "sha256": null,
+          "git_blob_sha1": "d55b4751b38b01f310a3c1d70ac048128435f9d3"
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 526,
+          "sha256": null,
+          "git_blob_sha1": "2aa2ac0635cbf22c8231f3b4e0854098a7f97a01"
+        },
+        {
+          "path": "configuration_embed1.py",
+          "size_bytes": 2885,
+          "sha256": null,
+          "git_blob_sha1": "46ac7b67d3a79ba6b969ab97a1a5adadd9a40ae5"
+        },
+        {
+          "path": "export_config.yaml",
+          "size_bytes": 5375,
+          "sha256": null,
+          "git_blob_sha1": "59b58c678253678137d04141d2fa6c10c92a95ae"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size_bytes": 72704,
+          "sha256": null,
+          "git_blob_sha1": "c88d290fa6b9b080fdbf4db3a3d0498821820f73"
+        },
+        {
+          "path": "modeling_embed1.py",
+          "size_bytes": 10408,
+          "sha256": null,
+          "git_blob_sha1": "9b1e4a6f4080dfd7b24f1c70a2817cbac7bf7261"
+        },
+        {
+          "path": "modeling_outputs.py",
+          "size_bytes": 3173,
+          "sha256": null,
+          "git_blob_sha1": "a586413da97226b114fecafb6dcd0c3b70903878"
+        },
+        {
+          "path": "modeling_qformer.py",
+          "size_bytes": 45579,
+          "sha256": null,
+          "git_blob_sha1": "84de7bedfd02fec8059a1d3e7e266215d3ae68ce"
+        },
+        {
+          "path": "modeling_utils.py",
+          "size_bytes": 5763,
+          "sha256": null,
+          "git_blob_sha1": "ac009ca0807efb4fc8f15af5567e22fb5ca6a6fc"
+        },
+        {
+          "path": "modeling_vit.py",
+          "size_bytes": 26868,
+          "sha256": null,
+          "git_blob_sha1": "dd4632824e606e46df4b96a4498da9e46653e27e"
+        },
+        {
+          "path": "preprocessing_embed1.py",
+          "size_bytes": 4974,
+          "sha256": null,
+          "git_blob_sha1": "7010cfe141b508e2ec808ed7618c9e471310e775"
+        },
+        {
+          "path": "tokenizer.json",
+          "size_bytes": 466062,
+          "sha256": null,
+          "git_blob_sha1": "949a6f013d67eb8a5b4b5b46026217b888021b88"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 48,
+          "sha256": null,
+          "git_blob_sha1": "e5c73d8a50df1f56fb5b0b8002d7cf4010afdccb"
+        },
+        {
+          "path": "vocab.txt",
+          "size_bytes": 231508,
+          "sha256": null,
+          "git_blob_sha1": "fb140275c155a9c7c5a3b3e0e77a9e839594a938"
+        }
+      ],
+      "auxiliary_file_bytes": 905619,
+      "license": {
+        "governing": "NVIDIA Open Model License",
+        "hf_api_license_field": "other",
+        "additional_components": [
+          "Apache-2.0",
+          "MIT"
+        ],
+        "commercial_use_publisher_declared": true,
+        "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/"
+      },
+      "task": {
+        "kind": "contrastive video-text embedding, anomaly classification and retrieval",
+        "training_dataset": "Vad-Reasoning-SFT, 1755 source videos split into 5-second chunks",
+        "training_categories": [
+          "Abuse",
+          "Animals Obstructing Traffic",
+          "Arson",
+          "Avalanche and Landslide",
+          "Dangerous Items",
+          "Explosion",
+          "Falling",
+          "Falling Objects",
+          "Fighting",
+          "Fire",
+          "Flooding or Tsunami",
+          "Illegal Lane Changing",
+          "Illegal Parking",
+          "Obstacles on Road",
+          "Pedestrian Jaywalking",
+          "Red Light Violation",
+          "Riot",
+          "Robbery",
+          "Shooting",
+          "Stealing",
+          "Tornado",
+          "Traffic Accidents",
+          "Vandalism",
+          "Wrong-Way Driving"
+        ],
+        "normal_chunks_in_training": true,
+        "generated_explanations": false,
+        "embedding_dim": 768,
+        "native_frames": 8,
+        "native_resolution": [
+          448,
+          448
+        ],
+        "optimized_sampling_fps": "1-2",
+        "bank_compliance_taxonomy_trained": false
+      },
+      "publisher_benchmark": {
+        "dataset": "Vad-Reasoning test, 438 videos",
+        "top1_hit_rate_pct": 46.44,
+        "macro_f1_pct": 38.94,
+        "bank_accuracy_claim": false
+      },
+      "runtime": {
+        "runner": "isolated pinned local PyTorch/Transformers custom code or separately validated ONNX",
+        "vllm_drop_in": false,
+        "a100_evidence": "Publisher explicitly tested A100 and BF16 on Ampere",
+        "stored_weight_types": [
+          "F32",
+          "I64"
+        ],
+        "bf16_inference_cast_publisher_demonstrated": true,
+        "custom_code_review_required": true,
+        "remote_code_must_be_pinned_and_vendored": true,
+        "actual_rented_gpu_fit_measured": false,
+        "warning": "Card example loads the base 448p ID; anomaly comparisons must use this exact fine-tuned ID"
+      },
+      "official_docs": [
+        "https://docs.nvidia.com/vss/latest/models/cosmos-embed1.html",
+        "https://docs.nvidia.com/tao/tao-toolkit/latest/text/embedding/cosmos_embed1.html"
+      ]
+    },
+    {
+      "candidate_id": "videomaev2_distilled_b_k710",
+      "model_id": "OpenGVLab/VideoMAE2",
+      "role": "small temporal action encoder plus a bank-trained head",
+      "priority": 2,
+      "revision": "706cc172d65ebd4dedbee3f9c0183a93df9fa125",
+      "primary_model_card": "https://huggingface.co/OpenGVLab/VideoMAE2",
+      "metadata_source": "https://huggingface.co/api/models/OpenGVLab/VideoMAE2?blobs=true",
+      "downloaded": false,
+      "deployed": false,
+      "selected_for_production": false,
+      "download_authorized": false,
+      "bank_latency_measured": false,
+      "bank_latency_sec": null,
+      "bank_quality_measured": false,
+      "bank_quality": null,
+      "weight_identity_source": "publisher public metadata; checkpoint bytes not downloaded or hashed locally",
+      "gated": false,
+      "weights": [
+        {
+          "path": "distill/vit_b_k710_dl_from_giant.pth",
+          "size_bytes": 173574417,
+          "sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec"
+        }
+      ],
+      "weight_bytes": 173574417,
+      "code_repository": {
+        "repo": "OpenGVLab/VideoMAEv2",
+        "url": "https://github.com/OpenGVLab/VideoMAEv2",
+        "default_branch": "master",
+        "commit": "29eab1e8a588d1b3ec0cdec7b03a86cca491b74b",
+        "license": "MIT",
+        "last_push": "2024-10-08T05:04:52Z"
+      },
+      "license": {
+        "weight_model_card": "Apache-2.0",
+        "code": "MIT",
+        "code_license_url": "https://github.com/OpenGVLab/VideoMAEv2/blob/29eab1e8a588d1b3ec0cdec7b03a86cca491b74b/LICENSE"
+      },
+      "task": {
+        "kind": "clip-level temporal action recognition and transferable video features",
+        "training_taxonomy": "Kinetics-710 action union; not bank procedure rules",
+        "bank_adjacent_action": "counting money appears in the official Kinetics-400 taxonomy",
+        "native_frames": 16,
+        "generated_explanations": false,
+        "banknote_count_output": false,
+        "bank_compliance_taxonomy_trained": false,
+        "label_source": "https://github.com/google-deepmind/kinetics-i3d/blob/master/data/label_map.txt"
+      },
+      "runtime": {
+        "runner": "isolated local PyTorch code, pinned preprocessing and checkpoint conversion",
+        "vllm_drop_in": false,
+        "a100_fit": "Inference feasibility estimate only; far smaller weights than a VLM",
+        "actual_rented_gpu_fit_measured": false,
+        "bank_latency_sec": null,
+        "constraints": [
+          "Published multi-view action accuracy is not single-window bank accuracy",
+          "Preserve hand/cash ROI detail; train localization and bank labels separately",
+          "Pickle-format checkpoint requires trusted-source review and safe loading/conversion"
+        ]
+      },
+      "official_model_zoo": "https://github.com/OpenGVLab/VideoMAEv2/blob/29eab1e8a588d1b3ec0cdec7b03a86cca491b74b/docs/MODEL_ZOO.md"
+    },
+    {
+      "candidate_id": "holmesvau_2b",
+      "model_id": "ppxin321/HolmesVAU-2B",
+      "role": "surveillance anomaly localization and explanation comparator",
+      "priority": 3,
+      "revision": "4ddd79211b9f144faa8fed08afc070f8b7c0db06",
+      "primary_model_card": "https://huggingface.co/ppxin321/HolmesVAU-2B",
+      "metadata_source": "https://huggingface.co/api/models/ppxin321/HolmesVAU-2B?blobs=true",
+      "downloaded": false,
+      "deployed": false,
+      "selected_for_production": false,
+      "download_authorized": false,
+      "bank_latency_measured": false,
+      "bank_latency_sec": null,
+      "bank_quality_measured": false,
+      "bank_quality": null,
+      "weight_identity_source": "publisher public metadata; checkpoint bytes not downloaded or hashed locally",
+      "gated": false,
+      "weights": [
+        {
+          "path": "model.safetensors",
+          "size_bytes": 4411571040,
+          "sha256": "1cfbaee788d91d90b09a7dfe0790e7b204922c388b02f6648fe06aaff71309e4"
+        }
+      ],
+      "weight_bytes": 4411571040,
+      "auxiliary_files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1519,
+          "sha256": null,
+          "git_blob_sha1": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 24,
+          "sha256": null,
+          "git_blob_sha1": "7be5fc7f47d5db027d120b8024982df93db95b74"
+        },
+        {
+          "path": "added_tokens.json",
+          "size_bytes": 179,
+          "sha256": null,
+          "git_blob_sha1": "35f5893c8e29d6102945a953529819a2d56c62a9"
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 5483,
+          "sha256": null,
+          "git_blob_sha1": "54cba8431aa326c67983f32f9248c190be1eeee0"
+        },
+        {
+          "path": "configuration_intern_vit.py",
+          "size_bytes": 5547,
+          "sha256": null,
+          "git_blob_sha1": "ac60112c79abc35627a5b6b58e760c2f78e71839"
+        },
+        {
+          "path": "configuration_internlm2.py",
+          "size_bytes": 7005,
+          "sha256": null,
+          "git_blob_sha1": "282b13b1e2066ecc074ecae87b35a19d251f0ed7"
+        },
+        {
+          "path": "configuration_internvl_chat.py",
+          "size_bytes": 3846,
+          "sha256": null,
+          "git_blob_sha1": "b5a518b7883535e2038fcd2d2fdd32f3c14da5ee"
+        },
+        {
+          "path": "conversation.py",
+          "size_bytes": 15040,
+          "sha256": null,
+          "git_blob_sha1": "2fe37ad08c18c49fd5a4d7e0aa9be10fbeead22c"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 115,
+          "sha256": null,
+          "git_blob_sha1": "c81a5698754206e0746976f59b9ccda24f8aa2d4"
+        },
+        {
+          "path": "modeling_intern_vit.py",
+          "size_bytes": 18062,
+          "sha256": null,
+          "git_blob_sha1": "588c3de46ce4748444ddce4a1bb72cb8de74996f"
+        },
+        {
+          "path": "modeling_internlm2.py",
+          "size_bytes": 61208,
+          "sha256": null,
+          "git_blob_sha1": "7c8c24d873f6ecd152d00fd65371e23ead981e1d"
+        },
+        {
+          "path": "modeling_internvl_chat.py",
+          "size_bytes": 15674,
+          "sha256": null,
+          "git_blob_sha1": "47e91bc30c3082419899e19f09afa9ad40e275e7"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size_bytes": 844,
+          "sha256": null,
+          "git_blob_sha1": "cbf34a50d27c43ed8d1e2823b800b4e6f66e637a"
+        },
+        {
+          "path": "tokenization_internlm2.py",
+          "size_bytes": 8791,
+          "sha256": null,
+          "git_blob_sha1": "1be581da37ef678de65f2737493fc0ed7160446e"
+        },
+        {
+          "path": "tokenization_internlm2_fast.py",
+          "size_bytes": 7788,
+          "sha256": null,
+          "git_blob_sha1": "aa0fccbd0f1d029d79e19821f2edcb01b594537c"
+        },
+        {
+          "path": "tokenizer.model",
+          "size_bytes": 1477754,
+          "sha256": "f868398fc4e05ee1e8aeba95ddf18ddcc45b8bce55d5093bead5bbf80429b48b",
+          "git_blob_sha1": "6600712949ca9c4ffb50f25275993a21fba0b408"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 4005,
+          "sha256": null,
+          "git_blob_sha1": "fb645170dc011121a027043c6329001f37cd533c"
+        }
+      ],
+      "auxiliary_file_bytes": 1632884,
+      "code_repository": {
+        "repo": "pipixin321/HolmesVAU",
+        "url": "https://github.com/pipixin321/HolmesVAU",
+        "default_branch": "master",
+        "commit": "fdef61ec58e8cfa747ff5f40d7e89e9bd6f9e90d",
+        "license": "MIT",
+        "last_push": "2025-03-25T04:48:55Z"
+      },
+      "additional_required_sampler": {
+        "path": "holmesvau/ATS/anomaly_scorer.pth",
+        "size_bytes": 25985433,
+        "git_blob_sha1": "f9d9eb6872f4ba07ad595b2c8463188efcf47542",
+        "sha256": null,
+        "source": "https://github.com/pipixin321/HolmesVAU/blob/fdef61ec58e8cfa747ff5f40d7e89e9bd6f9e90d/holmesvau/ATS/anomaly_scorer.pth"
+      },
+      "model_plus_sampler_bytes": 4437556473,
+      "model_hf_aux_plus_sampler_bytes": 4439189357,
+      "license": {
+        "model_card": "MIT",
+        "code": "MIT",
+        "underlying_backbone": "InternLM2-chat-1.8B plus InternViT; retain component notices"
+      },
+      "task": {
+        "kind": "hierarchical anomaly understanding with anomaly-focused temporal sampling",
+        "training_data": "HIVAU-70k clip/event/video instructions on UCF-Crime and XD-Violence",
+        "generated_explanations": true,
+        "default_demo_selected_frames": 12,
+        "bank_compliance_taxonomy_trained": false
+      },
+      "runtime": {
+        "runner": "isolated reviewed local InternVL/InternLM2 PyTorch implementation plus ATS",
+        "vllm_drop_in": false,
+        "publisher_memory_claim": "less than 9GB on one GPU for the provided inference example",
+        "actual_rented_gpu_fit_measured": false,
+        "old_reference_dependencies": {
+          "torch": "2.1.2",
+          "transformers": "4.37.2",
+          "timm": "0.9.12"
+        },
+        "constraints": [
+          "Custom code and older dependency stack require isolated validation",
+          "ATS learned on generic anomalies may miss subtle bank-procedure events; preserve coverage sampling",
+          "No bank quality or latency guarantee; no co-residency guarantee with the current Qwen KV reservation"
+        ]
+      },
+      "paper": "https://arxiv.org/abs/2412.06171"
+    },
+    {
+      "candidate_id": "camvlm_8b",
+      "model_id": "xiaozhang79/CamVLM-8B",
+      "role": "gated surveillance-tuned Qwen3-VL comparator",
+      "priority": 4,
+      "revision": "6aaed8fb0de20bd728ef64796833f2bd9b37ae42",
+      "primary_model_card": "https://huggingface.co/xiaozhang79/CamVLM-8B",
+      "metadata_source": "https://huggingface.co/api/models/xiaozhang79/CamVLM-8B?blobs=true",
+      "downloaded": false,
+      "deployed": false,
+      "selected_for_production": false,
+      "download_authorized": false,
+      "bank_latency_measured": false,
+      "bank_latency_sec": null,
+      "bank_quality_measured": false,
+      "bank_quality": null,
+      "weight_identity_source": "publisher public metadata; checkpoint bytes not downloaded or hashed locally",
+      "gated": "auto",
+      "access_conditions_accepted": false,
+      "contact_information_shared": false,
+      "gating_action_performed": false,
+      "weights": [
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4998056552,
+          "sha256": "d2f7ddecb9693ee0f2c38f974055fd70539c90928ea864f6308d9b5fc929063c",
+          "git_blob_sha1": "9c2716d0b633da11bd37121a5dd899bc12da2513"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4915962464,
+          "sha256": "8616e15072afeb9706ed51ee828ff3cb0d60c648c60473724c087a1ca55c262b",
+          "git_blob_sha1": "163f06aa4241888435d56b306d40a223f2f705a9"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915962496,
+          "sha256": "2338e249d04142669f0b5b5a61562a97768712f8bb47765ffc094756acbfb07b",
+          "git_blob_sha1": "9b42e5573a20b64e810d5c8b6f96d159663d06cc"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 2704357976,
+          "sha256": "78c4ab59a8a70553250e45547cbc7d39f8654d58ff29bfcdc02d4cd7d9797f99",
+          "git_blob_sha1": "b5b396b4424e011fff27f652d54a8b94f9d1fcc5"
+        }
+      ],
+      "weight_bytes": 17534339488,
+      "auxiliary_file_bytes": 15958595,
+      "code_repository": {
+        "repo": "xiaozhang79/CamVLM",
+        "commit": "229cf9163dec8189e968efc2a6b7f28eb5227a77",
+        "license": "MIT"
+      },
+      "license": {
+        "model_card": "Apache-2.0",
+        "code": "MIT",
+        "training_dataset_CCTV_Anomaly": "CC-BY-NC-4.0; research/noncommercial annotations",
+        "do_not_conflate_weight_and_dataset_terms": true
+      },
+      "task": {
+        "kind": "surveillance understanding and active camera viewpoint control",
+        "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+        "training_datasets": [
+          "CCTV-Anomaly",
+          "CamTrack-53K"
+        ],
+        "anomaly_category_count_paper": 10,
+        "exact_category_list_verified": false,
+        "bank_compliance_taxonomy_trained": false,
+        "generated_explanations": true
+      },
+      "runtime": {
+        "runner": "isolated pinned Qwen3-VL-compatible runtime plus reviewed viewpoint policy",
+        "actual_rented_gpu_fit_measured": false,
+        "vllm_architecture_supported": true,
+        "exact_checkpoint_runtime_verified": false,
+        "constraints": [
+          "No gated download or acceptance authorized/performed",
+          "Dynamic physical camera evidence acquisition cannot be recreated from missing pixels in recorded CCTV",
+          "Repo evaluation uses an external LLM judge; use local/manual evaluation for private data"
+        ]
+      },
+      "paper": "https://arxiv.org/abs/2609.06475"
+    },
+    {
+      "candidate_id": "vjepa21_b_or_l",
+      "role": "optional dense temporal feature transfer, not an anomaly explanation model",
+      "priority": 5,
+      "code_repository": {
+        "repo": "facebookresearch/vjepa2",
+        "url": "https://github.com/facebookresearch/vjepa2",
+        "default_branch": "main",
+        "commit": "204698b45b3712590f06245fbfba32d3be539812",
+        "license": "MIT",
+        "last_push": "2026-03-23T10:13:05Z"
+      },
+      "official_checkpoints": [
+        {
+          "url": "https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt",
+          "status": 200,
+          "size_bytes": "1664223428",
+          "etag": "\"be0dc26f052ae6a7476714cd53176836-199\"",
+          "sha256_verified": false,
+          "downloaded": false
+        },
+        {
+          "url": "https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitl_dist_vitG_384.pt",
+          "status": 200,
+          "size_bytes": "5151198524",
+          "etag": "\"75aac8d267d11f285683714d390dc0ed-615\"",
+          "sha256_verified": false,
+          "downloaded": false
+        }
+      ],
+      "license": {
+        "code": "MIT with specific Apache-2.0 utility files",
+        "checkpoint_sha256_pending": true
+      },
+      "task": {
+        "trained_as": "self-supervised video representation; task-specific probes/heads required",
+        "family_evaluation_tasks": [
+          "Something-Something-v2",
+          "EPIC-KITCHENS action anticipation",
+          "Ego4D object interaction"
+        ],
+        "base_parameters": 80000000,
+        "large_parameters": 300000000,
+        "resolution": [
+          384,
+          384
+        ],
+        "generated_explanations": false,
+        "bank_compliance_taxonomy_trained": false
+      },
+      "runtime": {
+        "runner": "isolated local PyTorch; vLLM is not an action-encoder runtime",
+        "actual_rented_gpu_fit_measured": false,
+        "latency_bank_sec": null,
+        "weight_pin_caveat": "Official CDN URLs and HEAD sizes recorded; multipart ETags are not SHA256. Freeze actual hashes before any use."
+      },
+      "downloaded": false,
+      "deployed": false,
+      "selected_for_production": false,
+      "download_authorized": false,
+      "bank_latency_measured": false,
+      "bank_quality_measured": false,
+      "paper": "https://arxiv.org/abs/2603.14482"
+    }
+  ],
+  "global_constraints": {
+    "no_weight_downloads_performed": true,
+    "no_model_loads_performed": true,
+    "no_private_media_used_or_transferred": true,
+    "no_gated_terms_accepted": true,
+    "existing_Qwen_teacher_unchanged": true,
+    "existing_budget_and_stop_guard_unchanged": true,
+    "cuda_driver_context": "Existing A100/driver565.57.01 uses verified cu129 stack; CUDA13 default failed actual tensor operation previously",
+    "runtime_policy": "Use isolated pinned optional runtimes; do not change current worker or Qwen service",
+    "no_bank_accuracy_or_latency_measured": true
+  },
+  "other_research": {
+    "VadCLIP": {
+      "code_repository": {
+        "repo": "nwpu-zxr/VadCLIP",
+        "url": "https://github.com/nwpu-zxr/VadCLIP",
+        "default_branch": "main",
+        "commit": "c41067f07d252efcda18008bea367886070c33b0",
+        "license": "Apache-2.0",
+        "last_push": "2024-03-10T13:55:53Z"
+      },
+      "license": "Apache-2.0",
+      "trained_taxonomy": "UCF-Crime normal+13 crime classes; XD-Violence normal+6 anomaly classes",
+      "output": "temporal anomaly scores/class probabilities, no generated explanations",
+      "weights": "Official README links OneDrive/Baidu; exact checkpoint SHA256/bytes not verified",
+      "use": "optional cheap proposal baseline; not bank compliance rules"
+    },
+    "VAD_LLaMA": {
+      "code_repository": {
+        "repo": "ktr-hubrt/VAD-LLaMA",
+        "url": "https://github.com/ktr-hubrt/VAD-LLaMA",
+        "default_branch": "main",
+        "commit": "8f9be1e3919b0c841cfa722b526da03c16c8742e",
+        "license": null,
+        "last_push": "2024-09-10T02:44:20Z"
+      },
+      "decision": "deprioritize: no declared repo license; multi-component legacy weights and multi-phase training"
+    },
+    "AnomalyCLIP_industrial": {
+      "repo": "https://github.com/zqhang/AnomalyCLIP",
+      "license": "MIT",
+      "decision": "exclude for this task: industrial/medical defect segmentation"
+    },
+    "AnomalyCLIP_video": {
+      "repo": "https://github.com/lucazanella/AnomalyCLIP",
+      "license": null,
+      "decision": "different video method; checkpoint/license chain needs review"
+    },
+    "InternVideo2_5": {
+      "model_metadata": {
+        "model_id": "OpenGVLab/InternVideo2_5_Chat_8B",
+        "revision": "87680fe232af8681b55322f68541679b91f99df1",
+        "license": "apache-2.0",
+        "weights": [
+          {
+            "path": "model-00001-of-00004.safetensors",
+            "size_bytes": 4940026512,
+            "sha256": "57bfde1ac310522099ffc557f8df87106d2d515ffa4d2b10ebf6e226134bbb71"
+          },
+          {
+            "path": "model-00002-of-00004.safetensors",
+            "size_bytes": 4915914584,
+            "sha256": "3d49395592ce9feb0e09221b4c9016bc1cd088a55897c2695120d99a56cf592b"
+          },
+          {
+            "path": "model-00003-of-00004.safetensors",
+            "size_bytes": 4915914592,
+            "sha256": "b853a8ea73dc64d93a27ecb71ad4b4dad98f3fbde5e92a48e025ec38c8a50a06"
+          },
+          {
+            "path": "model-00004-of-00004.safetensors",
+            "size_bytes": 2030206836,
+            "sha256": "dd44e8d5e8514e5e8f5399df55f9be13f4bc92e6847c2d9103a1d281fd99d06c"
+          }
+        ],
+        "all_checkpoint_bytes": 16802062524
+      },
+      "role": "optional long-video MLLM baseline, not bank specialist"
+    },
+    "InternVideo_Next": {
+      "code_repository": {
+        "repo": "OpenGVLab/InternVideo",
+        "url": "https://github.com/OpenGVLab/InternVideo",
+        "default_branch": "main",
+        "commit": "3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3",
+        "license": "Apache-2.0",
+        "last_push": "2026-07-02T03:20:41Z"
+      },
+      "specific_checkpoint_selected": false,
+      "source": "https://github.com/OpenGVLab/InternVideo/tree/3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3/InternVideo-Next",
+      "decision": "optional further transfer research; no specific weight artifact selected or downloaded"
+    },
+    "Cosmos_Reason2": {
+      "models": [
+        {
+          "model_id": "nvidia/Cosmos-Reason2-2B",
+          "revision": "9ce19a195e423419c349abfc86fd07178b230561",
+          "license": "other",
+          "gated": "auto",
+          "weights": [
+            {
+              "path": "model.safetensors",
+              "size_bytes": 4877470304,
+              "sha256": "fa5a6e6ef4fce40216b185cc48a3b24d31637ac3e2ba69c107ed1f389c1e6ede"
+            }
+          ],
+          "all_checkpoint_bytes": 4877470304,
+          "file_names": [
+            ".gitattributes",
+            "CR2 Performance by Category.png",
+            "PAI_Bench_Leaderboard.png",
+            "README.md",
+            "chat_template.json",
+            "config.json",
+            "cosmos_cr2_2b_paiBench.png",
+            "generation_config.json",
+            "merges.txt",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ]
+        },
+        {
+          "model_id": "nvidia/Cosmos-Reason2-8B",
+          "revision": "a9fae2cf89dc64db96b12860417f0eb403013bb9",
+          "license": "other",
+          "gated": "auto",
+          "weights": [
+            {
+              "path": "model-00001-of-00004.safetensors",
+              "size_bytes": 5283287392,
+              "sha256": "01317e222b5a83509f2a8fc6c4b3296e777f32675bf8e2acd4eb21d71b2b9d12"
+            },
+            {
+              "path": "model-00002-of-00004.safetensors",
+              "size_bytes": 5301856744,
+              "sha256": "e0f6b4a69ee441a8fbdf53586c5d888d8378cca1828a305641391c72e9ea08c9"
+            },
+            {
+              "path": "model-00003-of-00004.safetensors",
+              "size_bytes": 5360576128,
+              "sha256": "c10b2eaf46cc2067ad29cd467739d29d9477350ad6cd250bae8f63a632790c04"
+            },
+            {
+              "path": "model-00004-of-00004.safetensors",
+              "size_bytes": 1588619104,
+              "sha256": "0748d520eab0fb5db39c9ea99c2b57dfd5d1e572da382a4fbb85dd50d6dfd166"
+            }
+          ],
+          "all_checkpoint_bytes": 17534339368,
+          "file_names": [
+            ".gitattributes",
+            "CR2 Performance by Category.png",
+            "PAI_Bench_Leaderboard.png",
+            "README.md",
+            "chat_template.json",
+            "config.json",
+            "cosmos_cr2_8b_paiBench.png",
+            "generation_config.json",
+            "merges.txt",
+            "model-00001-of-00004.safetensors",
+            "model-00002-of-00004.safetensors",
+            "model-00003-of-00004.safetensors",
+            "model-00004-of-00004.safetensors",
+            "model.safetensors.index.json",
+            "preprocessor_config.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ]
+        },
+        {
+          "model_id": "nvidia/Cosmos-Reason2-32B",
+          "revision": "4ed9828334c4397ace8b0c62134961adbe5aed0e",
+          "license": "other",
+          "gated": false,
+          "weights": [
+            {
+              "path": "model-00001-of-00013.safetensors",
+              "size_bytes": 5147683704,
+              "sha256": "cba7ad09ee63444f90c164940347db93d316277cb60cd792c211e68893a9c8c3"
+            },
+            {
+              "path": "model-00002-of-00013.safetensors",
+              "size_bytes": 5138134616,
+              "sha256": "4a5e24184257ebf0bad3d46f689169912b00c136d5fa9a4f408e7f78733321d5"
+            },
+            {
+              "path": "model-00003-of-00013.safetensors",
+              "size_bytes": 5326900360,
+              "sha256": "b9222a34de3b3ea150ae39a75ab3de84ada537012602268bc333c32e361fa935"
+            },
+            {
+              "path": "model-00004-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "48ece88234f29da42f4479c27b6916de161673b58db1c9445065688c1e1861a8"
+            },
+            {
+              "path": "model-00005-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "d1665377c1bd5b33f98939661b7e0d02298b4b19d84aa1026dc1e4335fcb72da"
+            },
+            {
+              "path": "model-00006-of-00013.safetensors",
+              "size_bytes": 5326900392,
+              "sha256": "58e3df75c0ecd88aa29a1fe28b1461ed9f7f1c64e007dd800948d5ec45322eb5"
+            },
+            {
+              "path": "model-00007-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "c9b9ba49a8ab07b66580ca58f9fc09529daf7e79b0810b690d61198873d1ffd1"
+            },
+            {
+              "path": "model-00008-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "dfc65b5aa7c15bcf7bac6d8579c22edc6b096c36bd306d3ff41b94d640b7a009"
+            },
+            {
+              "path": "model-00009-of-00013.safetensors",
+              "size_bytes": 5326900392,
+              "sha256": "76dd2033c5083d5f326c4264553d14df30ac6d452a604e26aeab7ad3bf9620f0"
+            },
+            {
+              "path": "model-00010-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "3e6bab764e680d3bdf8094d6cf4a62bf0f5a871bd9ff5fd478ac6be83dbfa15c"
+            },
+            {
+              "path": "model-00011-of-00013.safetensors",
+              "size_bytes": 5138134672,
+              "sha256": "1e9747dbb54b395a1d121906d431d4975d95ea65b7eaa37ee4d5d1b1b856353e"
+            },
+            {
+              "path": "model-00012-of-00013.safetensors",
+              "size_bytes": 5326900392,
+              "sha256": "54f80be36e0f689395fdb93d57d295fd90143135e3252965ffba6195b19ff59e"
+            },
+            {
+              "path": "model-00013-of-00013.safetensors",
+              "size_bytes": 4292684440,
+              "sha256": "fe1662178324496809a1527240ff15219620eddcdf916f25dc196c35021c83c6"
+            }
+          ],
+          "all_checkpoint_bytes": 66714912328,
+          "file_names": [
+            ".gitattributes",
+            "CR2 Performance by Category.png",
+            "PAI_Bench_Leaderboard.png",
+            "README.md",
+            "chat_template.json",
+            "config.json",
+            "generation_config.json",
+            "lock.lock",
+            "merges.txt",
+            "model-00001-of-00013.safetensors",
+            "model-00002-of-00013.safetensors",
+            "model-00003-of-00013.safetensors",
+            "model-00004-of-00013.safetensors",
+            "model-00005-of-00013.safetensors",
+            "model-00006-of-00013.safetensors",
+            "model-00007-of-00013.safetensors",
+            "model-00008-of-00013.safetensors",
+            "model-00009-of-00013.safetensors",
+            "model-00010-of-00013.safetensors",
+            "model-00011-of-00013.safetensors",
+            "model-00012-of-00013.safetensors",
+            "model-00013-of-00013.safetensors",
+            "model.safetensors.index.json",
+            "preprocessor_config.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ]
+        }
+      ],
+      "governing_license": "NVIDIA Open Model License",
+      "role": "physical/embodied reasoning baseline; not trained as bank compliance detector",
+      "gated_terms_accepted": false,
+      "downloaded": false,
+      "deployed": false
+    }
+  },
+  "general_teacher_baselines": [
+    {
+      "model_id": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "license": "apache-2.0",
+      "weights": [
+        {
+          "path": "model-00001-of-00018.safetensors",
+          "size_bytes": 3966730552,
+          "sha256": "ba0ce20aae489ad196733da5064bcdf159a1fe84f53336648196e1ebb7751b1c"
+        },
+        {
+          "path": "model-00002-of-00018.safetensors",
+          "size_bytes": 3043080328,
+          "sha256": "06a148c01bfbe3faa14a5f184a7ff29a706f7ae1c8b2705d2058e26d17a001fb"
+        },
+        {
+          "path": "model-00003-of-00018.safetensors",
+          "size_bytes": 2542796952,
+          "sha256": "2e1bf62cbcd406eaa64b60d10353e1f0ef4039d0976e56f05cabe953454f9968"
+        },
+        {
+          "path": "model-00004-of-00018.safetensors",
+          "size_bytes": 3988973152,
+          "sha256": "511e34063187882659753c4d93f3859f93c019fd438d8813071921c81d9a3f1a"
+        },
+        {
+          "path": "model-00005-of-00018.safetensors",
+          "size_bytes": 2099339864,
+          "sha256": "635cb53446dc74f219740fc59e18b774f877b803b9722e289ca62575a6efa701"
+        },
+        {
+          "path": "model-00006-of-00018.safetensors",
+          "size_bytes": 3979553696,
+          "sha256": "0bc5214fac607f0e6cc92eec3789d4b8559410ef9fce66621ba8158e8410dae0"
+        },
+        {
+          "path": "model-00007-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "80b0c49033e9a0d5762562aa12f4acdb7f54da586f3d0110f28c48d91cf07892"
+        },
+        {
+          "path": "model-00008-of-00018.safetensors",
+          "size_bytes": 3979553696,
+          "sha256": "7192c5b66185d3592927daabee1cc19e6f6e0ce75988ee20e824b624765fda79"
+        },
+        {
+          "path": "model-00009-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "af3c48cc37af44f3db6ae0579baf019180d48d9c527caa0a1f03ff85813a56d8"
+        },
+        {
+          "path": "model-00010-of-00018.safetensors",
+          "size_bytes": 3979553696,
+          "sha256": "163490a76f3bea3a40855b7efc04ce6d27afaf1a34f0bbde495b9491f76457c9"
+        },
+        {
+          "path": "model-00011-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "5f3ae1b948aeee39da77aec558e8236cd65fe4d7cb7686a76bb007acc563c6d8"
+        },
+        {
+          "path": "model-00012-of-00018.safetensors",
+          "size_bytes": 3979553696,
+          "sha256": "a3de1c7114677a8f5ac5c4892c90e8238ea5c1e2038c80e757dfc87c3902ca55"
+        },
+        {
+          "path": "model-00013-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "06ab79a41f74c9c5cb734816feb0c7fc364104b227165ee7391231e1155aa02a"
+        },
+        {
+          "path": "model-00014-of-00018.safetensors",
+          "size_bytes": 3979553696,
+          "sha256": "4138ed94603065ba884bbcadedb04d7718bb40117e85e6f5c6fc5b9c05b7a85b"
+        },
+        {
+          "path": "model-00015-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "69224e27b9de4e7dbf6fc936c6eaae08447bda3b80a6c31a871ab451173afd22"
+        },
+        {
+          "path": "model-00016-of-00018.safetensors",
+          "size_bytes": 3979564040,
+          "sha256": "73cb9a1089fb6155cb648609478d6633be8a5c7d9ca5a05bc8925ce8a553cefe"
+        },
+        {
+          "path": "model-00017-of-00018.safetensors",
+          "size_bytes": 2108759344,
+          "sha256": "beb51f01056142ac4984bd800507b0dd0fd18de57f8e9ef6ea41d1a3598983a8"
+        },
+        {
+          "path": "model-00018-of-00018.safetensors",
+          "size_bytes": 3392197344,
+          "sha256": "1d3479509e21494658f9b64d317f5ea8e55c4025d28c702d6c4d0b356ce8ea06"
+        }
+      ],
+      "all_checkpoint_bytes": 55563006776,
+      "downloaded": false,
+      "deployed": false,
+      "role": "general offline teacher candidate only; benchmark bank facts before preference"
+    },
+    {
+      "model_id": "Qwen/Qwen3.6-35B-A3B",
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "license": "apache-2.0",
+      "weights": [
+        {
+          "path": "model-00001-of-00026.safetensors",
+          "size_bytes": 3996199712,
+          "sha256": "adee7bcb930aed22e0677e58d4873b48dadb1ed8001cb5c6a0487286eadb3478"
+        },
+        {
+          "path": "model-00002-of-00026.safetensors",
+          "size_bytes": 1284907696,
+          "sha256": "88f2dfd2b9e73e4b70be533dbf61bcfa3c9a0003758900fcbc9d9b96f5751d4b"
+        },
+        {
+          "path": "model-00003-of-00026.safetensors",
+          "size_bytes": 3357898360,
+          "sha256": "8f7d72178d3f4431864978e5bcfa4c6cb1c204bc00590644d90bb19d6d522eeb"
+        },
+        {
+          "path": "model-00004-of-00026.safetensors",
+          "size_bytes": 3370808712,
+          "sha256": "12d7db38689ba3c8af74b23ef8523eca41e0cd95db870583d0663a3ee8a6bd60"
+        },
+        {
+          "path": "model-00005-of-00026.safetensors",
+          "size_bytes": 3357898360,
+          "sha256": "a836047305d0f7a7b50f0815d09d5c03ec03d59ec2c763fcdc4bf7e9936bf902"
+        },
+        {
+          "path": "model-00006-of-00026.safetensors",
+          "size_bytes": 3959424904,
+          "sha256": "c9080d718e9c5f9e337443225aa417d4c24d00ae7995d76ee3f1cc296b557d15"
+        },
+        {
+          "path": "model-00007-of-00026.safetensors",
+          "size_bytes": 1096788232,
+          "sha256": "e8c05e23131b1dd45a455ec38cfac7db14667358268623c3938d00cf3e959a68"
+        },
+        {
+          "path": "model-00008-of-00026.safetensors",
+          "size_bytes": 3946842008,
+          "sha256": "4b6a6d495053089f4a80e7cbc82e848fba44e2c0c60122233d8fdff79fa7b296"
+        },
+        {
+          "path": "model-00009-of-00026.safetensors",
+          "size_bytes": 1096460848,
+          "sha256": "a31a954bb72d1c714e751bf0aabf2ff533f5a509693ebf7dd22ad6e90be46f67"
+        },
+        {
+          "path": "model-00010-of-00026.safetensors",
+          "size_bytes": 3946841992,
+          "sha256": "246560e66570fe746653b8443e245dc334c9b8b831ea43d2d9f1b7d98623994e"
+        },
+        {
+          "path": "model-00011-of-00026.safetensors",
+          "size_bytes": 1096460752,
+          "sha256": "7180392817fe3ecb3a27a1da43b7ff22c1a94806bac49975f9f122c3126df675"
+        },
+        {
+          "path": "model-00012-of-00026.safetensors",
+          "size_bytes": 3409971080,
+          "sha256": "043fb525f6625c2f2acb75e65a9959ee3fa7b6e3fdd2034b5cfe1859b01d3cfb"
+        },
+        {
+          "path": "model-00013-of-00026.safetensors",
+          "size_bytes": 1633331664,
+          "sha256": "33a20fb20a21379bf43c84a43105f9c0cc35bd50d740b1c302dcbe4b700f5425"
+        },
+        {
+          "path": "model-00014-of-00026.safetensors",
+          "size_bytes": 3422553872,
+          "sha256": "be823e33c5cb6120ad3769d081f34a2449dc2358041fca7c29d636c1ba19130d"
+        },
+        {
+          "path": "model-00015-of-00026.safetensors",
+          "size_bytes": 1633659224,
+          "sha256": "a89d547c6f9d0b535ee5ea2f2478f163089539f3f0dd330cb23d278a19d76123"
+        },
+        {
+          "path": "model-00016-of-00026.safetensors",
+          "size_bytes": 3946842136,
+          "sha256": "69fc3ae0316482288afdcdd0b9eb7d626703ae26f7567e89aa3fc8d1ffd4ff5b"
+        },
+        {
+          "path": "model-00017-of-00026.safetensors",
+          "size_bytes": 1096460608,
+          "sha256": "e356e3943cf3852b76bb8992e674f3256013e27d54b78e8250514151cdc29637"
+        },
+        {
+          "path": "model-00018-of-00026.safetensors",
+          "size_bytes": 3946841992,
+          "sha256": "9e5e63fd1cc7d6848330c1fa363dfcb661bbc2ac87e672d0e28b71c9cb7f3c7f"
+        },
+        {
+          "path": "model-00019-of-00026.safetensors",
+          "size_bytes": 1096460808,
+          "sha256": "708644ad34f1de727bf484f396944d8ec628645d52c183e9a992e65671685e21"
+        },
+        {
+          "path": "model-00020-of-00026.safetensors",
+          "size_bytes": 3409971072,
+          "sha256": "ca083a1d1aa64f8e8a785998f543a43374f13436dc85d396eee4e72c7a84e1ae"
+        },
+        {
+          "path": "model-00021-of-00026.safetensors",
+          "size_bytes": 1633331744,
+          "sha256": "ada4ae48f3d48fe01b4c53f2f82bce25e798a9631fd33959c881156fef2ccbce"
+        },
+        {
+          "path": "model-00022-of-00026.safetensors",
+          "size_bytes": 3370808752,
+          "sha256": "def207fb42d7db31efb512755557763c23233c6e4d4c433027cb5102a7bce2f7"
+        },
+        {
+          "path": "model-00023-of-00026.safetensors",
+          "size_bytes": 3357898392,
+          "sha256": "864d52ca7768a36f514069222e8de8626264ae124097ba8fcce5b5da2c6e2ed7"
+        },
+        {
+          "path": "model-00024-of-00026.safetensors",
+          "size_bytes": 3370808752,
+          "sha256": "391acd27420cdce5935ff18152423c70620d19dac3c39a5ef1a81d369f82d737"
+        },
+        {
+          "path": "model-00025-of-00026.safetensors",
+          "size_bytes": 3832888256,
+          "sha256": "778e7f76602f05042b69ba7f3ec91f1fdffef390540b16074041c258fb81d154"
+        },
+        {
+          "path": "model-00026-of-00026.safetensors",
+          "size_bytes": 2231416848,
+          "sha256": "1a97404220077ed3d4182e10385b152004cab608377f50cec9f54a6b8d28b613"
+        }
+      ],
+      "all_checkpoint_bytes": 71903776776,
+      "downloaded": false,
+      "deployed": false,
+      "role": "general offline teacher candidate only; benchmark bank facts before preference"
+    },
+    {
+      "model_id": "Qwen/Qwen3-VL-32B-Instruct",
+      "revision": "0cfaf48183f594c314753d30a4c4974bc75f3ccb",
+      "license": "apache-2.0",
+      "weights": [
+        {
+          "path": "model-00001-of-00014.safetensors",
+          "size_bytes": 4932328944,
+          "sha256": "6b9dfbc930e505402ae9d7e5091a9d7d656cda5f34614f01cfe70bfb0cca27cb"
+        },
+        {
+          "path": "model-00002-of-00014.safetensors",
+          "size_bytes": 4875990528,
+          "sha256": "d8bb44b4ff303fe76fe9e894022fb3dc71b15a2e716592790fe0e3c3e60478fa"
+        },
+        {
+          "path": "model-00003-of-00014.safetensors",
+          "size_bytes": 4875990552,
+          "sha256": "54f22e8b3168f8dc962fac0d313607ebf52a12b433d4cf3098a0d82d9f042940"
+        },
+        {
+          "path": "model-00004-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "ad09c74d3c13ee29b5d0d84548fd8a3424a651564eaccd519946c296e59c557f"
+        },
+        {
+          "path": "model-00005-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "fc993c8a0e2a5b0570f383e1a95dc3a1281d1b224b6f3ee908f4827941e1dfc2"
+        },
+        {
+          "path": "model-00006-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "82f05620d1f718a90c362b221d6a184ff1a0f53301d706882d3df49695fa1974"
+        },
+        {
+          "path": "model-00007-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "fb91da8cb01ff4de3eef0eab1c3e769a734b3a1aafc61734068638a0d6c86934"
+        },
+        {
+          "path": "model-00008-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "431ca56535c8781944ce3801f5eb61c45531e853ecc5846d936ebaf4761b764f"
+        },
+        {
+          "path": "model-00009-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "3825e3f4302f4d2f7d76aa7430d2ce0864fde6b9e540a5806bf0d8e38e4d9f47"
+        },
+        {
+          "path": "model-00010-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "aded5a4d1d5e22dbd8b6f79266b6eb88c840411b09527c53917a1419ace22e2f"
+        },
+        {
+          "path": "model-00011-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "3820ffe8d8d6477f6fe8d614ef3c87abb264ee39accebf43a1507b970d80946f"
+        },
+        {
+          "path": "model-00012-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "05ad2d08ce71963121c9b03f1d9ec5d7641052f4b23c6c12b80d71065eb8e98e"
+        },
+        {
+          "path": "model-00013-of-00014.safetensors",
+          "size_bytes": 4875990584,
+          "sha256": "b64f2289871261fdd1abbd3b78bcd66011b341de3dc8eeb2ed1a473ee7c8d95c"
+        },
+        {
+          "path": "model-00014-of-00014.safetensors",
+          "size_bytes": 3270697008,
+          "sha256": "e45b6c9998c77ee5a6577f9f47bc76416c1d4d387169e50c4c9d3134ea51b13b"
+        }
+      ],
+      "all_checkpoint_bytes": 66714912872,
+      "downloaded": false,
+      "deployed": false,
+      "role": "general offline teacher candidate only; benchmark bank facts before preference"
+    }
+  ],
+  "evaluation_plan": {
+    "frozen_split": "Reuse the machine-experiment frozen 28/6/6 train/validation/final partition; human-lock flags are false, human-reviewed fact/event gold is unavailable, and supplied-label diagnostics support coarse binary/time comparisons only. No user manual-work prerequisite; never train on held-out teacher predictions.",
+    "first_pass": "Compare Cosmos anomaly embeddings and VideoMAE temporal features against existing SigLIP feature baseline on matched source windows",
+    "spatial_detail": "Keep full-scene context and hand/cash ROI features; do not infer occluded or absent pixels",
+    "labels": "Visible bank facts and source-bound intervals, not generic crime words or generated legal conclusions",
+    "metrics": [
+      "per-fact precision/recall",
+      "temporal overlap",
+      "abstention/unclear calibration",
+      "end-to-end latency",
+      "peak VRAM"
+    ],
+    "no_quality_promise": "Generic benchmark scores and model size do not establish bank accuracy or 100 percent correctness"
+  }
+}

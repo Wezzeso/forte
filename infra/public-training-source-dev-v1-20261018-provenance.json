@@ -1,0 +1,26 @@
+{
+  "archive": "C:\\Users\\Wezeso\\Desktop\\Forte\\tmp\\public-training-source-dev-v1-20261018.tar.gz",
+  "archive_bytes": 221006,
+  "archive_sha256": "ea11556f02a7e3df06c8e6cd40416d2e6f9c4dd29caadb48fd6d3c64f40c1156",
+  "base_archive": "C:\\Users\\Wezeso\\Desktop\\Forte\\tmp\\public-training-source-v2-20261018.tar.gz",
+  "base_archive_sha256": "c1287008592a539d384568a8ddfb257c6c9ffb10ca4a29a806c57e1ed17c665d",
+  "base_manifest": "C:\\Users\\Wezeso\\Desktop\\Forte\\infra\\public-training-source-v2-20261018.json",
+  "base_manifest_sha256": "37632be61eda7a8b81ac63617c89d06b484343e90bc7fb3aebd7ac1d04b1cf1a",
+  "base_unchanged": true,
+  "changes": [
+    {
+      "after_sha256": "e3a0fe00df318aaccf047205c2b1df931714d37a32658989d6a7ea54d3f3136c",
+      "before_sha256": "1bc4c5e88f768c8258cf0f7725e810539ee5c95f90f59906f1b90db079c6756f",
+      "path": "training/specialists/public_dev_validate.py"
+    }
+  ],
+  "gpu_calls_performed": false,
+  "manifest": "C:\\Users\\Wezeso\\Desktop\\Forte\\infra\\public-training-source-dev-v1-20261018.json",
+  "manifest_sha256": "a240a8bf78b8177ce1a0a1bcb09b625d0fb94d8e83f608f87c94c083910f4457",
+  "payload_files": 61,
+  "remote_writes_performed": false,
+  "schema_version": "forte.public-training-source-overlay.v1",
+  "source_tree_not_extracted_or_modified": true,
+  "unchanged_files": 60,
+  "verified": true
+}

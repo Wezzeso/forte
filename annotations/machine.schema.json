@@ -1,0 +1,604 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:forte:machine-annotations:v1",
+  "title": "Private automated first-pass annotation record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "annotation_origin",
+    "review_status",
+    "human_reviewed",
+    "training_authorized",
+    "organizer_labels_used",
+    "sample_id",
+    "content_sha256",
+    "windows",
+    "frames",
+    "per_second",
+    "provenance",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "forte.machine-annotations.v1"
+    },
+    "annotation_origin": {
+      "const": "local_model"
+    },
+    "review_status": {
+      "const": "machine_consistency_checked"
+    },
+    "machine_review_scope": {
+      "const": "structural_source_and_rule_consistency_only"
+    },
+    "human_reviewed": {
+      "const": false
+    },
+    "training_authorized": {
+      "const": false
+    },
+    "organizer_labels_used": {
+      "const": false
+    },
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "recording_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "split": {
+      "enum": [
+        "unassigned",
+        "train",
+        "validation",
+        "final_check",
+        "test"
+      ]
+    },
+    "group_id": {
+      "type": "string"
+    },
+    "protected_group_id": {
+      "type": "string"
+    },
+    "duration_sec": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "source_pts_identity_checked": {
+      "type": "boolean"
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "frame_id",
+          "pts_sec",
+          "path",
+          "job_id"
+        ]
+      }
+    },
+    "windows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/window"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "machine_verdict": {
+      "enum": [
+        null,
+        "violation",
+        "no_violation"
+      ]
+    },
+    "per_second": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/second"
+      }
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "config_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "summary_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "partition_binding": {
+      "type": "object",
+      "required": [
+        "split_file_sha256",
+        "assignments_sha256",
+        "scenario_independence_validated"
+      ],
+      "properties": {
+        "split_file_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "assignments_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "scenario_independence_validated": {
+          "const": false
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_manifest_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prompt_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_proposal_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "inference_location": {
+          "type": "string"
+        },
+        "focal_question_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "required": [
+        "fact_id",
+        "state",
+        "supporting_frame_ids"
+      ],
+      "properties": {
+        "fact_id": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "present",
+            "absent",
+            "unclear"
+          ]
+        },
+        "supporting_frame_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "window": {
+      "type": "object",
+      "required": [
+        "window_id",
+        "start_sec",
+        "end_sec",
+        "frame_ids",
+        "observed_facts",
+        "target",
+        "fact_supervision_mask",
+        "context_masks",
+        "quality_flags",
+        "model_output_complete",
+        "human_reviewed",
+        "provenance"
+      ],
+      "properties": {
+        "window_id": {
+          "type": "string"
+        },
+        "start_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "frame_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "observed_facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
+        },
+        "target": {
+          "type": "object",
+          "required": [
+            "facts",
+            "candidates"
+          ],
+          "properties": {
+            "facts": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/fact"
+              }
+            },
+            "candidates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "candidate_id",
+                  "event_type_id",
+                  "start_frame_id",
+                  "end_frame_id",
+                  "supporting_frame_ids",
+                  "supporting_fact_ids"
+                ]
+              }
+            }
+          }
+        },
+        "fact_supervision_mask": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "context_masks": {
+          "type": "object",
+          "required": [
+            "continuous_visibility",
+            "procedure_complete",
+            "counting_paths_visible"
+          ],
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "quality_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "model_output_complete": {
+          "type": "boolean"
+        },
+        "human_reviewed": {
+          "const": false
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "frame_fact_targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/frameFactTarget"
+          }
+        },
+        "support_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "frame_id",
+              "focal_frame_id",
+              "fact_id",
+              "supports_state",
+              "teacher_state",
+              "reference_kind",
+              "supervision_mask",
+              "question_fact_id",
+              "question_definition",
+              "provenance"
+            ],
+            "properties": {
+              "frame_id": {
+                "type": "string"
+              },
+              "pts_sec": {
+                "type": "number"
+              },
+              "fact_id": {
+                "type": "string"
+              },
+              "state": {
+                "enum": [
+                  "present",
+                  "absent",
+                  "unclear"
+                ]
+              },
+              "scope": {
+                "const": "exact_anchor_frame"
+              },
+              "derivation": {
+                "const": "direct_anchor_teacher_question"
+              },
+              "localizable_category": {
+                "const": "physical_anchor_atom"
+              },
+              "question_fact_id": {
+                "type": "string",
+                "pattern": "^ANCHOR__"
+              },
+              "question_definition": {
+                "type": "object",
+                "required": [
+                  "fact_id",
+                  "description"
+                ],
+                "properties": {
+                  "fact_id": {
+                    "type": "string",
+                    "pattern": "^ANCHOR__"
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "supporting_frame_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "context_frame_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "supervision_mask": {
+                "type": "boolean"
+              },
+              "human_verified": {
+                "const": false
+              },
+              "review_status": {
+                "const": "machine_consistency_checked"
+              },
+              "provenance": {
+                "$ref": "#/$defs/provenance"
+              },
+              "focal_frame_id": {
+                "type": "string"
+              },
+              "supports_state": {
+                "type": "boolean"
+              },
+              "teacher_state": {
+                "enum": [
+                  "present",
+                  "absent",
+                  "unclear"
+                ]
+              },
+              "reference_kind": {
+                "enum": [
+                  "focal_frame_explicit_unclear",
+                  "focal_frame_explicit_decisive"
+                ]
+              },
+              "negative_reference_kind": {
+                "const": "focal_frame_explicit_unclear"
+              },
+              "mask_reason": {
+                "const": "direct_anchor_window_support_conflict"
+              }
+            }
+          }
+        }
+      }
+    },
+    "second": {
+      "type": "object",
+      "required": [
+        "start_sec",
+        "end_sec",
+        "state",
+        "source_frame_ids",
+        "source_pts_sec",
+        "window_ids",
+        "event_state",
+        "human_reviewed"
+      ],
+      "properties": {
+        "start_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "state": {
+          "enum": [
+            "unknown_no_sampled_frame",
+            "source_frames_available_unanalyzed",
+            "partial_machine_observation",
+            "machine_observed"
+          ]
+        },
+        "source_frame_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_pts_sec": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "window_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "event_state": {
+          "enum": [
+            "abstain",
+            "machine_candidate_present"
+          ]
+        },
+        "human_reviewed": {
+          "const": false
+        }
+      }
+    },
+    "frameFactTarget": {
+      "type": "object",
+      "required": [
+        "frame_id",
+        "pts_sec",
+        "fact_id",
+        "state",
+        "scope",
+        "derivation",
+        "localizable_category",
+        "question_fact_id",
+        "question_definition",
+        "supporting_frame_ids",
+        "context_frame_ids",
+        "supervision_mask",
+        "human_verified",
+        "review_status",
+        "provenance"
+      ],
+      "properties": {
+        "frame_id": {
+          "type": "string"
+        },
+        "pts_sec": {
+          "type": "number"
+        },
+        "fact_id": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "present",
+            "absent",
+            "unclear"
+          ]
+        },
+        "scope": {
+          "const": "exact_anchor_frame"
+        },
+        "derivation": {
+          "const": "direct_anchor_teacher_question"
+        },
+        "localizable_category": {
+          "const": "physical_anchor_atom"
+        },
+        "question_fact_id": {
+          "type": "string",
+          "pattern": "^ANCHOR__"
+        },
+        "question_definition": {
+          "type": "object",
+          "required": [
+            "fact_id",
+            "description"
+          ],
+          "properties": {
+            "fact_id": {
+              "type": "string",
+              "pattern": "^ANCHOR__"
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "supporting_frame_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "context_frame_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supervision_mask": {
+          "type": "boolean"
+        },
+        "human_verified": {
+          "const": false
+        },
+        "review_status": {
+          "const": "machine_consistency_checked"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "allowed_stop_token_masks_after_complete_json": {
+    "248044": true,
+    "248046": true
+  },
+  "cached_processor_seconds": 0.00029820499912602827,
+  "captured_at_utc": "2026-10-17T15:07:45.066987+00:00",
+  "cold_compile_seconds": 6.418420243000583,
+  "compiled_grammar_memory_bytes": 12948568,
+  "cpu_logits_processor_max_milliseconds": 3.0217590028769337,
+  "cpu_logits_processor_mean_milliseconds": 1.3677758184806492,
+  "cuda_initialized": false,
+  "fresh_processor_identity": true,
+  "fresh_processor_restarts_at_document_start": true,
+  "gpu_device_nodes_present": false,
+  "image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "installed_source_sha256": {
+    "xgrammar/compiler.py": "aaaf3e52c5c0efaa0ea60918451f3c4f16429a8d3560342f8c7ec709a0a5d797",
+    "xgrammar/contrib/hf.py": "f81e92e9ce8465c7e4f4c8ab5785c0b660380177c0f88c7c61023b99aaa45f17",
+    "xgrammar/tokenizer_info.py": "05afed275b89b868568cebbea53606a046e4894fc1b62121dbcb23f97e8d6871"
+  },
+  "model_calls": 0,
+  "model_instances": 0,
+  "native_grammar_init_seconds": 0.8105024470023636,
+  "native_receipt": {
+    "any_order": false,
+    "any_whitespace": false,
+    "backend": "xgrammar_hf",
+    "compiled_cache_bytes": 12948568,
+    "compiled_cache_entries": 1,
+    "fresh_matcher_per_generate": true,
+    "gpu_overhead_measured": false,
+    "max_cache_bytes": 67108864,
+    "max_cache_entries": 8,
+    "model_vocab_size": 248320,
+    "requests_bound_to_grammar": 2,
+    "schema_policy": "forte.decision-json-subset.v1",
+    "stop_token_ids": [
+      248046,
+      248044
+    ],
+    "strict_mode": true,
+    "strict_post_generation_validation": true,
+    "version": "0.2.7"
+  },
+  "native_source_sha256": "1cc76e7c83805322511ded9d7293dd2de0e37c2d04857411c62941b736e43b19",
+  "private_input_used": false,
+  "public_input_sha256": {
+    "case.json": "d2f13cea989212f9878a8a7c6b8bdb9c299196b4889d2d1bd8ebc036ad0934f5",
+    "native_audit.py": "1fde6fa0856dbfff773504913bf21d9b32da5a40d68d057621cf9ba00d62e65a",
+    "serving/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "serving/qwen38_grammar.py": "1cc76e7c83805322511ded9d7293dd2de0e37c2d04857411c62941b736e43b19",
+    "serving/qwen38_identity.py": "86451add00afd2bd99142394da5cfae4849f3789680bb93f472531ce4e24ac41"
+  },
+  "schema_feature_tests": {
+    "duplicate_fact_id_is_semantic_validation_responsibility": true,
+    "duplicate_json_key_rejected": true,
+    "extra_key_rejected": true,
+    "missing_required_key_rejected": true,
+    "trailing_prose_rejected": true,
+    "unknown_fact_rejected": true,
+    "valid_19_fact_complete": true,
+    "wrong_fact_count_rejected": true
+  },
+  "schema_version": "forte.qwen38.native-grammar-cpu-audit.v1",
+  "scope": "Actual source wrapper with public tokenizer/schema and fake configuration/shape metadata only; no model, weights, media or GPU. CPU timings do not establish CUDA overhead or endpoint latency.",
+  "synthetic_completion_tokens": 485,
+  "transformers_version": "5.17.0",
+  "unsupported_schema_probes": {
+    "not": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "pattern_plus_maxLength": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "uniqueItems": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    },
+    "unknown_format": {
+      "compile_succeeded": true,
+      "native_policy_rejected": true,
+      "out_of_schema_string_accepted": true
+    }
+  },
+  "xgrammar_version": "0.2.7"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "forte.production-health.v1",
+  "generated_at_utc": "2026-10-18T05:46:52.337924+00:00",
+  "instance_id": "wd88a7vvt",
+  "production_mutated": false,
+  "ready_http": null,
+  "worker": {
+    "image": "sha256:26dc1184bb316d9ac7c55eb5a51d50ec472e5586002ad30dc37593ead5cbf4bc",
+    "running": true,
+    "oom_killed": false
+  },
+  "model": {
+    "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+    "running": true,
+    "oom_killed": false
+  },
+  "profile_sha256": "8fc400ec761c0c0484938fc84b750fbbba5f7b98fa2e34f011b9e08e68b140fd",
+  "worker_profile_expected": true
+}

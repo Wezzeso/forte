@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "input_kind": "synthetic_transport",
+  "evidence_scope": "transport_only_no_model",
+  "generated_at_utc": "2026-10-17T10:01:42.556247+00:00",
+  "environment": {
+    "os": "Windows",
+    "os_release": "11",
+    "architecture": "AMD64",
+    "logical_cpu_count": 12,
+    "python": "3.14.0",
+    "client_installed_versions": {
+      "httpx": "0.28.1",
+      "fastapi": "0.143.3",
+      "starlette": "1.8.0",
+      "pydantic": "2.14.1",
+      "vllm": null,
+      "torch": null,
+      "transformers": null
+    },
+    "server_versions": "unmeasured; client environment is not server evidence"
+  },
+  "declared_server": {
+    "gpu_model": null,
+    "gpu_count": 0,
+    "gpu_vram_gib_each": null,
+    "model_revision": null,
+    "frame_budget": null,
+    "max_pixels_per_frame": null,
+    "metadata_provenance": "operator declaration; confirm against actual server inventory"
+  },
+  "input_metadata_aggregate": {
+    "status": "unmeasured",
+    "success_count": 0,
+    "failure_count": 0
+  },
+  "conditions": {
+    "mode": "single",
+    "model_warmth": "unknown",
+    "whole_result_cache": "unknown",
+    "distinct_content_local_hash_check": true,
+    "local_input_probe_before_timing": false,
+    "deadline_seconds_from_client_upload_start": 2.0,
+    "poll_interval_seconds": 0.25,
+    "repeat_completed_get_per_successful_job": 0,
+    "request_timeout_seconds": 60
+  },
+  "boundaries": {
+    "T0_proxy_first_body_byte": "unmeasured",
+    "T1_api_last_body_byte": "ASGI-local when Server-Timing header exists",
+    "T2_durable_acceptance": "ASGI-local acceptance hook when installed",
+    "T3_worker_start": "unmeasured by HTTP client; use local worker StageTimer",
+    "T4_result_publication": "unmeasured by HTTP client; poll provides upper bound",
+    "T5_client_final_byte": "measured with client monotonic clock",
+    "client_last_chunk_to_ack": "client iterator yield to ACK; includes transport, not T2-T1"
+  },
+  "summary": {
+    "attempted": 1,
+    "completed": 0,
+    "failed": 1,
+    "http_request_count": 8,
+    "completed_repeat_failures": 0,
+    "timeouts": 1,
+    "metrics": {
+      "asgi_acceptance_after_body": {
+        "count": 1,
+        "p50_ms": 123.177,
+        "p95_ms": null,
+        "max_ms": 123.177,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "client_post_total": {
+        "count": 1,
+        "p50_ms": 393.5364,
+        "p95_ms": null,
+        "max_ms": 393.5364,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_asgi_lookup": {
+        "count": 7,
+        "p50_ms": 1.682,
+        "p95_ms": null,
+        "max_ms": 2.248,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_full_transfer": {
+        "count": 7,
+        "p50_ms": 7.6749,
+        "p95_ms": null,
+        "max_ms": 8.1959,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_first_body_byte": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_full_transfer": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "upload_start_to_full_result_upper_bound": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      }
+    },
+    "targets": [
+      {
+        "target": "post_body_acceptance_p95",
+        "threshold_ms": 150,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_lookup_p95",
+        "threshold_ms": 25,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "completed_first_body_byte_p95",
+        "threshold_ms": 50,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_safety",
+        "threshold_ms": 240000,
+        "status": "unmeasured",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      },
+      {
+        "target": "conservative_organizer_cutoff",
+        "threshold_ms": 300000,
+        "status": "unmeasured",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      }
+    ],
+    "inference_speed_claim": "not established by client transfer measurements",
+    "principal_benchmark_conditions_declared": false,
+    "condition_verification": "operator declaration only; novel-content and server cache audit required"
+  },
+  "vllm_metrics_discovery": {
+    "status": "unmeasured",
+    "names": []
+  },
+  "samples": [
+    {
+      "sample_id": "s001",
+      "input_bytes": 29000000,
+      "outcome": "failed",
+      "error_code": "client_deadline",
+      "poll_count": 7,
+      "processing_get": [
+        {
+          "response_headers_ms": 5.8812,
+          "first_body_byte_ms": 6.1732,
+          "full_response_ms": 7.7692,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.248
+        },
+        {
+          "response_headers_ms": 5.8325,
+          "first_body_byte_ms": 6.063,
+          "full_response_ms": 7.6749,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 2.193
+        },
+        {
+          "response_headers_ms": 5.3913,
+          "first_body_byte_ms": 5.6271,
+          "full_response_ms": 8.1959,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.655
+        },
+        {
+          "response_headers_ms": 4.8947,
+          "first_body_byte_ms": 5.1331,
+          "full_response_ms": 7.4338,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.712
+        },
+        {
+          "response_headers_ms": 5.2581,
+          "first_body_byte_ms": 5.5059,
+          "full_response_ms": 7.0547,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.499
+        },
+        {
+          "response_headers_ms": 4.786,
+          "first_body_byte_ms": 4.9851,
+          "full_response_ms": 6.7095,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.682
+        },
+        {
+          "response_headers_ms": 6.115,
+          "first_body_byte_ms": 6.2986,
+          "full_response_ms": 8.0744,
+          "response_bytes": 67,
+          "http_status": 200,
+          "asgi_lookup_ms": 1.313
+        }
+      ],
+      "completed_get": [],
+      "other_get": [],
+      "post_attempted": true,
+      "http_requests_attempted": 8,
+      "completed_repeat_failures": 0,
+      "completed_repeat_timeouts": 0,
+      "post": {
+        "response_headers_ms": 390.6764,
+        "first_body_byte_ms": 390.9025,
+        "full_response_ms": 393.3325,
+        "response_bytes": 45,
+        "http_status": 202,
+        "client_total_ms": 393.5364,
+        "client_last_chunk_to_ack_ms": 133.2968,
+        "asgi_post_body_acceptance_ms": 123.177
+      },
+      "client_observed_total_ms": 2008.4519
+    }
+  ]
+}

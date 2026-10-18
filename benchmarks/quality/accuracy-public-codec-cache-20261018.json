@@ -1,0 +1,342 @@
+{
+  "schema": "forte.jpeg-cache-candidate.v1",
+  "scope": "cpu_codec_only; no_model_or_video_accuracy_claim",
+  "logical_image_parts_per_round": 24,
+  "source_images": 3,
+  "repeats": 8,
+  "rounds": 7,
+  "quality": 88,
+  "max_side": 768,
+  "same_order_and_count": true,
+  "request_parts_byte_identical": true,
+  "ordered_request_parts_sha256": "e67c8d698a942f65c555978f862b10dc650bbed68598479c0fd00fdade1d4fb5",
+  "baseline_seconds": [
+    0.36707740000565536,
+    0.35881420000077924,
+    0.36760299999878043,
+    0.3652234000037424,
+    0.3628104000017629,
+    0.4861892000044463,
+    0.43137649999698624
+  ],
+  "candidate_seconds": [
+    0.13750400000571972,
+    0.1365633000023081,
+    0.13452939999842783,
+    0.14718520000315038,
+    0.15531249999912689,
+    0.1615395000044373,
+    0.1497312999999849
+  ],
+  "baseline_median_seconds": 0.36707740000565536,
+  "candidate_median_seconds": 0.14718520000315038,
+  "codec_speedup": 2.4939830906762253,
+  "candidate_stats": [
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    },
+    {
+      "lookups": 24,
+      "hits": 21,
+      "encodes": 3,
+      "entries": 3,
+      "cached_bytes": 10090501,
+      "max_bytes": 33554432
+    }
+  ],
+  "runtime_integrated": false,
+  "model_calls": 0,
+  "runtime": {
+    "python": "3.14.0",
+    "pillow": "13.0.0",
+    "platform": "Windows",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD"
+  },
+  "limitations": [
+    "Repeated-image synthetic workload; real overlap frequency is not established.",
+    "No promise of faster unique images, model inference, or upload-to-result latency.",
+    "Cache budget bounds stored pixel/JPEG payload; active images and Python object overhead use additional RAM.",
+    "Live scheduling, retries and deadlines can change even when request bytes are identical."
+  ],
+  "unique_input_probe": {
+    "schema": "forte.jpeg-cache-candidate.v1",
+    "scope": "cpu_codec_only; no_model_or_video_accuracy_claim",
+    "logical_image_parts_per_round": 3,
+    "source_images": 3,
+    "repeats": 1,
+    "rounds": 7,
+    "quality": 88,
+    "max_side": 768,
+    "same_order_and_count": true,
+    "request_parts_byte_identical": true,
+    "ordered_request_parts_sha256": "bfb2a759d62a3ae030cac0dc5bf82670d3a4544d0b42ba4e86c6bccf7fc07218",
+    "baseline_seconds": [
+      0.04568440000002738,
+      0.04867730000114534,
+      0.04810410000209231,
+      0.04385509999701753,
+      0.04499099999520695,
+      0.052474999996775296,
+      0.044538800000736956
+    ],
+    "candidate_seconds": [
+      0.05948300000454765,
+      0.05800380000437144,
+      0.06422350000502774,
+      0.05675550000160001,
+      0.05467119999957504,
+      0.0615853999988758,
+      0.05503150000004098
+    ],
+    "baseline_median_seconds": 0.04568440000002738,
+    "candidate_median_seconds": 0.05800380000437144,
+    "codec_speedup": 0.7876104668415584,
+    "candidate_stats": [
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 3,
+        "hits": 0,
+        "encodes": 3,
+        "entries": 3,
+        "cached_bytes": 10090501,
+        "max_bytes": 33554432
+      }
+    ],
+    "runtime_integrated": false,
+    "model_calls": 0,
+    "runtime": {
+      "python": "3.14.0",
+      "pillow": "13.0.0",
+      "platform": "Windows",
+      "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD"
+    },
+    "limitations": [
+      "Repeated-image synthetic workload; real overlap frequency is not established.",
+      "No promise of faster unique images, model inference, or upload-to-result latency.",
+      "Cache budget bounds stored pixel/JPEG payload; active images and Python object overhead use additional RAM.",
+      "Live scheduling, retries and deadlines can change even when request bytes are identical."
+    ]
+  },
+  "analysis_geometry_probe": {
+    "schema": "forte.jpeg-cache-candidate.v1",
+    "scope": "cpu_codec_only; no_model_or_video_accuracy_claim",
+    "logical_image_parts_per_round": 29,
+    "source_images": 3,
+    "repeats": 1,
+    "rounds": 7,
+    "quality": 88,
+    "max_side": 768,
+    "same_order_and_count": true,
+    "request_parts_byte_identical": true,
+    "ordered_request_parts_sha256": "81a02ba0e721b71b87b4eeddee3b3942176c896c80db1a3c2a553432af44d370",
+    "baseline_seconds": [
+      0.14636710000195308,
+      0.1434886999995797,
+      0.1409358999953838,
+      0.14587140000367071,
+      0.1373435999994399,
+      0.13977460000023711,
+      0.14419070000440115
+    ],
+    "candidate_seconds": [
+      0.1538111000045319,
+      0.15039360000082524,
+      0.1581464999981108,
+      0.16842039999755798,
+      0.15135169999848586,
+      0.15607489999820245,
+      0.1529475999996066
+    ],
+    "baseline_median_seconds": 0.1434886999995797,
+    "candidate_median_seconds": 0.1538111000045319,
+    "codec_speedup": 0.932889108753217,
+    "candidate_stats": [
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      },
+      {
+        "lookups": 29,
+        "hits": 3,
+        "encodes": 26,
+        "entries": 22,
+        "cached_bytes": 31587034,
+        "max_bytes": 33554432
+      }
+    ],
+    "runtime_integrated": false,
+    "model_calls": 0,
+    "runtime": {
+      "python": "3.14.0",
+      "pillow": "13.0.0",
+      "platform": "Windows",
+      "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD"
+    },
+    "limitations": [
+      "Repeated-image synthetic workload; real overlap frequency is not established.",
+      "No promise of faster unique images, model inference, or upload-to-result latency.",
+      "Cache budget bounds stored pixel/JPEG payload; active images and Python object overhead use additional RAM.",
+      "Live scheduling, retries and deadlines can change even when request bytes are identical."
+    ],
+    "workload_geometry": "public_stills_resized_to_464x848; production_crop_expansions; synthetic_overlapping_verification_windows",
+    "real_video_hit_ratio_claim": false
+  },
+  "public_input_provenance": {
+    "source_url": "https://data.mendeley.com/datasets/dny3dgvvw8/1",
+    "declared_license": "CC-BY-4.0",
+    "inputs": [
+      {
+        "sha256": "a59bcb1cc7d9d5025699b6503fb0c7eb70f1e82bb022d8a5cade8ba76f576e1b",
+        "bytes": 406116
+      },
+      {
+        "sha256": "9b0a0442909fbd843e7a4b1bcfad3557f9f1741df09be9c14afe39c56abdacda",
+        "bytes": 360253
+      },
+      {
+        "sha256": "5d261e23f1bc94120d452f50b988de6ca6abd8e9090d52aa89d3fb64b0c3d95d",
+        "bytes": 359383
+      }
+    ],
+    "license_verified_by_tool": false,
+    "receipt_sha256": "028ffeb54c7f2c7db9728bed9bfa19a75b84616cbc25571efa5d047fd8e58fbd"
+  },
+  "candidate_source_sha256": "608e9f8c16711b5fc997ad68789415fe5a7504de70db7d4d84c858b69b2e15d1",
+  "reference_source_sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+}

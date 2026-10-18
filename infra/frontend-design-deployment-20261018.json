@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-17T22:59:44.512873+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "status": "deployed_and_verified",
+  "scope": "frontend-only child image; API service replaced; worker/model/database/ingress unchanged",
+  "image": "sha256:5400c6c3d4894032ac1a28f5c3ee45bd57597ea75fad25dcffa46391d7c561c0",
+  "base_image": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+  "frontend_archive_sha256": "ed22285ecbfaf098359fa5f95bf4a5d72f0200a17a58accf61dc4164fbc7bc58",
+  "ready": true,
+  "api_configuration_unchanged": true,
+  "profile_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/design-20261018-ed22285e/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/design-20261018-ed22285e/rollback.sh",
+  "rollback_command": "/home/ubuntu/forte/deploy/releases/design-20261018-ed22285e/rollback.sh up -d --no-deps --no-build --timeout 60 api",
+  "public_runtime_assets_exact_match": true,
+  "public_application_html_matches": true,
+  "edge_html_transform": "Existing Cloudflare JavaScript detection injection preserved; app HTML verified after separating that injection",
+  "runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "notes": [
+    "First cutover triggered an ordering-sensitive environment fingerprint guard and restored the previous image. Complete environment was verified against the frozen Compose chain, fingerprint normalization was corrected, and final cutover passed.",
+    "No model inference, authenticated data inspection, queue mutation, rental extension, routing, credential or database change was performed."
+  ],
+  "proof_screenshot": "dist/design-release-20261018/production-desktop.png"
+}

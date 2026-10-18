@@ -1,0 +1,35 @@
+{
+  "artifacts": [
+    {
+      "bytes": 127421695,
+      "relative_path": "checkpoint_best_total.pth",
+      "sha256": "f01c7b9c897f6eee5a519a72d9dbe5d9f7344ebec4bf9e0187dcd44b683f848e"
+    }
+  ],
+  "bytes": 127421695,
+  "destination": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\private\\public_runs\\20261018\\rf-small512-v1-preserved",
+  "images_or_datasets_included": false,
+  "kind": "rf",
+  "local_free_after_bytes": 8673112064,
+  "minimum_reserve_bytes": 4294967296,
+  "preservation_index_sha256": "a0282f486008438724326a6e7d2af9aefb2685119e7de5d7c7dc9ef89ac6553e",
+  "promotion_eligible": false,
+  "receipt_scope": "frozen_training_metadata_only",
+  "remote_originals_retained": true,
+  "remote_run_sha256": "662def0d466404ad9efa1e828ddcda372915cf9487733add0c9c881562307d2b",
+  "sanitized_receipts": 8,
+  "schema_version": "forte.public-training-preservation.v1",
+  "verified": true,
+  "private_preservation_receipt_sha256": "da1414a28c0a88f12bac0c9b0852b47590db316cfb0f3d15acac05e699e87aff",
+  "initial_attempt": {
+    "failure": "preservation_transport_failed",
+    "failed_before_payload_transfer": true,
+    "partial_index_retained": true,
+    "partial_index_path": "training/private/public_runs/20261018/rf-small512-v1/preservation-index.json",
+    "partial_index_sha256": "a0282f486008438724326a6e7d2af9aefb2685119e7de5d7c7dc9ef89ac6553e",
+    "cause": "Windows backslash path conversion through WSL",
+    "operator_only_fix": "Use forward slashes in the wslpath argument; keep subprocess argument lists and shell=False",
+    "focused_operator_tests_passed": 31,
+    "corrected_preserver_sha256": "78810ea18582be4da1bb07e37835f9e2e1c1bb297245003bb0549b7f6ee81698"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "forte.native-serial-actual-cpu-outcome-addendum.v1",
+  "date_utc": "2026-10-17",
+  "source_archive_sha256": "1ffc97b17727c16e1c0101a9058eb3b7d343d9d917189e3b9e85730b675d6702",
+  "source_archive_preserved_unchanged": true,
+  "status": "ACTUAL_MODEL_INTERFACE_FAILED_CUSTOM_FACTORY_CONSUMER_PREPARED_NOT_SELECTED",
+  "earlier_stage_receipt": "docs/submission/qwen38-release-native-serial-public-20261017T182801Z.json",
+  "source_staging_success_is_not_model_interface_success": true,
+  "actual_model_interface_attempts": [
+    {
+      "scope": "CPU only with CUDA hidden; no engine construction or model calls",
+      "local_directory": "training/private/qwen38-vllm-integration-a10/actual-cpu-prepare-1ffc",
+      "status": "failed",
+      "reason": "Hidden-GPU environment exposed Unspecified platform metadata; model interface not reached.",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e33837f4110eb65a034952dac6e54333990df6dbe58e3ed41696d2a2f65748a5",
+      "stderr_bytes": 2251,
+      "raw_stderr_printed_by_packaging": false
+    },
+    {
+      "scope": "CPU only with disclosed CpuPlatform override for metadata introspection; no GPU or engine construction",
+      "local_directory": "training/private/qwen38-vllm-integration-a10/actual-cpu-prepare-1ffc-v2",
+      "status": "failed",
+      "reason": "Installed vLLM 0.31 StructuredOutputsConfig rejects unsupported disable_fallback keyword.",
+      "proves_actual_model_integration_bug": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "318e54ec19f344b64d1b4d56d63a26b09333423b6da39c110535900bc7cbb7b2",
+      "stderr_bytes": 1285,
+      "raw_stderr_printed_by_packaging": false
+    }
+  ],
+  "independently_inspected_images_receipt_sha256": "89b00c501959314ed7a08c7aa9aa3e026dc92a06ac8bc0d06cb03a5caac7034b",
+  "independently_inspected_images_receipt_identical_across_attempts": true,
+  "model_image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "actual_B6_custom_factory_consumer": {
+    "local_receipt": "training/private/qwen38-vllm-integration-a10/actual-cpu-prepare-1ffc-v2/worker-consumer.receipt.json",
+    "receipt_sha256": "2a0abb85ccc4d988f4750f2548780c5c34e132534c25bcb206130c9dbecaef04",
+    "status": "prepared",
+    "cpu_image_id": "sha256:b6d7828dd9e657aa6200fac52e66d050de3fba96b57e376cdeb71a3fcb2258ca",
+    "source_archive_sha256": "1ffc97b17727c16e1c0101a9058eb3b7d343d9d917189e3b9e85730b675d6702",
+    "source_mount": "/native/source",
+    "app_venv_preserved": true,
+    "model_calls": 0,
+    "gpu_operations": 0,
+    "network_calls": 0,
+    "production_API_worker_dispatch_proven": false,
+    "same_engine_model_or_HTTP_readiness_proven": false
+  },
+  "next_source_requires_new_archive_and_independent_QA": true,
+  "pending_changes_owner": "A10",
+  "pending_changes_scope": "Native launch installed-signature correction plus mandatory live readiness proof; not frozen by this addendum.",
+  "no_archive_or_model_config_relabelled": true,
+  "original_FIT_adapter_and_HF_releases_unchanged": true,
+  "model_GPU_HTTP_or_service_operations_by_packaging": 0,
+  "production_deadline_seconds_unchanged": 285,
+  "private_outcome_selection_performance_or_deployment_claim_made": false
+}

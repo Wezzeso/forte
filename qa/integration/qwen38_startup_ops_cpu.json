@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.qwen38.startup-ops-cpu-qa.v1",
+  "captured_at_utc": "2026-10-17T16:14:17.687009+00:00",
+  "pytest_summary": "14 passed in 0.60s",
+  "source_hashes": {
+    "deploy/qwen38_startup_ops.py": "1046770dee134a5ce8198bef78e22b35f25e70b9b08f936f1f2f34d85a253b33",
+    "qa/integration/qwen38_startup_ops_test.py": "c95f6cb6607ffc6a9d4870a59a65cca6c57cc9a2626bd0ef6daa419eccb6f00f"
+  },
+  "checks": [
+    "Expected identity exactly matches frozen untuned contract.",
+    "Safe event logging drops raw runtime text, descriptions and paths.",
+    "Exact and equivalent Docker public-port flag spellings are rejected.",
+    "Mocked successful startup records exact identity and bounded six generated calls.",
+    "Mocked identity failure stops only the new container without retry.",
+    "Exclusive receipt writes preserve prior bytes."
+  ],
+  "limitations": [
+    "Mocked Docker/process/readiness operations only; no service, GPU or model operations.",
+    "POSIX fork/setsid detachment reviewed statically; Windows host does not execute a real POSIX daemon proof."
+  ]
+}

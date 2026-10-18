@@ -1,0 +1,112 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "recording_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Recording Id",
+      "type": "string"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Content Hash",
+      "type": "string"
+    },
+    "recording_group_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Recording Group Id",
+      "type": "string"
+    },
+    "relative_path": {
+      "minLength": 1,
+      "title": "Relative Path",
+      "type": "string"
+    },
+    "scenario_group_id": {
+      "anyOf": [
+        {
+          "maxLength": 256,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scenario Group Id"
+    },
+    "split": {
+      "default": "unassigned",
+      "enum": [
+        "train",
+        "validation",
+        "final_check",
+        "unassigned"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "duration_sec": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Duration Sec"
+    },
+    "width": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Width"
+    },
+    "height": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Height"
+    },
+    "workbook_row_ids": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "title": "Workbook Row Ids",
+      "type": "array"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    }
+  },
+  "required": [
+    "recording_id",
+    "content_hash",
+    "recording_group_id",
+    "relative_path"
+  ],
+  "title": "RecordingRecord",
+  "type": "object"
+}

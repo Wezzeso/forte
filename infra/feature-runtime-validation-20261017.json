@@ -1,0 +1,166 @@
+{
+  "cpu_tensor_roundtrip_passed": true,
+  "final_deterministic_32frame_smoke": {
+    "batch_size": 32,
+    "encoder_only": true,
+    "encoder_recipe": {
+      "allow_tf32": false,
+      "attention": "sdpa",
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "encoder_manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+      "feature_dim": 768,
+      "feature_kind": "pooler_output",
+      "implementation_sha256": {
+        "fast_encoder.py": "53177f9b10cc6f5280e2fe99bd7a812d9232285e914c3f768d2b5348560a7fe7",
+        "feature_stream.py": "ead8aeed799a6e00454b2af3bc53ebe4d89fb317a707f1049a98dcccfeb254c1"
+      },
+      "inference_mode": true,
+      "input_color": "RGB",
+      "input_dtype": "uint8",
+      "input_layout": "BHWC",
+      "input_transform_sha256": null,
+      "l2_normalization": false,
+      "mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "model_class": "SiglipVisionModel",
+      "model_dtype": "bfloat16",
+      "model_id": "google/siglip2-base-patch16-256",
+      "model_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "output_dtype": "float16",
+      "output_layout": "BD",
+      "packages": {
+        "numpy": "2.2.6",
+        "pillow": "12.3.0",
+        "torch": "2.13.0+cu129",
+        "torchvision": "0.28.0+cu129",
+        "transformers": "5.17.0"
+      },
+      "preprocessing_mode": "official_processor",
+      "processor_backend": "torchvision_cpu",
+      "processor_class": "SiglipImageProcessor",
+      "processor_config_sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff",
+      "processor_do_resize": true,
+      "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "processor_target_size": [
+        256,
+        256
+      ],
+      "resample_pil_enum": 2,
+      "rescale_factor": 0.00392156862745098,
+      "schema_version": "forte.encoder-recipe.v1",
+      "seed": 20261017,
+      "std": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "encoder_recipe_sha256": "e7032733c2d8e590d8d7ae2767b2b75b0c2e6773c738e723406e40cdf4cdac9f",
+    "event_accuracy_measured": false,
+    "input_shape": [
+      "batch",
+      256,
+      256,
+      3
+    ],
+    "load_and_full_verification_sec": 11.776089072999639,
+    "output_shape": [
+      "batch",
+      768
+    ],
+    "private_media_opened": false,
+    "recorded_at": "2026-10-17T11:57:24.184898+00:00",
+    "selected_for_production": false,
+    "synthetic_encoder_inference_verified": true,
+    "synthetic_only": true,
+    "trials": [
+      {
+        "all_output_shapes_and_finite_values_validated": true,
+        "batches": 1,
+        "cuda_forward_sec": 0.014776032447814941,
+        "frames": 32,
+        "frames_per_second": 518.0989866683375,
+        "h2d_forward_d2h_sec": 0.017654833999586117,
+        "memory_after": {
+          "device_free_bytes": 9830596608,
+          "device_total_bytes": 85097971712,
+          "process_allocated_bytes": 227674624,
+          "process_peak_allocated_bytes": 391252480,
+          "process_peak_reserved_bytes": 434110464,
+          "process_reserved_bytes": 434110464
+        },
+        "memory_before": {
+          "device_free_bytes": 9830596608,
+          "device_total_bytes": 85097971712,
+          "process_allocated_bytes": 227674624,
+          "process_peak_allocated_bytes": 227674624,
+          "process_peak_reserved_bytes": 434110464,
+          "process_reserved_bytes": 434110464
+        },
+        "preprocessing_sec": 0.020441356999981508,
+        "synthetic_generation_sec": 0.020815003999814508,
+        "wall_sec": 0.06176425899957394
+      }
+    ],
+    "upload_decode_head_evidence_measured": false,
+    "verification": {
+      "artifact_kind": "image_encoder",
+      "bytes_verified": 1500989269,
+      "candidate": true,
+      "encoder_recipe_sha256": "e7032733c2d8e590d8d7ae2767b2b75b0c2e6773c738e723406e40cdf4cdac9f",
+      "files_verified": 4,
+      "gpu_compute_capability": [
+        8,
+        0
+      ],
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "ignored_text_tower_keys": 200,
+      "license": "apache-2.0",
+      "local_inference_verified": false,
+      "local_model_loaded": true,
+      "manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+      "model_class": "SiglipVisionModel",
+      "model_id": "google/siglip2-base-patch16-256",
+      "packages": {
+        "numpy": "2.2.6",
+        "pillow": "12.3.0",
+        "torch": "2.13.0+cu129",
+        "torchvision": "0.28.0+cu129",
+        "transformers": "5.17.0"
+      },
+      "processor_class": "SiglipImageProcessor",
+      "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "selected_for_production": false,
+      "verified": true
+    },
+    "warmup_batches": 1
+  },
+  "private_media_used": false,
+  "production_service_changed": false,
+  "runtime_image": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "source_archive_sha256": "dbf6b4c4ff49fb5f3820d27fca8027e003805b7a1202916d91d6d37a83b7e13a",
+  "uid1000_metadata": {
+    "cuda_initialized": false,
+    "model_weights_opened": false,
+    "private_media_opened": false,
+    "runtime_packages": {
+      "accelerate": "1.15.0",
+      "av": "19.0.1",
+      "numpy": "2.2.6",
+      "peft": "0.21.2",
+      "pillow": "12.3.0",
+      "safetensors": "0.8.0",
+      "torch": "2.13.0+cu129",
+      "torchvision": "0.28.0+cu129",
+      "transformers": "5.17.0"
+    },
+    "status": "passed"
+  }
+}

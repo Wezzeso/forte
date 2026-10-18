@@ -1,0 +1,39 @@
+# Scoped HTTP/1.1 hypothesis candidate. Not applied until operator activity gate
+# and root approval; rollback source is deploy/dokploy-ingress.yaml.
+services:
+  edge:
+    image: caddy:2.11.7-alpine
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp, /data, /config]
+    environment:
+      FORTE_EDGE_CADDYFILE: |
+        {
+          admin off
+          log default {
+            exclude http.log.error
+          }
+        }
+        :80 {
+          reverse_proxy https://forte-review-wd88a7vvt.gobrev.dev {
+            header_up Host {upstream_hostport}
+            header_down X-Content-Type-Options nosniff
+            header_down Referrer-Policy same-origin
+            transport http {
+              versions 1.1
+            }
+          }
+        }
+    command:
+      - /bin/sh
+      - -ec
+      - 'printf "%s\n" "$$FORTE_EDGE_CADDYFILE" > /tmp/Caddyfile; exec caddy run --config /tmp/Caddyfile --adapter caddyfile'
+    expose: ["80"]
+    networks: [dokploy-network]
+    logging: {driver: none}
+networks:
+  dokploy-network:
+    external: true

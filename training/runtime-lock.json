@@ -1,0 +1,27 @@
+{
+  "schema_version": "forte.training.runtime.v1",
+  "status": "prepared_not_built_or_gpu_tested",
+  "base_image": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "target_platform": "linux/amd64",
+  "target_python": "3.12",
+  "host_driver_verified_by_A15": "565.57.01",
+  "core_packages": {
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0",
+    "pillow": "12.3.0"
+  },
+  "addon_packages": {
+    "peft": "0.21.2",
+    "accelerate": "1.15.0"
+  },
+  "cuda_version": "12.9",
+  "media_format": "image_sequence",
+  "reason": "The official cu129 indexes do not publish Torch2.14.1 or torchvision0.29.1. Preserve the actual cu129/processor stack verified by A15 rather than selecting a CUDA13 wheel incompatible with this host.",
+  "official_indexes": [
+    "https://download.pytorch.org/whl/cu129/torch/",
+    "https://download.pytorch.org/whl/cu129/torchvision/"
+  ],
+  "gpu_use_policy": "Run only after A15/A18 release the GPU or on a separately reserved training allocation.",
+  "serving_modified": false
+}

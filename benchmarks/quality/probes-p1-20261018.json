@@ -1,0 +1,791 @@
+{
+ "schema": "forte.probe-eval.v1",
+ "types": [
+  "NO_AUTHENTICITY_CHECK",
+  "NO_CLIENT_ID",
+  "NO_RECOUNT"
+ ],
+ "frames": 16,
+ "calls": 78,
+ "prompt_tokens": 492500,
+ "score_in_sample": {
+  "NO_AUTHENTICITY_CHECK": {
+   "windows": 17,
+   "fires_on_negatives": [
+    [
+     "X-19",
+     7.0
+    ],
+    [
+     "X-3",
+     8.0
+    ],
+    [
+     "X-35",
+     7.0
+    ],
+    [
+     "X-37",
+     8.0
+    ],
+    [
+     "X-39",
+     7.0
+    ],
+    [
+     "X-39",
+     50.0
+    ],
+    [
+     "X-5",
+     11.0
+    ]
+   ],
+   "fires_on_positives_near_label": [
+    [
+     "X-1",
+     5.0,
+     22
+    ],
+    [
+     "X-18",
+     7.0,
+     20
+    ],
+    [
+     "X-2",
+     9.0,
+     10
+    ],
+    [
+     "X-34",
+     7.0,
+     13
+    ],
+    [
+     "X-38",
+     5.0,
+     33
+    ],
+    [
+     "X-38",
+     37.0,
+     33
+    ],
+    [
+     "X-4",
+     56.0,
+     57
+    ]
+   ],
+   "fires_on_positives_elsewhere": [
+    [
+     "X-4",
+     16.0,
+     57
+    ]
+   ]
+  },
+  "NO_CLIENT_ID": {
+   "windows": 19,
+   "fires_on_negatives": [
+    [
+     "X-35",
+     7.0
+    ],
+    [
+     "X-37",
+     8.0
+    ],
+    [
+     "X-39",
+     7.0
+    ],
+    [
+     "X-45",
+     19.0
+    ],
+    [
+     "X-5",
+     11.0
+    ]
+   ],
+   "fires_on_positives_near_label": [
+    [
+     "X-38",
+     5.0,
+     33
+    ],
+    [
+     "X-38",
+     37.0,
+     33
+    ],
+    [
+     "X-4",
+     56.0,
+     57
+    ],
+    [
+     "X-46",
+     0.0,
+     11
+    ]
+   ],
+   "fires_on_positives_elsewhere": []
+  },
+  "NO_RECOUNT": {
+   "windows": 3,
+   "fires_on_negatives": [],
+   "fires_on_positives_near_label": [],
+   "fires_on_positives_elsewhere": []
+  }
+ },
+ "results": [
+  {
+   "name": "X-1",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 1.0,
+     "end": 25.0,
+     "t": 5.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 1.0,
+     "end": 25.0,
+     "t": 5.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-10",
+   "probes": []
+  },
+  {
+   "name": "X-11",
+   "probes": []
+  },
+  {
+   "name": "X-12",
+   "probes": []
+  },
+  {
+   "name": "X-13",
+   "probes": []
+  },
+  {
+   "name": "X-14",
+   "probes": []
+  },
+  {
+   "name": "X-15",
+   "probes": []
+  },
+  {
+   "name": "X-16",
+   "probes": [
+    {
+     "type_id": "NO_RECOUNT",
+     "start": 3.0,
+     "end": 42.0,
+     "t": 4.0,
+     "answers": [
+      "yes",
+      "no"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-17",
+   "probes": [
+    {
+     "type_id": "NO_RECOUNT",
+     "start": 3.0,
+     "end": 32.0,
+     "t": 4.0,
+     "answers": [
+      "no",
+      "unclear"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-18",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 2.0,
+     "end": 22.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 2.0,
+     "end": 22.0,
+     "t": 7.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-19",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 2.0,
+     "end": 47.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 2.0,
+     "end": 47.0,
+     "t": 7.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 48.0,
+     "end": 57.0,
+     "t": 56.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-2",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 3.0,
+     "end": 17.0,
+     "t": 9.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 3.0,
+     "end": 17.0,
+     "t": 9.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-20",
+   "probes": []
+  },
+  {
+   "name": "X-21",
+   "probes": []
+  },
+  {
+   "name": "X-22",
+   "probes": []
+  },
+  {
+   "name": "X-23",
+   "probes": []
+  },
+  {
+   "name": "X-24",
+   "probes": []
+  },
+  {
+   "name": "X-25",
+   "probes": []
+  },
+  {
+   "name": "X-26",
+   "probes": []
+  },
+  {
+   "name": "X-27",
+   "probes": []
+  },
+  {
+   "name": "X-28",
+   "probes": []
+  },
+  {
+   "name": "X-29",
+   "probes": []
+  },
+  {
+   "name": "X-3",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 2.0,
+     "end": 20.0,
+     "t": 8.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 2.0,
+     "end": 20.0,
+     "t": 8.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-30",
+   "probes": []
+  },
+  {
+   "name": "X-31",
+   "probes": []
+  },
+  {
+   "name": "X-32",
+   "probes": []
+  },
+  {
+   "name": "X-33",
+   "probes": []
+  },
+  {
+   "name": "X-34",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 2.0,
+     "end": 15.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 2.0,
+     "end": 15.0,
+     "t": 7.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-35",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 2.0,
+     "end": 54.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 2.0,
+     "end": 54.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-37",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 3.0,
+     "end": 15.0,
+     "t": 8.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 3.0,
+     "end": 15.0,
+     "t": 8.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-38",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 1.0,
+     "end": 30.0,
+     "t": 5.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 1.0,
+     "end": 30.0,
+     "t": 5.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 30.0,
+     "end": 54.0,
+     "t": 37.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 30.0,
+     "end": 54.0,
+     "t": 37.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-39",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 4.0,
+     "end": 38.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 4.0,
+     "end": 38.0,
+     "t": 7.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 46.0,
+     "end": 75.0,
+     "t": 50.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 46.0,
+     "end": 75.0,
+     "t": 50.0,
+     "answers": [
+      "no",
+      "unclear"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-4",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 6.0,
+     "end": 53.0,
+     "t": 16.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 6.0,
+     "end": 53.0,
+     "t": 16.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 55.0,
+     "end": 72.0,
+     "t": 56.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 55.0,
+     "end": 72.0,
+     "t": 56.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-40",
+   "probes": [
+    {
+     "type_id": "NO_RECOUNT",
+     "start": 17.0,
+     "end": 45.0,
+     "t": 17.0,
+     "answers": [
+      "yes",
+      "unclear"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-43",
+   "probes": []
+  },
+  {
+   "name": "X-44",
+   "probes": []
+  },
+  {
+   "name": "X-45",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 19.0,
+     "end": 33.0,
+     "t": 19.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 19.0,
+     "end": 33.0,
+     "t": 19.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-46",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 0.0,
+     "end": 19.0,
+     "t": 0.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 0.0,
+     "end": 19.0,
+     "t": 0.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-5",
+   "probes": [
+    {
+     "type_id": "NO_AUTHENTICITY_CHECK",
+     "start": 1.0,
+     "end": 60.0,
+     "t": 11.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 1.0,
+     "end": 60.0,
+     "t": 11.0,
+     "answers": [
+      "no",
+      "yes"
+     ],
+     "fired": true,
+     "abstain": null
+    },
+    {
+     "type_id": "NO_CLIENT_ID",
+     "start": 63.0,
+     "end": 71.0,
+     "t": 69.0,
+     "answers": [
+      "yes",
+      "yes"
+     ],
+     "fired": false,
+     "abstain": null
+    }
+   ]
+  },
+  {
+   "name": "X-8",
+   "probes": []
+  }
+ ]
+}

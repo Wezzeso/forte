@@ -1,0 +1,62 @@
+{
+  "schema_version": "forte.qwen38.actual-torch-cpu-qa.v1",
+  "started_at_utc": "2026-10-17T14:39:53.897245+00:00",
+  "finished_at_utc": "2026-10-17T14:41:06.912138+00:00",
+  "elapsed_sec": 73.015,
+  "interpreter": "C:\\Users\\Wezeso\\Desktop\\Forte\\training\\.venv\\Scripts\\python.exe",
+  "pytest_fallback_import_path": "C:\\Users\\Wezeso\\Desktop\\Forte\\.venv\\Lib\\site-packages",
+  "tests": [
+    "training/test_data_masks.py",
+    "tests/test_silver_balance.py",
+    "tests/test_qwen38_balanced_runner.py",
+    "tests/test_qwen38_proof.py",
+    "tests/test_nf4_freeze_diagnostic.py"
+  ],
+  "runtime_packages": {
+    "torch": "2.12.0",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "pytest": "9.1.1",
+    "safetensors": "0.8.0"
+  },
+  "exit_code": 0,
+  "counts": {
+    "tests": 89,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "failures": [],
+  "pytest_summary": "70 passed, 19 subtests passed in 69.89s (0:01:09)",
+  "source_hashes_before": {
+    "training/data.py": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f",
+    "training/silver_balance.py": "c8a560ac4f0e2c42abe93bb64fa08cfe10192de5c0907b6fe0023a127e101ace",
+    "training/qwen38_silver.py": "142f4ca889f3d50b4842b8e3337ceb08eecd83f9d083e12410cc18f120e25c75",
+    "training/qwen38_proof.py": "b807ecdfbbd8c8e3a484285576728453b71eba20f940297795b06e12a6ed72a8",
+    "training/nf4_freeze_diagnostic.py": "a1362e3e3fce93221cba7348c6d63d9a57c5ff8b61c6bf86aba587000a605f28",
+    "training/nf4_initialization_proof.py": "8dd230dc9d510f86ce8a996995c07371214c36c667ebc6d65a53d44a6d8047ce",
+    "training/test_data_masks.py": "8abfe31bf37b70e6325d26657af05c1e60d13684c4bc8ab10be080b7a9a59ba7",
+    "tests/test_silver_balance.py": "19347fcb278d4cb7d8dcaaf782fd057abc3c9e4af5a277fbb40a49c619c7ea9e",
+    "tests/test_qwen38_balanced_runner.py": "eb3957b5c2070b8ef141b1d64dd8a18cc7dc840878dceb889c83b0403ebf4dc3",
+    "tests/test_qwen38_proof.py": "6e9cd39a30813e86bfd69e3cf93fc591ad7799fb94f47653f76cfa5258e07492",
+    "tests/test_nf4_freeze_diagnostic.py": "0b919f8dbc173cff9c2d81de70782aa6ae81d5a11a7369eaec9c04f6f259c09e"
+  },
+  "source_hashes_after": {
+    "training/data.py": "1cc2230cb6784c4833355abbd9af1ecb3a5aaf8959380f9511c1478bd998256f",
+    "training/silver_balance.py": "c8a560ac4f0e2c42abe93bb64fa08cfe10192de5c0907b6fe0023a127e101ace",
+    "training/qwen38_silver.py": "142f4ca889f3d50b4842b8e3337ceb08eecd83f9d083e12410cc18f120e25c75",
+    "training/qwen38_proof.py": "b807ecdfbbd8c8e3a484285576728453b71eba20f940297795b06e12a6ed72a8",
+    "training/nf4_freeze_diagnostic.py": "a1362e3e3fce93221cba7348c6d63d9a57c5ff8b61c6bf86aba587000a605f28",
+    "training/nf4_initialization_proof.py": "8dd230dc9d510f86ce8a996995c07371214c36c667ebc6d65a53d44a6d8047ce",
+    "training/test_data_masks.py": "8abfe31bf37b70e6325d26657af05c1e60d13684c4bc8ab10be080b7a9a59ba7",
+    "tests/test_silver_balance.py": "19347fcb278d4cb7d8dcaaf782fd057abc3c9e4af5a277fbb40a49c619c7ea9e",
+    "tests/test_qwen38_balanced_runner.py": "eb3957b5c2070b8ef141b1d64dd8a18cc7dc840878dceb889c83b0403ebf4dc3",
+    "tests/test_qwen38_proof.py": "6e9cd39a30813e86bfd69e3cf93fc591ad7799fb94f47653f76cfa5258e07492",
+    "tests/test_nf4_freeze_diagnostic.py": "0b919f8dbc173cff9c2d81de70782aa6ae81d5a11a7369eaec9c04f6f259c09e"
+  },
+  "source_changed_during_check": [],
+  "limitations": [
+    "CPU tensor/processor and synthetic model fixtures only; no CUDA, NF4 kernel, private video or real 27B load.",
+    "The NF4 initialization unit check uses a fake Linear4bit boundary with real CPU tensors; actual GPU proof is separate."
+  ]
+}

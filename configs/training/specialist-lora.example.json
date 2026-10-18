@@ -1,0 +1,32 @@
+{
+  "schema_version": "forte.crop-lora.train.v1",
+  "model_id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "model_type": "qwen3_vl_moe",
+  "model_dir": "../../training/private/models/qwen3-vl-30b-a3b",
+  "model_manifest": "../../training/private/models/qwen3-vl-30b-a3b.snapshot.json",
+  "expected_model_manifest_sha256": "REPLACE_WITH_REVIEWED_SNAPSHOT_MANIFEST_SHA256",
+  "base_revision": "REPLACE_WITH_EXACT_40_CHARACTER_UPSTREAM_COMMIT",
+  "processor_revision": "REPLACE_WITH_SAME_EXACT_UPSTREAM_COMMIT",
+  "dataset_dir": "../../training/private/specialists/dataset",
+  "expected_dataset_lock_sha256": "REPLACE_WITH_REVIEWED_DATASET_LOCK_SHA256",
+  "crop_manifest": "../../training/private/specialists/crop-qa.json",
+  "expected_crop_manifest_sha256": "REPLACE_WITH_REVIEWED_CROP_QA_MANIFEST_SHA256",
+  "output_dir": "../../training/runs/specialist-crop-lora-001",
+  "runtime_versions": {
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0"
+  },
+  "optimizer_steps": 300,
+  "grad_accum_steps": 8,
+  "learning_rate": 0.0001,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "max_length": 4096,
+  "max_pixels": 262144,
+  "minimum_free_cuda_gib": 72,
+  "seed": 17,
+  "merge_adapter": false
+}

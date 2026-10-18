@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:00:57.343099+00:00",
+  "status": "measured",
+  "same_metric_process_start_observed": true,
+  "counter_reset_observed": false,
+  "running_and_waiting_zero_at_both_boundaries": true,
+  "exclusive_gpu_window_operator_declared": true,
+  "attributed_to_selected_benchmark": true,
+  "timing_families": {
+    "request_prefill_time_seconds": {
+      "status": "measured",
+      "request_observations": 23,
+      "server_reported_total_ms": 22401.164160999997,
+      "server_reported_mean_ms": 973.9636591739129,
+      "p50_ms": null,
+      "p95_ms": null
+    },
+    "request_decode_time_seconds": {
+      "status": "measured",
+      "request_observations": 23,
+      "server_reported_total_ms": 629779.9738060008,
+      "server_reported_mean_ms": 27381.737991565253,
+      "p50_ms": null,
+      "p95_ms": null
+    },
+    "request_inference_time_seconds": {
+      "status": "measured",
+      "request_observations": 23,
+      "server_reported_total_ms": 652181.1379670007,
+      "server_reported_mean_ms": 28355.70165073916,
+      "p50_ms": null,
+      "p95_ms": null
+    },
+    "request_queue_time_seconds": {
+      "status": "measured",
+      "request_observations": 23,
+      "server_reported_total_ms": 1.81174200042733,
+      "server_reported_mean_ms": 0.07877139132292739,
+      "p50_ms": null,
+      "p95_ms": null
+    },
+    "time_to_first_token_seconds": {
+      "status": "measured",
+      "request_observations": 25,
+      "server_reported_total_ms": 29912.538051605225,
+      "server_reported_mean_ms": 1196.501522064209,
+      "p50_ms": null,
+      "p95_ms": null
+    },
+    "e2e_request_latency_seconds": {
+      "status": "measured",
+      "request_observations": 23,
+      "server_reported_total_ms": 657450.7803916931,
+      "server_reported_mean_ms": 28584.816538769264,
+      "p50_ms": null,
+      "p95_ms": null
+    }
+  },
+  "invalid_counter_families": [],
+  "scope": "server-reported request lifecycle durations; parallel request sums are not job wall time",
+  "gpu_compute_time": "unmeasured; server prefill/decode metrics are not a GPU profiler",
+  "p50_p95": "unmeasured from sums/counts; no histogram quantiles invented",
+  "durable_job_queue": "separate from model request queue"
+}

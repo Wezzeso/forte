@@ -1,0 +1,414 @@
+{
+  "schema": "forte.synthetic-model-schema-smoke.v1",
+  "generated_at_utc": "2026-10-18T04:37:00.282623+00:00",
+  "model": "gemma4",
+  "synthetic_only": true,
+  "accuracy_claim": false,
+  "inference_executed": true,
+  "passed": true,
+  "case_count": 15,
+  "passed_count": 15,
+  "request_template_kwargs": {},
+  "tool_sha256": "1ab92e5987f28ffd546f8dd55b14af759f00c2d8eeea1e124586fcca617d2264",
+  "prompts_sha256": "c6c153ba5b49af2b781795c96d145ee93659793c86b475b0b9acb5927f97d2d5",
+  "geometry_tolerance_normalized": 65,
+  "results": [
+    {
+      "case": "LAYOUT_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "desk": [
+          137,
+          334,
+          858,
+          680
+        ],
+        "laptop": [
+          215,
+          358,
+          451,
+          442
+        ],
+        "safe": [
+          137,
+          133,
+          390,
+          277
+        ],
+        "door": [
+          662,
+          67,
+          888,
+          235
+        ],
+        "counting_machine": [
+          485,
+          382,
+          691,
+          472
+        ],
+        "detector": [
+          711,
+          391,
+          808,
+          457
+        ],
+        "cashier_chair": [
+          293,
+          264,
+          447,
+          338
+        ],
+        "client_chair": [
+          521,
+          701,
+          675,
+          781
+        ]
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "non_null_boxes": 8,
+      "layout_box_bounds_ok": true,
+      "usage": {
+        "prompt_tokens": 834,
+        "completion_tokens": 210,
+        "total_tokens": 1044
+      },
+      "wall_s": 10.805
+    },
+    {
+      "case": "STATE_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "cashier_at_desk": false,
+        "cashier_in_room": false,
+        "client_at_desk": false,
+        "other_people": 0,
+        "person_at_door": false,
+        "cash_in_hands": false,
+        "cash_bag": false,
+        "id_card_shown": false,
+        "counting_machine": false,
+        "detector": false,
+        "hand_counting": false
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 947,
+        "completion_tokens": 115,
+        "total_tokens": 1062
+      },
+      "wall_s": 4.824
+    },
+    {
+      "case": "HOLISTIC_SCHEMA",
+      "images": 2,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "violations": []
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 2194,
+        "completion_tokens": 6,
+        "total_tokens": 2200
+      },
+      "wall_s": 2.512
+    },
+    {
+      "case": "VERIFY_SCHEMA",
+      "images": 2,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "visible": false,
+        "confidence": 1.0,
+        "t_sec": 0.0,
+        "observation_ru": null
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 1334,
+        "completion_tokens": 30,
+        "total_tokens": 1364
+      },
+      "wall_s": 2.034
+    },
+    {
+      "case": "VERIFY_DECISION_SCHEMA",
+      "images": 2,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "visible": false,
+        "confidence": 1.0,
+        "t_sec": 0.0,
+        "observation_ru": null
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 1334,
+        "completion_tokens": 30,
+        "total_tokens": 1364
+      },
+      "wall_s": 1.286
+    },
+    {
+      "case": "LAPTOP_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "C"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 729,
+        "completion_tokens": 7,
+        "total_tokens": 736
+      },
+      "wall_s": 0.322
+    },
+    {
+      "case": "DOOR_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "closed"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 673,
+        "completion_tokens": 7,
+        "total_tokens": 680
+      },
+      "wall_s": 0.317
+    },
+    {
+      "case": "DESK_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "cash": false,
+        "cash_bag": false,
+        "coins_or_valuables": false,
+        "drink": false,
+        "coat_or_handbag": false,
+        "id_or_document": false
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 699,
+        "completion_tokens": 64,
+        "total_tokens": 763
+      },
+      "wall_s": 2.647
+    },
+    {
+      "case": "SEAT_SCHEMA",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "no"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 668,
+        "completion_tokens": 7,
+        "total_tokens": 675
+      },
+      "wall_s": 0.315
+    },
+    {
+      "case": "DOOR_COMPARE",
+      "images": 2,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "closed"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 1255,
+        "completion_tokens": 7,
+        "total_tokens": 1262
+      },
+      "wall_s": 0.321
+    },
+    {
+      "case": "NORMALIZED_BOX",
+      "images": 1,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "box": [
+          247,
+          247,
+          753,
+          752
+        ]
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "normalized_box_ok": true,
+      "max_coordinate_error": 3,
+      "usage": {
+        "prompt_tokens": 666,
+        "completion_tokens": 24,
+        "total_tokens": 690
+      },
+      "wall_s": 1.203
+    },
+    {
+      "case": "VERIFY_CONCISE_STOP",
+      "images": 2,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "stop_truncation_observed": true,
+      "observation_field_absent": true,
+      "schema_valid": true,
+      "required_decisions_complete_before_stop": true,
+      "result": {
+        "visible": false,
+        "confidence": 1.0,
+        "t_sec": 0.0
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 1334,
+        "completion_tokens": 25,
+        "total_tokens": 1359
+      },
+      "wall_s": 1.066
+    },
+    {
+      "case": "IMAGE_CAPACITY_14",
+      "images": 14,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "yes"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 7667,
+        "completion_tokens": 7,
+        "total_tokens": 7674
+      },
+      "wall_s": 4.481
+    },
+    {
+      "case": "IMAGE_CAPACITY_18",
+      "images": 18,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "yes"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 9831,
+        "completion_tokens": 7,
+        "total_tokens": 9838
+      },
+      "wall_s": 5.757
+    },
+    {
+      "case": "IMAGE_CAPACITY_32",
+      "images": 32,
+      "passed": true,
+      "status": "passed",
+      "http_status": 200,
+      "reasoning_present": false,
+      "thought_markup_present": false,
+      "finish_reason": "stop",
+      "schema_valid": true,
+      "result": {
+        "answer": "yes"
+      },
+      "nonempty_free_text_fields_dropped": 0,
+      "usage": {
+        "prompt_tokens": 17405,
+        "completion_tokens": 7,
+        "total_tokens": 17412
+      },
+      "wall_s": 10.625
+    }
+  ]
+}

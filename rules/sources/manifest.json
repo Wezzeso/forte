@@ -1,0 +1,54 @@
+{
+  "schema_version": "forte.legal_sources.v1",
+  "accessed_on": "2026-10-17",
+  "sources": [
+    {
+      "source_id": "NBK_231_2019_CURRENT",
+      "document_title": "Об утверждении Правил осуществления кассовых операций и операций по инкассации банкнот, монет и ценностей в банках второго уровня, филиалах банков-нерезидентов Республики Казахстан, Национальном операторе почты и юридических лицах, исключительной деятельностью которых является инкассация банкнот, монет и ценностей",
+      "issuing_body": "Правление Национального Банка Республики Казахстан",
+      "document_date": "2019-11-29",
+      "document_number": "231",
+      "registration_number": "19680",
+      "url": "https://adilet.zan.kz/rus/docs/V1900019680",
+      "accessed_on": "2026-10-17",
+      "legal_status": "current_official_version",
+      "official_document_id": "c4cd4052-63e3-475b-ba9e-93f23de13fdb",
+      "revision_date": "2026-07-12",
+      "revision_date_basis": "Official versions[0].revision_date 2026-07-11T18:00:00Z; 12.07.2026 clause footnote effective date. Not inferred from execution-host timezone.",
+      "official_api_urls": [
+        "https://adilet.zan.kz/api/documents/by-ngr/V1900019680?language=rus",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/content",
+        "https://adilet.zan.kz/api/documents/c4cd4052-63e3-475b-ba9e-93f23de13fdb/versions?page_size=100"
+      ],
+      "primary_sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+      "text_archive_path": "sources/nbk_231_current.txt",
+      "archives": [
+        {
+          "path": "sources/nbk_231_current.json",
+          "sha256": "c7d02be30022c13b2e8a5ae63bc1a290ce51faaeff964d40794076f038658c68",
+          "bytes": 274526
+        },
+        {
+          "path": "sources/nbk_231_content.json",
+          "sha256": "8e92f27e54edfaa3dcb331cdb518d3bd53956aa86201c264b133618fc3363aec",
+          "bytes": 268918
+        },
+        {
+          "path": "sources/nbk_231_versions.json",
+          "sha256": "4567a0fc4107807c0196891fe0d41b623bfa5c952982bf5eedfdf607ccd14b8b",
+          "bytes": 21105
+        },
+        {
+          "path": "sources/nbk_231_current.txt",
+          "sha256": "f408a9303bfd9a2707be920c5208d1eafd30cc401a03cbfe5eafa92730fe0bfb",
+          "bytes": 215722
+        }
+      ],
+      "metadata_caveats": [
+        "API end_date equals latest revision boundary while is_actual=true and versions.is_current=true; do not interpret it as repeal.",
+        "API adopting_organ_name_ru says Ministry of Justice; issuing body is established by official_name and normative text: NB RK Board.",
+        "Public HTML route is now a JavaScript shell. Archive includes the official public content API response, not a third-party mirror."
+      ]
+    }
+  ]
+}

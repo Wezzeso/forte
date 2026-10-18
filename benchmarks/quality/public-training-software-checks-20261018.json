@@ -1,0 +1,33 @@
+{
+  "schema_version": "forte.public-training-software-checks.v1",
+  "completed_at_utc": "2026-10-17T23:51:29.274663+00:00",
+  "state": "passed",
+  "platform": "Windows",
+  "python_environment": "training/.venv with main .venv pytest via PYTHONPATH",
+  "passed": 297,
+  "skipped": 1,
+  "failed": 0,
+  "elapsed_seconds": 65.27,
+  "skip_reason": "Windows host could not create symlinks in test_release_source_bundle",
+  "scope": "Software contracts only; no model training, heldout model inference, or bank-video accuracy established",
+  "tested_file_sha256": {
+    "tests/test_public_crop_lora.py": "cdd5f960d5e35815056063e4b47b6eedb4fd3bd15996cfecc3941e79e34fcb47",
+    "tests/test_public_eval_cohort.py": "0030a8c9e016a2918911c6ee82577a2173f385ac02a4eeadab32587a0195d774",
+    "tests/test_public_holo.py": "6a55ce154d746ae19fa4fc1202bcb38a19d4aa3b90918b118126244f06280604",
+    "tests/test_public_merge.py": "0b362ccd676d28178a5f9b5c75b9a9c0bbc88f1930ff5fc2f5e9584689e34584",
+    "tests/test_specialist_public_augmentation.py": "4f8fc621baaf265602838d61e42f7eec7b0aa7360a617669278f5c6df31749fa",
+    "tests/test_specialist_public_bundle.py": "783279948a71e20c49bca1386fcc54cb061be480bd8e24553d4837653fe95832",
+    "tests/test_specialist_public_data.py": "1d97b4fb67377299f52db05a7fd820d29c2da957f615e16e7604720891fea35a",
+    "tests/test_specialist_public_dev_validate.py": "01d241ac7036d7cb873d25ef38acd183b34c13238f6b9d9eff1d4e17717c4c21",
+    "tests/test_specialist_public_metrics.py": "c11de0382ad568214f18f5f9de83a279b121d0c5d5aa60aeeb2c69cc6770906d",
+    "tests/test_specialist_public_train.py": "ec0f83e01a8761237f5f9d50cd4df3a4248b748fca8a9119018ad024cd7f1609",
+    "tests/test_release_source_bundle.py": "7a44824cd274f6c33402d6ab31bef8dce5adf5aab28c1eba0e9b4b647a9ec719",
+    "training/public_crop_lora.py": "e9b401f94331417917084547d1c217ead0f51b7762c47024173860962a810d4b",
+    "training/specialists/public_train.py": "87f33ae226ddd32ddb32b85691ba8e86a3f686fe67190cdb15b93175f72f87c6",
+    "training/specialists/public_augmentation.py": "31a5329f898702a13f9e022f071e04a2301ee81a843e58399a690332d96d2400",
+    "training/specialists/public_dev_validate.py": "e3a0fe00df318aaccf047205c2b1df931714d37a32658989d6a7ea54d3f3136c",
+    "training/specialists/public_cohort.py": "c3814d74e8eb9667b844d80fdfb004b56d623956d33964fc710bbac9232bb557",
+    "training/specialists/public_metrics.py": "e469cc6912a9d972f388f96dec8563f507f9228eb1bf97d4c5cb04d425fa25ac",
+    "qa/integration/build_release_bundle.py": "de15fe75716ef339ea36448a50768ac418350a4ce7b1985b39c3bf2d5b5f2fdc"
+  }
+}

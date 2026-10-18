@@ -1,0 +1,18 @@
+{
+  "schema_version": "forte.integration.W2-preparation-aggregate.v1",
+  "preparation_config_sha256": "7de4745a07f6868747b7f3a7bbdc95147e8ce6b33d71eae0216591ff9b84c691",
+  "independent_pins_verified": 8,
+  "predeclared_settings_verified": 18,
+  "source_archive_sha256": "c7486fc8e99702d811c2aa5db547c1a101086f0292e5bce3b701f100dc9456fb",
+  "teacher_sha256": "39472b847cb7dfb67bd28000327e9f5e0cd113554affcc2dea968f8c38cf3444",
+  "question_policy_file_sha256": "5245306ad33196249ac9ef622877b2dd597e301a595f727c7617da5dbe343bc2",
+  "teacher_rows": 11,
+  "teacher_windows": 32,
+  "direct_frame_targets": 256,
+  "teacher_conflict_masks": 0,
+  "compute_released": false,
+  "training_launched": false,
+  "fresh_exposure_snapshot_created": false,
+  "metadata_only_target_inspection_pending": true,
+  "private_record_values_included": false
+}

@@ -1,0 +1,15 @@
+{
+  "captured_at_utc": "2026-10-17T16:40:36.837846+00:00",
+  "sources": {
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "serving/qwen38_source_lineage.py": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+    "evaluation/qwen38_quality_equivalence.py": "23b73e669b0536a0fab3d97cbb26bac4701ab6326140e03faf71cfa9cb2a17a3",
+    "qa/integration/qwen38_family_timeout_binding_test.py": "ec43c4079ef20c8df3aca8be8f51ce96a5d6487ae522e8b02587e718ed84cb39",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664"
+  },
+  "tests": [
+    "qa/integration/qwen38_family_timeout_binding_test.py",
+    "serving/tests/test_qwen38_runtime_binding.py"
+  ]
+}

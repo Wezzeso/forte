@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "public_local_artifacts_verified_not_model_inference",
+  "started_at_utc": "2026-10-17T12:33:33.667070+00:00",
+  "completed_at_utc": "2026-10-17T12:36:02.064835+00:00",
+  "model_id": "MCG-NJU/TimeLens2-2B",
+  "revision": "10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+  "manifest": "configs/serving/grounders/timelens2-2b.manifest.json",
+  "manifest_sha256": "721f00a6cba0705755627f3f139b02cba570f680b03c43e54ab32e5fac2c660f",
+  "snapshot_workspace_relative": "weights/candidates/TimeLens2-2B/10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+  "local_only": true,
+  "remote_upload_performed": false,
+  "selected_for_production": false,
+  "model_instantiated": false,
+  "custom_remote_code_executed": false,
+  "gpu_used": false,
+  "private_media_accessed": false,
+  "inference_verified": false,
+  "stage_result": {
+    "verified": true,
+    "model_id": "MCG-NJU/TimeLens2-2B",
+    "revision": "10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+    "processor_revision": "10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+    "files_verified": 13,
+    "bytes_verified": 4893360876,
+    "bytes_downloaded": 4877470336,
+    "artifact_bytes": 4893360876,
+    "elapsed_sec": 143.90986390000035,
+    "local_inference_verified": false
+  },
+  "independent_offline_verification": {
+    "model_id": "MCG-NJU/TimeLens2-2B",
+    "revision": "10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+    "processor_revision": "10a779b6ef6fc8ad41367db2d1eb6779ca84995a",
+    "files_verified": 13,
+    "bytes_verified": 4893360876,
+    "manifest_sha256": "721f00a6cba0705755627f3f139b02cba570f680b03c43e54ab32e5fac2c660f"
+  },
+  "free_bytes_before": 68747341824,
+  "free_bytes_after": 64515297280,
+  "canonical_manifest_before_sha256": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc",
+  "canonical_manifest_after_sha256": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc",
+  "runtime_contract": {
+    "architecture": "Qwen3VLForConditionalGeneration",
+    "image_processor_type": "Qwen2VLImageProcessorFast",
+    "video_processor_type": "Qwen3VLVideoProcessor",
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "native_timestamp_semantics_tested": false,
+    "exact_installed_runtime_tested": false
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "config": {},
+  "dataset": {
+    "labels_sha256": "3ade1ced5efe9d17549a15dd998298518fe420cafae47efcca5eef4152fff0a6",
+    "n": 40,
+    "negative": 19,
+    "positive": 21,
+    "supplied_development_only": true,
+    "video_bytes": 263715381,
+    "videos_sha256_manifest": "9c361202645b419967d3d64cd8988f877e177d2649251e4430f154cd7a37934f"
+  },
+  "finished_at_utc": "2026-10-17T21:46:42.485575+00:00",
+  "host_alias": "forte-a100-smoke-20261017",
+  "method": "direct_deployed_fast_analyzer_existing_vlm",
+  "previous_rv6": {
+    "artifact_sha256": "5f0b1686b7890f41276b6fae64951fa0dcb776dafad8a3a57705b01b2b5ffd2f",
+    "comparison_limit": "different parallel video count; previous artifact did not hash model weights",
+    "config_overrides_equal": true,
+    "parallel_videos": 10,
+    "recorded_errors": 0,
+    "retained_source_matches_deployed": true,
+    "summary": {
+      "accuracy": 0.85,
+      "calls": 5729,
+      "fn": 6,
+      "fp": 0,
+      "n": 40,
+      "prompt_tokens": 2580584,
+      "timecode_err_median": 1.0,
+      "timecode_within_2s": 12,
+      "tn": 19,
+      "total_s": 383.6,
+      "tp": 15,
+      "wall_max": 143.27,
+      "wall_median": 84.46
+    }
+  },
+  "private_media_exported": false,
+  "runtime": {
+    "config_overrides": {},
+    "decode_fps": 2.0,
+    "effective_config": {
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "holistic_frames": 24,
+      "holistic_max_side": 640,
+      "max_state_frames": 100,
+      "merge_window": 6.0,
+      "min_away": 3,
+      "state_fps": 1.0,
+      "state_max_side": 896,
+      "use_holistic": false,
+      "use_rules": true,
+      "use_verify": false,
+      "verify_frames": 10,
+      "verify_max_side": 768,
+      "verify_threshold": 0.5,
+      "verify_window": 4.0
+    },
+    "effective_config_sha256": "af58eb3bee96e93f6d7f80f9ad748fd046d32edb20c4c45a0a235ea0135cf67d",
+    "image": "forte-review:fast-v4",
+    "image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+    "model": "q30",
+    "model_base_url": "http://vlm30:8000/v1",
+    "parallel_videos": 4,
+    "per_video_timeout_s": 285.0,
+    "source_files_sha256": {
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "analyzer.py": "31d27192dd76222bab8a1b7e45c18ffedd1a00f66bf5521ba35f3385eaddfd91",
+      "catalog.py": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e",
+      "prompts.py": "5e9c0d1c37a53b13931c7b8bdaef228f8d38ae87fdce92d94586cece48bc215d",
+      "service.py": "3b2c7325c19b1aead469d629a67e2a124a7bd04abc5df734e85888a21ae1e76b",
+      "video.py": "cdf249965d6cf2939e70b12f41191059b65f5d5e56835ec4d6dadc900e1a8ec5",
+      "vlm.py": "436a9bd42f072eeb0ffd988f438e7c5b33ffa062a6b935a9669a9ada2141cec8"
+    },
+    "source_tree_sha256": "256c51ab3b063b30446985878bdeeaf0f71b63d7674b5e88faa063bd9ad53a0f",
+    "vlm_concurrency": 64,
+    "model_identity": {
+      "model_image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "model_started_at_utc": "2026-10-17T19:14:49.608401273Z",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "gpu_memory_mib": 81920,
+      "dtype": "bfloat16",
+      "max_num_seqs": 48,
+      "max_model_len": 32768,
+      "gpu_memory_utilization": 0.92,
+      "model_weights_sha256": null,
+      "weights_digest_limitation": "Neither retained rv6 report nor this baseline hashes the model weight files; live model process was unchanged during this run."
+    }
+  },
+  "schema": "forte.accuracy-upgrade-live-baseline.v1",
+  "scoring": {
+    "denominator_includes_errors": true,
+    "errors_are_correct": false,
+    "errors_have_negative_prediction": false,
+    "timecode_metric": "nearest predicted event for positive completed clips; type identity is not scored",
+    "vlm_subcall_failures_are_errors": true
+  },
+  "started_at_utc": "2026-10-17T21:40:22.577037+00:00",
+  "status": "completed",
+  "summary": {
+    "accuracy": 0.825,
+    "calls": 5729,
+    "completed": 40,
+    "completion_tokens": 212101,
+    "correct": 33,
+    "error_classes": {},
+    "errors": 0,
+    "fn": 6,
+    "fp": 1,
+    "n": 40,
+    "prompt_tokens": 2574816,
+    "timecode_err_median": 1.0,
+    "timecode_within_2s": 12,
+    "tn": 18,
+    "total_s": 379.908,
+    "tp": 15,
+    "wall_max": 68.421,
+    "wall_median": 31.5385
+  },
+  "training_or_deployment_performed": false,
+  "private_artifact": {
+    "path": "benchmarks/private/accuracy-upgrade-baseline-20261018.json",
+    "sha256": "df3f1f7e7eac2bb85f7e9502eeade91f67332307fc941a385b23d59a30c45ea3",
+    "content": "per-video name, label, event type/time, timings and errors only; no observations, states, images or verification bodies"
+  },
+  "limitations": [
+    "Supplied development clips only: no held-out, grouped cross-validation, or unseen-video accuracy claim.",
+    "Direct analyzer run excludes upload, queue and API response construction; public-load report measures those separately.",
+    "Nearest-event timecode scoring cannot establish type correctness because original labels lack type identities.",
+    "No object detector, hand tracker, learned temporal head, VLM adapter, independent verification, or specialist type was enabled.",
+    "An earlier aggregate-only evaluator was cancelled after 10 of 40 clips to restart with private gate metadata; its partial results are not scored."
+  ],
+  "live_volume_config_confirmation": {
+    "checked_at_utc": "2026-10-17T22:13:31.088047+00:00",
+    "method": "docker exec forte-worker-1: forte.fast.service.load_config(Path(/var/lib/forte))",
+    "path": "/var/lib/forte/fast_config.json",
+    "override_exists": false,
+    "override_sha256": null,
+    "effective_config_matches_baseline": true,
+    "read_only": true,
+    "additional_inference_calls": 0
+  }
+}

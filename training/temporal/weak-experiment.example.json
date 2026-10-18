@@ -1,0 +1,31 @@
+{
+  "experiment_id": "W1",
+  "track": "weak_candidate_unselected",
+  "human_verified": false,
+  "encoder_manifest": "configs/serving/encoders/siglip2-base-patch16-256.manifest.json",
+  "automated_split": "data/splits/automated_provisional.json",
+  "source_manifest": "data/manifests/recordings.jsonl",
+  "scenario_groups": "data/splits/automated_scenarios.json",
+  "provided_train_labels": "training/private/provided-train-labels.jsonl",
+  "machine_annotations": "annotations/private/machine-consistency-checked.jsonl",
+  "exposure_registry": "benchmarks/private/model-exposure.jsonl",
+  "exposure_inventory_status": "benchmarks/private/exposure-inventory-status.json",
+  "expected_provided_label_source_sha256": null,
+  "experiment_authorization": {
+    "authorized": false,
+    "authorization_reference": null,
+    "allow_provisional_groups": true,
+    "validation_assignments_frozen": true,
+    "expected_assignments_sha256": null,
+    "expected_provided_label_source_sha256": null,
+    "allowed_target": "video_binary_mil"
+  },
+  "compute_release_authorization": {
+    "released_by_A18_or_root": false,
+    "release_reference": null
+  },
+  "source_inventory_path_override": null,
+  "mil_temperature": 0.25,
+  "seed": 20261017,
+  "output_dir": "training/runs/W1"
+}

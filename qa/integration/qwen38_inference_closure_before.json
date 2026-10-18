@@ -1,0 +1,23 @@
+{
+  "captured_at_utc": "2026-10-17T17:42:28.080135+00:00",
+  "sources": {
+    "serving/qwen38_service.py": "513460f34644edd9876db3294ec611477c0cb5c44f6b0a8ebbb69eb759585d7f",
+    "serving/qwen38_source_lineage.py": "32d166dab296c4c97efa9e4375e071d11593cb45defafd8204afdcd7259a1c7c",
+    "evaluation/qwen38_quality_equivalence.py": "5959989f30cbcd51607078e01d7344413946102a07e9bc79759b90a8be121906",
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "tests/test_qwen38_peft_inference.py": "94ef1362b50a3d775005f6e48db8aafec0b59c4d0c5121a3cf590e808aa69dd0",
+    "qa/integration/qwen38_inference_boundary_test.py": "06ecd8f9b0b0e8fd49fbaeac0abf39c9a5cd33d74de1c084a799fcc115d2216a",
+    "serving/tests/test_qwen38_inference_lineage.py": "287982b6058a16cbe5ebd46a4d7628ab9d4d1dbc7557f6b263069451f92d9880",
+    "serving/tests/test_qwen38_timeout_lineage.py": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928",
+    "serving/tests/test_qwen38_runtime_binding.py": "a0e80c35fd8f5bbadd1d2c25153414ad854c4581a96717099e72cefd52d1a664",
+    "tests/test_qwen38_quality_equivalence.py": "59675c2b700851b1876adcc9c065e794fdf9426c30708376ea64722c4c376520"
+  },
+  "tests": [
+    "qa/integration/qwen38_inference_boundary_test.py",
+    "serving/tests/test_qwen38_inference_lineage.py",
+    "serving/tests/test_qwen38_timeout_lineage.py",
+    "serving/tests/test_qwen38_runtime_binding.py",
+    "tests/test_qwen38_quality_equivalence.py"
+  ]
+}

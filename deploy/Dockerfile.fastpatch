@@ -1,0 +1,10 @@
+# Overlay the fast analyzer onto an already-built CPU app image and enable it via FORTE_ANALYZER=fast.
+ARG BASE_IMAGE=forte-review:local
+FROM ${BASE_IMAGE}
+USER 0
+COPY src/forte/fast/ /app/.venv/lib/python3.12/site-packages/forte/fast/
+COPY deploy/apply_fast_patch.py /tmp/apply_fast_patch.py
+RUN /app/.venv/bin/python /tmp/apply_fast_patch.py /app/.venv/lib/python3.12/site-packages/forte \
+ && /app/.venv/bin/python -c "import forte.fast.service, forte.worker, forte.api.metadata" \
+ && rm /tmp/apply_fast_patch.py
+USER 10001:10001

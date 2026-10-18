@@ -1,0 +1,443 @@
+{
+  "schema_version": "forte.additional-public-materials.v1",
+  "checked_at_utc": "2026-10-17T13:44:34.453353+00:00",
+  "client_date": "2026-10-17",
+  "objective": "Support task-specific visible-fact learning and hard normal negatives without changing selected main model or claiming 100% accuracy",
+  "scope": {
+    "research_only": true,
+    "public_metadata_read": true,
+    "dataset_video_or_model_weight_downloaded": false,
+    "private_footage_uploaded_or_external_inference_called": false,
+    "account_signup_or_contact_sharing": false,
+    "candidate_selected_or_executed": false
+  },
+  "policy": [
+    "Commercial compatibility applies to the published component scope, not every dependency or every upstream training datum.",
+    "Retain source, license, split, exact bytes, annotation provenance and content/near-duplicate groups for any later acquisition.",
+    "Auxiliary public action labels must not be converted into bank-rule labels or fabricated nineteen-fact gold.",
+    "No change to fixed rental stop or compute owner; test additional tools only through bounded isolated gates."
+  ],
+  "candidates": [
+    {
+      "id": "cap",
+      "kind": "video_dataset",
+      "publisher": "Visym Labs / CAP authors",
+      "official_url": "https://github.com/visym/cap",
+      "revision": "8a04fd865667cd80c661e552e260ea0de8ab41d5",
+      "license": {
+        "id": "CC-BY-4.0",
+        "scope": "dataset",
+        "commercial_compatible": true,
+        "conditions": [
+          "attribution",
+          "license link",
+          "identify modifications"
+        ]
+      },
+      "use_priority": "high_auxiliary_actions_and_hard_normals",
+      "use": [
+        "object handover",
+        "pickup/putdown on countertop",
+        "phone pocketing and hand-in-pocket hard normal negatives",
+        "actor entry/exit temporal primitives"
+      ],
+      "verified_class_examples": [
+        "person_transfers_object_to_person",
+        "person_puts_phone_into_pocket",
+        "person_takes_phone_from_pocket",
+        "person_puts_hands_in_back_pockets",
+        "person_picks_up_object_from_countertop",
+        "person_puts_down_object_on_countertop"
+      ],
+      "domain_limits": [
+        "generic objects; not cash custody or bank law",
+        "atomic staged activities; overlapping transaction actions and true omission labels not established"
+      ],
+      "download_candidates": [
+        {
+          "role": "taxonomy_first",
+          "url": "https://raw.githubusercontent.com/visym/cap/8a04fd865667cd80c661e552e260ea0de8ab41d5/classification/cap_labels.csv",
+          "size_bytes": 12175,
+          "sha256": "be7adceb034c00886c17d6acece742b0d30800180a0fdac66cda0dd6cfaa5e34"
+        },
+        {
+          "role": "detection_validation_bundle_inspect_before_media",
+          "url": "https://dl.dropboxusercontent.com/s/db11zv0gcycu384/cap_detection_handheld_val.tar.gz.72f58e69582c17dd366d3c7e85cf0da8",
+          "head_http_status": 200,
+          "head_content_length": 901869561,
+          "publisher_md5": "72f58e69582c17dd366d3c7e85cf0da8",
+          "caution": "Preserve public validation role; do not relabel as unseen bank gold."
+        },
+        {
+          "role": "large_archive_not_recommended_for_current_budget",
+          "url": "https://consented-activities-of-people.s3.us-west-2.amazonaws.com/train/cap_classification_clip.tar.gz",
+          "head_http_status": 200,
+          "head_content_length": 308736485473,
+          "publisher_md5": "54315e2ce204f0dbbe298490a63b5b3b"
+        }
+      ],
+      "license_evidence_url": "https://raw.githubusercontent.com/visym/cap/8a04fd865667cd80c661e552e260ea0de8ab41d5/README.md",
+      "selection_status": "catalogued_only"
+    },
+    {
+      "id": "holoassist",
+      "kind": "video_dataset",
+      "publisher": "HoloAssist research team / Microsoft Research",
+      "official_url": "https://holoassist.github.io/",
+      "license": {
+        "id": "CDLA-Permissive-2.0",
+        "scope": "dataset",
+        "commercial_compatible": true,
+        "conditions": [
+          "retain agreement when sharing data",
+          "use original applicable data notices"
+        ]
+      },
+      "use_priority": "high_procedural_evidence_auxiliary",
+      "use": [
+        "fine-grained action intervals",
+        "correct versus erroneous manipulation",
+        "procedure-state/correction supervision"
+      ],
+      "domain_limits": [
+        "egocentric device/assembly tasks; no cash or bank legality",
+        "audio/transcription-derived labels cannot become RGB-only observed facts without visual support"
+      ],
+      "download_candidates": [
+        {
+          "role": "annotations_first",
+          "url": "https://hl2data.z5.web.core.windows.net/holoassist-data-release/data-annotation-trainval-v1_1.json",
+          "head_http_status": 200,
+          "head_content_length": 117011015
+        },
+        {
+          "role": "large_video_archive_not_recommended_wholesale",
+          "url": "https://hl2data.z5.web.core.windows.net/holoassist-data-release/video_compress.tar",
+          "head_http_status": 200,
+          "head_content_length": 155285145600
+        }
+      ],
+      "license_evidence_url": "https://holoassist.github.io/data_links/README.md",
+      "selection_status": "catalogued_only"
+    },
+    {
+      "id": "industreal",
+      "kind": "video_dataset",
+      "publisher": "Tim Schoonbeek and IndustReal authors",
+      "official_url": "https://github.com/TimSchoonbeek/IndustReal",
+      "revision": "ad86a35d4b5125739e24af677e5d7b55c74af945",
+      "dataset_doi": "10.4121/b008dd74-020d-4ea4-a8ba-7bb60769d224.v2",
+      "license": {
+        "id": "Apache-2.0",
+        "scope": "dataset, repository as publisher states; DataCite v2 agrees",
+        "commercial_compatible": true,
+        "conditions": [
+          "preserve license/notices",
+          "mark modifications"
+        ]
+      },
+      "use_priority": "high_omission_and_state_reasoning_auxiliary",
+      "use": [
+        "procedure completion state",
+        "execution error versus omitted step",
+        "corrected errors and evidence coverage"
+      ],
+      "domain_limits": [
+        "toy assembly and egocentric hands; not transaction procedure",
+        "dataset marks some novel errors only in validation/test; preserve published partitions"
+      ],
+      "download_candidates": [
+        {
+          "role": "publisher_dataset_v2",
+          "url": "https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224/2",
+          "access_check": "public landing returned HTTP403 through research tool; media not retrieved",
+          "named_artifact": "all_rgb_videos.zip (publisher PSR guide)"
+        },
+        {
+          "role": "small_procedure_definition",
+          "url": "https://raw.githubusercontent.com/TimSchoonbeek/IndustReal/ad86a35d4b5125739e24af677e5d7b55c74af945/PSR/procedure_info.json"
+        }
+      ],
+      "license_evidence_url": "https://raw.githubusercontent.com/TimSchoonbeek/IndustReal/ad86a35d4b5125739e24af677e5d7b55c74af945/readme.md",
+      "additional_license_evidence_url": "https://api.datacite.org/dois/10.4121/b008dd74-020d-4ea4-a8ba-7bb60769d224.v2",
+      "selection_status": "catalogued_only"
+    },
+    {
+      "id": "openimages_v7",
+      "kind": "image_dataset",
+      "publisher": "Google Open Images",
+      "official_url": "https://storage.googleapis.com/openimages/web/download_v7.html",
+      "license": {
+        "id": "CC-BY-4.0 annotations; per-image CC-BY licenses",
+        "scope": "annotations separate from images",
+        "commercial_compatible": "conditional_per_image_verification",
+        "conditions": [
+          "preserve creator/title/source/license attribution",
+          "verify each selected image license independently"
+        ]
+      },
+      "use_priority": "medium_visible_object_primitives",
+      "use": [
+        "coin/hand/person/countertop/handbag boxes",
+        "hard negatives for generic object confusion"
+      ],
+      "verified_class_ids": {
+        "Coin": "/m/0242l",
+        "Human hand": "/m/0k65p",
+        "Person": "/m/01g317",
+        "Countertop": "/m/0b3fp9",
+        "Handbag": "/m/080hkjn"
+      },
+      "domain_limits": [
+        "still images do not establish handover/counting/departure or omitted actions",
+        "absence of an unlabeled class is not a verified negative"
+      ],
+      "download_candidates": [
+        {
+          "role": "class_map",
+          "url": "https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv",
+          "size_bytes": 12064,
+          "sha256": "1839e0e7e84130ae281f7f67413768601b031581c0c42e7fc17527b8e2a99aa9"
+        },
+        {
+          "role": "training_boxes_filter_selected_classes",
+          "url": "https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv"
+        },
+        {
+          "role": "publisher_per_image_metadata_and_downloads",
+          "url": "https://storage.googleapis.com/openimages/web/download_v7.html"
+        }
+      ],
+      "license_evidence_url": "https://storage.googleapis.com/openimages/web/factsfigures_v7.html",
+      "selection_status": "catalogued_only"
+    },
+    {
+      "id": "banknote_net",
+      "kind": "embedding_dataset_and_encoder",
+      "publisher": "Microsoft",
+      "official_url": "https://github.com/microsoft/banknote-net",
+      "revision": "57a6bf549879d6c6f700b6ba26724c957f770c5d",
+      "license": {
+        "id": "CDLA-Permissive-2.0",
+        "scope": "publisher License for Dataset and Model section",
+        "commercial_compatible": true,
+        "conditions": [
+          "retain data license when sharing",
+          "do not reconstruct high-resolution banknote images from embeddings"
+        ]
+      },
+      "use_priority": "low_currency_auxiliary_only",
+      "use": [
+        "currency feature encoder or auxiliary object distinction research"
+      ],
+      "domain_limits": [
+        "released main dataset is vectors, not an RGB bank video corpus",
+        "published currency options omit KZT",
+        "no transfer, counting, pocketing, abandonment or legal labels",
+        "legacy Keras route adds separate runtime complexity"
+      ],
+      "download_candidates": [
+        {
+          "role": "embedding_table",
+          "url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/data/banknote_net.feather"
+        },
+        {
+          "role": "encoder",
+          "url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/models/banknote_net_encoder.h5",
+          "publisher_expected_sha256": "dac0226b785ec22ae3b198a386b0f5842affdf9e18ab49cd4de31cbf8cb28477",
+          "expected_hash_evidence_url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/src/trusted_models.json"
+        }
+      ],
+      "license_evidence_url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/README.md",
+      "selection_status": "catalogued_only"
+    },
+    {
+      "id": "grounding_dino_tiny",
+      "kind": "auxiliary_model",
+      "publisher": "IDEA-Research",
+      "model_id": "IDEA-Research/grounding-dino-tiny",
+      "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+      "official_url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny",
+      "license": {
+        "id": "apache-2.0",
+        "scope": "official published model card",
+        "commercial_compatible": true,
+        "conditions": [
+          "preserve applicable license/copyright/notices"
+        ]
+      },
+      "role": "auxiliary_object_proposal",
+      "use": [
+        "text-conditioned candidate boxes for hand, person, banknote-like object, pocket or counter"
+      ],
+      "domain_limits": [
+        "box label/score not verified cash identity or legality",
+        "small occluded notes may be missed; no-detection is not a clean negative"
+      ],
+      "download_candidates": [
+        {
+          "role": "weights_expected_identity_only",
+          "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/model.safetensors",
+          "size_bytes": 689359096,
+          "expected_sha256": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+          "hash_status": "publisher LFS identity; bytes not downloaded"
+        }
+      ],
+      "api_metadata_sha256": "cf3f3201389bf2634ae9445db9e2060554d41d3131986fd1a4638b29b7ab9c3d",
+      "gated_at_verification": false,
+      "selection_status": "catalogued_only_not_selected_not_loaded"
+    },
+    {
+      "id": "sam21_small",
+      "kind": "auxiliary_model",
+      "publisher": "facebook",
+      "model_id": "facebook/sam2.1-hiera-small",
+      "revision": "ee5bba1d82bb8749febdf90f45e84b687142ba03",
+      "official_url": "https://huggingface.co/facebook/sam2.1-hiera-small",
+      "license": {
+        "id": "apache-2.0",
+        "scope": "official published model card",
+        "commercial_compatible": true,
+        "conditions": [
+          "preserve applicable license/copyright/notices"
+        ]
+      },
+      "role": "auxiliary_video_tracking",
+      "use": [
+        "propagate initialized actor/object masks across original frames"
+      ],
+      "domain_limits": [
+        "requires reliable initialization",
+        "masks provide no cash semantics; occlusion can break identity",
+        "tracking output is derived metadata and cannot replace original evidence JPEGs"
+      ],
+      "download_candidates": [
+        {
+          "role": "weights_expected_identity_only",
+          "url": "https://huggingface.co/facebook/sam2.1-hiera-small/resolve/ee5bba1d82bb8749febdf90f45e84b687142ba03/model.safetensors",
+          "size_bytes": 184305280,
+          "expected_sha256": "0a4067b11ce1e23d5229203f11c718a823060d15a4b23fa2372a7d4b77cbbc60",
+          "hash_status": "publisher LFS identity; bytes not downloaded"
+        }
+      ],
+      "api_metadata_sha256": "1b6a27a2bfdfecff1a0557754f255738e031a65d7c0958828f8e706fbb2422eb",
+      "gated_at_verification": false,
+      "selection_status": "catalogued_only_not_selected_not_loaded"
+    },
+    {
+      "id": "florence2_large",
+      "kind": "auxiliary_model",
+      "publisher": "microsoft",
+      "model_id": "microsoft/Florence-2-large",
+      "revision": "21a599d414c4d928c9032694c424fb94458e3594",
+      "official_url": "https://huggingface.co/microsoft/Florence-2-large",
+      "license": {
+        "id": "mit",
+        "scope": "official published model card",
+        "commercial_compatible": true,
+        "conditions": [
+          "preserve applicable license/copyright/notices"
+        ]
+      },
+      "role": "optional_region_grounding",
+      "use": [
+        "region captions, object boxes or phrase grounding for local TRAIN teacher cross-check"
+      ],
+      "domain_limits": [
+        "current card describes continued pretraining with quality caveat",
+        "custom-code path must be pinned/inspected",
+        "no temporal custody or omission proof"
+      ],
+      "download_candidates": [
+        {
+          "role": "weights_expected_identity_only",
+          "url": "https://huggingface.co/microsoft/Florence-2-large/resolve/21a599d414c4d928c9032694c424fb94458e3594/model.safetensors",
+          "size_bytes": 1553563458,
+          "expected_sha256": "4f38ce741c6b71188fe2b3419a55e11917a8a7b321ae2e63c61da0191b0ebad7",
+          "hash_status": "publisher LFS identity; bytes not downloaded"
+        }
+      ],
+      "api_metadata_sha256": "5a589eb8ffbfc4f730e39a34d69fd7392d70a55a26d783f8a7916608261eca87",
+      "gated_at_verification": false,
+      "selection_status": "catalogued_only_not_selected_not_loaded"
+    }
+  ],
+  "public_source_metadata_evidence": [
+    {
+      "url": "https://raw.githubusercontent.com/visym/cap/8a04fd865667cd80c661e552e260ea0de8ab41d5/README.md",
+      "size_bytes": 5642,
+      "sha256": "1c1dae47d285408a718a09a0597a4a206b0d57fd361eb72ab881f393a660d7d1",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/visym/cap/8a04fd865667cd80c661e552e260ea0de8ab41d5/classification/cap_labels.csv",
+      "size_bytes": 12175,
+      "sha256": "be7adceb034c00886c17d6acece742b0d30800180a0fdac66cda0dd6cfaa5e34",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/TimSchoonbeek/IndustReal/ad86a35d4b5125739e24af677e5d7b55c74af945/readme.md",
+      "size_bytes": 8970,
+      "sha256": "eba63983498e9c70d35a935d9fe9f28bbaae0ca95d1cb748b0ec98a207f57da1",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/TimSchoonbeek/IndustReal/ad86a35d4b5125739e24af677e5d7b55c74af945/license.txt",
+      "size_bytes": 11356,
+      "sha256": "11b0b7fe9965e559ed07541bbe86e60056fa49310f21189c6f536a1e2a004fdf",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/README.md",
+      "size_bytes": 12061,
+      "sha256": "7c152d87bbe71b9b79a408f7c07f4ac386c71f890b808bbcf21c514806752102",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/banknote-net/57a6bf549879d6c6f700b6ba26724c957f770c5d/src/trusted_models.json",
+      "size_bytes": 394,
+      "sha256": "a0de3cc1658350282e0297df290c350f6343e0787351b3c5d3e8ad44a8ae272d",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://holoassist.github.io/data_links/README.md",
+      "size_bytes": 9879,
+      "sha256": "5409932a234e241ec3f7967e856f01b948725c4268edc1bb4923b124a29ebeb6",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv",
+      "size_bytes": 12064,
+      "sha256": "1839e0e7e84130ae281f7f67413768601b031581c0c42e7fc17527b8e2a99aa9",
+      "verified_as": "public_text_metadata_only"
+    },
+    {
+      "url": "https://api.datacite.org/dois/10.4121/b008dd74-020d-4ea4-a8ba-7bb60769d224.v2",
+      "size_bytes": 10373,
+      "sha256": "67e1c45d8d098f135ce9ad34b9b0ca26317ec5f7316f720530aa1d432da2acba",
+      "verified_as": "public_text_metadata_only"
+    }
+  ],
+  "excluded_or_deferred": [
+    {
+      "id": "epic_kitchens_100",
+      "reason": "CC-BY-NC-4.0 published annotation license; not selected for commercial-compatible materials",
+      "source_url": "https://github.com/epic-kitchens/epic-kitchens-100-annotations/blob/master/license.txt"
+    },
+    {
+      "id": "ego4d",
+      "reason": "Dataset requires signed agreement and credential approval; no account/signup/contact sharing permitted here. Do not equate this access blocker with a blanket noncommercial license claim.",
+      "source_url": "https://ego4d-data.org/docs/start-here/"
+    },
+    {
+      "id": "hagrid",
+      "reason": "Publisher states variant CC-BY-SA; exact custom PDF terms not verified in this pass, gesture domain lower priority",
+      "source_url": "https://github.com/hukenovs/hagrid"
+    },
+    {
+      "id": "unlicensed_web_cash_videos",
+      "reason": "Search visibility is not permission for commercial dataset/model reuse; no verified licensed cash-procedure video corpus acquired."
+    }
+  ],
+  "implementation_guidance_doc": "docs/integration/additional-public-materials-20261017.md"
+}

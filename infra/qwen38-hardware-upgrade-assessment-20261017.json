@@ -1,0 +1,207 @@
+{
+  "schema_version": "forte.qwen38.hardware-upgrade-assessment.v1",
+  "captured_at_utc": "2026-10-17T14:43:18.799139+00:00",
+  "read_only": true,
+  "model_calls": 0,
+  "gpu_compute_calls": 0,
+  "provider_or_service_mutations": false,
+  "stop_task_changed": false,
+  "accounts_changed": false,
+  "resource_receipt": {
+    "path": "infra\\qwen38-resource-upgrade-readonly-20261017T143951Z.json",
+    "sha256": "d4f8ccdddd21abc181f30564871966cf616c4d6a139eddf10744cd96ec5ef022"
+  },
+  "catalog_receipts": [
+    {
+      "path": "infra\\qwen38-brev-upgrade-catalog-20261017.json",
+      "sha256": "54d610e945900410cc04dfcc4bc5f0e7782fd83b188382d0dae7c0037ac8bb2b"
+    },
+    {
+      "path": "infra\\qwen38-brev-hoppermemory256-catalog-20261017.json",
+      "sha256": "842fce92f19661a8997c88dc74a19b5fa21e983bbf862e4fd6667b15d97ca98a"
+    }
+  ],
+  "optional_kernel_receipt": {
+    "path": "infra\\qwen38-optional-kernel-public-metadata-20261017.json",
+    "sha256": "513c324c9fc685ee437a2596f677add210c1845a0dbe095de94b71211527d848"
+  },
+  "measured_bottleneck_snapshot": {
+    "captured_at_utc": "2026-10-17T14:39:44.862573+00:00",
+    "gpu_utilization_percent": 100,
+    "gpu_memory_utilization_percent": 86,
+    "gpu_used_mib": 70827,
+    "gpu_free_mib": 10329,
+    "gpu_power_watts": 300.65,
+    "gpu_temperature_c": 66,
+    "cpu_busy_percent": 1.6680567139282787,
+    "cpu_iowait_percent": 0.0,
+    "cpu_count": 12,
+    "ram_available_bytes": 119121498112,
+    "ram_total_bytes": 126608674816,
+    "page_cache_bytes": 114567020544,
+    "root_free_bytes": 32213643264,
+    "data_free_bytes": 196230225920,
+    "scope": "Active teacher GPU-bound observation. This does not profile candidate training or establish faster-chip speedup. Low MemFree reflects page cache; MemAvailable is119GB. No current CPU/RAM/disk capacity bottleneck observed."
+  },
+  "timing_and_budget": {
+    "fixed_stop_utc": "2026-10-18T06:01:25+00:00",
+    "submission_deadline_utc": "2026-10-18T07:00:00+00:00",
+    "remaining_seconds_to_fixed_stop": 55086,
+    "remaining_seconds_to_deadline": 58601,
+    "service_gap_if_no_replacement_seconds": 3515,
+    "current_account_cap_usd": 50,
+    "base_existing20h_estimate_usd": 40.6,
+    "incremental_room_before_storage_and_unknown_charges_usd": 9.4,
+    "existing72h_storage_retention_estimate_usd": 3.6,
+    "incremental_room_if_also_reserving_existing72h_storage_usd": 5.8,
+    "billing_total_observed": false,
+    "other_account_reserved50_not_accessed": true,
+    "new_gpu_stop_required_if_provisioned": true
+  },
+  "live_catalog_options": [
+    {
+      "gpu": "A100",
+      "gpu_count": 1,
+      "vram_per_gpu_gb": 80,
+      "provider": "crusoe",
+      "instance_type": "a100-80gb.1x",
+      "vcpus": 12,
+      "ram_gb": 120,
+      "compute_usd_per_hour_catalog": 1.98,
+      "disk_gb_target_catalog": 128,
+      "disk_usd_per_gb_month_catalog": null,
+      "storage_usd_per_hour_estimate_using_730h_month": null,
+      "total_usd_per_hour_estimate": null,
+      "incremental_one_hour_compute_usd": 1.98,
+      "max_incremental_compute_only_hours_from9_40usd": 4.747474747474747,
+      "stoppable_catalog": true,
+      "flex_ports_catalog": true,
+      "boot_seconds_catalog": 420,
+      "actual_capacity_reserved_or_launch_verified": false,
+      "limitations": "Catalog quote only. Storage, quota, regional placement, transfer, min billing increment and actual launch remain action-time checks. Boot time0 is not proof of instant readiness."
+    },
+    {
+      "gpu": "A100",
+      "gpu_count": 2,
+      "vram_per_gpu_gb": 80,
+      "provider": "crusoe",
+      "instance_type": "a100-80gb.2x",
+      "vcpus": 24,
+      "ram_gb": 240,
+      "compute_usd_per_hour_catalog": 3.96,
+      "disk_gb_target_catalog": 128,
+      "disk_usd_per_gb_month_catalog": null,
+      "storage_usd_per_hour_estimate_using_730h_month": null,
+      "total_usd_per_hour_estimate": null,
+      "incremental_one_hour_compute_usd": 3.96,
+      "max_incremental_compute_only_hours_from9_40usd": 2.3737373737373737,
+      "stoppable_catalog": true,
+      "flex_ports_catalog": true,
+      "boot_seconds_catalog": 420,
+      "actual_capacity_reserved_or_launch_verified": false,
+      "limitations": "Catalog quote only. Storage, quota, regional placement, transfer, min billing increment and actual launch remain action-time checks. Boot time0 is not proof of instant readiness."
+    },
+    {
+      "gpu": "H100",
+      "gpu_count": 1,
+      "vram_per_gpu_gb": 80,
+      "provider": "nebius",
+      "instance_type": "gpu-h100-sxm.1gpu-16vcpu-200gb",
+      "vcpus": 16,
+      "ram_gb": 200,
+      "compute_usd_per_hour_catalog": 5.4,
+      "disk_gb_target_catalog": 256,
+      "disk_usd_per_gb_month_catalog": 0.12264,
+      "storage_usd_per_hour_estimate_using_730h_month": 0.043008,
+      "total_usd_per_hour_estimate": 5.443008,
+      "incremental_one_hour_compute_usd": 5.4,
+      "max_incremental_compute_only_hours_from9_40usd": 1.7407407407407407,
+      "stoppable_catalog": true,
+      "flex_ports_catalog": false,
+      "boot_seconds_catalog": 0,
+      "actual_capacity_reserved_or_launch_verified": false,
+      "limitations": "Catalog quote only. Storage, quota, regional placement, transfer, min billing increment and actual launch remain action-time checks. Boot time0 is not proof of instant readiness."
+    },
+    {
+      "gpu": "H200",
+      "gpu_count": 1,
+      "vram_per_gpu_gb": 141,
+      "provider": "nebius",
+      "instance_type": "gpu-h200-sxm.1gpu-16vcpu-200gb",
+      "vcpus": 16,
+      "ram_gb": 200,
+      "compute_usd_per_hour_catalog": 6.48,
+      "disk_gb_target_catalog": 256,
+      "disk_usd_per_gb_month_catalog": 0.12264,
+      "storage_usd_per_hour_estimate_using_730h_month": 0.043008,
+      "total_usd_per_hour_estimate": 6.523008,
+      "incremental_one_hour_compute_usd": 6.48,
+      "max_incremental_compute_only_hours_from9_40usd": 1.4506172839506173,
+      "stoppable_catalog": true,
+      "flex_ports_catalog": false,
+      "boot_seconds_catalog": 0,
+      "actual_capacity_reserved_or_launch_verified": false,
+      "limitations": "Catalog quote only. Storage, quota, regional placement, transfer, min billing increment and actual launch remain action-time checks. Boot time0 is not proof of instant readiness."
+    }
+  ],
+  "migration_findings": {
+    "in_place_gpu_resize_supported_by_observed_cli": false,
+    "official_documentation": "https://docs.nvidia.com/brev/concepts/gpu-instances",
+    "documented_constraint": "Stopped instances cannot change GPU type. Existing data remains bound to provider/region; delete destroys it. Keep existing host and backups intact while a new target is independently validated.",
+    "existing_instance_still_running_at14_40_11utc": true,
+    "state_preservation_plan": [
+      "Do not stop/restart the active teacher or edit the current stop.",
+      "Use a separately named stoppable instance only after root resolves its exact budget, runtime cutoff, provider configuration and quota. Do not delete the current host to switch GPU type.",
+      "Stage public pinned model/runtime artifacts on the new target first. Revalidate actual driver, Docker, storage, image source/package hashes, GPU capability and generated tiny/NF4 save/reload tests.",
+      "Transfer only the role-restricted private training inputs and append-only records needed by the chosen experiment via protected SSH. Verify hashes and retain original state and backups.",
+      "Transfer final adapters/receipts back through protected channels; a new training node does not automatically replace the public API, data volume or ingress. A serving cutover needs independent contract/quality/latency/readiness proof."
+    ],
+    "cold_transfer_bytes_planning": {
+      "candidate_public_weights": 55562855904,
+      "candidate_training_image_reported_bytes": 26887993808,
+      "combined_uncompressed_public_footprint_bytes": 82450849712,
+      "note": "Image layers can share/compress; this sum is a storage planning figure, not transfer benchmark. New-target network staging/restore time unmeasured."
+    }
+  },
+  "compatibility_findings": {
+    "second_a100_instance": "Same SM80 shape minimizes GPU architecture changes and can separate teacher from candidate training. It does not share memory across machines or create a distributed trainer.",
+    "dual_a100_node": "Current trainer maps the whole NF4 model to device0 and has no DDP/world-size setup. Two80GB cards are not one160GB device; DDP replicates weights and does not fix per-rank memory. FSDP/tensor/pipeline sharding requires actual code/checkpoint/gradient/accounting proof and topology checks.",
+    "h100": "80GB per GPU provides newer compute but not extra VRAM over current80GB. Any speedup is unmeasured. HopperSM90 requires re-bound compute-capability guards and actual kernels/driver validation.",
+    "h200": "141GB on a singleGPU directly increases per-device memory, avoiding a distributed rewrite; it is the preferred memory-upgrade candidate if budget and capacity permit. Speedup remains unmeasured.",
+    "current_training_config_required_compute_capability": [
+      8,
+      0
+    ],
+    "current_serving_loader_hardcodes_capability": [
+      8,
+      0
+    ],
+    "current_nf4_smoke_lock_capability": [
+      8,
+      0
+    ],
+    "candidate_kernel_state": "Current image has no FLA/causalconv packages. Official FLA0.5.2 and fla-core0.5.2 wheels were only staged/hash-checked locally; no install. New kernel path needs numerical/gradient/parameter and performance proof. Causal-conv1d1.7.0PyPI provides only source."
+  },
+  "recommendation": {
+    "current_action": "Preserve the active teacher and fixed stop. No provisioning performed.",
+    "lowest_migration_risk_parallel_option": "A separate1xA10080 at$1.98/hcompute can overlap teacher and candidate training on the same testedGPUarchitecture, subject to exact short cost ceiling and fresh runtime validation.",
+    "memory_upgrade_preference": "A singleH200141 at$6.48/hcompute with256GBdiskcatalog can relieve per-device memory and run one bounded experiment withoutDDP. It requiresSM90 validation and a migration/staging window; under currentcap only a short pilot is available.",
+    "dual_gpu_recommendation": "Use dualA100 only to run independent teacher/candidate workloads on separate devices or after an explicitly implemented/tested distributed recipe. Do not expect current singleGPUcode to use both.",
+    "budget_examples": "OneH200hour plus256GBstorage estimate$6.523/h(730hmonth assumption) leaves\u2248$2.877 of$9.40beforeunknowncharges. It does not also fund the earlier$3.60old-disk72hretention example. A1hH100pilot costs\u2248$5.443plusunknowns.",
+    "unestablished_claims": [
+      "Actual provisionable capacity/quota",
+      "New-target driver compatibility and full-model performance",
+      "Actual billing balance/taxes/egress/minimum billing unit",
+      "Training and inference speedup fromH100/H200",
+      "MultiGPU distributed training correctness/throughput"
+    ]
+  },
+  "primary_sources": [
+    "https://docs.nvidia.com/brev/concepts/gpu-instances",
+    "https://docs.nvidia.com/brev/guides/console-reference",
+    "https://docs.nvidia.com/brev/reference/gpu-types",
+    "https://pypi.org/project/flash-linear-attention/0.5.2/",
+    "https://pypi.org/project/fla-core/0.5.2/",
+    "https://github.com/Dao-AILab/causal-conv1d"
+  ]
+}

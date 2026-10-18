@@ -1,0 +1,4 @@
+# Linux x86_64 CPython 3.12+ abi3 wheel, primary PyPI metadata checked 2026-10-17.
+# 34,983,451 bytes. No source builds or dependency upgrades are permitted.
+av==19.0.1 \
+    --hash=sha256:1bea5b6134209305199bce7627ac3d33964de2cf2b09c77d08e7f67cf8bd4170

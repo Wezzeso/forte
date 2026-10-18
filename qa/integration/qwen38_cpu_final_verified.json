@@ -1,0 +1,54 @@
+{
+  "schema_version": "forte.qwen38.cpu-qa.v1",
+  "started_at_utc": "2026-10-17T13:28:26.874731+00:00",
+  "finished_at_utc": "2026-10-17T13:30:03.896564+00:00",
+  "elapsed_sec": 96.694,
+  "interpreter": "C:\\Users\\Wezeso\\Desktop\\Forte\\.venv\\Scripts\\python.exe",
+  "suites": [
+    "tests",
+    "qa/integration",
+    "qa/system",
+    "annotations",
+    "rules",
+    "scripts",
+    "serving/tests",
+    "training"
+  ],
+  "excluded_marker": "gpu",
+  "environment": {
+    "offline_model_downloads": true,
+    "cuda_visible_devices": "",
+    "live_postgresql_opt_in": false
+  },
+  "exit_code": 0,
+  "code_snapshot_before_sha256": "01770b679c1ce0e3e2c7f58ef287e29c7c0faf326e8ff4cfce049d21a784277d",
+  "code_snapshot_after_sha256": "dcf53fedaacd27c4f0981e8a09308a8a67dbf5a486a6ca3bbbaac54e382120e2",
+  "code_changed_during_check": [
+    "training/qwen38_bind.py",
+    "training/test_qwen38_bind.py"
+  ],
+  "counts": {
+    "tests": 1890,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 19,
+    "passed_cases": 1626,
+    "passed_subtests": 245
+  },
+  "failures": [],
+  "log": "qa/integration/qwen38_cpu_final_verified.log",
+  "junit": "qa/integration/qwen38_cpu_final_verified.xml",
+  "limitations": [
+    "Synthetic/component software verification; no private model inference or GPU execution.",
+    "Does not establish real-video accuracy, semantic onset precision, model training, deployment, or upload-to-ready latency.",
+    "Live PostgreSQL behavior requires its own opt-in integration receipt."
+  ],
+  "pytest_summary": "1626 passed, 19 skipped, 1 warning, 245 subtests passed in 93.38s (0:01:33)",
+  "junit_test_count_includes_subtests": true,
+  "source_hashes": {
+    "pyproject.toml": "b0cc98a287b4b175021c01dde6f3dd08c3792a1023fbc91840a2e9924204d644",
+    "src/forte/pipeline.py": "0eed72f3d482a513d854e89964ef16d726ff80577f3ea863341e3c2196c6e8e1",
+    "src/forte/config.py": "c98303d65cc2d5060f2bbc931aec0755c3da6960ae60291b885401c23b85cf74",
+    "src/forte/worker.py": "1331a299763cb1b10a67ca7ba2012d3ede61c1ff6af36a8bf53924597dd69921"
+  }
+}

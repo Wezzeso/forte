@@ -1,0 +1,4 @@
+# Install in a separate Linux/Python 3.12 CUDA environment, never in serving.
+# Provision the appropriate PyTorch CUDA wheel for the host first.
+rfdetr[train]==1.11.2
+supervision==0.29.1

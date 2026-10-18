@@ -1,0 +1,82 @@
+{
+  "schema": "forte.model-qualification-summary.v1",
+  "generated_at_utc": "2026-10-18T05:08:26.340208+00:00",
+  "status": "not_qualified",
+  "scope": "40_unique_development_videos_in_sample; no_unseen_accuracy_claim",
+  "qualification_claim": false,
+  "promotion_authorized": false,
+  "requirements": {
+    "independent_runs": 2,
+    "n_per_run": 40,
+    "processed_per_run": 40,
+    "failed_per_run": 0,
+    "minimum_correct_per_run": 37,
+    "fp_per_run": 0
+  },
+  "score_gate": {
+    "status": "failed",
+    "runs": [
+      {
+        "run": "q38a",
+        "status": "failed",
+        "reasons": [
+          "correct_below_37"
+        ],
+        "counts": {
+          "n": 40,
+          "processed": 40,
+          "failed": 0,
+          "correct": 29,
+          "positive": 21,
+          "negative": 19,
+          "tp": 10,
+          "tn": 19,
+          "fp": 0,
+          "fn": 11
+        },
+        "accuracy": 0.725,
+        "report_sha256": "10b4527ec0627110948c26633b91e36c8462582278ee87c36d55ad62390a3e44"
+      },
+      {
+        "run": "q38b",
+        "status": "pending",
+        "reasons": [
+          "run_report_missing"
+        ]
+      }
+    ]
+  },
+  "recorded_identity_consistency": {
+    "status": "pending",
+    "reason": "two_available_runs_required"
+  },
+  "release_checks": {
+    "schema": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "evidence_originality": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "six_parallel_within_285s": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "candidate_identity_binding": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    }
+  },
+  "additional_release_requirements": [
+    "evidence_scene_relevance_no_regression",
+    "target_gpu_staging_and_rollback_review",
+    "explicit_user_switch_approval",
+    "public_six_upload_check_after_switch"
+  ],
+  "utility_sha256": "16829f2367e7a8deca34ebc0c4e3e29776c0a720b259fa0765303a86e1bef26d",
+  "collection_file_sha256": [
+    "62cb9171f0222056efd22453e3235ebee036969620532074e4d46580eedefff9",
+    "62cb9171f0222056efd22453e3235ebee036969620532074e4d46580eedefff9"
+  ]
+}

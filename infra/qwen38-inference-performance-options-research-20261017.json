@@ -1,0 +1,124 @@
+{
+  "actual_public_model_shape": {
+    "full_attention_head_dim": 256,
+    "full_attention_heads": 24,
+    "full_attention_kv_heads": 4,
+    "full_attention_layers": 16,
+    "hidden_size": 5120,
+    "layers": 64,
+    "linear_key_head_dim": 128,
+    "linear_key_heads": 16,
+    "linear_layers": 48,
+    "linear_value_head_dim": 128,
+    "linear_value_heads": 48
+  },
+  "captured_at_utc": "2026-10-17T16:44:58.867097+00:00",
+  "evidence": {
+    "aggregate_from_a06": {
+      "completion_tokens": 561,
+      "frames": 16,
+      "generated_frame_size": [
+        448,
+        448
+      ],
+      "http_seconds": 69.507,
+      "posts": 1,
+      "prompt_tokens": 5848
+    },
+    "existing_generated_full19_receipt": "training/private/qwen38-serving-91263-baaa/full19generated-untuned-actual/full19generated.gate.receipt.json",
+    "existing_generated_receipt_sha256": "02ea4e17e89ec37aaf2485c260d284d42e81b1912bffeed624ca93611581cbfa",
+    "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+    "old_source_archive": "91263a59cb2e73af48b46166b427d507ce7c3fa05106a46402acec950c20048d",
+    "prefill_decode_split_measured": false,
+    "private_quality_measured": false,
+    "raw_receipt_opened_by_this_research": false
+  },
+  "hf_compile_findings": [
+    "Actual baaa AST proves Qwen advertises _can_compile_fullgraph=True. StaticCache dispatches full_attention to StaticLayer and linear_attention to fixed recurrent/conv state layers, so the architecture has static hybrid cache support.",
+    "CompileConfig defaults inductor/reduce-overhead/fullgraphFalse. Generation additionally requires a compilable non-DynamicCache and hf_quantizer.is_compileable. Actual Bnb4BitHfQuantizer inherits HfQuantizer's False property without override. Static cache plus CompileConfig alone therefore skips NF4 auto compilation.",
+    "Manual compile of the actual underlying Qwen forward after adapter attachment is an experiment. PEFT generate delegates to its base; compiling only outer PEFT forward may not affect generation. Do not patch the quantizer flag to claim support.",
+    "BNB custom operations/tensor subclasses, FP32LoRA branches, FLA kernels, mutable recurrent state and variable multimodal shapes may graph-break or recompile. Compile only model forward; grammar FSM and deadline checks remain outside. Static capacity can increase attention work. Preserve all quant states/adapter values/dtypes, and measure actual graphs, recompiles, outputs, VRAM and prefill/decode timings. No gain is established."
+  ],
+  "hf_compile_source_receipt": "infra/qwen38-hf-compile-source-audit-20261017.json",
+  "limits": "69.507s/561tokens does not isolate kernel-launch overhead; overhead is a hypothesis. This research measures no new engine speed, p95, quality, adapter correctness, peakVRAM or clip throughput.",
+  "next_generated_only_experiment_if_root_authorizes": [
+    "Keep root's17.3s/24slot/960s diagnostic separate from285s production feasibility.",
+    "vLLM pilot: same public tokenizer/template/weights and generated16x448 fixture/full19canonical schema; untuned BF16 as explicit changed arm; TP1,max_model_len12000,max_num_seqs1,image limit16,defaultO2; no speculative model, pruning, frame/prompt reduction or answer cache.",
+    "Record actual GDN prefill/decode dispatch, one cold and two warm requests, TTFT/prefill/decode split and peakVRAM. Keep strict original schema, semantic validation and canonical-ID grammar.",
+    "Only then apply exact rank8/alpha16 artifact, accounting for all496targets and992tensors and disclosing BF16 conversion. New source/image/config/processor/quantization/adapter proof bindings and agreed quality/latency gates are mandatory before selection.",
+    "If exactNF4+FP32 remains mandatory, separately bind a manual-underlying-forward compile/static-hybrid-cache exploration. Stop on compile failures or recompilation storms; no forced quantizer flag, unconstrained decoding or timeout relaxation."
+  ],
+  "official_primary_sources": {
+    "bnb_apply": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/vllm_bnb_plugin/quantization/linear.py",
+    "bnb_loader": "https://raw.githubusercontent.com/vllm-project/vllm-bnb-plugin/d4914a9e3c5927b33b7ef941385a4fda2187e2b9/vllm_bnb_plugin/bitsandbytes_loader.py",
+    "causal_conv_release": "https://github.com/Dao-AILab/causal-conv1d/releases/expanded_assets/v1.7.0",
+    "peft_merge": "https://raw.githubusercontent.com/huggingface/peft/v0.21.0/src/peft/tuners/lora/bnb.py",
+    "quant_hardware": "https://docs.vllm.ai/en/v0.31.0/features/quantization/",
+    "tf_bnb_quantizer": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/quantizers/quantizer_bnb_4bit.py",
+    "tf_cache": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/cache_utils.py",
+    "tf_compile_config": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/generation/configuration_utils.py",
+    "tf_generation": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/generation/utils.py",
+    "tf_kernel_mapping": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/docs/source/en/kernel_doc/loading_kernels.md",
+    "tf_model": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "tf_quantizer_base": "https://raw.githubusercontent.com/huggingface/transformers/856157a2f3e9594954310df18fdccc31ffddebe9/src/transformers/quantizers/base.py",
+    "vllm_gdn": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py",
+    "vllm_lora_config": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/lora.py",
+    "vllm_lora_kernel": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/lora/ops/triton_ops/lora_shrink_op.py",
+    "vllm_model": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/models/qwen3_5.py"
+  },
+  "options_effort_estimates_not_promises": [
+    {
+      "effort": "1-2h isolated generated-only pilot;4-8h pinned HTTP/identity/grammar/adapter integration and fresh validation if successful",
+      "math": "NF4 base changes to BF16; FP32LoRA changes to BF16",
+      "option": "Native vLLM BF16 pilot, existing image and weights"
+    },
+    {
+      "effort": "4-8h or longer, depending on mapping/build failures",
+      "math": "Closer base representation after state proof; FP32LoRA still changes",
+      "option": "Native vLLM plus pinned BNB plugin/exact exported NF4 state"
+    },
+    {
+      "effort": "1-3h bounded generated-only exploration; success unknown",
+      "math": "Can retain NF4 and FP32LoRA parameters/dtypes; compiler numerical path still needs parity",
+      "option": "Manual HF decode-forward compile and StaticCache"
+    },
+    {
+      "effort": "2-6h if compatible pinned binaries exist; source-build effort unknown",
+      "math": "Weights retained; kernel parity required; no Torch2.13CUDA12.9causal-conv binary verified, no blind sdist install",
+      "option": "Finish native causal-conv/gated-norm fast path"
+    }
+  ],
+  "receipts": {
+    "infra/qwen38-hf-compile-source-audit-20261017.json": "e30fe3ce21c873f546e19927a38e16bf8fba9740cbc1aa95dadcce43bad0234d",
+    "infra/qwen38-performance-research-runtime-metadata-20261017.json": "d7a165bbf80a85a54f5fbd45073e050de13d2395173f777eadb2a7c0fdeee7fd"
+  },
+  "recommendation": "Finish root's already-authorized narrow real-clip HF diagnostic. If performance work is selected, the lowest setup-cost credible engine pilot is native vLLM 0.31 BF16 in the existing baaa image with existing public weights, explicitly labelled as a base and adapter arithmetic variant. No documented drop-in preserves current NF4 plus FP32 PEFT arithmetic while gaining optimized vLLM LoRA.",
+  "runtime": {
+    "bitsandbytes": "0.50.2",
+    "fla-core": "0.5.2",
+    "flash-linear-attention": "0.5.2",
+    "flashinfer-python": "0.7.0.post1",
+    "missing": [
+      "vllm-bnb-plugin",
+      "causal-conv1d",
+      "kernels",
+      "flash-attn"
+    ],
+    "peft": "0.21.2",
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "vllm": "0.31.0+cu129"
+  },
+  "runtime_receipt": "infra/qwen38-performance-research-runtime-metadata-20261017.json",
+  "schema_version": "forte.qwen38.inference-performance-research.v1",
+  "scope": "Research and CPU metadata/AST only. Zero model/GPU/private-media calls; no downloads, builds, package changes, production source/config changes or account changes.",
+  "vllm_findings": [
+    "Native Qwen3_5ForConditionalGeneration supports vision and language LoRA, with hybrid recurrent cache and packed GDN/QKV projection mappings. Every exact496PEFT target still requires load/application proof.",
+    "GDN source includes fused causal-conv/recurrent/gated-norm CUDA decode requiring SM80+, BF16, K=V128 and noninterleaved layout. Actual public shape matches; actual built symbol/dispatch remains unproved. A100 GDN prefill uses Triton/FLA rather than Hopper/Blackwell-specific FlashInfer prefill.",
+    "Current adapter has992FP32 tensors/rank8/alpha16 across496language targets. Optimized vLLM LoRA shrink asserts FP16/BF16 inputs and weights. Normal auto dtype follows BF16 base; loading the same serialized artifact changes current FP32PEFT arithmetic.",
+    "Pinned official BNB plugin0.0.3 supports prequant4bit states and inflight NF4 with compress_statistics=True. Its config defaults FP4/no-double do not describe the actual inflight loader, which hardcodes NF4/double statistics. Application casts BF16.",
+    "For NF4 preservation, prefer exact locally exported HF quantized state with tensor/quant_state/skip-set verification over assuming inflight equivalence. Vision and packed GDN/QKV mappings require proof. Plugin uses bitsandbytes matmul_4bit per packed shard, so it does not automatically gain Marlin linear kernels.",
+    "BF16 uses original public weights instead of the NF4 base used for training. Approximately55.586GB files imply51.8GiB weight storage; bounded12K cache and vision workspace may fit A10080GB but peak fitting remains unmeasured.",
+    "AWQ/GPTQ/Marlin conversions, merged/requantized adapters, and BF16 dequantization change math. FP8W8A8 is not an Ampere-native fast path in the official hardware table. None is current NF4 equivalence."
+  ]
+}

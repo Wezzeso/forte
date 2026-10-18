@@ -1,0 +1,33 @@
+{
+  "schema_version": "forte.qwen38.independent-historical-native-gpu-chain-qa.v1",
+  "captured_at_utc": "2026-10-17T18:43:02.813899+00:00",
+  "exit_code": 0,
+  "test_counts": {
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_seconds": 1.626,
+  "source_hashes_before": {
+    "benchmarks/performance/qwen38_native_gpu_chain.py": "f366378203e2cbfdaa9692cf3847d975d5b580dfd00c2f590b15e5c610d33788",
+    "qa/integration/qwen38_native_gpu_chain_test.py": "cf52a458aae34bd99a772407d17c845a5651e1c83fc9da0665b0a74da14e389f",
+    "qa/integration/qwen38_native_gpu_chain.receipt.json": "09bda16c79fc70f07c423bd08258da8772fbf3442d165ccf722ee6df773aca7c",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/terminal/terminal.safe.receipt.json": "5ea39bd22a19d409a8103fe4a0f99c78017a966ded07d028786629b681faaa63",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/instrumentation.v2.launch.plan.json": "1127eba7a12bcb679953cfd713bbb32d8a04ec308a253e1289f983716b4112f0",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/instrumentation.v2.public-only.tar.gz": "9de54a58de74c850cc652bb5412f0a01dcaa93c4475fd89d39ea0fc49080078c"
+  },
+  "source_hashes_after": {
+    "benchmarks/performance/qwen38_native_gpu_chain.py": "f366378203e2cbfdaa9692cf3847d975d5b580dfd00c2f590b15e5c610d33788",
+    "qa/integration/qwen38_native_gpu_chain_test.py": "cf52a458aae34bd99a772407d17c845a5651e1c83fc9da0665b0a74da14e389f",
+    "qa/integration/qwen38_native_gpu_chain.receipt.json": "09bda16c79fc70f07c423bd08258da8772fbf3442d165ccf722ee6df773aca7c",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/terminal/terminal.safe.receipt.json": "5ea39bd22a19d409a8103fe4a0f99c78017a966ded07d028786629b681faaa63",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/instrumentation.v2.launch.plan.json": "1127eba7a12bcb679953cfd713bbb32d8a04ec308a253e1289f983716b4112f0",
+    "training/private/qwen38-vllm-bf16-generated-pilot-a08-v2/instrumentation.v2.public-only.tar.gz": "9de54a58de74c850cc652bb5412f0a01dcaa93c4475fd89d39ea0fc49080078c"
+  },
+  "changed_during_run": [],
+  "test_log_sha256": "d430d489e0aded39f2529e01bca2dc0a5ff2f003150b8b7ccbd207db1037029e",
+  "raw_chain_receipt_sha256": "09bda16c79fc70f07c423bd08258da8772fbf3442d165ccf722ee6df773aca7c",
+  "normalized_chain_semantic_sha256": "0a6a4fd6caba3cfa22874e83a978b3b9bfd54a81ff42de6707fd0c658794788d",
+  "scope": "Pure stdlib offline verification of54binary-exact historical JSONproofs, pinned root release/launch/container,74public source files in original archive,32base bytecheck/originaladapter tree/all992CPU+GPU equality/6attempts+receipts/nativegrammar/phase completion. No weights/media/runtime packages/model/GPU/HTTP/service/exposure calls. Does not certify currentHTTP/liveengine/profile/parallel4 or grant execution/retry. Synthetic adversarial tests patch unit-test trust anchors only, never genuine evidence."
+}

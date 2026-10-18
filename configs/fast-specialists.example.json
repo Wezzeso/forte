@@ -1,0 +1,23 @@
+{
+  "require_corroboration": true,
+  "use_verify": true,
+  "verify_threshold": 0.8,
+  "verify_frames": 16,
+  "decode_fps": 5.0,
+  "decode_max_frames": 1800,
+  "decode_max_memory_bytes": 2147483648,
+  "specialists": {
+    "enabled": false,
+    "model_class": "RFDETRSmall",
+    "device": "cuda",
+    "checkpoint": "/private/specialists/checkpoint_best_total.pth",
+    "gate_path": "/private/specialists/video-gate.json",
+    "class_names": {
+      "0": "id_card",
+      "1": "banknote_stack",
+      "2": "key_in_lock",
+      "3": "cup",
+      "4": "detector_device"
+    }
+  }
+}

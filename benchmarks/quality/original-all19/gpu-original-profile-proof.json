@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "scope": "original six-attempt benchmark profile evidence; generic configs and aggregate artifacts only",
+  "deployed_api_worker_image_during_run": "sha256:97fd2dd3a5dafd63309fab12868925a8c6c39b363703ae0a5809ad6ff28afdd9",
+  "deployment_release_source": "A17 observed final CPU release before baseline; unchanged through burst drain",
+  "runtime_override_evidence": "benchmarks/performance/gpu-performance-findings.json",
+  "local_configuration_hashes": {
+    "rules/catalog.json": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "configs/serving/baseline.json": "9819e189a06d18cbb83afe96b9dd75a3d3ee26fd56c695261504560b591864ab",
+    "configs/serving/image-lock.json": "8cf67e8e1860848d5f89041ff3b39d29ec24df2364d5ad18e391e32fa5278b1c",
+    "configs/serving/synthetic-concurrency-validation.json": "e0178a4d263e134fd229ce6cdb028555068775b4dad2a1266ed8515bf878e064",
+    "configs/serving/actual-packages.json": "5fdb0c933ff00a1f59d1047b7e7822349dd47613108f75840c2e49631793c9c8",
+    "deploy/compose.yaml": "69205009b014c6456e76d9aceb2f74c06053e542606605712aa2c07f8c94708c",
+    "benchmarks/performance/gpu-performance-findings.json": "d0562898efd78ebe940e038d4efcc10299ff53a3bdcc18bd0f3a810aa02ec65c",
+    "benchmarks/performance/gpu-observed-summary.json": "2a4b2489e072bdc52380cfbc7619b781977b0132456cc9f3c99a6752a1de6743"
+  },
+  "hash_note": "These are current local evidence-file digests captured after the original benchmark. Local baseline JSON defaults may differ from verified deployed environment overrides; use recorded runtime override evidence and immutable image digest for the measured profile. No retrospectively verified live catalog digest is claimed."
+}

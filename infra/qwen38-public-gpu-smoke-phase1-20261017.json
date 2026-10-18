@@ -1,0 +1,85 @@
+{
+  "schema_version": "forte.qwen38.public-gpu-smoke.v1",
+  "private_input_used": false,
+  "full_model_loaded": false,
+  "runtime_image": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "source_archive_sha256": "a2464bf268c1bfc639b6ae630b33b09b79505fa5bd1804579329c69b10066e6e",
+  "baseline_model_stopped": false,
+  "root_exclusive_active_compute": true,
+  "idle_free_vram_mib": 10327,
+  "allocation_policy": "baseline weights remain warm; only generated tiny tests, >=6GiB free",
+  "nf4": {
+    "captured_at_utc": "2026-10-17T13:20:36.220046+00:00",
+    "cuda_initialized": true,
+    "full_qwen38_model_verified": false,
+    "gpu_smoke_performed": true,
+    "hybrid_kernel_execution_verified": false,
+    "inspection": "package_metadata_and_exact_installed_file_hashes",
+    "model_weights_opened": false,
+    "optional_kernel_packages": {
+      "causal-conv1d": null,
+      "fla-core": null,
+      "flash-linear-attention": null
+    },
+    "private_media_opened": false,
+    "runtime_lock_sha256": "6a6e4485c367923e6d1b7e1ae14f6b4ba1af9f30cd1d4451b1e39769ff385791",
+    "runtime_packages": {
+      "accelerate": "1.15.0",
+      "av": "19.0.1",
+      "bitsandbytes": "0.50.2",
+      "numpy": "2.2.6",
+      "peft": "0.21.2",
+      "pillow": "12.3.0",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.2",
+      "torch": "2.13.0+cu129",
+      "torchvision": "0.28.0+cu129",
+      "transformers": "5.17.0",
+      "triton": "3.7.1"
+    },
+    "schema_version": "forte.qwen38.runtime-check.v1",
+    "status": "passed",
+    "synthetic_nf4": {
+      "compute_dtype": "bfloat16",
+      "cuda_initialized": true,
+      "double_quantized": true,
+      "finite_gradient_norms": [
+        0.09333198517560959,
+        0.15787982568144798
+      ],
+      "frozen_quantized_weight_sha256": "94e4f3fccf3db326e6d18e83f92cd542c6ef76c4061a864b8c0c2982d49c3a73",
+      "frozen_quantized_weight_unchanged": true,
+      "full_qwen38_model_verified": false,
+      "gpu_compute_capability": [
+        8,
+        0
+      ],
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "loaded_bnb_library": "libbitsandbytes_cuda128.so",
+      "losses": [
+        1.3286502361297607,
+        1.3952908515930176
+      ],
+      "model_weights_opened": false,
+      "optimizer_steps": 2,
+      "peak_allocated_bytes": 67247104,
+      "peak_reserved_bytes": 69206016,
+      "private_input_used": false,
+      "quant_type": "nf4",
+      "synthetic_adapter_changed": true,
+      "synthetic_adapter_sha256": "7f50e89965dc1f2cee16d0eaef21bc3a4a4e6ec9e26cfeb10badde81d68c7aa7",
+      "synthetic_only": true,
+      "torch_cuda_version": "12.9",
+      "wall_seconds": 0.42771859200001927
+    },
+    "verified_bnb_files": {
+      "bitsandbytes/cextension.py": "a7ce4d7bcb504bf7d268ce96658dbe832804b6f6ed999f61eaf2beeb9385c9bd",
+      "bitsandbytes/libbitsandbytes_cuda128.so": "d6dd06a7bf8b2ecc43dd7d7dc5b558dc70884fd193252a8597ee065a9c8b0f4e",
+      "bitsandbytes/nn/modules.py": "f7ab2160681e2f089caae80d6fd283ac6a9b9f1b82269e6f395c3b046faf606e"
+    }
+  },
+  "passed": false,
+  "error_type": "RuntimeError",
+  "reason_code": "command_failed_3",
+  "api_worker_resumed": true
+}

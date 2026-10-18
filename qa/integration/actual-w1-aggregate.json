@@ -1,0 +1,156 @@
+{
+  "code_archive_sha256": "dbf6b4c4ff49fb5f3820d27fca8027e003805b7a1202916d91d6d37a83b7e13a",
+  "config_file_sha256": "bffae32a52eee227dcc7017700c94ebbe00166e817589a2874482b15b26c7fe6",
+  "source_code_binding_sha256": "397e73329e131a1c87424626aadb32394cad5756841932567d8b967fd9adae43",
+  "runtime_image_sha256": "1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "feature_cache_index_sha256": "61fca47d516e480bf137e703f5ea1c30624f12eb1cc78b638fc4d09f154a7d82",
+  "consumed_teacher_sha256": "ba0d024f3f74885524b0871d84399bc6f6bf9572d16067ee14bb67d5f487ee58",
+  "provided_train_anchors_sha256": "63e1aa952dee9d62b3dfe6bb83f463ed722c599f1615bc1384739f01bd293929",
+  "coarse_anchor_source_sha256": "9d0f807b2433e651b16bae9086fd9405a78f3e4fadb998208f9282c211dc843a",
+  "fact_axis_manifest_sha256": "a5b62ded9208bc7112d8996dbb7475df1e715aba5f34415786cf0e87f1f35f8e",
+  "validation_expected_plan_file_sha256": "5e24ec2d8488c41344629db9f4cebf2de3b0b8bafc63d4361811605ccae4dbc9",
+  "weights_sha256": "5a827f00cb8914d787cf2bb1e253253879fdbee3d8cad746731b355dd2393c7b",
+  "initial_weights_sha256": "39755f3be25b8fc2e5780a108cabc218a7403c79f0a4c38d214afd5a5142f86c",
+  "local_checkpoint_and_weights_reverified": true,
+  "optimizer_weight_change_evidence": {
+    "video_instances.bias": {
+      "changed_scalar_parameters": 1,
+      "maximum_absolute_change": 0.0015640445053577423
+    },
+    "video_instances.weight": {
+      "changed_scalar_parameters": 128,
+      "maximum_absolute_change": 0.06493018567562103
+    }
+  },
+  "supervision_counts": {
+    "masked_teacher_event_conflicts": 0,
+    "native_frames": 28124,
+    "provided_coarse_positive_anchor_bags": 15,
+    "recording_bags": 28,
+    "silver_boundary_negative_labels": 0,
+    "silver_boundary_positive_labels": 0,
+    "silver_event_brackets": 0,
+    "silver_frame_fact_labels": 0,
+    "silver_support_negative_labels": 0,
+    "silver_support_positive_labels": 408,
+    "silver_window_fact_labels": 28,
+    "silver_window_unclear_labels": 0,
+    "teacher_windows_eligible": 28,
+    "teacher_windows_fully_masked": 31
+  },
+  "trained_components": {
+    "event_boundaries": false,
+    "frame_fact_states": false,
+    "frame_support": true,
+    "provided_coarse_eventness": true,
+    "sparse_silver": true,
+    "video_binary_mil": true,
+    "window_fact_states": true
+  },
+  "training_metrics": {
+    "batch_unit": "one_complete_recording_mil_bag",
+    "final_loss": 0.020561980083584785,
+    "gradient_clip_norm": 1.0,
+    "initial_loss": 1.2015900611877441,
+    "mean_training_loss": 2.01447879923,
+    "negative_instance_weight": 1.0,
+    "optimizer": "AdamW",
+    "optimizer_steps": 336,
+    "training_wall_sec": 5.5866863840001315
+  },
+  "repeat_method": {
+    "checkpoints": 2,
+    "cross_hardware_determinism_claimed": false,
+    "e2e_upload_measurement": false,
+    "encoder_cache_reused": true,
+    "fresh_decode_encoder_runs": 0,
+    "independent_gpu_forward_calls_per_clip": 3,
+    "total_gpu_forward_calls": 36,
+    "validation_clips_each": 6
+  },
+  "comparison": {
+    "W1": {
+      "checkpoint_manifest_sha256": "baed627e5950ef67f6338f3cd641dc37f4de655180f5534793a369e592578254",
+      "confusion": {
+        "all_provided_label_denominator": 6,
+        "completed_labeled_denominator": 6,
+        "effective_correct_rate_including_failures": 0.3333333333333333,
+        "effective_positive_recall_including_failures": 0.3333333333333333,
+        "fn": 2,
+        "fp": 2,
+        "policy": "first frozen planned attempt per unique content; repeats do not increase independent sample size",
+        "precision_completed": 0.3333333333333333,
+        "recall_completed": 0.3333333333333333,
+        "repeat_verdict_disagreement_contents": 0,
+        "tn": 1,
+        "tp": 1,
+        "unprocessed_negative": 0,
+        "unprocessed_positive": 0
+      },
+      "evaluation_sha256": "d41d1855c200bd7b078521eec5fdd478d9b8c54a16205efd19a665654016d49b",
+      "repeatability": {
+        "attempts": 6,
+        "bitwise_equal_attempts": 6,
+        "independent_model_forwards": 18,
+        "maximum_absolute_delta": 0.0
+      },
+      "targets": {
+        "all_attempt_public_e2e_10s_target_met": false,
+        "human_event_grounding_100_percent_target_met": false,
+        "provided_binary_detection_target_met": false,
+        "universal_accuracy_claim_permitted": false
+      }
+    },
+    "W1-untrained": {
+      "checkpoint_manifest_sha256": "ac438039d3764ad15f4c87c51d3e9c365c26605f41035185771a0c7109b98d80",
+      "confusion": {
+        "all_provided_label_denominator": 6,
+        "completed_labeled_denominator": 6,
+        "effective_correct_rate_including_failures": 0.5,
+        "effective_positive_recall_including_failures": 0.0,
+        "fn": 3,
+        "fp": 0,
+        "policy": "first frozen planned attempt per unique content; repeats do not increase independent sample size",
+        "precision_completed": null,
+        "recall_completed": 0.0,
+        "repeat_verdict_disagreement_contents": 0,
+        "tn": 3,
+        "tp": 0,
+        "unprocessed_negative": 0,
+        "unprocessed_positive": 0
+      },
+      "evaluation_sha256": "e656cb91160bd68390961ac63d1e74907a5e1a3505d913192b4f4424c4df53d9",
+      "repeatability": {
+        "attempts": 6,
+        "bitwise_equal_attempts": 6,
+        "independent_model_forwards": 18,
+        "maximum_absolute_delta": 0.0
+      },
+      "targets": {
+        "all_attempt_public_e2e_10s_target_met": false,
+        "human_event_grounding_100_percent_target_met": false,
+        "provided_binary_detection_target_met": false,
+        "universal_accuracy_claim_permitted": false
+      }
+    }
+  },
+  "schema_version": "forte.integration.actual-weak-run-aggregate.v1",
+  "receipt_file_sha256": "6d1ecda4ac77b3492b044503e92cdeae9e0a6312865f54a9658ed6dd91af7150",
+  "source_owner_verification": true,
+  "independent_evaluation_reconciliation_pending": true,
+  "private_metadata_archive_sha256": "139f62d6eaa3d71427990c30b6aba58827877b81cc4a952850aebfb6163b64f7",
+  "manual_annotation_prerequisite": false,
+  "candidate_selected": false,
+  "active_service_changed": false,
+  "qwen_or_encoder_finetuned": false,
+  "full_service_latency_measured": false,
+  "human_fact_event_accuracy_measured": false,
+  "private_record_values_included": false,
+  "parameter_changes_prove_optimizer_updates_not_branch_learning": true,
+  "unsupported_targets": {
+    "frame_fact_states": "no eligible targets",
+    "event_boundaries": "no eligible targets",
+    "negative_support": "no eligible targets"
+  },
+  "all_heads_learned_claimed": false
+}

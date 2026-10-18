@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "policy": "Every release run must replace UNMEASURED with measured evidence; fixture tests do not establish GPU or public deployment readiness.",
+  "cases": [
+    {"id": "missing_key_post", "expected": "401 or 403 before body read", "layer": "HTTP", "runner": "qa/system/run.py"},
+    {"id": "wrong_key_post", "expected": "401 or 403 before body read", "layer": "HTTP", "runner": "qa/system/run.py"},
+    {"id": "missing_key_get", "expected": "401 or 403", "layer": "HTTP", "runner": "qa/system/run.py"},
+    {"id": "wrong_key_get", "expected": "401 or 403", "layer": "HTTP", "runner": "qa/system/run.py"},
+    {"id": "unknown_job", "expected": "404", "layer": "HTTP", "runner": "qa/system/run.py"},
+    {"id": "corrupt_media", "expected": "accepted upload eventually failed, never clean verdict", "layer": "HTTP plus worker", "runner": "qa/system/run.py --corrupt-wait-seconds 300"},
+    {"id": "large_valid_upload", "expected": "valid 29 MB or larger MOV completes below configured 256 MiB limit", "layer": "HTTP plus real media", "status": "UNMEASURED"},
+    {"id": "worker_death", "expected": "kill worker after claim, replacement recovers and completes within deadline", "layer": "real Worker process with explicitly synthetic pipeline and SQLite", "runner": "python qa/system/process_recovery.py --output qa/system/worker-process-recovery.json", "real_gpu_pipeline": "UNMEASURED"},
+    {"id": "lease_recovery", "expected": "expired lease reclaimed with incremented fencing version", "layer": "durable store synthetic clock", "runner": "pytest qa/system/test_reliability.py"},
+    {"id": "stale_publication", "expected": "old attempt cannot publish result", "layer": "durable store synthetic clock", "runner": "pytest qa/system/test_reliability.py"},
+    {"id": "cancellation", "expected": "cancelled job fails and old attempt cannot publish", "layer": "durable store synthetic clock", "runner": "pytest qa/system/test_reliability.py"},
+    {"id": "deadline", "expected": "absolute deadline fails job, publication rejected", "layer": "durable store synthetic clock", "runner": "pytest qa/system/test_reliability.py"},
+    {"id": "restart", "expected": "accepted records survive database reopen", "layer": "durable SQLite store", "runner": "pytest qa/system/test_reliability.py"},
+    {"id": "five_distinct_uploads", "expected": "all five uploads counted with completion/failure/timing", "layer": "HTTP plus model", "runner": "python -m forte.observability.benchmark --mode burst"},
+    {"id": "egress_disabled", "expected": "real model completes using local weights with external egress blocked", "layer": "deployment plus model", "status": "UNMEASURED"}
+  ]
+}

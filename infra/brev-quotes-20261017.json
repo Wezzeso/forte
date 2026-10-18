@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-17T14:55:13+05:00",
+  "source": "https://brev.nvidia.com/environment/new/public",
+  "scope": "Live public catalog and configuration cost breakdown; authenticated A100 quote reconfirmed around 15:12 local",
+  "availability_and_quota_verified": false,
+  "quotes": [
+    {
+      "provider": "MASSEDCOMPUTE (shadeform)",
+      "gpu": "1x L40S 48 GB",
+      "cpu": 12,
+      "ram_gb": 72,
+      "storage": "fixed 625 GB SSD",
+      "compute_per_hour_displayed": 1.06,
+      "storage_per_hour_displayed": 0,
+      "total_per_hour_displayed": 1.06,
+      "stoppable": false,
+      "setup_minutes_displayed": 6.5,
+      "warning": "Pre-release option. Cannot stop/restart. Credit exhaustion deletes instance and all data."
+    },
+    {
+      "provider": "CRUSOE",
+      "gpu": "1x L40S 48 GB",
+      "cpu": 8,
+      "ram_gb": 147,
+      "storage_gib": 256,
+      "compute_per_hour_displayed": 1.74,
+      "storage_per_hour_displayed": 0.03,
+      "total_per_hour_displayed": 1.77,
+      "stopped_storage_per_hour_displayed": 0.03,
+      "stoppable": true,
+      "setup_minutes_displayed": 7,
+      "warning": "Pre-release option. Storage continues billing while stopped."
+    },
+    {
+      "provider": "CRUSOE",
+      "gpu": "1x A100 80 GB",
+      "cpu": 12,
+      "ram_gb": 120,
+      "storage_gib": 256,
+      "compute_per_hour_displayed": 1.98,
+      "storage_per_hour_displayed": 0.03,
+      "total_per_hour_displayed": 2.01,
+      "stopped_storage_per_hour_displayed": 0.03,
+      "stoppable": true,
+      "setup_minutes_displayed": 7,
+      "warning": "Pre-release option. Storage continues billing while stopped."
+    }
+  ],
+  "unknown_for_all_quotes": ["Taxes", "Egress", "Minimum billing increment", "Quota", "Actual region", "Reservation guarantee", "Billing behavior after deletion"],
+  "decision": "Prepared one stop-capable A10080 initial smoke-run instance under the user's separate current-account USD50 cap; paid launch awaits action-time provider-terms consent."
+}

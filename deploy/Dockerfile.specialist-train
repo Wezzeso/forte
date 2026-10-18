@@ -1,0 +1,25 @@
+# Isolated public-data trainer. The base is cached and its image ID is recorded
+# before build. It never replaces the CPU app or the live vLLM image.
+ARG BASE_IMAGE=forte-features:cu129-w1
+FROM ${BASE_IMAGE}
+USER 0
+ENV NVIDIA_VISIBLE_DEVICES=void CUDA_VISIBLE_DEVICES="" \
+    PYTHONDONTWRITEBYTECODE=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+    HF_HUB_DISABLE_TELEMETRY=1 WANDB_MODE=disabled DO_NOT_TRACK=1 \
+    OMP_NUM_THREADS=2 MAX_JOBS=2 CMAKE_BUILD_PARALLEL_LEVEL=2
+RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 libgl1 \
+    && rm -rf /var/lib/apt/lists/*
+# The cached feature image inherits optional serving CLIs from its parent. They
+# are unused here and otherwise force unrelated serving dependencies/conflicts.
+# This removes packages only in the new trainer image, using their owner Python.
+RUN /usr/bin/python3.12 -m pip uninstall --yes --break-system-packages vllm fastapi-cloud-cli lmcache
+COPY requirements-public-banknotes.txt constraints-public-banknotes.txt /opt/forte-training/
+RUN python3 -m pip install --no-cache-dir --index-url https://pypi.org/simple \
+       --constraint /opt/forte-training/constraints-public-banknotes.txt \
+       --requirement /opt/forte-training/requirements-public-banknotes.txt \
+       --report /opt/forte-training/pip-resolver.json \
+    && python3 -m pip check \
+    && python3 -m pip freeze > /opt/forte-training/pip-freeze.txt
+RUN python3 -c "import glob,importlib.metadata as m,json,pathlib,torch; from rfdetr import RFDETRNano,RFDETRSmall; from rfdetr.config import RFDETRNanoConfig,RFDETRSmallConfig,TrainConfig; from rfdetr.training import RFDETRModelModule,RFDETRDataModule,build_trainer; p=pathlib.Path('/opt/forte-training'); r=json.loads((p/'pip-resolver.json').read_text()); w=next(x for x in r['install'] if x['metadata']['name'].lower()=='rfdetr'); assert w['download_info']['archive_info']['hashes']['sha256']=='2f23589567123b59302f1cfa9d14d23630f9f583ee6f3468c5891e33fb103b2a'; assert torch.__version__=='2.13.0+cu129' and not torch.cuda.is_initialized() and not glob.glob('/dev/nvidia*'); versions={k:m.version(k) for k in ('torch','torchvision','rfdetr','supervision','pytorch_lightning','torchmetrics','transformers','peft','pycocotools','numpy')}; (p/'versions.json').write_text(json.dumps({'versions':versions,'cuda_build':torch.version.cuda,'cuda_initialized':False,'gpu_device_nodes':[]},indent=2)+'\n')"
+WORKDIR /work
+ENTRYPOINT ["python3"]

@@ -1,0 +1,165 @@
+{
+  "schema": "forte.model-qualification-summary.v1",
+  "generated_at_utc": "2026-10-18T05:44:39.356234+00:00",
+  "status": "not_qualified",
+  "scope": "40_unique_development_videos_in_sample; no_unseen_accuracy_claim",
+  "qualification_claim": false,
+  "promotion_authorized": false,
+  "requirements": {
+    "independent_runs": 2,
+    "n_per_run": 40,
+    "processed_per_run": 40,
+    "failed_per_run": 0,
+    "minimum_correct_per_run": 37,
+    "fp_per_run": 0
+  },
+  "score_gate": {
+    "status": "failed",
+    "runs": [
+      {
+        "run": "q30base20261018a",
+        "status": "failed",
+        "reasons": [
+          "required_fp_not_met",
+          "correct_below_37"
+        ],
+        "counts": {
+          "n": 40,
+          "processed": 40,
+          "failed": 0,
+          "correct": 33,
+          "positive": 21,
+          "negative": 19,
+          "tp": 15,
+          "tn": 18,
+          "fp": 1,
+          "fn": 6
+        },
+        "accuracy": 0.825,
+        "report_sha256": "74fc4683091762cd2f09fc46d1b790032d4a612863da033eaa628a56947c5f63"
+      },
+      {
+        "run": "q30base20261018b",
+        "status": "failed",
+        "reasons": [
+          "required_fp_not_met",
+          "correct_below_37"
+        ],
+        "counts": {
+          "n": 40,
+          "processed": 40,
+          "failed": 0,
+          "correct": 32,
+          "positive": 21,
+          "negative": 19,
+          "tp": 14,
+          "tn": 18,
+          "fp": 1,
+          "fn": 7
+        },
+        "accuracy": 0.8,
+        "report_sha256": "9d19cbcf1fee098033bbbea45279ded49e165010b23cdd684c70da3076f4bc32"
+      }
+    ]
+  },
+  "recorded_identity_consistency": {
+    "status": "passed",
+    "checks": {
+      "model_repo": {
+        "status": "passed",
+        "equal": true
+      },
+      "served_model": {
+        "status": "passed",
+        "equal": true
+      },
+      "observed_revision": {
+        "status": "passed",
+        "equal": true
+      },
+      "config": {
+        "status": "passed",
+        "equal": true
+      },
+      "analyzer_policy_config": {
+        "status": "passed",
+        "equal": true
+      },
+      "media_inventory": {
+        "status": "passed",
+        "equal": true
+      },
+      "labels": {
+        "status": "passed",
+        "equal": true
+      },
+      "runner": {
+        "status": "passed",
+        "equal": true
+      },
+      "scorer": {
+        "status": "passed",
+        "equal": true
+      },
+      "source": {
+        "status": "passed",
+        "equal": true
+      },
+      "source_manifest": {
+        "status": "passed",
+        "equal": true
+      },
+      "small_model_files": {
+        "status": "passed",
+        "equal": true
+      },
+      "serving_image": {
+        "status": "passed",
+        "equal": true
+      },
+      "serving_flags": {
+        "status": "passed",
+        "equal": true
+      },
+      "independent_reports": {
+        "status": "passed",
+        "reason": "distinct_report_hashes_and_run_timestamps"
+      },
+      "historical_run_binding": {
+        "status": "passed",
+        "equal": true
+      }
+    },
+    "source_scope": "before_after_run_attestation",
+    "analyzer_policy_scope": "configuration_only; does_not_hash_source_bytes"
+  },
+  "release_checks": {
+    "schema": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "evidence_originality": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "six_parallel_within_285s": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "candidate_identity_binding": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    }
+  },
+  "additional_release_requirements": [
+    "evidence_scene_relevance_no_regression",
+    "target_gpu_staging_and_rollback_review",
+    "explicit_user_switch_approval",
+    "public_six_upload_check_after_switch"
+  ],
+  "utility_sha256": "44015c8ead58976b80b5de5cf4e6e25c585321f43bf4f6a99cc6a8cc56c6dfc5",
+  "collection_file_sha256": [
+    "0385975f7fd139fc9d809305d4103b4959f25940a4b147708ba0fe932a3c8273",
+    "0385975f7fd139fc9d809305d4103b4959f25940a4b147708ba0fe932a3c8273"
+  ]
+}

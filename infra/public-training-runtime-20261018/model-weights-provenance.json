@@ -1,0 +1,28 @@
+[
+  {
+    "model": "nano",
+    "path": "/data/forte-ml/public/rfdetr-training-runtime-20261018/weights/rf-detr-nano.pth",
+    "url": "https://storage.googleapis.com/rfdetr/nano_coco/checkpoint_best_regular.pth",
+    "bytes": 366287238,
+    "upstream_md5": "fb6504cce7fbdc783f7a46991f07639f",
+    "actual_md5": "fb6504cce7fbdc783f7a46991f07639f",
+    "sha256": "d8d6b9ee57d4d0ed2b1f305163624712a0532cb7bce0c747317984fc5457440d",
+    "license": "Apache-2.0",
+    "license_source": "https://pypi.org/project/rfdetr/1.11.2/",
+    "asset_registry": "rfdetr==1.11.2 rfdetr/assets/model_weights.py",
+    "package_wheel_sha256": "2f23589567123b59302f1cfa9d14d23630f9f583ee6f3468c5891e33fb103b2a"
+  },
+  {
+    "model": "small",
+    "path": "/data/forte-ml/public/rfdetr-training-runtime-20261018/weights/rf-detr-small.pth",
+    "url": "https://storage.googleapis.com/rfdetr/small_coco/checkpoint_best_regular.pth",
+    "bytes": 386045550,
+    "upstream_md5": "fb37061c1af7bace359c91b723a8d5c1",
+    "actual_md5": "fb37061c1af7bace359c91b723a8d5c1",
+    "sha256": "d81979a9213a2109345158ce9232668df4c1ae52e9b8db3f2ec0a8cbad959b33",
+    "license": "Apache-2.0",
+    "license_source": "https://pypi.org/project/rfdetr/1.11.2/",
+    "asset_registry": "rfdetr==1.11.2 rfdetr/assets/model_weights.py",
+    "package_wheel_sha256": "2f23589567123b59302f1cfa9d14d23630f9f583ee6f3468c5891e33fb103b2a"
+  }
+]

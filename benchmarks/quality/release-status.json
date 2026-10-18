@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.quality_release_status.v1",
+  "as_of_local_date": "2026-10-17",
+  "timezone": "Asia/Qyzylorda",
+  "real_accuracy_status": "UNMEASURED",
+  "checkpoint_selection": "untuned_baseline_pending_real_validation",
+  "human_reviewed_ground_truth_status": "UNMEASURED",
+  "real_local_inference_status": "UNMEASURED",
+  "new_angle_status": "UNMEASURED",
+  "evidence_correspondence_status": "UNMEASURED",
+  "actual_media_prompt_injection_status": "UNMEASURED",
+  "split_lock_status": "BLOCKED_PENDING_SCENARIO_REVIEW_AND_A20_LOCK",
+  "scope": "The executable harness and synthetic fixtures validate software behavior only. They do not measure the selected VLM, supplied media accuracy, real latency, legal applicability or evidence visibility.",
+  "required_before_real_claims": [
+    "Private local human review of events, negatives, scenarios and evidence",
+    "Approved content/group-safe split lock before any training",
+    "Real local baseline and candidate inference under identical declared conditions",
+    "Failure-inclusive report with actual measured timing and sample counts",
+    "Untouched final-check run after checkpoint selection"
+  ]
+}

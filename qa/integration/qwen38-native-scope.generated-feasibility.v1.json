@@ -1,0 +1,15 @@
+{
+  "blanket_all_native_positive_action_gate": false,
+  "budget_cases": 6,
+  "budget_estimates_fit": 4,
+  "catalog_fact_definitions_matched": 19,
+  "coverage_partition_checks_passed": 4,
+  "fixture_count": 4,
+  "gpu_calls": 0,
+  "media_created_or_decoded": false,
+  "model_calls": 0,
+  "model_or_processor_forward_executed": false,
+  "plan_sha256": "2d1e34616f94328089afa20cd2586a541a1d58fd40fc14f3ff6623eabed9d0ea",
+  "private_data_accessed": false,
+  "schema_version": "forte.generated-native-scope-feasibility.v1"
+}

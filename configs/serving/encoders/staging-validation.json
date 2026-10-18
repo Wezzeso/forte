@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "created_at_utc": "2026-10-17T11:42:06.920475+00:00",
+  "scope": "public_image_encoder_candidates_only",
+  "models": [
+    {
+      "snapshot": "/data/forte-fast-models/siglip2-base-patch16-256",
+      "staging": {
+        "verified": true,
+        "artifact_kind": "image_encoder",
+        "candidate": true,
+        "model_id": "google/siglip2-base-patch16-256",
+        "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "license": "apache-2.0",
+        "files_verified": 4,
+        "bytes_verified": 1500989269,
+        "manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+        "local_inference_verified": false,
+        "selected_for_production": false,
+        "bytes_downloaded": 1500989269,
+        "elapsed_sec": 19.123969470999327
+      },
+      "independent_offline_verification": {
+        "verified": true,
+        "artifact_kind": "image_encoder",
+        "candidate": true,
+        "model_id": "google/siglip2-base-patch16-256",
+        "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "processor_revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "license": "apache-2.0",
+        "files_verified": 4,
+        "bytes_verified": 1500989269,
+        "manifest_sha256": "cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7",
+        "local_inference_verified": false,
+        "selected_for_production": false
+      }
+    },
+    {
+      "snapshot": "/data/forte-fast-models/siglip2-base-patch32-256",
+      "staging": {
+        "verified": true,
+        "artifact_kind": "image_encoder",
+        "candidate": true,
+        "model_id": "google/siglip2-base-patch32-256",
+        "revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+        "processor_revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+        "license": "apache-2.0",
+        "files_verified": 4,
+        "bytes_verified": 1507477355,
+        "manifest_sha256": "e2bcad4f9ca992c71d2628e6f402d9120f8a50e1f6b3e594d4961844814ee0f9",
+        "local_inference_verified": false,
+        "selected_for_production": false,
+        "bytes_downloaded": 1507477355,
+        "elapsed_sec": 18.062721799999963
+      },
+      "independent_offline_verification": {
+        "verified": true,
+        "artifact_kind": "image_encoder",
+        "candidate": true,
+        "model_id": "google/siglip2-base-patch32-256",
+        "revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+        "processor_revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+        "license": "apache-2.0",
+        "files_verified": 4,
+        "bytes_verified": 1507477355,
+        "manifest_sha256": "e2bcad4f9ca992c71d2628e6f402d9120f8a50e1f6b3e594d4961844814ee0f9",
+        "local_inference_verified": false,
+        "selected_for_production": false
+      }
+    }
+  ],
+  "error_code": null,
+  "elapsed_sec": 40.06378140400011,
+  "bytes_verified": 3008466624,
+  "bytes_downloaded": 3008466624,
+  "data_free_bytes_before": 255666774016,
+  "data_free_bytes_after": 252658270208,
+  "canonical_qwen_manifest_sha256_before": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc",
+  "canonical_qwen_manifest_sha256_after": "249977e15be3d72425155475e59adf2385747b16e28654c9d13d45761abf75cc",
+  "local_inference_verified": false,
+  "selected_for_production": false
+}

@@ -1,0 +1,115 @@
+{
+  "all_attempt_metrics": {
+    "all_criteria_passed": 0,
+    "all_criteria_rate": null,
+    "detection_passed": 0,
+    "detection_rate": null,
+    "grounding_and_evidence_passed": 0,
+    "grounding_and_evidence_rate": null,
+    "strict_latency_passed": 0,
+    "strict_latency_rate": null,
+    "timing_unknown_or_invalid": 0,
+    "upload_start_to_full_result_ms": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    }
+  },
+  "claim_limits": {
+    "observed_reviewed_sample_all_criteria_passed": false,
+    "one_millisecond_action_timing_claim_permitted": false,
+    "synthetic_results_are_software_checks_only": false,
+    "universal_100_percent_accuracy_claim_permitted": false
+  },
+  "denominators": {
+    "completed": 0,
+    "distinct_sample_count": 0,
+    "expected_attempts": 0,
+    "failed_or_unprocessed": 0,
+    "fully_reviewed_locked_truth_attempts": 0,
+    "missing_attempt_results": 0,
+    "note": "Repeated attempts count for latency/service acceptance but do not increase independent video sample size."
+  },
+  "events": {
+    "fn": 0,
+    "fp": 0,
+    "matched_grounding_and_evidence_passed": 0,
+    "tp": 0
+  },
+  "evidence_blocker_counts": {
+    "all_attempt_denominator_not_frozen_before_run": 1,
+    "empty_expected_attempt_manifest": 1,
+    "heldout_use_or_tuning_not_disclosed": 1,
+    "latest_exposure_scenario_audit_unverified": 1,
+    "model_conditions_or_rule_provenance_missing": 1,
+    "real_local_execution_unverified": 1,
+    "reviewed_positive_or_negative_coverage_missing": 1,
+    "split_not_locked_or_integrity_failed": 1,
+    "uncached_execution_unverified": 1
+  },
+  "input_binding": {
+    "conditions_sha256": null,
+    "expected_attempt_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "exposure_registry_sha256": null,
+    "model_revision": null,
+    "rules_sha256": null,
+    "split_manifest_sha256": "",
+    "split_records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "limitations": [
+    "100% is a target; even a perfect finite reviewed run establishes only its declared observed sample result, never universal accuracy.",
+    "All failures, missing attempts, invalid payloads and unknown timing fail the strict target; no successful subset substitutes for all attempts.",
+    "Full human review, applicable rule/source review, frame correspondence and locked exposure-safe heldout groups must be real, not model-assigned labels or filled approval flags.",
+    "Event matching tolerance is an explicit team diagnostic, not an organizer tolerance or a claim of 1 ms action localization."
+  ],
+  "schema_version": "forte.strict_targets.v1",
+  "status": "UNMEASURED",
+  "targets": {
+    "end_to_end_deadline_ms": 10000.0,
+    "event_match_tolerance_ms": 1000.0,
+    "latency_comparison": "strictly_less_than",
+    "latency_origin": "client_upload_start_to_full_result_byte",
+    "max_original_frame_anchor_error_ms": null,
+    "observed_detection_rate": 1.0,
+    "observed_grounding_and_evidence_rate": 1.0
+  },
+  "timestamp_diagnostics": {
+    "adjacent_original_frame_spacing_ms": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "display_rounding": "round(source_pts_sec * 1000); representation only",
+    "display_rounding_error_ms": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "error_to_human_selected_original_frame_anchor_ms": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "p50": null,
+      "p95": null
+    },
+    "illustration": "At exactly 30 fps, adjacent original frames are about 33.333 ms apart; printing milliseconds does not create 1 ms action timing accuracy.",
+    "numeric_unit": "milliseconds",
+    "sampling_spacing_is_not_source_frame_resolution": true,
+    "source_frame_spacing_does_not_establish_true_action_onset": true,
+    "source_identity_verification": "trusted upstream A05 validation export; offline evaluator does not reread source media or recompute canonical frame identity"
+  },
+  "whole_video": {
+    "fn": 0,
+    "fp": 0,
+    "tn": 0,
+    "tp": 0,
+    "unprocessed_negative": 0,
+    "unprocessed_positive": 0
+  }
+}

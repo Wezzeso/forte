@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:52:42.402757+00:00",
+  "quality_review": "unmeasured; numeric processing telemetry is not validation ground truth",
+  "http_summary": {
+    "attempted": 1,
+    "completed": 0,
+    "failed": 1,
+    "http_request_count": 130,
+    "completed_repeat_failures": 0,
+    "timeouts": 0,
+    "metrics": {
+      "asgi_acceptance_after_body": {
+        "count": 1,
+        "p50_ms": 18.798,
+        "p95_ms": null,
+        "max_ms": 18.798,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "client_post_total": {
+        "count": 1,
+        "p50_ms": 2284.8783,
+        "p95_ms": null,
+        "max_ms": 2284.8783,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_asgi_lookup": {
+        "count": 128,
+        "p50_ms": 1.8559999999999999,
+        "p95_ms": 2.355,
+        "max_ms": 2.739,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "processing_full_transfer": {
+        "count": 128,
+        "p50_ms": 203.1775,
+        "p95_ms": 214.5287,
+        "max_ms": 282.5701,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_first_body_byte": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "completed_full_transfer": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      },
+      "upload_start_to_full_result_upper_bound": {
+        "count": 0,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null,
+        "p95_minimum_samples": 20,
+        "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+      }
+    },
+    "targets": [
+      {
+        "target": "post_body_acceptance_p95",
+        "threshold_ms": 150,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_lookup_p95",
+        "threshold_ms": 25,
+        "status": "achieved",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "completed_first_body_byte_p95",
+        "threshold_ms": 50,
+        "status": "unmeasured",
+        "scope": "observed sample; completed first byte includes client/network overhead"
+      },
+      {
+        "target": "processing_safety",
+        "threshold_ms": 240000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      },
+      {
+        "target": "conservative_organizer_cutoff",
+        "threshold_ms": 300000,
+        "status": "missed",
+        "scope": "all observed uploads; includes polling interval and full result transfer"
+      }
+    ],
+    "inference_speed_claim": "not established by client transfer measurements",
+    "principal_benchmark_conditions_declared": true,
+    "condition_verification": "operator declaration only; novel-content and server cache audit required"
+  },
+  "worker_telemetry_matched_records": 1,
+  "ignored_log_lines": 1,
+  "telemetry_sample_count": 1,
+  "missing_terminal_worker_records": 0,
+  "stage_duration_ms": {
+    "analysis": {
+      "count": 1,
+      "p50_ms": 59243.817568,
+      "p95_ms": null,
+      "max_ms": 59243.817568,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    },
+    "coarse_model": {
+      "count": 1,
+      "p50_ms": 30392.365979,
+      "p95_ms": null,
+      "max_ms": 30392.365979,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    },
+    "frame_preparation": {
+      "count": 1,
+      "p50_ms": 0.290467,
+      "p95_ms": null,
+      "max_ms": 0.290467,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    },
+    "probe_decode": {
+      "count": 1,
+      "p50_ms": 1723.437971,
+      "p95_ms": null,
+      "max_ms": 1723.437971,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    },
+    "refinement": {
+      "count": 1,
+      "p50_ms": 27093.4589,
+      "p95_ms": null,
+      "max_ms": 27093.4589,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    },
+    "rules": {
+      "count": 1,
+      "p50_ms": 1.465615,
+      "p95_ms": null,
+      "max_ms": 1.465615,
+      "p95_minimum_samples": 20,
+      "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee",
+      "missing_sample_count": 0
+    }
+  },
+  "completed_worker_analysis_to_publication": {
+    "count": 0,
+    "p50_ms": null,
+    "p95_ms": null,
+    "max_ms": null,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "acceptance_to_first_claim": {
+    "count": 1,
+    "p50_ms": 201.47699999999998,
+    "p95_ms": null,
+    "max_ms": 201.47699999999998,
+    "p95_minimum_samples": 20,
+    "p95_method": "empirical_nearest_rank; descriptive, not a population guarantee"
+  },
+  "selected_mix_analysis_p95_90000ms_reference": {
+    "status": "unmeasured",
+    "scope": "selected duration mix only; does not establish 145-second-video p95"
+  },
+  "full_145_second_video_p95_target": "unmeasured; requires duration-filtered sample and sufficient observations",
+  "planning_stage_budgets_ms": {
+    "queue": 5000,
+    "probe_decode_and_preparation": 10000,
+    "coarse_model": 40000,
+    "refinement": 25000,
+    "rules_evidence_publication": 5000,
+    "margin": 5000
+  },
+  "queue_duration": "same-host accepted_at to first claimed UTC; dispatch after claim excluded",
+  "prefill_and_gpu_compute": "unmeasured unless actual server metrics separately verified",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "http_outcome": "failed",
+      "worker_telemetry": "measured",
+      "attempt": 1,
+      "worker_outcome": "failed",
+      "worker_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "analysis": 59243.817568
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "pipeline_timing": {
+        "clock": "process_monotonic",
+        "stages_ms": {
+          "rules": 1.465615,
+          "probe_decode": 1723.437971,
+          "refinement": 27093.4589,
+          "coarse_model": 30392.365979,
+          "frame_preparation": 0.290467
+        },
+        "analysis_to_publication_ms": null,
+        "model_requests": null
+      },
+      "acceptance_to_first_claim_ms": 201.47699999999998
+    }
+  ]
+}

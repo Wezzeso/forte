@@ -1,0 +1,10 @@
+{
+  "status": "measured",
+  "samples": [],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:38:48.797994+00:00",
+  "clock_domain": "same team GPU host UTC for API and worker containers",
+  "clock_assumption": "containers share host kernel clock; no client/server clock subtraction",
+  "measurement": "durable accepted_at to recorded claimed UTC; dispatch after claim excluded",
+  "ntp_state": "not measured by this collector"
+}

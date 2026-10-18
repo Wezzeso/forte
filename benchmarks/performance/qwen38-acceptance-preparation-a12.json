@@ -1,0 +1,61 @@
+{
+  "schema_version": "forte.qwen38-acceptance-operational-preparation.v1",
+  "status": "prepared_runtime_selection_and_exact_root_releases_pending",
+  "independent_train_contents": 2,
+  "provided_positive_train_contents": 1,
+  "provided_negative_train_contents": 1,
+  "fresh_uploads_per_content": 3,
+  "source_job_denominator": 6,
+  "minimum_initial_full_fact_requests_if_all_jobs_start": 15,
+  "maximum_reserved_model_post_slots_required": 126,
+  "provider_retry_slots_included": true,
+  "worker_settings_required": {
+    "window_seconds": 8,
+    "stride_seconds": 4,
+    "sample_fps": 2,
+    "max_frames_per_window": 16,
+    "max_refinement_passes": 8,
+    "max_concurrent_jobs": 1,
+    "max_concurrent_clips": 1,
+    "max_inflight_per_job": 1,
+    "staged_screening": false,
+    "provider_max_attempts": 2
+  },
+  "separate_exact_source_and_model_reservations_required": true,
+  "runtime_binding_created": false,
+  "model_or_source_reservations_created_by_preparation": 0,
+  "uploads_performed": 0,
+  "private_model_calls_performed": 0,
+  "serving_or_admission_changes_performed": false,
+  "final_private_bundle": {
+    "path": "benchmarks/private/qwen38/acceptance-six.ops.final-a12.tar.gz",
+    "sha256": "b4c2ba2df50dd32b7cc344fae73929ec41d4508888f276faf4f317e583f785b3",
+    "bytes": 5730261,
+    "members": 24,
+    "member_hashes_verified": true,
+    "isolated_operational_imports_verified": 3,
+    "api_key_included": false,
+    "root_release_included": false
+  },
+  "generated_only_acceptance_and_ops_tests": {
+    "command": ".venv/Scripts/python.exe -m pytest qa/system/test_qwen38_acceptance.py qa/system/test_qwen38_acceptance_ops.py -q",
+    "passed": 40,
+    "real_model_or_private_media_used_by_tests": false
+  },
+  "measurement_claims": {
+    "real_upload_to_result_latency": "unmeasured",
+    "fresh_full_pipeline_repeatability": "unmeasured",
+    "browser_usable_result_latency": "unmeasured",
+    "reviewed_event_type_legal_accuracy": "unmeasured"
+  },
+  "required_execution_order": [
+    "Root selects and binds an actual serving runtime and full worker recipe.",
+    "Offline bind freezes six source attempts and 126 model POST slots.",
+    "A09 refreshes inventory and reserves the exact model plan under its root release.",
+    "Bind and root-activate the genuine A13 traced worker with exact CPU/source pins.",
+    "A09 reserves the exact six-source plan under its separate root release.",
+    "Root invokes the six fresh uploads using the private mounted API key file.",
+    "Offline export joins actual trace witnesses and immutable results; report all outcomes.",
+    "Settle all source/model slots, retaining failed, uncertain and unused outcomes."
+  ]
+}

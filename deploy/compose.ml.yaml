@@ -1,0 +1,110 @@
+# Standalone project: never merge this file with the production Compose stack.
+# Explicit `run --rm` only. GPU ownership must first be released to the operator.
+name: forte-ml
+x-ml-runtime: &ml-runtime
+  image: ${FORTE_FEATURE_IMAGE:?Set an existing immutable local feature image ID}
+  pull_policy: never
+  entrypoint: [python3]
+  working_dir: /app
+  user: "${FORTE_ML_UID:-1000}:${FORTE_ML_GID:-1000}"
+  restart: "no"
+  init: true
+  read_only: true
+  network_mode: none
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  cpus: 4
+  mem_limit: 16g
+  shm_size: 1g
+  environment:
+    PATH: /opt/forte-features/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    PYTHONPATH: /app:/app/src
+    PYTHONDONTWRITEBYTECODE: "1"
+    HF_HUB_OFFLINE: "1"
+    TRANSFORMERS_OFFLINE: "1"
+    HF_HUB_DISABLE_TELEMETRY: "1"
+    VLLM_NO_USAGE_STATS: "1"
+    WANDB_DISABLED: "true"
+    TOKENIZERS_PARALLELISM: "false"
+    OMP_NUM_THREADS: "2"
+    CUBLAS_WORKSPACE_CONFIG: :4096:8
+    HOME: /tmp
+    HF_HOME: /tmp/hf
+    XDG_CACHE_HOME: /tmp/xdg
+    CUDA_CACHE_PATH: /tmp/cuda
+  volumes:
+    - type: bind
+      source: ${FORTE_ML_SOURCE:?Set the extracted code-only ML source directory}
+      target: /app
+      read_only: true
+      bind: {create_host_path: false}
+    - type: bind
+      source: ${FORTE_ENCODER_ROOT:?Set the verified encoder snapshot parent}
+      target: /encoders
+      read_only: true
+      bind: {create_host_path: false}
+    - type: bind
+      source: ${FORTE_ML_PRIVATE:?Set the separate restricted private inputs directory}
+      target: /private
+      read_only: true
+      bind: {create_host_path: false}
+    - type: bind
+      source: ${FORTE_ML_SOURCES:?Set the hash-verified private MOV source directory}
+      target: /private/sources
+      read_only: true
+      bind: {create_host_path: false}
+    - type: bind
+      source: ${FORTE_ML_CACHE:?Set the separate restricted feature-cache directory}
+      target: /cache
+      bind: {create_host_path: false}
+    - type: bind
+      source: ${FORTE_ML_RUNS:?Set the separate restricted checkpoint directory}
+      target: /runs
+      bind: {create_host_path: false}
+  tmpfs:
+    - /tmp:size=2g,nosuid,nodev,mode=1777
+  logging: {driver: none}
+services:
+  metadata:
+    <<: *ml-runtime
+    profiles: [metadata]
+    command: [-m, deploy.feature_runtime_check]
+  encoder-bench:
+    <<: *ml-runtime
+    profiles: [encoder]
+    command:
+      - -m
+      - serving.fast_encoder
+      - --snapshot
+      - /encoders/siglip2-base-patch16-256
+      - --manifest
+      - configs/serving/encoders/siglip2-base-patch16-256.manifest.json
+      - --manifest-sha256
+      - cd51863090e8c411a1227d8039e44118c44488243e3d615d73907106568877e7
+      - --batch-size
+      - "32"
+      - --frames
+      - "4273"
+      - --warmup-batches
+      - "2"
+      - --trials
+      - "1"
+    deploy: &gpu-reservation
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${FORTE_ML_GPU_ID:-0}"]
+              capabilities: [gpu]
+  feature-cache:
+    <<: *ml-runtime
+    profiles: [features]
+    # Explicit command override is required after the private source/cache pins
+    # and A15 GPU ownership are confirmed. The default allocates no CUDA device.
+    command: [-m, deploy.feature_runtime_check, --require-av, --training]
+    deploy: *gpu-reservation
+  head-train:
+    <<: *ml-runtime
+    profiles: [head]
+    command: [-m, training.temporal.train_weak, --config, /private/W1.local.json, --preflight]
+    deploy: *gpu-reservation

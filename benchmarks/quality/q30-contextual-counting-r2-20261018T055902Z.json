@@ -1,0 +1,1578 @@
+{
+  "schema": "forte.contextual-procedure-diagnostic.v1",
+  "generated_at_utc": "2026-10-18T05:59:02.189271+00:00",
+  "labels_sha256": "1525e16117ee375a1581967a4f2f855c4d88c107dec4998878f9306031be73d8",
+  "tool_sha256": "a5264e7aa0634b6f79448319b0b595574f8851b06c430381fe6e1d189b9cb00f",
+  "procedure_coverage_helper_sha256": "5a99f5e6f45964a377f8c92aa68cee47e645f54076d38de3d9d0d146107eaacc",
+  "diagnostic_only": true,
+  "inference_executed": false,
+  "type_enablement_qualified": false,
+  "production_change_authorized": false,
+  "heldout_accuracy_claim": false,
+  "cross_validation_claim": false,
+  "source": {
+    "source_complete": true,
+    "paired_consensus_policy_verified": true,
+    "sample_interval_s": 0.2,
+    "source_success": true,
+    "sampling_policy_verified": true
+  },
+  "definition": {
+    "action": "paired_cash_recount_yes",
+    "counterparty": "paired_visitor_absent; no_visitor_present",
+    "required_clear": [
+      "desk_visibility",
+      "counting_machine_visibility",
+      "cashier_hands_visibility"
+    ],
+    "counting_modality_resolved": false,
+    "duration": "last_qualifying_sample_minus_first_qualifying_sample; no_extrapolation",
+    "maximum_consecutive_sample_gap_s": 0.25,
+    "unclear_samples_break_runs": true,
+    "continuous_condition_proven": false
+  },
+  "operating_point": {
+    "threshold_s": 2.8,
+    "comparison": "duration_proxy_s >= threshold_s",
+    "maximum_observed_negative_episode_s": 2.6,
+    "one_sample_margin_s": 0.2,
+    "negative_videos_expected": 19,
+    "negative_rows_recorded": 19,
+    "negative_rows_with_complete_coverage": 0,
+    "negative_episode_count": 1,
+    "negative_episode_duration_distribution": {
+      "2.6": 1
+    },
+    "calibration_complete": false,
+    "reasons": [
+      "not_all_19_negatives_have_complete_contextual_sampling_coverage"
+    ],
+    "labels_used_for": "negative_membership_only; no_positive_labels_or_times_in_operating_point",
+    "calibration_scope": "in_sample_negative_envelope; zero_negative_fires_is_not_independent_validation",
+    "fitted_parameters": 1,
+    "margin_tuned": false
+  },
+  "count_without_client": {
+    "summary": {
+      "n": 40,
+      "processed": 0,
+      "failed": 40,
+      "correct": 0,
+      "accuracy": 0.0,
+      "positive": 21,
+      "negative": 19,
+      "tp": 0,
+      "fn": 0,
+      "fp": 0,
+      "tn": 0,
+      "failed_positive": 21,
+      "failed_negative": 19,
+      "recall": 0.0,
+      "precision": null,
+      "type_labeled": 0,
+      "type_correct": 0,
+      "time_labeled_videos": 21,
+      "timecode_scored": 0,
+      "timecode_err_median": null,
+      "timecode_within_2s": 0,
+      "event_time_labels": 0,
+      "event_time_matches": 0,
+      "wall_max": null,
+      "wall_median": null,
+      "wall_scored": 0
+    },
+    "gate": {
+      "passed": false,
+      "reasons": [
+        "processing_failures",
+        "negative_calibration_incomplete"
+      ],
+      "regressed_videos": [],
+      "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+    },
+    "positive_score_passes_after_threshold_freeze": 1,
+    "type_correctness_measured": false,
+    "videos": [
+      {
+        "name": "X-1",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-10",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-11",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-12",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-13",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-14",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-15",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-16",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-17",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-18",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-19",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-2",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-20",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-21",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-22",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-23",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-24",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-25",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-26",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-27",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-28",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-29",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-3",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-30",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-31",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-32",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-33",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-34",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-35",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-37",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-38",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-39",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-4",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-40",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-43",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-44",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-45",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-46",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-5",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      },
+      {
+        "name": "X-8",
+        "processed": false,
+        "events": [],
+        "correct": false,
+        "prediction": null
+      }
+    ]
+  },
+  "disabled_type_signals": {
+    "NO_AUTHENTICITY_CHECK": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 26,
+        "step_observed": 2
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    },
+    "NO_CLIENT_ID": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 27,
+        "step_observed": 1
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    },
+    "NO_RECOUNT": {
+      "summary": {
+        "n": 40,
+        "processed": 0,
+        "failed": 40,
+        "correct": 0,
+        "accuracy": 0.0,
+        "positive": 21,
+        "negative": 19,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "failed_positive": 21,
+        "failed_negative": 19,
+        "recall": 0.0,
+        "precision": null,
+        "type_labeled": 0,
+        "type_correct": 0,
+        "time_labeled_videos": 21,
+        "timecode_scored": 0,
+        "timecode_err_median": null,
+        "timecode_within_2s": 0,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "wall_max": null,
+        "wall_median": null,
+        "wall_scored": 0
+      },
+      "window_signal_counts": {
+        "insufficient_coverage": 27,
+        "step_observed": 1
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "processing_failures"
+        ],
+        "regressed_videos": [],
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "type_enablement_qualified": false,
+      "type_correctness_measured": false,
+      "interpretation": "sampling_proxy_omission_signals_only; no_rule_or_threshold_change"
+    }
+  },
+  "observations": [
+    {
+      "name": "X-1",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 25.933333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.161954,
+            "sampled_frames": 131,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-10",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 3.0,
+          "end": 10.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.414286,
+            "sampled_frames": 36,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 11.0,
+          "end": 15.566667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.408759,
+            "sampled_frames": 24,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-11",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-12",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-13",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 48.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.622917,
+            "sampled_frames": 241,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.012448,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-14",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 40.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.896296,
+            "sampled_frames": 203,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.206897,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 43.5,
+          "end": 67.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.883333,
+            "sampled_frames": 120,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.058333,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 69.5,
+          "end": 97.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.85,
+            "sampled_frames": 140,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 98.0,
+          "end": 114.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.915152,
+            "sampled_frames": 83,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 115.0,
+          "end": 120.5,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 28,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-15",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 20.866667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.602236,
+            "sampled_frames": 106,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.273585,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-16",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 22.733021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.270101,
+            "sampled_frames": 105,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-17",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 14.733333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.246606,
+            "sampled_frames": 75,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.093333,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-18",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 22.6,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.0,
+            "sampled_frames": 114,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-19",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 46.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.35,
+            "sampled_frames": 221,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 48.0,
+          "end": 57.433021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.0,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-2",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 3.0,
+          "end": 17.066667,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.310427,
+            "sampled_frames": 72,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-20",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 11.633333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.633166,
+            "sampled_frames": 34,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-21",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [
+        {
+          "start": 13.4,
+          "end": 16.0,
+          "duration_proxy_s": 2.6,
+          "qualifying_samples": 14,
+          "prior_visitor_clear_in_window": false,
+          "prior_cash_acceptance_seen_in_window": false,
+          "continuous_condition_proven": false
+        }
+      ],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [
+            {
+              "start": 13.4,
+              "end": 16.0,
+              "duration_proxy_s": 2.6,
+              "qualifying_samples": 14,
+              "prior_visitor_clear_in_window": false,
+              "prior_cash_acceptance_seen_in_window": false,
+              "continuous_condition_proven": false
+            }
+          ],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 17.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.883333,
+            "sampled_frames": 61,
+            "max_sample_gap_s": 0.233333,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.344262,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-22",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-23",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-24",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 3.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.566667,
+            "sampled_frames": 16,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-25",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 3.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 16,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.4375,
+          "coverage_complete": false
+        },
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 7.0,
+          "end": 11.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 21,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-26",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 19.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.764045,
+            "sampled_frames": 90,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.077778,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-27",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 0.0,
+          "end": 9.0,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.777778,
+            "sampled_frames": 46,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-28",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-29",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-3",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 2.0,
+          "end": 20.033021,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.232906,
+            "sampled_frames": 91,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.076923,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-30",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 6.0,
+          "end": 18.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 65,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-31",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 15.0,
+          "end": 23.8,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 45,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.155556,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-32",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 12.0,
+          "end": 21.3,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 1.0,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": true,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.0,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-33",
+      "source_done": true,
+      "coverage_complete": false,
+      "failure_codes": [
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": true,
+          "episodes": [],
+          "failure_codes": [
+            "partial_visibility_or_action_coverage"
+          ],
+          "start": 5.0,
+          "end": 14.333333,
+          "visibility": {
+            "schema": "forte.procedure-sampled-visibility.v1",
+            "visible_fraction_proxy": 0.860714,
+            "sampled_frames": 48,
+            "max_sample_gap_s": 0.2,
+            "meets_90pct_sampling_proxy": false,
+            "continuous_visibility_proven": false,
+            "interpolation": "nearest_sample_cells; not_observed_between_samples"
+          },
+          "counting_action_known_fraction": 0.145833,
+          "coverage_complete": false
+        }
+      ]
+    },
+    {
+      "name": "X-34",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": false,
+          "episodes": [],
+          "failure_codes": [
+            "window_projection_or_source_failure"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "X-35",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": [
+        {
+          "processed": false,
+          "episodes": [],
+          "failure_codes": [
+            "window_projection_or_source_failure"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "X-37",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-38",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-39",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-4",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-40",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-43",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-44",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-45",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-46",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-5",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    },
+    {
+      "name": "X-8",
+      "source_done": false,
+      "coverage_complete": false,
+      "failure_codes": [
+        "source_failed_or_abstained",
+        "observed_windows_missing_or_invalid",
+        "video_partial_or_unmeasured_context_coverage"
+      ],
+      "episodes": [],
+      "windows": []
+    }
+  ],
+  "limitations": [
+    "5_fps_local_action_intervals_and_nearest_sample_visibility_are_proxies; between_sample_behavior_is_unobserved",
+    "state_selected_transaction_windows_do_not_exhaust_the_video; abstained_rows_are_unassessed",
+    "paired_visitor_absence_is_model_perception; no_person_tracking_or_cash_ownership_proof",
+    "all_negative_calibration_reuses_development_data; no_LOVO_or_augmented_non_target_qualification",
+    "typed_ground_truth_original_evidence_rule_grounding_and_API_deadline_checks_not_measured"
+  ],
+  "source_report_sha256": "e61c92c2cbb13030c0b7d8da487dd967538f73bbae7806e1f002585f14d87581"
+}

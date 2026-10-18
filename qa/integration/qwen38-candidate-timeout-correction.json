@@ -1,0 +1,56 @@
+{
+  "schema_version": "forte.qwen38.candidate-timeout-correction.v1",
+  "captured_at_utc": "2026-10-17T16:42:34.025559+00:00",
+  "status": "source_frozen",
+  "source_sha256": {
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "serving/qwen38_source_lineage.py": "7ca8e778493ab2003de39c4021e91cba1d201bb9af0aa9852aa26df86210e71e",
+    "deploy/qwen38_bind_runtime.py": "bf4e20c3a009c347a3369cceb8fd2776d69f8591a9a40a18ee83ca2f776fa916",
+    "serving/tests/test_qwen38_timeout_lineage.py": "84ec4eb7b41082fc42f105047473aad8b75c93acd724bc01828cc78cf4387928",
+    "serving/tests/test_qwen38_family_timeout_binding.py": "769c40c3c7483e0e8458e1d0e9d73ff2e7a527d82502449dfaa5a70b08cd9c62",
+    "tests/test_candidate_pipeline_config.py": "8ae1510a345466b686c39a70ee94c18691c9b5475f1ac8169e3e02be71703252"
+  },
+  "correction": "Only candidate provider forwards validated runtime limits.request_timeout_seconds to LocalModelConfig.request_timeout_sec; baseline default remains60",
+  "actual_http_transport_verified_with_generated_mock": {
+    "candidate_read_timeout_sec": 240,
+    "baseline_default_sec": 60,
+    "actual_network_calls": 0
+  },
+  "actual_91263_source_proof": {
+    "schema_version": "forte.qwen38.candidate-http-timeout-delta.v1",
+    "verified": true,
+    "old_source_sha256": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+    "new_source_sha256": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "unchanged_ast_sha256": "cb204981c03dfc32f00a2bb9b6c27033cd3005a0ca2459c1bc14498d8eb14797",
+    "added_keyword": "request_timeout_sec",
+    "added_value": "config[\"limits\"][\"request_timeout_seconds\"]",
+    "candidate_branch_only": true,
+    "other_ast_identical": true,
+    "other_source_bytes_identical": true,
+    "baseline_default_unchanged": true,
+    "comparison_condition_difference": "candidate HTTP timeout now inherits the configured request budget"
+  },
+  "independent_a20_timeout_suite": {
+    "tests_passed": 135,
+    "subtests_passed": 35,
+    "receipt": "qa/integration/qwen38_timeout_closure.json",
+    "receipt_sha256": "99366c1e5fb03b821caa5a3eb4b8f201a1dd8e98a5c2bac204d2fe2abd6c90a3"
+  },
+  "independent_a20_family_suite": {
+    "tests_passed": 22,
+    "receipt": "qa/integration/qwen38_family_timeout.json",
+    "receipt_sha256": "dab0cb1aaa6cbc69710ad421521a1f4e80ea2db6b767ff09f0467e695dc56761"
+  },
+  "equivalence_disclosure": {
+    "protected_common_files": 88,
+    "byte_identical": 87,
+    "audited_candidate_only_timeout_delta": 1,
+    "all_common_bytes_identical": false
+  },
+  "frozen_family_modified": false,
+  "original_training_or_adapter_or_91263_or_b895_archive_modified": false,
+  "model_or_gpu_calls": 0,
+  "private_inference_calls": 0,
+  "remote_mutations": false,
+  "requires_new_release": true
+}

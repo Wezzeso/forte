@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.qwen38.independent-native-fullsix-protocol-qa.v1",
+  "captured_at_utc": "2026-10-17T18:04:22.988950+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 1.593,
+  "source_hashes_before": {
+    "benchmarks/performance/qwen38_native_fullsix.py": "f8591adf6fae3cb66d90c2982f175ead7ed301e181a32eff71823239298d0ac9",
+    "qa/system/test_qwen38_native_fullsix.py": "b46f7ed8b65b6f942edadea894f991899ed06edc8c418cf85bd8ee68f0bb5ce0",
+    "qa/integration/qwen38_native_fullsix_boundary_test.py": "6564815e0cb80e0a3c3761b7f1333cbfc72c072c5f6c78ca46c1316261c9e626",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/protocol.frozen.json": "2b5e22c90040084f694eab9d0dab675c9efdede8c200cdbf985a461160ef9ea3"
+  },
+  "source_hashes_after": {
+    "benchmarks/performance/qwen38_native_fullsix.py": "f8591adf6fae3cb66d90c2982f175ead7ed301e181a32eff71823239298d0ac9",
+    "qa/system/test_qwen38_native_fullsix.py": "b46f7ed8b65b6f942edadea894f991899ed06edc8c418cf85bd8ee68f0bb5ce0",
+    "qa/integration/qwen38_native_fullsix_boundary_test.py": "6564815e0cb80e0a3c3761b7f1333cbfc72c072c5f6c78ca46c1316261c9e626",
+    "benchmarks/private/qwen38/native-bf16-fullsix-a12/protocol.frozen.json": "2b5e22c90040084f694eab9d0dab675c9efdede8c200cdbf985a461160ef9ea3"
+  },
+  "changed_during_run": [],
+  "test_log_sha256": "5875540608d03c70a8773dd7e40274d0286c7dcf685541266ae7cac082180803",
+  "scope": "Genuine frozen protocol safe metadata plus generated mutations only; no model, GPU, HTTP, Docker, private outputs, media, exposure, binding or execution authority. Reserved 208 is a conservative upper bound, not an instruction to retry or consume unused slots."
+}

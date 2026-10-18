@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:forte:coarse-anchor-diagnostic:v1",
+  "title": "Approximate provided validation anchor diagnostic only",
+  "type": "object",
+  "required": ["schema_version", "scope", "status", "event_type_ground_truth", "event_boundary_ground_truth", "legal_ground_truth", "outside_anchor_region_ground_truth", "exact_event_f1_claim_permitted", "exact_action_onset_claim_permitted", "hundred_millisecond_accuracy_claim_permitted", "denominators", "bands", "distance_to_supplied_coarse_point_ms_not_true_onset_error", "frame_diagnostics", "source_uncertainty", "bindings", "provenance_blocker_counts", "limitations", "diagnostic_sha256"],
+  "properties": {
+    "schema_version": {"const": "forte.coarse_anchor_diagnostic.v1"},
+    "scope": {"const": "post_prediction_provided_validation_coarse_points_only"},
+    "status": {"enum": ["SYNTHETIC_ONLY", "APPROXIMATE_DIAGNOSTIC_ONLY", "DIAGNOSTIC_PROVENANCE_INCOMPLETE"]},
+    "event_type_ground_truth": {"const": "UNKNOWN"},
+    "event_boundary_ground_truth": {"const": "UNKNOWN"},
+    "legal_ground_truth": {"const": "UNKNOWN"},
+    "outside_anchor_region_ground_truth": {"const": "UNKNOWN"},
+    "exact_event_f1_claim_permitted": {"const": false},
+    "exact_action_onset_claim_permitted": {"const": false},
+    "hundred_millisecond_accuracy_claim_permitted": {"const": false},
+    "denominators": {"type": "object", "required": ["validation_unique_contents", "provided_positive_contents", "provided_coarse_points", "contents_with_usable_temporal_predictions", "points_with_failed_or_missing_temporal_prediction"]},
+    "bands": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["team_diagnostic_expansion_sec", "covered_points", "hit_points", "uncovered_or_failed_points", "failure_inclusive_anchor_hit_rate", "conditional_hit_rate_given_scored_frame_coverage"]}},
+    "distance_to_supplied_coarse_point_ms_not_true_onset_error": {"type": "object", "required": ["nearest_scored_source_frame", "nearest_above_threshold_source_frame"]},
+    "frame_diagnostics": {"type": "object", "required": ["scored_unique_original_frames", "above_threshold_original_frames", "above_threshold_frame_fraction", "invalid_source_frame_rows", "actual_scored_sampling_spacing_ms", "sampling_spacing_is_not_action_timing_precision"], "properties": {"sampling_spacing_is_not_action_timing_precision": {"const": true}}},
+    "source_uncertainty": {"type": "object", "required": ["points_unspecified", "points_specified", "band_rule"]},
+    "bindings": {"type": "object", "required": ["split_assignments_sha256", "anchor_source_sha256", "validation_anchor_manifest_sha256", "expected_attempts_sha256", "temporal_predictions_sha256", "threshold_selection_sha256", "head_sha256"]},
+    "provenance_blocker_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "diagnostic_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$comment": "A hit near an approximate point is not complete event recall/precision/F1 or true onset accuracy. Dense positive scores can trivially hit anchors, so selected-frame fraction is also reported. Final-check and train-only anchors are rejected by the evaluator."
+}

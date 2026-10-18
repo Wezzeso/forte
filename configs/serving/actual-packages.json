@@ -1,0 +1,18 @@
+{
+  "source": "importlib.metadata inside actual running forte-model-1 container",
+  "derived_image_id": "sha256:7c298025854973128bc3e91601495025bfc43136d5ca369f8adbd52a70c3414c",
+  "base_image": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "packages": {
+    "transformers": "5.17.0",
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "pillow": "12.3.0",
+    "vllm": "0.31.0+cu129"
+  },
+  "removed_optional_package": {
+    "name": "torchcodec",
+    "bundled_version": "0.17.0",
+    "reason": "bundled binary requires absent CUDA13 libnvrtc.so.13; unused by JPEG-only model interface"
+  },
+  "model_readiness_established_by_this_record": false
+}

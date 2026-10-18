@@ -1,0 +1,204 @@
+{
+  "claim_scope": "synthetic_harness_validation",
+  "completion": {
+    "completed": 5,
+    "deadline_completion_rate": 0.5,
+    "late_completed": 1,
+    "missing_predictions": 1,
+    "on_time_completed": 4,
+    "rate": 0.625,
+    "required": 8,
+    "status_counts": {
+      "done": 5,
+      "not_done": 3
+    },
+    "timing_unknown": 0,
+    "unexpected_predictions": 0,
+    "unprocessed": 3,
+    "unprocessed_at_deadline_including_unknown_timing": 4,
+    "upload_start_to_result_sec": {
+      "count": 5,
+      "max": 301.0,
+      "mean": 69.8,
+      "p50": 12.0,
+      "p95": 301.0
+    }
+  },
+  "events": {
+    "by_tolerance": [
+      {
+        "f1": 0.4444444444444444,
+        "fn": 3,
+        "fp": 2,
+        "matched_anchor_error_sec": {
+          "count": 2,
+          "max": 0.3999999999999999,
+          "mean": 0.3999999999999999,
+          "p50": 0.3999999999999999,
+          "p95": 0.3999999999999999
+        },
+        "precision": 0.5,
+        "recall": 0.4,
+        "tolerance_sec": 0.5,
+        "tp": 2
+      },
+      {
+        "f1": 0.4444444444444444,
+        "fn": 3,
+        "fp": 2,
+        "matched_anchor_error_sec": {
+          "count": 2,
+          "max": 0.3999999999999999,
+          "mean": 0.3999999999999999,
+          "p50": 0.3999999999999999,
+          "p95": 0.3999999999999999
+        },
+        "precision": 0.5,
+        "recall": 0.4,
+        "tolerance_sec": 1.0,
+        "tp": 2
+      },
+      {
+        "f1": 0.4444444444444444,
+        "fn": 3,
+        "fp": 2,
+        "matched_anchor_error_sec": {
+          "count": 2,
+          "max": 0.3999999999999999,
+          "mean": 0.3999999999999999,
+          "p50": 0.3999999999999999,
+          "p95": 0.3999999999999999
+        },
+        "precision": 0.5,
+        "recall": 0.4,
+        "tolerance_sec": 2.0,
+        "tp": 2
+      }
+    ],
+    "failed_jobs_contribute_ground_truth_event_fn": true,
+    "matching": "maximum_cardinality_then_minimum_anchor_error; same type; one-to-one",
+    "per_type": {
+      "synthetic_a": {
+        "fn": 3,
+        "fp": 1,
+        "tp": 2
+      },
+      "synthetic_b": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 0
+      }
+    },
+    "primary_tolerance_sec": 1.0
+  },
+  "ground_truth": {
+    "human_reviewed_resolved": 8,
+    "inconsistent_verdict_events": 0,
+    "invalid_events": 0,
+    "missing_truth": 0,
+    "negative": 4,
+    "positive": 4,
+    "required_samples": 8,
+    "unreviewed_or_unresolved": 0
+  },
+  "grounding_and_evidence": {
+    "correct_rule_mappings": 2,
+    "evidence_reviewed": 2,
+    "evidence_supported": 2,
+    "predicted_events": 4,
+    "reviewed_rule_mappings": 2,
+    "verified_catalog_rule_ids": 4
+  },
+  "input_set_sha256": "32d0bdefd91a8ffdf24a39069333234cbf9717620e80fc44c1db87f22836e600",
+  "limitations": [
+    "Internal diagnostics are not the organizer's unpublished score.",
+    "Small grouped samples cannot establish production accuracy or reliable tail latency.",
+    "Image correspondence and action support require private local human review; matching timestamps does not establish either.",
+    "A new camera angle requires genuinely different footage, not rotation or cropping.",
+    "Failures remain in completion/effective-recall denominators and are never negative verdicts."
+  ],
+  "protocol": {
+    "deadline_sec": 300.0,
+    "official_scoring_formula": null,
+    "primary_tolerance_sec": 1.0,
+    "split": "validation",
+    "timestamp_tolerances_sec": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "timing_origin": "upload_start"
+  },
+  "provenance": {
+    "adapter_sha256": null,
+    "conditions_sha256": "synthetic",
+    "final_check_used_for_tuning": false,
+    "inference_kind": "synthetic",
+    "model_id": "synthetic_fixture_no_model",
+    "model_revision": "synthetic",
+    "rules_sha256": "synthetic",
+    "taxonomy_sha256": "synthetic"
+  },
+  "robustness": {
+    "multiple_events": {
+      "completed": 1,
+      "correct_verdict": 1,
+      "total": 1
+    },
+    "normal_lookalike": {
+      "completed": 1,
+      "correct_verdict": 0,
+      "total": 1
+    },
+    "window_boundary": {
+      "completed": 0,
+      "correct_verdict": 0,
+      "total": 1
+    }
+  },
+  "schema_version": "forte.evaluation.v1",
+  "split_audit": {
+    "counts_by_split": {
+      "validation": 8
+    },
+    "error_counts": {},
+    "integrity_passed": true,
+    "locked": true,
+    "note": "Group integrity precedes exact split counts; proposed assignments are not a training lock.",
+    "record_count": 8,
+    "records_sha256": "f301ffd0ab6401b5732a03a230543f936cb3f0a7e4f6eb8109cfc5cc8a42d160",
+    "scenario_relationships_reviewed": true,
+    "schema_version": "forte.split_audit.v1",
+    "training_gate_passed": true,
+    "unique_content_count": 8,
+    "unique_group_count": 8
+  },
+  "truth_records_sha256": "e0155cf528df619ef775975376bf70a2c9a4bd89355a041f6b262e1089a0a51e",
+  "whole_video": {
+    "confusion_denominator_completed_reviewed": 5,
+    "effective_correct_rate_including_failures": 0.5,
+    "effective_positive_recall_including_failures": 0.5,
+    "f1_completed": 0.8,
+    "fn": 0,
+    "fp": 1,
+    "precision_completed": 0.6666666666666666,
+    "recall_completed": 1.0,
+    "required_reviewed_denominator": 8,
+    "tn": 2,
+    "tp": 2,
+    "unprocessed_negative": 1,
+    "unprocessed_positive": 2
+  },
+  "whole_video_within_deadline": {
+    "effective_correct_rate_including_failures": 0.375,
+    "effective_positive_recall_including_failures": 0.5,
+    "fn": 0,
+    "fp": 1,
+    "required_reviewed_denominator": 8,
+    "tn": 1,
+    "tp": 2,
+    "unknown_timing_counts_as_unprocessed": true,
+    "unprocessed_negative": 2,
+    "unprocessed_positive": 2
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "actual_worker_profile": {
+    "compact_frame_ids": true,
+    "concise_observations": true,
+    "staged_screening": true,
+    "max_inflight_per_job": 2,
+    "max_concurrent_clips": 2
+  },
+  "model_idle_gauges": {
+    "running": 0.0,
+    "waiting": 0.0
+  },
+  "source_sha256": {
+    "forte.model.adapter": "36bca755914dd05174cc9e239adc75aa7685cc5d6535542664482900fbce7bde",
+    "forte.config": "816ee588690e92731ce5fdb6485c35dd8c6532f0358f3ed072234c06da616e8a",
+    "forte.pipeline": "293f5ca6afeed2d27810d8299445c3afd18f30ba90b7d5d0c3009b99e5e1e4d0",
+    "forte.decision.engine": "ada890567fbc67090272b59d4a3f5220042ae5baab3df3a545c409b4f0c1d321",
+    "forte.api.main": "8e7756cae5ea28cfe88afbde76e62df149b8ceda74f864af2590d8db09b955d2"
+  },
+  "model_inference_calls": 0
+}

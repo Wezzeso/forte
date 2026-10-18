@@ -1,0 +1,284 @@
+{
+  "schema": "forte.accuracy-upgrade-candidate-comparison.v1",
+  "status": "completed",
+  "generated_at_utc": "2026-10-17T22:13:32.139882+00:00",
+  "source_archive": {
+    "path": "tmp/accuracy-upgrade-candidate-v2-20261018.tar.gz",
+    "sha256": "dcb5f16574df668aaaf6f6011cb0f13f70f0056a0c20027faa8777584dc21ce3",
+    "files": 13
+  },
+  "baseline_public_artifact": {
+    "path": "benchmarks/quality/accuracy-upgrade-baseline-20261018.json",
+    "sha256": "04dff26ead382954ad31fd62255e844d5156296d631ce841f00db7ed605e20ef"
+  },
+  "baseline_summary": {
+    "accuracy": 0.825,
+    "calls": 5729,
+    "completed": 40,
+    "completion_tokens": 212101,
+    "correct": 33,
+    "error_classes": {},
+    "errors": 0,
+    "fn": 6,
+    "fp": 1,
+    "n": 40,
+    "prompt_tokens": 2574816,
+    "timecode_err_median": 1.0,
+    "timecode_within_2s": 12,
+    "tn": 18,
+    "total_s": 379.908,
+    "tp": 15,
+    "wall_max": 68.421,
+    "wall_median": 31.5385
+  },
+  "verified_configuration_artifact": {
+    "path": "benchmarks/quality/accuracy-upgrade-verified-config-20261018.json",
+    "sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+    "tested_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29"
+  },
+  "model_identity": {
+    "model_image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+    "model_started_at_utc": "2026-10-17T19:14:49.608401273Z",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_memory_mib": 81920,
+    "dtype": "bfloat16",
+    "max_num_seqs": 48,
+    "max_model_len": 32768,
+    "gpu_memory_utilization": 0.92,
+    "model_weights_sha256": null,
+    "weights_digest_limitation": "Neither retained rv6 report nor this baseline hashes the model weight files; live model process was unchanged during this run."
+  },
+  "stages": [
+    {
+      "stage": "candidate-default",
+      "private_artifact": {
+        "path": "benchmarks/private/accuracy-upgrade-candidate-default-20261018.json",
+        "sha256": "014e145a19251ccfcc8e019f469fe9bdd6c6d1b6b6011e04424c5391ae06c574"
+      },
+      "summary": {
+        "accuracy": 0.825,
+        "calls": 5711,
+        "correct": 33,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "failed": 0,
+        "failed_negative": 0,
+        "failed_positive": 0,
+        "fn": 6,
+        "fp": 1,
+        "n": 40,
+        "negative": 19,
+        "positive": 21,
+        "precision": 0.9375,
+        "processed": 40,
+        "prompt_tokens": 2573352,
+        "recall": 0.7142857142857143,
+        "time_labeled_videos": 21,
+        "timecode_err_median": 1.0,
+        "timecode_scored": 15,
+        "timecode_within_2s": 12,
+        "tn": 18,
+        "total_s": 379.453,
+        "tp": 15,
+        "type_correct": 0,
+        "type_labeled": 0,
+        "wall_max": 379.451,
+        "wall_median": 185.6035,
+        "wall_scored": 40
+      },
+      "gate": {
+        "passed": false,
+        "reasons": [
+          "false_alarms",
+          "accuracy_below_minimum"
+        ],
+        "regressed_video_count": 0,
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "integrity_complete": true,
+      "config": {
+        "disabled_types": [
+          "NO_CLIENT_ID",
+          "NO_AUTHENTICITY_CHECK",
+          "NO_RECOUNT",
+          "KEY_LEFT_IN_SAFE",
+          "LEFT_DURING_SERVICE",
+          "CASH_HANDOVER_IRREGULAR"
+        ],
+        "holistic_frames": 24,
+        "holistic_max_side": 640,
+        "max_state_frames": 100,
+        "merge_window": 6.0,
+        "min_away": 3,
+        "require_corroboration": false,
+        "specialists": {
+          "enabled": false
+        },
+        "state_fps": 1.0,
+        "state_max_side": 896,
+        "use_holistic": false,
+        "use_rules": true,
+        "use_verify": false,
+        "verify_frames": 10,
+        "verify_max_side": 768,
+        "verify_threshold": 0.5,
+        "verify_window": 4.0
+      },
+      "config_sha256": "f3413a74f4c634782aa5a19a5d8a95877c0117fc0b04abd8e44e3971dabe6582",
+      "labels_file_sha256": "3ade1ced5efe9d17549a15dd998298518fe420cafae47efcca5eef4152fff0a6",
+      "input_inventory_sha256": "1b7995f6fc2e7ec6686b670f6a3328585d9a31da7d5f95e2972d498d9738ca12",
+      "baseline_media_manifest_matches": true,
+      "baseline_artifact_sha256": "df3f1f7e7eac2bb85f7e9502eeade91f67332307fc941a385b23d59a30c45ea3",
+      "analysis_wall_s": {
+        "scored": 40,
+        "max": 68.98,
+        "median": 31.185
+      },
+      "runtime_overlay": {
+        "archive_sha256": "dcb5f16574df668aaaf6f6011cb0f13f70f0056a0c20027faa8777584dc21ce3",
+        "development_exploration": false,
+        "evaluator_image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+        "loaded_analyzer": "candidate_source",
+        "model_name": "q30",
+        "output_sanitization": "only event type/time and scoring/timing/provenance metadata; no states, descriptions, verifications or media",
+        "parallel_videos": 4,
+        "server_or_model_changed": false,
+        "source_files_sha256": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "analyzer.py": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230",
+          "catalog.py": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e",
+          "policy.py": "5c3353d9d7cccfe4481709037248d5a7323c166e905e44da38df01129831439b",
+          "prompts.py": "5e9c0d1c37a53b13931c7b8bdaef228f8d38ae87fdce92d94586cece48bc215d",
+          "service.py": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4",
+          "specialists.py": "b2a47a2c493227b7d6a3967f28f411750709043e6b4e046837728fdae6e74058",
+          "temporal_events.py": "d3fea06bec03ac265ef0e6cad62d2376f63636956f05c15438a7dffcc4e47f22",
+          "video.py": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718",
+          "vlm.py": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        },
+        "vlm_concurrency": 64,
+        "wall_timing_note": "summary wall_s includes evaluator queue; analysis_wall_s excludes queue"
+      }
+    },
+    {
+      "stage": "candidate-verified",
+      "private_artifact": {
+        "path": "benchmarks/private/accuracy-upgrade-candidate-verified-20261018.json",
+        "sha256": "13c72070192920ba792ceefb60d52fcf9ba7ffc91a7b1a70decb67942177920f"
+      },
+      "summary": {
+        "accuracy": 0.85,
+        "calls": 5745,
+        "correct": 34,
+        "event_time_labels": 0,
+        "event_time_matches": 0,
+        "failed": 0,
+        "failed_negative": 0,
+        "failed_positive": 0,
+        "fn": 6,
+        "fp": 0,
+        "n": 40,
+        "negative": 19,
+        "positive": 21,
+        "precision": 1.0,
+        "processed": 40,
+        "prompt_tokens": 2656111,
+        "recall": 0.7142857142857143,
+        "time_labeled_videos": 21,
+        "timecode_err_median": 1.5,
+        "timecode_scored": 15,
+        "timecode_within_2s": 11,
+        "tn": 19,
+        "total_s": 397.943,
+        "tp": 15,
+        "type_correct": 0,
+        "type_labeled": 0,
+        "wall_max": 397.941,
+        "wall_median": 191.33049999999997,
+        "wall_scored": 40
+      },
+      "gate": {
+        "passed": true,
+        "reasons": [],
+        "regressed_video_count": 0,
+        "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+      },
+      "integrity_complete": true,
+      "config": {
+        "disabled_types": [
+          "NO_CLIENT_ID",
+          "NO_AUTHENTICITY_CHECK",
+          "NO_RECOUNT",
+          "KEY_LEFT_IN_SAFE",
+          "LEFT_DURING_SERVICE",
+          "CASH_HANDOVER_IRREGULAR"
+        ],
+        "holistic_frames": 24,
+        "holistic_max_side": 640,
+        "max_state_frames": 100,
+        "merge_window": 6.0,
+        "min_away": 3,
+        "require_corroboration": true,
+        "specialists": {
+          "enabled": false
+        },
+        "state_fps": 1.0,
+        "state_max_side": 896,
+        "use_holistic": false,
+        "use_rules": true,
+        "use_verify": true,
+        "verify_frames": 10,
+        "verify_max_side": 768,
+        "verify_threshold": 0.5,
+        "verify_window": 4.0
+      },
+      "config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "labels_file_sha256": "3ade1ced5efe9d17549a15dd998298518fe420cafae47efcca5eef4152fff0a6",
+      "input_inventory_sha256": "1b7995f6fc2e7ec6686b670f6a3328585d9a31da7d5f95e2972d498d9738ca12",
+      "baseline_media_manifest_matches": true,
+      "baseline_artifact_sha256": "df3f1f7e7eac2bb85f7e9502eeade91f67332307fc941a385b23d59a30c45ea3",
+      "analysis_wall_s": {
+        "scored": 40,
+        "max": 97.71,
+        "median": 31.32
+      },
+      "runtime_overlay": {
+        "archive_sha256": "dcb5f16574df668aaaf6f6011cb0f13f70f0056a0c20027faa8777584dc21ce3",
+        "development_exploration": true,
+        "evaluator_image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+        "loaded_analyzer": "candidate_source",
+        "model_name": "q30",
+        "output_sanitization": "only event type/time and scoring/timing/provenance metadata; no states, descriptions, verifications or media",
+        "parallel_videos": 4,
+        "server_or_model_changed": false,
+        "source_files_sha256": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "analyzer.py": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230",
+          "catalog.py": "10095b1a471b6e67ac5ece261e35bbd04a83eeca3d3edcd0af6258a22ac2803e",
+          "policy.py": "5c3353d9d7cccfe4481709037248d5a7323c166e905e44da38df01129831439b",
+          "prompts.py": "5e9c0d1c37a53b13931c7b8bdaef228f8d38ae87fdce92d94586cece48bc215d",
+          "service.py": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4",
+          "specialists.py": "b2a47a2c493227b7d6a3967f28f411750709043e6b4e046837728fdae6e74058",
+          "temporal_events.py": "d3fea06bec03ac265ef0e6cad62d2376f63636956f05c15438a7dffcc4e47f22",
+          "video.py": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718",
+          "vlm.py": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        },
+        "vlm_concurrency": 64,
+        "wall_timing_note": "summary wall_s includes evaluator queue; analysis_wall_s excludes queue"
+      }
+    }
+  ],
+  "passing_development_stages": [
+    "candidate-verified"
+  ],
+  "candidate_deployed": false,
+  "trained_specialists_enabled": false,
+  "heldout_accuracy_claim": false,
+  "cross_validation_claim": false,
+  "limitations": [
+    "All runs use the same 40 supplied development clips; no unseen-video or cross-validation result is established.",
+    "Any generic verification stage is a development exploration prompted by earlier measured failures; it is not a held-out improvement.",
+    "Original labels lack event type identities, so the gate establishes whole-video verdict regression only.",
+    "Candidate summary wall_max includes the evaluator's queue; separate analysis_wall_s fields exclude that queue.",
+    "No candidate source, configuration, object detector, hand tracker, trained temporal head, or adapter was deployed."
+  ]
+}

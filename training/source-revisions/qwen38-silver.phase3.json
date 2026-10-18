@@ -1,0 +1,15 @@
+{
+  "schema_version": "forte.training.source-revision.v1",
+  "revision": "phase3_exact_nf4_bias_initialization_and_byte_proof",
+  "superseded_for_optional_balanced_experiments": true,
+  "source_checksums": {
+    "training/qwen38_silver.py": "e8e6eed3ea206c69a71ebb73a78a05c36daaf9b47506f715a0f7b92b614cf686",
+    "training/qwen38_proof.py": "b807ecdfbbd8c8e3a484285576728453b71eba20f940297795b06e12a6ed72a8",
+    "training/test_qwen38_silver.py": "4e604f9097aefb2c0f1f3a3655359dd6486b79eefdf631175bad218af17db8e8",
+    "tests/test_qwen38_proof.py": "da5ff139adf0c69352beef402691b1c840c11ed417020c462b3a02fc8ebf9626",
+    "training/configs/qwen38-silver.example.json": "2d85805621ff94d551ac00090c7f7ad54029420e6f8ab43d753c9f61636c2cba"
+  },
+  "loss_policy": "unweighted_partial_fact_tokens.v1",
+  "training_or_serving_authorized_by_this_receipt": false,
+  "performance_claim_created_by_this_receipt": false
+}

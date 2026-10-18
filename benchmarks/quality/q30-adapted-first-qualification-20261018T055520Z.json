@@ -1,0 +1,83 @@
+{
+  "schema": "forte.model-qualification-summary.v1",
+  "generated_at_utc": "2026-10-18T05:55:20.444311+00:00",
+  "status": "not_qualified",
+  "scope": "40_unique_development_videos_in_sample; no_unseen_accuracy_claim",
+  "qualification_claim": false,
+  "promotion_authorized": false,
+  "requirements": {
+    "independent_runs": 2,
+    "n_per_run": 40,
+    "processed_per_run": 40,
+    "failed_per_run": 0,
+    "minimum_correct_per_run": 37,
+    "fp_per_run": 0
+  },
+  "score_gate": {
+    "status": "failed",
+    "runs": [
+      {
+        "run": "q30desk20261018a",
+        "status": "failed",
+        "reasons": [
+          "required_fp_not_met",
+          "correct_below_37"
+        ],
+        "counts": {
+          "n": 40,
+          "processed": 40,
+          "failed": 0,
+          "correct": 30,
+          "positive": 21,
+          "negative": 19,
+          "tp": 14,
+          "tn": 16,
+          "fp": 3,
+          "fn": 7
+        },
+        "accuracy": 0.75,
+        "report_sha256": "14fbaba698d91c6e6b126d42ab648089bb9c76cdb1140e6bac6b91f098c4aed0"
+      },
+      {
+        "run": "q30desk20261018b",
+        "status": "pending",
+        "reasons": [
+          "run_report_missing"
+        ]
+      }
+    ]
+  },
+  "recorded_identity_consistency": {
+    "status": "pending",
+    "reason": "two_available_runs_required"
+  },
+  "release_checks": {
+    "schema": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "evidence_originality": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "six_parallel_within_285s": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    },
+    "candidate_identity_binding": {
+      "status": "pending",
+      "reason": "stage_measurement_required"
+    }
+  },
+  "additional_release_requirements": [
+    "evidence_scene_relevance_no_regression",
+    "target_gpu_staging_and_rollback_review",
+    "explicit_user_switch_approval",
+    "public_six_upload_check_after_switch"
+  ],
+  "utility_sha256": "44015c8ead58976b80b5de5cf4e6e25c585321f43bf4f6a99cc6a8cc56c6dfc5",
+  "collection_file_sha256": [
+    "ba17a5725e12345ce20f0ad5a3b50a24eea78656fa7521ae1c87e37d0a358328",
+    "ba17a5725e12345ce20f0ad5a3b50a24eea78656fa7521ae1c87e37d0a358328"
+  ]
+}

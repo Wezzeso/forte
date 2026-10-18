@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0",
+  "measurement": "cpu_synthetic_only_no_gpu_or_model",
+  "host": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu_count": 12,
+    "python": "3.14.0",
+    "pyav": "19.0.1",
+    "libavcodec": [
+      63,
+      1,
+      102
+    ]
+  },
+  "fixture": {
+    "generated": true,
+    "width": 464,
+    "height": 848,
+    "fps": 30,
+    "frames": 4276,
+    "duration_sec": 142.53333333333333,
+    "keyframe_period_frames": 30,
+    "b_frames": 2,
+    "file_bytes": 23939999,
+    "generation_sec": 6.85239460000048
+  },
+  "repeats": 2,
+  "cases": {
+    "decode_pts_slice1": {
+      "parameters": {
+        "threads": 1,
+        "thread_type": "SLICE",
+        "output": "pts_only"
+      },
+      "passes": [
+        {
+          "elapsed_sec": 3.025725799999236,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 1413.2146409304767,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        },
+        {
+          "elapsed_sec": 3.440303999999742,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 1242.9134169539439,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        }
+      ],
+      "median_elapsed_sec": 3.233014899999489
+    },
+    "decode_pts_frame2": {
+      "parameters": {
+        "threads": 2,
+        "thread_type": "FRAME",
+        "output": "pts_only"
+      },
+      "passes": [
+        {
+          "elapsed_sec": 2.03894339999988,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 2097.1646392932003,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        },
+        {
+          "elapsed_sec": 1.9543916000002355,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 2187.8931530403042,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        }
+      ],
+      "median_elapsed_sec": 1.9966675000000578
+    },
+    "decode_pts_frame4": {
+      "parameters": {
+        "threads": 4,
+        "thread_type": "FRAME",
+        "output": "pts_only"
+      },
+      "passes": [
+        {
+          "elapsed_sec": 1.2608956000003673,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 3391.2403215609243,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        },
+        {
+          "elapsed_sec": 1.3090235999998185,
+          "decoded_frames": 4276,
+          "converted_frames": 0,
+          "decoded_fps": 3266.5568443537554,
+          "converted_output_bytes": 0,
+          "maximum_materialized_batch_bytes": 0
+        }
+      ],
+      "median_elapsed_sec": 1.284959600000093
+    },
+    "dense_rgb256_frame4": {
+      "parameters": {
+        "threads": 4,
+        "thread_type": "FRAME",
+        "output": "rgb256_bytes"
+      },
+      "passes": [
+        {
+          "elapsed_sec": 3.9748490000001766,
+          "decoded_frames": 4276,
+          "converted_frames": 4276,
+          "decoded_fps": 1075.7641359457455,
+          "converted_output_bytes": 840695808,
+          "maximum_materialized_batch_bytes": 6291456
+        },
+        {
+          "elapsed_sec": 3.9491072000000713,
+          "decoded_frames": 4276,
+          "converted_frames": 4276,
+          "decoded_fps": 1082.7763804436413,
+          "converted_output_bytes": 840695808,
+          "maximum_materialized_batch_bytes": 6291456
+        }
+      ],
+      "median_elapsed_sec": 3.961978100000124
+    },
+    "sample8_rgb256_frame4": {
+      "parameters": {
+        "threads": 4,
+        "thread_type": "FRAME",
+        "output": "rgb256_bytes",
+        "sample_fps": 8
+      },
+      "passes": [
+        {
+          "elapsed_sec": 2.004701300000306,
+          "decoded_frames": 4276,
+          "converted_frames": 1141,
+          "decoded_fps": 2132.9860962325643,
+          "converted_output_bytes": 224329728,
+          "maximum_materialized_batch_bytes": 6291456
+        },
+        {
+          "elapsed_sec": 1.8642375999997967,
+          "decoded_frames": 4276,
+          "converted_frames": 1141,
+          "decoded_fps": 2293.6990435127295,
+          "converted_output_bytes": 224329728,
+          "maximum_materialized_batch_bytes": 6291456
+        }
+      ],
+      "median_elapsed_sec": 1.9344694500000514
+    },
+    "sample8_letterbox256_frame4": {
+      "parameters": {
+        "threads": 4,
+        "thread_type": "FRAME",
+        "output": "letterbox256_bytes",
+        "sample_fps": 8
+      },
+      "passes": [
+        {
+          "elapsed_sec": 1.9327758999997968,
+          "decoded_frames": 4276,
+          "converted_frames": 1141,
+          "decoded_fps": 2212.362022933155,
+          "converted_output_bytes": 224329728,
+          "maximum_materialized_batch_bytes": 6291456
+        },
+        {
+          "elapsed_sec": 1.887638799999877,
+          "decoded_frames": 4276,
+          "converted_frames": 1141,
+          "decoded_fps": 2265.2638841712082,
+          "converted_output_bytes": 224329728,
+          "maximum_materialized_batch_bytes": 6291456
+        }
+      ],
+      "median_elapsed_sec": 1.9102073499998369
+    },
+    "sample2_original_jpeg95_slice2": {
+      "parameters": {
+        "threads": 2,
+        "thread_type": "SLICE",
+        "output": "original_jpeg95",
+        "sample_fps": 2
+      },
+      "passes": [
+        {
+          "elapsed_sec": 4.7653329000004305,
+          "decoded_frames": 4276,
+          "converted_frames": 286,
+          "decoded_fps": 897.314015564288,
+          "converted_output_bytes": 24453278,
+          "maximum_materialized_batch_bytes": 0
+        },
+        {
+          "elapsed_sec": 5.493598999999449,
+          "decoded_frames": 4276,
+          "converted_frames": 286,
+          "decoded_fps": 778.3604154581411,
+          "converted_output_bytes": 24453278,
+          "maximum_materialized_batch_bytes": 0
+        }
+      ],
+      "median_elapsed_sec": 5.12946594999994
+    },
+    "four_half_second_boundary_seeks_frame4": {
+      "parameters": {
+        "threads": 4,
+        "thread_type": "FRAME",
+        "output": "rgb256_bytes"
+      },
+      "passes": [
+        {
+          "elapsed_sec": 0.07771250000041618,
+          "brackets": 4,
+          "total_bracket_seconds": 2.0,
+          "decoded_with_keyframe_preroll": 107,
+          "refined_native_frames": 64,
+          "exact_pts_sets_equal_to_packet_index": true
+        },
+        {
+          "elapsed_sec": 0.07947349999994913,
+          "brackets": 4,
+          "total_bracket_seconds": 2.0,
+          "decoded_with_keyframe_preroll": 107,
+          "refined_native_frames": 64,
+          "exact_pts_sets_equal_to_packet_index": true
+        }
+      ],
+      "median_elapsed_sec": 0.07859300000018266
+    }
+  },
+  "limitations": [
+    "Synthetic local CPU microbenchmark; no user-upload, private-pixel, GPU, encoder-model, temporal-head, upload or serving latency was measured.",
+    "The direct-resize mode measures throughput, not acceptance of a production aspect-ratio policy.",
+    "Byte-batch conversion includes CPU copies, but excludes pinned staging and host-to-device transfer.",
+    "Only generated synthetic media is decoded; native scene complexity may change throughput."
+  ]
+}

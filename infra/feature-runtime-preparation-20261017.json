@@ -1,0 +1,30 @@
+{
+  "actual_vram_headroom_measured": true,
+  "cache_extraction_receipt": "infra/feature-cache-extraction-20261017.json",
+  "checks": {
+    "code_package_per_file_integrity": "passed",
+    "compose_parse": "passed",
+    "final_deterministic_32frame_smoke": "passed",
+    "python_syntax": "passed",
+    "synthetic_archive_safety_cases": 7,
+    "uid1000_runtime_package_metadata": "passed"
+  },
+  "current_service_changed": false,
+  "feature_code_archive_sha256": "dbf6b4c4ff49fb5f3820d27fca8027e003805b7a1202916d91d6d37a83b7e13a",
+  "gpu_calls": true,
+  "private_backup_created": false,
+  "production_service_changed": false,
+  "remote_transfers": true,
+  "runtime_image": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "runtime_source_sha256": {
+    "deploy/Dockerfile.features": "b73fb153a48fce2aa29b5b03a5dffc51343aa00d344a96c2bb9dd2db36e7b25d",
+    "deploy/compose.ml.yaml": "50e97eb9dfc46734e96f06ff17591a8794c864111652fe678e80b4728e390ec6",
+    "deploy/feature-runtime-lock.json": "ef9e9de97bf525242b1d8ee8fa2acbbf3c88dcb367283e41edfb96b86ab60859",
+    "deploy/package_ml_code.py": "cf4b1e0a88e4a421a3c1fc94cd7d5afec667a3c60f1f93fb0eb46fafccb682e0",
+    "deploy/requirements-features.lock": "48500be98af31c1172dfcbbeeb9eded7e3dbd6e832612d4f47cb7247f3ce2e75",
+    "deploy/stage_training_sources.py": "7450167f92cff1bdd53c351e42a6f7c7418c4c07d99d252a57d062e00b124447"
+  },
+  "schema_version": "forte.feature-runtime-preparation.v1",
+  "status": "built_and_generated_smoke_and_native_cache_verified",
+  "training_executed_by_A17": false
+}

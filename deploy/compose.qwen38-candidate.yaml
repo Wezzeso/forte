@@ -1,0 +1,78 @@
+# Opt-in candidate override. Never merge with compose.gpu.yaml. No build,
+# deployment, GPU release or production selection is performed by this file.
+# The base compose's private network must retain internal: true.
+services:
+  model:
+    image: ${FORTE_QWEN38_IMAGE:?Set the measured candidate image repository@sha256:digest}
+    profiles: [qwen38]
+    entrypoint: [python, -m, serving.qwen38_launch]
+    command: [--config, /run/configs/qwen38-runtime.json]
+    restart: "no"
+    user: "1000:1000"
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      PYTHONPATH: /app:/app/src
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+      WANDB_DISABLED: "true"
+      TOKENIZERS_PARALLELISM: "false"
+      FORTE_RUNTIME_IMAGE_SHA256: ${FORTE_QWEN38_IMAGE_SHA256:?Set independently inspected image SHA256 only}
+      HF_HOME: /cache/hf
+      XDG_CACHE_HOME: /cache/xdg
+      TORCHINDUCTOR_CACHE_DIR: /cache/torchinductor
+      TRITON_CACHE_DIR: /cache/triton
+      CUDA_CACHE_PATH: /cache/cuda
+    volumes:
+      - type: bind
+        source: ${FORTE_QWEN38_SNAPSHOT:?Set verified absolute candidate base directory}
+        target: /models/Qwen3.8-27B
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_QWEN38_RUN:?Set completed candidate run directory containing adapter and run.json}
+        target: /candidate
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_QWEN38_CONFIG:?Set exact bound runtime JSON file}
+        target: /run/configs/qwen38-runtime.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${FORTE_QWEN38_SOURCE_ARCHIVE:?Set exact frozen candidate source archive}
+        target: /release/source.tar
+        read_only: true
+        bind: {create_host_path: false}
+      - qwen38_cache:/cache
+    tmpfs:
+      # Torch/Triton JIT loads trusted generated shared objects from /tmp.
+      # Implicit noexec caused a measured A100 cuda_utils.so mapping failure.
+      - /tmp:size=6g,nosuid,nodev,exec,mode=1777,uid=1000,gid=1000
+      - /run/forte:size=2m,noexec,nosuid,nodev,mode=0700,uid=1000,gid=1000
+    networks: [private]
+    shm_size: 2gb
+    stop_grace_period: 40s
+    healthcheck:
+      test: [CMD, python, -m, serving.qwen38_launch, --config, /run/configs/qwen38-runtime.json, --check-ready]
+      interval: 10s
+      timeout: 7s
+      start_period: 30m
+      retries: 3
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${FORTE_INFERENCE_GPU_ID:-0}"]
+              capabilities: [gpu]
+    logging:
+      driver: local
+      options: {max-size: 20m, max-file: "3"}
+
+volumes:
+  qwen38_cache: {}

@@ -1,0 +1,13 @@
+{
+  "contract_version": "1.1.0",
+  "python_module": "forte.shared.schemas",
+  "timestamp_unit": "seconds",
+  "timestamp_origin": "original video start, subtracting source_start_sec",
+  "public_routes": [
+    "POST /api/v1/analyze",
+    "GET /api/v1/jobs/{job_id}"
+  ],
+  "authentication_header": "X-API-Key",
+  "multipart_field": "file",
+  "fixture_provenance": "programmatically generated synthetic image; no dataset access"
+}

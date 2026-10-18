@@ -1,0 +1,94 @@
+{
+  "candidate_deployed": false,
+  "captured_at_utc": "2026-10-17T13:18:27.983380+00:00",
+  "controls_sha256": {
+    ".dockerignore": "7dca8b9b7bc56f46cc6c20f5a39a6e7db691a26ee94b6aa465b5b828c8ba3c6e",
+    "deploy/Dockerfile.features.dockerignore": "5cf4b1feaeec92596c57ac16fca5d4fbb035803668a84f09b432641e235efed1",
+    "deploy/Dockerfile.qwen38-training.dockerignore": "ae222467fac82dcdf9c69b22bb220ae549d61c99463e61abf3c8c238a3c168a2",
+    "deploy/package_code.py": "6249bcfafaa94db5cb0e94cabb9bd4e2723709aa05d4f1cb4da098712be20436",
+    "deploy/package_ml_code.py": "b5f7a06c9fb0b30f170de43d4eb74ce3daccc0391f2f0a8d308536b0862c3213",
+    "deploy/package_policy.py": "7965eeccf17d273b552e58f420f6ab539721a9d9f8e269e9603b236be845208b",
+    "tests/test_release_packaging.py": "7ce92da04582a9174e6f6ae2321814ae6fac92354142276ea1f96c9e4a1a2763",
+    "training/Dockerfile.dockerignore": "1e69dc72caf69e729e215d521eceee0fdf1ca0ea4d27d4f062d039151e47ea13"
+  },
+  "docker_context_exports": {
+    "candidate": {
+      "archive_path": "tmp/qwen38-audit-candidate.tar",
+      "archive_sha256": "061d76dd3682d82fade00ac0083ff23ef5556796cbdae722e9fc643f5b4af85a",
+      "base": "scratch",
+      "gpu_or_application_runtime_started": false,
+      "links": 0,
+      "network": "none",
+      "policy_rejections": 0,
+      "regular_file_bytes": 13712,
+      "regular_file_count": 4
+    },
+    "features": {
+      "archive_path": "tmp/qwen38-audit-features.tar",
+      "archive_sha256": "779fee9823e0434209c60039d6a89cca5b2f78901a94eeb0301b2d96ccdb7edc",
+      "base": "scratch",
+      "gpu_or_application_runtime_started": false,
+      "links": 0,
+      "network": "none",
+      "policy_rejections": 0,
+      "regular_file_bytes": 3869,
+      "regular_file_count": 4
+    },
+    "source": {
+      "archive_path": "tmp/qwen38-audit-source.tar",
+      "archive_sha256": "9275f52bbd5294be74430864f33560fdfb5a724b86e05c449cffb2dcd5d2442c",
+      "base": "scratch",
+      "gpu_or_application_runtime_started": false,
+      "links": 0,
+      "network": "none",
+      "policy_rejections": 0,
+      "regular_file_bytes": 3513266,
+      "regular_file_count": 206
+    },
+    "training": {
+      "archive_path": "tmp/qwen38-audit-training.tar",
+      "archive_sha256": "67d3741cbc7590c2ec2ffe61d9b24782b198732e050cb071e2dfd53ec488ba3e",
+      "base": "scratch",
+      "gpu_or_application_runtime_started": false,
+      "links": 0,
+      "network": "none",
+      "policy_rejections": 0,
+      "regular_file_bytes": 1465998,
+      "regular_file_count": 129
+    }
+  },
+  "final_integrated_source_archive_created": false,
+  "git_commit": null,
+  "limitations": [
+    "Audit source and context snapshots precede final integration freeze.",
+    "Source path policy does not de-identify arbitrarily renamed private content.",
+    "Source archive hashes do not establish image or model identity, training, quality, readiness or deployment."
+  ],
+  "performance_claim_established": false,
+  "schema_version": "forte.qwen38.release-packaging-audit.v1",
+  "source_selections": {
+    "deployment": {
+      "file_count_at_audit": 206,
+      "original_filenames_checked": 42,
+      "private_original_filename_matches": 0
+    },
+    "ml": {
+      "file_count_at_audit": 169,
+      "original_filenames_checked": 42,
+      "private_original_filename_matches": 0
+    }
+  },
+  "status": "public_source_controls_verified_before_final_integration_freeze",
+  "training_performed": false,
+  "validation": {
+    "audit_data_synthetic_checks": {
+      "passed": 15
+    },
+    "packaging_tests": {
+      "command": ".venv/Scripts/python.exe -m pytest tests/test_release_packaging.py -q",
+      "passed": 73,
+      "skip_reason": "Windows symlink creation privilege unavailable",
+      "skipped": 1
+    }
+  }
+}

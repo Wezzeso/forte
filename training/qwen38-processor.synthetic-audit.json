@@ -1,0 +1,146 @@
+{
+  "schema_version": "forte.qwen38-processor-synthetic-audit.v1",
+  "captured_at": "2026-10-17T13:18:39.426081+00:00",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "fixture": "generated_rgb_images_only",
+  "private_sources_opened": false,
+  "model_weights_opened": false,
+  "model_forward_executed": false,
+  "cuda_initialized": false,
+  "packages": {
+    "torch": "2.12.0",
+    "transformers": "5.17.0",
+    "numpy": "2.4.2",
+    "pillow": "12.3.0"
+  },
+  "artifact_sha256": {
+    "training/data.py": "b56f73a3f69d904fbc475d871d2ff75f5665369630ede979b16e20929e202996",
+    "training/check_processor.py": "f7b0f38fffd25dbfcad09541a044941847a82152754a2def3389c2c6b154cdcc",
+    "training/test_data_masks.py": "d2a7e9e3aad8ef160a57dba106eb67278da5684609f73b7095dfa61618d376f6",
+    "configs/serving/qwen38/public-candidate.manifest.json": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225",
+    "configs/serving/qwen38/public-snapshot/chat_template.jinja": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+    "configs/serving/qwen38/public-snapshot/tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+    "configs/serving/qwen38/public-snapshot/preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "configs/serving/qwen38/public-snapshot/video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+  },
+  "results": [
+    {
+      "status": "passed",
+      "fixture": "synthetic_only",
+      "media_format": "image_sequence",
+      "model_type": "qwen3_5",
+      "processor_class": "Qwen3VLProcessor",
+      "template_options": {
+        "enable_thinking": false,
+        "preserve_thinking": false
+      },
+      "mask_policy": "human_reviewed_completion_only",
+      "clock": {
+        "source_pts_sec": [
+          0.125,
+          0.625,
+          1.375,
+          2.125
+        ],
+        "source_pts_text_ledger": true
+      },
+      "input_tokens": 411,
+      "completion_tokens": 26,
+      "visual_segments": 4,
+      "model_forward_executed": false
+    },
+    {
+      "status": "passed",
+      "fixture": "synthetic_only",
+      "media_format": "image_sequence",
+      "model_type": "qwen3_5",
+      "processor_class": "Qwen3VLProcessor",
+      "template_options": {
+        "enable_thinking": false,
+        "preserve_thinking": false
+      },
+      "mask_policy": "supported_physical_silver_fact_spans",
+      "clock": {
+        "source_pts_sec": [
+          0.125,
+          0.625,
+          1.375,
+          2.125
+        ],
+        "source_pts_text_ledger": true
+      },
+      "input_tokens": 435,
+      "completion_tokens": 21,
+      "visual_segments": 4,
+      "model_forward_executed": false
+    },
+    {
+      "status": "passed",
+      "fixture": "synthetic_only",
+      "media_format": "video",
+      "model_type": "qwen3_5",
+      "processor_class": "Qwen3VLProcessor",
+      "template_options": {
+        "enable_thinking": false,
+        "preserve_thinking": false
+      },
+      "mask_policy": "human_reviewed_completion_only",
+      "clock": {
+        "source_pts_sec": [
+          0.125,
+          0.625,
+          1.375,
+          2.125
+        ],
+        "source_pts_text_ledger": true,
+        "processor_temporal_patch_midpoints_sec": [
+          0.375,
+          1.75
+        ],
+        "processor_timestamp_display_decimals": 1,
+        "processor_video_timestamps_are_individual_source_pts": false
+      },
+      "input_tokens": 157,
+      "completion_tokens": 26,
+      "visual_segments": 1,
+      "model_forward_executed": false
+    },
+    {
+      "status": "passed",
+      "fixture": "synthetic_only",
+      "media_format": "video",
+      "model_type": "qwen3_5",
+      "processor_class": "Qwen3VLProcessor",
+      "template_options": {
+        "enable_thinking": false,
+        "preserve_thinking": false
+      },
+      "mask_policy": "supported_physical_silver_fact_spans",
+      "clock": {
+        "source_pts_sec": [
+          0.125,
+          0.625,
+          1.375,
+          2.125
+        ],
+        "source_pts_text_ledger": true,
+        "processor_temporal_patch_midpoints_sec": [
+          0.375,
+          1.75
+        ],
+        "processor_timestamp_display_decimals": 1,
+        "processor_video_timestamps_are_individual_source_pts": false
+      },
+      "input_tokens": 181,
+      "completion_tokens": 21,
+      "visual_segments": 1,
+      "model_forward_executed": false
+    }
+  ],
+  "limitations": [
+    "CPU processor/mask checks do not prove model forward, training, GPU compatibility or quality.",
+    "Native video placeholder times are one-decimal temporal-patch midpoints; exact source PTS remain in the text ledger.",
+    "The millisecond video-metadata bridge quantizes source PTS by at most 0.5 ms and is not semantic onset accuracy."
+  ]
+}

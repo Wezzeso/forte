@@ -1,0 +1,92 @@
+# Organizer/private media and content-dependent records
+/videos/
+/open_labels.xlsx
+/data/manifests/*.jsonl
+/data/manifests/audit_summary.json
+/data/splits/*.json
+/annotations/private/
+/var/
+/weights/
+/models/weights/
+/tmp/
+
+# Runtime secrets
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+*.pem
+*.key
+/secrets/
+/infra/resources.json
+/infra/spending-policy.yaml
+*.local.json
+*.local.yaml
+*.local.yml
+
+# Tooling/build state
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+/dist/
+/build/
+node_modules/
+/frontend/dist/
+/web/dist/
+/web/playwright-report/
+/web/test-results/
+*.log
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local exports and assistant handoffs
+/.chart-data-*/
+/Claude outputs/
+/presentations/datathon/build/candidate*
+/presentations/datathon/build/renders/
+/presentations/datathon/build/*-renders/
+
+# Test, type-checker and coverage caches
+.mypy_cache/
+.pyright/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+*.tsbuildinfo
+
+# Local databases and downloaded/trained model artifacts
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+
+# Private evaluation/training outputs; publish aggregate reviewed reports only.
+/training/runs/
+/evaluation/private/
+/benchmarks/private/
+**/private/
+**/secrets/

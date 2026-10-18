@@ -1,0 +1,5919 @@
+{
+  "schema": "forte.structured-proposal-compare.v1",
+  "generated_at_utc": "2026-10-18T05:55:46.082179+00:00",
+  "tool_sha256": "1cc881a33dac073374c1b56a3ff2557e395306f98ffb2bd00c163ae2a6dcbf0d",
+  "pure_rule_source_sha256": {
+    "src/forte/fast/analyzer.py": "bef702adbd433cd5788d112541544de3b09cec9d02c800f927682fed2ee69d53",
+    "src/forte/fast/probes.py": "d01fb10096e4120334a7d0d92b5ffed41b24a761bfe68470c2f5ee51085bc00e"
+  },
+  "base_source_sha256": "2a1a063677d579954e1e597f340585253f236a4622c17e7699bba212f9e55d99",
+  "labels_sha256": "1525e16117ee375a1581967a4f2f855c4d88c107dec4998878f9306031be73d8",
+  "labels_used_for": "scoring_only_after_uniform_proposal_generation",
+  "parameters_fitted": 0,
+  "threshold_search_performed": false,
+  "inference_executed": false,
+  "type_enablement_authorized": false,
+  "heldout_accuracy_claim": false,
+  "cross_validation_claim": false,
+  "unmeasured": [
+    "decisive_region_visibility_and_90_percent_procedure_coverage",
+    "dense_two_phrasing_local_verification",
+    "type_ground_truth",
+    "all_non_target_videos_and_augmented_copies",
+    "negative_distribution_calibration_provenance",
+    "grouped_lovo_if_any_parameter_is_learned",
+    "original_evidence_api_schema_and_latency"
+  ],
+  "unsupported_from_recorded_states": [
+    "KEY_LEFT_IN_SAFE_requires_key_and_safe_interaction_states",
+    "CASH_HANDOVER_IRREGULAR_requires_cash_transfer_and_hand_trajectories"
+  ],
+  "base": {
+    "run_id": "q30base20261018a",
+    "rule_config": {
+      "min_away": 3
+    },
+    "config_sha256": "128fac06fbf9cd6db70f0cca9b36ad75624bb142447e04fd0e7eb3072fbeb770",
+    "private_report_sha256": "74fc4683091762cd2f09fc46d1b790032d4a612863da033eaa628a56947c5f63",
+    "source_complete": true,
+    "channels": {
+      "recorded_events": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 1,
+          "negative_proposals": 1,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 15,
+          "positive_proposals": 16,
+          "positive_video_proposal_coverage": 0.7142857142857143,
+          "originally_unreported_positive_videos": 6,
+          "additional_positive_videos_with_proposals": 0,
+          "negative_proposal_count_distribution": {
+            "0": 18,
+            "1": 1
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "CASH_HANDOVER_IRREGULAR": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_LEFT_UNATTENDED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_ROOM_DOOR_OPEN": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COLLECTOR_NO_DOCUMENTS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COUNT_WITHOUT_CLIENT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "KEY_LEFT_IN_SAFE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "LEFT_DURING_SERVICE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PERSONAL_ITEMS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PREVIOUS_CASH_ON_DESK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "UNAUTHORIZED_PERSON": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "WORKSTATION_UNLOCKED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "installed_rules_all_types": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 6,
+          "negative_proposals": 7,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 14,
+          "positive_proposals": 20,
+          "positive_video_proposal_coverage": 0.6666666666666666,
+          "originally_unreported_positive_videos": 6,
+          "additional_positive_videos_with_proposals": 2,
+          "negative_proposal_count_distribution": {
+            "0": 13,
+            "1": 5,
+            "2": 1
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "CASH_HANDOVER_IRREGULAR": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_LEFT_UNATTENDED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_ROOM_DOOR_OPEN": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COLLECTOR_NO_DOCUMENTS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COUNT_WITHOUT_CLIENT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "KEY_LEFT_IN_SAFE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "LEFT_DURING_SERVICE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 6,
+            "negative_proposals": 6,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 7,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 13,
+              "1": 6
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PERSONAL_ITEMS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PREVIOUS_CASH_ON_DESK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "UNAUTHORIZED_PERSON": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "WORKSTATION_UNLOCKED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "dense_probe_windows": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 7,
+          "negative_proposals": 14,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 9,
+          "positive_proposals": 19,
+          "positive_video_proposal_coverage": 0.42857142857142855,
+          "originally_unreported_positive_videos": 6,
+          "additional_positive_videos_with_proposals": 2,
+          "negative_proposal_count_distribution": {
+            "0": 12,
+            "1": 2,
+            "2": 3,
+            "3": 2
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 5,
+            "negative_proposals": 5,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 8,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 14,
+              "1": 5
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 6,
+            "negative_proposals": 8,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 9,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 13,
+              "1": 4,
+              "2": 2
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "sampled_state_omission_proposals": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 7,
+          "negative_proposals": 11,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 8,
+          "positive_proposals": 15,
+          "positive_video_proposal_coverage": 0.38095238095238093,
+          "originally_unreported_positive_videos": 6,
+          "additional_positive_videos_with_proposals": 2,
+          "negative_proposal_count_distribution": {
+            "0": 12,
+            "1": 3,
+            "2": 4
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 4,
+            "negative_proposals": 4,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 6,
+            "positive_proposals": 7,
+            "positive_video_proposal_coverage": 0.2857142857142857,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 15,
+              "1": 4
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 6,
+            "negative_proposals": 6,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 7,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 13,
+              "1": 6
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 6,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      }
+    },
+    "videos": [
+      {
+        "name": "X-1",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0,
+              "sampled_states": 26,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0,
+              "sampled_states": 26,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-10",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-11",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 16.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 13.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-12",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-13",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-14",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-15",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 8.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 9.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-16",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 42.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 42.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": false,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-17",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 7.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 7.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 32.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 32.0,
+              "sampled_states": 12,
+              "window_fully_inside_sampled_timeline": false,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-18",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "UNAUTHORIZED_PERSON",
+              "t": 18.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            },
+            {
+              "type_id": "UNAUTHORIZED_PERSON",
+              "t": 20.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0,
+              "sampled_states": 21,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0,
+              "sampled_states": 21,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-19",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 29.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 29.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0,
+              "start": 49.0,
+              "end": 57.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0,
+              "sampled_states": 45,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-2",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0,
+              "sampled_states": 15,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-20",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-21",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-22",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-23",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-24",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 6.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-25",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-26",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 10.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 11.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-27",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-28",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 14.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 12.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-29",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-3",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0,
+              "start": 2.0,
+              "end": 20.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0,
+              "start": 2.0,
+              "end": 20.0,
+              "sampled_states": 19,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-30",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 4.0
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-31",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-32",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-33",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-34",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "COUNT_WITHOUT_CLIENT",
+              "t": 12.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            },
+            {
+              "type_id": "COUNT_WITHOUT_CLIENT",
+              "t": 14.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0,
+              "sampled_states": 14,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0,
+              "sampled_states": 14,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-35",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0,
+              "sampled_states": 53,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0,
+              "sampled_states": 53,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-37",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0,
+              "sampled_states": 13,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0,
+              "sampled_states": 13,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-38",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 36.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0
+            },
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 32.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 37.0,
+              "start": 30.0,
+              "end": 54.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 37.0,
+              "start": 30.0,
+              "end": 54.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0,
+              "sampled_states": 30,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0,
+              "sampled_states": 30,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 37.0,
+              "start": 30.0,
+              "end": 54.0,
+              "sampled_states": 25,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-39",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0,
+              "sampled_states": 36,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0,
+              "sampled_states": 36,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-4",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 57.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 57.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 16.0,
+              "start": 6.0,
+              "end": 53.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0,
+              "sampled_states": 18,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0,
+              "sampled_states": 18,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-40",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 19.5
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 19.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 19.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 19.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 17.0,
+              "start": 17.0,
+              "end": 45.0
+            }
+          ],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-43",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-44",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-45",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-46",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 14.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 10.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-5",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 69.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 69.0,
+              "start": 63.0,
+              "end": 71.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0,
+              "sampled_states": 61,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 69.0,
+              "start": 63.0,
+              "end": 71.0,
+              "sampled_states": 9,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-8",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      }
+    ]
+  },
+  "adapted": {
+    "run_id": "q30desk20261018a",
+    "rule_config": {
+      "min_away": 3
+    },
+    "config_sha256": "0a6da35273988a5a0a86a2e988f9ef30c1075ae7971f17b7d38008837037edf9",
+    "private_report_sha256": "14fbaba698d91c6e6b126d42ab648089bb9c76cdb1140e6bac6b91f098c4aed0",
+    "source_complete": true,
+    "channels": {
+      "recorded_events": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 3,
+          "negative_proposals": 3,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 14,
+          "positive_proposals": 15,
+          "positive_video_proposal_coverage": 0.6666666666666666,
+          "originally_unreported_positive_videos": 7,
+          "additional_positive_videos_with_proposals": 0,
+          "negative_proposal_count_distribution": {
+            "0": 16,
+            "1": 3
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "CASH_HANDOVER_IRREGULAR": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_LEFT_UNATTENDED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_ROOM_DOOR_OPEN": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COLLECTOR_NO_DOCUMENTS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COUNT_WITHOUT_CLIENT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "KEY_LEFT_IN_SAFE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "LEFT_DURING_SERVICE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PERSONAL_ITEMS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PREVIOUS_CASH_ON_DESK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "UNAUTHORIZED_PERSON": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "WORKSTATION_UNLOCKED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "installed_rules_all_types": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 4,
+          "negative_proposals": 5,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 12,
+          "positive_proposals": 16,
+          "positive_video_proposal_coverage": 0.5714285714285714,
+          "originally_unreported_positive_videos": 7,
+          "additional_positive_videos_with_proposals": 1,
+          "negative_proposal_count_distribution": {
+            "0": 15,
+            "1": 3,
+            "2": 1
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "CASH_HANDOVER_IRREGULAR": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_LEFT_UNATTENDED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 3,
+            "positive_proposals": 3,
+            "positive_video_proposal_coverage": 0.14285714285714285,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "CASH_ROOM_DOOR_OPEN": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COLLECTOR_NO_DOCUMENTS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "COUNT_WITHOUT_CLIENT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "KEY_LEFT_IN_SAFE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "LEFT_DURING_SERVICE": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 2,
+            "negative_proposals": 2,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 4,
+            "positive_proposals": 4,
+            "positive_video_proposal_coverage": 0.19047619047619047,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 17,
+              "1": 2
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 0,
+            "positive_proposals": 0,
+            "positive_video_proposal_coverage": 0.0,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PERSONAL_ITEMS": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "PREVIOUS_CASH_ON_DESK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "UNAUTHORIZED_PERSON": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "WORKSTATION_UNLOCKED": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 0,
+            "negative_proposals": 0,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 0,
+            "negative_proposal_count_distribution": {
+              "0": 19
+            },
+            "zero_negative_proposals_gate": {
+              "passed": true,
+              "reasons": [],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "dense_probe_windows": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 8,
+          "negative_proposals": 20,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 9,
+          "positive_proposals": 19,
+          "positive_video_proposal_coverage": 0.42857142857142855,
+          "originally_unreported_positive_videos": 7,
+          "additional_positive_videos_with_proposals": 3,
+          "negative_proposal_count_distribution": {
+            "0": 11,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 6,
+            "negative_proposals": 8,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 8,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 13,
+              "1": 4,
+              "2": 2
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 7,
+            "negative_proposals": 11,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 7,
+            "positive_proposals": 9,
+            "positive_video_proposal_coverage": 0.3333333333333333,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 2,
+            "negative_proposal_count_distribution": {
+              "0": 12,
+              "1": 3,
+              "2": 4
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 2,
+            "positive_proposals": 2,
+            "positive_video_proposal_coverage": 0.09523809523809523,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      },
+      "sampled_state_omission_proposals": {
+        "all_types": {
+          "videos": 40,
+          "processed": 40,
+          "failed": 0,
+          "negative_videos": 19,
+          "negative_videos_with_proposals": 7,
+          "negative_proposals": 9,
+          "positive_videos": 21,
+          "positive_videos_with_proposals": 8,
+          "positive_proposals": 12,
+          "positive_video_proposal_coverage": 0.38095238095238093,
+          "originally_unreported_positive_videos": 7,
+          "additional_positive_videos_with_proposals": 3,
+          "negative_proposal_count_distribution": {
+            "0": 12,
+            "1": 5,
+            "2": 2
+          },
+          "zero_negative_proposals_gate": {
+            "passed": false,
+            "reasons": [
+              "false_alarms"
+            ],
+            "regressed_videos": [],
+            "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+          },
+          "type_recall_measured": false,
+          "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+        },
+        "by_type": {
+          "NO_AUTHENTICITY_CHECK": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 5,
+            "negative_proposals": 6,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 6,
+            "positive_proposals": 7,
+            "positive_video_proposal_coverage": 0.2857142857142857,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 14,
+              "1": 4,
+              "2": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_CLIENT_ID": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 2,
+            "negative_proposals": 2,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 4,
+            "positive_proposals": 4,
+            "positive_video_proposal_coverage": 0.19047619047619047,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 17,
+              "1": 2
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          },
+          "NO_RECOUNT": {
+            "videos": 40,
+            "processed": 40,
+            "failed": 0,
+            "negative_videos": 19,
+            "negative_videos_with_proposals": 1,
+            "negative_proposals": 1,
+            "positive_videos": 21,
+            "positive_videos_with_proposals": 1,
+            "positive_proposals": 1,
+            "positive_video_proposal_coverage": 0.047619047619047616,
+            "originally_unreported_positive_videos": 7,
+            "additional_positive_videos_with_proposals": 1,
+            "negative_proposal_count_distribution": {
+              "0": 18,
+              "1": 1
+            },
+            "zero_negative_proposals_gate": {
+              "passed": false,
+              "reasons": [
+                "false_alarms"
+              ],
+              "regressed_videos": [],
+              "scope": "recorded_run_only; no_unseen_accuracy_or_cross_validation_claim"
+            },
+            "type_recall_measured": false,
+            "interpretation": "positive_video_coverage_proxy; proposals_are_not_confirmed_findings"
+          }
+        }
+      }
+    },
+    "videos": [
+      {
+        "name": "X-1",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 0.0,
+              "end": 25.0,
+              "sampled_states": 26,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-10",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-11",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 16.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 13.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-12",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 26.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 26.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-13",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-14",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-15",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 8.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 9.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-16",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 42.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 42.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": false,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-17",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 32.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 4.0,
+              "start": 3.0,
+              "end": 32.0,
+              "sampled_states": 12,
+              "window_fully_inside_sampled_timeline": false,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-18",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "UNAUTHORIZED_PERSON",
+              "t": 18.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            },
+            {
+              "type_id": "UNAUTHORIZED_PERSON",
+              "t": 20.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0,
+              "sampled_states": 21,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 22.0,
+              "sampled_states": 21,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-19",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 29.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 29.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0,
+              "start": 49.0,
+              "end": 57.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 46.0,
+              "sampled_states": 45,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-2",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 9.0,
+              "start": 3.0,
+              "end": 17.0,
+              "sampled_states": 15,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-20",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-21",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-22",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-23",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-24",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 6.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-25",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-26",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 10.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "CASH_LEFT_UNATTENDED",
+              "t": 11.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-27",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-28",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 7.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "WORKSTATION_UNLOCKED",
+              "t": 8.0
+            }
+          ],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-29",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-3",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 2.0,
+              "end": 20.0
+            }
+          ],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-30",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 4.0
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-31",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-32",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-33",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "CASH_ROOM_DOOR_OPEN",
+              "t": 5.5
+            }
+          ],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-34",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "COUNT_WITHOUT_CLIENT",
+              "t": 12.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "COUNT_WITHOUT_CLIENT",
+              "t": 14.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 15.0,
+              "sampled_states": 14,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-35",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 2.0,
+              "end": 54.0,
+              "sampled_states": 53,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-37",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 8.0,
+              "start": 3.0,
+              "end": 15.0,
+              "sampled_states": 13,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-38",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 33.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 32.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 30.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 30.0,
+              "start": 30.0,
+              "end": 54.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 30.0,
+              "start": 30.0,
+              "end": 54.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 5.0,
+              "start": 1.0,
+              "end": 30.0,
+              "sampled_states": 30,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 30.0,
+              "start": 30.0,
+              "end": 54.0,
+              "sampled_states": 25,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 30.0,
+              "start": 30.0,
+              "end": 54.0,
+              "sampled_states": 25,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-39",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 48.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 47.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 50.0,
+              "start": 45.0,
+              "end": 75.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 50.0,
+              "start": 45.0,
+              "end": 75.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 7.0,
+              "start": 4.0,
+              "end": 39.0,
+              "sampled_states": 36,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 50.0,
+              "start": 45.0,
+              "end": 75.0,
+              "sampled_states": 31,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-4",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 57.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "PREVIOUS_CASH_ON_DESK",
+              "t": 57.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 16.0,
+              "start": 6.0,
+              "end": 53.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 56.0,
+              "start": 55.0,
+              "end": 72.0,
+              "sampled_states": 18,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-40",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 19.5
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 19.5
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "COLLECTOR_NO_DOCUMENTS",
+              "t": 19.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 19.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_RECOUNT",
+              "t": 17.0,
+              "start": 17.0,
+              "end": 45.0
+            }
+          ],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-43",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-44",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-45",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 19.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 10.0,
+              "start": 2.0,
+              "end": 10.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 10.0,
+              "start": 2.0,
+              "end": 10.0
+            },
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 19.0,
+              "start": 19.0,
+              "end": 33.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 19.0,
+              "start": 19.0,
+              "end": 33.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 10.0,
+              "start": 2.0,
+              "end": 10.0,
+              "sampled_states": 9,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 19.0,
+              "start": 19.0,
+              "end": 33.0,
+              "sampled_states": 15,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-46",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 14.0
+            }
+          ],
+          "installed_rules_all_types": [
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0
+            },
+            {
+              "type_id": "PERSONAL_ITEMS",
+              "t": 10.0
+            }
+          ],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 0.0,
+              "start": 0.0,
+              "end": 19.0,
+              "sampled_states": 20,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-5",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0
+            },
+            {
+              "type_id": "NO_CLIENT_ID",
+              "t": 69.0,
+              "start": 63.0,
+              "end": 71.0
+            }
+          ],
+          "sampled_state_omission_proposals": [
+            {
+              "type_id": "NO_AUTHENTICITY_CHECK",
+              "t": 11.0,
+              "start": 0.0,
+              "end": 60.0,
+              "sampled_states": 61,
+              "window_fully_inside_sampled_timeline": true,
+              "coverage_fraction": null,
+              "verified": false
+            }
+          ]
+        },
+        "proposal_replay_failure": false
+      },
+      {
+        "name": "X-8",
+        "proposal_replay_processed": true,
+        "source_processed": true,
+        "channels": {
+          "recorded_events": [],
+          "installed_rules_all_types": [],
+          "dense_probe_windows": [],
+          "sampled_state_omission_proposals": []
+        },
+        "proposal_replay_failure": false
+      }
+    ]
+  },
+  "comparison": {
+    "labels_used": false,
+    "videos": 40,
+    "comparable_videos": 40,
+    "recorded_min_away_equal": true,
+    "state_changes": {
+      "cash_bag": {
+        "compared": 1277,
+        "changed": 2
+      },
+      "cash_in_hands": {
+        "compared": 1277,
+        "changed": 1
+      },
+      "cashier_at_desk": {
+        "compared": 1277,
+        "changed": 0
+      },
+      "cashier_in_room": {
+        "compared": 1277,
+        "changed": 2
+      },
+      "cashier_seat": {
+        "compared": 1277,
+        "changed": 55
+      },
+      "client_at_desk": {
+        "compared": 1277,
+        "changed": 1
+      },
+      "client_seat": {
+        "compared": 581,
+        "changed": 77
+      },
+      "counting_machine": {
+        "compared": 1277,
+        "changed": 4
+      },
+      "desk.cash": {
+        "compared": 1277,
+        "changed": 187
+      },
+      "desk.cash_bag": {
+        "compared": 1277,
+        "changed": 0
+      },
+      "desk.coat_or_handbag": {
+        "compared": 1277,
+        "changed": 0
+      },
+      "desk.coins_or_valuables": {
+        "compared": 1277,
+        "changed": 1
+      },
+      "desk.drink": {
+        "compared": 1277,
+        "changed": 2
+      },
+      "desk.id_or_document": {
+        "compared": 1277,
+        "changed": 459
+      },
+      "detector": {
+        "compared": 1277,
+        "changed": 0
+      },
+      "drink": {
+        "compared": 1277,
+        "changed": 2
+      },
+      "hand_counting": {
+        "compared": 1277,
+        "changed": 6
+      },
+      "id_card_shown": {
+        "compared": 1277,
+        "changed": 457
+      },
+      "laptop": {
+        "compared": 1277,
+        "changed": 4
+      },
+      "other_people": {
+        "compared": 1277,
+        "changed": 2
+      },
+      "personal_items": {
+        "compared": 1277,
+        "changed": 0
+      },
+      "valuables_on_desk": {
+        "compared": 1277,
+        "changed": 176
+      }
+    },
+    "scope": "recorded_run_comparison; differences_include_model_run_noise; no_causal_adapter_claim",
+    "per_video": [
+      {
+        "name": "X-1",
+        "comparable": true,
+        "aligned_state_frames": 26,
+        "base_state_frames": 26,
+        "adapted_state_frames": 26,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 5.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 5.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-10",
+        "comparable": true,
+        "aligned_state_frames": 16,
+        "base_state_frames": 16,
+        "adapted_state_frames": 16,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-11",
+        "comparable": true,
+        "aligned_state_frames": 26,
+        "base_state_frames": 26,
+        "adapted_state_frames": 26,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-12",
+        "comparable": true,
+        "aligned_state_frames": 43,
+        "base_state_frames": 43,
+        "adapted_state_frames": 43,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "CASH_LEFT_UNATTENDED",
+                "t": 26.0
+              }
+            ]
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "CASH_LEFT_UNATTENDED",
+                "t": 26.0
+              }
+            ]
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-13",
+        "comparable": true,
+        "aligned_state_frames": 66,
+        "base_state_frames": 66,
+        "adapted_state_frames": 66,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-14",
+        "comparable": true,
+        "aligned_state_frames": 101,
+        "base_state_frames": 101,
+        "adapted_state_frames": 101,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-15",
+        "comparable": true,
+        "aligned_state_frames": 21,
+        "base_state_frames": 21,
+        "adapted_state_frames": 21,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-16",
+        "comparable": true,
+        "aligned_state_frames": 23,
+        "base_state_frames": 23,
+        "adapted_state_frames": 23,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-17",
+        "comparable": true,
+        "aligned_state_frames": 15,
+        "base_state_frames": 15,
+        "adapted_state_frames": 15,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "COLLECTOR_NO_DOCUMENTS",
+                "t": 7.5
+              }
+            ],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "COLLECTOR_NO_DOCUMENTS",
+                "t": 7.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-18",
+        "comparable": true,
+        "aligned_state_frames": 23,
+        "base_state_frames": 23,
+        "adapted_state_frames": 23,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-19",
+        "comparable": true,
+        "aligned_state_frames": 58,
+        "base_state_frames": 58,
+        "adapted_state_frames": 58,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 3,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-2",
+        "comparable": true,
+        "aligned_state_frames": 18,
+        "base_state_frames": 18,
+        "adapted_state_frames": 18,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-20",
+        "comparable": true,
+        "aligned_state_frames": 12,
+        "base_state_frames": 12,
+        "adapted_state_frames": 12,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-21",
+        "comparable": true,
+        "aligned_state_frames": 20,
+        "base_state_frames": 20,
+        "adapted_state_frames": 20,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-22",
+        "comparable": true,
+        "aligned_state_frames": 22,
+        "base_state_frames": 22,
+        "adapted_state_frames": 22,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-23",
+        "comparable": true,
+        "aligned_state_frames": 19,
+        "base_state_frames": 19,
+        "adapted_state_frames": 19,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-24",
+        "comparable": true,
+        "aligned_state_frames": 15,
+        "base_state_frames": 15,
+        "adapted_state_frames": 15,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-25",
+        "comparable": true,
+        "aligned_state_frames": 32,
+        "base_state_frames": 32,
+        "adapted_state_frames": 32,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-26",
+        "comparable": true,
+        "aligned_state_frames": 20,
+        "base_state_frames": 20,
+        "adapted_state_frames": 20,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-27",
+        "comparable": true,
+        "aligned_state_frames": 27,
+        "base_state_frames": 27,
+        "adapted_state_frames": 27,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-28",
+        "comparable": true,
+        "aligned_state_frames": 17,
+        "base_state_frames": 17,
+        "adapted_state_frames": 17,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "WORKSTATION_UNLOCKED",
+                "t": 14.5
+              }
+            ],
+            "added": [
+              {
+                "type_id": "WORKSTATION_UNLOCKED",
+                "t": 7.5
+              }
+            ]
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "WORKSTATION_UNLOCKED",
+                "t": 12.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "WORKSTATION_UNLOCKED",
+                "t": 8.0
+              }
+            ]
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-29",
+        "comparable": true,
+        "aligned_state_frames": 18,
+        "base_state_frames": 18,
+        "adapted_state_frames": 18,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-3",
+        "comparable": true,
+        "aligned_state_frames": 21,
+        "base_state_frames": 21,
+        "adapted_state_frames": 21,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 8.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 8.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 5.0
+              }
+            ]
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 8.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-30",
+        "comparable": true,
+        "aligned_state_frames": 19,
+        "base_state_frames": 19,
+        "adapted_state_frames": 19,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-31",
+        "comparable": true,
+        "aligned_state_frames": 24,
+        "base_state_frames": 24,
+        "adapted_state_frames": 24,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-32",
+        "comparable": true,
+        "aligned_state_frames": 22,
+        "base_state_frames": 22,
+        "adapted_state_frames": 22,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-33",
+        "comparable": true,
+        "aligned_state_frames": 15,
+        "base_state_frames": 15,
+        "adapted_state_frames": 15,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-34",
+        "comparable": true,
+        "aligned_state_frames": 18,
+        "base_state_frames": 18,
+        "adapted_state_frames": 18,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-35",
+        "comparable": true,
+        "aligned_state_frames": 57,
+        "base_state_frames": 57,
+        "adapted_state_frames": 57,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-37",
+        "comparable": true,
+        "aligned_state_frames": 16,
+        "base_state_frames": 16,
+        "adapted_state_frames": 16,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 8.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 8.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-38",
+        "comparable": true,
+        "aligned_state_frames": 59,
+        "base_state_frames": 59,
+        "adapted_state_frames": 59,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "PREVIOUS_CASH_ON_DESK",
+                "t": 36.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "PREVIOUS_CASH_ON_DESK",
+                "t": 33.5
+              }
+            ]
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 5.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 30.0
+              }
+            ]
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 37.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 37.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 30.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 30.0
+              }
+            ]
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 5.0
+              },
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 37.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 30.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 30.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "X-39",
+        "comparable": true,
+        "aligned_state_frames": 79,
+        "base_state_frames": 79,
+        "adapted_state_frames": 79,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "PREVIOUS_CASH_ON_DESK",
+                "t": 48.5
+              }
+            ]
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "PREVIOUS_CASH_ON_DESK",
+                "t": 47.0
+              }
+            ]
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 50.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 50.0
+              }
+            ]
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 7.0
+              }
+            ],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 50.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "X-4",
+        "comparable": true,
+        "aligned_state_frames": 73,
+        "base_state_frames": 73,
+        "adapted_state_frames": 73,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 56.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 3,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 56.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-40",
+        "comparable": true,
+        "aligned_state_frames": 26,
+        "base_state_frames": 26,
+        "adapted_state_frames": 26,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-43",
+        "comparable": true,
+        "aligned_state_frames": 24,
+        "base_state_frames": 24,
+        "adapted_state_frames": 24,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-44",
+        "comparable": true,
+        "aligned_state_frames": 21,
+        "base_state_frames": 21,
+        "adapted_state_frames": 21,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-45",
+        "comparable": true,
+        "aligned_state_frames": 34,
+        "base_state_frames": 34,
+        "adapted_state_frames": 34,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 19.0
+              }
+            ]
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 10.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 10.0
+              },
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 19.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 19.0
+              }
+            ]
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": [
+              {
+                "type_id": "NO_AUTHENTICITY_CHECK",
+                "t": 10.0
+              },
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 19.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "X-46",
+        "comparable": true,
+        "aligned_state_frames": 20,
+        "base_state_frames": 20,
+        "adapted_state_frames": 20,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 1,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 2,
+            "removed": [],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-5",
+        "comparable": true,
+        "aligned_state_frames": 72,
+        "base_state_frames": 72,
+        "adapted_state_frames": 72,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 69.0
+              }
+            ],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 3,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 1,
+            "removed": [
+              {
+                "type_id": "NO_CLIENT_ID",
+                "t": 69.0
+              }
+            ],
+            "added": []
+          }
+        }
+      },
+      {
+        "name": "X-8",
+        "comparable": true,
+        "aligned_state_frames": 39,
+        "base_state_frames": 39,
+        "adapted_state_frames": 39,
+        "proposal_changes": {
+          "recorded_events": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "installed_rules_all_types": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "dense_probe_windows": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          },
+          "sampled_state_omission_proposals": {
+            "matched": 0,
+            "removed": [],
+            "added": []
+          }
+        }
+      }
+    ]
+  },
+  "adapted_source_sha256": "ba17a5725e12345ce20f0ad5a3b50a24eea78656fa7521ae1c87e37d0a358328"
+}

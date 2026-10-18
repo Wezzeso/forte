@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vllm-bnb-plugin"
+version = "0.0.3"
+description = "Out-of-tree bitsandbytes quantization plugin for vLLM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "vllm",
+    "bitsandbytes>=0.48.1",
+]
+
+[project.entry-points."vllm.general_plugins"]
+bitsandbytes = "vllm_bnb_plugin:register"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vllm_bnb_plugin*"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "UP",
+    "B",
+    "ISC",
+    "SIM",
+    "I",
+    "G",
+]
+ignore = [
+    "F405",
+    "F403",
+    "E731",
+    "B905",
+    "B007",
+    "UP032",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.typos.files]
+extend-exclude = ["tests/prompts/*"]

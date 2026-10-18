@@ -1,0 +1,43 @@
+{
+  "image": "sha256:2a84ab49ea61411f8fce9cf7d51dc959b5ab39cdc01ba360744724d2e19836fa",
+  "archive_sha256": "4740937cc840153c30d072dd22d78fbc72b1ddab886286de516f2d63d0ad3358",
+  "ready": true,
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "api_configuration_unchanged": true,
+  "profile_sha256": "8fc400ec761c0c0484938fc84b750fbbba5f7b98fa2e34f011b9e08e68b140fd",
+  "served_files_verified": 26,
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/portrait-20261018-4740937c/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/portrait-20261018-4740937c/rollback.sh",
+  "recorded_at": "2026-10-18T05:55:20.662297+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "status": "deployed_and_verified",
+  "scope": "portrait video review layout, Phosphor icons, unboxed controls and matching original geometric illustrations",
+  "public_files_verified": 26,
+  "public_runtime_assets_exact_match": true,
+  "runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "browser_validation": {
+    "passed": true,
+    "title": "FORTE Panopticon вЂ” Р’РёРґРµРѕР°РЅР°Р»РёС‚РёРєР°",
+    "ready": true,
+    "illustrations_visible": true,
+    "desktop_overflow": false,
+    "mobile_overflow": false,
+    "browser_errors": [],
+    "uploads_performed": 0
+  },
+  "production_portrait_regression": "passed against deployed frontend with synthetic browser-only MOV/JPEG and intercepted API responses; desktop, short desktop, tablet, mobile, seeking and evidence enlargement",
+  "model_requests_performed": 0,
+  "build": "passed",
+  "ui_validation": "25/25 local browser regressions and production portrait regression passed",
+  "public_verification_report": "dist/portrait-release-20261018/public-verification.json",
+  "proof_screenshots": [
+    "dist/portrait-release-20261018/production-upload-desktop.png",
+    "dist/portrait-release-20261018/production-upload-mobile.png"
+  ]
+}

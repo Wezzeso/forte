@@ -1,0 +1,83 @@
+{
+  "account_or_rental_changes": false,
+  "active_retry_and_quality_outputs_excluded": true,
+  "amended_compute_release_sha256": "7cdc701716b977a7e24ded9d985440767cf2ae0280acf2501435264e1eba36d3",
+  "amended_reservation_sha256": "67f08102a1c9f26bba6f1f1952d4899f5eae3446ff74ef347362ebdd479cb097",
+  "archive": {
+    "bytes": 214318756,
+    "name": "terminal-experiments.tar.gz",
+    "sha256": "3ea541c6137b2657dc8fdc304fdf680da1e7b8eca8b8e00ed57033715c1505fe"
+  },
+  "archive_count": 2,
+  "checkpoint_scope": "Terminal 61-row/8-step/63-forward FIT candidate_unselected; later serving/quality output excluded",
+  "created_at_utc": "2026-10-17T16:15:58.221381+00:00",
+  "database_changes": false,
+  "directory": "/data/forte-backups/qwen38-terminal-fit-checkpoint-20261017T161545Z-9c7eccc6",
+  "exact_member_hashes_verified": true,
+  "fit_adapter_checksums": {
+    "README.md": "db0e418d3b101a160033b24621a0b1637b343ad0aad6dfb939fa496755b701e3",
+    "adapter_config.json": "edb87b169ced09e6b84c9a2292c9e047f015a0c37b72096b3b64695de95cd012",
+    "adapter_model.safetensors": "dd9ba2303067d843b362e2881ffc456fc05c0b35231108a3b6270fcec4818ed2"
+  },
+  "fit_adapter_file_count": 3,
+  "fit_adapter_files": {
+    "README.md": {
+      "bytes": 5192,
+      "sha256": "db0e418d3b101a160033b24621a0b1637b343ad0aad6dfb939fa496755b701e3"
+    },
+    "adapter_config.json": {
+      "bytes": 1295,
+      "sha256": "edb87b169ced09e6b84c9a2292c9e047f015a0c37b72096b3b64695de95cd012"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 233605480,
+      "sha256": "dd9ba2303067d843b362e2881ffc456fc05c0b35231108a3b6270fcec4818ed2"
+    }
+  },
+  "fit_adapter_raw_bytes": 233611967,
+  "fit_adapter_tree_sha256": "51780bf7369885f4157c6b08966f425a2196f0b4a0480f07dc9255b6fb6760d5",
+  "fit_controller_sha256": "5d2924b97ddc29d83585fb4593c9bab182dffcac9e48c9d9ccc73d12643a0795",
+  "fit_run_file_count": 13,
+  "fit_run_raw_bytes": 236439283,
+  "fit_run_sha256": "880db33475edc936fbe537a6aecbb5ba05b668d7c712d36eb816cf0416842c62",
+  "fit_status": "candidate_unselected",
+  "gpu_model_calls": 0,
+  "gpu_service_database_account_changes": false,
+  "later_serving_quality_outputs_excluded": true,
+  "local_adapter_tree_verified": true,
+  "local_exact_member_hashes_verified": true,
+  "local_proof_capture_at_utc": "2026-10-17T16:16:31.741931+00:00",
+  "local_proof_exact_member_hashes_verified": true,
+  "local_proof_source_bytes": 4539330,
+  "local_proof_source_file_count": 172,
+  "local_proofs_archive": {
+    "bytes": 2225528,
+    "name": "local-proofs-releases-settlement.tar.gz",
+    "sha256": "069fca5b6b99b62f99c2bdc0849110ca530afbefce19e21b0c6a51083d7dd03c"
+  },
+  "onhost_snapshot_retained": true,
+  "original_smoke_checkpoint_preserved_separately": true,
+  "private_content_printed": false,
+  "private_manifest_sha256": "ca24bfd929160c90034459d41241a51d6b35a6b63276c36ea6097954a64b3d0a",
+  "protected_local_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-terminal-fit-checkpoint-20261017T161545Z-9c7eccc6",
+  "protected_local_transfer_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T16:21:21.925322+00:00",
+  "protected_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "root_handoff_sha256": "98da030c5ed73a0bf6c213567e0d6fbce127dd967a2fc8220b49647f2a48d3f2",
+  "schema_version": "forte.private-terminal-experiment-increment.v1",
+  "scope": "Terminal full FIT candidate_unselected adapter/run/proofs/rootcontroller/log/claim/exact amended releases/originals/settlement/handoff; later active serving/quality trees excluded",
+  "service_changes": false,
+  "source_bytes": 238726643,
+  "source_file_count": 91,
+  "source_unchanged_verified": true,
+  "stop_schedule_changed": false,
+  "terminal_settlement_sha256": "698f50d80abb756e74365a50c42e660987c9bbbfd26b0128213b6e2630867a42",
+  "total_archive_bytes": 216544284,
+  "trained_candidate_selected": false,
+  "verification_completed_at_utc": "2026-10-17T16:21:33.766416+00:00"
+}

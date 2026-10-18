@@ -1,0 +1,34 @@
+{
+  "schema_version": "forte.qwen38.independent-native-runner-qa.v1",
+  "captured_at_utc": "2026-10-17T18:17:12.593858+00:00",
+  "exit_code": 0,
+  "test_counts": {
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_seconds": 2.017,
+  "source_hashes_before": {
+    "evaluation/private/native_fullsix_runner.py": "e337c0dbc4a6b5c5b4793c0a241c9462b29f0437612ee6233c3fade14fdbf3e3",
+    "evaluation/private/test_native_fullsix_runner.py": "1ec274cf540857de71b1cc7338e00a8ed8c6ce9ac0ab1c9c0db6065cb13d81b7",
+    "qa/integration/qwen38_native_runner_boundary_test.py": "8f2c9e6f7851b0313129dff9c469819b3b750f18bd8c897b4f9fd59ccfcdffdb",
+    "benchmarks/performance/qwen38_native_fullsix.py": "f8591adf6fae3cb66d90c2982f175ead7ed301e181a32eff71823239298d0ac9",
+    "evaluation/private/accuracy_diagnostic_runner.py": "3652322366a3a6c756cefa703c6f35eb90c566302de93f8ff1a8518be1368279"
+  },
+  "source_hashes_after": {
+    "evaluation/private/native_fullsix_runner.py": "e337c0dbc4a6b5c5b4793c0a241c9462b29f0437612ee6233c3fade14fdbf3e3",
+    "evaluation/private/test_native_fullsix_runner.py": "1ec274cf540857de71b1cc7338e00a8ed8c6ce9ac0ab1c9c0db6065cb13d81b7",
+    "qa/integration/qwen38_native_runner_boundary_test.py": "8f2c9e6f7851b0313129dff9c469819b3b750f18bd8c897b4f9fd59ccfcdffdb",
+    "benchmarks/performance/qwen38_native_fullsix.py": "f8591adf6fae3cb66d90c2982f175ead7ed301e181a32eff71823239298d0ac9",
+    "evaluation/private/accuracy_diagnostic_runner.py": "3652322366a3a6c756cefa703c6f35eb90c566302de93f8ff1a8518be1368279"
+  },
+  "changed_during_run": [],
+  "test_log_sha256": "f53dad2a83d631453dcec678f2f81672f2140098c333c1137dea0883f88df8c1",
+  "scope": "Generated source/slot/provenance dictionaries, temporary generated source bytes and mocked pipeline only. No actual plan/release/reservation/controller creation, source population, predictions, model, GPU, HTTP, Docker or exposure calls. Actual execution remains fail-closed pending future native plan factory and genuine runtime/root/A09 gates.",
+  "review_fixes": [
+    "Factory retains original reproducibility bundle and separate native identity/profile/source binding before declared per-case timeout extension.",
+    "Source-local folder/cleanup/terminal failures preserve slots and continue other sources.",
+    "Technical-completion count requires successful status, validated public contract, verified receipt and exact completion proof flags; retained receipt from failed cleanup cannot count."
+  ]
+}

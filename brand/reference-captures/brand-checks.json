@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "scope": "Static brand assets and proposed token pairs only; live UI QA is separate.",
+  "assets": [
+    {
+      "path": "assets/fonts/OFL.txt",
+      "hash_matches": true
+    },
+    {
+      "path": "assets/fonts/OpenSans-Variable.ttf",
+      "hash_matches": true
+    }
+  ],
+  "tokens_checked": 40,
+  "glyphs_checked": 95,
+  "glyphs_missing": [],
+  "source_css_matches": true,
+  "contrast_pairs": [
+    {
+      "pair": "Primary button",
+      "foreground": "#FFFFFF",
+      "background": "#A31551",
+      "ratio": 7.545,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Main text",
+      "foreground": "#1D1D1D",
+      "background": "#FFFFFF",
+      "ratio": 16.858,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Muted text",
+      "foreground": "#5E5660",
+      "background": "#FFFFFF",
+      "ratio": 7.057,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Link",
+      "foreground": "#185AC5",
+      "background": "#FFFFFF",
+      "ratio": 6.349,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Normal status",
+      "foreground": "#146C43",
+      "background": "#EAF5EE",
+      "ratio": 5.772,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Possible signs",
+      "foreground": "#7C4800",
+      "background": "#FFF3DA",
+      "ratio": 6.855,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Failed status",
+      "foreground": "#A12B2B",
+      "background": "#FDECEC",
+      "ratio": 6.349,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Processing status",
+      "foreground": "#185AC5",
+      "background": "#EEF4FF",
+      "ratio": 5.75,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Visibility status",
+      "foreground": "#5E5660",
+      "background": "#F1EEF2",
+      "ratio": 6.133,
+      "minimum": 4.5,
+      "passes": true
+    },
+    {
+      "pair": "Focus outline on white",
+      "foreground": "#A31551",
+      "background": "#FFFFFF",
+      "ratio": 7.545,
+      "minimum": 3,
+      "passes": true
+    },
+    {
+      "pair": "Control outline",
+      "foreground": "#827883",
+      "background": "#FFFFFF",
+      "ratio": 4.231,
+      "minimum": 3,
+      "passes": true
+    },
+    {
+      "pair": "Dark label on coral",
+      "foreground": "#4A0221",
+      "background": "#FC9385",
+      "ratio": 7.302,
+      "minimum": 4.5,
+      "passes": true
+    }
+  ],
+  "errors": []
+}

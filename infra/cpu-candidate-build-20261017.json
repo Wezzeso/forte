@@ -1,0 +1,36 @@
+{
+  "status": "built_import_verified_not_deployed",
+  "candidate_tag": "forte-review:candidate-20261017",
+  "candidate_image_id": "sha256:fc217306c15f322e78c41f561030ee741b46ab4203369f54a05f7c627f6c1209",
+  "cpu_update_archive_sha256": "e2d98fb736874b9c1f711a455e88f4f06e4188546b5ee3d71d6da64f2027fd50",
+  "cpu_update_archive_files": 108,
+  "cpu_update_archive_bytes": 1477445,
+  "additional_model_adapter_source_sha256": "36bca755914dd05174cc9e239adc75aa7685cc5d6535542664482900fbce7bde",
+  "source_binding_note": "The code-only CPU update archive preserves separately owned serving/model/configuration metadata. The latest model adapter was synced separately before this build. The immutable image identity binds the complete resulting filesystem; the listed module hashes were verified inside that image.",
+  "verified_image_module_sha256": {
+    "forte.model.adapter": "36bca755914dd05174cc9e239adc75aa7685cc5d6535542664482900fbce7bde",
+    "forte.config": "816ee588690e92731ce5fdb6485c35dd8c6532f0358f3ed072234c06da616e8a",
+    "forte.pipeline": "293f5ca6afeed2d27810d8299445c3afd18f30ba90b7d5d0c3009b99e5e1e4d0",
+    "forte.decision.engine": "ada890567fbc67090272b59d4a3f5220042ae5baab3df3a545c409b4f0c1d321"
+  },
+  "candidate_verification": {
+    "network": "none",
+    "read_only": true,
+    "gpu_devices": false,
+    "model_calls": 0,
+    "import_passed": true,
+    "default_staged_screening": false,
+    "default_concise_observations": false
+  },
+  "running_services_before_after_identical": true,
+  "running_cpu_image": "sha256:97fd2dd3a5dafd63309fab12868925a8c6c39b363703ae0a5809ad6ff28afdd9",
+  "running_api_started_at": "2026-10-17T10:47:19.439355583Z",
+  "running_worker_started_at": "2026-10-17T10:47:19.464773196Z",
+  "running_model_image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+  "running_model_started_at": "2026-10-17T10:36:11.954566283Z",
+  "current_runtime_profile": {"compact_frame_ids": true, "max_inflight_per_job": 2, "max_concurrent_clips": 2},
+  "experiment_profile_selected": false,
+  "runtime_environment_changed": false,
+  "provider_stop_changed": false,
+  "private_media_or_labels_in_build": false
+}

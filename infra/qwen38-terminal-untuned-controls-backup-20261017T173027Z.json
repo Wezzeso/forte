@@ -1,0 +1,83 @@
+{
+  "account_or_rental_changes": false,
+  "active_retry_and_quality_outputs_excluded": true,
+  "active_trained_startup_run_outputs_logs_excluded": true,
+  "archive": {
+    "bytes": 26513725,
+    "name": "terminal-experiments.tar.gz",
+    "sha256": "c59ad8758ea602d9173fff22c70263f676e39ede2cb065de5bb6d8c2d2e7ad76"
+  },
+  "archive_count": 2,
+  "control2_terminal_accounting": {
+    "actual_model_http_done": 10,
+    "failure_code": "insufficient_visible_evidence",
+    "native_clock_proofs": 0,
+    "remaining_sources_unreleased": 5,
+    "source_failed_control": 1,
+    "unused_reserved_slots_consumed": 14
+  },
+  "controller_originals_preserved_without_status_rewrite": true,
+  "cpu_worker_image": "sha256:ead34877a788935556a30d49e3f722a270baf949159b8873106e338fe3852915",
+  "created_at_utc": "2026-10-17T17:30:27.109861+00:00",
+  "database_changes": false,
+  "directory": "/data/forte-backups/qwen38-terminal-untuned-controls-20261017T173025Z-ffb8fb57",
+  "exact_member_hashes_verified": true,
+  "final_public_source_sha256": "da8a4b838003783ab6d201efc1e3b0eff54bbaa10aaa30db7cabe3cbecc98b28",
+  "gpu_model_calls": 0,
+  "gpu_service_database_account_changes": false,
+  "historical_controller_original_status": "running_stale_preserved",
+  "local_exact_member_hashes_verified": true,
+  "local_proof_capture_at_utc": "2026-10-17T17:31:24.315216+00:00",
+  "local_proof_exact_member_hashes_verified": true,
+  "local_proof_source_bytes": 4103700,
+  "local_proof_source_file_count": 98,
+  "local_proofs_archive": {
+    "bytes": 1759840,
+    "name": "local-untuned-control-and-release-proofs.tar.gz",
+    "sha256": "8b89f30ca8eb96351448e3d904b3dc29f07fd3e5cfb98efb7c4c00a67d261e3a"
+  },
+  "matching_live_control_processes_at_preflight": 0,
+  "model_and_adapter_payload_excluded": true,
+  "onhost_snapshot_retained": true,
+  "private_content_printed": false,
+  "private_manifest_sha256": "fc0a602e3d48fc04749620f42a89a78f3c810214f52367a20c7bd2ee088816f1",
+  "protected_local_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-terminal-untuned-controls-20261017T173025Z-ffb8fb57",
+  "protected_local_transfer_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T17:32:01.896229+00:00",
+  "protected_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "root_switch_handoff_sha256": "300e8eddc9b02f527520a723879d61a17a2cb04ff4a65798fac53f503889657e",
+  "schema_version": "forte.private-terminal-experiment-increment.v1",
+  "scope": "Terminal untuned controls1+2 exact private outputs/source-frame evidence/accounting/originals, DA8 source/EAD build proof, static OPS/runtimeconfig/gates and switchhandoff; active trainedstartup/run/logs and model/adapterpayload excluded",
+  "service_changes": false,
+  "source_bytes": 36703670,
+  "source_file_count": 776,
+  "source_unchanged_verified": true,
+  "stop_schedule_changed": false,
+  "terminal_and_release_identity_checks": {
+    "/data/forte-ml/private/quality-untuned-pilot-a13-20261017T1657Z/a09-terminal-accounting/settlement.json": "4937801dcb1bfb849966901ef8222bd2d0234882edb7368988a390f3451f9da7",
+    "/data/forte-ml/private/quality-untuned-pilot-a13-control2-20261017T1714Z/a09-terminal-accounting/settlement.json": "c29fa7e37edd0c2305cc57be0839acb723c6aed447a3c454b35dbda966fd3d34",
+    "/data/forte-ml/qwen38-root-operations/trained-generated-after-untuned-pilot-handoff-20261017T1728Z.json": "300e8eddc9b02f527520a723879d61a17a2cb04ff4a65798fac53f503889657e",
+    "/home/ubuntu/forte-worker-source-da8a4b838003/build-proof.json": "932c2636d7d9317c331fb389f144b539fcb8d6eba677c859785a3184262ad414",
+    "/home/ubuntu/forte-worker-source-da8a4b838003/qwen38-ml-timeout-final-20261017T164509Z.tar.gz": "da8a4b838003783ab6d201efc1e3b0eff54bbaa10aaa30db7cabe3cbecc98b28"
+  },
+  "terminal_control_artifacts": {
+    "control1": {
+      "file_count": 22,
+      "jpeg_file_count": 0,
+      "raw_bytes": 921084
+    },
+    "control2": {
+      "file_count": 184,
+      "jpeg_file_count": 152,
+      "raw_bytes": 22666561
+    }
+  },
+  "terminality_basis": "Owner terminal exit report; exact historical terminal settlements; no matching live control process at independent preflight; source hashes unchanged through snapshot",
+  "total_archive_bytes": 28273565,
+  "verification_completed_at_utc": "2026-10-17T17:32:26.731897+00:00"
+}

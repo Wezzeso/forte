@@ -1,0 +1,41 @@
+{
+  "schema_version": "forte.public-candidate-release-verification.v1",
+  "state": "staged_disabled",
+  "activation": false,
+  "approved_types": [],
+  "serving_eligible": false,
+  "promotion_eligible": false,
+  "manifest_sha256": "411149db3579915380295557401fe9311745b47874eaf49ecf2c4070489c52c9",
+  "release_dir": "/home/ubuntu/forte/deploy/releases/public-specialists-20261018-0ab06fd0",
+  "copied_files": 48,
+  "copied_bytes": 135469180,
+  "models": {
+    "crop_vlm": {
+      "checkpoint_sha256": "a3733ccf3c888224c2887dd24900e45d2462e9481299ed71cec82518cfc6c7ad",
+      "quality_gate": {
+        "metric": "class_and_resolution_macro_accuracy",
+        "passed": false,
+        "reason": "primary_metric_below_predeclared_target",
+        "status": "failed",
+        "target": 0.95,
+        "value": 0.9453125
+      }
+    },
+    "detector": {
+      "checkpoint_sha256": "f01c7b9c897f6eee5a519a72d9dbe5d9f7344ebec4bf9e0187dcd44b683f848e",
+      "quality_gate": {
+        "metric": "fixed_confidence_id_card_recall",
+        "passed": false,
+        "reason": "primary_metric_below_predeclared_target",
+        "status": "failed",
+        "target": 0.95,
+        "value": 0.8125
+      }
+    }
+  },
+  "local_manifest_exact_copy": true,
+  "stage_operator_sha256": "542a30d66a377b5af5d7208af3bcefd3030640305e4f9707b81cdbd923bd87d7",
+  "stage_inputs_sha256": "011dc287f9c9a3197460b5e437071748cccdf4d13845413933a67840bd0761cc",
+  "model_or_test_inference_during_staging": false,
+  "live_configuration_changed": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "forte.qwen38.independent-ops-config-path-qa.v1",
+  "captured_at_utc": "2026-10-17T17:50:21.625973+00:00",
+  "status": "passed",
+  "tests_passed": 1,
+  "subtests_passed": 3,
+  "elapsed_seconds": 0.09,
+  "test_node": "evaluation/private/test_quality_arm_controller.py::ControllerTests::test_actual_startup_runtime_path_is_derived_and_checked_against_live_mount_and_command",
+  "source_hashes_before": {
+    "evaluation/private/quality_arm_controller.py": "2d330a22e545b1f64408e1266afb9fc2b4ca0c2f4f508b1c4bf97a799d6fb107",
+    "evaluation/private/test_quality_arm_controller.py": "27078b1a14ef6af87e91311f10c3d7f6608d189b501cab2fe0c1aebaefcd2fa7"
+  },
+  "source_hashes_after": {
+    "evaluation/private/quality_arm_controller.py": "2d330a22e545b1f64408e1266afb9fc2b4ca0c2f4f508b1c4bf97a799d6fb107",
+    "evaluation/private/test_quality_arm_controller.py": "27078b1a14ef6af87e91311f10c3d7f6608d189b501cab2fe0c1aebaefcd2fa7"
+  },
+  "changed_during_run": [],
+  "scope": "Generated startup plan/model-inspection dictionaries only. Actual --config runtime.json path derived from pinned startup metadata and checked against exact read-only host-source/destination/Cmd; wrongCmd/source/writable/hash cases reject. No actual Docker inspection, model, service, HTTP, GPU or private-arm metadata operation. Actual chosen CPU-image producer preparation remains separate.",
+  "test_log_sha256": "db96bc701e70b60e5b9d42073da928fe62faa657fa2327cb5d0e554bd9b51f73",
+  "test_xml_sha256": "332b34ac4c31a3004235724abec07da223a6bddd9c058ee628377cb93ddbbe47"
+}

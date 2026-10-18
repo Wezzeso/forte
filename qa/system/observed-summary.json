@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "date_local": "2026-10-17",
+  "timezone": "Asia/Qyzylorda",
+  "fixture_tests": {
+    "passed": 19,
+    "failed": 0,
+    "execution_seconds": 1.01,
+    "application_latency": false
+  },
+  "public_auth_only_checks": {
+    "passed": 5,
+    "failed": 0,
+    "artifact": "qa/system/public-auth-only.json",
+    "scope": "actual public TLS gateway; no accepted media jobs"
+  },
+  "http_network_checks": {
+    "passed": 6,
+    "failed": 0,
+    "unmeasured": 1,
+    "artifact": "qa/system/local-http.json",
+    "scope": "real localhost TCP plus API plus SQLite; no worker"
+  },
+  "http_actual_worker_checks": {
+    "passed": 7,
+    "failed": 0,
+    "unmeasured": 0,
+    "artifact": "qa/system/local-http-worker.json",
+    "scope": "real localhost TCP plus Uvicorn plus SQLite plus actual independent worker; corrupt synthetic decode failure only; no inference"
+  },
+  "transport_smoke": {
+    "artifact": "benchmarks/performance/local-transport-synthetic.json",
+    "input_kind": "synthetic_transport",
+    "valid_video": false,
+    "input_bytes": 29000000,
+    "samples": 1,
+    "client_post_total_ms": 393.5364,
+    "asgi_acceptance_after_body_ms": 123.177,
+    "p95_status": "unmeasured",
+    "analysis_completed": 0,
+    "inference_status": "unmeasured"
+  },
+  "concurrent_transport_smoke": {
+    "artifact": "benchmarks/performance/local-burst-transport-synthetic.json",
+    "input_kind": "synthetic_transport",
+    "valid_video": false,
+    "distinct_uploads": 5,
+    "accepted": 5,
+    "input_bytes_each": 1048576,
+    "client_post_p50_ms": 233.7274,
+    "client_post_max_ms": 664.5868,
+    "asgi_acceptance_p50_ms": 87.145,
+    "asgi_acceptance_max_ms": 143.08,
+    "acceptance_p95_status": "unmeasured",
+    "processing_get_count": 29,
+    "asgi_lookup_p95_ms": 6.201,
+    "full_response_p95_ms": 69.2046,
+    "analysis_completed": 0
+  },
+  "real_inference_performance_targets": "five-upload completion and240s safety missed; successful video p95 and reviewed quality unmeasured",
+  "actual_worker_kill": {
+    "status": "passed",
+    "artifact": "qa/system/worker-process-recovery.json",
+    "scope": "actual Worker process plus SQLite with synthetic pipeline; GPU recovery unmeasured"
+  },
+  "real_five_video_burst": {
+    "status": "completed_observation_with_failures",
+    "attempted_uploads": 5,
+    "durably_accepted": 4,
+    "completed": 1,
+    "terminal_failed": 3,
+    "transport_failed_without_durable_job": 1,
+    "artifact": "benchmarks/performance/gpu-burst.json"
+  },
+  "gpu_and_vllm_metrics": {
+    "status": "measured",
+    "scope": "isolated baseline and burst, final model drain included",
+    "artifact": "benchmarks/performance/gpu-performance-findings.json"
+  },
+  "actual_gpu_baseline": {
+    "attempted": 1,
+    "completed": 0,
+    "failed": 1,
+    "client_terminal_elapsed_ms": 61812.5944,
+    "static_error_code": "insufficient_visible_evidence",
+    "artifact": "benchmarks/performance/gpu-baseline-terminal-technical.json",
+    "quality_review": "unmeasured"
+  }
+}

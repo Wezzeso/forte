@@ -1,0 +1,19 @@
+{
+  "schema_version": "forte.final-source-delivery-checks.v1",
+  "recorded_at_utc": "2026-10-18T01:07:32.4974826+00:00",
+  "kind": "executed_python_tests",
+  "command": "training/.venv/Scripts/python.exe -m pytest -q tests/test_release_source_bundle.py tests/test_stage_public_candidates_host.py",
+  "exit_code": 0,
+  "passed": 15,
+  "skipped": 1,
+  "failed": 0,
+  "pytest_elapsed_seconds": 1.69,
+  "skip_reason": "Windows host does not permit symlink creation",
+  "sources_sha256": {
+    "tests/test_release_source_bundle.py": "7a44824cd274f6c33402d6ab31bef8dce5adf5aab28c1eba0e9b4b647a9ec719",
+    "tests/test_stage_public_candidates_host.py": "062bd797c9219eb2b8da5a55b4504c21efb4830ed18a4d70671f786c9c9e1afe",
+    "qa/integration/build_release_bundle.py": "7f81088f3923153c77511b908828303b9ccb5b4b3db96a4dada216c3dfbe9c2d",
+    "tools/stage_public_candidates_host.py": "542a30d66a377b5af5d7208af3bcefd3030640305e4f9707b81cdbd923bd87d7"
+  },
+  "scope": "Source packaging and exact staged-helper delivery checks, separate from model quality and API benchmarks"
+}

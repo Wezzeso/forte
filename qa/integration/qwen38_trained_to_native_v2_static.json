@@ -1,0 +1,33 @@
+{
+  "schema_version": "forte.qwen38.independent-trained-to-native-v2-static-review.v1",
+  "captured_at_utc": "2026-10-17T18:28:39.943701+00:00",
+  "status": "no_blocking_static_finding",
+  "helper_sha256": "53ba1c235764c44312f7fcb295e2d7c2c1efdc89eef5467a7f4d6de9e77401dc",
+  "native_plan_sha256": "1127eba7a12bcb679953cfd713bbb32d8a04ec308a253e1289f983716b4112f0",
+  "public_archive_sha256": "9de54a58de74c850cc652bb5412f0a01dcaa93c4475fd89d39ea0fc49080078c",
+  "archive_members": 75,
+  "public_source_files_verified": 74,
+  "remaining_archive_member": "pilot-source.sha256.json",
+  "genuine_trained_settlement_sha256": "3356e4b8ddedbee173197cd3951dcd52986f7d0f32a9ff8365bb21055b93df45",
+  "trained_terminal_independent_audit_sha256": "c0fa05581560bea1395eb4ea63893eb653bced22c666bae36d5c5413df578c3b",
+  "review_checks": [
+    "Exact stopped model fullID5c31/imagebaaa/PID586492 and terminal helper136e/PID599477 bind; paused API and zeroqueued jobs required.",
+    "Raw terminal hashes/outcomes/24 unique slots/8started7done1failed16unused/six denominator checked before transition.",
+    "Sole expected GPU PID before exact model stop; empty process list and >=75000MiB free required afterward.",
+    "Plan1127/archive9de54/all74 source hashes; readonly base/originaladapter/publicsource mounts, isolated results only writable.",
+    "Generated6/three perarm/no retry/private footage or quality authority; networknone/no ports/socket/privilege.",
+    "Fixed stop headroom startup1200+6*240+120 and collision checks.",
+    "Argv validation now precedes exact stop and release write."
+  ],
+  "execution_by_qa": false,
+  "live_service_or_gpu_state_independently_observed_by_qa": false,
+  "actual_launch_reported_by_root_only": {
+    "container_id": "40cca8906b0dbe0c074e87d955aa9eb095f5f397acde0511c73098a4954a95e5",
+    "host_pid": 621414,
+    "release_sha256": "5e83146b1921d3a9ca1e4961a6c696bfe9968f2f4991c4cae99af58fcc6bf5a6",
+    "launch_sha256": "c1579875823c4db29f0fa8a2e1b55d7209693a3aa46e09c6420bd2f39137a0b3"
+  },
+  "model_gpu_http_service_exposure_operations_by_qa": 0,
+  "actual_native_generation_or_quality_result_claimed": false,
+  "archive_note": "Initial inventory assertion counted the checksum manifest as a source file; corrected to74source+1manifest without modifying archive."
+}

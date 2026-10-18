@@ -1,0 +1,23 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "job_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Job Id",
+      "type": "string"
+    },
+    "status": {
+      "const": "processing",
+      "default": "processing",
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "job_id",
+    "status"
+  ],
+  "title": "ProcessingResponse",
+  "type": "object"
+}

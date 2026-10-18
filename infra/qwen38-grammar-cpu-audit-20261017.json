@@ -1,0 +1,71 @@
+{
+  "allowed_stop_token_masks_after_complete_json": {
+    "248044": true,
+    "248046": true
+  },
+  "captured_at_utc": "2026-10-17T15:04:33.785943+00:00",
+  "compiler_cache_size_bytes": 18086460,
+  "cpu_logits_processor_max_milliseconds": 2.6224329994875006,
+  "cpu_logits_processor_mean_milliseconds": 1.3275503299361666,
+  "cpu_logits_processor_steps": 485,
+  "cpu_logits_processor_sum_seconds": 0.6438619100190408,
+  "cuda_initialized": false,
+  "gpu_device_nodes_present": false,
+  "grammar_stop_token_ids": [
+    248044,
+    248046
+  ],
+  "image_id": "sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "installed_source_sha256": {
+    "xgrammar/compiler.py": "aaaf3e52c5c0efaa0ea60918451f3c4f16429a8d3560342f8c7ec709a0a5d797",
+    "xgrammar/contrib/hf.py": "f81e92e9ce8465c7e4f4c8ab5785c0b660380177c0f88c7c61023b99aaa45f17",
+    "xgrammar/tokenizer_info.py": "05afed275b89b868568cebbea53606a046e4894fc1b62121dbcb23f97e8d6871"
+  },
+  "model_calls": 0,
+  "model_instances": 0,
+  "model_vocab_size_bound": 248320,
+  "private_input_used": false,
+  "schema_bytes": 3726,
+  "schema_cached_compile_seconds": 0.00012180100020486861,
+  "schema_cold_compile_seconds": 12.866962028998387,
+  "schema_feature_tests": {
+    "duplicate_fact_id_is_not_prevented_by_array_enum_schema": true,
+    "duplicate_json_key_rejected": true,
+    "extra_key_rejected": true,
+    "missing_required_key_rejected": true,
+    "trailing_prose_rejected": true,
+    "unknown_fact_rejected": true,
+    "valid_19_fact_complete": true,
+    "wrong_fact_count_rejected": true
+  },
+  "schema_version": "forte.qwen38.grammar-cpu-audit.v1",
+  "scope": "Public tokenizer, generic 19-fact schema and synthetic JSON CPU grammar/logits operations only. No model generation or GPU masking. CPU timings do not establish native CUDA generation overhead or endpoint latency.",
+  "synthetic_completion_tokens": 485,
+  "tokenizer_info_seconds": 0.8275765090002096,
+  "tokenizer_length_with_added": 248077,
+  "tokenizer_load_seconds": 0.47312831900126184,
+  "tokenizer_vocab_size_reported": 248044,
+  "torch_version": "2.13.0+cu129",
+  "transformers_version": "5.17.0",
+  "unsupported_schema_probes": {
+    "not_ignored": {
+      "compile_succeeded": false,
+      "error_type": "ValueError"
+    },
+    "pattern_plus_maxlength_gap": {
+      "compile_succeeded": false,
+      "error_type": "ValueError"
+    },
+    "unique_items_ignored": {
+      "compile_succeeded": false,
+      "error_type": "ValueError"
+    },
+    "unknown_format_ignored": {
+      "compile_succeeded": false,
+      "error_type": "ValueError"
+    }
+  },
+  "xgrammar_version": "0.2.7",
+  "diagnostic_script_sha256": "c34d19e9ce1f8a7d1630a105a21cb334252176dd2478330410d886797014f95e",
+  "public_case_sha256": "d2f13cea989212f9878a8a7c6b8bdb9c299196b4889d2d1bd8ebc036ad0934f5"
+}

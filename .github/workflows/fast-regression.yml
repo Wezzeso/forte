@@ -1,0 +1,61 @@
+name: Fast analyzer regression
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      run_gpu_gate:
+        description: Run the complete labeled-video regression on the configured private GPU runner
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  scoring-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU validation dependencies
+        run: python -m pip install 'pytest>=8,<10' 'pytest-asyncio>=0.24,<2' 'httpx==0.28.1' 'pydantic>=2.10,<3' 'pillow>=11,<14' 'av==19.0.1' 'jsonschema==4.26.0'
+      - name: Verify scoring, split leakage and public API load-test contracts
+        run: python -m pytest tests/test_fast_evaluation.py tests/test_fast_load_test.py -q
+      - name: State validation scope
+        run: echo "Synthetic CPU contract tests only. Current-model accuracy requires the private GPU inference gate."
+
+  complete-video-gate:
+    if: github.event_name == 'workflow_dispatch' && inputs.run_gpu_gate
+    runs-on: [self-hosted, gpu]
+    timeout-minutes: 30
+    env:
+      FAST_EVAL_VIDEOS: ${{ vars.FAST_EVAL_VIDEOS }}
+      FAST_EVAL_LABELS: ${{ vars.FAST_EVAL_LABELS }}
+      FAST_EVAL_BASE_URL: ${{ vars.FAST_EVAL_BASE_URL }}
+      FAST_EVAL_MODEL: ${{ vars.FAST_EVAL_MODEL }}
+      FAST_EVAL_CONFIG: ${{ vars.FAST_EVAL_CONFIG }}
+      FAST_EVAL_BASELINE: ${{ vars.FAST_EVAL_BASELINE }}
+      FAST_EVAL_OUTPUT: ${{ vars.FAST_EVAL_OUTPUT }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run private inference with zero false alarms and no per-video regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          for variable in FAST_EVAL_VIDEOS FAST_EVAL_LABELS FAST_EVAL_BASE_URL FAST_EVAL_MODEL FAST_EVAL_CONFIG FAST_EVAL_BASELINE FAST_EVAL_OUTPUT; do
+            if [ -z "${!variable:-}" ]; then
+              echo "Required runner configuration missing: $variable" >&2
+              exit 2
+            fi
+          done
+          python tools/fast_eval.py --videos "$FAST_EVAL_VIDEOS" \
+            --labels "$FAST_EVAL_LABELS" --base-url "$FAST_EVAL_BASE_URL" \
+            --model "$FAST_EVAL_MODEL" --config "$FAST_EVAL_CONFIG" \
+            --baseline "$FAST_EVAL_BASELINE" --out "$FAST_EVAL_OUTPUT" \
+            --par 4 --gate --expect-count 40 --expect-clean 19 --min-accuracy 0.85
+      # The runner keeps raw results privately. Never publish video, scene-state,
+      # event-label or evidence-bearing report artifacts from this job.

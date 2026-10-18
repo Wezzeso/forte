@@ -1,0 +1,164 @@
+{
+ "package": "PhysicalAI-Event-Videos",
+ "release": "2026",
+ "split": "train",
+ "dataset_aliases": {
+  "NV_Video_Anomaly_Dataset_v1": "NV-VAD-v1"
+ },
+ "synthetic_naming": {
+  "pattern": "video_00001.mp4",
+  "ordering": "global sequence sorted by (dataset, original_video_id)",
+  "count": 1486,
+  "dataset_identity": "preserved in labels.json and video_manifest.csv"
+ },
+ "group1": {
+  "source": "kpi_annotated_chunks_5sec_ps.relabel_080526.actionq.json",
+  "filter": "split == 'train' and dataset not in {RWF-2000, MSAD}",
+  "annotation_batch": "relabel_080526",
+  "action_queries": {
+   "system_prompt_sha256": "863a671e1c1272675e080e005cc38c8ac83c6b071c06dc949397d5b8e477b886",
+   "logical_model": "lepton/google/gemma-4-31b-it",
+   "temperature": 0.7
+  }
+ },
+ "group2": {
+  "sources": [
+   "vag_out.NV_Video_Anomaly_Dataset_v1.080326split.actionq.json",
+   "vag_out.NV-VAD-v1.1.080326split.actionq.json",
+   "vag_out.NV-Retail-Shoplifting-v0.1.080326split.actionq.json"
+  ],
+  "annotation_batch": {
+   "NV-VAD-v1": "080326_annotations (batch 2; source alias NV_Video_Anomaly_Dataset_v1)",
+   "NV-VAD-v1.1": "080326_annotations",
+   "NV-Retail-Shoplifting-v0.1": "072426_annotations (no 080326 batch exists)"
+  },
+  "action_queries": [
+   {
+    "file": "vag_out.NV_Video_Anomaly_Dataset_v1.080326split.actionq.json",
+    "system_prompt_sha256": "863a671e1c1272675e080e005cc38c8ac83c6b071c06dc949397d5b8e477b886",
+    "logical_model": "lepton/google/gemma-4-31b-it",
+    "temperature": 0.7
+   },
+   {
+    "file": "vag_out.NV-VAD-v1.1.080326split.actionq.json",
+    "system_prompt_sha256": "863a671e1c1272675e080e005cc38c8ac83c6b071c06dc949397d5b8e477b886",
+    "logical_model": "lepton/google/gemma-4-31b-it",
+    "temperature": 0.7
+   },
+   {
+    "file": "vag_out.NV-Retail-Shoplifting-v0.1.080326split.actionq.json",
+    "system_prompt_sha256": "863a671e1c1272675e080e005cc38c8ac83c6b071c06dc949397d5b8e477b886",
+    "logical_model": "lepton/google/gemma-4-31b-it",
+    "temperature": 0.7
+   }
+  ]
+ },
+ "chunk_fields": [
+  "chunk_index",
+  "start_time_sec",
+  "end_time_sec",
+  "start_frame",
+  "end_frame",
+  "is_anomaly",
+  "anomaly_type",
+  "dense_caption",
+  "scene_caption",
+  "pas_queries",
+  "caption_queries",
+  "anomaly_queries",
+  "action_queries",
+  "chunk_file"
+ ],
+ "stripped_fields": [
+  "queries"
+ ],
+ "stripped_reason": "queries == pas_queries + caption_queries re-listed; caption_mode:all would train that text twice",
+ "videos": "NVIDIA-generated parent videos are materialized in videos.zip and their chunk clips in chunks.zip. CHAD and VAD-R1 media are not redistributed; labels.json and source_datasets carry their public origin references.",
+ "source_datasets": {
+  "CHAD": {
+   "access": "external_archive",
+   "dataset_url": "https://github.com/TeCSAR-UNCC/CHAD",
+   "download_url": "https://drive.google.com/file/d/13am4hfhicErcozAYgkmQm02_K-cCmtkQ/view?usp=sharing",
+   "archive_member_rule": "match by source archive filename"
+  },
+  "VAD-R1": {
+   "access": "external_file",
+   "dataset_url": "https://huggingface.co/datasets/wbfwonderful/Vad-R1",
+   "revision": "1c03ddc822c700d9e9f1539258358ed26388a213",
+   "url_template": "https://huggingface.co/datasets/wbfwonderful/Vad-R1/resolve/1c03ddc822c700d9e9f1539258358ed26388a213/{repository_path}"
+  },
+  "NV-Retail-Shoplifting-v0.1": {
+   "access": "bundled"
+  },
+  "NV-VAD-v1": {
+   "access": "bundled",
+   "batches": [
+    {
+     "name": "batch 1",
+     "annotation_batch": "relabel_080526"
+    },
+    {
+     "name": "batch 2",
+     "annotation_batch": "080326_annotations",
+     "source_alias": "NV_Video_Anomaly_Dataset_v1"
+    }
+   ]
+  },
+  "NV-VAD-v1.1": {
+   "access": "bundled"
+  }
+ },
+ "data_factory_review": {
+  "date": "2026-08-24",
+  "videos": 1168,
+  "retained_chunks": 2316,
+  "removed_qc_chunks": 20,
+  "updated_fields": [
+   "is_anomaly",
+   "anomaly_type",
+   "pas_queries",
+   "anomaly_queries",
+   "caption_queries"
+  ],
+  "preserved_fields": [
+   "action_queries",
+   "dense_caption",
+   "scene_caption"
+  ],
+  "source_exports": [
+   {
+    "file": "VAD_R1_Aug_24_2026_14_38_Anqi.jsonl",
+    "sha256": "00010f0aa4f3bfdea7765f54705613bff88315263bbbec00ccc3b461cbffdf44"
+   },
+   {
+    "file": "VAD_R1_Aug_24_2026_15_17_Anqi.jsonl",
+    "sha256": "0582e8a5d3e8e9168275f5edc40615e3bfd58e85c893eaa25a8f5137ba361a63"
+   }
+  ],
+  "reviewed_conversion": {
+   "file": "kpi_annotated_chunks_5sec_ps.NV-VAD-batches4-6.train.json",
+   "sha256": "a4d1a24b0a8685c35b46e142cad638fc934e8ad80c8a4f2228059289dcfba9c1"
+  },
+  "scope": {
+   "NV-VAD-v1": "batch 4 only; batch 1 unchanged",
+   "NV-VAD-v1.1": "batch 5",
+   "NV-Retail-Shoplifting-v0.1": "batch 6"
+  }
+ },
+ "public_media_policy": {
+  "all_parent_videos_and_chunks_packaged": false,
+  "packaged_datasets": [
+   "NV-Retail-Shoplifting-v0.1",
+   "NV-VAD-v1",
+   "NV-VAD-v1.1"
+  ],
+  "public_origin_datasets": [
+   "CHAD",
+   "VAD-R1"
+  ],
+  "public_origin_media_omitted": true,
+  "public_origin_links_in_labels": true,
+  "chunk_reconstruction": "prepare_chunks.py with each public source video and the chunk start_time_sec / end_time_sec fields",
+  "qc_excluded_unlabeled_chunks_in_archive": 20
+ }
+}

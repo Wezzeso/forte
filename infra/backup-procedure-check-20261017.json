@@ -1,0 +1,29 @@
+{
+  "account_changes": false,
+  "actual_custom_dump_restore_passed": true,
+  "archive_hash_and_size_verification_passed": true,
+  "command": "python deploy/private_backup_synthetic_check.py",
+  "corruption_rejected": true,
+  "current_remote_database_readonly_preflight_passed": true,
+  "current_user_data_deleted": false,
+  "gpu_calls": 0,
+  "optional_experiment_backup": {
+    "actual_private_backup_created": false,
+    "generic_scope_review": "A20_completed",
+    "isolated_run_idle_rechecked_immediately_before_tar": true,
+    "optional_artifact_integrity_and_unknown_name_rejection": "passed",
+    "prepared": true,
+    "queued_and_processing_jobs_checked_before_and_after_worker_stop": true,
+    "source_media_and_nested_archives_excluded_and_independently_rejected": true,
+    "synthetic_scope_cases_passed": 4
+  },
+  "postgres_major": 18,
+  "private_dataset_used": false,
+  "processing_jobs_at_readonly_preflight": 0,
+  "remaining_live_gate": "After the benchmark/review quiet window and final diagnostic CPU refresh, freeze operator writes and run the idle-only restricted backup. Verify and restore-test that specific backup before cutover.",
+  "remote_service_changes": false,
+  "restricted_windows_directory_acl_verified": true,
+  "scope": "Synthetic local backup procedure verification; no current remote backup created",
+  "synthetic_only": true,
+  "unsafe_tar_path_rejected": true
+}

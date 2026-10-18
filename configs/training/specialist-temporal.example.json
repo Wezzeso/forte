@@ -1,0 +1,26 @@
+{
+  "schema_version": "forte.tracked-head.train.v1",
+  "dataset_dir": "../../training/private/specialists/prepared",
+  "expected_dataset_lock_sha256": "REPLACE_WITH_PREPARED_DATASET_LOCK_FILE_SHA256",
+  "feature_manifest": "../../training/private/specialists/tracked-features/manifest.json",
+  "expected_feature_manifest_sha256": "REPLACE_WITH_FROZEN_HUMAN_REVIEWED_FEATURE_MANIFEST_FILE_SHA256",
+  "feature_schema": "../../training/private/specialists/tracked-features/schema.json",
+  "expected_feature_schema_sha256": "REPLACE_WITH_FEATURE_SCHEMA_FILE_SHA256",
+  "output_dir": "../../training/private/specialists/tracked-head-run",
+  "runtime_versions": {"torch": "2.13.0+cu129"},
+  "device": "cuda",
+  "allow_cpu_training": false,
+  "seed": 17,
+  "optimizer_steps": 1000,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "model": {
+    "architecture": "tracked_transformer_v1",
+    "hidden_dim": 64,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "max_steps": 2048,
+    "types": ["NO_CLIENT_ID", "KEY_LEFT_IN_SAFE", "NO_AUTHENTICITY_CHECK", "NO_RECOUNT", "CASH_HANDOVER_IRREGULAR", "PERSONAL_ITEMS"]
+  }
+}

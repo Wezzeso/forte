@@ -1,0 +1,10 @@
+# Explicit code/lock allowlist. No model weights, media, labels or secrets.
+**
+!deploy/
+deploy/**
+!deploy/requirements-features.lock
+!deploy/feature-runtime-lock.json
+!deploy/feature_runtime_check.py
+!training/
+training/**
+!training/requirements-addons.lock

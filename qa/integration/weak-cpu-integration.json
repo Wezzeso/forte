@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "device": "cpu",
+  "test_command": "training/.venv/Scripts/python.exe -m unittest discover -s qa/integration -p test_weak_pipeline.py -v (PYTHONPATH=src)",
+  "tests_passed": 1,
+  "runner_duration_sec": 7.251,
+  "native_frames": 97,
+  "tensor_shape": [
+    97,
+    1,
+    768
+  ],
+  "tensor_dtype": "float16",
+  "optimizer_steps": 2,
+  "fact_axis_count": 19,
+  "enabled_event_count": 3,
+  "source_nonzero_origin_pts": 5000,
+  "source_time_base": "1/1000",
+  "cache_features_unchanged": true,
+  "mil_only_untrained_fact_head_unchanged": true,
+  "safetensors_identity_and_exact_output_reload_passed": true,
+  "versions": {
+    "torch": "2.12.0",
+    "safetensors": "0.8.0",
+    "pydantic": "2.12.4"
+  },
+  "private_dataset_or_media_used": false,
+  "gpu_calls": false,
+  "establishes_real_training_or_accuracy": false
+}

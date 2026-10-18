@@ -1,0 +1,39 @@
+{
+ "schema": "forte.fast-latency.v1",
+ "generated_at_utc": "2026-10-18T04:23:12.867486+00:00",
+ "definition": "202 accepted -> first GET status=done; poll interval 0.20 s",
+ "mode": "sequential",
+ "base_url_kind": "public_https_from_gpu_host",
+ "jobs": 1,
+ "passed": 1,
+ "failed": 0,
+ "latency_s": {
+  "n": 1,
+  "p50": 6.326,
+  "p95": 6.326,
+  "max": 6.326,
+  "mean": 6.326
+ },
+ "upload_s": {
+  "n": 1,
+  "p50": 0.376,
+  "p95": 0.376,
+  "max": 0.376,
+  "mean": 0.376
+ },
+ "completion_in_arrival_order": null,
+ "within_10s": 1,
+ "elapsed_s": 6.769,
+ "results": [
+  {
+   "name": "X-10",
+   "pass": true,
+   "upload_s": 0.376,
+   "latency_s": 6.326,
+   "polls": 24,
+   "verdict": "no_violation",
+   "events": [],
+   "problems": []
+  }
+ ]
+}

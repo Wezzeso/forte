@@ -1,0 +1,302 @@
+{
+  "actual_engine_args_created_without_engine": true,
+  "actual_engine_args_signature_accepts_worker_extension": true,
+  "actual_rename_mapper_keys_verified": 992,
+  "captured_at_utc": "2026-10-17T18:00:59.769668+00:00",
+  "controller_cpu_guards": {
+    "isolated_controller_hard_timeout_exit124_and_receipt": true,
+    "missing_root_release_denied_before_model_import": true
+  },
+  "cpu_only_docker_argv": [
+    "docker",
+    "run",
+    "--rm",
+    "--runtime",
+    "runc",
+    "--network",
+    "none",
+    "--read-only",
+    "--user",
+    "1000:1000",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--tmpfs",
+    "/tmp:size=1g,nosuid,nodev,exec,mode=1777",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "NVIDIA_VISIBLE_DEVICES=void",
+    "-e",
+    "CUDA_VISIBLE_DEVICES=",
+    "-e",
+    "PYTHONPATH=/ops:/ops/src",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "VLLM_XGRAMMAR_CACHE_MB=64",
+    "-v",
+    "/data/forte-ml/public/qwen38-vllm-pilot-instrumentation-a08-v2:/ops:ro",
+    "-v",
+    "/data/forte-models/Qwen3.8-27B-1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/tokenizer.json:/processor/tokenizer.json:ro",
+    "-v",
+    "/data/forte-models/Qwen3.8-27B-1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/tokenizer_config.json:/processor/tokenizer_config.json:ro",
+    "-v",
+    "/data/forte-models/Qwen3.8-27B-1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json:/processor/config.json:ro",
+    "-v",
+    "/data/forte-models/Qwen3.8-27B-1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/special_tokens_map.json:/processor/special_tokens_map.json:ro",
+    "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+    "-m",
+    "deploy.qwen38_vllm_pilot_v2.cpu_audit"
+  ],
+  "cuda_initialized": false,
+  "durable_failure_phase_type_trace_counts_and_redaction_passed": true,
+  "dynamic_mixin_adapter_and_state_delegation_passed": true,
+  "engine_instances": 0,
+  "expected_logical_targets": 496,
+  "expected_physical_wrappers": 304,
+  "fake_dispatch_is_not_actual_gpu_adapter_proof": true,
+  "fake_worker_extension_counts": {
+    "ab_tensors": 992,
+    "full": 16,
+    "language_layers": 64,
+    "linear": 48,
+    "logical": 496
+  },
+  "generated_tensor_tests": {
+    "actual_gdn_expansion_and_corrupt_z_rejected": true,
+    "ba_order_and_corruption_rejected": true,
+    "full_gated_qkv_and_corruption_rejected": true,
+    "mlp_gate_up_and_corruption_rejected": true,
+    "single_row_projection_and_corruption_rejected": true
+  },
+  "hard_timeout_durable_failure_exit124_passed": true,
+  "instrumentation_archive_sha256": "9de54a58de74c850cc652bb5412f0a01dcaa93c4475fd89d39ea0fc49080078c",
+  "instrumentation_source_manifest_sha256": "7cd2020b54de0128fd803205ca4cb5ac3ab4b8ca7d339381fe6e10db3809de21",
+  "llm_chat_parameters": [
+    "self",
+    "messages",
+    "sampling_params",
+    "use_tqdm",
+    "lora_request",
+    "chat_template",
+    "chat_template_content_format",
+    "add_generation_prompt",
+    "continue_final_message",
+    "tools",
+    "chat_template_kwargs",
+    "tokenization_kwargs",
+    "mm_processor_kwargs"
+  ],
+  "llm_class_import_only": true,
+  "llm_collective_rpc_available": true,
+  "model_calls": 0,
+  "native_grammar": {
+    "backend": "vllm.v1.structured_output.backend_xgrammar.XgrammarBackend",
+    "compile_seconds": 14.886487089999719,
+    "compiled_memory_bytes": 14098064,
+    "hf_json_separators": [
+      ",",
+      ":"
+    ],
+    "model_calls": 0,
+    "native_json_separators": [
+      ", ",
+      ": "
+    ],
+    "note": "Actual CPU backend/grammar/tokenizer proof; CUDA engine scheduling is not covered.",
+    "schema_sha256": "2bbeee8123a306837c0c713933d905709f8b544670702662e45843ac551b357e",
+    "stop_tokens": {
+      "248044": true,
+      "248046": true
+    },
+    "tests": {
+      "all_absent_allowed": true,
+      "all_present_allowed": true,
+      "all_unclear_allowed": true,
+      "duplicate_json_key_rejected": true,
+      "duplicate_rejected": true,
+      "extra_rejected": true,
+      "fresh_matcher": true,
+      "missing_rejected": true,
+      "noncanonical_rejected": true,
+      "prose_rejected": true,
+      "unknown_rejected": true
+    },
+    "vocab_size": 248320
+  },
+  "original_adapter_probe_unchanged_sha256": "6a503bd9eb94bff88ea2e1f0a29c8e1736d43b657fac5d2956c2065a99f08ff0",
+  "original_preserved_archive_sha256": "417e9f6b11a5f0fb9203f3e70919b7a52e526e555fb99f777a36457ff2406715",
+  "original_request_unchanged_sha256": "04e9579ae1b2424ae0b8ae36bee2e8afcd1e56c604ca3ceb8bbd15de90f10f47",
+  "platform_override": "CPU process only; CUDA engine defaults remain unverified",
+  "private_media_used": false,
+  "public_source_files": {
+    "all-496-logical-targets.expected.json": "6e9f8c821aab28be6476e46baeeba44e2ca10005b73587fb3933637a4118f359",
+    "base-public.manifest.json": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225",
+    "deploy/qwen38_vllm_pilot/__init__.py": "7b2d94810a0c096ec90e1cf422d9444a6c56dc88bc0003586126c787c0729072",
+    "deploy/qwen38_vllm_pilot/adapter_probe.py": "6a503bd9eb94bff88ea2e1f0a29c8e1736d43b657fac5d2956c2065a99f08ff0",
+    "deploy/qwen38_vllm_pilot/cpu_audit.py": "e2ef891f97279ed90d0fd18a4dc065e09798133ead871665c0d83e0f24b4e4ee",
+    "deploy/qwen38_vllm_pilot/pilot.py": "b91150cff0de9dc8850fb413711708f55dcc4da2b6e29ad26cc02a26e3185035",
+    "deploy/qwen38_vllm_pilot/request.py": "04e9579ae1b2424ae0b8ae36bee2e8afcd1e56c604ca3ceb8bbd15de90f10f47",
+    "deploy/qwen38_vllm_pilot_v2/__init__.py": "e0ba8b72f361b6f4f71dc78a0b7a570475bdd44e176caad604ba134208475403",
+    "deploy/qwen38_vllm_pilot_v2/cpu_audit.py": "e52943f8bcb7256ee6932be5cd11c95de52b0e27ab8bc113ee82f6c4d231da07",
+    "deploy/qwen38_vllm_pilot_v2/pilot.py": "c9d776f263e5e7fe5377d1501f7f168d81d403464ec88a404cd0fd90df2027f1",
+    "rules/catalog.json": "3ba1c79c00f39a40addf4e1d2299c5bbade26c7949aeee10c382b9322fdde1dd",
+    "serving/__init__.py": "a61ec505cb9ca2553f80128dc46c51d1b74aea76a5ce8cd1eef067d694f97113",
+    "serving/qwen38_adapter_contract.py": "b3401e87bcfc666e740cc6a428a09f29901a98cbdd7c0e20d39013a02c046222",
+    "serving/qwen38_grammar.py": "a0de282d2ee719b5ce143bc69effd0fb9c204e058a871eb6885f357eec4a8e5d",
+    "serving/qwen38_identity.py": "395aaefbc8a63dc9c7872a35e0a2a274845a5cb418052a407a1c651568d9e959",
+    "serving/qwen38_vllm_worker.py": "16f7d9b948177cd4488b20a439e469deb591f3e2ba4fe6d6d749b02ab6391328",
+    "src/forte/__init__.py": "4373d763d1f945f0c12df6b58d5b71e70e13e3e6feedd16e07ae514fda748c9f",
+    "src/forte/api/__init__.py": "ccef146019219dfa15cca3c1b0a5612df6da8c84ec4256d1584d26915edaabcd",
+    "src/forte/api/config.py": "a5a4ca7cb1d4632919eb83cdbd551bcbfea890e468757395584b074f548172cb",
+    "src/forte/api/main.py": "6caa011025e0acc7381e6791456ef92bdbf482e9d25c9409188a3168401e1c24",
+    "src/forte/api/metadata.py": "322ff217daf62f01ce698de2dfaba65e7b10780ae826af87f314d6065efe04dd",
+    "src/forte/api/reviews.py": "a374663cf947eb78e1681ec9ffa2186523a0cb79408759c3e3c4be33eaec347c",
+    "src/forte/api/security.py": "750bb95c61f4288664291bb10e5c68d405883753f9b055f8d151a69d728623c9",
+    "src/forte/api/uploads.py": "83f25fc524ea453918d5e5694b2b0edf0c39badccbaca1f699d15c5710d27f6a",
+    "src/forte/config.py": "c98303d65cc2d5060f2bbc931aec0755c3da6960ae60291b885401c23b85cf74",
+    "src/forte/decision/__init__.py": "2f484e01515a04d883756ff6900c237568fde86d4e9d97446ea6f121ea58e959",
+    "src/forte/decision/aliasing.py": "4dd6d83f685dd6f1c9f59b89abd75d364fe4a85179600ecd1581b106de6e0045",
+    "src/forte/decision/engine.py": "ada890567fbc67090272b59d4a3f5220042ae5baab3df3a545c409b4f0c1d321",
+    "src/forte/decision/head_contract.py": "180ebef3167d9c82a57c4619fd143e73133c2b49be3c951e77c14cf891d105c1",
+    "src/forte/decision/machine_artifacts.py": "b4ae805c00dfc7d46c636944d6b1247cb18e3a608bb22f63056be1cd0eb72b29",
+    "src/forte/decision/machine_contract.py": "ef8cbfd86ede086bcb2669644b238136ec02cc000bea1231fed8db0b13595e60",
+    "src/forte/decision/scopes.py": "0b13e19b4f152d9e3ffc5e751e00e94562e1bb3615a7427e129fb7da67daeeb0",
+    "src/forte/decision/structured.py": "027640c241dc7e7f528e82e5bf9022a33b6d29eb9eed903cdb8484a5b8c87d65",
+    "src/forte/decision/temporal_backend.py": "8f71dcd8d29b4076433d7852f0af3637abdddfd739c450cdb09a35635e2db602",
+    "src/forte/decision/temporal_http.py": "6c4d951ae286237b34adf6c9070ecfe8bf4315555ea24901669b6fd64570b5a3",
+    "src/forte/decision/temporal_native.py": "78b1250a5e5a258c9e57ad159490f104a39c685e07e223917dd9a689dcdee1d9",
+    "src/forte/decision/temporal_observations.py": "110b55c8271dad87b4c1c7303507584e21cb2bb71da04ba16968e07912ce466b",
+    "src/forte/decision/temporal_provider.py": "8c7368a26110e4fa15ddd4f011f8f47dc06481ee7711d0e9579bc14d60559253",
+    "src/forte/events/__init__.py": "cea7efd0dddb6630f6c2d43957d67c6b91337e2ab51e837207412ece1047511d",
+    "src/forte/events/builder.py": "80c7ca8c9bb31834707fe268d4264b7c418905de3d39f1a3a4303ed480b58249",
+    "src/forte/events/experimental.py": "8dbc0b8d5deb6be5269e4c46fe7bc0f845242ad589c5b44bf673bbace0de1970",
+    "src/forte/evidence/__init__.py": "55af6fe9c9c86dfa39898d68382e9c776ebb1df920047a51eb256fb03e4f585c",
+    "src/forte/evidence/_jpeg.py": "7c70a0875539701e1ad01dce3135ecd3477e7dbc26fafc160452592ae9291a4f",
+    "src/forte/evidence/assembly.py": "fe2ef49e9856f66943260ef307f830594f0797ac98cfd48341f84a932486ab34",
+    "src/forte/evidence/types.py": "5657cccf08117077dc6637b28e751857e6a41cb4be01440c3926146f97067172",
+    "src/forte/jobs/__init__.py": "f07064fca848f0261b09940b61c2094bc3aeb7c1389f8441640d13efe46b1d12",
+    "src/forte/jobs/__main__.py": "a0ca29e394fb996334293faf17d15895db1e49bb41d0e5acf8c38719bde1213b",
+    "src/forte/jobs/store.py": "0bc8438d5a4ec44a7f37bd5ff46aab9e82fa79a0ea9dd075cf62cce91a120655",
+    "src/forte/model/__init__.py": "5d3849b21ef049643bf0c2cd3b259143457f47ba4c605619a23a52adec28e8ea",
+    "src/forte/model/__main__.py": "b2d667a87d4d8f7a30308a5a49180a53ee018d19f7dd190f80ff07278720fcde",
+    "src/forte/model/adapter.py": "96c8ed5f0826d203b56372edc6d8cb96b54029c9d69eba4307cc0dda145a4a8e",
+    "src/forte/model/encoder_staging.py": "27ee97866bf09996602f4c1f0b413cd36d7e7bac97d6ea56348851ce9e48e204",
+    "src/forte/model/manifest.py": "bd69fa5d02a52f4581910781bec857b90a59f686d64b15ef9ec1942b0eca31c2",
+    "src/forte/model/refresh_metadata.py": "6214208a935bde088e5cd8a2a33d5572f2b83a70256198b4192f15b1df7f11ad",
+    "src/forte/model/smoke.py": "291b2665c9dbdfbdfebac1c9a2bb5dbebff3351cb8e2641c98351599103876e6",
+    "src/forte/model/staging.py": "fd8f0e0d255f3acebfa95218d0dc43f51fbe33c49c254be5f7c590f8517597dc",
+    "src/forte/native_pipeline.py": "fe866db2dcefee09cbbbc49053a1b291dd0c6979d7d09c28a334daba81220117",
+    "src/forte/observability/__init__.py": "ac93f7149e2a96f1b81dadced286245b171041936a9057b1298b7645f9153857",
+    "src/forte/observability/benchmark.py": "1e3a34d68cb0b453b950b2e8fd387617d4210f33c03500660cfd6bb4a8a7ceb4",
+    "src/forte/observability/metrics.py": "8da5ab49da4ebdfe2c66a687aa4b09503f97279dd64a676ee8fdc1ff5bc6dc72",
+    "src/forte/observability/middleware.py": "e70db820430039b313b61fc7f488676ab85769782d14e69df5b511d5e26c9e80",
+    "src/forte/observability/model_metrics.py": "abe467406f2916c3c23a491b755300a64db5b4b609b235a213ca32e82e654a05",
+    "src/forte/observability/timing.py": "d304dbcfe313030eb506bbbe4f26bee3991c752808dd2262520fb092393f223c",
+    "src/forte/pipeline.py": "a321ba05f5e5bd192820a4d62a1a200374a41ffb1422e062ed5f400e3cdf0e30",
+    "src/forte/reproducibility.py": "cdacff857343744d4b3383419b7a22a1274a1353cfe196f870342cc5c9885080",
+    "src/forte/shared/schemas.py": "1e60771f61258e89a7331ddf1143339fde15ff2f25b95ae5c0128e7c60d98818",
+    "src/forte/video/__init__.py": "23cdd3bc767f612ab1c6692eeb9b3a84225c9948b972d1316287bb2c2999e2b5",
+    "src/forte/video/batches.py": "6d774e77d3e629fc2c09b3620b68974cedf4581ead251a7c9475e0220f666583",
+    "src/forte/video/crops.py": "513c93041374903cae6d8ba5a7e1e78f040bc558af99366368a4557efba325d1",
+    "src/forte/video/decode.py": "53fa8363146e47d15ba47f8d2fad51709560870c136d8c799616cd96d9358981",
+    "src/forte/video/evidence_seek.py": "53e50b29498cdf6e3d35840f9b91dfc403bf92c4aced10eb16db8c3cf99b653d",
+    "src/forte/video/probe.py": "0cc1d1e6332412050fb3b6a1d64da0998ac3717bb6483628236287217afc7312",
+    "src/forte/video/sampling.py": "aace82575cd12222ade587a413a2e330f81d277bee7038e11378d9cc25459a9a",
+    "src/forte/worker.py": "1331a299763cb1b10a67ca7ba2012d3ede61c1ff6af36a8bf53924597dd69921"
+  },
+  "raw_function_rpc_rejected_as_expected": true,
+  "remote_public_ops_directory": "/data/forte-ml/public/qwen38-vllm-pilot-instrumentation-a08-v2",
+  "request_metadata": {
+    "derived_schema_sha256": "2bbeee8123a306837c0c713933d905709f8b544670702662e45843ac551b357e",
+    "encoded_media_bytes": 193381,
+    "event_types": 3,
+    "facts": 19,
+    "frames": 16,
+    "generated_structure_only": true,
+    "image_dimensions": [
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ],
+      [
+        448,
+        448
+      ]
+    ],
+    "messages_sha256": "f5299ce774edde56f26728568cccd6d9a89c5acdb8a6dd95311f3c6c76d77f1b",
+    "original_schema_sha256": "a514e2238190cbc50967f74d984143cc467e2c2a32fc9ac0a01e3363abe96f1d",
+    "private_media_used": false,
+    "prompt_sha256": "4f463537ec92379ab88d10041af9e8f1b3c82dea7fb556c93bb92d4100cac839",
+    "rules": 4
+  },
+  "safe_rpc_string_encoding_passed": true,
+  "sampling_params_constructed_without_engine": true,
+  "schema_version": "forte.qwen38.vllm-instrumentation-v2.cpu-audit.v1",
+  "status": "passed",
+  "weights_mounted": false,
+  "worker_extension_class": "serving.qwen38_vllm_worker.NativeAuditWorkerExtension",
+  "worker_extension_sha256": "16f7d9b948177cd4488b20a439e469deb591f3e2ba4fe6d6d749b02ab6391328"
+}

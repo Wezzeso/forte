@@ -1,0 +1,8 @@
+{
+  "schema": "forte.qwen30-adapter-export.v1",
+  "status": "failed",
+  "failure_code": "adapter_target_scope_mismatch",
+  "default_enabled": false,
+  "qualification_status": "unqualified",
+  "generated_at_utc": "2026-10-18T05:35:09.969574+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-17T10:38:44.878235+00:00",
+  "wheels_downloaded": false,
+  "gpu_used": false,
+  "indexes": [
+    {
+      "package": "torch",
+      "source": "https://download.pytorch.org/whl/cu129/torch/",
+      "source_html_sha256": "2946c8cedf5f1061807884d14a64d1ccb5c6f8bd78cdc49f43d23b33d564470d",
+      "target": "cp312-manylinux_2_28_x86_64",
+      "requested": "2.14.1+cu129",
+      "requested_available": false,
+      "newest_available": "2.13.0+cu129",
+      "selected_wheel_url": "https://download-r2.pytorch.org/whl/cu129/torch-2.13.0%2Bcu129-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=df28741fcd89e3da7cce2d48cbe5299d6732d510ac20f5d422d0b85edf18c327",
+      "available_versions": [
+        "2.8.0+cu129",
+        "2.9.0+cu129",
+        "2.9.1+cu129",
+        "2.10.0+cu129",
+        "2.11.0+cu129",
+        "2.12.1+cu129",
+        "2.13.0+cu129"
+      ]
+    },
+    {
+      "package": "torchvision",
+      "source": "https://download.pytorch.org/whl/cu129/torchvision/",
+      "source_html_sha256": "2d7ec242633f1292e8c084d4b84c30ce3af86fbdbd06e24168e72b2a62befe86",
+      "target": "cp312-manylinux_2_28_x86_64",
+      "requested": "0.29.1+cu129",
+      "requested_available": false,
+      "newest_available": "0.28.0+cu129",
+      "selected_wheel_url": "https://download-r2.pytorch.org/whl/cu129/torchvision-0.28.0%2Bcu129-cp312-cp312-manylinux_2_28_x86_64.whl",
+      "available_versions": [
+        "0.23.0+cu129",
+        "0.24.0+cu129",
+        "0.24.1+cu129",
+        "0.25.0+cu129",
+        "0.26.0+cu129",
+        "0.27.1+cu129",
+        "0.28.0+cu129"
+      ]
+    }
+  ]
+}

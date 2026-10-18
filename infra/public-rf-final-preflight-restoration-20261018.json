@@ -1,0 +1,38 @@
+{
+  "schema_version": "forte.public-final-preflight-restoration.v1",
+  "created_at_utc": "2026-10-18T00:55:18.158040+00:00",
+  "failed_preflight_tag": "rf-small512-final-v1",
+  "failure": "source_closure_mismatch",
+  "gpu_container_started": false,
+  "test_attempts_claimed": 0,
+  "source_files_verified": 61,
+  "source_bytes_changed": false,
+  "generated_bytecode": [
+    {
+      "path": "training/__pycache__/__init__.cpython-310.pyc",
+      "sha256": "9d86859beed7c855f04f84df2fa8672167f9db9ec8e5af129efbfe2fe6f8a900",
+      "bytes": 243
+    },
+    {
+      "path": "training/__pycache__/guards.cpython-310.pyc",
+      "sha256": "8d861631bc8ef4b7a771cb22d01aef6dee564a9437685b36131025d46b86d89d",
+      "bytes": 14433
+    },
+    {
+      "path": "training/specialists/__pycache__/__init__.cpython-310.pyc",
+      "sha256": "17c904eb5e42c1d37fda19d7aecfbe1c8ecb4fb8996eefc396f3220d1e45a5bf",
+      "bytes": 355
+    },
+    {
+      "path": "training/specialists/__pycache__/common.cpython-310.pyc",
+      "sha256": "146a4573b4748c7020a81081390c21257e9458ef9d859c0efafdb73edc0ee862",
+      "bytes": 2560
+    },
+    {
+      "path": "training/specialists/__pycache__/public_cohort.cpython-310.pyc",
+      "sha256": "5f94247b39fa336a247bbfb47301c3e4b0db7ad3b3d6bd2e3caf7dc6a35ef089",
+      "bytes": 12373
+    }
+  ],
+  "restored_exact_frozen_closure": true
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "forte.qwen38.training-runtime-preparation.v1",
+  "captured_at_utc": "2026-10-17T13:16:54.611978+00:00",
+  "status": "public_only_context_prepared_waiting_backup_release",
+  "parent_image_tag": "forte-features:cu129-w1",
+  "parent_image_id": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "context_file_count": 5,
+  "context_sha256": "270ec5cf83013a45ba061a8126d002251d70b2b8c4103b1345500bbe55745581",
+  "source_sha256": {
+    "deploy/Dockerfile.qwen38-training": "7f4d0d14835a8f59a9a88437d1fa2f0410810e0085696ae4d94c3ffdd9676c91",
+    "deploy/Dockerfile.qwen38-training.dockerignore": "d674597af223a2f350e8787369416bfed67cd992f1d0ca93c677388b7bd30260",
+    "deploy/requirements-qwen38.lock": "59471165fcaae1028cd4745475ef1d30077525b6ca2137e4708cf74be480e7d9",
+    "deploy/qwen38-training-runtime-lock.json": "6a6e4485c367923e6d1b7e1ae14f6b4ba1af9f30cd1d4451b1e39769ff385791",
+    "deploy/qwen38_runtime_check.py": "c293aae9155630090ef195a2288e69e6a58e3333e62bab4a01c407a6ae477711"
+  },
+  "tests": {
+    "suite": "tests/test_qwen38_runtime_check.py",
+    "passed": 12,
+    "gpu_calls": 0,
+    "private_input_used": false
+  },
+  "production_service_changes": false,
+  "image_built": false,
+  "gpu_smoke_performed": false,
+  "full_qwen38_model_tested": false
+}

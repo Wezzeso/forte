@@ -1,0 +1,131 @@
+{
+  "schema": "forte.gemma4-training-budget-plan.v1",
+  "generated_at_utc": "2026-10-18T04:53:30Z",
+  "generated_at_local": "2026-10-18T09:53:30+05:00",
+  "timezone": "Asia/Qyzylorda",
+  "deadline_local": "2026-10-18T11:30:00+05:00",
+  "status": "planning_only_no_training_or_accuracy_result",
+  "scope": {
+    "hosts": "two already-authorized new-account H100 instances only",
+    "additional_instances_authorized": false,
+    "new_spending_authorization_requested": false,
+    "production_mutation_authorized_by_this_plan": false,
+    "host_or_scheduled_task_mutations_performed": false
+  },
+  "budget": {
+    "initial_user_budget_usd": 50,
+    "exact_current_account_balance_usd": null,
+    "exact_current_account_balance_verified": false,
+    "hourly_compute_price_per_host_usd": 3,
+    "billing_start_times_are_conservative_planning_inputs": true,
+    "as_of_utc": "2026-10-18T04:53:30Z",
+    "estimated_elapsed_compute_spend_usd": 2.35,
+    "initial_budget_less_estimated_compute_spend_usd": 47.65,
+    "maximum_compute_spend_through_approved_cutoffs_usd": 30.75,
+    "maximum_compute_spend_through_1130_or_earlier_guard_usd": 11.5,
+    "maximum_remaining_compute_spend_until_1130_or_earlier_guard_usd": 9.15,
+    "planned_reserve_usd": 2,
+    "initial_budget_less_full_compute_ceiling_and_reserve_usd": 17.25,
+    "storage_cost_verified": false,
+    "storage_cost_usd": null,
+    "provider_billing_lag_usd": null,
+    "compute_costs_exclude_storage_and_stop_or_delete_lag": true,
+    "stopping_leaves_storage_billing_until_instance_deletion": true,
+    "budget_feasibility": "Compute-only ceiling remains within the initial USD 50; exact balance, storage and billing lag are unverified. Time before 11:30 is the tighter constraint."
+  },
+  "hosts": [
+    {
+      "name": "forte-new-h100",
+      "instance_id": "plp5me7vz",
+      "billing_start_assumed_utc": "2026-10-18T04:20:00Z",
+      "approved_stop_utc": "2026-10-18T12:55:00Z",
+      "approved_stop_local": "2026-10-18T17:55:00+05:00",
+      "compute_ceiling_usd": 25.75,
+      "elapsed_compute_estimate_usd": 1.675,
+      "remaining_compute_ceiling_usd": 24.075,
+      "allocation": "Finish the two unchanged Gemma BF16 baseline evaluations; preserve a clean baseline serving path for candidate comparison."
+    },
+    {
+      "name": "forte-new-q38",
+      "instance_id": "xw5720fii",
+      "billing_start_assumed_utc": "2026-10-18T04:40:00Z",
+      "approved_stop_utc": "2026-10-18T06:20:00Z",
+      "approved_stop_local": "2026-10-18T11:20:00+05:00",
+      "compute_ceiling_usd": 5,
+      "elapsed_compute_estimate_usd": 0.675,
+      "remaining_compute_ceiling_usd": 4.325,
+      "allocation": "Complete Qwen3.8 repetitions first; then a bounded Gemma QLoRA pilot/training attempt only if measured time leaves room for independent candidate evaluations and load validation."
+    }
+  ],
+  "measurements_available_when_planned": {
+    "latest_read_gemma_progress_log": "tmp/agent-bridge/out/136-gemma4-progress.log",
+    "progress_checked_at_utc": "2026-10-18T04:44:42.792595+00:00",
+    "first_eval_started_at_utc": "2026-10-18T04:37:15.448383754Z",
+    "first_eval_complete_at_latest_observation": false,
+    "second_eval_complete_at_latest_observation": false,
+    "first_eval_elapsed_lower_bound_seconds": 447.344211,
+    "measured_full_40_video_eval_wall_seconds": null,
+    "measured_qlora_step_seconds": null,
+    "measured_qlora_setup_seconds": null,
+    "measured_candidate_load_seconds": null,
+    "estimated_final_accuracy": null,
+    "qualification_probability_claim": false
+  },
+  "allocation_recommendation": {
+    "priority_order": [
+      "Finish and save both unchanged Gemma 40-video baseline runs.",
+      "Finish and save both Qwen3.8 no-thinking 40-video runs on the temporary host.",
+      "Run a short QLoRA feasibility pilot on an available existing H100 with a hard wall-clock cap; retain Gemma baseline weights.",
+      "Continue toward 100 steps only if measured pilot throughput and full evaluation duration fit the remaining schedule.",
+      "Evaluate a single frozen adapter twice independently and check six-longest-clip latency before any promotion request."
+    ],
+    "qlora_target_steps": 100,
+    "qlora_pilot_steps": 10,
+    "qlora_pilot_wall_cap_seconds": 300,
+    "qlora_training_wall_cap_seconds_including_pilot": 1500,
+    "training_cap_compute_cost_usd_for_one_host": 1.25,
+    "training_cap_is_a_limit_not_a_measured_duration": true,
+    "deadline_reservation_formula": "available_seconds >= remaining_baseline_seconds + setup_seconds + 10*pilot_step_seconds + 90*pilot_step_seconds*1.25 + adapter_load_seconds + 2*measured_full_eval_seconds*1.25 + 285 + 300",
+    "formula_notes": {
+      "pilot_step_seconds": "Use measured post-warmup step time; include optimizer/checkpoint costs in setup or training estimate.",
+      "measured_full_eval_seconds": "Use a completed full 40-video wall measurement; not analyzer medians or a single-video latency.",
+      "remaining_baseline_seconds": "Zero only when both mandatory baseline runs and the required Qwen repetitions have completed on their allocated GPUs.",
+      "safety_multiplier": 1.25,
+      "six_parallel_latency_reservation_seconds": 285,
+      "transport_collection_and_review_reservation_seconds": 300,
+      "candidate_runs_count": 2,
+      "temporary_host_work_must_fit_its_1120_cutoff": true
+    },
+    "if_schedule_does_not_fit": "Stop the pilot or training at its cap, preserve the adapter and structured metrics, and report training as incomplete or unqualified. Do not shorten qualification, extend the temporary host cutoff, or claim 37/40.",
+    "no_parallel_training_and_vllm_on_same_h100": true,
+    "no_additional_hosts_or_guard_extensions": true
+  },
+  "training_integrity_requirements": {
+    "original_brief": "Claude outputs/FORTE_AGENT_PROMPT.md sections 5 and 6",
+    "development_labels_in_training_or_calibration_require_grouped_LOVO": true,
+    "copies_of_one_source_video_must_share_fold": true,
+    "all_40_development_videos_used_for_training_cannot_be_reported_as_independent_validation": true,
+    "new_type_negative_gate_and_robustness_requirements_remain": true,
+    "agent_reads_structured_outputs_only": true,
+    "models_and_training_data_remain_on_user_PC_or_user_rented_hosts": true,
+    "accuracy_claim_requires_actual_frozen_checkpoint_evaluations": true
+  },
+  "promotion_gate": {
+    "independent_full_runs_required": 2,
+    "correct_min_each_run": 37,
+    "video_count_each_run": 40,
+    "false_positives_max_each_run": 0,
+    "six_longest_parallel_max_seconds": 285,
+    "schema_evidence_and_failure_behaviour_must_pass": true,
+    "user_approval_required_for_production_switch": true,
+    "current_production_remains_untouched": true
+  },
+  "sources": [
+    "benchmarks/quality/parallel-q38-budget-20261018T0442Z.json",
+    "benchmarks/quality/new-account-budget-guard-20261018T0423Z.json",
+    "benchmarks/quality/session-progress-20261018.json",
+    "tmp/agent-bridge/out/136-gemma4-progress.log",
+    "docs/integration/agent-log.md",
+    "Claude outputs/FORTE_AGENT_PROMPT.md"
+  ]
+}

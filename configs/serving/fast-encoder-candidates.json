@@ -1,0 +1,86 @@
+{
+  "status": "research_only_not_downloaded_or_selected",
+  "recorded_at": "2026-10-17T11:19:29.171242+00:00",
+  "weights_downloaded": false,
+  "gpu_measured": false,
+  "live_service_changed": false,
+  "hashes_are_published_metadata_not_local_weight_verification": true,
+  "runtime_candidate": {
+    "transformers": "5.17.0",
+    "torch": "2.13.0+cu129",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "class": "SiglipVisionModel",
+    "note": "These fixed-resolution SigLIP2 checkpoints have model_type=siglip. They are not the separate NaFlex Siglip2 architecture. Runtime versions reuse the observed compatible stack; encoder execution has not been tested."
+  },
+  "feature_contract_candidate": {
+    "input": ["batch", 3, 256, 256],
+    "pooled_output": ["batch", 768],
+    "feature_kind": "vision_model.pooler_output",
+    "l2_normalization": false,
+    "cache": ["time", "views", 768],
+    "cache_dtype": "float16",
+    "normalization_note": "Feature kind/normalization must be frozen in any trained head manifest; an alternative normalized feature requires a different cache identity.",
+    "required_provenance": ["source_sha256", "frame_id", "pts", "time_base_num", "time_base_den", "view_box_xyxy_source_pixels", "view_validity", "encoder_revision", "processor_config_sha256", "resize_policy", "feature_kind", "head_revision", "calibration_revision"]
+  },
+  "recommended_candidates": [
+    {
+      "role": "speed_comparator",
+      "model_id": "google/siglip2-base-patch32-256",
+      "revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+      "license": "Apache-2.0",
+      "model_card": "https://huggingface.co/google/siglip2-base-patch32-256/blob/94dffa8cb1179de3e03f091dbc3917e5d5a9ae84/README.md",
+      "metadata_source": "https://huggingface.co/api/models/google/siglip2-base-patch32-256?blobs=true",
+      "weight": {"path":"model.safetensors","bytes":1507473288,"sha256":"7d241bb3becad218f211f480487f491df4f8c0a472ecf7afdec5615815a301f1"},
+      "all_tower_parameter_count": 376856066,
+      "all_tower_parameter_dtype_on_hub": "F32",
+      "vision_parameter_count_architecture_estimate": 94552320,
+      "patch_size": 32,
+      "patch_tokens_per_image": 64,
+      "feature_dim": 768,
+      "config_sha256": "52deee7a2d6fb2e73c45720d9c4056f0e4dc582ef84524aac229c6d5aa348dee",
+      "processor_config_sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff"
+    },
+    {
+      "role": "detail_first_candidate",
+      "model_id": "google/siglip2-base-patch16-256",
+      "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "license": "Apache-2.0",
+      "model_card": "https://huggingface.co/google/siglip2-base-patch16-256/blob/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md",
+      "metadata_source": "https://huggingface.co/api/models/google/siglip2-base-patch16-256?blobs=true",
+      "weight": {"path":"model.safetensors","bytes":1500985224,"sha256":"6125cacc01fa93bdc98a0c5101cefcd69b2ed1f8ab4f38d86f4ad5984f5dc863"},
+      "all_tower_parameter_count": 375234050,
+      "all_tower_parameter_dtype_on_hub": "F32",
+      "vision_parameter_count_architecture_estimate": 92930304,
+      "patch_size": 16,
+      "patch_tokens_per_image": 256,
+      "feature_dim": 768,
+      "config_sha256": "7b5aedcb8893e31376e129c1ffd7a5392f1a806dbc793ce53eda220c2ec59edf",
+      "processor_config_sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff"
+    }
+  ],
+  "shared_published_preprocessing": {
+    "width": 256,
+    "height": 256,
+    "resample_pil_enum": 2,
+    "rescale_factor": 0.00392156862745098,
+    "mean": [0.5,0.5,0.5],
+    "std": [0.5,0.5,0.5],
+    "note": "Official fixed resize preserves the whole scene but can distort aspect ratio. A letterbox policy or tensor resize backend is a different preprocessing identity and needs parity/task validation. Force RGB conversion at the decoder boundary."
+  },
+  "reviewed_alternative": {
+    "model_id": "laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K",
+    "revision": "4afec35ffe57a943d569ff7ee888061830164da8",
+    "license": "MIT",
+    "model_card": "https://huggingface.co/laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K/blob/4afec35ffe57a943d569ff7ee888061830164da8/README.md",
+    "weight": {"path":"open_clip_model.safetensors","bytes":605189364,"sha256":"92c26d60d3200ed5ed040dff31a8d19f8140648da8007216c25744c478deef27"},
+    "pooled_feature_dim": 512,
+    "reason_not_first": "A usable permissive alternate, but it adds an OpenCLIP runtime/feature contract while the two selected SigLIP2 variants share the existing Transformers stack. Bank-fact accuracy is unknown for every candidate."
+  },
+  "excluded_license_candidate": {
+    "model_id": "apple/MobileCLIP2-S0",
+    "weight_license": "Apple ML Research Model TOU",
+    "source": "https://github.com/apple-aiml-research/ml-mobileclip/blob/main/LICENSE_MODELS",
+    "reason": "Model terms restrict use to non-commercial research and exclude commercial product development; MIT code license does not cover weights."
+  }
+}

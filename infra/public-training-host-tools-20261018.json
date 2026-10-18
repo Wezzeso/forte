@@ -1,0 +1,21 @@
+{
+  "linux_launcher_tests_passed": 25,
+  "schema_version": "forte.public-training-host-tools.v1",
+  "receiver_tests_passed": 14,
+  "host_tools": {
+    "receive_public_training_bundle.py": {
+      "remote_sha256_verified": true,
+      "remote_source": "/data/claude/training/public-20261018/bin/receive_public_training_bundle.py",
+      "local_source": "tools/receive_public_training_bundle.py",
+      "sha256": "a44229e5359a572c2041954749e0079fdf72d5e72a92ee0b1e543664a59e38fd"
+    },
+    "run_public_training_host.py": {
+      "remote_sha256_verified": true,
+      "remote_source": "/data/claude/training/public-20261018/bin/run_public_training_host.py",
+      "local_source": "tools/run_public_training_host.py",
+      "sha256": "ac624bfc3402db2510946e7ff37e7b618cd0c0699db83958f25284af94d087df"
+    }
+  },
+  "windows_linux_only_skips": 4,
+  "windows_combined_tests_passed": 35
+}

@@ -1,0 +1,834 @@
+{
+  "schema_version": "forte.accuracy-upgrade-rollout.v1",
+  "started_at_utc": "2026-10-17T22:39:47.833384+00:00",
+  "pass": true,
+  "root_rollout_authorized": true,
+  "source_archive_sha256": "dcb5f16574df668aaaf6f6011cb0f13f70f0056a0c20027faa8777584dc21ce3",
+  "candidate_image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+  "baseline_image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+  "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+  "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+  "release_directory": "/home/ubuntu/forte/deploy/releases/accuracy-v2-dcb5f165",
+  "new_model_types_enabled": false,
+  "specialists_enabled": false,
+  "public_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "stage_pass": true,
+  "before": {
+    "forte-api-1": {
+      "container_id": "a69c83e260041ec0e07f657824d48906eacda797d3bf98edd4906895379655fd",
+      "image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+      "started_at": "2026-10-17T20:41:44.955680075Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_FAST_CONCURRENCY": "64",
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1"
+      }
+    },
+    "forte-worker-1": {
+      "container_id": "7df3631e7c08802965a7548e9cefe6e2e0a60edbdece73821a94b9bce4c85e5e",
+      "image_id": "sha256:30691bd4230396c011f292beab7094bcdf160e7845c417e85bf8d11e8dcbdf32",
+      "started_at": "2026-10-17T20:41:44.948699398Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation",
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1",
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_FAST_CONCURRENCY": "64"
+      }
+    },
+    "forte-db-1": {
+      "container_id": "d89d47017db9e5f7408d74afc3a674f6b7296198fd47b91cf633a563a07d3d27",
+      "image_id": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at": "2026-10-17T10:16:06.044486303Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "forte-ingress-1": {
+      "container_id": "02bbcd169d45c278b27a4d2e8cdcb6135df2347ff47c8afc6615ede1406a7f66",
+      "image_id": "sha256:f77f856a30f0004200b36b322d61da17fade31e24875699d77fb968399b9eb77",
+      "started_at": "2026-10-17T10:25:46.795916644Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "vlm30": {
+      "container_id": "d8dd1da4a4a811ccac2dc3f8b0ff34aeafe433dd94dd5926d3bdc7b6929e0691",
+      "image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at": "2026-10-17T19:14:49.608401273Z",
+      "running": true,
+      "operational_env": {},
+      "command": [
+        "serve",
+        "/models/q30",
+        "--served-model-name",
+        "q30",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "48",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--limit-mm-per-prompt",
+        "{\"image\":32,\"video\":0}",
+        "--mm-processor-cache-gb",
+        "4",
+        "--dtype",
+        "bfloat16",
+        "--seed",
+        "0"
+      ]
+    },
+    "file:.env": {
+      "sha256": "cbcd63ad9652408e175e51bb15726d2bb56e0bd6eac8ca5fb57deedc706405eb"
+    },
+    "file:compose.yaml": {
+      "sha256": "818050b33b347acafa9a734abfca02fe2c53bb1266994721b5b407a8ed236456"
+    },
+    "file:compose.fastlive.yaml": {
+      "sha256": "e138ded981007aea6ec9b20f47ee5b418fd3ab5233cebcc97f7dce4017509b78"
+    }
+  },
+  "queue_before": {
+    "active": 0,
+    "queued": 0
+  },
+  "baseline_config": {
+    "modules": {
+      "analyzer": {
+        "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+        "sha256": "31d27192dd76222bab8a1b7e45c18ffedd1a00f66bf5521ba35f3385eaddfd91"
+      },
+      "service": {
+        "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+        "sha256": "3b2c7325c19b1aead469d629a67e2a124a7bd04abc5df734e85888a21ae1e76b"
+      },
+      "video": {
+        "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+        "sha256": "cdf249965d6cf2939e70b12f41191059b65f5d5e56835ec4d6dadc900e1a8ec5"
+      },
+      "vlm": {
+        "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+        "sha256": "436a9bd42f072eeb0ffd988f438e7c5b33ffa062a6b935a9669a9ada2141cec8"
+      }
+    },
+    "config_present": false,
+    "config_file_sha256": null,
+    "effective_config_sha256": "af58eb3bee96e93f6d7f80f9ad748fd046d32edb20c4c45a0a235ea0135cf67d",
+    "use_verify": false,
+    "require_corroboration": false,
+    "disabled_types": [
+      "NO_CLIENT_ID",
+      "NO_AUTHENTICITY_CHECK",
+      "NO_RECOUNT",
+      "KEY_LEFT_IN_SAFE",
+      "LEFT_DURING_SERVICE",
+      "CASH_HANDOVER_IRREGULAR"
+    ],
+    "specialist_runtime_absent": true,
+    "torch_imported": false,
+    "rfdetr_imported": false,
+    "database_backend": "postgresql+psycopg",
+    "database_host": "db",
+    "database_name": "forte",
+    "max_concurrent_jobs": 4,
+    "model_name": "q30"
+  },
+  "production_data_volume": "forte_forte_data",
+  "maintenance_readiness": {
+    "http_status": 503,
+    "body": {
+      "status": "not_ready",
+      "components": {
+        "admission": false
+      }
+    }
+  },
+  "queue_drained": {
+    "active": 0,
+    "queued": 0
+  },
+  "config_install": {
+    "action": "install",
+    "config_present": true,
+    "config_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c"
+  },
+  "candidate_while_paused": {
+    "forte-api-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    },
+    "forte-worker-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    }
+  },
+  "readiness_before_public_load": {
+    "http_status": 200,
+    "body": {
+      "status": "ready",
+      "components": {
+        "authentication": true,
+        "database": true,
+        "storage": true,
+        "model": true,
+        "worker": true
+      }
+    }
+  },
+  "imported_bindings_before_public_load": {
+    "forte-api-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    },
+    "forte-worker-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    }
+  },
+  "public_load": {
+    "client_source_sha256": "2830549122489e697dd265e309494fc9209e718c945660482c623b6cf148b8cc",
+    "completed_results_observed": 6,
+    "contract_version": "1.1.0",
+    "deadline_seconds": 240,
+    "elapsed_seconds": 161.070487,
+    "evidence_counts_valid": true,
+    "failed": 0,
+    "jpeg_validation": "shared schema decodes and verifies every evidence JPEG",
+    "max_request_seconds": 161.068215,
+    "parallel": 6,
+    "pass": true,
+    "passed": 6,
+    "public_readiness": {
+      "components": {
+        "authentication": true,
+        "database": true,
+        "model": true,
+        "storage": true,
+        "worker": true
+      },
+      "status": "ready"
+    },
+    "requests": 6,
+    "results": [
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 148.0446,
+        "input_index": 0,
+        "pass": true,
+        "phase": "poll",
+        "polls": 140,
+        "request_index": 0,
+        "terminal_status": "done"
+      },
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 103.619368,
+        "input_index": 1,
+        "pass": true,
+        "phase": "poll",
+        "polls": 112,
+        "request_index": 1,
+        "terminal_status": "done"
+      },
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 49.069453,
+        "input_index": 2,
+        "pass": true,
+        "phase": "poll",
+        "polls": 44,
+        "request_index": 2,
+        "terminal_status": "done"
+      },
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 146.39455,
+        "input_index": 3,
+        "pass": true,
+        "phase": "poll",
+        "polls": 148,
+        "request_index": 3,
+        "terminal_status": "done"
+      },
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 161.068215,
+        "input_index": 4,
+        "pass": true,
+        "phase": "poll",
+        "polls": 165,
+        "request_index": 4,
+        "terminal_status": "done"
+      },
+      {
+        "completed_schema_valid": true,
+        "elapsed_seconds": 146.020343,
+        "input_index": 5,
+        "pass": true,
+        "phase": "poll",
+        "polls": 159,
+        "request_index": 5,
+        "terminal_status": "done"
+      }
+    ],
+    "schema_source_sha256": "1e60771f61258e89a7331ddf1143339fde15ff2f25b95ae5c0128e7c60d98818",
+    "scope": "public API latency and schema; no accuracy claim; result evidence omitted",
+    "selected_clip_durations_s": [
+      142.533021,
+      78.733021,
+      72.7,
+      71.6,
+      65.3,
+      58.966667
+    ],
+    "timeline_bounds_valid": true,
+    "total_evidence_frames": 6,
+    "total_violations": 2,
+    "unauthenticated_protected_status": 401
+  },
+  "public_load_queue_observation": {
+    "max_active_leases": 4,
+    "samples": 155
+  },
+  "acceptance_terminal_counts": "done|6|1",
+  "acceptance_worker_audits": [
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 0,
+      "duration": 72.7,
+      "timings": {
+        "decode_s": 1.182,
+        "layout": 1.608,
+        "states": 24.953,
+        "total": 24.954
+      },
+      "verification_count": 0
+    },
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 0,
+      "duration": 78.73302083333333,
+      "timings": {
+        "decode_s": 2.737,
+        "layout": 24.543,
+        "states": 75.745,
+        "total": 75.746
+      },
+      "verification_count": 0
+    },
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 1,
+      "duration": 58.96666666666667,
+      "timings": {
+        "decode_s": 1.092,
+        "layout": 24.769,
+        "states": 92.098,
+        "verify": 24.798,
+        "total": 116.896
+      },
+      "verification_count": 1
+    },
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 1,
+      "duration": 71.6,
+      "timings": {
+        "decode_s": 1.258,
+        "layout": 14.19,
+        "states": 85.053,
+        "verify": 25.136,
+        "total": 110.189
+      },
+      "verification_count": 1
+    },
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 0,
+      "duration": 142.53302083333332,
+      "timings": {
+        "decode_s": 4.457,
+        "layout": 56.508,
+        "states": 94.528,
+        "total": 94.528
+      },
+      "verification_count": 0
+    },
+    {
+      "config_sha256": "0bc38acdb31659d0ee525b3c702d2516317e49420b0318237536c2fbccc3a8e2",
+      "event_count": 0,
+      "duration": 65.3,
+      "timings": {
+        "decode_s": 1.151,
+        "layout": 22.726,
+        "states": 55.968,
+        "total": 55.969
+      },
+      "verification_count": 0
+    }
+  ],
+  "readiness_after_public_load": {
+    "http_status": 200,
+    "body": {
+      "status": "ready",
+      "components": {
+        "authentication": true,
+        "database": true,
+        "storage": true,
+        "model": true,
+        "worker": true
+      }
+    }
+  },
+  "imported_bindings_after_public_load": {
+    "forte-api-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    },
+    "forte-worker-1": {
+      "modules": {
+        "analyzer": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/analyzer.py",
+          "sha256": "4b0d1e566990fa2506d0717e1cb936259818aac6b48e3f08b4d2450c3b3d2230"
+        },
+        "service": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/service.py",
+          "sha256": "034ba146f2b47b4381515927644b989898e705d8df137110eb0278be3e4d02f4"
+        },
+        "video": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/video.py",
+          "sha256": "e73597bcf7cda8f7bedd72c80f9d12700ad87d8389795c3bd15d8a212e363718"
+        },
+        "vlm": {
+          "file": "/app/.venv/lib/python3.12/site-packages/forte/fast/vlm.py",
+          "sha256": "87737c6716df040d929b4ef00451c3272904aabf9a096b9a56ba478a5d9057e6"
+        }
+      },
+      "config_present": true,
+      "config_file_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+      "effective_config_sha256": "113323095c2031430f0aff58f3aecc4fe28907dfbe84dfb0eea1d9545a7a7b29",
+      "use_verify": true,
+      "require_corroboration": true,
+      "disabled_types": [
+        "NO_CLIENT_ID",
+        "NO_AUTHENTICITY_CHECK",
+        "NO_RECOUNT",
+        "KEY_LEFT_IN_SAFE",
+        "LEFT_DURING_SERVICE",
+        "CASH_HANDOVER_IRREGULAR"
+      ],
+      "specialist_runtime_absent": true,
+      "torch_imported": false,
+      "rfdetr_imported": false,
+      "database_backend": "postgresql+psycopg",
+      "database_host": "db",
+      "database_name": "forte",
+      "max_concurrent_jobs": 4,
+      "model_name": "q30"
+    }
+  },
+  "queue_after": {
+    "active": 0,
+    "queued": 0
+  },
+  "after": {
+    "forte-api-1": {
+      "container_id": "e23b117bf994ed5a1801b29776ce43dc5320a9542077c0205506161ee41d7279",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+      "started_at": "2026-10-17T22:39:57.30563863Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_FAST_CONCURRENCY": "64",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1",
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+      }
+    },
+    "forte-worker-1": {
+      "container_id": "fbc96390378c28c5b2604fe87da1083b436c26688e8970ba6c7abfef46c79a75",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+      "started_at": "2026-10-17T22:39:54.100103788Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_FAST_CONCURRENCY": "64",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+      }
+    },
+    "forte-db-1": {
+      "container_id": "d89d47017db9e5f7408d74afc3a674f6b7296198fd47b91cf633a563a07d3d27",
+      "image_id": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at": "2026-10-17T10:16:06.044486303Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "forte-ingress-1": {
+      "container_id": "02bbcd169d45c278b27a4d2e8cdcb6135df2347ff47c8afc6615ede1406a7f66",
+      "image_id": "sha256:f77f856a30f0004200b36b322d61da17fade31e24875699d77fb968399b9eb77",
+      "started_at": "2026-10-17T10:25:46.795916644Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "vlm30": {
+      "container_id": "d8dd1da4a4a811ccac2dc3f8b0ff34aeafe433dd94dd5926d3bdc7b6929e0691",
+      "image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at": "2026-10-17T19:14:49.608401273Z",
+      "running": true,
+      "operational_env": {},
+      "command": [
+        "serve",
+        "/models/q30",
+        "--served-model-name",
+        "q30",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "48",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--limit-mm-per-prompt",
+        "{\"image\":32,\"video\":0}",
+        "--mm-processor-cache-gb",
+        "4",
+        "--dtype",
+        "bfloat16",
+        "--seed",
+        "0"
+      ]
+    },
+    "file:.env": {
+      "sha256": "cbcd63ad9652408e175e51bb15726d2bb56e0bd6eac8ca5fb57deedc706405eb"
+    },
+    "file:compose.yaml": {
+      "sha256": "818050b33b347acafa9a734abfca02fe2c53bb1266994721b5b407a8ed236456"
+    },
+    "file:compose.fastlive.yaml": {
+      "sha256": "e138ded981007aea6ec9b20f47ee5b418fd3ab5233cebcc97f7dce4017509b78"
+    }
+  },
+  "protected_services_and_credentials_unchanged": true,
+  "rolled_back": false,
+  "finished_at_utc": "2026-10-17T22:42:52.497879+00:00",
+  "final_snapshot": {
+    "forte-api-1": {
+      "container_id": "e23b117bf994ed5a1801b29776ce43dc5320a9542077c0205506161ee41d7279",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+      "started_at": "2026-10-17T22:39:57.30563863Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_FAST_CONCURRENCY": "64",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1",
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+      }
+    },
+    "forte-worker-1": {
+      "container_id": "fbc96390378c28c5b2604fe87da1083b436c26688e8970ba6c7abfef46c79a75",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d",
+      "started_at": "2026-10-17T22:39:54.100103788Z",
+      "running": true,
+      "operational_env": {
+        "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+        "FORTE_MAX_CONCURRENT_JOBS": "4",
+        "FORTE_FAST_MODEL_NAME": "q30",
+        "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+        "FORTE_FAST_CONCURRENCY": "64",
+        "FORTE_FAST_MODEL_BASE_URL": "http://vlm30:8000/v1",
+        "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation"
+      }
+    },
+    "forte-db-1": {
+      "container_id": "d89d47017db9e5f7408d74afc3a674f6b7296198fd47b91cf633a563a07d3d27",
+      "image_id": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at": "2026-10-17T10:16:06.044486303Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "forte-ingress-1": {
+      "container_id": "02bbcd169d45c278b27a4d2e8cdcb6135df2347ff47c8afc6615ede1406a7f66",
+      "image_id": "sha256:f77f856a30f0004200b36b322d61da17fade31e24875699d77fb968399b9eb77",
+      "started_at": "2026-10-17T10:25:46.795916644Z",
+      "running": true,
+      "operational_env": {}
+    },
+    "vlm30": {
+      "container_id": "d8dd1da4a4a811ccac2dc3f8b0ff34aeafe433dd94dd5926d3bdc7b6929e0691",
+      "image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at": "2026-10-17T19:14:49.608401273Z",
+      "running": true,
+      "operational_env": {},
+      "command": [
+        "serve",
+        "/models/q30",
+        "--served-model-name",
+        "q30",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "48",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--limit-mm-per-prompt",
+        "{\"image\":32,\"video\":0}",
+        "--mm-processor-cache-gb",
+        "4",
+        "--dtype",
+        "bfloat16",
+        "--seed",
+        "0"
+      ]
+    },
+    "file:.env": {
+      "sha256": "cbcd63ad9652408e175e51bb15726d2bb56e0bd6eac8ca5fb57deedc706405eb"
+    },
+    "file:compose.yaml": {
+      "sha256": "818050b33b347acafa9a734abfca02fe2c53bb1266994721b5b407a8ed236456"
+    },
+    "file:compose.fastlive.yaml": {
+      "sha256": "e138ded981007aea6ec9b20f47ee5b418fd3ab5233cebcc97f7dce4017509b78"
+    }
+  },
+  "final_queue": {
+    "active": 0,
+    "queued": 0
+  },
+  "claim_scope": "exact frozen VLM profile on current host; six longest development clips over existing public HTTPS route, real PostgreSQL/evidence/schema; no new detector/training/migration or unseen-video accuracy claim",
+  "credentials_unchanged": true,
+  "credential_hash_redaction": "Individual credential-file hashes omitted; unchanged boolean retained. Private receipt stays on the host.",
+  "active_release_compose_wrapper": "/home/ubuntu/forte/deploy/releases/accuracy-v2-dcb5f165/compose-active.sh",
+  "persistence_note": "Docker restart policy retains the current container image. Recreate/update through compose-active.sh so the immutable image override stays applied; base-only up would select the historical image.",
+  "active_release_compose_bindings": {
+    "forte-api-1": {
+      "config_files": "/home/ubuntu/forte/deploy/compose.yaml,/home/ubuntu/forte/deploy/compose.fastlive.yaml,/home/ubuntu/forte/deploy/releases/accuracy-v2-dcb5f165/compose.image.json",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d"
+    },
+    "forte-worker-1": {
+      "config_files": "/home/ubuntu/forte/deploy/compose.yaml,/home/ubuntu/forte/deploy/compose.fastlive.yaml,/home/ubuntu/forte/deploy/releases/accuracy-v2-dcb5f165/compose.image.json,/home/ubuntu/forte/deploy/releases/accuracy-v2-dcb5f165/compose.maintenance.json",
+      "image_id": "sha256:8c8b92550c5dfc6702efbe266773ea4bfd86639b9f5edd8e86e6a0e3e45b6a3d"
+    }
+  },
+  "active_release_wrapper_config_valid": true,
+  "budget_guard_before": {
+    "NextRunTime": "2026-10-18T11:01:25+05:00",
+    "LastTaskResult": 0
+  },
+  "budget_guard_after": {
+    "NextRunTime": "2026-10-18T11:01:25+05:00",
+    "LastTaskResult": 0
+  },
+  "budget_guard_unchanged": true
+}

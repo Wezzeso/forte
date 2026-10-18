@@ -1,0 +1,13 @@
+{
+  "conflicting_label_contents": 0,
+  "confusion_report_status": "EXPLORATORY_PROVIDED_LABEL_AGGREGATE_AVAILABLE",
+  "final_check_evaluated": false,
+  "heldout_accuracy_claim": false,
+  "human_reviewed_ground_truth": false,
+  "negative_count": 3,
+  "positive_count": 3,
+  "provided_binary_labels_matched": 6,
+  "schema_version": "forte.provided_label_preflight.v1",
+  "selected_proposed_train_contents": 6,
+  "terminal_predictions_status": "FULL_SIX_TERMINAL_RECORDS_AGGREGATED_ORIGINAL_ALL19"
+}

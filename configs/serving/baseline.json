@@ -1,0 +1,58 @@
+{
+  "status": "candidate_gpu_validation_required",
+  "image": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "vllm_version": "0.31.0",
+  "per_request_metrics": true,
+  "structured_outputs_config": {
+    "backend": "xgrammar",
+    "disable_any_whitespace": true
+  },
+  "model_path": "/models/Qwen3-VL-8B-Instruct",
+  "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+  "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "served_model_name": "Qwen3-VL-8B-Instruct",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "dtype": "bfloat16",
+  "tensor_parallel_size": 1,
+  "max_model_len": 32768,
+  "max_num_seqs": 2,
+  "max_num_batched_tokens": 8192,
+  "gpu_memory_utilization": 0.85,
+  "limit_mm_per_prompt": {
+    "image": 16,
+    "video": 0,
+    "audio": 0
+  },
+  "mm_processor_kwargs": {
+    "max_pixels": 1048576
+  },
+  "mm_processor_cache_gb": 0,
+  "generation_max_tokens": 4096,
+  "prewarm_shapes": [
+    {
+      "frames": 1,
+      "width": 448,
+      "height": 448
+    },
+    {
+      "frames": 8,
+      "width": 672,
+      "height": 672
+    },
+    {
+      "frames": 16,
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "prewarm_concurrency": 2,
+  "startup_timeout_seconds": 1800,
+  "request_timeout_seconds": 240,
+  "scheduler": {
+    "concurrency": 2,
+    "max_pending": 64,
+    "max_pending_per_job": 16,
+    "max_inflight_per_job": 1
+  }
+}

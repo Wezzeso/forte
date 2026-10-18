@@ -1,0 +1,22 @@
+# Optional overlay AFTER compose.fast.yaml. Requires a built GPU worker image,
+# a passed local model gate, and a full candidate evaluation before deployment.
+services:
+  worker:
+    image: ${FORTE_SPECIALIST_WORKER_IMAGE:?Set the tested specialist worker image digest}
+    volumes:
+      - type: bind
+        source: ${FORTE_SPECIALIST_MODEL_DIR:?Set the local specialist artifacts directory}
+        target: /private/specialists
+        read_only: true
+      - type: bind
+        source: ${FORTE_SPECIALIST_CONFIG:?Set the validated fast_config.json file}
+        target: /var/lib/forte/fast_config.json
+        read_only: true
+    deploy:
+      replicas: 1
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${FORTE_SPECIALIST_GPU_ID:-0}"]
+              capabilities: [gpu]

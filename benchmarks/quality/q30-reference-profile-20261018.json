@@ -1,0 +1,28 @@
+{
+  "state_fps": 1.0,
+  "state_max_side": 896,
+  "holistic_frames": 24,
+  "holistic_max_side": 640,
+  "verify_window": 4.0,
+  "verify_frames": 10,
+  "verify_max_side": 768,
+  "verify_threshold": 0.5,
+  "use_rules": true,
+  "use_holistic": false,
+  "use_verify": true,
+  "merge_window": 6.0,
+  "min_away": 3,
+  "max_state_frames": 100,
+  "require_corroboration": true,
+  "specialists": {
+    "enabled": false
+  },
+  "disabled_types": [
+    "NO_CLIENT_ID",
+    "NO_AUTHENTICITY_CHECK",
+    "NO_RECOUNT",
+    "KEY_LEFT_IN_SAFE",
+    "LEFT_DURING_SERVICE",
+    "CASH_HANDOVER_IRREGULAR"
+  ]
+}

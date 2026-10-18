@@ -1,0 +1,24 @@
+{
+  "schema_version": "forte.public-cohort-root-review.v1",
+  "reviewed_at_utc": "2026-10-18T00:48:48.6753617+00:00",
+  "reviewed_by": "root",
+  "descriptor_pins_match_frozen_training_receipts": true,
+  "detector_descriptor_sha256": "0e923a37a10344ac00e0686b2f5d4ca8e1fc40e21b9fd5db171228b7191e8e5a",
+  "crop_descriptor_sha256": "6ea88b19f84082848091bffa9c1485b55763d854881c39aa69f92f470246fa11",
+  "existing_authorization_sha256": "4b84034ec85ef569b5d0428cd9cea2a72bbef08b9d2fc5b82f860129e4187310",
+  "full_sealed_inventory_sha256": "6fd01ecf63dceb738a069626bdebf59e286565e73c0c38b67a9715097b474a29",
+  "registry": "/data/claude/training/public-20261018/test-exposure-registry",
+  "members": [
+    "detector",
+    "crop_vlm"
+  ],
+  "execution_authorized_after": [
+    "corrected saved-adapter CPU cold-load proof passes",
+    "existing pinned register_cohort uses exactly the reviewed descriptors, existing registry and prior authorization"
+  ],
+  "test_attempts_allowed_per_member": 1,
+  "failed_attempt_consumes_exposure": true,
+  "retuning_after_test_permitted": false,
+  "candidate_production_activation_authorized": false,
+  "notes": "Both candidates fixed before joint test. Public object/crop scores do not qualify bank procedural violations."
+}

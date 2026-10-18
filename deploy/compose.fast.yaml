@@ -1,0 +1,68 @@
+# Fast analyzer profile: local Qwen3-VL-30B-A3B served by vLLM + worker/API using forte.fast.
+# Usage (from deploy/):
+#   docker compose --env-file .env -f compose.yaml -f compose.fast.yaml up -d
+services:
+  vlm:
+    image: ${FORTE_MODEL_IMAGE:-forte-model:vllm-0.31.0}
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs:
+      - /tmp:size=8g,nosuid
+    entrypoint: ["vllm"]
+    command: ["serve", "/models/vlm", "--served-model-name", "vlm", "--host", "0.0.0.0", "--port", "8000",
+              "--max-model-len", "32768", "--max-num-seqs", "64", "--gpu-memory-utilization", "0.92",
+              "--limit-mm-per-prompt", "{\"image\":32,\"video\":0}", "--mm-processor-cache-gb", "4",
+              "--enable-prefix-caching", "--dtype", "bfloat16", "--seed", "0"]
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      HF_HOME: /tmp/huggingface
+      XDG_CACHE_HOME: /tmp/cache
+      TORCHINDUCTOR_CACHE_DIR: /tmp/torchinductor
+      VLLM_NO_USAGE_STATS: "1"
+      DO_NOT_TRACK: "1"
+    volumes:
+      - type: bind
+        source: ${FORTE_FAST_MODEL_DIR:?Set FORTE_FAST_MODEL_DIR to the local Qwen3-VL-30B-A3B-Instruct snapshot}
+        target: /models/vlm
+        read_only: true
+    shm_size: 8gb
+    networks: [private]
+    healthcheck:
+      test: [CMD, curl, -sf, http://127.0.0.1:8000/v1/models]
+      interval: 10s
+      timeout: 5s
+      start_period: 15m
+      retries: 3
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${FORTE_INFERENCE_GPU_ID:-0}"]
+              capabilities: [gpu]
+
+  api:
+    environment: &fast-env
+      FORTE_ANALYZER: fast
+      FORTE_FAST_MODEL_BASE_URL: http://vlm:8000/v1
+      FORTE_FAST_MODEL_NAME: vlm
+      FORTE_FAST_CONCURRENCY: "64"
+      # Worker.run() caps jobs per process. The singleton below makes this
+      # a four-analysis limit for this deployment; additional uploads queue.
+      FORTE_MAX_CONCURRENT_JOBS: "4"
+      FORTE_ADMISSION_PAUSED: "false"
+    depends_on:
+      vlm: {condition: service_healthy}
+  worker:
+    # Compose rejects --scale worker=2 for a named container. Never run a
+    # second worker against this database without a distributed admission cap.
+    container_name: forte-fast-worker
+    deploy:
+      replicas: 1
+    environment: *fast-env
+    depends_on:
+      vlm: {condition: service_healthy}

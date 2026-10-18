@@ -1,0 +1,43 @@
+{
+  "schema_version": "forte.qwen38.training-runtime.v1",
+  "status": "prepared_not_built_or_gpu_tested",
+  "parent_image_tag": "forte-features:cu129-w1",
+  "parent_image_id": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+  "target_platform": "linux/amd64",
+  "target_python": "3.12",
+  "cuda_version": "12.9",
+  "target_gpu_compute_capability": [8, 0],
+  "core_packages": {
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "triton": "3.7.1",
+    "pillow": "12.3.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "av": "19.0.1"
+  },
+  "addon_packages": {"bitsandbytes": "0.50.2"},
+  "optional_kernel_packages": ["causal-conv1d", "flash-linear-attention", "fla-core"],
+  "bitsandbytes": {
+    "wheel": "bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+    "wheel_sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283",
+    "expected_cuda_library": "libbitsandbytes_cuda128.so",
+    "cuda_selection": "Official 0.50.2 loader selects highest same-major packaged version <= runtime; CUDA12.9 selects12.8. No override is configured.",
+    "installed_file_sha256": {
+      "bitsandbytes/libbitsandbytes_cuda128.so": "d6dd06a7bf8b2ecc43dd7d7dc5b558dc70884fd193252a8597ee065a9c8b0f4e",
+      "bitsandbytes/cextension.py": "a7ce4d7bcb504bf7d268ce96658dbe832804b6f6ed999f61eaf2beeb9385c9bd",
+      "bitsandbytes/nn/modules.py": "f7ab2160681e2f089caae80d6fd283ac6a9b9f1b82269e6f395c3b046faf606e"
+    }
+  },
+  "primary_sources": [
+    "https://pypi.org/pypi/bitsandbytes/0.50.2/json",
+    "https://pypi.org/project/bitsandbytes/0.50.2/",
+    "https://huggingface.co/docs/bitsandbytes/v0.50.2/en/installation"
+  ],
+  "gpu_use_policy": "Only root may invoke --gpu-smoke after current backup, fresh idle queue and exclusive GPU handoff gates. Default inspection imports no Torch/bitsandbytes and uses no GPU/private input.",
+  "scope": "An actual synthetic NF4 smoke demonstrates only this small quantized operation and gradients. It does not demonstrate a full Qwen3.8 load, visual backward, fine-tune, save/reload, accuracy or runtime target."
+}

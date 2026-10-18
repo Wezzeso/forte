@@ -1,0 +1,12 @@
+{
+  "versions": {
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "cuda_build": "12.9",
+  "cuda_initialized": false,
+  "gpu_device_nodes": []
+}

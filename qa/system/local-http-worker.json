@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:06:07.954546+00:00",
+  "layer": "HTTP; actual deployment locality determined by caller",
+  "input": "synthetic invalid bytes only",
+  "cases": [
+    {
+      "id": "missing_key_post",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "missing_key_get",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "wrong_key_post",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "wrong_key_get",
+      "status": "PASS",
+      "http_status": 401
+    },
+    {
+      "id": "unknown_job",
+      "status": "PASS",
+      "http_status": 404
+    },
+    {
+      "id": "corrupt_upload_accepted",
+      "status": "PASS",
+      "http_status": 202
+    },
+    {
+      "id": "corrupt_media_fails_without_verdict",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 7,
+    "FAIL": 0,
+    "UNMEASURED": 0
+  },
+  "unmeasured": [
+    "large valid media",
+    "actual worker process kill",
+    "PostgreSQL process restart",
+    "GPU inference",
+    "five distinct real clips",
+    "egress-disabled real inference"
+  ],
+  "pre_body_auth_note": "HTTP rejection is measured here; receive-not-called proof is an ASGI test"
+}

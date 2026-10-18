@@ -1,0 +1,62 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "model_id": {
+      "minLength": 1,
+      "title": "Model Id",
+      "type": "string"
+    },
+    "revision": {
+      "minLength": 1,
+      "title": "Revision",
+      "type": "string"
+    },
+    "weight_checksum": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Weight Checksum",
+      "type": "string"
+    },
+    "processor_version": {
+      "minLength": 1,
+      "title": "Processor Version",
+      "type": "string"
+    },
+    "license": {
+      "minLength": 1,
+      "title": "License",
+      "type": "string"
+    },
+    "adapter_checksum": {
+      "anyOf": [
+        {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Adapter Checksum"
+    },
+    "serving_config": {
+      "additionalProperties": true,
+      "title": "Serving Config",
+      "type": "object"
+    },
+    "contract_version": {
+      "default": "1.1.0",
+      "title": "Contract Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "model_id",
+    "revision",
+    "weight_checksum",
+    "processor_version",
+    "license"
+  ],
+  "title": "ModelManifest",
+  "type": "object"
+}

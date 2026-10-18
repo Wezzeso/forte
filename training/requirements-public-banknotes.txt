@@ -1,0 +1,8 @@
+# Exact release, including its native Lightning training dependencies.
+rfdetr[train]==1.11.2
+supervision==0.29.1
+# Align the cached image's partially upgraded telemetry family for pip check.
+opentelemetry-api==1.45.0
+opentelemetry-sdk==1.45.0
+opentelemetry-exporter-otlp==1.45.0
+opentelemetry-exporter-prometheus==0.66b0

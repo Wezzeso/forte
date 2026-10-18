@@ -1,0 +1,50 @@
+{
+  "active_jobs": 0,
+  "api_admission_paused": true,
+  "api_container_stopped": true,
+  "baseline_before": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e|2026-10-17T10:36:11.954566283Z",
+  "baseline_model_stopped": true,
+  "captured_at_utc": "2026-10-17T13:43:33.025374+00:00",
+  "captured_by_delegate": "a09",
+  "containers": {
+    "forte-api-1": {
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "paused": false,
+      "status": "exited"
+    },
+    "forte-db-1": {
+      "image": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "paused": false,
+      "status": "running"
+    },
+    "forte-model-1": {
+      "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "paused": false,
+      "status": "exited"
+    },
+    "forte-worker-1": {
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "paused": false,
+      "status": "exited"
+    }
+  },
+  "current_backup_receipt_sha256": "3be9403e6a645fafd162257410ebc2cd2a08411866450ccd8c4f673052969fe5",
+  "fixed_stop_utc": "2026-10-18T06:01:25Z",
+  "free_vram_mib": 81156.0,
+  "gpu_util_percent": 0.0,
+  "model_queue_running_waiting": 0,
+  "mount_verification_source": "root handoff and completed root remote preflight; no mount mutation by delegate",
+  "original_root_handoff_sha256": "ef9a2ea5c89e868f61b86a04eb17baa557fbaeb0e638c56ed694cf2c97756aa0",
+  "owner": "root",
+  "private_model_calls": 0,
+  "private_mount_readonly_required": true,
+  "read_only_refresh": true,
+  "runtime_image_sha256": "a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698",
+  "schema_version": "forte.qwen38.exclusive-gpu-handoff.v1",
+  "source_archive_sha256": "df11c1e2fafa5d44a7c431d1f6a09ec2fcaa68ffd5bef6d3d08889b25db14c7e",
+  "total_vram_mib": 81920.0,
+  "train_media_frames": 252,
+  "train_only_mount_verified": true,
+  "worker_paused": false,
+  "worker_stopped": true
+}

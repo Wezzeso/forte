@@ -1,0 +1,12 @@
+{
+  "status": "measured",
+  "job_id": "697b03f3000648b4a04eefcde98397ae",
+  "error_code": "processing_failed",
+  "matching_failed_synthetic_records": 1,
+  "unique_match": true,
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:44:42.884777+00:00",
+  "scope": "known A20 generated synthetic.mov; opaque ID and static error_code only",
+  "media_or_prediction_or_error_detail_read": false,
+  "model_inference_called": false
+}

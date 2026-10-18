@@ -1,0 +1,41 @@
+{
+  "schema": "forte.production-operations.v1",
+  "generated_at_utc": "2026-10-18T04:18:24.8547101Z",
+  "production": {
+    "name": "forte-a100-smoke-20261017",
+    "id": "wd88a7vvt",
+    "changes": "none"
+  },
+  "old_budget_task": {
+    "name": "Forte-Brev-budget-stop-wd88a7vvt",
+    "action": "disabled",
+    "user_approved": true,
+    "previous_trigger_local": "2026-10-18T11:01:25+05:00",
+    "observed_state": "Disabled"
+  },
+  "credit": {
+    "remaining_usd": 14.53,
+    "handoff_estimate_usd": 8,
+    "estimate_verified": true,
+    "a100_usd_per_hour": 2.03,
+    "estimated_runtime_hours_at_8_usd": 3.94,
+    "source": "Brev billing Current Balance visible in Chrome",
+    "billing_org_slug": "weezzeeso-cfe46c-tu9j",
+    "observed_at_utc": "2026-10-18T04:19:09.705216+00:00",
+    "runtime_hours_compute_only": 7.158,
+    "provider_reporting_lag_and_storage_unaccounted": true
+  },
+  "health": {
+    "public_readiness_http": 200,
+    "worker_running": true,
+    "model_running": true,
+    "worker_image_sha256": "26dc1184bb316d9ac7c55eb5a51d50ec472e5586002ad30dc37593ead5cbf4bc",
+    "profile_sha256": "8fc400ec761c0c0484938fc84b750fbbba5f7b98fa2e34f011b9e08e68b140fd",
+    "historical_jobs": {
+      "done": 66,
+      "failed": 9
+    },
+    "active_jobs": 0,
+    "source": "tmp/agent-bridge/out/102-production-health.log"
+  }
+}

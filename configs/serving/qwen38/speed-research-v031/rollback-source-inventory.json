@@ -1,0 +1,30 @@
+[
+  {
+    "path": "vllm/v1/worker/mamba_utils.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/v1/worker/mamba_utils.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\vllm__v1__worker__mamba_utils.py",
+    "size_bytes": 69536,
+    "sha256": "28c8a9bb07a56e3612e245ccc48cd7f29d85181dbe5e4cf8940c6bcd086df856"
+  },
+  {
+    "path": "vllm/model_executor/models/qwen3_5.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/model_executor/models/qwen3_5.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\vllm__model_executor__models__qwen3_5.py",
+    "size_bytes": 27990,
+    "sha256": "d261726aae3ce5d52c37b868c317d9377d5e1d7c344961707acc07785a4ec4ab"
+  },
+  {
+    "path": "vllm/config/cache.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/vllm/config/cache.py",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\vllm__config__cache.py",
+    "size_bytes": 18023,
+    "sha256": "a9b2a804c9c353e7bded64081bf920c79432d4e44ca180c05e275c69e642a280"
+  },
+  {
+    "path": "cmake/external_projects/flashmla.cmake",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/db9527a46873454610df6dbedf79a36d6bf1a7f6/cmake/external_projects/flashmla.cmake",
+    "local_path": "configs\\serving\\qwen38\\speed-research-v031\\cmake__external_projects__flashmla.cmake",
+    "size_bytes": 12989,
+    "sha256": "677dca1f21a5bed182f023184d96679b12b4a4aa4e4d23fb01345e05b872446a"
+  }
+]

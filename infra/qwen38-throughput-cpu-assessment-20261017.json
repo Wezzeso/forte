@@ -1,0 +1,326 @@
+{
+  "schema_version": "forte.qwen38.throughput-cpu-assessment.v1",
+  "captured_at_utc": "2026-10-17T14:01:50.108288+00:00",
+  "status": "cpu_arithmetic_and_synthetic_token_counts_not_performance_measurement",
+  "model_forward_calls": 0,
+  "gpu_access": false,
+  "private_media_read": false,
+  "service_or_core_source_changes": false,
+  "source_sha256": {
+    "src/forte/config.py": "c98303d65cc2d5060f2bbc931aec0755c3da6960ae60291b885401c23b85cf74",
+    "src/forte/pipeline.py": "b5aad4dae087096d5b7c89e0c6b8ca7f768a11a88435935467d3debb59fe28ea",
+    "src/forte/video/sampling.py": "6f52680ae834f5e09c327d9946da0d252df5a3acb730bc2fe29e52336479a3d7",
+    "src/forte/decision/structured.py": "ff65ffe772f25bace664da4b27de0d63b809606cd9aef6312a734da19715adb1",
+    "serving/qwen38_service.py": "9166bf030c78e92057dc5cd23d212e0cfb92dd7573acb22aab5d2a154c0c1b02",
+    "configs/serving/baseline.json": "9819e189a06d18cbb83afe96b9dd75a3d3ee26fd56c695261504560b591864ab",
+    "configs/serving/qwen38/candidate.runtime.example.json": "d30b44126cbe23ed931687024a0378dbe99838e8368567d0e55ea8ce46274758",
+    "configs/serving/qwen38/public-snapshot/config.json": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "configs/serving/qwen38/public-snapshot/preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+  },
+  "synthetic_prompt": {
+    "fact_count": 19,
+    "enabled_rule_count": 4,
+    "event_type_count": 3,
+    "frames": 16,
+    "full_prompt_text_tokens": 2518,
+    "screen_prompt_text_tokens": 1337,
+    "output_token_counts": {
+      "full_no_candidates_0_support_per_fact_tokens": 485,
+      "full_no_candidates_1_support_per_fact_tokens": 542,
+      "full_no_candidates_16_support_per_fact_tokens": 1682,
+      "screen_no_candidates_0_support_per_fact_tokens": 111,
+      "screen_no_candidates_1_support_per_fact_tokens": 123,
+      "screen_no_candidates_16_support_per_fact_tokens": 363
+    },
+    "limitations": "Generated schema envelopes only, no model observations. Counts exclude chat wrapper/media labels/EOS; image placeholder expansion is estimated separately from grid."
+  },
+  "image_grid_cpu_estimates": {
+    "1048576": {
+      "height": 832,
+      "width": 448,
+      "pixels": 372736,
+      "visual_tokens_per_image": 364,
+      "visual_tokens_16images": 5824
+    },
+    "524288": {
+      "height": 832,
+      "width": 448,
+      "pixels": 372736,
+      "visual_tokens_per_image": 364,
+      "visual_tokens_16images": 5824
+    },
+    "393216": {
+      "height": 832,
+      "width": 448,
+      "pixels": 372736,
+      "visual_tokens_per_image": 364,
+      "visual_tokens_16images": 5824
+    },
+    "262144": {
+      "height": 672,
+      "width": 352,
+      "pixels": 236544,
+      "visual_tokens_per_image": 231,
+      "visual_tokens_16images": 3696
+    }
+  },
+  "window_call_budgets": [
+    {
+      "duration_seconds": 8.0,
+      "coverage_windows": 1,
+      "frame_uses": 16,
+      "planned_unique_target_timestamps": 16,
+      "full_scan_calls": [
+        1,
+        9
+      ],
+      "staged_call_range": [
+        1,
+        10
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 270.0,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 30.0
+    },
+    {
+      "duration_seconds": 11.633333333,
+      "coverage_windows": 2,
+      "frame_uses": 32,
+      "planned_unique_target_timestamps": 32,
+      "full_scan_calls": [
+        2,
+        10
+      ],
+      "staged_call_range": [
+        2,
+        12
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 135.0,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 27.0
+    },
+    {
+      "duration_seconds": 30.0,
+      "coverage_windows": 7,
+      "frame_uses": 112,
+      "planned_unique_target_timestamps": 108,
+      "full_scan_calls": [
+        7,
+        15
+      ],
+      "staged_call_range": [
+        7,
+        22
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 38.57142857142857,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 18.0
+    },
+    {
+      "duration_seconds": 60.0,
+      "coverage_windows": 14,
+      "frame_uses": 224,
+      "planned_unique_target_timestamps": 212,
+      "full_scan_calls": [
+        14,
+        22
+      ],
+      "staged_call_range": [
+        14,
+        36
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 19.285714285714285,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 12.272727272727273
+    },
+    {
+      "duration_seconds": 90.0,
+      "coverage_windows": 22,
+      "frame_uses": 352,
+      "planned_unique_target_timestamps": 333,
+      "full_scan_calls": [
+        22,
+        30
+      ],
+      "staged_call_range": [
+        22,
+        52
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 12.272727272727273,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 9.0
+    },
+    {
+      "duration_seconds": 120.0,
+      "coverage_windows": 29,
+      "frame_uses": 464,
+      "planned_unique_target_timestamps": 437,
+      "full_scan_calls": [
+        29,
+        37
+      ],
+      "staged_call_range": [
+        29,
+        66
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 9.310344827586206,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 7.297297297297297
+    },
+    {
+      "duration_seconds": 142.53302083333332,
+      "coverage_windows": 35,
+      "frame_uses": 560,
+      "planned_unique_target_timestamps": 528,
+      "full_scan_calls": [
+        35,
+        43
+      ],
+      "staged_call_range": [
+        35,
+        78
+      ],
+      "max_average_call_seconds_full_no_refine_with_15s_nonmodel": 7.714285714285714,
+      "max_average_call_seconds_full_8refine_with_15s_nonmodel": 6.27906976744186
+    }
+  ],
+  "arithmetic_latency_scenarios": [
+    {
+      "assumed_decode_tokens_per_second": 10,
+      "assumed_output_tokens_per_call": 542,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 1947.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 10,
+      "assumed_output_tokens_per_call": 1024,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 3634.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 10,
+      "assumed_output_tokens_per_call": 4096,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 14386.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 20,
+      "assumed_output_tokens_per_call": 542,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 998.5,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 20,
+      "assumed_output_tokens_per_call": 1024,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 1842.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 20,
+      "assumed_output_tokens_per_call": 4096,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 7218.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 40,
+      "assumed_output_tokens_per_call": 542,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 524.25,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 40,
+      "assumed_output_tokens_per_call": 1024,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 946.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 40,
+      "assumed_output_tokens_per_call": 4096,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 3634.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 80,
+      "assumed_output_tokens_per_call": 542,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 287.125,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 80,
+      "assumed_output_tokens_per_call": 1024,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 498.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    },
+    {
+      "assumed_decode_tokens_per_second": 80,
+      "assumed_output_tokens_per_call": 4096,
+      "assumed_prefill_and_fixed_call_overhead_seconds": 1,
+      "coverage_calls": 35,
+      "assumed_nonmodel_job_overhead_seconds": 15,
+      "estimated_job_seconds": 1842.0,
+      "interpretation": "Arithmetic scenario only; rate, output and overhead are not measured27B performance."
+    }
+  ],
+  "memory_theory": {
+    "scope": "BF16 full-attention KV only; excludes allocator, vision activations, linear recurrent states, weights, LoRA and graph/workspace overhead.",
+    "baseline8b_kv_bytes_per_token_per_sequence": 147456,
+    "baseline8b_one_sequence_kv_gib_at_8192": 1.125,
+    "baseline8b_one_sequence_kv_gib_at_12288": 1.6875,
+    "baseline8b_one_sequence_kv_gib_at_32768": 4.5,
+    "candidate27b_full_attention_kv_bytes_per_token_per_sequence": 65536,
+    "candidate27b_one_sequence_full_attention_kv_gib_at_12288": 0.75,
+    "co_residence": "Unmodified baseline uses70,829MiB; only10,327MiB free, which does not establish27B coexistence. A separately limited8B KV allocation may permit residency, but not simultaneous latency or peak-load safety. No co-residence changes/test performed."
+  },
+  "recommended_initial_profile": {
+    "max_concurrent_clips": 1,
+    "max_inflight_per_job": 1,
+    "recommended_active_jobs": 1,
+    "staged_screening": false,
+    "window_seconds": 8,
+    "stride_seconds": 4,
+    "sample_fps": 2,
+    "max_frames_per_window": 16,
+    "compact_frame_ids": true,
+    "concise_observations": true,
+    "generation": {
+      "do_sample": false,
+      "num_beams": 1,
+      "seed": 20261017,
+      "enable_thinking": false,
+      "preserve_thinking": false,
+      "max_new_tokens_initial": 4096
+    },
+    "profile_is_deployed_by_this_assessment": false
+  },
+  "primary_sources": [
+    "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/raw/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/config.json",
+    "https://docs.vllm.ai/en/v0.31.0/cli/serve/"
+  ]
+}

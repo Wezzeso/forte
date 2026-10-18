@@ -1,0 +1,1136 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "status": "failed",
+      "attempt": 1,
+      "error_code": "invalid_model_output",
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "failed",
+        "error_code": "primary_model_incomplete",
+        "coarse_requests": 2,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "frame_preparation": 0.289044,
+          "coarse_model": 7745.612009,
+          "probe_decode": 1676.6948
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 2,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 14261.015198999303,
+              "min": 6520.611836999706,
+              "max": 7740.403361999597,
+              "p50": 7130.507599499651,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 13944.267995999326,
+              "min": 6370.141079999485,
+              "max": 7574.126915999841,
+              "p50": 6972.133997999663,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 247.95415200060233,
+              "min": 107.68926200034912,
+              "max": 140.26489000025322,
+              "p50": 123.97707600030117,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 67.09916599902499,
+              "min": 25.071806999221735,
+              "max": 42.027358999803255,
+              "p50": 33.549582999512495,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 1551.6488339999341,
+              "min": 768.8888829998177,
+              "max": 782.7599510001164,
+              "p50": 775.8244169999671,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 11174.544268999853,
+              "min": 5369.298632000209,
+              "max": 5805.2456369996435,
+              "p50": 5587.272134499926,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 4.15903800058004,
+              "min": 0.009354000212624669,
+              "max": 4.149684000367415,
+              "p50": 2.07951900029002,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 2,
+              "sum": 27.968248677545606,
+              "min": 12.843463798671777,
+              "max": 15.124784878873829,
+              "p50": 13.984124338772803,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 2,
+              "sum": 2.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 2,
+              "sum": 32.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 2,
+              "sum": 3254569.0,
+              "min": 1618108.0,
+              "max": 1636461.0,
+              "p50": 1627284.5,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 2,
+              "sum": 15293.0,
+              "min": 7632.0,
+              "max": 7661.0,
+              "p50": 7646.5,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 2,
+              "sum": 809.0,
+              "min": 356.0,
+              "max": 453.0,
+              "p50": 404.5,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 2,
+              "sum": 16102.0,
+              "min": 8017.0,
+              "max": 8085.0,
+              "p50": 8051.0,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 2,
+            "sum": 126.75890251566162,
+            "min": 57.997576504470544,
+            "max": 68.76132601119107,
+            "p50": 63.37945125783081,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 32
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    },
+    {
+      "sample_id": "s002",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 3,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "evidence": 0.61365,
+          "frame_preparation": 0.402822,
+          "rules": 1.537615,
+          "coarse_model": 14385.221231,
+          "probe_decode": 1837.238083
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 3,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 22151.78022100008,
+              "min": 6629.724444999738,
+              "max": 7773.12535800047,
+              "p50": 7748.930417999873,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 21806.288078999387,
+              "min": 6537.974428999405,
+              "max": 7635.46027800021,
+              "p50": 7632.853371999772,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 312.68914500105893,
+              "min": 85.70515400060685,
+              "max": 116.63858900010382,
+              "p50": 110.34540200034826,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 30.13457900033245,
+              "min": 4.843445000005886,
+              "max": 20.14632300051744,
+              "p50": 5.144810999809124,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 2364.8814469997887,
+              "min": 784.4550169993454,
+              "max": 795.956259000377,
+              "p50": 784.4701710000663,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 18115.20916399968,
+              "min": 5576.739322999856,
+              "max": 6655.330890000187,
+              "p50": 5883.138950999637,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 0.04413399983604904,
+              "min": 0.008940999578044284,
+              "max": 0.017682999896351248,
+              "p50": 0.01751000036165351,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 3,
+              "sum": 40.07789638053026,
+              "min": 12.337918856194372,
+              "max": 14.724183384956167,
+              "p50": 13.015794139379727,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 3,
+              "sum": 3.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 3,
+              "sum": 48.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 3,
+              "sum": 5043664.0,
+              "min": 1643004.0,
+              "max": 1710151.0,
+              "p50": 1690509.0,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 3,
+              "sum": 22904.0,
+              "min": 7631.0,
+              "max": 7641.0,
+              "p50": 7632.0,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 3,
+              "sum": 1359.0,
+              "min": 453.0,
+              "max": 453.0,
+              "p50": 453.0,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 3,
+              "sum": 24263.0,
+              "min": 8084.0,
+              "max": 8094.0,
+              "p50": 8085.0,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 3,
+            "sum": 199.92532472706696,
+            "min": 60.888724884680705,
+            "max": 71.21304204644954,
+            "p50": 67.82355779593671,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 48
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    },
+    {
+      "sample_id": "s003",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 4,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "evidence": 0.619413,
+          "frame_preparation": 0.510086,
+          "rules": 1.864827,
+          "coarse_model": 15636.3982,
+          "probe_decode": 2121.269159
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 4,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 31233.60993800088,
+              "min": 7793.1385530000625,
+              "max": 7819.3291030002,
+              "p50": 7810.57114100031,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 30710.28185799969,
+              "min": 7664.058546999513,
+              "max": 7689.235564999763,
+              "p50": 7678.493873000207,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 488.00247100007255,
+              "min": 119.87233000036213,
+              "max": 123.26064199987741,
+              "p50": 122.4347494999165,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 31.73739300109446,
+              "min": 0.0,
+              "max": 21.336566000172752,
+              "p50": 5.200413500460854,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 3192.087186000208,
+              "min": 783.538925999892,
+              "max": 823.2281520004108,
+              "p50": 792.6600539999527,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 25117.904175999684,
+              "min": 5882.791441999871,
+              "max": 6689.5959309995305,
+              "p50": 6272.758401500141,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 0.05734100068366388,
+              "min": 0.0093830003606854,
+              "max": 0.019128000531054568,
+              "p50": 0.014414999895961955,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 4,
+              "sum": 55.57058446017629,
+              "min": 13.015025314159006,
+              "max": 14.799990997786573,
+              "p50": 13.877784074115358,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 4,
+              "sum": 4.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 4,
+              "sum": 64.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 4,
+              "sum": 6794303.0,
+              "min": 1664568.0,
+              "max": 1717154.0,
+              "p50": 1706290.5,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 30594.0,
+              "min": 7631.0,
+              "max": 7684.0,
+              "p50": 7639.5,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 1812.0,
+              "min": 453.0,
+              "max": 453.0,
+              "p50": 453.0,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 4,
+              "sum": 32406.0,
+              "min": 8084.0,
+              "max": 8137.0,
+              "p50": 8092.5,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 4,
+            "sum": 256.7689377998826,
+            "min": 60.61713172159808,
+            "max": 67.82292020459148,
+            "p50": 64.16444293684653,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 64
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    },
+    {
+      "sample_id": "s004",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 5,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "evidence": 0.687635,
+          "frame_preparation": 0.610917,
+          "rules": 2.356285,
+          "coarse_model": 22273.982062,
+          "probe_decode": 2329.209725
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 5,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 37878.332735000185,
+              "min": 6675.626307999664,
+              "max": 7814.630988000317,
+              "p50": 7799.009074000423,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 37266.412244000094,
+              "min": 6585.996990999774,
+              "max": 7677.083679000134,
+              "p50": 7669.912055000168,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 573.6617809989184,
+              "min": 84.20750299956126,
+              "max": 124.99190200014709,
+              "p50": 121.74290900020424,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 33.80665599979693,
+              "min": 0.0,
+              "max": 19.896034999874246,
+              "p50": 4.580869000164967,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 3987.9645169994546,
+              "min": 785.8441959997435,
+              "max": 811.6596820000268,
+              "p50": 799.2382769998585,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 30679.741868000747,
+              "min": 5583.8902489995235,
+              "max": 6663.993593000669,
+              "p50": 5887.545219999993,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 0.07343000106629916,
+              "min": 0.008371999683731701,
+              "max": 0.019346000044606626,
+              "p50": 0.01768300080584595,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 5,
+              "sum": 67.87553510619634,
+              "min": 12.353739488936998,
+              "max": 14.743348657081125,
+              "p50": 13.025542522123878,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 5,
+              "sum": 5.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 5,
+              "sum": 80.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 5,
+              "sum": 8436883.0,
+              "min": 1654075.0,
+              "max": 1703988.0,
+              "p50": 1697373.0,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 5,
+              "sum": 38278.0,
+              "min": 7631.0,
+              "max": 7712.0,
+              "p50": 7647.0,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 5,
+              "sum": 2265.0,
+              "min": 453.0,
+              "max": 453.0,
+              "p50": 453.0,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 5,
+              "sum": 40543.0,
+              "min": 8084.0,
+              "max": 8165.0,
+              "p50": 8100.0,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 5,
+            "sum": 327.94793043547133,
+            "min": 60.7652531553145,
+            "max": 70.83050009574413,
+            "p50": 67.73484529660918,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 80
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    },
+    {
+      "sample_id": "s005",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 10,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "evidence": 1.355639,
+          "frame_preparation": 1.196026,
+          "rules": 4.529976,
+          "coarse_model": 38637.352186,
+          "probe_decode": 3505.033652
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 10,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 76243.23639799969,
+              "min": 6901.97358200021,
+              "max": 8533.465111999249,
+              "p50": 7708.520812499955,
+              "p95": null
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 75251.83135999941,
+              "min": 6824.817396000071,
+              "max": 8414.991948000534,
+              "p50": 7627.680793999843,
+              "p95": null
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 935.3030090005632,
+              "min": 70.7001719993059,
+              "max": 123.96446500042657,
+              "p50": 80.8492680002928,
+              "p95": null
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 47.15511699941999,
+              "min": 0.0,
+              "max": 21.755226999630395,
+              "p50": 4.519719499967323,
+              "p95": null
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 8013.625735999085,
+              "min": 788.197097000193,
+              "max": 809.0494579992082,
+              "p50": 803.814877500372,
+              "p95": null
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 63861.4299710016,
+              "min": 5094.5747020005,
+              "max": 7430.368512000314,
+              "p50": 6654.80498550005,
+              "p95": null
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 0.10671499967429554,
+              "min": 0.0073010005507967435,
+              "max": 0.022173000616021454,
+              "p50": 0.0079869996625348,
+              "p95": null
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 10,
+              "sum": 144.05878115434166,
+              "min": 12.941715829269107,
+              "max": 16.438868389381224,
+              "p50": 14.755665156319402,
+              "p95": null
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 10,
+              "sum": 10.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": null
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 10,
+              "sum": 160.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": null
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 10,
+              "sum": 15112654.0,
+              "min": 1132051.0,
+              "max": 1644855.0,
+              "p50": 1631095.0,
+              "p95": null
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 10,
+              "sum": 76500.0,
+              "min": 7631.0,
+              "max": 7672.0,
+              "p50": 7653.0,
+              "p95": null
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 10,
+              "sum": 4438.0,
+              "min": 392.0,
+              "max": 453.0,
+              "p50": 452.0,
+              "p95": null
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 10,
+              "sum": 80938.0,
+              "min": 8048.0,
+              "max": 8124.0,
+              "p50": 8098.0,
+              "p95": null
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 10,
+            "sum": 620.366588167336,
+            "min": 55.107042432492825,
+            "max": 68.03466950907479,
+            "p50": 60.571891830596606,
+            "p95": null
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 160
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    },
+    {
+      "sample_id": "s006",
+      "status": "done",
+      "attempt": 1,
+      "error_code": null,
+      "audit_available": true,
+      "terminal_verified": true,
+      "fixed_audit_fields": {
+        "phase": "done",
+        "error_code": null,
+        "coarse_requests": 35,
+        "refinement_requests": 0,
+        "stages_ms": {
+          "evidence": 3.380596,
+          "frame_preparation": 6.518345,
+          "rules": 16.198601,
+          "coarse_model": 137104.10976,
+          "probe_decode": 9558.15559
+        },
+        "model_requests": {
+          "schema_version": "1.0",
+          "request_record_count": 35,
+          "request_durations": {
+            "elapsed_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 269350.4800089995,
+              "min": 6724.413746000209,
+              "max": 8572.63597400015,
+              "p50": 7750.36117000036,
+              "p95": 7817.64903200019
+            },
+            "http_elapsed_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 265904.6932500005,
+              "min": 6638.82106300025,
+              "max": 8442.530550999436,
+              "p50": 7651.308190999771,
+              "p95": 7705.581764999806
+            },
+            "preprocessing_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 3295.578801001284,
+              "min": 79.38889799970639,
+              "max": 129.2431169995325,
+              "p50": 84.20311700047023,
+              "p95": 129.20292199942196
+            },
+            "readiness_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 118.08806299995922,
+              "min": 0.0,
+              "max": 24.39888200024143,
+              "p50": 4.483853999772691,
+              "p95": 6.867785000395088
+            },
+            "server_time_to_first_token_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 28215.375580998625,
+              "min": 788.67210899989,
+              "max": 831.8607050005085,
+              "p50": 808.184323000205,
+              "p95": 812.1200799996586
+            },
+            "server_generation_time_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 227348.1545589975,
+              "min": 5645.536436999464,
+              "max": 6704.376929999853,
+              "p50": 6665.010037999309,
+              "p95": 6683.991767999942
+            },
+            "server_queue_time_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 1.7180940021717106,
+              "min": 0.007063999873935245,
+              "max": 1.4030470001671347,
+              "p50": 0.008058000275923405,
+              "p95": 0.021412000023701694
+            },
+            "server_mean_itl_ms": {
+              "unit": "ms",
+              "count": 35,
+              "sum": 508.6373045873883,
+              "min": 12.490124860618284,
+              "max": 15.105918197368258,
+              "p50": 14.780338662972795,
+              "p95": 14.84384349884864
+            }
+          },
+          "numeric_counts": {
+            "attempts": {
+              "unit": "count",
+              "count": 35,
+              "sum": 35.0,
+              "min": 1.0,
+              "max": 1.0,
+              "p50": 1.0,
+              "p95": 1.0
+            },
+            "input_frames": {
+              "unit": "count",
+              "count": 35,
+              "sum": 560.0,
+              "min": 16.0,
+              "max": 16.0,
+              "p50": 16.0,
+              "p95": 16.0
+            },
+            "encoded_media_bytes": {
+              "unit": "bytes",
+              "count": 35,
+              "sum": 57549284.0,
+              "min": 1629183.0,
+              "max": 1660920.0,
+              "p50": 1643681.0,
+              "p95": 1658840.0
+            },
+            "prompt_tokens": {
+              "unit": "count",
+              "count": 35,
+              "sum": 267802.0,
+              "min": 7631.0,
+              "max": 7696.0,
+              "p50": 7644.0,
+              "p95": 7670.0
+            },
+            "generated_tokens": {
+              "unit": "count",
+              "count": 35,
+              "sum": 15684.0,
+              "min": 381.0,
+              "max": 453.0,
+              "p50": 452.0,
+              "p95": 453.0
+            },
+            "total_tokens": {
+              "unit": "count",
+              "count": 35,
+              "sum": 283486.0,
+              "min": 8025.0,
+              "max": 8149.0,
+              "p50": 8097.0,
+              "p95": 8123.0
+            },
+            "visual_tokens": {
+              "unit": "count",
+              "count": 0,
+              "sum": 0.0,
+              "min": null,
+              "max": null,
+              "p50": null,
+              "p95": null
+            }
+          },
+          "server_tokens_per_second": {
+            "unit": "tokens/s",
+            "count": 35,
+            "sum": 2151.163894755562,
+            "min": 58.333421202199624,
+            "max": 69.93549879205506,
+            "p50": 60.46579394145749,
+            "p95": 67.79001364594905
+          },
+          "encoded_input_frame_resolutions": [
+            {
+              "width": 464,
+              "height": 848,
+              "frame_count": 560
+            }
+          ],
+          "scope": "per-request observations; request sums can overlap and are not job wall time",
+          "timing_semantics": {
+            "server_time_to_first_token_ms": "TTFT, not pure GPU prefill",
+            "server_generation_time_ms": "server-reported decode generation time",
+            "server_queue_time_ms": "model request queue, not durable job queue"
+          },
+          "processor_output_dimensions": "unmeasured by standard response",
+          "p95_minimum_request_observations": 20
+        }
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:39:51.619005+00:00",
+  "scope": "benchmark-owned terminal technical metadata only",
+  "media_or_prediction_or_error_detail_exported": false,
+  "model_inference_called": false
+}

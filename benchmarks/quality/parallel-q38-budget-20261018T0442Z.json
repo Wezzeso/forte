@@ -1,0 +1,24 @@
+{
+  "guard": "ready",
+  "mode": "dry_run",
+  "instance_name": "forte-new-q38",
+  "instance_id": "xw5720fii",
+  "status": "DEPLOYING",
+  "cli_home": "/home/wezeso/brev-new",
+  "cutoff_utc": "2026-10-18T06:20:00+00:00",
+  "latest_cutoff_utc": "2026-10-18T13:00:00+00:00",
+  "due": false,
+  "estimated_spend_usd": "0.10",
+  "budget_usd": "50",
+  "reserve_usd": "2",
+  "remaining_seconds": 5877,
+  "scheduled_task": {
+    "name": "Forte-Brev-new-budget-stop-xw5720fii",
+    "state": "Ready",
+    "enabled": true,
+    "trigger_local": "2026-10-18T11:20:00+05:00",
+    "user_approved": true
+  },
+  "combined_new_host_compute_ceiling_usd": 30.75,
+  "ceiling_excludes_storage_and_provider_lag": true
+}

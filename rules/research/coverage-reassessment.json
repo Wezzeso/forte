@@ -1,0 +1,353 @@
+{
+  "schema_version": "forte.legal_coverage_reassessment.v1",
+  "accessed_on": "2026-10-17",
+  "runtime_catalog_changed": false,
+  "runtime_enabled_rule_count": 4,
+  "runtime_enabled_event_type_count": 3,
+  "organizer_has_closed_violation_taxonomy": false,
+  "manual_annotation_required_by_organizer": false,
+  "automated_local_first_pass_authorized": true,
+  "human_review_wording_required": true,
+  "hundred_percent_target_is_measured_goal_not_established_fact": true,
+  "ten_second_target_is_user_target_not_organizer_cutoff": true,
+  "organizer_cutoff_sec": 300,
+  "proposals": [
+    {
+      "proposal_id": "P20_PREVIOUS_CASH_OUTSIDE_STORAGE",
+      "event_type_id_proposed": "PREVIOUSLY_ACCEPTED_CASH_OUTSIDE_STORAGE",
+      "clauses": [
+        "20"
+      ],
+      "priority": 1,
+      "classification": "automatable_with_complete_visible_context",
+      "implementation": "New rule and taxonomy event; current pocket branch does not cover retained notes on counter.",
+      "positive_facts": [
+        "BANK_CASH_WORKSTATION",
+        "PREVIOUS_RECEIPT_COMPLETE",
+        "PREVIOUSLY_ACCEPTED_CASH_TRACKED",
+        "CURRENT_RECEIPT_DIFFERENT_FROM_PRIOR_RECEIPT",
+        "PREVIOUS_CASH_ON_COUNTER_OUTSIDE_STORAGE",
+        "CURRENT_CLIENT_RECEIPT_IN_PROGRESS",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "absent_facts": [],
+      "must_exclude": [
+        "Current client cash before acceptance",
+        "Cash being counted/packed/handed to authorized next internal stage",
+        "A lockable storage drawer or tray mistaken for ordinary counter"
+      ],
+      "evidence_context": "Track same notes from completed prior receipt into next independent receipt; retain sequence boundaries without identifying faces.",
+      "new_nonvisual_context_needed": false,
+      "latency_class": "cross_window_temporal_state",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "20": "20. Наличные деньги принимаются и пересчитываются кассовым работником в присутствии клиента.\nНа рабочем месте кассового работника находятся наличные деньги клиента. Все ранее принятые наличные деньги хранятся в специальных устройствах, находящихся на рабочем месте кассового работника, закрывающихся на ключ, предназначенных для хранения наличных денег (металлический шкаф, сейф, тележка, ящики стола, тумба).\n"
+      }
+    },
+    {
+      "proposal_id": "P20_RECEIPT_COUNT_WITHOUT_CLIENT",
+      "event_type_id_proposed": "CUSTOMER_ABSENT_DURING_RECEIPT_COUNT",
+      "clauses": [
+        "20"
+      ],
+      "priority": 1,
+      "classification": "automatable_with_complete_visible_context",
+      "implementation": "New rule/event; relates to client presence, not count omission.",
+      "positive_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_RECEIPT_OPERATION",
+        "CASH_COUNT_VISIBLE",
+        "CONTRIBUTOR_TRACKED_BY_BODY_CONTINUITY",
+        "ENTIRE_CLIENT_ZONE_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "absent_facts": [
+        "CONTRIBUTING_CLIENT_PHYSICALLY_PRESENT_DURING_RECEIPT_COUNT"
+      ],
+      "must_exclude": [
+        "Customer merely occluded or outside crop",
+        "Subsequent independent internal recount after completed client receipt",
+        "Actor identity inferred from face or clothing label"
+      ],
+      "evidence_context": "Contributing person visible leaving fully observed client zone; same receipt cash counted before service completion; use body/object continuity only.",
+      "new_nonvisual_context_needed": false,
+      "latency_class": "cross_window_temporal_state",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "20": "20. Наличные деньги принимаются и пересчитываются кассовым работником в присутствии клиента.\nНа рабочем месте кассового работника находятся наличные деньги клиента. Все ранее принятые наличные деньги хранятся в специальных устройствах, находящихся на рабочем месте кассового работника, закрывающихся на ключ, предназначенных для хранения наличных денег (металлический шкаф, сейф, тележка, ящики стола, тумба).\n"
+      }
+    },
+    {
+      "proposal_id": "P19_RECEIPT_COINS_WITHOUT_COUNT",
+      "event_type_id_proposed": "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+      "clauses": [
+        "19"
+      ],
+      "priority": 1,
+      "classification": "automatable_with_complete_visible_context",
+      "implementation": "Additional branch under existing count event.",
+      "positive_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_RECEIPT_OPERATION",
+        "LOOSE_COINS_RECEIVED",
+        "CASH_HANDOVER_VISIBLE",
+        "ALL_COUNTING_PATHS_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "absent_facts": [
+        "COIN_UNIT_COUNT_VISIBLE"
+      ],
+      "must_exclude": [
+        "Sealed collection bag",
+        "Automatic coin counter outside view",
+        "Pre-counted or bank-packed transfer outside actual customer receipt procedure"
+      ],
+      "evidence_context": "Full loose-coin receipt stage with all manual/machine paths visible; do not infer absent from sparse snapshots.",
+      "new_nonvisual_context_needed": false,
+      "latency_class": "full_procedure_omission",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "19": "19. Кассовый работник банка осуществляет следующие действия:\n1) проводит визуальную идентификацию клиента, вносящего наличные деньги, с документом, удостоверяющим его личность, либо данными, подтверждающими (идентифицирующими) личность клиента, полученными посредством сервиса цифровых документов;\n2) принимает банкноты с полистным пересчетом, монеты с пересчетом по кружкам с проверкой на подлинность и платежность наличных денег в соответствии с пунктами 57 и 58 Правил;\n3) проверяет наличие подписи клиента и при участии операционного работника наличие его подписи, сверяет их с имеющимися образцами подписей;\n4) сверяет соответствие суммы, указанной в приходном кассовом документе, с общей суммой фактически принятых наличных денег;\n5) подписывает все экземпляры приходного кассового документа, проставляет штамп кассового работника банка на всех экземплярах приходного кассового документа;\n6) выдает клиенту документ, подтверждающий проведение кассовой операции по приему наличных денег.\nСноска. Пункт 19 - в редакции приказа постановления Правления Национального Банка РК от 28.02.2022\n№ 19\n(вводится в действие по истечении девяноста календарных дней после дня первого официального опубликования настоящего постановления); с изменением, внесенным постановлением Правления Национального Банка РК от 10.11.2025\n№ 71\n(вводится в действие по истечении десяти календарных дней после дня его первого официального опубликования).\n"
+      }
+    },
+    {
+      "proposal_id": "P32_DAMAGED_BUNDLE_ISSUE_WITHOUT_LEAF_COUNT",
+      "event_type_id_proposed": "CASH_TRANSFER_WITHOUT_OBSERVED_COUNT",
+      "clauses": [
+        "31",
+        "32"
+      ],
+      "priority": 1,
+      "classification": "automatable_with_complete_visible_context",
+      "implementation": "Additional existing-event count branch respecting package exception.",
+      "positive_facts": [
+        "BANK_CASH_WORKSTATION",
+        "CASH_ISSUE_OPERATION",
+        "BANKNOTE_BUNDLE_IDENTIFIABLE",
+        "BUNDLE_WRAPPER_DAMAGE_CLEAR",
+        "CASH_HANDOVER_VISIBLE",
+        "ALL_COUNTING_PATHS_VISIBLE",
+        "PROCEDURE_CONTEXT_COMPLETE",
+        "WORK_AREA_CONTINUOUSLY_VISIBLE"
+      ],
+      "absent_facts": [
+        "BANKNOTE_LEAF_COUNT_VISIBLE"
+      ],
+      "must_exclude": [
+        "Intact packs and bundles permitted by paragraph32",
+        "Only outer wrapping defect with bundle itself intact",
+        "Low resolution preventing packaging classification",
+        "Count performed earlier outside visible preparation stage"
+      ],
+      "evidence_context": "High-resolution crop plus full global preparation/issue context; no denomination/value or face identity required.",
+      "new_nonvisual_context_needed": false,
+      "latency_class": "full_procedure_omission_with_detail_crop",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "31": "31. Кассовый работник банка осуществляет следующие действия:\n1) проводит визуальную идентификацию клиента по данным документа, удостоверяющего личность, либо данным, подтверждающим (идентифицирующим) личность клиента, полученным посредством сервиса цифровых документов;\n2) проверяет наличие подписи клиента и при участии операционного работника наличие его подписи, сверяет их с имеющимися образцами подписей;\n3) подготавливает сумму наличных денег, подлежащую выдаче;\n4) пересчитывает подготовленные к выдаче наличные деньги в присутствии клиента, выдает клиенту наличные деньги;\n5) подписывает все экземпляры расходного кассового документа и проставляет штамп кассового работника банка на всех экземплярах расходного кассового документа;\n6) выдает клиенту документ, подтверждающий проведение кассовой операции по выдаче наличных денег.\nСноска. Пункт 31 - в редакции постановления Правления Национального Банка РК от 28.02.2022\n№ 19\n(вводится в действие по истечении девяноста календарных дней после дня первого официального опубликования настоящего постановления); с изменением, внесенным постановлением Правления Национального Банка РК от 10.11.2025\n№ 71\n(вводится в действие по истечении десяти календарных дней после дня его первого официального опубликования).\n",
+        "32": "32. Кассовый работник выдает клиенту банкноты полными, неполными пачками и (или) отдельными корешками банкнот по обозначенным на упаковке суммам без полистного пересчета при условии сохранения неповрежденной упаковки. Банкноты из неполных, а также поврежденных корешков выдаются кассовым работником полистным пересчетом.\nМонеты, упакованные в мешки, выдаются по надписям на ярлыках, прикрепленных к мешкам, а упакованные в пакеты (тюбики, коробки) – по надписям на них. Монеты из неполных мешков выдаются кассовым работником с пересчетом по кружкам.\n"
+      }
+    },
+    {
+      "proposal_id": "P42_SINGLE_PERSON_INTERNAL_CASH_PROCEDURE",
+      "event_type_id_proposed": "INTERNAL_CASH_PROCEDURE_WITHOUT_CONTROLLER",
+      "clauses": [
+        "42"
+      ],
+      "priority": 2,
+      "classification": "automatable_only_with_entire_room_and_affirmative_noncustomer_procedure",
+      "implementation": "Split existing broad disabled controller gap: physically alone is observable if entire room and operation are known; arbitrary second-person authorization remains unavailable.",
+      "positive_facts": [
+        "BANK_CASH_WORKSTATION",
+        "INTERNAL_BANK_CASH_RECOUNT_SORT_OR_PACK",
+        "PROCEDURE_EXCLUDES_CUSTOMER_RECEIPT_OR_ISSUE",
+        "ENTIRE_RELEVANT_ROOM_CONTINUOUSLY_VISIBLE",
+        "EXACTLY_ONE_PERSON_IN_ENTIRE_ROOM",
+        "PROCEDURE_CONTEXT_COMPLETE"
+      ],
+      "absent_facts": [
+        "SECOND_PERSON_PHYSICALLY_PRESENT"
+      ],
+      "must_exclude": [
+        "Customer receipt/issue exception in paragraph42",
+        "Counting prepared for a pending customer issue",
+        "Camera only covers desk rather than whole room",
+        "Controller behind partition or outside crop"
+      ],
+      "evidence_context": "Full relevant room continuously visible over identified independent internal operation; if any other person is present, their authority/role cannot be classified from appearance.",
+      "new_nonvisual_context_needed": false,
+      "latency_class": "full_room_context_heavy",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "42": "42. Кассовые операции по пересчету, сортировке и упаковке наличных денег осуществляются кассовым работником в присутствии контролирующего работника, за исключением случаев совершения кассовых операций по приему и выдаче наличных денег клиенту.\n"
+      }
+    },
+    {
+      "proposal_id": "P77_VAULT_STORAGE_OUTSIDE_FIXTURES",
+      "event_type_id_proposed": "VAULT_CASH_STORED_OUTSIDE_PERMITTED_FIXTURES",
+      "clauses": [
+        "77"
+      ],
+      "priority": 3,
+      "classification": "conditional_requires_verified_vault_scope",
+      "implementation": "Split storage hardware from accounting gap. Do not enable for ordinary cash-counter footage.",
+      "positive_facts": [
+        "TRUSTED_VAULT_OR_SAFE_ROOM_CONTEXT",
+        "CASH_STORAGE_SESSION_COMPLETED",
+        "CASH_REMAINS_DIRECTLY_ON_FLOOR_OR_NONSTORAGE_LOCATION",
+        "FULL_RELEVANT_ROOM_VISIBLE"
+      ],
+      "absent_facts": [],
+      "must_exclude": [
+        "Temporary placement during movement/counting",
+        "Cash on a listed shelf/trolley/cabinet/safe",
+        "Unverified room type",
+        "Inference of system accounting under paragraph74"
+      ],
+      "evidence_context": "Requires verified room classification and completed storage rather than transient handling. Existing organizer brief confirms one cash counter, not a vault.",
+      "new_nonvisual_context_needed": true,
+      "latency_class": "full_room_context_heavy",
+      "runtime_enabled": false,
+      "coordination_required": [
+        "A20 integration owner",
+        "A11 temporal rule consumer",
+        "A03 taxonomy owner",
+        "A08 fact/prompt owner"
+      ],
+      "source_id": "NBK_231_2019_CURRENT",
+      "source_excerpts": {
+        "77": "77. Наличные деньги в кладовой и (или) сейфовой комнате хранятся раздельно по виду валюты, по номиналам банкнот и монет в металлических шкафах, стеллажах, сейфах, тележках.\n"
+      }
+    }
+  ],
+  "blocked_or_partial_gaps": [
+    {
+      "gap_id": "WORKSPACE_ACCESS_AUTHORITY",
+      "status": "unavailable_authority_context",
+      "sources": [
+        "No231 paragraph75",
+        "No14 paragraph8",
+        "No14 paragraph21"
+      ],
+      "automatable_observation": "Physical crossing of an actual visible boundary; entering alone or with another person.",
+      "not_supported": "Calling a person unauthorized from appearance, missing uniform, or unseen permission paper.",
+      "needed_context": "Actual vault/safe-room status; responsible-person designation; management authorization and required accompaniment. No14 service entrance is closable by design, not a rule to keep every door shut at all times."
+    },
+    {
+      "gap_id": "IDENTIFICATION_OMITTED",
+      "status": "unavailable_digital_or_system_context",
+      "sources": [
+        "No231 paragraphs19(1),31(1),7,10-1"
+      ],
+      "automatable_observation": "Visible presentation/handling of a physical or digital document; no face identity.",
+      "not_supported": "No paper passport in frame therefore no identification.",
+      "needed_context": "Whether digital identity service was used and available verification record. Organizer prohibits face identification; action checking must not become facial identity matching."
+    },
+    {
+      "gap_id": "PHONE_CLOTHING_GESTURE",
+      "status": "no_applicable_general_prohibition_verified",
+      "sources": [
+        "No231",
+        "No14"
+      ],
+      "automatable_observation": "Phone handling or clothing can be generic visual facts but not legal violations.",
+      "not_supported": "Any phone use, casual dress, another person or gesture automatically violates bank cash rules.",
+      "needed_context": "An applicable supplied public policy. No internal ForteBank rulebook was supplied; FAQ32 says hidden expected events do not rely on internal-only rules. Collector PPE in No231 paragraphs103/109-6 concerns equipment availability/departure, not a blanket office dress rule."
+    },
+    {
+      "gap_id": "CONTROLLER_GENERAL_ROLE",
+      "status": "partly_observable_narrow_singleton_case_only",
+      "sources": [
+        "No231 paragraph42"
+      ],
+      "automatable_observation": "Entire-room single-person internal noncustomer procedure can be evaluated automatically with full context.",
+      "not_supported": "A second person is not the controller because of clothing, position, facial identity or gesture.",
+      "needed_context": "Roles only if another person exists; narrow P42 singleton proposal avoids that role inference."
+    },
+    {
+      "gap_id": "VAULT_ACCOUNTING_KEYS",
+      "status": "split_visual_storage_vs_unavailable_system_policy",
+      "sources": [
+        "No231 paragraphs74,75,76,77,78,79,80"
+      ],
+      "automatable_observation": "Storage fixture and room contents where fully visible and verified as vault; see P77 conditional proposal.",
+      "not_supported": "Correctness of accounting, unauthorized key access, improper safe-code sharing, or inventory shortage from gesture or object handover.",
+      "needed_context": "Accounting entries; responsible-person designations; internal key/stamp/code procedures paragraph80; verified room classification."
+    },
+    {
+      "gap_id": "BAG_INSPECTION_OMISSION",
+      "status": "not_inferable_from_absent_gesture",
+      "sources": [
+        "No231 paragraphs24(3)(4),25,107(1)(2),112"
+      ],
+      "automatable_observation": "Visible tear/seal damage, opening, recounting and transfer can be detected.",
+      "not_supported": "No touching/turning bag means no integrity/seal check. Eye/attention/knowledge is not established; discovery condition and electronic/alternative seals also matter.",
+      "needed_context": "Explicit observable impossibility plus full procedure, or trusted statement of inspection/discovery; current gesture-only detection cannot ground omission."
+    },
+    {
+      "gap_id": "NO_CONFIRMATION_DOCUMENT",
+      "status": "unavailable_nonvisible_delivery_channel",
+      "sources": [
+        "No231 paragraphs19(6),31(6),6,10-1"
+      ],
+      "automatable_observation": "Visible paper handed over or printed.",
+      "not_supported": "No paper receipt seen proves no confirmation document was issued.",
+      "needed_context": "Permitted document/delivery channel and any electronic confirmation; cannot use bank-system absence unavailable in brief."
+    },
+    {
+      "gap_id": "COLLECTOR_CREW_OR_PPE",
+      "status": "requires_whole_crew_and_equipment_context",
+      "sources": [
+        "No231 paragraphs98,99,103,109-6"
+      ],
+      "automatable_observation": "People and clearly visible protective equipment in full transport scene.",
+      "not_supported": "Only one collector entering a cash counter proves undersized crew, or no visible helmet/body armour means unavailable equipment. Driver/other crew may remain outside and paragraph99 permits two-person crews in specified cases.",
+      "needed_context": "Whole crew scope, route/departure phase, exceptions (online vehicle camera/dye container), actual PPE availability. One-cash-counter organizer view does not supply these."
+    }
+  ],
+  "implementation_notes": [
+    "Run local automated facts/candidates over all eligible footage; no manual annotation dependency before first pass.",
+    "Keep source review/versioning separate from per-video annotation. Public possible-sign wording remains required even with automatic decisions.",
+    "Bank cash deployment scope can derive from supplied brief sections1-3/FAQ3, avoiding manual per-clip labels; still require visible workstation and procedure applicability. Do not automatically infer vault/collector/authorization context.",
+    "Never turn missing sparse observations into absent action. Omission routes need complete context, which may not meet an unmeasured sub10s target on every video.",
+    "No model, GPU, private media, labels or predictions were used in this reassessment.",
+    "A20/A11 coordination must approve schema/event/fact additions before active catalog changes."
+  ]
+}

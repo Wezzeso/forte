@@ -1,0 +1,15 @@
+{
+  "schema_version": "forte.annotation-readiness.v1",
+  "recorded_on_local_date": "2026-10-17",
+  "unique_clips": 40,
+  "source_recordings": 42,
+  "review_states": {"pending": 40, "in_progress": 0, "reviewed": 0, "needs_adjudication": 0},
+  "export_ready_with_locked_split": 0,
+  "taxonomy_generic_fact_count": 21,
+  "taxonomy_generic_event_type_count": 4,
+  "private_media_was_reviewed_by_cloud": false,
+  "human_review_complete": false,
+  "model_accuracy_measured": false,
+  "blocked_on": ["local_human_review_of_all_unique_clips", "reviewed_scenario_grouping_and_explicit_split_lock"],
+  "notes": "Aggregate readiness snapshot only. Source weak labels and ambiguity tasks are preserved privately; none were promoted to reviewed annotations. Run python -m annotations.cli status for live aggregate state."
+}

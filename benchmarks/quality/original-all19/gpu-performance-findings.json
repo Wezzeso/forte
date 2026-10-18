@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "scope": "actual first proposed-train baseline plus five distinct upload attempts; selected by technical metadata only",
+  "hardware_evidence": "benchmarks/performance/gpu-hardware-observed.json",
+  "runtime_during_run": {
+    "source": "A17 final deployment release and A15 serving verification; same vLLM process observed across both quiet windows",
+    "api_worker_image": "sha256:97fd2dd3a5dafd63309fab12868925a8c6c39b363703ae0a5809ad6ff28afdd9",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "gpu_memory_mib": 81920,
+    "driver": "565.57.01",
+    "vllm": "0.31.0-cu129",
+    "torch": "2.13.0+cu129",
+    "model_and_processor_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "model_dtype": "bfloat16",
+    "tensor_parallel": 1,
+    "model_max_sequences": 2,
+    "per_job_inflight": 2,
+    "declared_max_concurrent_clips": 2,
+    "max_frames_per_request": 16,
+    "processor_pixel_ceiling": 1048576,
+    "model_context_tokens": 32768,
+    "max_generation_tokens": 4096,
+    "max_batched_prefill_tokens": 8192,
+    "compact_decision_schema": true,
+    "prefix_cache_enabled": false,
+    "multimodal_processor_cache_enabled": false,
+    "warmth": "prewarmed by generated media; six benchmark contents unused before their respective first attempts"
+  },
+  "results": {
+    "attempted_uploads": 6,
+    "durably_accepted_jobs": 5,
+    "validated_completions": 1,
+    "terminal_failed_jobs": 4,
+    "transport_failures_without_durable_job": 1,
+    "client_deadline_timeouts": 0,
+    "static_failed_job_codes": {
+      "insufficient_visible_evidence": 2,
+      "deadline_exceeded": 2
+    },
+    "completed_upload_to_full_json_ms": 240214.5087,
+    "completion_latency_p95": "unmeasured; only one completion",
+    "five_upload_success_target": "missed",
+    "processing_240000ms_successes": 0,
+    "organizer_300000ms_successes": 1,
+    "failure_inclusive_denominator": 6
+  },
+  "after_deadline_model_drain": {
+    "runner_finished_observed_utc": "2026-10-17T10:58:39Z",
+    "running2_observed_after_runner": true,
+    "running1_observed_utc": "2026-10-17T10:59:49Z",
+    "first_observed_running0_waiting0_utc": "2026-10-17T11:00:29Z",
+    "interpretation": "residual generation remained at least about70s after client runner completion; first observed drain about110s after; exact cancellation duration and abort acknowledgement unmeasured",
+    "included_in_burst_final_model_delta": true
+  },
+  "limits": [
+    "No reviewed event ground truth or held-out accuracy was measured.",
+    "Single warm model process and six novel contents do not establish population p95, cold startup latency, or successful five-video capacity.",
+    "Repeated lookup/transfer percentiles describe repeated HTTP reads, including21 reads of one completed result.",
+    "vLLM request sums overlap and include work continuing after durable jobs failed; GPU-profiler compute is unmeasured.",
+    "The fifth upload returned ReadError without a received acknowledgement; exact input-hash reconciliation found no durable matching job, without exporting hashes.",
+    "Missing pipeline durations on incomplete/cancelled work remain unmeasured rather than zero."
+  ],
+  "aggregate_artifact": "benchmarks/performance/gpu-observed-summary.json",
+  "privacy": "Only fixed technical codes, numeric measurements, and opaque sample identifiers exported; no media, labels, captions, predictions, evidence or content hashes."
+}

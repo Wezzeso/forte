@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-10-17T23:50:04.411268+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "status": "deployed_and_verified",
+  "scope": "Zimran-style hero copy and supplied team portraits as transparent white-stencil cutouts; frontend-only API child image",
+  "image": "sha256:088c4875437b7634205122ae4d4baccd17d3c06b267162fe031318c233398ee5",
+  "base_image": "sha256:e59b0c719ae278b2265e0a6eb8a0749b3a4d19283deccc2ac6de16199b087c7d",
+  "frontend_archive_sha256": "2cb559a02155af605a1593b24a7d7098eb992487fcb2b69e816040aec626a0b4",
+  "ready": true,
+  "api_configuration_unchanged": true,
+  "profile_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/hero-20261018-2cb559a0/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/hero-20261018-2cb559a0/rollback.sh",
+  "rollback_command": "/home/ubuntu/forte/deploy/releases/hero-20261018-2cb559a0/rollback.sh",
+  "public_files_verified": 26,
+  "public_runtime_assets_exact_match": true,
+  "runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "browser_validation": {
+    "hero_heading": "Видим суть. Решаете вы.",
+    "portraits_loaded": 2,
+    "service_status": "Сервис готов",
+    "console_errors_or_warnings": 0,
+    "overflow": false,
+    "desktop_mobile_verified": true
+  },
+  "build": "passed",
+  "ui_validation": "24/24 suite passed, final targeted upload/result and 360px cases passed 2/2",
+  "proof_screenshots": [
+    "dist/hero-release-20261018/production-hero.png",
+    "dist/hero-release-20261018/production-hero-mobile.png"
+  ],
+  "public_verification_report": "dist/hero-release-20261018/public-verification.json",
+  "portrait_edit_prompts_and_sources": "assets/team/SOURCES.md"
+}

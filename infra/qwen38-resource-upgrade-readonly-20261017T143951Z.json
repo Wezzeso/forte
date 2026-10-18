@@ -1,0 +1,104 @@
+{
+  "schema_version": "forte.resource-upgrade-readonly.v1",
+  "captured_at_utc": "2026-10-17T14:39:44.862573+00:00",
+  "cpu_logical": 12,
+  "load_average": [
+    0.47265625,
+    0.31298828125,
+    0.30859375
+  ],
+  "cpu_sample_seconds": 1,
+  "cpu_busy_percent": 1.6680567139282787,
+  "cpu_iowait_percent": 0.0,
+  "memory": {
+    "MemTotal_bytes": 126608674816,
+    "MemFree_bytes": 1770692608,
+    "MemAvailable_bytes": 119121498112,
+    "Cached_bytes": 114567020544,
+    "SwapTotal_bytes": 0,
+    "SwapFree_bytes": 0,
+    "Dirty_bytes": 335872,
+    "Writeback_bytes": 0
+  },
+  "gpu_csv": "NVIDIA A100 80GB PCIe, 565.57.01, 81920, 70827, 10329, 100, 86, 300.65, 66\n",
+  "gpu_processes_csv": "340517, VLLM::EngineCore, 70818\n",
+  "python_process_memory": [
+    {
+      "pid": 339541,
+      "name": "python3",
+      "VmSize_bytes": 234426368,
+      "VmHWM_bytes": 78397440,
+      "VmRSS_bytes": 78393344
+    },
+    {
+      "pid": 340025,
+      "name": "vllm",
+      "VmSize_bytes": 10533789696,
+      "VmHWM_bytes": 3212156928,
+      "VmRSS_bytes": 2419044352
+    },
+    {
+      "pid": 340516,
+      "name": "python3",
+      "VmSize_bytes": 17494016,
+      "VmHWM_bytes": 12992512,
+      "VmRSS_bytes": 12992512
+    },
+    {
+      "pid": 371112,
+      "name": "python3",
+      "VmSize_bytes": 25362432,
+      "VmHWM_bytes": 15577088,
+      "VmRSS_bytes": 15577088
+    },
+    {
+      "pid": 371203,
+      "name": "python",
+      "VmSize_bytes": 156332032,
+      "VmHWM_bytes": 73216000,
+      "VmRSS_bytes": 73211904
+    },
+    {
+      "pid": 371311,
+      "name": "python",
+      "VmSize_bytes": 20590592,
+      "VmHWM_bytes": 17539072,
+      "VmRSS_bytes": 17539072
+    },
+    {
+      "pid": 375686,
+      "name": "python3",
+      "VmSize_bytes": 20295680,
+      "VmHWM_bytes": 11538432,
+      "VmRSS_bytes": 11538432
+    }
+  ],
+  "disks": {
+    "/": {
+      "total_bytes": 133003395072,
+      "used_bytes": 100772974592,
+      "free_bytes": 32213643264
+    },
+    "/data": {
+      "total_bytes": 269427478528,
+      "used_bytes": 59436580864,
+      "free_bytes": 196230225920
+    }
+  },
+  "cgroup_memory_events": null,
+  "docker_aggregate_stats": "{\"BlockIO\":\"0B / 16.5MB\",\"CPUPerc\":\"0.30%\",\"Container\":\"5725fd6637fd\",\"ID\":\"5725fd6637fd\",\"MemPerc\":\"0.94%\",\"MemUsage\":\"76.65MiB / 8GiB\",\"Name\":\"forte-qwen38-teacher34-root-v3\",\"NetIO\":\"74.8kB / 16.5MB\",\"PIDs\":\"3\"}\n{\"BlockIO\":\"623kB / 0B\",\"CPUPerc\":\"0.07%\",\"Container\":\"32e4d8c62409\",\"ID\":\"32e4d8c62409\",\"MemPerc\":\"0.05%\",\"MemUsage\":\"59.8MiB / 117.9GiB\",\"Name\":\"forte-api-1\",\"NetIO\":\"260kB / 6.88MB\",\"PIDs\":\"3\"}\n{\"BlockIO\":\"1.86GB / 65.5kB\",\"CPUPerc\":\"19.57%\",\"Container\":\"a99a809dc2d5\",\"ID\":\"a99a809dc2d5\",\"MemPerc\":\"4.97%\",\"MemUsage\":\"5.863GiB / 117.9GiB\",\"Name\":\"forte-model-1\",\"NetIO\":\"16.5MB / 74kB\",\"PIDs\":\"91\"}\n{\"BlockIO\":\"0B / 4.1kB\",\"CPUPerc\":\"0.01%\",\"Container\":\"02bbcd169d45\",\"ID\":\"02bbcd169d45\",\"MemPerc\":\"0.01%\",\"MemUsage\":\"12.83MiB / 117.9GiB\",\"Name\":\"forte-ingress-1\",\"NetIO\":\"225MB / 222MB\",\"PIDs\":\"17\"}\n{\"BlockIO\":\"1.44MB / 79.1MB\",\"CPUPerc\":\"0.00%\",\"Container\":\"d89d47017db9\",\"ID\":\"d89d47017db9\",\"MemPerc\":\"0.04%\",\"MemUsage\":\"46.11MiB / 117.9GiB\",\"Name\":\"forte-db-1\",\"NetIO\":\"18.6MB / 34.5MB\",\"PIDs\":\"10\"}\n",
+  "capture_scope": "Read-only numeric OS/GPU/process resource telemetry. No command lines, private media, observations, environment or secrets. No model calls or service changes.",
+  "scheduler": {
+    "CapturedUtc": "2026-10-17T14:39:51.2490819Z",
+    "State": "Ready",
+    "NextRunUtc": "2026-10-18T06:01:25.0000000Z"
+  },
+  "budget": {
+    "current_account_cap_usd": 50,
+    "existing_full20h_running_estimate_usd": 40.6,
+    "remaining_seconds": 55293.0,
+    "estimated_incremental_room_if_existing_runs_full20h_usd": 9.4,
+    "estimate_is_not_observed_bill": true,
+    "estimated_accrued_running_usd": 9.42
+  }
+}

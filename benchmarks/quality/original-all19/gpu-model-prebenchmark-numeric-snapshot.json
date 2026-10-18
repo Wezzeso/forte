@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "error_type": "ConnectError",
+  "metric_names": [],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T10:35:08.827030+00:00",
+  "source": "actual private model:8000/metrics from team worker container",
+  "labels_exported": false,
+  "numeric_aggregates_exported": true,
+  "model_readiness_inferred": false,
+  "inference_latency_measured": false
+}

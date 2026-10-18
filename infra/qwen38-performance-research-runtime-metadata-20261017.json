@@ -1,0 +1,28 @@
+{
+  "captured_at_utc": "2026-10-17T16:39:45.075792+00:00",
+  "gpu_exposed": false,
+  "image_id": "sha256:baaaafe69f963b32f2fa698166fe9abaf85afb68b91974f59527c6bfd7c95f02",
+  "image_mutated": false,
+  "model_calls": 0,
+  "network": "none",
+  "package_versions": {
+    "bitsandbytes": "0.50.2",
+    "causal-conv1d": null,
+    "fla-core": "0.5.2",
+    "flash-attn": null,
+    "flash-linear-attention": "0.5.2",
+    "flashinfer-python": "0.7.0.post1",
+    "kernels": null,
+    "peft": "0.21.2",
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "triton": "3.7.1",
+    "vllm": "0.31.0+cu129",
+    "vllm-bnb-plugin": null,
+    "vllm-flash-attn": null
+  },
+  "read_only": true,
+  "runtime": "runc",
+  "schema_version": "forte.qwen38.performance-research-runtime-metadata.v1",
+  "torch_imported": false
+}

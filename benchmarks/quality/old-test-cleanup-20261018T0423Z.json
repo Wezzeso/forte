@@ -1,0 +1,20 @@
+{
+  "schema": "forte.test-host-cleanup.v1",
+  "generated_at_utc": "2026-10-18T04:22:47.071738+00:00",
+  "deleted_host": {
+    "name": "forte-h100-q32",
+    "id": "rrbfqp3zd"
+  },
+  "deletion_verified": true,
+  "test_status": "ABSENT",
+  "production": [
+    {
+      "id": "wd88a7vvt",
+      "name": "forte-a100-smoke-20261017",
+      "status": "RUNNING"
+    }
+  ],
+  "structured_benchmark": "benchmarks/quality/qwen-models-20261018T0422Z.json",
+  "private_raw_reports_deleted_with_host": true,
+  "production_changes": "none"
+}

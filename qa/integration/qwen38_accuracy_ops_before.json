@@ -1,0 +1,17 @@
+{
+  "captured_at_utc": "2026-10-17T16:55:06.382862+00:00",
+  "sources": {
+    "benchmarks/performance/qwen38_accuracy_diagnostic.py": "88c22f87a2e06bc292ed03b707fe97fe549faff35d964d65a0dd6150f18de808",
+    "evaluation/private/accuracy_diagnostic_runner.py": "d6b07ef3eaf2e97886b7f569ac17ecb55965ff1ccf89f9da4f4c5baa437319ab",
+    "evaluation/private/accuracy_diagnostic_controller.py": "84aa0ea5bbba2ecf3d9f78e46f94d2e021ccdcfaa4bf0858046064e3ffc3e1c3",
+    "evaluation/private/quality_arm_controller.py": "80fbdc6de24bda4470b9623771ec82462291f4777c1ad26d24815f9a866ed508",
+    "qa/integration/qwen38_accuracy_boundary_test.py": "90d5844729b3403e62a9e4f7e261704f8202c3a3e9343c71cb80b0686da92803",
+    "qa/system/test_qwen38_accuracy_diagnostic.py": "df25cddc9bbbdca1b3cb2bafe32a17fa4574e88ee5cc4fcceeab496c7c311cb8",
+    "evaluation/private/test_accuracy_diagnostic_runner.py": "08fbcfa4a7d474a8a4091a6750a561f4f785d59aae4224f21b1d034b42edbd65"
+  },
+  "tests": [
+    "qa/integration/qwen38_accuracy_boundary_test.py",
+    "qa/system/test_qwen38_accuracy_diagnostic.py",
+    "evaluation/private/test_accuracy_diagnostic_runner.py"
+  ]
+}

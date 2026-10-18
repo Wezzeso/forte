@@ -1,0 +1,78 @@
+{
+  "claim_scope": "exploratory_proposed_train_against_organizer_provided_binary_labels_only",
+  "completion": {
+    "completed": 1,
+    "deadline_completion_rate": 0.16666666666666666,
+    "deadline_sec": 300,
+    "failed_or_unprocessed": 5,
+    "failure_counts": {
+      "failed": 5
+    },
+    "late_completed": 0,
+    "missing_terminal": 0,
+    "on_time_completed": 1,
+    "rate": 0.16666666666666666,
+    "required": 6,
+    "timing_unknown": 0
+  },
+  "event_timestamps": "UNREVIEWED_NOT_EVALUATED",
+  "evidence_support": "UNREVIEWED_NOT_EVALUATED",
+  "heldout_accuracy_claim": false,
+  "human_reviewed_ground_truth": false,
+  "labels": {
+    "conflicting_contents": 0,
+    "missing_or_conflicting": 0,
+    "negative": 3,
+    "positive": 3,
+    "private_visual_annotations_used": false,
+    "provenance": "organizer_workbook_via_A02_local_workbook_rows",
+    "provided_binary_labeled_contents": 6,
+    "timestamp_labels_used": false
+  },
+  "legal_grounding": "UNREVIEWED_NOT_EVALUATED",
+  "limitations": [
+    "Six duration-selected proposed-train contents are exploratory development diagnostics, not heldout or final-check accuracy.",
+    "Organizer-provided binary labels have not been independently reviewed here; no private action descriptions or event timestamps are evaluated.",
+    "Terminal public-contract validation establishes payload shape, not event truth or evidence support.",
+    "Failures remain separate from clean negatives; cutoff counts also exclude late and unknown-timing results.",
+    "This offline aggregation makes no model call, split-lock claim, training authorization or adapter-selection decision."
+  ],
+  "original_profile_proof": "benchmarks/quality/original-all19/gpu-original-profile-proof.json",
+  "schema_version": "forte.provided_label_exploration.v1",
+  "selection_input_sha256": "f84dae29acf1ab535f1eb82a7cec0ef7841f747b75c2dad28619ca3ee89c8ca6",
+  "selection_scope": {
+    "baseline_single_count": 1,
+    "burst_count": 5,
+    "distinct_contents": 6,
+    "final_check_evaluated": false,
+    "final_check_media_or_predictions_accessed": false,
+    "proposed_split": "train",
+    "split_lock_claimed": false,
+    "training_authorized_by_this_report": false
+  },
+  "snapshot_manifest": "benchmarks/quality/original-all19/snapshot-manifest.json",
+  "whole_video_against_provided_labels": {
+    "all_provided_label_denominator": 6,
+    "completed_labeled_denominator": 1,
+    "effective_correct_rate_including_failures": 0.0,
+    "effective_positive_recall_including_failures": 0.0,
+    "fn": 1,
+    "fp": 0,
+    "tn": 0,
+    "tp": 0,
+    "unprocessed_negative": 3,
+    "unprocessed_positive": 2
+  },
+  "whole_video_within_deadline_against_provided_labels": {
+    "all_provided_label_denominator": 6,
+    "completed_labeled_denominator": 1,
+    "effective_correct_rate_including_failures": 0.0,
+    "effective_positive_recall_including_failures": 0.0,
+    "fn": 1,
+    "fp": 0,
+    "tn": 0,
+    "tp": 0,
+    "unprocessed_negative": 3,
+    "unprocessed_positive": 2
+  }
+}

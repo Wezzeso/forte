@@ -1,0 +1,341 @@
+{
+  "$defs": {
+    "FactDefinition": {
+      "additionalProperties": false,
+      "properties": {
+        "fact_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "required": {
+          "default": true,
+          "title": "Required",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "fact_id",
+        "description"
+      ],
+      "title": "FactDefinition",
+      "type": "object"
+    },
+    "FrameRef": {
+      "additionalProperties": false,
+      "properties": {
+        "frame_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Frame Id",
+          "type": "string"
+        },
+        "pts_sec": {
+          "minimum": 0,
+          "title": "Pts Sec",
+          "type": "number"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "width": {
+          "exclusiveMinimum": 0,
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "exclusiveMinimum": 0,
+          "title": "Height",
+          "type": "integer"
+        },
+        "job_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Job Id"
+        },
+        "rotation_deg": {
+          "default": 0,
+          "enum": [
+            0,
+            90,
+            180,
+            270
+          ],
+          "title": "Rotation Deg",
+          "type": "integer"
+        },
+        "source_pts": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Pts"
+        },
+        "jpeg_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Jpeg Sha256"
+        }
+      },
+      "required": [
+        "frame_id",
+        "pts_sec",
+        "path",
+        "width",
+        "height"
+      ],
+      "title": "FrameRef",
+      "type": "object"
+    },
+    "RuleRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "rule_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "clause": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clause"
+        },
+        "source_url": {
+          "minLength": 1,
+          "title": "Source Url",
+          "type": "string"
+        },
+        "source_publisher": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Publisher"
+        },
+        "accessed_at": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accessed At"
+        },
+        "source_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Sha256"
+        },
+        "jurisdiction": {
+          "default": "KZ",
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "applicability": {
+          "minLength": 1,
+          "title": "Applicability",
+          "type": "string"
+        },
+        "required_facts": {
+          "items": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Required Facts",
+          "type": "array"
+        },
+        "temporal_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Temporal Conditions",
+          "type": "array"
+        },
+        "exceptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Exceptions",
+          "type": "array"
+        },
+        "verification_state": {
+          "default": "unverified",
+          "enum": [
+            "unverified",
+            "source_verified",
+            "verified",
+            "rejected"
+          ],
+          "title": "Verification State",
+          "type": "string"
+        },
+        "applicability_verified": {
+          "default": false,
+          "title": "Applicability Verified",
+          "type": "boolean"
+        },
+        "enabled": {
+          "default": false,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "source_url",
+        "applicability",
+        "required_facts"
+      ],
+      "title": "RuleRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "job_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Job Id",
+      "type": "string"
+    },
+    "clip_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Clip Id",
+      "type": "string"
+    },
+    "frame_refs": {
+      "items": {
+        "$ref": "#/$defs/FrameRef"
+      },
+      "minItems": 1,
+      "title": "Frame Refs",
+      "type": "array"
+    },
+    "fact_definitions": {
+      "items": {
+        "$ref": "#/$defs/FactDefinition"
+      },
+      "title": "Fact Definitions",
+      "type": "array"
+    },
+    "rule_definitions": {
+      "items": {
+        "$ref": "#/$defs/RuleRecord"
+      },
+      "title": "Rule Definitions",
+      "type": "array"
+    },
+    "analysis_version": {
+      "default": "1.1.0",
+      "title": "Analysis Version",
+      "type": "string"
+    },
+    "start_sec": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Sec"
+    },
+    "end_sec": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Sec"
+    }
+  },
+  "required": [
+    "job_id",
+    "clip_id",
+    "frame_refs"
+  ],
+  "title": "ClipRequest",
+  "type": "object"
+}

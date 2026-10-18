@@ -1,0 +1,28 @@
+{
+  "scope": "actual_cuda_bf16_matrix_operation_only",
+  "checked_at": "2026-10-17T10:19:28.949127+00:00",
+  "provider_instance_id": "wd88a7vvt",
+  "image": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "cuda_verified": true,
+  "vllm_version": "0.31.0",
+  "torch_version": "2.13.0+cu129",
+  "torch_cuda_version": "12.9",
+  "cuda_available": true,
+  "device_count": 1,
+  "host_driver_version": "565.57.01",
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 85097971712,
+      "compute_capability": [8, 0],
+      "bf16_available": true,
+      "matrix_operation_verified": true
+    }
+  ],
+  "network_during_check": "none",
+  "model_weights_opened": false,
+  "private_media_opened": false,
+  "model_inference_verified_by_this_check": false,
+  "command": "docker run --rm --gpus device=0 --network none --entrypoint python3 --mount type=bind,src=/home/ubuntu/forte/serving,dst=/app/serving,readonly --workdir /app vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb -m serving.gpu_check"
+}

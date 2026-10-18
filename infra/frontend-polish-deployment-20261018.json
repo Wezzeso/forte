@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-17T23:20:19.891739+00:00",
+  "public_url": "https://hackathon.wezeso.me/",
+  "status": "deployed_and_verified",
+  "scope": "favicon/title/usability polish and WEZESO footer; frontend-only API child image",
+  "image": "sha256:55dbcf8fbffa6f7d9caaec7907f95cb474c7075f49a1db019b02bb5751c901d7",
+  "base_image": "sha256:5400c6c3d4894032ac1a28f5c3ee45bd57597ea75fad25dcffa46391d7c561c0",
+  "frontend_archive_sha256": "c31dd1cf43a21bb0add2533cf2efe52d90d2603365d65f2af47423c042c7312c",
+  "ready": true,
+  "api_configuration_unchanged": true,
+  "profile_sha256": "993d2f22867576be053d7a05663043077937d5cd749d67709dcab0d52016789c",
+  "unchanged_services": [
+    "forte-worker-1",
+    "forte-db-1",
+    "forte-ingress-1",
+    "vlm30"
+  ],
+  "active_wrapper": "/home/ubuntu/forte/deploy/releases/footer-20261018-c31dd1cf/compose-active.sh",
+  "canonical_wrapper": "/home/ubuntu/forte/deploy/compose-active.sh",
+  "rollback_wrapper": "/home/ubuntu/forte/deploy/releases/footer-20261018-c31dd1cf/rollback.sh",
+  "rollback_command": "/home/ubuntu/forte/deploy/releases/footer-20261018-c31dd1cf/rollback.sh",
+  "public_files_verified": 24,
+  "public_runtime_assets_exact_match": true,
+  "edge_html_transform": "Existing Cloudflare JavaScript detection injection preserved; verified exact application HTML after separating known injection",
+  "runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "browser_validation": {
+    "title": "FORTE Panopticon — Видеоаналитика",
+    "service_status": "Сервис готов",
+    "console_errors_or_warnings": 0,
+    "footer_visible": true
+  },
+  "build": "passed",
+  "ui_regression": "24/24 passed before presentation-only footer addition; desktop/mobile footer visually verified",
+  "proof_screenshot": "dist/footer-release-20261018/production-footer.png",
+  "public_verification_report": "dist/footer-release-20261018/public-verification.json"
+}

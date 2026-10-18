@@ -1,0 +1,53 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "status": "failed",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 751.2950000000001,
+      "recovery_queue_note": null
+    },
+    {
+      "sample_id": "s002",
+      "status": "done",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 768.582,
+      "recovery_queue_note": null
+    },
+    {
+      "sample_id": "s003",
+      "status": "done",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 705.533,
+      "recovery_queue_note": null
+    },
+    {
+      "sample_id": "s004",
+      "status": "done",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 446.688,
+      "recovery_queue_note": null
+    },
+    {
+      "sample_id": "s005",
+      "status": "done",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 392.677,
+      "recovery_queue_note": null
+    },
+    {
+      "sample_id": "s006",
+      "status": "done",
+      "attempt": 1,
+      "acceptance_to_first_claim_ms": 209.113,
+      "recovery_queue_note": null
+    }
+  ],
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:39:51.795722+00:00",
+  "clock_domain": "same team GPU host UTC for API and worker containers",
+  "clock_assumption": "containers share host kernel clock; no client/server clock subtraction",
+  "measurement": "durable accepted_at to recorded claimed UTC; dispatch after claim excluded",
+  "ntp_state": "not measured by this collector"
+}

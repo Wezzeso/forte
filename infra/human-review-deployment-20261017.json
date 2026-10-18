@@ -1,0 +1,18 @@
+{
+  "activated": true,
+  "active_review_mutations_performed": false,
+  "additive_review_table_exists": true,
+  "api_and_worker_same_image": true,
+  "budget_stop_unchanged": true,
+  "external_validation_receipt": "infra/human-review-external-validation-20261017.json",
+  "frontend_js_sha256": "125db992d7efacb7e27214f8a7e36574c8b4a7a86e1e7562f743b27d1c1bc2ea",
+  "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+  "in_progress_native_pipeline_excluded": true,
+  "jury_bytes_verified_unchanged_on_read_only_negative_probe": true,
+  "model_identity_and_start_time_unchanged": true,
+  "rollback_env_and_image_preserved": true,
+  "runtime_validation_receipt": "infra/human-review-runtime-validation-20261017.json",
+  "secrets_printed": false,
+  "source_archive_files": 145,
+  "source_archive_sha256": "189ae73d671043cd19f2f1195b3667054ca6ec04cdd8327e340a1c37dd6029cd"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "forte.fast-eval-summary.v1",
+  "date": "2026-10-18",
+  "model": "Qwen/Qwen3-VL-30B-A3B-Instruct (bf16, vLLM 0.31.0, 1x A100 80GB)",
+  "code": "src/forte/fast (deployed image forte-review:fast-v4)",
+  "dataset": "40 unique supplied development videos (21 violation, 19 no violation); labels used only for scoring",
+  "runs": {
+    "rv5": {"accuracy": 0.85, "tp": 15, "fn": 6, "fp": 0, "tn": 19, "timecode_err_median_s": 1.0, "timecode_within_2s": 12},
+    "rv6": {"accuracy": 0.85, "tp": 15, "fn": 6, "fp": 0, "tn": 19, "timecode_err_median_s": 1.0, "timecode_within_2s": 12}
+  },
+  "viewpoint_robustness": {"videos": 10, "transform": "hflip+zoom or 4deg rotation+crop", "correct": 10, "fp": 0},
+  "public_api_latency_s": {"typical": "10-30", "longest_143s_video_5_parallel": 58, "six_longest_parallel_max": 137},
+  "known_misses": ["no ID check (ID vs banknotes unresolvable at 464px)", "key left in safe lock", "no authenticity-detector check",
+                   "bundles stored without recount", "partial cash handover", "one unidentified case"]
+}

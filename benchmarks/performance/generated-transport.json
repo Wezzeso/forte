@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:10:07.646037+00:00",
+  "scope": "transport-only generated invalid MOV, normal and paced once per authenticated team origin",
+  "origins": {
+    "public": "https://hackathon.wezeso.me",
+    "brev": "https://forte-review-wd88a7vvt.gobrev.dev"
+  },
+  "route_checks": {
+    "public": {
+      "missing_key_http_status": 401,
+      "authenticated_http_status": 404,
+      "authenticated_routing_supported": true
+    },
+    "brev": {
+      "missing_key_http_status": 401,
+      "authenticated_http_status": 404,
+      "authenticated_routing_supported": true
+    }
+  },
+  "conditions": {
+    "request_phase_timeouts_sec": 60,
+    "post_absolute_deadline_sec": 180,
+    "paced_bytes_per_second": 524288,
+    "sequential_uploads": true,
+    "deployed_configuration_changed_by_experiment": false,
+    "private_media_used": false,
+    "model_inference_requested": false,
+    "novel_video_performance_claim": false
+  },
+  "measurement_note": "client monotonic iterator yields and response observations; yielded bytes do not prove socket delivery or server receipt; proxy T0 unmeasured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "origin": "public",
+      "mode": "normal",
+      "input_bytes": 28718927,
+      "fixture_locally_verified_invalid": true,
+      "outcome": "transport_failure",
+      "http_status": null,
+      "terminal_state": "unmeasured",
+      "terminal_failed_without_verdict": false,
+      "transport_diagnostic": {
+        "exception_chain": [
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "unrecognized_exception_type"
+          },
+          {
+            "type": "ConnectionResetError",
+            "errno": 22
+          },
+          {
+            "type": "OSError",
+            "errno": 22
+          }
+        ],
+        "messages_exported": false
+      },
+      "client_observed_total_ms": 32998.0305,
+      "upload_iterator": {
+        "multipart_bytes_yielded": 14418063,
+        "file_bytes_yielded": 14417920,
+        "expected_multipart_bytes": 28719116,
+        "first_multipart_chunk_ms": 1.7112,
+        "last_multipart_chunk_ms": 32991.4074,
+        "first_file_chunk_ms": 2.267,
+        "last_observed_file_chunk_ms": 32991.4074,
+        "final_multipart_chunk_ms": null,
+        "multipart_footer_yielded": false,
+        "pace_bytes_per_second": null,
+        "semantics": "iterator handed bytes to transport; not proof of socket write or server receipt"
+      },
+      "client_post_attempt_elapsed_ms": 32998.0305
+    },
+    {
+      "sample_id": "s002",
+      "origin": "public",
+      "mode": "paced",
+      "input_bytes": 28718927,
+      "fixture_locally_verified_invalid": true,
+      "outcome": "transport_failure",
+      "http_status": null,
+      "terminal_state": "unmeasured",
+      "terminal_failed_without_verdict": false,
+      "transport_diagnostic": {
+        "exception_chain": [
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "ReadError"
+          },
+          {
+            "type": "unrecognized_exception_type"
+          },
+          {
+            "type": "ConnectionResetError",
+            "errno": 22
+          },
+          {
+            "type": "OSError",
+            "errno": 22
+          }
+        ],
+        "messages_exported": false
+      },
+      "client_observed_total_ms": 33151.6834,
+      "upload_iterator": {
+        "multipart_bytes_yielded": 16253071,
+        "file_bytes_yielded": 16252928,
+        "expected_multipart_bytes": 28719116,
+        "first_multipart_chunk_ms": 175.8247,
+        "last_multipart_chunk_ms": 33150.2181,
+        "first_file_chunk_ms": 685.4173,
+        "last_observed_file_chunk_ms": 33150.2181,
+        "final_multipart_chunk_ms": null,
+        "multipart_footer_yielded": false,
+        "pace_bytes_per_second": 524288,
+        "semantics": "iterator handed bytes to transport; not proof of socket write or server receipt"
+      },
+      "client_post_attempt_elapsed_ms": 33151.6834
+    },
+    {
+      "sample_id": "s003",
+      "origin": "brev",
+      "mode": "normal",
+      "input_bytes": 28718927,
+      "fixture_locally_verified_invalid": true,
+      "outcome": "durably_accepted",
+      "http_status": 202,
+      "terminal_state": "failed",
+      "terminal_failed_without_verdict": true,
+      "post": {
+        "response_headers_ms": 2867.1819,
+        "first_body_byte_ms": 2867.2333,
+        "full_response_ms": 2868.2955,
+        "response_bytes": 45
+      },
+      "client_post_total_ms": 2868.3563,
+      "asgi_after_body_acceptance_ms": 84.989,
+      "client_observed_total_ms": 4004.2408,
+      "upload_iterator": {
+        "multipart_bytes_yielded": 28719116,
+        "file_bytes_yielded": 28718927,
+        "expected_multipart_bytes": 28719116,
+        "first_multipart_chunk_ms": 1.5018,
+        "last_multipart_chunk_ms": 2494.3245,
+        "first_file_chunk_ms": 1.8942,
+        "last_observed_file_chunk_ms": 2477.3326,
+        "final_multipart_chunk_ms": 2494.322,
+        "multipart_footer_yielded": true,
+        "pace_bytes_per_second": null,
+        "semantics": "iterator handed bytes to transport; not proof of socket write or server receipt"
+      },
+      "client_final_chunk_yield_to_ack_ms": 374.0342999999998
+    },
+    {
+      "sample_id": "s004",
+      "origin": "brev",
+      "mode": "paced",
+      "input_bytes": 28718927,
+      "fixture_locally_verified_invalid": true,
+      "outcome": "post_rejected",
+      "http_status": 408,
+      "terminal_state": "unmeasured",
+      "terminal_failed_without_verdict": false,
+      "post": {
+        "response_headers_ms": 54792.1346,
+        "first_body_byte_ms": 54792.175,
+        "full_response_ms": 54793.137,
+        "response_bytes": 15
+      },
+      "client_post_total_ms": 54793.184,
+      "asgi_after_body_acceptance_ms": null,
+      "client_observed_total_ms": 54793.1912,
+      "upload_iterator": {
+        "multipart_bytes_yielded": 28719116,
+        "file_bytes_yielded": 28718927,
+        "expected_multipart_bytes": 28719116,
+        "first_multipart_chunk_ms": 1.2721,
+        "last_multipart_chunk_ms": 54791.66,
+        "first_file_chunk_ms": 504.0192,
+        "last_observed_file_chunk_ms": 54790.5836,
+        "final_multipart_chunk_ms": 54791.6575,
+        "multipart_footer_yielded": true,
+        "pace_bytes_per_second": 524288,
+        "semantics": "iterator handed bytes to transport; not proof of socket write or server receipt"
+      },
+      "client_final_chunk_yield_to_ack_ms": 1.5264999999999418
+    }
+  ],
+  "summary": {
+    "attempted": 4,
+    "accepted": 1,
+    "transport_failures": 2,
+    "terminal_failed_without_verdict": 1
+  },
+  "limits": [
+    "Generated corrupt media cannot establish valid-video or model capacity.",
+    "One observation per condition is not a percentile or a concurrency study.",
+    "A failure not reproduced in this sequential experiment does not explain the original concurrent failure."
+  ]
+}

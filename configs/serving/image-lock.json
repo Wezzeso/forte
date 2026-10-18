@@ -1,0 +1,31 @@
+{
+  "image": "vllm/vllm-openai:v0.31.0-cu129",
+  "manifest_digest": "sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "image_reference": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "source": "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.31.0-cu129",
+  "verified_at": "2026-10-17T10:17:53.166552+00:00",
+  "media_type": "application/vnd.docker.distribution.manifest.list.v2+json",
+  "platforms": [
+    {
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    {
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  ],
+  "runtime_tested": true,
+  "runtime_validation": "configs/serving/gpu-validation.json",
+  "model_startup_validation": "configs/serving/startup-validation.json",
+  "derived_image_required": true,
+  "derived_image_dockerfile": "deploy/Dockerfile.model",
+  "runtime_note": "Validated with the derived JPEG-only image, which removes the unused CUDA13-linked torchcodec package. The unmodified base image was not validated for model startup.",
+  "linux_amd64_manifest_digest": "sha256:b18abb2df97b8f798e81862bd93f872ea18613372e2c3adc0cc2ac21e66ac12f",
+  "linux_amd64_config_digest": "sha256:423783aac4fefebfe6b67d6fc2810b88a1d4dc08ed8bba587c80b0d8973e0b8b",
+  "linux_amd64_cuda_environment": [
+    "CUDA_VERSION=12.9.1",
+    "VLLM_ENABLE_CUDA_COMPATIBILITY=0"
+  ],
+  "compressed_layer_bytes": 11015410140
+}

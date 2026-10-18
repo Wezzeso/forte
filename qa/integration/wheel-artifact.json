@@ -1,0 +1,7 @@
+{
+  "artifact": "dist/forte_video_review-0.1.0-py3-none-any.whl",
+  "bytes": 127591,
+  "sha256": "33b5afdbe18b68979eefc3c4cbb7dc1efc10c16d118c8cd6dd612c7b1c3c5a39",
+  "scope": "Python package only. Deployment requires full source checkout and root rules/serving/configs/model manifest/frontend assets.",
+  "includes_private_media_or_weights": false
+}

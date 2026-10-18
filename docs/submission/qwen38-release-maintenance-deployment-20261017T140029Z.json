@@ -1,0 +1,149 @@
+{
+  "activated_at_utc": "2026-10-17T13:53:44.464846+00:00",
+  "activation_scope": "API-onlymaintenance; worker/model/trainingnotactivated",
+  "actual_video_upload_bytes_sent": 0,
+  "actual_video_uploads": 0,
+  "admission_resume_authorized": false,
+  "api_activation_performed": true,
+  "api_container_health": "healthy",
+  "api_container_id": "32e4d8c62409062ca6f741209a4b67f1f9c82f764720ae73605efd94b6b6039f",
+  "api_health_http": 200,
+  "api_image_id": "sha256:5f635274bd9dd7d8ca0bde5a430332607972031c976b11ec91c63ab1d22277cf",
+  "api_ready_http": 503,
+  "build_receipt": "docs/submission/qwen38-release-image-build-20261017T134550Z.json",
+  "candidate_model_deployed_by_this_operation": false,
+  "completed_result_http_bytes_sha256_verified": 9,
+  "do_not_start_existing_stopped_old_worker_container": true,
+  "existing_stopped_worker_container_unchanged": true,
+  "future_worker_requires_compose_recreate_to_apply_new_image_and_env": true,
+  "gpu_model_calls": 0,
+  "job_counts_after": {
+    "active": 0,
+    "done": 9,
+    "failed": 9,
+    "total": 18
+  },
+  "job_counts_before": {
+    "active": 0,
+    "done": 9,
+    "failed": 9,
+    "total": 18
+  },
+  "jobs_rows_sha256": "e7b8d4a403f4da812c790ca8a377683d18344fa374336c1c1f83493fb71d01e6",
+  "jobs_table_rows_unchanged": true,
+  "local_nonempty_declared_body_unsent_authorized_http": 503,
+  "local_nonempty_declared_body_unsent_unauthorized_http": 401,
+  "local_operational_override": "deploy/compose.maintenance-qwen38-20261017.yaml",
+  "local_prebody_rejection_verified": true,
+  "maintenance_admission_paused": true,
+  "model_and_worker_activation_remain_root_owned": true,
+  "model_or_worker_activation_authorized_by_this_receipt": false,
+  "model_state": "exited",
+  "new_performance_or_quality_claim": false,
+  "operational_override": "/home/ubuntu/forte/deploy/compose.maintenance-qwen38-20261017.yaml",
+  "operational_override_is_separate_from_frozen_211_member_archive": true,
+  "operational_override_sha256": "fbf72f6d67c28b09a7ce69b6537c3d40d5e8b8ce72977aa01f29769d7231f327",
+  "origin_html_sha256": "2258c8a6d498cb683bd9dfb41655fa8d43709b44c64071c949db40ec324aa6e0",
+  "prior_verified_18_job_backup_receipt": "infra/qwen38-onhost-pretrain-backup-20261017T133548Z.json",
+  "private_env_backup_preserved": true,
+  "private_env_values_included": false,
+  "public_api_url": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "public_assets": {
+    "/": {
+      "bytes": 1616,
+      "new_application_asset_references_verified": true,
+      "sha256": "5c2066a943aad2b58e4b5ee1a67227d1e0fd48cd1ad7ef3f029f74a8fc246b31",
+      "status": 200
+    },
+    "/assets/index-0ahxg1pR.js": {
+      "bytes": 281842,
+      "sha256": "183fd3d239c090903b8f222a1ca6107d00b3b08c46cc4412c81d189e547a2cbc",
+      "status": 200
+    },
+    "/assets/index-DZIHIHMZ.css": {
+      "bytes": 37165,
+      "sha256": "5627a6c798c88740639405ac6738f5f14c3b8d71a08599c824cb648ceee76839",
+      "status": 200
+    }
+  },
+  "public_declared_nonempty_unsent_body_probe": "timed_out_after12seconds_waiting_for_edge_response",
+  "public_edge_prebody_rejection_verified": false,
+  "public_html_edge_injection_observed": true,
+  "public_html_new_asset_references_verified": true,
+  "public_html_raw_hash_equals_origin": false,
+  "public_probes": {
+    "allowed_origin": {
+      "access_control_allow_origin": "https://hackathon.wezeso.me",
+      "cache_control": "no-store",
+      "request_body_bytes_sent": 0,
+      "retry_after": null,
+      "status": 200
+    },
+    "allowed_preflight": {
+      "access_control_allow_origin": "https://hackathon.wezeso.me",
+      "cache_control": "no-store",
+      "request_body_bytes_sent": 0,
+      "retry_after": null,
+      "status": 204
+    },
+    "authorized_empty_post": {
+      "access_control_allow_origin": "https://hackathon.wezeso.me",
+      "cache_control": "no-store",
+      "request_body_bytes_sent": 0,
+      "retry_after": "60",
+      "status": 503
+    },
+    "forbidden_origin": {
+      "access_control_allow_origin": null,
+      "cache_control": "no-store",
+      "request_body_bytes_sent": 0,
+      "retry_after": null,
+      "status": 403
+    },
+    "unauthorized_empty_post": {
+      "access_control_allow_origin": null,
+      "cache_control": null,
+      "request_body_bytes_sent": 0,
+      "retry_after": null,
+      "status": 401
+    }
+  },
+  "public_runtime_api_origin": "https://forte-review-wd88a7vvt.gobrev.dev",
+  "public_runtime_cache_control": "no-store",
+  "public_zero_byte_authentication_and_maintenance_rejection_verified": true,
+  "raw_remote_receipt_sha256": "957bbb92f0ff57bb6b9ff24069905d46ecdfcdf656a3bcdd011f985d130becb0",
+  "readiness_components": {
+    "admission": false
+  },
+  "review_mutations": 0,
+  "review_readonly_get_http": 409,
+  "review_rows_after": 0,
+  "review_rows_before": 0,
+  "review_table_rows_unchanged": true,
+  "reviews_rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "rollback_directory": "/home/ubuntu/forte-api-maintenance-rollback-20261017T135228Z",
+  "rollback_old_image_id": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+  "rollback_old_image_tag": "forte-review:rollback-api-20261017t135228z",
+  "rollback_old_public_source_sha256": "9e5bc9f3777d320f5138ab0de01331aaace97b709384c8d912054441c2193ecd",
+  "rollback_plan": "/home/ubuntu/forte-api-maintenance-rollback-20261017T135228Z/rollback-plan.json",
+  "schema_version": "forte.qwen38.api-maintenance-deployment.v1",
+  "secret_files_preserved_by_source_overlay": true,
+  "secret_values_logged": false,
+  "source_archive_sha256": "5543a09ee33fa45e4787e1b8b00636b9dd936b54a286e961bff743d36c2de2aa",
+  "source_overlay_members_verified": 211,
+  "source_release_receipt": "docs/submission/qwen38-release-ui-api-20261017T134425Z.json",
+  "stored_result_bytes_unchanged": true,
+  "stored_result_tree": {
+    "completed_results_verified": 9,
+    "result_tree_bytes": 918,
+    "result_tree_file_count": 9,
+    "result_tree_sha256": "f65e695afc75bd6477d96466c1751b2ff09b5a1718b5d556e42eb7accb0f024c"
+  },
+  "training_containers_targeted": false,
+  "ui_existing_job_get_http": 200,
+  "verified_at_utc": "2026-10-17T14:00:29.026196+00:00",
+  "worker_model_db_ingress_container_ids_preserved": true,
+  "worker_staged_screening_when_explicitly_restarted": false,
+  "worker_state": "exited",
+  "working_ui_url": "https://hackathon.wezeso.me"
+}

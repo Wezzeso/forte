@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-17T11:32:35.517236+00:00",
+  "containers": [
+    {
+      "container_role": "api",
+      "image_id": "sha256:c4528d19724dff4477f9c4f3e9bfb6c43b2075a5428eb5192e632b36283e48c8",
+      "health": "healthy",
+      "running": true,
+      "profile_flags": {
+        "FORTE_STAGED_SCREENING": true,
+        "FORTE_CONCISE_OBSERVATIONS": true,
+        "FORTE_COMPACT_FRAME_IDS": true,
+        "FORTE_MAX_INFLIGHT_PER_JOB": 2,
+        "FORTE_MAX_CONCURRENT_CLIPS": 2,
+        "FORTE_JOB_TIMEOUT_SECONDS": 285
+      }
+    },
+    {
+      "container_role": "worker",
+      "image_id": "sha256:c4528d19724dff4477f9c4f3e9bfb6c43b2075a5428eb5192e632b36283e48c8",
+      "health": "healthy",
+      "running": true,
+      "profile_flags": {
+        "FORTE_STAGED_SCREENING": true,
+        "FORTE_CONCISE_OBSERVATIONS": true,
+        "FORTE_COMPACT_FRAME_IDS": true,
+        "FORTE_MAX_INFLIGHT_PER_JOB": 2,
+        "FORTE_MAX_CONCURRENT_CLIPS": 2,
+        "FORTE_JOB_TIMEOUT_SECONDS": 285
+      }
+    }
+  ],
+  "strict_public_readiness_http_status": 200,
+  "required_staged_concise_profile_matches": true,
+  "scope": "actual team Docker image IDs/health and fixed profile flags; all other environment values discarded",
+  "model_configuration_or_edge_protocol_attested_here": false
+}

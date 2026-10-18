@@ -1,0 +1,23 @@
+{
+  "serve_script_sha256": "f92c7cb8e4d1b971b08644a93b7ef9f6bfc35946e50b1046697b9f5706f99a3f",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "ExitCode": 0,
+    "OOMKilled": false,
+    "StartedAt": "2026-10-18T04:33:10.315044325Z"
+  },
+  "kv_available_gib": 10.7,
+  "kv_tokens": 54642.0,
+  "max_concurrency": 1.67,
+  "weights_gib": 58.99,
+  "api_server_started": false,
+  "gpu_utilization_pct": 0,
+  "gpu_memory_mib": 73019,
+  "gpu_total_mib": 81559,
+  "schema": "forte.model-startup-metrics.v1",
+  "observed_at_utc": "2026-10-18T04:36:25Z",
+  "synthetic_phase_only": true,
+  "api_202_to_done_claim": false,
+  "source": "tmp/agent-bridge/out/124-gemma4-startup-status.log"
+}

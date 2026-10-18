@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1.7
+# The build controller independently verifies this local tag resolves to a28.
+FROM forte-qwen38-training:cu129-bnb0502-4ef81261129a
+USER root
+WORKDIR /app
+LABEL forte.qwen38.expected-parent-image="sha256:a28a1d003c831907d5b8729426f376e7383ecf6c5eb347c4b8ab8c4300e32698"
+COPY deploy/requirements-qwen38-fla.lock /opt/forte-locks/qwen38-fla-addons.lock
+COPY deploy/qwen38-fla-runtime-lock.json /opt/forte-locks/qwen38-fla-runtime.json
+COPY deploy/qwen38_fla_runtime_check.py /opt/forte-locks/qwen38-fla-check.py
+RUN env -u UV_OVERRIDE uv pip install --python /opt/forte-features/bin/python \
+    --no-deps --only-binary :all: --require-hashes \
+    -r /opt/forte-locks/qwen38-fla-addons.lock \
+    && /opt/forte-features/bin/python /opt/forte-locks/qwen38-fla-check.py \
+       --lock /opt/forte-locks/qwen38-fla-runtime.json
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_TELEMETRY=1 \
+    WANDB_DISABLED=true TOKENIZERS_PARALLELISM=false \
+    FLA_CACHE_RESULTS=0 FLA_DISABLE_TENSOR_CACHE=1
+ENTRYPOINT ["/opt/forte-features/bin/python"]
+CMD ["/opt/forte-locks/qwen38-fla-check.py", "--lock", "/opt/forte-locks/qwen38-fla-runtime.json"]

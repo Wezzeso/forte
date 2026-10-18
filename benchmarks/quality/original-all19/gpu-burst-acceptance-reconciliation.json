@@ -1,0 +1,40 @@
+{
+  "status": "measured",
+  "samples": [
+    {
+      "sample_id": "s001",
+      "matching_durable_jobs": 1,
+      "status": "failed",
+      "error_code": "insufficient_visible_evidence",
+      "acknowledged_job_id_received": true
+    },
+    {
+      "sample_id": "s002",
+      "matching_durable_jobs": 1,
+      "status": "done",
+      "error_code": null,
+      "acknowledged_job_id_received": true
+    },
+    {
+      "sample_id": "s003",
+      "matching_durable_jobs": 1,
+      "status": "failed",
+      "error_code": "deadline_exceeded",
+      "acknowledged_job_id_received": true
+    },
+    {
+      "sample_id": "s004",
+      "matching_durable_jobs": 1,
+      "status": "failed",
+      "error_code": "deadline_exceeded",
+      "acknowledged_job_id_received": true
+    },
+    {
+      "sample_id": "s005",
+      "matching_durable_jobs": 0,
+      "acknowledged_job_id_received": false
+    }
+  ],
+  "scope": "exact privately selected input SHA256 equality; no content or hashes exported",
+  "model_inference_called": false
+}

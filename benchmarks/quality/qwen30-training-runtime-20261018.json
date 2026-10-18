@@ -1,0 +1,42 @@
+{
+  "accuracy_claim": false,
+  "architecture": "Qwen3VLMoeForConditionalGeneration",
+  "base_image_ref": "vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "checked_at_utc": "2026-10-18T05:17:05.347263+00:00",
+  "cpu_check_network": "none",
+  "dependency_license_record": "docs/integration/gemma4-training-licenses.md",
+  "elapsed_s": 16.599,
+  "gpu_access_requested": false,
+  "gpu_training_verified": false,
+  "image_id": "sha256:e1c593d20cdb5f9b1583b9471c9caecb0f7e437b4ad5964f05f2b40caa2956a1",
+  "image_rebuilt_or_serving_modified": false,
+  "instance_id": "xw5720fii",
+  "instance_name": "forte-new-q38",
+  "model_license": "Apache-2.0",
+  "model_repo": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "model_revision": "9c4b90e1e4ba969fd3b5378b57d966d725f1b86c",
+  "model_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/tree/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c",
+  "native_architecture_available": true,
+  "package_scan_sha256": "81239f9c3b7640fb989c80d01168dd2ce985788d71d53d147562e24609dc46c4",
+  "pinned_packages": {
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "peft": "0.21.2",
+    "pillow": "12.3.0",
+    "torch": "2.13.0+cu129",
+    "torchvision": "0.28.0+cu129",
+    "transformers": "5.17.0"
+  },
+  "reused_runtime_receipt_sha256": "69780bde72f073574f8fcd652ea2f4cc080bb0d05c36f2c0804e250f91ae5804",
+  "runtime_packages_verified": true,
+  "schema": "forte.qwen30-training-runtime.v1",
+  "status": "cpu_ready_not_gpu_verified",
+  "training_config": "/ephemeral/forte/qwen30_training_config.json",
+  "training_entrypoint": [
+    "python",
+    "-m",
+    "training.qwen30_lora_train"
+  ],
+  "training_started": false,
+  "weights_loaded": false
+}

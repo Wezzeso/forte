@@ -1,0 +1,3 @@
+- {'act': {'act2': {'person_carries_heavy_object': 1.0}, 'actors': [{'id1': 7, 'timespan': [{'tsr0': [7281, 7413]}]}, {'id1': 8, 'timespan': [{'tsr0': [7281, 7413]}]}], 'id2': 6, 'src_status': 'good', 'timespan': [{'tsr0': [7281, 7413]}]}}
+- {'act': {'act2': {'person_enters_scene_through_structure': 1.0}, 'actors': [{'id1': 6, 'timespan': [{'tsr0': [6648, 6723]}]}], 'id2': 5, 'src_status': 'good', 'timespan': [{'tsr0': [6648, 6723]}]}}
+- {'act': {'act2': {'person_exits_scene_through_structure': 1.0}, 'actors': [{'id1': 5, 'timespan': [{'tsr0': [7375, 7450]}]}], 'id2': 4, 'src_status': 'good', 'timespan': [{'tsr0': [7375, 7450]}]}}

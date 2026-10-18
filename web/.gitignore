@@ -1,0 +1,6 @@
+/node_modules/
+/test-results/
+/playwright-report/
+
+# Generated Playwright JSON report (may be rewritten during a test run).
+/qa/results.json

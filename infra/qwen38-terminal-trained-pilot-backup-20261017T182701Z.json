@@ -1,0 +1,105 @@
+{
+  "account_or_rental_changes": false,
+  "active_native_v2_other_outputs_logs_excluded": true,
+  "active_retry_and_quality_outputs_excluded": true,
+  "archive": {
+    "bytes": 21865086,
+    "name": "terminal-experiments.tar.gz",
+    "sha256": "b0c0e25c67e03dac71bea9e5434abce4c0bfe52c831934acd1a709c2085482f8"
+  },
+  "archive_count": 3,
+  "created_at_utc": "2026-10-17T18:27:01.378683+00:00",
+  "current_native_v2_runtime_and_outputs_excluded": true,
+  "database_changes": false,
+  "directory": "/data/forte-backups/qwen38-terminal-trained-pilot-20261017T182700Z-226a2e3c",
+  "duplicate_base_model_and_adapter_payload_excluded": true,
+  "exact_member_hashes_verified": true,
+  "first_native_original_results_supplement": {
+    "archive": {
+      "bytes": 1094,
+      "name": "first-native-original-results.tar.gz",
+      "sha256": "e8ecfc9c12efdbecfc80d34a570ac929391ebe818ce079f6e7e9f20d899c4bab"
+    },
+    "private_content_printed": false,
+    "private_manifest_sha256": "314b53b65849311a862f4b4a7c2c644bd0dd592801130408a8837a910b7f201d",
+    "source_bytes": 1495,
+    "source_file_count": 3
+  },
+  "first_native_original_stdout_stderr_preserved": true,
+  "first_native_raw_original_results_verified_locally": true,
+  "first_native_terminal": {
+    "exit_code": 2,
+    "model_attempts": 0,
+    "oom_killed": false,
+    "original_logs": {
+      "container.stderr.log": {
+        "bytes": 5296,
+        "matches_original_terminal_receipt": true,
+        "sha256": "a658d439e18d7d36489048834e073e50d9a42c12b4458db9f7102abe887195e2"
+      },
+      "container.stdout.log": {
+        "bytes": 39793,
+        "matches_original_terminal_receipt": true,
+        "sha256": "d7ee0ecfb750204ca9335b948af978cfbf653ddf565b6068fa41295287e024e9"
+      }
+    },
+    "safe_receipt_sha256": "4adb4e1f5b45fa3af0adfff5804c5992efc334007f65058e337ed8c688e168a2"
+  },
+  "gpu_model_calls": 0,
+  "gpu_service_database_account_changes": false,
+  "local_exact_member_hashes_verified": true,
+  "local_proof_capture_at_utc": "2026-10-17T18:29:23.954318+00:00",
+  "local_proof_exact_member_hashes_verified": true,
+  "local_proof_source_bytes": 982486,
+  "local_proof_source_file_count": 59,
+  "local_proofs_archive": {
+    "bytes": 320510,
+    "name": "local-trained-terminal-and-native-originals.tar.gz",
+    "sha256": "886d752eea5111e0b7707925b3ec1246ae4b3241e654f236045f6524ea8485f0"
+  },
+  "matching_live_trained_pilot_processes_at_preflight": 0,
+  "onhost_snapshot_retained": true,
+  "original_stale_controller_status_preserved": true,
+  "private_content_printed": false,
+  "private_manifest_sha256": "7de85f1ba45ce3e1e7cff25326188a473e1ae0877db019d433c495e5d479b9d9",
+  "private_rollback_before_v2_config_helpers_preserved": true,
+  "protected_local_directory": "C:/Users/Wezeso/FortePrivateBackups/qwen38-terminal-trained-pilot-20261017T182700Z-226a2e3c",
+  "protected_local_transfer_verified": true,
+  "protected_local_transfer_verified_at_utc": "2026-10-17T18:30:14.027947+00:00",
+  "protected_windows_acl": {
+    "inheritance_protected": true,
+    "principal_count": 2,
+    "principals_only_current_user_and_system": true,
+    "verified": true
+  },
+  "schema_version": "forte.private-terminal-experiment-increment.v1",
+  "scope": "Terminal trained pilot rawoutput/evidence/accounting/originals; DA8 failedtrainedstartup; 3f actualterminalgeneratedgates/staticconfig/release; firstnativeterminal/staticOPS; active nativev2/otherlogs and duplicatebaseweights/adapters excluded",
+  "service_changes": false,
+  "source_bytes": 29553561,
+  "source_file_count": 718,
+  "source_unchanged_verified": true,
+  "stop_schedule_changed": false,
+  "terminal_and_release_identity_checks": {
+    "/data/forte-ml/private/quality-trained-pilot-a13-20261017T1800Z/a09-terminal-accounting/settlement.json": "3356e4b8ddedbee173197cd3951dcd52986f7d0f32a9ff8365bb21055b93df45",
+    "/data/forte-ml/private/quality-trained-pilot-a13-20261017T1800Z/controller.json": "2aabfb4759ca1684f9fd1fee96862798d2de1b082fe953f607e0ddfb17482752",
+    "/data/forte-ml/private/quality-trained-pilot-a13-20261017T1800Z/output/results/model-slot-terminals.json": "1cdbe964572819e7fd59e396c21f2f7280f57bde452263b2748334a91f10679f",
+    "/data/forte-ml/private/quality-trained-pilot-a13-20261017T1800Z/output/results/source-terminals.json": "44ad517e1d0fde54dd0bdfe345109a33c6796ef99fe52db35ce3a55c05a6643e",
+    "/data/forte-ml/private/quality-trained-pilot-a13-20261017T1800Z/output/results/summary.json": "f8896eb33114fbaa4887b007c979e55815ad088854e41f60dc2df9407a1546be",
+    "/home/ubuntu/forte-worker-source-3f603ca07fe8/build-proof.json": "e6ea89e15f546c9c3a4ebbea21ced88bf783ca94b5c372742551fa4824591a76"
+  },
+  "total_archive_bytes": 22186690,
+  "trained_terminal_artifacts": {
+    "file_count": 155,
+    "jpeg_file_count": 121,
+    "raw_bytes": 18555178
+  },
+  "trained_terminal_helper": {
+    "actual_model_posts": 8,
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-17T18:16:47.26646654Z",
+    "oom_killed": false,
+    "running": false,
+    "technically_complete_sources": 0
+  },
+  "verification_completed_at_utc": "2026-10-17T18:30:36.037866+00:00"
+}

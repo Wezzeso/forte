@@ -1,0 +1,489 @@
+{
+  "schema_version": "forte.qwen38-live-preflight.v1",
+  "captured_at_utc": "2026-10-17T13:09:47.6213080Z",
+  "read_only": true,
+  "service_mutations": false,
+  "private_model_calls": 0,
+  "private_content_included": false,
+  "ssh_alias": "forte-a100-smoke-20261017",
+  "production_containers": {
+    "api": {
+      "status": "running",
+      "health": "healthy",
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T12:19:46.726234557Z",
+      "host_ports": {},
+      "network_names": [
+        "forte_private"
+      ]
+    },
+    "worker": {
+      "status": "running",
+      "health": "healthy",
+      "image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "started_at_utc": "2026-10-17T12:19:46.713374736Z",
+      "host_ports": {},
+      "network_names": [
+        "forte_private"
+      ]
+    },
+    "model": {
+      "status": "running",
+      "health": "healthy",
+      "image": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "started_at_utc": "2026-10-17T10:36:11.954566283Z",
+      "host_ports": {},
+      "network_names": [
+        "forte_private"
+      ],
+      "model_mounts": [
+        {
+          "source": "/home/ubuntu/forte-models/Qwen3-VL-8B-Instruct",
+          "destination": "/models/Qwen3-VL-8B-Instruct",
+          "read_only": true
+        }
+      ]
+    },
+    "db": {
+      "status": "running",
+      "health": "healthy",
+      "image": "sha256:29754c7520f4b9654cf8ff98e19ac73b88e255c3a53f6236ebe9d52249bb6df3",
+      "started_at_utc": "2026-10-17T10:16:06.044486303Z",
+      "host_ports": {},
+      "network_names": [
+        "forte_private"
+      ]
+    },
+    "ingress": {
+      "status": "running",
+      "health": null,
+      "image": "sha256:f77f856a30f0004200b36b322d61da17fade31e24875699d77fb968399b9eb77",
+      "started_at_utc": "2026-10-17T10:25:46.795916644Z",
+      "host_ports": {
+        "443/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8443"
+          }
+        ],
+        "443/udp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8443"
+          }
+        ],
+        "80/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8080"
+          }
+        ]
+      },
+      "network_names": [
+        "forte_ingress",
+        "forte_private"
+      ]
+    }
+  },
+  "durable_job_counts": {
+    "total_jobs": 15,
+    "completed_jobs": 6,
+    "failed_jobs": 9,
+    "active_jobs": 0,
+    "status_counts": {
+      "done": 6,
+      "failed": 9
+    },
+    "completed_status_value": "done"
+  },
+  "api_readiness": {
+    "status": 200,
+    "body": {
+      "status": "ready",
+      "components": {
+        "authentication": true,
+        "database": true,
+        "storage": true,
+        "model": true,
+        "worker": true
+      }
+    }
+  },
+  "model_identity": [
+    {
+      "id": "Qwen3-VL-8B-Instruct",
+      "root": "/models/Qwen3-VL-8B-Instruct",
+      "max_model_len": 32768,
+      "parent": null
+    }
+  ],
+  "model_attestation": {
+    "ready": true,
+    "model_files_verified": true,
+    "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "vllm_version": "0.31.0"
+  },
+  "model_queue": {
+    "vllm:num_requests_running": 0.0,
+    "vllm:num_requests_waiting": 0.0
+  },
+  "gpu": {
+    "name": "NVIDIA A100 80GB PCIe",
+    "driver_version": "565.57.01",
+    "memory_total_mib": 81920.0,
+    "memory_used_mib": 70829.0,
+    "memory_free_mib": 10327.0,
+    "gpu_util_percent": 0.0,
+    "power_watts": 67.47
+  },
+  "disks": {
+    "/": {
+      "total_bytes": 133003395072,
+      "used_bytes": 96121843712,
+      "free_bytes": 36864774144
+    },
+    "/data": {
+      "total_bytes": 269427478528,
+      "used_bytes": 3368255488,
+      "free_bytes": 252298551296
+    }
+  },
+  "isolated_running_containers": [],
+  "private_network": {
+    "Name": "forte_private",
+    "Driver": "bridge",
+    "Internal": true
+  },
+  "upload_and_worker_activity": {
+    "partial_upload_file_count": 0,
+    "partial_upload_recent_60s_count": 0,
+    "worker_heartbeat_age_seconds": 7.127371
+  },
+  "active_profile": {
+    "FORTE_MODEL_BASE_URL": "http://model:8000/v1",
+    "FORTE_MODEL_NAME": "Qwen3-VL-8B-Instruct",
+    "FORTE_MAX_UPLOAD_BYTES": "268435456",
+    "FORTE_JOB_TIMEOUT_SECONDS": "285",
+    "FORTE_MAX_REFINEMENT_PASSES": "8",
+    "FORTE_MAX_CONCURRENT_JOBS": "4",
+    "FORTE_MAX_CONCURRENT_CLIPS": "2",
+    "FORTE_MAX_INFLIGHT_PER_JOB": "2",
+    "FORTE_COMPACT_FRAME_IDS": "true",
+    "FORTE_CONCISE_OBSERVATIONS": "true",
+    "FORTE_STAGED_SCREENING": "true",
+    "FORTE_CORS_ALLOWED_ORIGINS": "https://hackathon.wezeso.me",
+    "FORTE_PUBLIC_API_BASE_URL": "https://forte-review-wd88a7vvt.gobrev.dev",
+    "FORTE_TRUSTED_SCENE_CONTEXT": "bank_cash_workstation",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "model_packages": {
+    "vllm": "0.31.0+cu129",
+    "torch": "2.13.0+cu129",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "safetensors": "0.8.0"
+  },
+  "capture_errors": {},
+  "capture_completed_at_utc": "2026-10-17T13:09:48.7221960Z",
+  "budget": {
+    "hourly_running_rate_usd": 2.03,
+    "started_at_utc": "2026-10-17T10:01:25Z",
+    "current_account_cap_usd": 50,
+    "scheduler": {
+      "StartWhenAvailable": true,
+      "ExecutionTimeLimit": "PT30M",
+      "CapturedUtc": "2026-10-17T13:09:50.2829038Z",
+      "State": "Ready",
+      "RestartCount": 10,
+      "RestartInterval": "PT2M",
+      "WakeToRun": true,
+      "NextRunUtc": "2026-10-18T06:01:25.0000000Z"
+    },
+    "approved_stop_at_utc": "2026-10-18T06:01:25Z",
+    "remaining_seconds": 60694,
+    "demo_service_gap_seconds": 3515,
+    "expected_max_running_charge_usd": 40.6,
+    "expected_running_charge_usd": 6.37,
+    "retained_storage_rate_usd_per_hour": 0.05,
+    "expected_charge_is_not_observed_bill": true,
+    "approved_runtime_hours": 20
+  },
+  "capture_scope": "Read-only host, Docker, SQL aggregate, metadata/health/metrics HTTP, Windows scheduler. No new model forward call, private media read, job upload, service mutation or account operation.",
+  "reconciliation": {
+    "provider_stop_not_yet_verified": true,
+    "receipt_does_not_establish_candidate_compatibility": true,
+    "production_container_digests_match_historical": true,
+    "gpu_handoff_observation": "Baseline remains loaded; 10,327 MiB free cannot establish Qwen3.8 coexistence. Freshly idle at receipt capture; root must control drain and exclusive handoff after verified backup.",
+    "scheduler_is_not_provider_stop_proof": true,
+    "disk_staging_observation": "Use /data for new model snapshot. Root disk free is less than the likely unquantized 27B artifact footprint; /data has 252,298,551,296 bytes free.",
+    "cutoff_limit": "No extension, restart after cutoff, account switch or additional rental authorized.",
+    "historical_snapshot": "infra/read-only-handoff-20261017T124933Z.json",
+    "active_profile_matches_historical": true,
+    "model_revision_matches_historical": true
+  },
+  "candidate_runtime_metadata": {
+    "captured_at_utc": "2026-10-17T13:11:17.645895+00:00",
+    "metadata_only_ephemeral_containers": true,
+    "production_service_mutations": false,
+    "images": [
+      {
+        "image_tag": "forte-features:cu129-w1",
+        "status": "metadata_only_inspected",
+        "installed_distributions": {
+          "torch": "2.13.0+cu129",
+          "transformers": "5.17.0",
+          "peft": "0.21.2",
+          "bitsandbytes": null,
+          "triton": "3.7.1",
+          "causal-conv1d": null,
+          "flash-linear-attention": null,
+          "qwen-vl-utils": null,
+          "accelerate": "1.15.0",
+          "datasets": null,
+          "safetensors": "0.8.0",
+          "vllm": "0.31.0+cu129",
+          "nvidia-cuda-runtime-cu12": "12.9.79",
+          "nvidia-cuda-nvrtc-cu12": "12.9.86",
+          "nvidia-cublas-cu12": "12.9.1.4",
+          "nvidia-cudnn-cu12": "9.20.0.48"
+        },
+        "python_version": "3.12.3",
+        "platform": "Linux-5.15.0-126-generic-x86_64-with-glibc2.39",
+        "cuda_version_json": null,
+        "cuda_compat_files": [
+          "libnvidia-gpucomp.so.575.57.08",
+          "libnvidia-ptxjitcompiler.so.575.57.08",
+          "libnvidia-nvvm.so.4",
+          "libcudadebugger.so.1",
+          "libcuda.so",
+          "libnvidia-pkcs11-openssl3.so.575.57.08",
+          "libcudadebugger.so.575.57.08",
+          "libcuda.so.1",
+          "libnvidia-nvvm70.so.4",
+          "libnvidia-ptxjitcompiler.so.1",
+          "libcuda.so.575.57.08",
+          "libnvidia-nvvm.so",
+          "libnvidia-nvvm.so.575.57.08"
+        ],
+        "selected_cuda_env": {
+          "CUDA_VERSION": "12.9.1",
+          "NVIDIA_REQUIRE_CUDA": "cuda>=12.9 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=550,driver<551 brand=grid,driver>=550,driver<551 brand=tesla,driver>=550,driver<551 brand=nvidia,driver>=550,driver<551 brand=quadro,driver>=550,driver<551 brand=quadrortx,driver>=550,driver<551 brand=nvidiartx,driver>=550,driver<551 brand=vapps,driver>=550,driver<551 brand=vpc,driver>=550,driver<551 brand=vcs,driver>=550,driver<551 brand=vws,driver>=550,driver<551 brand=cloudgaming,driver>=550,driver<551 brand=unknown,driver>=560,driver<561 brand=grid,driver>=560,driver<561 brand=tesla,driver>=560,driver<561 brand=nvidia,driver>=560,driver<561 brand=quadro,driver>=560,driver<561 brand=quadrortx,driver>=560,driver<561 brand=nvidiartx,driver>=560,driver<561 brand=vapps,driver>=560,driver<561 brand=vpc,driver>=560,driver<561 brand=vcs,driver>=560,driver<561 brand=vws,driver>=560,driver<561 brand=cloudgaming,driver>=560,driver<561 brand=unknown,driver>=565,driver<566 brand=grid,driver>=565,driver<566 brand=tesla,driver>=565,driver<566 brand=nvidia,driver>=565,driver<566 brand=quadro,driver>=565,driver<566 brand=quadrortx,driver>=565,driver<566 brand=nvidiartx,driver>=565,driver<566 brand=vapps,driver>=565,driver<566 brand=vpc,driver>=565,driver<566 brand=vcs,driver>=565,driver<566 brand=vws,driver>=565,driver<566 brand=cloudgaming,driver>=565,driver<566 brand=unknown,driver>=570,driver<571 brand=grid,driver>=570,driver<571 brand=tesla,driver>=570,driver<571 brand=nvidia,driver>=570,driver<571 brand=quadro,driver>=570,driver<571 brand=quadrortx,driver>=570,driver<571 brand=nvidiartx,driver>=570,driver<571 brand=vapps,driver>=570,driver<571 brand=vpc,driver>=570,driver<571 brand=vcs,driver>=570,driver<571 brand=vws,driver>=570,driver<571 brand=cloudgaming,driver>=570,driver<571",
+          "LD_LIBRARY_PATH": "/usr/local/nvidia/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64"
+        },
+        "gpu_devices_present": [],
+        "torch_imported": false,
+        "cuda_initialized": false,
+        "model_forward_calls": 0
+      },
+      {
+        "python_executable": "python3",
+        "status": "metadata_only_live_container_inspected",
+        "cuda_initialized_by_inspection": false,
+        "installed_distributions": {
+          "torch": "2.13.0+cu129",
+          "transformers": "5.17.0",
+          "peft": null,
+          "bitsandbytes": null,
+          "triton": "3.7.1",
+          "causal-conv1d": null,
+          "flash-linear-attention": null,
+          "qwen-vl-utils": null,
+          "accelerate": "1.15.0",
+          "datasets": null
+        },
+        "torch_imported": false,
+        "correction": "Metadata-only ephemeral inspection used unavailable python executable (exit 127); successful live-container metadata-only python3 inspection supersedes it.",
+        "new_model_forward_calls": 0,
+        "image_tag": "forte-model:vllm-0.31.0"
+      }
+    ]
+  },
+  "available_images": [
+    {
+      "repository": "forte-review",
+      "tag": "human-review-20261017",
+      "image_id": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+      "repo_digests": [],
+      "size_bytes": 794931193,
+      "created": "2026-10-17T12:09:25.915978169Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-features",
+      "tag": "cu129-w1",
+      "image_id": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+      "repo_digests": [],
+      "size_bytes": 26629676079,
+      "created": "2026-10-17T11:55:02.68365104Z",
+      "architecture": "amd64",
+      "labels": {
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.revision": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+        "org.opencontainers.image.source": "https://github.com/vllm-project/vllm",
+        "org.opencontainers.image.url": "https://buildkite.com/vllm/release-v2/builds/7746",
+        "org.opencontainers.image.version": "vllm/vllm-openai:v0.31.0-cu129"
+      },
+      "entrypoint": [
+        "python"
+      ]
+    },
+    {
+      "repository": "forte-review",
+      "tag": "direct-api-20261017",
+      "image_id": "sha256:c4528d19724dff4477f9c4f3e9bfb6c43b2075a5428eb5192e632b36283e48c8",
+      "repo_digests": [],
+      "size_bytes": 794105202,
+      "created": "2026-10-17T11:29:22.789499182Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-review",
+      "tag": "direct-api-rollback-20261017",
+      "image_id": "sha256:c4528d19724dff4477f9c4f3e9bfb6c43b2075a5428eb5192e632b36283e48c8",
+      "repo_digests": [],
+      "size_bytes": 794105202,
+      "created": "2026-10-17T11:29:22.789499182Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-review",
+      "tag": "candidate-20261017",
+      "image_id": "sha256:fc217306c15f322e78c41f561030ee741b46ab4203369f54a05f7c627f6c1209",
+      "repo_digests": [],
+      "size_bytes": 793964887,
+      "created": "2026-10-17T11:19:56.683012451Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-review",
+      "tag": "benchmark-original-20261017",
+      "image_id": "sha256:97fd2dd3a5dafd63309fab12868925a8c6c39b363703ae0a5809ad6ff28afdd9",
+      "repo_digests": [],
+      "size_bytes": 793887935,
+      "created": "2026-10-17T10:47:09.761447938Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-review",
+      "tag": "local",
+      "image_id": "sha256:97fd2dd3a5dafd63309fab12868925a8c6c39b363703ae0a5809ad6ff28afdd9",
+      "repo_digests": [],
+      "size_bytes": 793887935,
+      "created": "2026-10-17T10:47:09.761447938Z",
+      "architecture": "amd64",
+      "labels": {},
+      "entrypoint": [
+        "python",
+        "/app/deploy/entrypoint.py"
+      ]
+    },
+    {
+      "repository": "forte-model",
+      "tag": "vllm-0.31.0",
+      "image_id": "sha256:046137dc151b7741b52fbb438de7d606fa74694969c7bb4ab6642d9408b9516e",
+      "repo_digests": [],
+      "size_bytes": 26357779052,
+      "created": "2026-10-17T10:35:31.433451653Z",
+      "architecture": "amd64",
+      "labels": {
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.revision": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+        "org.opencontainers.image.source": "https://github.com/vllm-project/vllm",
+        "org.opencontainers.image.url": "https://buildkite.com/vllm/release-v2/builds/7746",
+        "org.opencontainers.image.version": "vllm/vllm-openai:v0.31.0-cu129"
+      },
+      "entrypoint": [
+        "python3",
+        "-m",
+        "serving.launch"
+      ]
+    },
+    {
+      "repository": "vllm/vllm-openai",
+      "tag": "v0.31.0-cu129",
+      "image_id": "sha256:423783aac4fefebfe6b67d6fc2810b88a1d4dc08ed8bba587c80b0d8973e0b8b",
+      "repo_digests": [
+        "vllm/vllm-openai@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb"
+      ],
+      "size_bytes": 26357336842,
+      "created": "2026-10-03T08:08:37.707145099Z",
+      "architecture": "amd64",
+      "labels": {
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.revision": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+        "org.opencontainers.image.source": "https://github.com/vllm-project/vllm",
+        "org.opencontainers.image.url": "https://buildkite.com/vllm/release-v2/builds/7746",
+        "org.opencontainers.image.version": "vllm/vllm-openai:v0.31.0-cu129"
+      },
+      "entrypoint": [
+        "vllm",
+        "serve"
+      ]
+    },
+    {
+      "repository": "vllm/vllm-openai",
+      "tag": "<none>",
+      "image_id": "sha256:c76d0e2225a4b1cb1e2109ace39639f55e714abd1a7a427acc8b0bbd7f6a83b3",
+      "repo_digests": [
+        "vllm/vllm-openai@sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3"
+      ],
+      "size_bytes": 22842960920,
+      "created": "2026-10-03T08:06:44.199303663Z",
+      "architecture": "amd64",
+      "labels": {
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.revision": "db9527a46873454610df6dbedf79a36d6bf1a7f6",
+        "org.opencontainers.image.source": "https://github.com/vllm-project/vllm",
+        "org.opencontainers.image.url": "https://buildkite.com/vllm/release-v2/builds/7746",
+        "org.opencontainers.image.version": "vllm/vllm-openai:v0.31.0"
+      },
+      "entrypoint": [
+        "vllm",
+        "serve"
+      ]
+    }
+  ],
+  "available_images_captured_at_utc": "2026-10-17T13:11:56.264456+00:00",
+  "candidate_suitability_assessment": {
+    "evidence": "Transformers5.17, PEFT0.21.2, Torch2.13+cu129 installed. bitsandbytes, causal-conv1d, flash-linear-attention, qwen-vl-utils and datasets distributions absent. No Qwen3.8 model, visual forward/backward, optimizer, adapter-save or reload test performed by this inventory.",
+    "metadata_container_read_only": true,
+    "metadata_container_network": "none",
+    "gpu_imports_performed": 0,
+    "status": "training_runtime_not_verified",
+    "gpu_device_access_performed": false,
+    "production_service_mutations": false,
+    "existing_ml_image_id": "sha256:1bcad5aaa9c13266e1adc9f9ce302e29aaaeacccbe1354a84cb984e611977b27",
+    "driver_compatibility_evidence": "Host driver565.57.01; existing image NVIDIA_REQUIRE_CUDA metadata lists driver>=565,driver<566, and /usr/local/cuda/compat has libcuda575.57.08. Baseline vLLM is healthy on this host; candidate training/quantization/kernel compatibility still requires actual isolated tests.",
+    "existing_ml_image": "forte-features:cu129-w1"
+  }
+}

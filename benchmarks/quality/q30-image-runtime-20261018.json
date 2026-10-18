@@ -1,0 +1,28 @@
+{
+  "schema": "forte.q30-immutable-image-runtime.v1",
+  "generated_at_utc": "2026-10-18T05:23:13.948509+00:00",
+  "instance_id": "plp5me7vz",
+  "image_id": "sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb",
+  "gpu_used": false,
+  "network": "none",
+  "media_mounted": false,
+  "model_weights_mounted": false,
+  "status": "passed",
+  "python_executable": "/usr/bin/python3",
+  "python_version": [
+    3,
+    12,
+    3
+  ],
+  "paths": {
+    "python": null,
+    "python3": "/usr/bin/python3",
+    "uv": "/usr/local/bin/uv",
+    "vllm": "/usr/local/bin/vllm",
+    "pip": "/usr/local/bin/pip",
+    "pip3": "/usr/local/bin/pip3"
+  },
+  "torchcodec_present": true,
+  "pip_module_present": true,
+  "vllm_module_present": true
+}

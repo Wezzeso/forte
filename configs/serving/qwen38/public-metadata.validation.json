@@ -1,0 +1,86 @@
+{
+  "schema_version": "forte.qwen38.public-metadata-validation.v1",
+  "checked_at_utc": "2026-10-17T13:14:41.051383+00:00",
+  "manifest_sha256": "9be85d7b1a57be0f59e707b9a8872b964c506a515f7670958d2d5d60de197225",
+  "metadata_inventory_sha256": "2572576c4dae3ece02ccdb85263587d1089e581cca86e353f7ab838a09218e40",
+  "api_snapshot_sha256": "f92c33048a1d2552b4bdd7ce7e0bd3dd755b0d9652f995a79a351a7d06c6025d",
+  "metadata_file_results": [
+    {
+      "path": ".gitattributes",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "LICENSE",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "README.md",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "config.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "crc32.txt",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "generation_config.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "merges.txt",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "tokenizer.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "hf_lfs_sha256"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    },
+    {
+      "path": "vocab.json",
+      "size_sha256_and_public_identity_match": true,
+      "public_identity_type": "git_blob_sha1"
+    }
+  ],
+  "processor_geometry_matches_config": true,
+  "visual_token_ids_match_tokenizer": true,
+  "standalone_and_embedded_templates_byte_equal": true,
+  "weight_index_references_exact_expected_18_shards": true,
+  "weight_shard_download_or_content_validation_performed": false,
+  "processor_loaded_or_model_inference_performed": false,
+  "result": "pass_public_metadata_only"
+}

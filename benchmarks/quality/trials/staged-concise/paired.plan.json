@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "status": "prepared_not_launched",
+  "phase": "paired",
+  "input_count": 6,
+  "mode": "single",
+  "api_requests_made": 0,
+  "model_requests_made": 0,
+  "paired_trial": {
+    "trial_id": "staged-concise",
+    "profile_label": "staged-concise",
+    "content_reused_declared": true,
+    "primary_slo_evidence_eligible": false,
+    "comparison_scope": "exploratory paired proposed-train contents; original burst and sequential trial have different load conditions",
+    "reference_artifact": "benchmarks/performance/gpu-observed-summary.json",
+    "reference_artifact_sha256": "2a4b2489e072bdc52380cfbc7619b781977b0132456cc9f3c99a6752a1de6743"
+  }
+}

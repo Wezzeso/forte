@@ -1,0 +1,32 @@
+{
+  "checks": [
+    "failure-inclusive denominators",
+    "deadline failures and unknown timing",
+    "one-to-one optimal event matching",
+    "duplicate/group/scenario/derived-window leakage",
+    "human review and grounding gates",
+    "configuration comparability",
+    "synthetic checkpoint-selection rejection",
+    "aggregate-only stdout",
+    "provided-label exploration rejects heldout/duplicate inputs and preserves failed denominator",
+    "strict100%-observedcriteria/<10000ms all-attempt acceptance with failures retained",
+    "source-frame anchor error and actualVFRspacing separated from millisecond display rounding",
+    "independent-provided binary weaktrack without manualeventGT, strong role/source/prediction/model/threshold/selection bindings",
+    "coarse validation anchor rolepins/rawsourcePTS and failureinclusive approximate bandhit; no eventF1/onset/type/legal/100ms inference"
+  ],
+  "coarse_anchor_synthetic_checks_passed": 12,
+  "coarse_report_schema_validation": "PASS_synthetic_report",
+  "command": "python -m unittest discover -s tests -p test_evaluation.py -v",
+  "failed": 0,
+  "local_date": "2026-10-17",
+  "passed": 66,
+  "python_version": "3.14.0",
+  "real_model_quality": "UNMEASURED",
+  "schema_version": "forte.vision_harness_checks.v1",
+  "strict_report_schema_validation": "PASS_unmeasured_and_synthetic_reports",
+  "strict_target_synthetic_checks_passed": 14,
+  "test_scope": "synthetic_software_only",
+  "timezone": "Asia/Qyzylorda",
+  "weak_operational_synthetic_checks_passed": 17,
+  "weak_report_schema_validation": "PASS_synthetic_report"
+}

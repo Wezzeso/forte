@@ -1,0 +1,54 @@
+{
+  "api_admission_paused": true,
+  "api_current_image": "sha256:5f635274bd9dd7d8ca0bde5a430332607972031c976b11ec91c63ab1d22277cf",
+  "application_service_modified": false,
+  "bind_output_files": [
+    "selected.paused.override.json",
+    "selected.open.override.json",
+    "commands.prepared.json",
+    "selection.pinned.json"
+  ],
+  "bind_required_args": [
+    "--snapshot",
+    "--selection",
+    "--selection-sha256",
+    "--output"
+  ],
+  "captured_at_utc": "2026-10-17T16:22:21.489097+00:00",
+  "env_snapshot_private_mode": "0600",
+  "future_command_phases": [
+    "recreate API5f with selected provider but admission paused",
+    "recreate exact selected CPU worker, never start stale64f",
+    "root functional/acceptance checks",
+    "recreate API5f admission open only after root gates"
+  ],
+  "future_source_freeze_pending": true,
+  "generated_test_count": 7,
+  "generated_test_log_sha256": "8587728b6ef697b5532477db96860eb9c36e7795134f764970e7211fbf653d5d",
+  "generated_tests_passed": true,
+  "model_or_gpu_operation_performed": false,
+  "ops_root": "/home/ubuntu/forte-cpu-cutover-ops-20261017T161453Z",
+  "prepare_helper": "/home/ubuntu/forte-cpu-cutover-ops-20261017T161453Z/prepare_cutover.py",
+  "prepare_helper_sha256": "e1fc35ee7aab39a01461c2c1c090403558c2a268c5c81e958f2b7585abdea9ca",
+  "private_fit_artifacts_read": false,
+  "rollback_scope": "Close admission, stop worker, return API5f to captured maintenance settings; model/GPU/DB/results/reviews remain untouched.",
+  "root_actual_selection_required": [
+    "mode baseline or trained_candidate",
+    "actual selected model container/image/private alias/base URL/served model name",
+    "actual CPU worker image/buildproof/source archive",
+    "actual model-serving source archive and bound trained runtime config when candidate",
+    "raw-hash-pinned A09 audited runtime descriptor",
+    "pinned root selection, quality comparison, runtime validation, backup receipts",
+    "exact shared frozen worker profile from requirements schema"
+  ],
+  "schema_version": "forte.cpu-cutover-preparation.v1",
+  "selected_runtime_provided": false,
+  "selection_requirements": "/home/ubuntu/forte-cpu-cutover-ops-20261017T161453Z/selection.requirements.json",
+  "selection_requirements_sha256": "ff9f259996d4fdae32c03f60f8dcfd7eecc7bbbe1fff5e41905d1f78c658a09f",
+  "snapshot": "/home/ubuntu/forte-cpu-cutover-ops-20261017T161453Z/before/snapshot.json",
+  "snapshot_sha256": "a7db3c7208b487e80bc4442e3a5e283ad717ea479cdaaeccd513bc12f9a1c89a",
+  "source_archive_or_image_modified": false,
+  "status": "PREPARED_AWAITING_ACTUAL_ROOT_SELECTION",
+  "worker_current_image": "sha256:64f56ae74e2c5824dbd20cac9a1540738d3467c0b57a0362ddfac0dd70ec39cc",
+  "worker_current_state": "exited"
+}

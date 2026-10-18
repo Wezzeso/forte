@@ -1,0 +1,7 @@
+{
+  "captured_at_utc": "2026-10-17T17:48:59.586169+00:00",
+  "sources": {
+    "evaluation/private/quality_arm_controller.py": "2d330a22e545b1f64408e1266afb9fc2b4ca0c2f4f508b1c4bf97a799d6fb107",
+    "evaluation/private/test_quality_arm_controller.py": "27078b1a14ef6af87e91311f10c3d7f6608d189b501cab2fe0c1aebaefcd2fa7"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "forte.qwen38.independent-ops-v3-qa.v1",
+  "captured_at_utc": "2026-10-17T16:30:56.266647+00:00",
+  "status": "passed",
+  "tests_passed": 32,
+  "failures": 0,
+  "skips": 0,
+  "elapsed_seconds": 2.22,
+  "source_hashes_before": {
+    "deploy/qwen38_startup_ops.py": "c48d9756978a577cbd788b9d40248fa961b9b86f718ab396f4694a294e07a543",
+    "deploy/qwen38_full19_generated_gate.py": "cca69c25f3762e4f64118bf661bca9dcf5d4985b9530008ba39eabb06d4f80c0",
+    "qa/integration/qwen38_startup_ops_test.py": "4cfd1d224d1c33bc93a8223d842186c2d383328ca05da7c8ab5277cf92b71f50",
+    "qa/integration/qwen38_full19_ops_test.py": "9ea359562b10666c4181a8eb55022061573c109320d389db261dda6835d58d72"
+  },
+  "source_hashes_after": {
+    "deploy/qwen38_startup_ops.py": "c48d9756978a577cbd788b9d40248fa961b9b86f718ab396f4694a294e07a543",
+    "deploy/qwen38_full19_generated_gate.py": "cca69c25f3762e4f64118bf661bca9dcf5d4985b9530008ba39eabb06d4f80c0",
+    "qa/integration/qwen38_startup_ops_test.py": "4cfd1d224d1c33bc93a8223d842186c2d383328ca05da7c8ab5277cf92b71f50",
+    "qa/integration/qwen38_full19_ops_test.py": "9ea359562b10666c4181a8eb55022061573c109320d389db261dda6835d58d72"
+  },
+  "changed_during_run": [],
+  "test_log_sha256": "9b2ee450301eeaaa02f5e34c40ddc9b10857e58f1a88cf70d1791ea8f4aed1e6",
+  "test_xml_sha256": "b2fee8a0ce1af0732ca80f1a058540c3dee770a1c80c33433a6518ba556ec3c1",
+  "retained_prior_failure": {
+    "log": "qa/integration/qwen38_ops_v3_final.log",
+    "sha256": "505457647d0a31d9dfa930c87ccb1e89ea9b6cee60501c6998eac293eb21a96a",
+    "passed": 30,
+    "failed": 2,
+    "cause": "Two new QA trained-branch fixtures incorrectly called the strict untuned fixture factory; corrected QA fixture only. Product source unchanged."
+  },
+  "scope": {
+    "docker": "mocked; no daemon used",
+    "http": "in-memory httpx.MockTransport only",
+    "model": "none; generated fixture output only",
+    "gpu": false,
+    "private_inputs": false,
+    "posix_detach": "static review only on Windows host",
+    "actual_chosen_image_prepare": "Required separately with exact image/mounts/interpreter before any real POST. Passing local mocks do not satisfy this gate."
+  },
+  "verified_boundaries": [
+    "trained exact fifteen identity fields equal production expected-identity helper",
+    "untuned and trained own readiness state paths",
+    "private cache subdirectories mode0700 before model start",
+    "failure stop without retry",
+    "trained and untuned one-POST generated full19 schema/media/provider/parser/semantic path",
+    "explicit profile success without patching shared profile digest function",
+    "malformed or wrong profile blocks before HTTP",
+    "trained unloaded adapter blocks before POST",
+    "exclusive replay prevention and no failed POST retry",
+    "safe log filtering and public port spelling guards"
+  ],
+  "prior_v2_receipts_preserved": [
+    "qa/integration/qwen38_startup_ops_cpu.json",
+    "qa/integration/qwen38_full19_ops_cpu.json"
+  ]
+}

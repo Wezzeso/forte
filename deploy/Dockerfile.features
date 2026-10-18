@@ -1,0 +1,25 @@
+# syntax=docker/dockerfile:1.7
+# Isolated feature/head runtime. The verified CUDA base is already cached on the
+# authorized host. Building this image never changes the live model container.
+FROM vllm/vllm-openai:v0.31.0-cu129@sha256:ff29e51a9457f191deb332b96fa6440584fa941aa2a548449b604e2b1e5e1eeb
+USER root
+WORKDIR /app
+RUN uv pip uninstall --system torchcodec \
+    && UV_PYTHON_DOWNLOADS=never uv venv --python /usr/bin/python3 --system-site-packages /opt/forte-features
+COPY deploy/requirements-features.lock /opt/forte-locks/features.lock
+COPY training/requirements-addons.lock /opt/forte-locks/training.lock
+# The base's UV_OVERRIDE injects an unhashed NCCL requirement. Clear that input
+# only for these explicit --no-deps additions; inherited NCCL/Torch stay intact.
+RUN env -u UV_OVERRIDE uv pip install --python /opt/forte-features/bin/python --no-deps \
+    --only-binary :all: --require-hashes \
+    -r /opt/forte-locks/features.lock -r /opt/forte-locks/training.lock
+COPY deploy/feature_runtime_check.py /opt/forte-locks/check.py
+COPY deploy/feature-runtime-lock.json /opt/forte-locks/runtime.json
+ENV PATH="/opt/forte-features/bin:${PATH}" \
+    PYTHONPATH=/app:/app/src \
+    HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_TELEMETRY=1 \
+    WANDB_DISABLED=true TOKENIZERS_PARALLELISM=false CUBLAS_WORKSPACE_CONFIG=:4096:8
+# Package metadata only: no model files, private media, or CUDA calls in build.
+RUN python /opt/forte-locks/check.py --lock /opt/forte-locks/runtime.json --require-av --training
+ENTRYPOINT ["python"]
+CMD ["/opt/forte-locks/check.py", "--lock", "/opt/forte-locks/runtime.json", "--require-av", "--training"]

@@ -1,0 +1,3206 @@
+{
+  "base_profile_sha256": "436ebad34ec35caf6b38df6590c3894fad13b91a207d8afabe14835962c18a41",
+  "base_weight_manifest_sha256": "11c0e92dfe4fe6cd9b534417e90a329ce5c2617397be02a5080c41adb43699df",
+  "data": {
+    "consensus": "two_affirmative_phrasings_direct_agreement",
+    "continuous_visibility_proven": false,
+    "diagnostic_only": true,
+    "model": "q30test",
+    "results": [
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 13.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 13.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 14.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "yes",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 14.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "unclear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          }
+        ],
+        "end": 14.466666666666667,
+        "frame_times": [
+          11.6,
+          12.0,
+          12.4,
+          12.8,
+          13.2,
+          13.6,
+          14.0,
+          14.4
+        ],
+        "name": "X-1",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "yes",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "too_small",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "yes",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 11.466666666666667,
+        "status": "done"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 6.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 6.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 7.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 7.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 8.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 8.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 8.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 9.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          }
+        ],
+        "end": 9.283333333333333,
+        "frame_times": [
+          6.4,
+          6.8,
+          7.2,
+          7.6,
+          8.0,
+          8.4,
+          8.8,
+          9.2
+        ],
+        "name": "X-10",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 6.283333333333333,
+        "status": "done"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-11",
+        "status": "failed"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 19.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 20.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 20.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 21.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 21.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 21.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 22.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 22.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          }
+        ],
+        "end": 22.65,
+        "frame_times": [
+          19.8,
+          20.2,
+          20.6,
+          21.0,
+          21.4,
+          21.8,
+          22.2,
+          22.6
+        ],
+        "name": "X-12",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 19.65,
+        "status": "done"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 31.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 31.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 32.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 32.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 32.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 33.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 33.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 34.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          }
+        ],
+        "end": 34.15,
+        "frame_times": [
+          31.2,
+          31.6,
+          32.0,
+          32.4,
+          32.8,
+          33.2,
+          33.6,
+          34.0
+        ],
+        "name": "X-13",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 31.15,
+        "status": "done"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 69.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 70.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 70.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 71.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 71.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 71.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 72.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 72.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "too_small",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          }
+        ],
+        "end": 72.76651041666666,
+        "frame_times": [
+          69.8,
+          70.2,
+          70.6,
+          71.0,
+          71.4,
+          71.8,
+          72.2,
+          72.6
+        ],
+        "name": "X-14",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "too_small",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 69.76651041666666,
+        "status": "done"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 9.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 9.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 9.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 10.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 10.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "absent"
+            }
+          }
+        ],
+        "end": 11.933333333333334,
+        "frame_times": [
+          9.0,
+          9.4,
+          9.8,
+          10.2,
+          10.6,
+          11.0,
+          11.4,
+          11.8
+        ],
+        "name": "X-15",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "absent",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 8.933333333333334,
+        "status": "done"
+      },
+      {
+        "consensus": [
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 10.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 10.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 10.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.2,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 11.6,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.0,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.4,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          },
+          {
+            "action_disagreements": {
+              "banknote_to_detector": false,
+              "card_to_cashier": false,
+              "cash_accepted": false,
+              "cash_recount": false,
+              "cash_stored": false
+            },
+            "actions": {
+              "banknote_to_detector": "no",
+              "card_to_cashier": "no",
+              "cash_accepted": "no",
+              "cash_recount": "no",
+              "cash_stored": "no"
+            },
+            "t": 12.8,
+            "visibility": {
+              "cashier_hands_visibility": "clear",
+              "counting_machine_visibility": "clear",
+              "desk_visibility": "clear",
+              "detector_visibility": "clear",
+              "visitor_hands_visibility": "clear"
+            }
+          }
+        ],
+        "end": 12.866510416666667,
+        "frame_times": [
+          10.0,
+          10.4,
+          10.8,
+          11.2,
+          11.6,
+          12.0,
+          12.4,
+          12.8
+        ],
+        "name": "X-16",
+        "paired_answers": [
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          },
+          {
+            "frames": [
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 0,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 1,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 2,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 3,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 4,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 5,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 6,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              },
+              {
+                "aa": "no",
+                "ad": "no",
+                "ai": "no",
+                "ar": "no",
+                "as": "no",
+                "d": "clear",
+                "h": "clear",
+                "i": 7,
+                "m": "clear",
+                "v": "clear",
+                "z": "clear"
+              }
+            ]
+          }
+        ],
+        "start": 9.866510416666667,
+        "status": "done"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-17",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-18",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-19",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-2",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-20",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-21",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-22",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-23",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-24",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-25",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-26",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-27",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-28",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-29",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-3",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-30",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-31",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-32",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-33",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-34",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-35",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-37",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-38",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-39",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-4",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-40",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-43",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-44",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-45",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-46",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-5",
+        "status": "failed"
+      },
+      {
+        "error_class": "OtherError",
+        "name": "X-8",
+        "status": "failed"
+      }
+    ],
+    "schema": "forte.procedure-visible-protocol-smoke.v2",
+    "selection": "uniform_midpoint_3s_all40_8frames",
+    "summary": {
+      "attempted_calls": 14,
+      "calls": 14,
+      "completion_tokens": 7566,
+      "done": 7,
+      "failed": 33,
+      "prompt_tokens": 75905,
+      "videos": 40,
+      "wall_s": 14.34
+    },
+    "transaction_coverage_claim": false,
+    "type_enablement_qualified": false
+  },
+  "diagnostic_only": true,
+  "evaluation_image_id": "sha256:6d2aa5099743fc398d31a9b563f58597ee4c146d05176c4772c40b139bc99115",
+  "frozen_source_manifest_sha256": "a4f2a7ee48d7ebfc406c7a3186e109826c3ea29635e3efb12414c8a55706dace",
+  "instance_id": "xw5720fii",
+  "internal_network_id": "165d6cd393930412ab1dae86f64334867873cf0083c2a92697396f25571c87d4",
+  "labels_used": false,
+  "model_container_id": "c3d88839b45f8a854e0121cc247b15d3246f10d799d3b5aea85ecf564c213515",
+  "model_source_profile_unchanged": true,
+  "original_tool_sha256": "5a99f5e6f45964a377f8c92aa68cee47e645f54076d38de3d9d0d146107eaacc",
+  "phase": "complete",
+  "request_model": "q30test",
+  "schema": "forte.procedure-protocol-v2-host.v1",
+  "served_adapter_not_requested": true,
+  "source_sha256": "ae27a0577899df0bea10e977dedb3d6291cf5791d25594a75c966b51001dac64",
+  "status": "done",
+  "tool_sha256": "4d43b99c040c413cb9abd1aa66d92a3f4987d37ee5ae01f621cd9702c061bcb4",
+  "transaction_coverage_claim": false,
+  "type_enablement_qualified": false,
+  "wall_s": 15.881
+}

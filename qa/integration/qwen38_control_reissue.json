@@ -1,0 +1,59 @@
+{
+  "schema_version": "forte.qwen38.independent-one-control-reissue-qa.v1",
+  "captured_at_utc": "2026-10-17T17:08:43.143237+00:00",
+  "status": "passed",
+  "tests_passed": 86,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "elapsed_seconds": 3.49,
+  "test_paths": [
+    "qa/integration/qwen38_control_reissue_test.py",
+    "qa/system/test_qwen38_accuracy_reissue.py",
+    "qa/system/test_qwen38_accuracy_diagnostic.py",
+    "evaluation/private/test_accuracy_diagnostic_runner.py",
+    "evaluation/private/test_quality_arm_controller.py::ControllerTests::test_control_reissue_claim_is_single_use_across_new_plan_or_authority_hashes"
+  ],
+  "source_hashes_before": {
+    "benchmarks/performance/qwen38_accuracy_diagnostic.py": "ed5baa5b09dce8e72c45fe4c73140daf3acdaef5db7291a762e150fa2659b8b0",
+    "benchmarks/performance/qwen38_accuracy_reissue.py": "6def3323a82bcdd40c264a52fc66d398a7ce089b5c71bab05311eea86a8538de",
+    "evaluation/private/accuracy_diagnostic_runner.py": "3652322366a3a6c756cefa703c6f35eb90c566302de93f8ff1a8518be1368279",
+    "evaluation/private/accuracy_diagnostic_controller.py": "ce6a7a3fed83f75d7df8564f4b70d5098e78dda2479af5423cda2a2d5c0b55ad",
+    "evaluation/private/quality_arm_controller.py": "bb7c02e6946ad948ebf594fbfacce48142fdb795a868450e9d7c6a0099829d12",
+    "qa/integration/qwen38_control_reissue_test.py": "5f832b80de7ae490d411742149e97c50d8caf5f562218e9ac9407dcb350dd06f",
+    "qa/system/test_qwen38_accuracy_reissue.py": "8f53f6f9521b1ab5c15004a09fadb3708c38cb08db3fd3a0082264097e809231",
+    "qa/system/test_qwen38_accuracy_diagnostic.py": "df25cddc9bbbdca1b3cb2bafe32a17fa4574e88ee5cc4fcceeab496c7c311cb8",
+    "evaluation/private/test_accuracy_diagnostic_runner.py": "08fbcfa4a7d474a8a4091a6750a561f4f785d59aae4224f21b1d034b42edbd65",
+    "evaluation/private/test_quality_arm_controller.py": "bc55375e1ac3d3d2e4042907da434ed72d89062310e4d5187a8ae1b5c3bae2a2"
+  },
+  "source_hashes_after": {
+    "benchmarks/performance/qwen38_accuracy_diagnostic.py": "ed5baa5b09dce8e72c45fe4c73140daf3acdaef5db7291a762e150fa2659b8b0",
+    "benchmarks/performance/qwen38_accuracy_reissue.py": "6def3323a82bcdd40c264a52fc66d398a7ce089b5c71bab05311eea86a8538de",
+    "evaluation/private/accuracy_diagnostic_runner.py": "3652322366a3a6c756cefa703c6f35eb90c566302de93f8ff1a8518be1368279",
+    "evaluation/private/accuracy_diagnostic_controller.py": "ce6a7a3fed83f75d7df8564f4b70d5098e78dda2479af5423cda2a2d5c0b55ad",
+    "evaluation/private/quality_arm_controller.py": "bb7c02e6946ad948ebf594fbfacce48142fdb795a868450e9d7c6a0099829d12",
+    "qa/integration/qwen38_control_reissue_test.py": "5f832b80de7ae490d411742149e97c50d8caf5f562218e9ac9407dcb350dd06f",
+    "qa/system/test_qwen38_accuracy_reissue.py": "8f53f6f9521b1ab5c15004a09fadb3708c38cb08db3fd3a0082264097e809231",
+    "qa/system/test_qwen38_accuracy_diagnostic.py": "df25cddc9bbbdca1b3cb2bafe32a17fa4574e88ee5cc4fcceeab496c7c311cb8",
+    "evaluation/private/test_accuracy_diagnostic_runner.py": "08fbcfa4a7d474a8a4091a6750a561f4f785d59aae4224f21b1d034b42edbd65",
+    "evaluation/private/test_quality_arm_controller.py": "bc55375e1ac3d3d2e4042907da434ed72d89062310e4d5187a8ae1b5c3bae2a2"
+  },
+  "changed_during_run": [],
+  "scope": "Generated unit evidence only; sys.version_info patched to3.12 only in fixture construction. This is not actual EAD3.12 metadata generation/AST proof or actual failed-control evidence verification. No GPU/model/HTTP/Docker/private population/release/exposure call. Only generated claim test selected from controller suite.",
+  "verified_boundaries": [
+    "six original control artifacts raw_utf8/rawSHA/parsed semantic joined",
+    "only exact pre-pipeline AST-proof failure with six source terminals and zero model/source-pipeline calls",
+    "old24 slots spent settled without refund",
+    "fresh explicit root authorization and exact reissue release required",
+    "only operational control2; prior control1; no third attempt",
+    "new control2 source/model IDs and retainedpilot/remaining namespace joins",
+    "persistent exclusive claim keyed by ORIGINAL prior-plan SHA rejects secondplan or authorityhash",
+    "232 total reserved slots disclosed versus208 maximum actual modelPOSTs with proven old0",
+    "numeric counters require integers, booleans cannot stand in for0/1",
+    "source/model execution or successful publication forbids operational reissue",
+    "source/runtime/profile/protocol immutable; only independently revalidated Python AST receipt metadata may change"
+  ],
+  "initial_qa_wrapper_error_log_sha256": "7d0eb0435fb4c32e75fa2f004095d41e9b97fddc0caba972485d900017e9afca",
+  "test_log_sha256": "7c109f372c77f43567587396e17e4a5d3796cf583f83b768432aa363e944d2ce",
+  "test_xml_sha256": "cb20d48c8d1ae2a93c1f162f146642754c8bcd4d0481bef23b62eccd36cab2a7"
+}

@@ -1,0 +1,109 @@
+{
+  "claim_scope": "exploratory_reused_six_provided_binary_labels_sequential_directBrev_only",
+  "completion": {
+    "completed": 5,
+    "deadline_completion_rate": 0.8333333333333334,
+    "deadline_sec": 300,
+    "failed_or_unprocessed": 1,
+    "failure_counts": {
+      "failed": 1
+    },
+    "late_completed": 0,
+    "missing_terminal": 0,
+    "on_time_completed": 5,
+    "rate": 0.8333333333333334,
+    "required": 6,
+    "timing_unknown": 0
+  },
+  "end_to_end_10s_diagnostic": {
+    "all_attempt_rate": 0.0,
+    "comparison": "strictly_less_than",
+    "completed_with_valid_full_result_timing": 5,
+    "failed_or_not_under_target_or_unknown": 6,
+    "observed_under_10000_ms": 0,
+    "primary_SLO_claim_permitted": false,
+    "required_attempts": 6,
+    "upload_start_to_full_result_ms": {
+      "count": 5,
+      "max": 149597.0322,
+      "mean": 51691.38419999999,
+      "p50": 26484.8922,
+      "p95": 149597.0322
+    }
+  },
+  "event_timestamps": "UNREVIEWED_NOT_EVALUATED",
+  "evidence_support": "UNREVIEWED_NOT_EVALUATED",
+  "heldout_accuracy_claim": false,
+  "human_reviewed_ground_truth": false,
+  "labels": {
+    "conflicting_contents": 0,
+    "missing_or_conflicting": 0,
+    "negative": 3,
+    "positive": 3,
+    "private_visual_annotations_used": false,
+    "provenance": "organizer_workbook_via_A02_local_workbook_rows",
+    "provided_binary_labeled_contents": 6,
+    "timestamp_labels_used": false
+  },
+  "legal_grounding": "UNREVIEWED_NOT_EVALUATED",
+  "limitations": [
+    "Six duration-selected proposed-train contents are exploratory development diagnostics, not heldout or final-check accuracy.",
+    "Organizer-provided binary labels have not been independently reviewed here; no private action descriptions or event timestamps are evaluated.",
+    "Terminal public-contract validation establishes payload shape, not event truth or evidence support.",
+    "Failures remain separate from clean negatives; cutoff counts also exclude late and unknown-timing results.",
+    "This offline aggregation makes no model call, split-lock claim, training authorization or adapter-selection decision.",
+    "This reused-content sequential direct-Brev trial is ineligible for primary SLO or heldout-accuracy claims; its load/transport differs from the original burst."
+  ],
+  "paired_artifact_binding": {
+    "deployed_profile_sha256": "515f718be6434511e1d01678b419e2c6c221fe7ec516a813463da569fde493df",
+    "expected_attempts_file_sha256": "ec5be599a2e15b325cc715f34c1270f5c21797f2db5f13a2c5ff810aa2bd68bb",
+    "private_snapshots_retained": true,
+    "same_six_sample_and_attempt_ids_verified": true,
+    "terminal_records_file_sha256": "cf9e115e8555ca2cfbe3a8071cf8fc04b26fc99d619c21e58edb4be0d1e30b0d"
+  },
+  "schema_version": "forte.provided_label_exploration.v1",
+  "selection_input_sha256": "f84dae29acf1ab535f1eb82a7cec0ef7841f747b75c2dad28619ca3ee89c8ca6",
+  "selection_scope": {
+    "baseline_single_count": 1,
+    "burst_count": 5,
+    "distinct_contents": 6,
+    "final_check_evaluated": false,
+    "final_check_media_or_predictions_accessed": false,
+    "proposed_split": "train",
+    "split_lock_claimed": false,
+    "training_authorized_by_this_report": false
+  },
+  "trial_conditions": {
+    "heldout_accuracy_eligible": false,
+    "human_reviewed_accuracy_eligible": false,
+    "load": "six_sequential_requests",
+    "original_selection_was_proposed_train": true,
+    "primary_SLO_eligible": false,
+    "reused_contents": true,
+    "transport": "direct_Brev_development_tunnel"
+  },
+  "whole_video_against_provided_labels": {
+    "all_provided_label_denominator": 6,
+    "completed_labeled_denominator": 5,
+    "effective_correct_rate_including_failures": 0.5,
+    "effective_positive_recall_including_failures": 0.0,
+    "fn": 2,
+    "fp": 0,
+    "tn": 3,
+    "tp": 0,
+    "unprocessed_negative": 0,
+    "unprocessed_positive": 1
+  },
+  "whole_video_within_deadline_against_provided_labels": {
+    "all_provided_label_denominator": 6,
+    "completed_labeled_denominator": 5,
+    "effective_correct_rate_including_failures": 0.5,
+    "effective_positive_recall_including_failures": 0.0,
+    "fn": 2,
+    "fp": 0,
+    "tn": 3,
+    "tp": 0,
+    "unprocessed_negative": 0,
+    "unprocessed_positive": 1
+  }
+}

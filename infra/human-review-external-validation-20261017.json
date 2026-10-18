@@ -1,0 +1,16 @@
+{
+  "approved_preflight_204": true,
+  "authenticated_nonexistent_review_get_404": true,
+  "authenticated_review_cors_exact": true,
+  "forbidden_origin_403_without_cors": true,
+  "frontend_js_sha256": "125db992d7efacb7e27214f8a7e36574c8b4a7a86e1e7562f743b27d1c1bc2ea",
+  "human_review_frontend_asset_matches": true,
+  "missing_key_401": true,
+  "model_inference_calls": false,
+  "passed": true,
+  "private_contents_included": false,
+  "review_mutations": false,
+  "runtime_api_origin_and_no_store": true,
+  "schema_version": "forte.human-review-external-validation.v1",
+  "strict_readiness_200_all_components_true": true
+}

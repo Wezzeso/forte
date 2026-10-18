@@ -1,0 +1,41 @@
+{
+  "schema_version": "forte.a20-automated-experiment-pin.v1",
+  "status": "metadata_pins_verified_serialized_W1_compute_released",
+  "role_unique_content_counts": {
+    "train": 28,
+    "validation": 6,
+    "final_check": 6
+  },
+  "source_record_count": 42,
+  "unique_content_count": 40,
+  "assignment_pin": "206b779487a100ae51ed0502fcd91713db82914b1a8b74536d6918826c1c532c",
+  "base_config_pin": "f3da125a472425f937468c607790334fb5e8d4c66c357c70641e3e676871fafa",
+  "private_receipt_sha256": "675781eefd7ca17cceff0d4991026e4f00f02e3db983e74c102a00bf17bfe325",
+  "human_reviewed": false,
+  "machine_experiment_authorized": true,
+  "manual_annotation_required_for_machine_experiment": false,
+  "execution_gates": {
+    "train": {
+      "returncode": 0,
+      "ok": true,
+      "errors": {}
+    },
+    "validation": {
+      "returncode": 0,
+      "ok": true,
+      "errors": {}
+    }
+  },
+  "exposure_gate_must_be_rechecked_immediately_before_training": true,
+  "compute_released": true,
+  "private_records_exported": false,
+  "media_or_model_accessed": false,
+  "compute_release_reference": "root_explicit_W1_machine_experiment_current_rental_serialized_20261017",
+  "gpu_owner_sequence": [
+    "A07 encoder transfer",
+    "A15 synthetic CUDA and feature validation",
+    "A09 optimizer/checkpoint/validation"
+  ],
+  "default_service_switch_authorized": false,
+  "actual_training_executed": false
+}

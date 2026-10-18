@@ -1,0 +1,1826 @@
+{
+  "schema": "forte.qwen30-adapter-export.v1",
+  "generated_at_utc": "2026-10-18T05:39:40.119379+00:00",
+  "status": "validated",
+  "base": {
+    "repo": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "revision": "9c4b90e1e4ba969fd3b5378b57d966d725f1b86c",
+    "config_sha256": "6129b3f54d517a18553cf7525ff4886be6831c5806fc094d632b8ef38d859912",
+    "index_sha256": "4fa496bd4b4aace60623070379297c7c0c78b5aa4924b39e1174a0e9e1aeae5e",
+    "weights": {
+      "model-00001-of-00013.safetensors": "6b205ea6332a532e5b97fd6281ac700f125a1a5f9a3457a22b797edfd35a5f67",
+      "model-00002-of-00013.safetensors": "a739a546e00643e0555bbb6bcd57fa5ba60fb2de24177c8819d2f899f02c2223",
+      "model-00003-of-00013.safetensors": "c57ec0f3fd06cae62980851f2661bd2b5e9dcdff37b8f9ece0cf44dea645efc3",
+      "model-00004-of-00013.safetensors": "46b07bc82396976dc62f86bccb51c3c585a616b36b8ad8eef700bde75fedf88b",
+      "model-00005-of-00013.safetensors": "3fa2fdf4b835d885efcaf0e4f6c7c00905cbaad7e293af988a0cf5408c3078c8",
+      "model-00006-of-00013.safetensors": "89a762b82ff9db9351cd38794ecd1ee170bbe87d7fa56110ca837c088158ccfb",
+      "model-00007-of-00013.safetensors": "634e437c0a038d8f447fceb44fb4f5230600af6a71d0fbe112711d9e84d6f07a",
+      "model-00008-of-00013.safetensors": "4c6f316b27536bd914a6ea09c03ec1b80a9a8d55e3478b1bd5a307f8de8d7fbd",
+      "model-00009-of-00013.safetensors": "e2e2a338c724ad75aea2b64211472c1037945fab398a879116cbbbc3112391da",
+      "model-00010-of-00013.safetensors": "adca9184b757627840f7fce81e8e4e1203c7551fa2c1bdb469503dc7dfab0583",
+      "model-00011-of-00013.safetensors": "71b3d1ff9ddc9358de332aa52b92fc001565edfcfd61f9e3679f96f85c7cbc22",
+      "model-00012-of-00013.safetensors": "f4b204bedb467a2cea642dc38d30c2cdd29e48fbd2d7d5ee5cc14ba4b786ef6f",
+      "model-00013-of-00013.safetensors": "e167e2806d63c404660b6d609a7eaef2e82bca478688ba6f83155128d8187539"
+    },
+    "weight_manifest_sha256": "11c0e92dfe4fe6cd9b534417e90a329ce5c2617397be02a5080c41adb43699df",
+    "weight_bytes": 62141618016,
+    "weight_hashes_rechecked": true,
+    "source_chain": "pinned_HF_revision_upstream_LFS_receipt_and_local_download_metadata",
+    "download_receipt_sha256": "3acf0cf66845b04623ebcea2bef63d12d693305df62a822865bac9fe6aa78348"
+  },
+  "adapter": {
+    "config_sha256": "f313befbf5f20ea9b82b84ee85e7765fce27965543d8e0733c401cd6c28aa887",
+    "weights_sha256": "557497a4fbfdd59d44149a8860f0b147214625161261d8840274a7b27cc4126e",
+    "tensor_keys_sha256": "576be0f61c6a8666868bdb2f9d8c2e57e1040788e9d78a2019345d3bcab95ada",
+    "tensors_sha256": "1480c8d3c9888590d54f8b7f16356cc9d16e3121f88cfbd928552a5e8f7cfb18",
+    "parameter_count": 3342336,
+    "tensor_count": 192,
+    "target_module_count": 96,
+    "target_declaration_format": "projection_suffixes",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "finite_weights_verified": true,
+    "language_attention_only": true
+  },
+  "adapter_sha256": "ac33f52531b0ac46b1564a0417b6794436708bf1976b494198c3c9cc83d37c27",
+  "tensor_metadata": [
+    {
+      "key": "base_model.model.model.language_model.layers.0.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "b527dfbf4928277598e46cb27adb4696af9e9b09aa99b962fea9c1a1ab85075a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.0.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "570254401a6309628bdbe2c23d7101b589bfcd2f2ccb41a9897938057d35c68c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.0.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "d25a62bc629cfb112b09adbd80a20106b101d183384864fbcd80c26ccd6f0a92"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.0.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "bf47547cc1178b2829b85897483b053c32ad310faf43601de3272958c03b1464"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.1.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "89f8ce14aeb94f5801f7b91ac33696dd90dc9a075cf2dfbd859fbfccc6fbbbbb"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.1.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "4d3a986a679ff174b74fec0c52d473fc701ce3cbb47a62750a85ea234e843b2f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.1.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "53b23c8fbaf28373f073a33602a31c854dbcfae061eb29ebb3238ae261377487"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.1.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "25e40909b1783780307411e1734b60bf5520b00562fb1bd3c88da941faedded8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.10.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "cb2c7e3dcd6152ac5b3066755af23d4e42b6be08ea1c86baa41d1bd8e065d251"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.10.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "85830fad5c2ea63505a931c3be5cb175ea0203869f46bb5af78acf915a0768b4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.10.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "43902defdf4abac5893c6915ea5e82d83f44ff67552ac8dc65210f0447b8171a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.10.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "270fbaacadc79e398fae355093fc31f3023e8ef2932acdf7936cade7d40d398b"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.11.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "f2b5c26d48e8712aec6349c07766a544da1a8984914f979e0d6cede1e5b5d952"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.11.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "1fda04722f057e1037ebae9c0f88ffac485e8847462b62dcd0bd132b8a017e66"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.11.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "6ae7e411f2dbda08391753653ecb5f708a3612b1ee3e9f0f34c0e133457c5b54"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.11.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "d9698f29706d937b9806e163a5096dea542eaab32811b7ad58ad2f8f799d34e2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.12.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "59c63203e37edacee7368a1dd973b642ed342ca41dd8cb45640776fd0df22d28"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.12.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "d4a8f196240c88cf4c5f26898cc00d33852846817252c62c3b9d44da1ba7ea26"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.12.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "2fa5e85a91d64929d92872aafb636824fbaaf2c525f18afdaa70582bb485466e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.12.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "5fa58aa133c85592866815a0df3a15060a6c16aa82d98ba66354cb53345a010a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.13.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "9b6278bfbc74b38f3ccb03f6ea50271c82e683ec89ce54993e0b324f282efca5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.13.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "d67594fbeb8510a26fdf465b02f3cc12504b4ae6138e537f266d3182fd4813d1"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.13.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e1fe66401627f1e773def2470da6cea6d93b95ec4d5d2a4699314fb4b55b7af6"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.13.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "60743954fadec64e6a63037176c70fcfee914cf6c3f8c5abbbb29cf4b7621950"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.14.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "c3013faf47a3303b4f2af8219844532da0c827aca0816b983260f98873f067db"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.14.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "c25c20bddceb62dd9501903d76b0be5806dd6c36765eb409abd9cab3e4c7def0"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.14.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "37e9929a1a6f87d63398fa81951e227ff363ad068a6cdb23c2e6efad7a2fad5d"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.14.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "9241082b5fd2244f034741be4828073760b79989a45359bb4c0f8a5ba8ecc3c4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.15.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "88ae01a7cbb7db9ece938d5cf3438e2818a52a6e5eb9822ab503db20a67101e7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.15.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "6ccea50876cf36e771d82d3575efb8c3ae00c2bbda82c8a258773554f8c00c1e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.15.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "c1ef961acb5e1203e681d841b5f44171a1b74dd53bbc3f72b27890e1ee743a59"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.15.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "7ef46e0d0820cae3465e79319b036aeafc0447e0a53eb272b7d64acbfac851c7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.16.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "55c84fd8c0dacdf0bed23a36a54ec565e524260e2f47bdc409452c7f5340328b"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.16.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "81376b322c9c6109d627da647494fff62154b45e017c7c3030beeea12ffe2d31"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.16.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "30fd1d8526e5fb1b7549826f5badf991c164e5dc194668098571d9dc3471a427"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.16.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "8e704ba524f907d1e1b9dbfe7947866df142b0a3db48273db964a3183cd6c6b4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.17.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "3ba1688bdf2b59cc912887515148c108bbac2c52840e9c00f586d136c1113e05"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.17.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "bb4673d0edd980b92d1cfafeb6fc1ef9ded9dccbc061deedb4dbbeebd043ae32"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.17.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e58d4b86c5f99079ddfddb7767de4849e4e228a34a8eebd0316e38eec312959f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.17.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "400b2ac12c2d7d585e442c1dbe8ec19c0e093c7cf4b90836db476cf9bda919f4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.18.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "b5b0cc9b17bd25bc4fcac3ad2abf5dc811a23e8ef4047245815b00a1a6d68066"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.18.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "f28cd3b9e6dabb511a8dd0f52b7412ecc473965d0f770563e1af126caab4c8d8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.18.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "152cbfd17c577a47e53ea77fc315472b65b635844794d422c7244d6081bb7394"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.18.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "a750db879443149524a1b876b707d340942b1f8c90c22dca6141ec09c4c81680"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.19.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "9c621fc34bb5086a1d7caefcfaf0a2f54c266f9299923815aa7913dade577b25"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.19.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "ff56de7c682a01cc283eb6b7667da5b42f8b54cd28c14ff7f056acfc029e8ca4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.19.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "9d6aa25e20b7413ae78f5c850b88bca363e916569b4b68a1797a00732e33d538"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.19.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "a4fe76bd2a031d75c0d0fd9d946f653faebde4a70a4f57f3354e88b8a0221b17"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.2.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "fb27e3f8761093d0352006e08bf2326b25d757ad7539ce44ed656646b5f6473e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.2.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "0312326d2ad4e760eb3639140eabe4b673a4dda5b2944a14af4b1fb0c5b1e1ba"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.2.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "c4abdef5c97a17e19069c3b7fb262d09c6c9c4623a6f1d2281bd977039a35f9f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.2.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "154ac42438fad022256f9a7bc70058c7f49fd16dc0f1aa5e67ffb38cbb1a0991"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.20.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "97c606dbaf718777453698a9078e308c03ac661d5220681c4f82a574603c8390"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.20.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "62d33442917e7433526bca98555cd229d6046b6f359b44c4444336eda7bd2c76"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.20.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "0848c8daeb98df7d88fec562e2ff5667a2e3196df50fa6a8cde21425d5d5d3ef"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.20.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "07705202e85befe86dd4fe7e078199aed26e904890f564c7cc0d8308d882935c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.21.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "3a535af8f85d056eb7f0ca5fd0678ec592786049daed391cc03bc39f073de688"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.21.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "ce9feaa0c94ddb655b693899ebfd2e0c089b7dd5fa69fd0297cd686f88a4f5aa"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.21.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e2f485f90e3572b5092dc73c5d0288f7ddb70067304a914e2409d459b667ef94"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.21.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "881e866df1ada642bf6c20c52c5f04cd7ab6f12cc90683c61c84fb88e200a0a5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.22.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "a44efb0eb8e4cbd80c41fe755d5c44e35a67aa80001ab37e537362e9083a2e50"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.22.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "0241528d3912d44bffbcc25a7fc8accc2fe39f17807b9c4e14a5cf022e86c428"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.22.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "c3cb56d1390ee9af2ff435dacdfc8403bea2806c47b541dcb395bf88cb757df2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.22.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "28044933c609576e191a1ba8f80930974f4ce134346a519f882d4cd6e22fcc1d"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.23.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "7a2250d475d0ba39590d71267c5dc4e2ab28b73e93f7c3c15f955467d63761ae"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.23.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "bb3bfc430ddbbe4296c8e477def83d003a3960f89f1c130d2c7db71d06c21113"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.23.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "eb79a9b034e92f638bb3898864dc7b5f4e1205b7ffeaed4ac3c3f191d2aa30e0"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.23.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "6b819b20e82ba5686a0c947a63e0a704d7510f51e7232ffb2b10750d66220b76"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.24.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "9c0953e647d48fbbd0329c34cfa6aa8982932bd5eec971e719f9e3abbaaec3f0"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.24.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "2a10418234c34b23a36748546293120c2ece93261e20207a66a087d421bb80d7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.24.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "8210a5647852bd4087f2750b437115fbbd921f18c42f4e76bdddd75dd6728c12"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.24.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "a3f5459376f5c2796fde4f39b748048bd68048a181f2a91bb15d2fb8082b5ea8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.25.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "4faa00f2a1d82ae98ebdb4e4c2dcab3ad618cf6c78346dca4ee511666be12016"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.25.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "619dc9afb17a182ae2196efc653f4aed5a3bad09611624275f09e3b65853e18f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.25.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "a51d7d942541b7eab2e903b05c23708a07f2e41d38bdd31748dc684150ef00c2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.25.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "319063d6275fc64a085a4ae885ffdc4a94f7a73101d71dacf18112f941eed484"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.26.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e07fb3aa44ef23302b9489895c5dcd95a74b45b98cf18c2eebff517f912f3a0f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.26.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "d6ce16723886ff5634703bfd1751d8920bb7c7516794e510e4526cd6377d270f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.26.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "82ad66182f61c456e2d513c0b3df8f7b9efe2e253b56b70b1523ced013198245"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.26.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "5c6c57f9c73a8ff12eda044a18bc275878deb49f62bb96066d9e00aa744bd9f1"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.27.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "b282f55b0676d15e836dde652f154c8d3103df647f791a24851900b7019df287"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.27.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "29b87431d08d7589ad3140da8b41f4dca298acb09e92baa41db196891c77c589"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.27.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "6b5064f0b38ec4dc9c753775175ebc0223b1f64e7b24b508c8aa15ca747cfc04"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.27.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "e307c9b5c87f165875d4fe3717389725d274afffbac5b04f80486e4406ea2b20"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.28.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "74f24d26c187bb6b025da2b6dfce0e0a995bddee9ebb16542be46ec01db9da28"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.28.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "ae2fd82e85aa448a6520fc9703e7d0de7a0b682031fe09b5199802b0ee819c8b"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.28.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "f01e7650ea956796441d61afbe333408396bd1d0c12ca253565749623cc9d95f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.28.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "69ed93217753f54e44ec884aed0e43c7219ae32ac1edf384f171bd3684bb8b5c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.29.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "77ada1ceda358f992bd4e72e2565ef16af66651d132fbfb979cb34174601e466"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.29.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "abf698d06a2be0261c0bd70ba1679cf3da7a93fd75b4a1e83571cc98ea3dcbc7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.29.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "cc18a0bade6f04eefc98178512c172a2e5cd5ee143a0264f1e660dd13b56b2fa"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.29.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "399c4e0ccac61d8eed93ec3ca666fe84f63eed965c4551f65db6d7f5d8ad1055"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.3.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "5381e17026c15e0fcc9a8a5b7350c927ef4afbde15fbaefb726e42e2086fc9c5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.3.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "3470e065cd590a3e2fc8b0cc133101ca91ce5edf49b54418f2d57d6d9f3c25db"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.3.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "13d53910309379bc815466482150cb9bc1ffe410c6a8931ed30a48d10f1e9b06"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.3.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "431c5eaf6da5d4d876c4a00690df9f9e8bbf4b5a1681f7e92dc18b9b7763fcc3"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.30.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "914d5421f52cf49df2a2bda212862d7f8d787c0e35a24248e7bfe42c3e865526"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.30.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "0c7d0e8a8631967d84074221884812d1e92b8dc80e8589e68e37d3e053a1c0c8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.30.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "0fad4db41189e039052708248311458afdd8843eb5839d39bbe12f4e12bcde99"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.30.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "6b9280c6a7936eec38ebbf2d8c5842599fe54596804a79d3ccb92101daa14752"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.31.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "4909667740a67c93e1f51eb570f8d20528b9142aff473c5f59ab23097efc42f2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.31.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "5c96ac531823fb42b440b397cacef2ff3ca456cd71de0a04ddb420da5c31a1db"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.31.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "ba1834bb88c78287bc9bda6056cfab21d71aa83cb4efe1cb0ffc0d5d38f09628"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.31.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "97a8018325c8983606ad854a10c093c91cdcb3cd30cbcae3b3e7d309656f4a0f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.32.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "32a8ac055fd0d3808da7c4869e5b515348519e65e70f686156874725e62329b1"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.32.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "b70dbcb4017c5c2e04d1d6c9f828079800c3679d25251b333e25dfed630ff172"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.32.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "8cfee998874766b2d71e475be9e034d9af9bbedab01c42940b705e9dbff64aea"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.32.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "45577efe9477938c5cb2c3e1382ffef77c7a2b4ecce8aad94c2adbd873e263be"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.33.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "d9fbf218a3287cc167569fc3d5074c47dffbb9998dd5b1955e27805da93b5a43"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.33.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "b017e031fe4b1437cd801894ecdb4d9aec17d79a5695e3f4d04a1755c4190802"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.33.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "b4f25d7118b72bc8bd1bff5bacf20f5c0d54482a3c2dce35a2332c0625c64f28"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.33.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "a7fad4ebb1c7929d89ca5f4933a7573e7b7f0356d24a23dd251d63d3c55d25d7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.34.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "4145ede799e2d50de91c8b738f1ae370115a480f1bbd8831668dfe18830d36ff"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.34.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "591e7cef131687afd2b976262b4e5516b003b8953c0e320f05c9b422475349f7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.34.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "82e9162116322940e703abecb8ca73e8b4d2fec35415ab87f1f76e1306b74973"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.34.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "18c17f63b74153d0cd146bd6081bc7b1260a75c8283cec92c6bd011608c74636"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.35.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "9feded2a69bce8fa980d9bc8e52ac1151a8095c9bcc8e7fe69bd741a03db859f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.35.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "cd7d5bb0a88c6c8764adddb5017153a36e33594b3b4ade72418a828d5f406909"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.35.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "d1d7f1b630cb31355b608e10eda719ede71f8cc294ffaa7507bcc8e352be3c04"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.35.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "9a9b7fc2567fb6e43269065059a90e7a600c85fa6833f33ac9989e82bc1460e1"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.36.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "19c0f29c07233bfa3160aecb5c80482bfe24bbbac93d4a165371ceeea41964db"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.36.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "b8bb13e29b86c7e3fa48949570dbc5636b5acb3d256bafa2e68c3244f207a2ca"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.36.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "a1c5f98c12c5342e8c90f51de3885392c9dfb42e7fd33f53490daadc57c8c2c3"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.36.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "028880aa337907195466f177d3ad4cb4a96c1150c0198d037f0e5e91bd5dca99"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.37.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "5ba42df7b2fcd635193a7920d1411bb308141a1be39d63f03a494fd1789933cd"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.37.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "0d74db554d0adfb7b339c7fcf5f925360d20f2159d8ad539caef4778bc57a415"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.37.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "f6a4903888f8c3d5d3cb49cc676a4d79adfbbfc6f39efee1dfe3a24908b0d92e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.37.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "313f176ac48f897b387bd4c0d9ff9c5866535c9a3c4c4dbc5ae500b58587a602"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.38.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "f69160303109c5051b3f577822f34acccdfd7cf30070127374aff7ac0b1565b2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.38.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "132af811e09ee77e5e3dfd5ea5936a3431d1c2a173da59a6bcc3ea63012c09a2"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.38.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "7803a5b3f514d0f2bcf8e2aa8291d979f4acd78db91c9504d7dafb8b528f3dc5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.38.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "60211eccd820b04d7e78d392038cf84424ea1569ed007cd80f10befac0fe87ac"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.39.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "4c6c2dde8c16569adb366f0dc20ca868e29e65defce9029d622cd8a1dce02741"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.39.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "00526d5d3f1cfcf928791a25b5bdd2117cc4ca3499b5084436418951e0dde9c3"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.39.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e1b9c4a41887b5a3ecf64259b4da2744d9c90e70faa7930131709bcc8094004e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.39.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "08969e6b3f648ba7244cfa6aa027fa089fa7d34627bd7dff6ba771175caae454"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.4.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "b0c130bea82d605660a20c52e063a51cc39dae964c5c99561613204fb5d67da8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.4.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "d78bc956cae439d12e8781b1cddd3fca8db05ee7c0910cdf91c9df6de937098b"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.4.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "eb0ad992a00e967d98515ee374fe578097609f69dbd9c2ea3b611041334c7f32"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.4.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "fa1ff29dd35b42ba47001627d88f1ae6d21fc23448218bf4771d698cbf112bd8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.40.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "cb28bf4053d3dd2a3f10d24157c56abfc454334ac3ce75bb1654140232d3180c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.40.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "f1bb0334418734fa51b1203f6c4b1beafec052798316c69d6782d63add6f9666"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.40.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "164e087319fea667c79754652f58e94a742e101359b88fb8b31f253f4329bd82"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.40.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "0ec63c87e264887dcbc29eddd640e69f58bf7665ee0d3ed772b480930a27b56e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.41.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "0f05ac850189df8874f1226b3beb4f9e6acd0be8142dc2a6a12fa59436515a7b"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.41.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "4727b7c3f19b48ca4631216e64bbb0ce0db93ff268cab84f2cf7043cf148a35e"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.41.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "294af41e85bd0e34dc5d945963c0220b65dbb4fe9a9712003b9ae14e6a250f51"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.41.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "3d7457da15faefe22aa5fabe0205549ef9babd0be4bb540939ff77bbf093a05a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.42.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "058fe44fc90de40936c91bdbb5b04f6a9cc904012a4f6a5bc34319aa23b34a3f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.42.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "2b26e004445c0b1c4fe4a0f6af49f40aa551601afcee9dc73cb8c4c01f1daae8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.42.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "6f9737b7aeb515afec61c8bca10839913d8a6d45d966d4b6ae91c98e8e6b736a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.42.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "13d971f7850015dff3b241e6b1e177ed5dd10bdef542e8a3e5ea84d09f589fc8"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.43.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "de1bf695bf7b16bb76f231682e5b4c70e07fff48ebc036fa8ea9c8ea70283869"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.43.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "b993989297a649ccd9c4d351bbc8636b1c46d8c218e3e3384b1755f24673cc76"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.43.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "dba4abe910833eb6cdc80b2d031b3a90d7aa09278e039d5f5c6eaf25af9c8892"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.43.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "c0f5d940fa806448decb0f1be5d8d14ad353b5c1796d701c26029d236e067da4"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.44.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "e4e1e1b595f32041d860cadf5bf6675ae9592e129eed2cb18779d985481a9765"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.44.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "9990ed13b43affb4d553e11d3da206945eb70fa1b5f239aceafefa2e068c3af7"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.44.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "af046e3c8996bee4677aa199abb24ae0dfe3ce0671583507205b54017ebb6f3c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.44.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "b4d824e0657eb972fba63fd526cf5ce61682f419d5df62761d18db0561e17b54"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.45.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "98af59898f3857fc32b727e63c7e47a3fa38a8a18a397f754337f62c443ef430"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.45.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "c2c5246598021e3eb7dd295f4a15707ebdcf5c5173c51c8eb4f46c3fbf2a16e3"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.45.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "f507962adaadd8d37f535469d708a5c33187005ed078d2c55f66a8f90cde60c9"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.45.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "8f434742d16225f0da51ced856105d88980580e0fb07e71eb2fe9d8d3fabce6c"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.46.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "bcf5f83e8448b71a15981cf2420a6deb9b2386cb76bb05f288a42443e0eaa2f6"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.46.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "6af3dc173bbeb33fd84ee01ff6a8d5d9b4997d658ee1bab59140bae2fb545f89"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.46.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "a92a6c31b54c18b5d61c581a58b1038ae3295a6c0a32ffd84e46136e80b6ad43"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.46.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "1cc1aadfdf153d62675e680a6488c378175c7f10f7c8a83c9cdd5245823d42f5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.47.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "af42ad747b2f19c5e591e1d0f9280ea334eee5c3154f38d5a9d3be3be17caa49"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.47.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "868ee8edc7f0620819e1d35bf8f5917b47bfe6a702cfb8dabef52cd9d8f1b967"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.47.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "dfb24782f5609a80344e1631ad5c25d79e8e3f4b500621702493212201e3a7dd"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.47.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "dbee26754517f1cea188b3b1a712a21e08056589bcc2f85b66707e715ee06e19"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.5.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "8af6ba464326e8750e22bea2c3479086938246b90cde55006367192a4612f372"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.5.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "8e7c7481152ad66b57179ec67103aef37a76e4dda6abf2f13dd343b67288db96"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.5.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "6d293e1091d2192cf480716163a8ac46a5b5fd3670cb0e1dd12dd90643e8d70d"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.5.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "b08696106f2fb0b7f0bc1db9bae7fe928489823ccd090866b50e6ff141cf8970"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.6.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "af7670744a4bba295b13896a65ae00dd44ccbc64fc579b858524a33a99ac8ca5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.6.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "8699e63b07c79e002e934e1d8a4b69ff73a6edb979dbd2a1f73fc7a400ef303f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.6.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "fc8311e39d931b30119705141fe3760ad426526a0fb7081642a6c3a2c0278a5a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.6.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "6da3923d9eaa98d797b76156a3d685a5cfcae330e8adebc17040a72c05baa6b6"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.7.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "955a21cde10c79470e57f88a6a684ce7fe72ce3c35029f434ddde755a7713155"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.7.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "07f3cb6d105b201c1c975f9378d2d4fd1f606b5241e38d487cb2a89f6bb77dd5"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.7.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "23fcd80685441093811ab7a5dbb00ed950b200eb1d4c2cbf46465ac758305c74"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.7.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "4938ef7ca94b0310a76fe1abe433b8482d397541f34a6a7348877c8e31205ca9"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.8.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "309f581f1c2ae54d3bea3a5cec527efcc3dad9af4cbd3026c358722d8b1ae765"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.8.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "a5b64a0be477fc84964875daa571a3b37895021c632997dfc69b3153e7c9b00d"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.8.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "572bded96d1b7bc8d9c7e4ae43275b3499838db4351050380b92ac41dba38fcf"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.8.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "35ba8f717fb118a9a557c7559eb078c9e2f5cfeff10540b97b8ef70cd3d8464f"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.9.self_attn.q_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "dbe04fdaded49eaf082ee1f16429acb3d95aec6f857cda2d975bbe4f59349e94"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.9.self_attn.q_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        4096,
+        8
+      ],
+      "sha256": "456d47552632f76308b2bf9cc9f7a8205d3e44567edd63f493c494f962ef668a"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.9.self_attn.v_proj.lora_A.weight",
+      "dtype": "F32",
+      "shape": [
+        8,
+        2048
+      ],
+      "sha256": "a945e964a9476ab1a3ceef4096f00e85273235954ad4ec20bcb5a9939838a6d3"
+    },
+    {
+      "key": "base_model.model.model.language_model.layers.9.self_attn.v_proj.lora_B.weight",
+      "dtype": "F32",
+      "shape": [
+        512,
+        8
+      ],
+      "sha256": "29e89588438264d6e07518099b3c8f8ee7a5d91908a36f9cfa70ff680c2a98a8"
+    }
+  ],
+  "requires_network": false,
+  "local_files_only": true,
+  "network_isolation_verified": false,
+  "validation_device": "cpu",
+  "default_enabled": false,
+  "runtime_load_verified": false,
+  "qualification_status": "unqualified",
+  "heldout_accuracy_claim": false,
+  "cross_validation_claim": false,
+  "release_gate": {
+    "independent_40_video_runs": 2,
+    "minimum_correct_each": 37,
+    "false_positives_each": 0,
+    "processed_each": 40,
+    "six_parallel_max_s": 285,
+    "schema_and_evidence_required": true,
+    "user_promotion_approval_required": true
+  },
+  "serving": {
+    "vllm_version": "0.31.0",
+    "base_served_name": "q30test",
+    "desk_adapter_model": "q30desk",
+    "adapter_request_scope": "DESK_SCHEMA_crops_only",
+    "adapter_fields_used": [
+      "cash",
+      "id_or_document"
+    ],
+    "adapter_served_name": "q30desk",
+    "request_model": "q30test",
+    "adapter_request_model": "q30desk",
+    "additional_arguments": [
+      "--enable-lora",
+      "--max-lora-rank",
+      "8",
+      "--max-loras",
+      "1",
+      "--lora-modules",
+      "q30desk=/ephemeral/forte/runs/qwen30-public-desk-lora-v1/adapter"
+    ],
+    "synthetic_schema_and_actual_adapter_load_required": true,
+    "startup_smoke_passed": false
+  },
+  "sources": [
+    "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/model_executor/models/qwen3_vl_moe.py",
+    "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/docs/features/lora.md",
+    "https://huggingface.co/docs/peft/main/en/developer_guides/checkpoint",
+    "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/blob/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c/config.json"
+  ],
+  "merged": null
+}

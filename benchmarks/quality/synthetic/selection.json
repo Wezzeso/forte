@@ -1,0 +1,37 @@
+{
+  "blockers": [
+    "baseline:real_local_inference_unmeasured",
+    "candidate:real_local_inference_unmeasured",
+    "no_observed_error_reduction"
+  ],
+  "candidate_earned_selection": false,
+  "final_check_policy": "Run final_check once after selection. Any tuning on its errors changes its status to development data.",
+  "guarded_diagnostics": {
+    "baseline": {
+      "event_false_negatives_including_failures": 3,
+      "event_false_positives": 2,
+      "unprocessed_or_late": 4,
+      "unsupported_evidence": 0,
+      "unverified_rule_ids": 0,
+      "video_false_positives": 1,
+      "video_missed_positives_including_failures": 2,
+      "wrong_rule_mappings": 0
+    },
+    "candidate": {
+      "event_false_negatives_including_failures": 3,
+      "event_false_positives": 2,
+      "unprocessed_or_late": 4,
+      "unsupported_evidence": 0,
+      "unverified_rule_ids": 0,
+      "video_false_positives": 1,
+      "video_missed_positives_including_failures": 2,
+      "wrong_rule_mappings": 0
+    }
+  },
+  "improved_axes": [],
+  "minimum_reviewed_cases_policy": 6,
+  "qualification": "Conservative team release gate; small-sample improvement is not statistical significance or a guaranteed hidden-test gain.",
+  "regressed_axes": [],
+  "schema_version": "forte.selection.v1",
+  "selected": "baseline"
+}

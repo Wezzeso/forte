@@ -1,0 +1,15 @@
+{
+  "coverage_state": "complete_snapshot",
+  "scope": "all_accepted_jobs_since_service_start",
+  "captured_at_utc": "2026-10-17T12:45:10.866368+00:00",
+  "snapshot_isolation": "PostgreSQL REPEATABLE READ",
+  "accepted_job_count": 15,
+  "unique_content_count": 9,
+  "active_job_count": 0,
+  "later_uploads_included": false,
+  "schema_version": "1.0",
+  "source_inventory_sha256": "618f08eaa11cab36bb087e4f57ecfdb7eb29701d6ad9f9002f28dc9748e258f4",
+  "generated_at_utc": "2026-10-17T12:45:11.325175+00:00",
+  "limits": "snapshot of committed accepted jobs only; later uploads require a fresh snapshot and registry ingestion",
+  "media_or_results_or_names_exported": false
+}

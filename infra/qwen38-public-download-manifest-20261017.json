@@ -1,0 +1,444 @@
+{
+  "schema_version": "forte.qwen38.public-candidate.v1",
+  "purpose": "Pinned public expected inventory and downloaded metadata only; no GPU/load/train/deploy attestation",
+  "captured_at_utc": "2026-10-17T13:08:36.522162+00:00",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "repo_id": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "revision_policy": "Retain handoff revision; no re-resolution or model substitution",
+  "source_repository": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "license": {
+    "spdx_id": "Apache-2.0",
+    "path": "LICENSE",
+    "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+  },
+  "model_type": "qwen3_5",
+  "architecture": "Qwen3_5ForConditionalGeneration",
+  "processor_class": "Qwen3VLProcessor",
+  "image_processor_type": "Qwen2VLImageProcessorFast",
+  "video_processor_type": "Qwen3VLVideoProcessor",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "dtype": "bfloat16",
+  "quantization": {
+    "format": "none",
+    "source": "BF16 source shards; runtime NF4 is a separate unverified choice"
+  },
+  "layout": {
+    "num_hidden_layers": 64,
+    "linear_attention_layers": 48,
+    "full_attention_layers": 16,
+    "full_attention_indices": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47,
+      51,
+      55,
+      59,
+      63
+    ],
+    "language_hidden_size": 5120,
+    "vision_depth": 27,
+    "max_position_embeddings": 262144
+  },
+  "token_ids": {
+    "image_token_id": 248056,
+    "video_token_id": 248057,
+    "vision_start_token_id": 248053,
+    "vision_end_token_id": 248054
+  },
+  "chat_template": {
+    "path": "chat_template.jinja",
+    "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+    "embedded_tokenizer_template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+    "embedded_template_byte_equal": true,
+    "supports_enable_thinking": true,
+    "supports_preserve_thinking": true,
+    "reasoning_effort_values": [
+      "xhigh",
+      "medium",
+      "low"
+    ],
+    "defaults": {
+      "enable_thinking": true,
+      "preserve_thinking": true,
+      "reasoning_effort": "xhigh"
+    },
+    "candidate_override_required": {
+      "enable_thinking": false,
+      "preserve_thinking": false
+    }
+  },
+  "index": {
+    "path": "model.safetensors.index.json",
+    "sha256": "77042094076611b69791a610065f28b7013b8c621795fa86ddccc8bac7d1b9df",
+    "tensor_count": 1199,
+    "referenced_shard_count": 18,
+    "all_referenced_shards_in_inventory": true,
+    "tensor_payload_size_bytes": 55562855904
+  },
+  "weight_shard_count": 18,
+  "weight_shard_total_bytes": 55563006776,
+  "metadata_file_count": 14,
+  "metadata_total_bytes": 23108087,
+  "total_bytes": 55586114863,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 1570,
+      "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+      "kind": "metadata",
+      "git_blob_id": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/.gitattributes",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "kind": "license",
+      "git_blob_id": "f938136e3adacfd92be087f6e113b5d6d97f678f",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 65012,
+      "sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+      "kind": "metadata",
+      "git_blob_id": "bc8aa0e396cd029c21cd773cca21830d0ded28ec",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "chat_template.jinja",
+      "size_bytes": 8952,
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+      "kind": "metadata",
+      "git_blob_id": "c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/chat_template.jinja",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "config.json",
+      "size_bytes": 4312,
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+      "kind": "metadata",
+      "git_blob_id": "706cebd746c4b6f2b1d1f892630867acfdfd3df8",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "crc32.txt",
+      "size_bytes": 238,
+      "sha256": "b42dd291f5f98b05807e458f5b47849969a9b3326acbf0c97d28b05826740b83",
+      "kind": "metadata",
+      "git_blob_id": "6de5ee6a0c6596744baee911af0a5cdcb8d99a1e",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/crc32.txt",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "generation_config.json",
+      "size_bytes": 202,
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e",
+      "kind": "metadata",
+      "git_blob_id": "023756cfadf88e5bf69eefeee3e172f38c448d64",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/generation_config.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "merges.txt",
+      "size_bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "kind": "metadata",
+      "git_blob_id": "a494e019ca1502219fd0128658b979e5f05ae8e8",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/merges.txt",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "model-00001-of-00018.safetensors",
+      "size_bytes": 3966730552,
+      "sha256": "ba0ce20aae489ad196733da5064bcdf159a1fe84f53336648196e1ebb7751b1c",
+      "kind": "weight_shard",
+      "git_blob_id": "79b73cdd69afeca931d181f5d1e21ad2d73bb7b7",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00001-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00002-of-00018.safetensors",
+      "size_bytes": 3043080328,
+      "sha256": "06a148c01bfbe3faa14a5f184a7ff29a706f7ae1c8b2705d2058e26d17a001fb",
+      "kind": "weight_shard",
+      "git_blob_id": "81cf43545884a227a01351942dfbc72577812316",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00002-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00003-of-00018.safetensors",
+      "size_bytes": 2542796952,
+      "sha256": "2e1bf62cbcd406eaa64b60d10353e1f0ef4039d0976e56f05cabe953454f9968",
+      "kind": "weight_shard",
+      "git_blob_id": "a2da5e6cd6307a6cae13d04820ab0d31b47b48bd",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00003-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00004-of-00018.safetensors",
+      "size_bytes": 3988973152,
+      "sha256": "511e34063187882659753c4d93f3859f93c019fd438d8813071921c81d9a3f1a",
+      "kind": "weight_shard",
+      "git_blob_id": "175ddab3f2488ad181f73d789d2d778cf6d4fca6",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00004-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00005-of-00018.safetensors",
+      "size_bytes": 2099339864,
+      "sha256": "635cb53446dc74f219740fc59e18b774f877b803b9722e289ca62575a6efa701",
+      "kind": "weight_shard",
+      "git_blob_id": "64890208fdd563c3aac0c2f55f69948bcaa1a492",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00005-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00006-of-00018.safetensors",
+      "size_bytes": 3979553696,
+      "sha256": "0bc5214fac607f0e6cc92eec3789d4b8559410ef9fce66621ba8158e8410dae0",
+      "kind": "weight_shard",
+      "git_blob_id": "3ae29b86e4c773babfe17124dbd10d54d37819ec",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00006-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00007-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "80b0c49033e9a0d5762562aa12f4acdb7f54da586f3d0110f28c48d91cf07892",
+      "kind": "weight_shard",
+      "git_blob_id": "b7e9c0f038884839f3dad38fef7e75ee3362c24f",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00007-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00008-of-00018.safetensors",
+      "size_bytes": 3979553696,
+      "sha256": "7192c5b66185d3592927daabee1cc19e6f6e0ce75988ee20e824b624765fda79",
+      "kind": "weight_shard",
+      "git_blob_id": "0b58cbc52714e1c683711be87e7c2e33fb10e7a0",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00008-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00009-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "af3c48cc37af44f3db6ae0579baf019180d48d9c527caa0a1f03ff85813a56d8",
+      "kind": "weight_shard",
+      "git_blob_id": "4fc0c6b28004d809225d0e115f30e9e11c2345dc",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00009-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00010-of-00018.safetensors",
+      "size_bytes": 3979553696,
+      "sha256": "163490a76f3bea3a40855b7efc04ce6d27afaf1a34f0bbde495b9491f76457c9",
+      "kind": "weight_shard",
+      "git_blob_id": "9ec693a17c788084116c51b4f34632670df77612",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00010-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00011-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "5f3ae1b948aeee39da77aec558e8236cd65fe4d7cb7686a76bb007acc563c6d8",
+      "kind": "weight_shard",
+      "git_blob_id": "3c63baaed16d833432a919647af53ac76bb6b007",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00011-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00012-of-00018.safetensors",
+      "size_bytes": 3979553696,
+      "sha256": "a3de1c7114677a8f5ac5c4892c90e8238ea5c1e2038c80e757dfc87c3902ca55",
+      "kind": "weight_shard",
+      "git_blob_id": "8568b440a4666ed1b4cda0b5d21496378304f326",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00012-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00013-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "06ab79a41f74c9c5cb734816feb0c7fc364104b227165ee7391231e1155aa02a",
+      "kind": "weight_shard",
+      "git_blob_id": "724083995a2257194321a3d00b36fd7d4bb7348d",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00013-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00014-of-00018.safetensors",
+      "size_bytes": 3979553696,
+      "sha256": "4138ed94603065ba884bbcadedb04d7718bb40117e85e6f5c6fc5b9c05b7a85b",
+      "kind": "weight_shard",
+      "git_blob_id": "a60b80b6510d7938d951fbddc76aaadd121c6268",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00014-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00015-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "69224e27b9de4e7dbf6fc936c6eaae08447bda3b80a6c31a871ab451173afd22",
+      "kind": "weight_shard",
+      "git_blob_id": "7d4c34f3d716e1a47acff2f576b65b41a3ec4f3f",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00015-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00016-of-00018.safetensors",
+      "size_bytes": 3979564040,
+      "sha256": "73cb9a1089fb6155cb648609478d6633be8a5c7d9ca5a05bc8925ce8a553cefe",
+      "kind": "weight_shard",
+      "git_blob_id": "c67e3e42c9715298fa7f68c6b378bfb1d74290d0",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00016-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00017-of-00018.safetensors",
+      "size_bytes": 2108759344,
+      "sha256": "beb51f01056142ac4984bd800507b0dd0fd18de57f8e9ef6ea41d1a3598983a8",
+      "kind": "weight_shard",
+      "git_blob_id": "23dd899179729a4370c655e2c2241cfdbe4ef4ba",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00017-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model-00018-of-00018.safetensors",
+      "size_bytes": 3392197344,
+      "sha256": "1d3479509e21494658f9b64d317f5ea8e55c4025d28c702d6c4d0b356ce8ea06",
+      "kind": "weight_shard",
+      "git_blob_id": "a92b4073fc6a58ffc9334ac63360fc8d9cc50d33",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model-00018-of-00018.safetensors",
+      "verification": "expected_hf_lfs_identity_not_downloaded",
+      "locally_downloaded": false
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size_bytes": 112216,
+      "sha256": "77042094076611b69791a610065f28b7013b8c621795fa86ddccc8bac7d1b9df",
+      "kind": "metadata",
+      "git_blob_id": "da35e3c564457dface7d138f0b6cac284ff8958c",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/model.safetensors.index.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size_bytes": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "kind": "metadata",
+      "git_blob_id": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/preprocessor_config.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "tokenizer.json",
+      "size_bytes": 12809320,
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+      "kind": "metadata",
+      "git_blob_id": "9328ce9c41e80f6dd7bc2c66d8ae1fc93bf87440",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/tokenizer.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_bytes": 17928,
+      "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+      "kind": "metadata",
+      "git_blob_id": "5de744b3fca2129d7186979ae47c06be33903243",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/tokenizer_config.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size_bytes": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "kind": "metadata",
+      "git_blob_id": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/video_preprocessor_config.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    },
+    {
+      "path": "vocab.json",
+      "size_bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "kind": "metadata",
+      "git_blob_id": "0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/vocab.json",
+      "verification": "local_bytes_downloaded_sha256_verified",
+      "locally_downloaded": true
+    }
+  ],
+  "evidence": {
+    "public_api_snapshot_path": "configs/serving/qwen38/public-api-snapshot.json",
+    "public_api_snapshot_sha256": "f92c33048a1d2552b4bdd7ce7e0bd3dd755b0d9652f995a79a351a7d06c6025d",
+    "metadata_inventory_path": "configs/serving/qwen38/public-metadata.inventory.json",
+    "metadata_inventory_sha256": "2572576c4dae3ece02ccdb85263587d1089e581cca86e353f7ab838a09218e40"
+  },
+  "verification_scope": {
+    "public_revision_resolved": true,
+    "public_config_index_processor_template_license_inspected": true,
+    "metadata_downloaded_and_hashed": true,
+    "full_weight_files_downloaded_by_this_receipt": false,
+    "weight_file_content_hashes_measured_locally": false,
+    "a100_sm80_kernel_verified": false,
+    "actual_model_gpu_loaded": false,
+    "adapter_trained": false,
+    "adapter_reload_verified": false,
+    "quality_or_latency_demonstrated": false,
+    "production_selected": false
+  },
+  "required_runtime_gates": [
+    "All shard local byte sizes/SHA256 match expected inventory",
+    "Config/processor/template effective tokens agree in candidate image",
+    "Actual A100 SM80 GDN and quantization kernel path measured",
+    "Tiny visual forward/backward and adapter save/reload pass",
+    "Full 27B visual two-step finite-gradient and exact adapter-reload receipt",
+    "TRAIN-only exposure and supervision gates pass",
+    "Comparable quality, API contract, offline-boundary and timing selection receipt",
+    "Exclusive idle GPU handoff and verified rollback"
+  ]
+}
